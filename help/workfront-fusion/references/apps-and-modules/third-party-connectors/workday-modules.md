@@ -5,10 +5,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8bd08379fc88c4d4f31ba1faba922869d7957b4a
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 48%
+source-wordcount: '888'
+ht-degree: 49%
 
 ---
 
@@ -166,7 +166,7 @@ Este módulo de acción crea un único registro en [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xre[!DNL ]f" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -195,7 +195,7 @@ Este módulo de acción elimina un único registro de [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xre[!DNL ]f" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -231,7 +231,7 @@ El módulo devuelve el código de estado, junto con los encabezados y el cuerpo 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xre[!DNL ]f" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -272,8 +272,8 @@ Este módulo de acción actualiza un único registro en [!DNL Workday].
             <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] a Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">Tipo de registro</td>
-            <td>Seleccione el tipo de registro [!UICONTROL ] que desea actualizar.</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td>Seleccione el tipo de registro que desee actualizar.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>

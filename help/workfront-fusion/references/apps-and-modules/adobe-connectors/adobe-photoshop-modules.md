@@ -4,9 +4,9 @@ description: Con los módulos de Adobe Photoshop, puede iniciar un escenario de 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 95%
 
 ---
@@ -143,7 +143,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
               <p>Introduzca la contraseña del archivo.</p>
             </li>
             <li value="5">
-              <p>Haga clic en <b>Guardar</b> para extraer el archivo y volver a la configuración de la conexión [!UICONTROL ]e.</p>
+              <p>Haga clic en <b>Guardar</b> para extraer el archivo y volver a la configuración de conexión.</p>
             </li>
           </ol>
         </td>

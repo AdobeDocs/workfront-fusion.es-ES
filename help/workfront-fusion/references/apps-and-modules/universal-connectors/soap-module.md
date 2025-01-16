@@ -4,7 +4,7 @@ description: SOAP SOAP Puede utilizar el módulo de la para conectarse a las API
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 16%
@@ -106,7 +106,7 @@ Si el módulo [!UICONTROL SOAP] se niega a procesar el archivo WSDL o genera var
      </tr> 
      <tr data-mc-conditions=""> 
       <td role="rowheader">[!UICONTROL Body type]</td> 
-      <td> <p>[!UICONTROL Raw]</p> </td> [!UICONTROL ]
+      <td> <p>[!UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Content type]</td> 
