@@ -81,10 +81,9 @@ Si el campo de cadena JSON contiene una colección `{ ... }`, el resultado es un
 >
 >```
 >{
->       "name" : "Peter",
+>    "name" : "Peter",
 >
->    
-   "ID" : 1
+>    "ID" : 1
 >}
 >```
 >
@@ -98,16 +97,15 @@ Si el campo de cadena JSON contiene una matriz `[ ... ]`, el resultado es una se
 >
 >```
 >[
->   {
->       "name" : "Peter",
->       "ID" : 1
->   },
+>  {
+>    "name" : "Peter",
+>    "ID" : 1
+>  },
 >
->  
- {
->       "name" : "Mike",
->       "ID" : 2
->   }
+>  {
+>    "name" : "Mike",
+>    "ID" : 2
+>  }
 >]
 >```
 >
@@ -238,48 +236,49 @@ Este módulo de acción transforma un objeto en una cadena JSON.
 >
 >1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Select rows] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el&#x200B;**[!UICONTROL Maximum number of returned rows]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Run this module only]**&quot;. Compruebe la salida del módulo.
 >
-1. Conecte el módulo [!UICONTROL Array Aggregator] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo [!DNL Google Sheets] en el campo **[!UICONTROL Source node]**. Deje los demás campos tal como están por el momento.
+>1. Conecte el módulo [!UICONTROL Array Aggregator] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo [!DNL Google Sheets] en el campo **[!UICONTROL Source node]**. Deje los demás campos tal como están por el momento.
 >
-1. Conectar el módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] después del módulo [!UICONTROL Array Aggregator]. La configuración del módulo requiere una estructura de datos que describa el formato JSON. Haga clic en **[!UICONTROL Add]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de una muestra JSON. Haga clic en **[!UICONTROL Generator]** y pegue la muestra JSON en el campo **[!UICONTROL Sample data]**:
+>1. Conectar el módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] después del módulo [!UICONTROL Array Aggregator]. La configuración del módulo requiere una estructura de datos que describa el formato JSON. Haga clic en **[!UICONTROL Add]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de una muestra JSON. Haga clic en **[!UICONTROL Generator]** y pegue la muestra JSON en el campo **[!UICONTROL Sample data]**:
 >
-**Ejemplo:**
+>     **Ejemplo:**
 >
-```
-{
-
-"books": [
-
-{
-
-"id": "ID",
-
-"title": "Title",
-
-"author": "Author"
-
-}
-
-]
-
-}
-```
+>     ```
+>     {
+>     
+>     "books": [
+>     
+>     {
+>     
+>     "id": "ID",
+>     
+>     "title": "Title",
+>     
+>     "author": "Author"
+>     
+>     }
+>     
+>     ]
+>     
+>     }
+>     
+>     ```
 >
-1. Haga clic en **[!UICONTROL Save]**. El campo [!UICONTROL Specification] de la estructura de datos ahora contiene la estructura generada.
-1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
+>1. Haga clic en **[!UICONTROL Save]**. El campo [!UICONTROL Specification] de la estructura de datos ahora contiene la estructura generada.
+>1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
 >
-1. Haga clic en el botón **[!UICONTROL Map]** que se encuentra junto al campo y asigne el elemento `Array[]` desde la salida del agregador de matrices al mismo.
+>1. Haga clic en el botón **[!UICONTROL Map]** que se encuentra junto al campo y asigne el elemento `Array[]` desde la salida del agregador de matrices al mismo.
 >
-1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL JSON].
+>1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL JSON].
 >
-1. Abra la configuración del módulo [!UICONTROL Array Aggregator]. Cambie **[!UICONTROL Target structure]** de [!UICONTROL Custom] al campo del módulo [!UICONTROL JSON] correspondiente al atributo de matriz raíz. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
+>1. Abra la configuración del módulo [!UICONTROL Array Aggregator]. Cambie **[!UICONTROL Target structure]** de [!UICONTROL Custom] al campo del módulo [!UICONTROL JSON] correspondiente al atributo de matriz raíz. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
 >
-1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL Array Aggregator].
+>1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL Array Aggregator].
 >
-1. Ejecute el escenario.
+>1. Ejecute el escenario.
 >
-El módulo [!UICONTROL JSON] genera el formato JSON correcto.
+>El módulo [!UICONTROL JSON] genera el formato JSON correcto.
 >
-1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Maximum number of returned rows] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
+>1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Maximum number of returned rows] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
 
 ## Resolución de problemas
 
@@ -293,6 +292,6 @@ Cuando utilice afirmaciones condicionales como `if` en su JSON, coloque las comi
 
 >[!INFO]
 >
-**Ejemplo:**
+>**Ejemplo:**
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
