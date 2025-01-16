@@ -4,10 +4,10 @@ description: La aplicación JSON de Adobe Workfront Fusion proporciona módulos 
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 68%
+source-wordcount: '1122'
+ht-degree: 65%
 
 ---
 
@@ -17,44 +17,48 @@ La aplicación [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] proporciona módu
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo, [!UICONTROL [!DNL Workfront Fusion] para automatización de trabajo</p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Analizar JSON
++++
+
+## Consideraciones al analizar JSON
 
 * [Estructuras de datos](#data-structure)
 * [Colección frente a matriz](#collection-vs-array)
@@ -75,41 +79,45 @@ Para obtener más información, consulte [Estructuras de datos en [!UICONTROL Ad
 
 Si el campo de cadena JSON contiene una colección `{ ... }`, el resultado es un paquete único que contiene los elementos de la colección.
 
->[!INFO]
->
->**Ejemplo:**
->
->```
->{
->    "name" : "Peter",
->
->    "ID" : 1
->}
->```
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+```
+{
+    "name" : "Peter",
+
+    "ID" : 1>}
+```
+
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+
+>[!ENDSHADEBOX]
 
 Si el campo de cadena JSON contiene una matriz `[ ... ]`, el resultado es una serie de paquetes. cada paquete contiene un elemento de la matriz.
 
->[!INFO]
->
->**Ejemplo:**
->
->```
->[
->  {
->    "name" : "Peter",
->    "ID" : 1
->  },
->
->  {
->    "name" : "Mike",
->    "ID" : 2
->  }
->]
->```
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+```
+[
+  {
+    "name" : "Peter",
+    "ID" : 1
+  },
+
+  {
+    "name" : "Mike",
+    "ID" : 2
+  }
+]
+```
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+
+>[!ENDSHADEBOX]
 
 ## Módulos de [!UICONTROL JSON] y sus campos
 
@@ -191,6 +199,10 @@ Este módulo de acción crea JSON a partir de una estructura de datos.
    <td role="rowheader">Estructuras de datos</td> 
    <td> <p>Seleccione la estructura de datos que desea utilizar para crear JSON. Para obtener más información, consulte <a href="#data-structure" class="MCXref xref">Estructura de datos</a> en este artículo.</p> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">Sangría</td> 
+   <td> <p>Seleccione la sangría que desee utilizar para este JSON.</p> </td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -222,6 +234,10 @@ Este módulo de acción transforma un objeto en una cadena JSON.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
+   <td role="rowheader">Sangría</td> 
+   <td> <p>Seleccione la sangría que desee utilizar para este JSON.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Object]</td> 
    <td> <p>Introduzca o asigne el objeto que desea transformar en JSON.</p> </td> 
   </tr> 
@@ -230,55 +246,48 @@ Este módulo de acción transforma un objeto en una cadena JSON.
 
 ## Transformación de registros de datos a JSON
 
->[!INFO]
->
->**Ejemplo:** El siguiente ejemplo muestra cómo transformar registros de datos de [!DNL Google Sheets] al formato JSON:
->
->1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Select rows] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el&#x200B;**[!UICONTROL Maximum number of returned rows]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Run this module only]**&quot;. Compruebe la salida del módulo.
->
->1. Conecte el módulo [!UICONTROL Array Aggregator] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo [!DNL Google Sheets] en el campo **[!UICONTROL Source node]**. Deje los demás campos tal como están por el momento.
->
->1. Conectar el módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] después del módulo [!UICONTROL Array Aggregator]. La configuración del módulo requiere una estructura de datos que describa el formato JSON. Haga clic en **[!UICONTROL Add]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de una muestra JSON. Haga clic en **[!UICONTROL Generator]** y pegue la muestra JSON en el campo **[!UICONTROL Sample data]**:
->
->     **Ejemplo:**
->
->     ```
->     {
->     
->     "books": [
->     
->     {
->     
->     "id": "ID",
->     
->     "title": "Title",
->     
->     "author": "Author"
->     
->     }
->     
->     ]
->     
->     }
->     
->     ```
->
->1. Haga clic en **[!UICONTROL Save]**. El campo [!UICONTROL Specification] de la estructura de datos ahora contiene la estructura generada.
->1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
->
->1. Haga clic en el botón **[!UICONTROL Map]** que se encuentra junto al campo y asigne el elemento `Array[]` desde la salida del agregador de matrices al mismo.
->
->1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL JSON].
->
->1. Abra la configuración del módulo [!UICONTROL Array Aggregator]. Cambie **[!UICONTROL Target structure]** de [!UICONTROL Custom] al campo del módulo [!UICONTROL JSON] correspondiente al atributo de matriz raíz. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
->
->1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL Array Aggregator].
->
->1. Ejecute el escenario.
->
->El módulo [!UICONTROL JSON] genera el formato JSON correcto.
->
->1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Maximum number of returned rows] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
+>[!BEGINSHADEBOX]
+
+**Ejemplo:** El siguiente ejemplo muestra cómo transformar registros de datos de [!DNL Google Sheets] al formato JSON:
+
+1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Select rows] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el&#x200B;**[!UICONTROL Maximum number of returned rows]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Run this module only]**&quot;. Compruebe la salida del módulo.
+
+1. Conecte el módulo [!UICONTROL Array Aggregator] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo [!DNL Google Sheets] en el campo **[!UICONTROL Source node]**. Deje los demás campos tal como están por el momento.
+
+1. Conectar el módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] después del módulo [!UICONTROL Array Aggregator]. La configuración del módulo requiere una estructura de datos que describa el formato JSON. Haga clic en **[!UICONTROL Add]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de una muestra JSON. Haga clic en **[!UICONTROL Generator]** y pegue la muestra JSON en el campo **[!UICONTROL Sample data]**:
+
+   **Ejemplo:**
+
+   ```
+   {
+   "books": [
+   {
+   "id": "ID",
+   "title": "Title",
+   "author": "Author"
+   }
+   ]
+   }
+   ```
+
+1. Haga clic en **[!UICONTROL Save]**. El campo [!UICONTROL Specification] de la estructura de datos ahora contiene la estructura generada.
+1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
+
+1. Haga clic en el botón **[!UICONTROL Map]** que se encuentra junto al campo y asigne el elemento `Array[]` desde la salida del agregador de matrices al mismo.
+
+1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL JSON].
+
+1. Abra la configuración del módulo [!UICONTROL Array Aggregator]. Cambie **[!UICONTROL Target structure]** de [!UICONTROL Custom] al campo del módulo [!UICONTROL JSON] correspondiente al atributo de matriz raíz. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
+
+1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL Array Aggregator].
+
+1. Ejecute el escenario.
+
+   El módulo [!UICONTROL JSON] genera el formato JSON correcto.
+
+1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Maximum number of returned rows] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
+
+>[!ENDSHADEBOX]
 
 ## Resolución de problemas
 
@@ -290,8 +299,10 @@ Asegúrese de que el contenido JSON esté correctamente asignado al módulo [!UI
 
 Cuando utilice afirmaciones condicionales como `if` en su JSON, coloque las comillas fuera de la afirmación condicional.
 
->[!INFO]
->
->**Ejemplo:**
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+
+>[!ENDSHADEBOX]
