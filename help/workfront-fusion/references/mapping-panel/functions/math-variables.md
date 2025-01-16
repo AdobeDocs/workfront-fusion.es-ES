@@ -1,0 +1,30 @@
+---
+title: Variables matemáticas
+description: Las siguientes variables matemáticas están disponibles en el panel de [!DNL Adobe Workfront Fusion mapping] .
+author: Becky
+feature: Workfront Fusion
+exl-id: b309f035-4d46-473b-b915-6938587b0bcf
+source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+workflow-type: tm+mt
+source-wordcount: '49'
+ht-degree: 91%
+
+---
+
+# Variables matemáticas
+
+## pi
+
+Representa el símbolo matemático $\pi$.
+
+## [!UICONTROL random]
+
+Devuelve un número pseudoaleatorio de coma flotante en el rango [`0`,`1`] (que incluye `0`, pero no `1`).
+
+Utilice la siguiente fórmula para generar un número pseudoaleatorio entero en el rango [`min`,`max`] (que incluye `min` y `max`):
+
+![](assets/math-variable-random-350x61.png)
+
+```
+floor(random * (1.max - 1.min + 1)) + 1.min
+```
