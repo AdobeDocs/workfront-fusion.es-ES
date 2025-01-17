@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion]  puede automatiza
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4e45e691ed453cec5af1fa7b52204031af83f869
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 85%
+source-wordcount: '1881'
+ht-degree: 74%
 
 ---
 
@@ -15,50 +15,54 @@ ht-degree: 85%
 
 En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Jira Software], así como conectarlo a varias aplicaciones y servicios de terceros.
 
+Estas instrucciones se aplican tanto a los módulos de Jira Cloud como al servidor Jira.
+
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
-<!-- Bob Fix this compared to original -->
-
 ## Requisitos de acceso
+
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber de qué plan, tipo de licencia o acceso dispone, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -110,10 +114,10 @@ Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], debe crear un toke
 
 #### Crear un token de API en [!DNL Jira]
 
-1. Vaya a [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens) e inicie sesión.
-1. Haga clic en **[!UICONTROL Create API token]**.
-1. Escriba un nombre para el token, como *Workfront Fusion*.
-1. Copie el token utilizando el botón **[!UICONTROL Copy to clipboard]**.
+1. Cree un token de API en Jira.
+
+   Para obtener instrucciones, recomendamos buscar &quot;Crear un token de API&quot; en la documentación de Jira.
+1. Después de crear el token, cópielo en una ubicación segura.
 
    >[!IMPORTANT]
    >
@@ -123,9 +127,11 @@ Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], debe crear un toke
 
 #### Configurar el token de la API [!DNL Jira] en [!DNL Workfront Fusion]
 
-1. En [!DNL Workfront Fusion], agregue un módulo [!DNL Jira] a un escenario para abrir el cuadro **[!UICONTROL Create a connection]**.
+1. En cualquier módulo de [!DNL Jira Cloud] de [!DNL Workfront Fusion], haga clic en **[!UICONTROL Add]** junto al campo [!UICONTROL connection].
 1. Especifique la siguiente información:
 
+   * **Entorno**
+   * **Tipo**
    * **[!UICONTROL Service URL]:** Esta es la URL base que usa para acceder a su cuenta de Jira. Ejemplo: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
    * **[!UICONTROL API token]:** Este es el token de API que creó en la sección [Crear un token de API en [!DNL Jira]](#create-an-api-token-in-jira) de este artículo.
@@ -134,11 +140,7 @@ Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], debe crear un toke
 
 ### Conectar [!DNL Jira Server] a [!DNL Workfront Fusion]
 
-<!--
-<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
--->
-
-Para autorizar una conexión entre [!DNL Workfront Fusion] y [!DNL Jira Server], necesita su clave de cliente, clave privada y URL del servicio. Es posible que deba ponerse en contacto con el administrador de [!DNL Jira] para obtener esta información.
+Para autorizar una conexión entre [!DNL Workfront Fusion] y [!DNL Jira Server], necesita su clave de cliente, clave privada y URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
 
 * [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configuración de la aplicación cliente como consumidor en  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
@@ -160,8 +162,7 @@ Para adquirir una clave privada para su conexión a [!DNL Workfront Fusion Jira]
 
    * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
 
-     Este comando extrae la clave privada (formato PKCS8) en el archivo `jira_privatekey.pcks8`
-.
+     Este comando extrae la clave privada (formato PKCS8) al archivo `jira_privatekey.pcks8`.
 
    * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
 
@@ -169,13 +170,13 @@ Para adquirir una clave privada para su conexión a [!DNL Workfront Fusion Jira]
 
      >[!NOTE]
      >
-     >Si utiliza Windows, es posible que tenga que guardar la clave pública en el archivo `jira_publickey.pem` manualmente:
+     >Si utiliza Windows, es posible que tenga que guardar manualmente la clave pública del archivo `jira_publickey.pem`:
      >
      >1. En el terminal, ejecute el comando siguiente:
      >   
      >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
      >   
-     >1. Copie la salida de terminal (incluidos `-------BEGIN PUBLIC KEY--------` y `-------END PUBLIC KEY--------`
+     >1. Copie la salida de terminal, incluidos `-------BEGIN PUBLIC KEY--------` y `-------END PUBLIC KEY--------`.
      >   
      >1. Pegue la salida de terminal en un archivo con nombre `jira_publickey.pem`.
 
@@ -251,6 +252,14 @@ Para adquirir una clave privada para su conexión a [!DNL Workfront Fusion Jira]
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>Introduzca un nombre para la conexión</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>Seleccione si está utilizando un entorno de producción o de no producción.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>Seleccione si utiliza una cuenta de servicio o una cuenta personal.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Consumer Key]</td> 
@@ -340,7 +349,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>Añada un ID o una clave de problema para cada problema que desee añadir al sprint.</td> 
+   <td>Para cada problema o clave que desee que vea la experiencia, haga clic en <b>[!UICONTROL Add item]</b> e introduzca el identificador o la clave del problema. Puede introducir hasta 50 en un módulo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -363,7 +372,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>Seleccione el tipo de registro que desea que cree el módulo. Al seleccionar un tipo de registro, en el módulo aparecerán otros campos específicos de dicho tipo de registro.</p> 
+   <td> <p>Seleccione el tipo de registro que desea que cree el módulo y, a continuación, rellene los demás campos específicos de ese tipo de registro que aparecen en el módulo.</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
@@ -378,7 +387,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 #### [!UICONTROL Custom API Call]
 
-Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Jira Software]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Jira Software] módulos.
+Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Jira Software]. Utilice este módulo para crear una automatización del flujo de datos que no puedan realizar los otros [!DNL Jira Software] módulos.
 
 Al configurar este módulo, se muestran los campos siguientes.
 
@@ -416,7 +425,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 #### [!UICONTROL Delete a record]
 
-Este módulo de acción elimina un registro en particular.
+Este módulo de acción elimina el registro especificado.
 
 Especifique el identificador del registro.
 
@@ -542,7 +551,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>Introduzca o asigne el ID o la clave del registro que desea actualizar.</td> 
+   <td>Introduzca o asigne el ID o la clave del registro que desea actualizar y, a continuación, rellene los demás campos específicos de ese tipo de registro que aparecen en el módulo.</td> 
   </tr> 
  </tbody> 
 </table>
