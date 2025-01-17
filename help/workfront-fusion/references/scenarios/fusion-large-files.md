@@ -4,10 +4,10 @@ description: Actualmente, se admite archivos grandes para los conectores Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 3%
 
 ---
 
@@ -27,15 +27,26 @@ Para gestionar archivos de mayor tamaño, se deben actualizar los escenarios.
 
 ## Conectores compatibles con archivos grandes
 
-Para la versión inicial, los siguientes conectores admiten archivos grandes.
+Actualmente, los siguientes conectores admiten archivos grandes.
 
-* Workfront > Cargar documento
-* Adobe Experience Manager Assets > Cargar documento
-* Workfront Proof > Cargar archivo
-* Adobe Authenticator > Realizar una llamada de API personalizada
-* SharePoint > Crear un archivo y SharePoint > Obtener un archivo
-* Salesforce > Cargar archivo
-* AWS S3 > Cargar archivo y AWS S3 > Obtener archivo
+* Workfront
+   * Cargar documento
+   * Descargar documento
+* Adobe Experience Manager Assets
+   * Cargar documento
+* Revisión de Workfront
+   * Cargar archivo
+   * Descargar revisión
+* Adobe Authenticator
+   * Realizar una llamada de API personalizada
+* SharePoint
+   * Crear un archivo
+   * Obtener un archivo
+* Salesforce
+   * Cargar archivo
+* AWS S3
+   * Cargar archivo
+   * Obtener archivo
 * HTTP
 
 En futuras versiones se admitirán otros conectores.
@@ -74,7 +85,7 @@ No, el número de operaciones ejecutadas por un módulo es el mismo.
 
 ### ¿Cuándo se actualizará la interfaz de usuario de Fusion para mostrar los datos de transferencia de archivos?
 
-Estamos trabajando activamente en las actualizaciones de la IU de Fusion para la transferencia de archivos en el tablero y en la página de detalles de la ejecución del escenario, con una versión objetivo en el primer trimestre de 2025.
+Esta función ya se ha completado e implementado en producción.
 
 ### ¿Cuáles son algunas formas de pensar acerca de los nuevos límites de procesamiento de archivos que me ayudarán a diseñar escenarios?
 
