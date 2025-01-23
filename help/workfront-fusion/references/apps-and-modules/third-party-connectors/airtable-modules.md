@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1858'
 ht-degree: 98%
 
 ---
@@ -447,7 +447,7 @@ La URL del webhook debe generarse en Workfront Fusion y luego añadirse a la con
 1. Añada el módulo Ver nuevas respuestas a su escenario de Workfront Fusion.
 1. Genere y copie la URL del webhook.
 
-   <!--For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
+   <!--For instructions, see [ (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
 
 1. Inicie sesión en su cuenta de Airtable.
 1. Abra Base y la tabla que desee utilizar para el formulario y cree una vista de formulario.
@@ -486,7 +486,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">Método</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Encabezados</td> 

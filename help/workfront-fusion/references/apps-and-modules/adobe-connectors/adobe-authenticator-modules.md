@@ -4,10 +4,10 @@ description: Con el módulo Adobe Authenticator, puede conectarse a cualquier pr
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 75%
+source-wordcount: '1116'
+ht-degree: 74%
 
 ---
 
@@ -225,7 +225,7 @@ Este módulo estuvo disponible el 14 de noviembre de 2024. Cualquier Adobe Authe
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
       </td>
     </tr>
     <tr>
@@ -291,7 +291,7 @@ Este módulo de acción le permite realizar una llamada a cualquier API de Adobe
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
       </td>
     </tr>
     <tr>

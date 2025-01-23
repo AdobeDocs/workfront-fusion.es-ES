@@ -1,19 +1,19 @@
 ---
-title: Módulos de eventos de Adobe I/O
-description: Con los módulos Eventos de Adobe I/O, puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de sus aplicaciones de Adobe.
+title: Módulos de Adobe I/O Events
+description: Con los módulos de Adobe I/O Events, puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de las aplicaciones de Adobe.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '876'
 ht-degree: 38%
 
 ---
 
-# Módulos de eventos de Adobe I/O
+# Módulos de Adobe I/O Events
 
-Con los módulos de Eventos de Adobe I/O, puede iniciar un escenario de Adobe Workfront Fusion basado en eventos en cuentas y servicios de Adobe que no tengan un conector de Workfront Fusion dedicado.
+Con los módulos de Adobe I/O Events, puede iniciar un escenario de Adobe Workfront Fusion basado en eventos en cuentas y servicios de Adobe que no tengan un conector de Workfront Fusion específico.
 
 ## Requisitos de acceso
 
@@ -48,13 +48,13 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 ## Requisitos previos
 
-Antes de poder utilizar el conector de eventos de Adobe I/O, debe asegurarse de que se cumplen los siguientes requisitos previos:
+Antes de poder utilizar el conector de Adobe I/O Events, debe asegurarse de que se cumplen los siguientes requisitos previos:
 
 * Debe tener una cuenta de Adobe activa.
 
-## Información de API de eventos de Adobe I/O
+## Información de API de Adobe I/O Events
 
-El conector Eventos de Adobe I/O utiliza lo siguiente:
+El conector de Adobe I/O Events utiliza lo siguiente:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -71,9 +71,9 @@ El conector Eventos de Adobe I/O utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Creación de una conexión a eventos de Adobe I/O
+## Creación de una conexión con Adobe I/O Events
 
-Para crear una conexión para los módulos de Eventos de Adobe I/O:
+Para crear una conexión para los módulos de Adobe I/O Events:
 
 1. Haga clic en Agregar junto al cuadro Conexión.
 
@@ -135,7 +135,7 @@ Para crear una conexión para los módulos de Eventos de Adobe I/O:
 
 1. Haga clic en **Continuar** para guardar la conexión y volver al módulo.
 
-## Módulos de eventos de Adobe I/O y sus campos
+## Módulos Adobe I/O Events y sus campos
 
 Al configurar módulos de [!DNL Adobe I/O Events], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Adobe I/O Events] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
@@ -279,7 +279,7 @@ Este módulo de acción realiza una llamada de API personalizada a la API [!DNL 
         <p>[!UICONTROL Method]</p>
       </td>
       <td>
-  <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP en [!DNL Adobe Workfront Fusion]</a>.</p>  
+  <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p>  
       </td>
     </tr>
     <tr>
@@ -309,7 +309,7 @@ Este módulo de acción realiza una llamada de API personalizada a la API [!DNL 
 
 #### Obtención de ID de proveedor y evento
 
-Este módulo de búsqueda obtiene los ID de eventos de Adobe I/O del proveedor y los eventos especificados.
+Este módulo de búsqueda obtiene los Adobe I/O Events ID del proveedor y los eventos especificados.
 
 <table>
      <col/>
