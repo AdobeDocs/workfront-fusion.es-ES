@@ -4,9 +4,9 @@ description: Actualmente, se admite archivos grandes para los conectores Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 3%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->La funcionalidad de archivos de gran tamaño solo está disponible para los clientes de Workfront Ultimate y se está implementando por fases. Todas las organizaciones de Fusion con un plan de Ultimate de Workfront tendrán capacidad de archivos de gran tamaño en enero de 2025.
+>La funcionalidad de archivos de gran tamaño solo está disponible para las organizaciones que utilizan el paquete Workfront Ultimate.
 
 Las funciones mejoradas de transferencia de datos ya están disponibles en Workfront Fusion, lo que permite a los escenarios procesar archivos considerablemente más grandes.
 
 Para gestionar archivos de mayor tamaño, se deben actualizar los escenarios.
-
->[!NOTE]
->
->Esta funcionalidad solo está disponible para los usuarios con el paquete Ultimate Workfront.
 
 ## Conectores compatibles con archivos grandes
 
