@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 76%
+source-wordcount: '2704'
+ht-degree: 75%
 
 ---
 
@@ -86,7 +86,7 @@ El conector de Salesforce utiliza lo siguiente:
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -104,6 +104,60 @@ Al buscar objetos, puede introducir palabras de búsqueda individuales o crear u
 * Utilice el operador de comillas (&quot;&quot;) para encontrar una coincidencia de frase exacta. Por ejemplo: “reunión del lunes&quot;
 
 Para obtener más información sobre las posibilidades de búsqueda, consulte la documentación para desarrolladores de [!DNL Salesforce] sobre SOQL y SOSL.
+
+## Crear una conexión a [!DNL Salesforce]
+
+Para crear una conexión para los módulos de [!DNL Salesforce]:
+
+1. En cualquier módulo de [!DNL Salesforce], haga clic en **[!UICONTROL Add]** junto al cuadro Conexión.
+
+1. Rellene los campos siguientes:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Introduzca un nombre para la nueva conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Seleccione si se está conectando a un entorno de producción o de no producción.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Seleccione si desea conectarse a una cuenta de servicio o a una personal.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Introduzca su ID de cliente de Salesforce.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Escriba el secreto de cliente de Salesforce. </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>Active esta opción si se trata de un entorno de zona protegida.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>Introduzca la versión de la API de Salesforce que desea utilizar. La versión predeterminada es 62.0.</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+
 
 ## Módulos de [!DNL Salesforce] y sus campos
 
