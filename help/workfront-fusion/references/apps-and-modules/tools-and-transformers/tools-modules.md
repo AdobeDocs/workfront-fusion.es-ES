@@ -4,10 +4,10 @@ description: La sección  [!DNL Adobe Workfront Fusion Tools] incluye varios mó
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 74%
+source-wordcount: '1994'
+ht-degree: 63%
 
 ---
 
@@ -79,7 +79,7 @@ Puede utilizar este módulo, por ejemplo, para contactos o cualquier otra lista 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Cree paquetes personalizados añadiendo elementos de matriz. La matriz consta de pares nombre-valor.</p> </td> 
+   <td> <p>Cree paquetes personalizados añadiendo elementos de matriz. Para cada elemento que desee agregar al paquete, haga clic en <b>Agregar elemento</b> e introduzca el nombre y el valor del elemento.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ Puede utilizar este módulo, por ejemplo, para contactos o cualquier otra lista 
 
 Este módulo recupera valores creados previamente por el módulo [!UICONTROL Set Variable] o [!UICONTROL Set Multiple Variables].
 
-Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Get Multiple Variables]. El único requisito es que el módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] o [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] se ejecute antes que el módulo [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Para obtener más información sobre el orden en que se ejecutan los módulos, consulte [Módulo de enrutador en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Get Multiple Variables]. El único requisito es que el módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] o [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] se ejecute antes que el módulo [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>Añada las variables que desea que obtenga el módulo.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>Para cada variable que añada, asigne el nombre de la variable que desee obtener.</td>
+        <td>Para cada variable que desee que obtenga el módulo, haga clic en <b>Agregar elemento</b> e introduzca el nombre de la variable.</td>
     </tr>
 </table>
 
->[!INFO]
->
->**Ejemplos:** Los siguientes son posibles usos de los módulos [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]:
->
->* Para almacenar un valor calculado para su uso posterior, incluso en una ruta diferente. Esto resulta útil en casos en los que el valor se utiliza en varios módulos y la fórmula para calcularlo es demasiado compleja.
->* Para depurar una fórmula. Si una fórmula utilizada en un módulo no proporciona aparentemente un resultado correcto, copie la fórmula y péguela en un módulo [!UICONTROL Set Variable] que inserte antes del módulo correspondiente. Desconecte los módulos después del módulo [!UICONTROL Set Variable] y ejecute el escenario. Compruebe el resultado del módulo [!UICONTROL Set Variable], ajuste o simplifique la fórmula, ejecute de nuevo el escenario y continúe haciéndolo hasta que se haya resuelto el problema.
+>[!BEGINSHADEBOX]
+
+**Ejemplos:** Los siguientes son posibles usos de los módulos [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]:
+
+* Para almacenar un valor calculado para su uso posterior, incluso en una ruta diferente. Esto resulta útil en casos en los que el valor se utiliza en varios módulos y la fórmula para calcularlo es demasiado compleja.
+* Para depurar una fórmula. Si una fórmula utilizada en un módulo no proporciona aparentemente un resultado correcto, copie la fórmula y péguela en un módulo [!UICONTROL Set Variable] que inserte antes del módulo correspondiente. Desconecte los módulos después del módulo [!UICONTROL Set Variable] y ejecute el escenario. Compruebe el resultado del módulo [!UICONTROL Set Variable], ajuste o simplifique la fórmula, ejecute de nuevo el escenario y continúe haciéndolo hasta que se haya resuelto el problema.
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 Este módulo recupera un valor que fue creado previamente por el módulo [!UICONTROL Set Variable] o [!UICONTROL Set Multiple Variables].
 
-Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Get Variable]. El único requisito es que el módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] o [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] se ejecute antes que el módulo [!UICONTROL Tools] > [!UICONTROL Get Variable]. Para obtener más información sobre el orden en que se ejecutan los módulos, consulte [Módulo de enrutador en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Get Variable]. El único requisito es que el módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] o [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] se ejecute antes que el módulo [!UICONTROL Tools] > [!UICONTROL Get Variable]. Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ Este módulo puede leer variables que se establecieron en cualquier parte del es
 
 #### [!UICONTROL Increment function]
 
-Este módulo devuelve un valor incrementado en 1 después de la operación de cada módulo.
+Este módulo devuelve un valor incrementado en 1 después de cada ciclo o cada escenario ejecutado.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ Este módulo devuelve un valor incrementado en 1 después de la operación de ca
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>Seleccione cuando desee que el módulo incremente el valor. </p> 
+   <td> <p>Seleccione cuando desee que el módulo restablezca el valor. Es entonces cuando desea que el valor comience de nuevo en el primer valor.</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ Este módulo devuelve un valor incrementado en 1 después de la operación de ca
  </tbody> 
 </table>
 
->[!INFO]
->
->**Ejemplo:**
->
->Uno de los usos del módulo es implementar una asignación “rotativa” de tareas, posibles clientes, correos electrónicos, etc., a los usuarios de un grupo. El algoritmo elige a los usuarios asignados de un grupo en un orden racional, que generalmente va de la parte superior a la parte inferior de una lista. Cuando el algoritmo llega al final de la lista, le asigna la siguiente asignación al usuario en la parte superior de la lista y continúa realizando asignaciones en la lista.
->
->El siguiente escenario envía un correo electrónico al primer destinatario después de ejecutar cada escenario impar y al segundo destinatario después de ejecutar cada escenario par.
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. Para crear este escenario, haga lo siguiente:
->1. Establezca el campo **[!UICONTROL Reset a value]** del módulo en Nunca.
->1. Defina la ruta para los valores impares. Establezca el filtro para esta ruta mediante la función de coincidencia de módulo igual a `1`:
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **Nota**: No olvide cambiar el operador [!UICONTROL Equal to] del operador [!UICONTROL Text] predeterminado al operador [!UICONTROL Numeric].
->
->1. Establezca la ruta para los valores pares utilizando la función de coincidencia de módulo igual a `0`:
->
->La función de incremento añade uno cada vez que se ejecuta el escenario. Los filtros comprueban el incremento y actúan en su valor, lo que garantiza que los correos electrónicos se distribuyan de manera uniforme.
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+Este módulo se puede utilizar para implementar una asignación &quot;round robin&quot; de tareas, posibles clientes, correos electrónicos, etc., a los usuarios de un grupo. El algoritmo elige a los usuarios asignados de un grupo en un orden racional, que generalmente va de la parte superior a la parte inferior de una lista. Cuando el algoritmo llega al final de la lista, le asigna la siguiente asignación al usuario en la parte superior de la lista y continúa realizando asignaciones en la lista.
+
+El siguiente escenario envía un correo electrónico al primer destinatario después de ejecutar cada escenario impar y al segundo destinatario después de ejecutar cada escenario par.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+Para crear este escenario, haga lo siguiente:
+
+1. Establezca el campo **[!UICONTROL Reset a value]** del módulo en Nunca.
+1. Defina la ruta para los valores impares. Establezca el filtro para esta ruta mediante la función de coincidencia de módulo igual a `1`:
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**Nota**: No olvide cambiar el operador [!UICONTROL Equal to] del operador [!UICONTROL Text] predeterminado al operador [!UICONTROL Numeric].
+
+1. Establezca la ruta para los valores pares utilizando la función de coincidencia de módulo igual a `0`:
+
+La función de incremento añade uno cada vez que se ejecuta el escenario. Los filtros comprueban el incremento y actúan en su valor, lo que garantiza que los correos electrónicos se distribuyan de manera uniforme.
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ Este módulo crea variables que otros módulos pueden asignar en la ruta. La var
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>Añada las variables que desea que establezca el módulo.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>Para cada variable, introduzca su nombre. Este nombre se muestra al asignar la variable en otros módulos. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>Para cada variable, introduzca el valor de la variable. </td> 
+   <td>Para cada variable que desee agregar, haga clic en <b>Agregar elemento</b> e introduzca el nombre y el valor de la variable.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Seleccione el tiempo que desea que las variables sigan siendo válidas (mantengan el mismo valor).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: la variable es válida para un ciclo. Resulta útil cuando se reciben varios webhooks en una ejecución de escenario (más webhooks = más ciclos). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: la variable es válida para un ciclo. Esto resulta útil cuando se reciben varios webhooks en una ejecución de escenario, porque más webhooks crean más ciclos. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: la variable es válida para una ejecución de escenario. Una ejecución puede contener uno o más ciclos.</li> 
     </ul> </td> 
   </tr> 
@@ -254,7 +247,7 @@ Esta función puede resultar útil, por ejemplo, si desea reducir la carga del s
 
 >[!TIP]
 >
->Si desea pausar el flujo durante períodos de tiempo más largos, es recomendable dividir el escenario en dos escenarios:
+>Si desea pausar el flujo durante períodos de tiempo más largos, le recomendamos que divida el escenario en dos escenarios:
 >
 >* El primer escenario contendría la parte antes de la pausa.
 >* El segundo escenario contendría la parte posterior.
@@ -358,19 +351,21 @@ Este módulo combina los valores de los campos seleccionados de los paquetes rec
    <td> <p>Defina una expresión que contenga uno o varios elementos asignados. Los datos agregados se separan en Grupos con el mismo valor de expresión. Cada grupo genera como un paquete independiente que contiene una clave con la expresión evaluada y el texto agregado. Al hacerlo, puede utilizar la clave como filtro en módulos posteriores.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> Introduzca o asigne el texto que desea que agregue el módulo.</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>Seleccione esta opción para detener el escenario cuando no haya resultados.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> Introduzca o asigne el texto que desea que agregue el módulo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Ejemplo:** puede usar el agregador de texto para insertar más valores (por ejemplo, nombres de clientes o notas) en un solo paquete y enviar un correo electrónico que contenga todos los valores del cuerpo del correo electrónico o del asunto del correo electrónico.
+>[!BEGINSHADEBOX]
+
+**Ejemplo:** puede usar el agregador de texto para insertar más valores (por ejemplo, nombres de clientes o notas) en un solo paquete y enviar un correo electrónico que contenga todos los valores del cuerpo del correo electrónico o del asunto del correo electrónico.
+
+>[!ENDSHADEBOX]
 
 ### Transformadores
 
@@ -380,7 +375,7 @@ Este módulo combina los valores de los campos seleccionados de los paquetes rec
 
 #### [!UICONTROL Compose a string]
 
-Convierte cualquier valor en un tipo de datos de cadena (texto). Facilita la asignación al asignar, por ejemplo, datos binarios.
+Convierte cualquier valor en un tipo de datos de cadena (texto). Esto facilita la asignación al asignar, por ejemplo, datos binarios.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -443,7 +438,7 @@ Comprueba si el valor de entrada coincide con la lista de valores proporcionada.
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>Si la entrada contiene un valor introducido en el campo [!UICONTROL Pattern], se devuelve el valor introducido en el campo [!UICONTROL Output].</p> <p>Si la entrada no coincide con ninguno de los valores establecidos en un campo [!UICONTROL Pattern], se producirá una de las siguientes situaciones:</p> 
+   <td> Para cada caso que desee agregar, haga clic en <b>Agregar elemento</b> e introduzca el patrón y el resultado del elemento. <p>Si la entrada contiene un valor introducido en el campo [!UICONTROL Pattern], se devuelve el valor introducido en el campo [!UICONTROL Output].</p> <p>Si la entrada no coincide con ninguno de los valores establecidos en un campo [!UICONTROL Pattern], se producirá una de las siguientes situaciones:</p> 
     <ul> 
      <li>Se devuelve el valor del campo [!UICONTROL Else]</li> 
      <li>Si no hay ningún valor en el campo [!UICONTROL Else], no se devuelve ningún resultado.</li> 
