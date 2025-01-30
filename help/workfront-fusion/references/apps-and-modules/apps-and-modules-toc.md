@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 91b65888e082d56bf510d0df522f405ff74384d8
+source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 43%
+source-wordcount: '415'
+ht-degree: 42%
 
 ---
 
@@ -46,7 +46,7 @@ Fusion ofrece conectores para muchos de los productos y servicios de Adobe.
 * [Módulos de Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Módulos Frame.io de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-* [Módulos de eventos de Adobe I/O](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+* [Módulos de Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Módulos de Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Módulos de Adobe Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
 * [Módulos Marketo de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
@@ -98,6 +98,7 @@ Fusion ofrece conectores para muchas aplicaciones de terceros.
 * [Módulos de operaciones y finanzas de Microsoft Dynamics](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Módulos de Microsoft OneDrive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [Módulos de Microsoft OneDrive para empresas](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
+* [Módulos de Microsoft SharePoint Online](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Módulos de Microsoft SQL Server](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Módulos de plantilla de Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [Módulos NetSuite](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -108,7 +109,6 @@ Fusion ofrece conectores para muchas aplicaciones de terceros.
 * [Módulos de Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [Módulos de traducción gestionada por SDL](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [Módulos de ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [Módulos SharePoint](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Módulos Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Módulos Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Módulos Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
