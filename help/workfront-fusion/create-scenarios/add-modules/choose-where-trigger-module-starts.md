@@ -4,7 +4,7 @@ description: Algunos módulos de activación le permiten seleccionar el primer p
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 60%
@@ -119,4 +119,4 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
     </tbody> 
    </table>
 
-   <!--Markdown 0032 placeholder-->
+
