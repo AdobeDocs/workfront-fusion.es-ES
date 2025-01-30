@@ -4,9 +4,9 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1269'
 ht-degree: 29%
 
 ---
@@ -21,6 +21,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 <table style="table-layout:auto">
@@ -28,27 +30,27 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Heredado: cualquiera </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -57,6 +59,8 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -128,49 +132,6 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Realizar una llamada de API personalizada
-
-Este módulo de acción realiza una llamada personalizada a la API del Firefly.
-
-Para ver las API disponibles específicas, consulte [API de Adobe Firefly](https://developer.adobe.com/firefly-services/docs/firefly-api/) en la documentación de Adobe Developer.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Firefly], consulte <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Crear una conexión con [!DNL Adobe Firefly]</a> en este artículo.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL URL]</td>
-      <td>
-        <p>Escriba una ruta relativa a <code>https://firefly-api-enterprise-stage.adobe.io/</code>.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
-      </td>
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
-      <td>
-        <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p>
-        <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] añade encabezados de autorización automáticamente.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
 ### Expandir una imagen
 
 Este módulo de acción expande una imagen, de forma opcional con contenido de una solicitud proporcionada.
@@ -206,7 +167,7 @@ Este módulo de acción expande una imagen, de forma opcional con contenido de u
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Introduzca o asigne un entero. Puede utilizar esta misma semilla en otro módulo Expandir una imagen para generar una imagen similar con estilos diferentes. </td> 
+   <td>Para cada inicialización que desee usar, haga clic en <b>Agregar elemento</b> y escriba o asigne un entero. Puede utilizar esta misma semilla en otro módulo Expandir una imagen para generar una imagen similar con estilos diferentes. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,12 +199,12 @@ Este módulo de acción rellena el área enmascarada de una imagen, opcionalment
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> Haga clic en <b>Agregar una imagen</b>. Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos de imagen del archivo de origen.</p> </td> 
+   <td>  <p> Para cada imagen que desee rellenar, haga clic en <b>Agregar una imagen</b> y, a continuación, seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos de imagen del archivo de origen.</p> </td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p> Haga clic en <b>Agregar una máscara</b>. Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de máscara del archivo de origen. El archivo Mask representa la máscara personalizada que se rellenará con el contenido generado.</p> </td> 
+   <td>  <p>  Para cada máscara que desee usar, haga clic en <b>Agregar una máscara</b>. Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de máscara del archivo de origen. El archivo Mask representa la máscara personalizada que se rellenará con el contenido generado.</p> </td> 
 </td> 
   </tr> 
   <tr> 
@@ -320,3 +281,49 @@ Este módulo de acción genera una imagen basada en una solicitud proporcionada.
   </tr> 
  </tbody> 
 </table>
+
+
+
+### Realizar una llamada de API personalizada
+
+Este módulo de acción realiza una llamada personalizada a la API del Firefly.
+
+Para ver las API disponibles específicas, consulte [API de Adobe Firefly](https://developer.adobe.com/firefly-services/docs/firefly-api/) en la documentación de Adobe Developer.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Firefly], consulte <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Crear una conexión con [!DNL Adobe Firefly]</a> en este artículo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL URL]</td>
+      <td>
+        <p>Escriba una ruta relativa a <code>https://firefly-api.adobe.io/</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p>
+        <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p>
+        <p>[!DNL Workfront Fusion] añade encabezados de autorización automáticamente.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
