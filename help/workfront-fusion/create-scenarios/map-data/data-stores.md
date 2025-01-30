@@ -4,9 +4,9 @@ description: Un almacén de datos, similar a una base de datos o tabla simple, p
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 9%
 
 ---
@@ -197,8 +197,8 @@ Puede editar las propiedades y el contenido de un almacén de datos existente en
 
 Las propiedades de un almacén de datos incluyen la estructura de datos que utiliza el almacén de datos, así como el tamaño de éste.
 
-1. Haga clic en **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) en el panel de navegación izquierdo para abrir el área [!UICONTROL Data stores].
-1. Haga clic en **[!UICONTROL Edit]** ![](assets/data-store-edit.png) junto al almacén de datos que desea editar.
+1. Haga clic en **[!UICONTROL Data stores]** ![icono del almacén de datos](assets/data-store-icon.png) en el panel de navegación izquierdo para abrir el área [!UICONTROL Data stores].
+1. Haga clic en **[!UICONTROL Edit]** ![Editar almacén de datos](assets/data-store-edit.png) junto al almacén de datos que desea editar.
 1. (Opcional) Si desea cambiar la estructura de datos utilizada por este almacén de datos a otra estructura de datos existente, selecciónela en la lista desplegable **[!UICONTROL Data structure]**.
 
    O
@@ -210,7 +210,7 @@ Las propiedades de un almacén de datos incluyen la estructura de datos que util
 
 ### Editar el contenido de un almacén de datos
 
-1. Haga clic en el icono **[!UICONTROL Data Store]** ![](assets/data-store-icon.png) en el panel de navegación izquierdo para abrir el área [!UICONTROL Data Store].
+1. Haga clic en el icono **[!UICONTROL Data Store]** ![icono del almacén de datos](assets/data-store-icon.png) en el panel de navegación izquierdo para abrir el área [!UICONTROL Data Store].
 1. Haga clic en **[!UICONTROL Browse]** junto al almacén de datos que desea editar.
 1. (Opcional) Reordene las columnas arrastrándolas a la ubicación deseada.
 1. (Opcional) [!UICONTROL Edit] una sola celda haciendo clic en el icono **[!UICONTROL Edit]** de dicha celda y, a continuación, introduciendo el valor deseado.

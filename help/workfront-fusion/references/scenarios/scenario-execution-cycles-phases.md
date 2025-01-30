@@ -4,9 +4,9 @@ description: En este artículo se describen los eventos que se producen mientras
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 31%
 
 ---
@@ -67,7 +67,7 @@ Si se produce un error durante la fase de operación o confirmación en cualquie
 >
 >Todos los módulos de [!DNL Workfront Fusion] que admiten la reversión (también conocida como transaccionalidad) están marcados con la etiqueta ACID.
 >
->![](assets/acid-modules.png)
+>![Módulos Acid](assets/acid-modules.png)
 >
 >Los módulos no marcados con esta etiqueta no se pueden revertir a su estado inicial cuando se producen errores en otros módulos. Un ejemplo típico de un módulo que no es ACID es la acción [!UICONTROL Email] >[!UICONTROL Send an Email]. Una vez enviado el correo electrónico, no se puede deshacer el envío.
 

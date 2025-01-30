@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede conectar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 77%
+source-wordcount: '498'
+ht-degree: 76%
 
 ---
 
@@ -51,7 +51,7 @@ El módulo devuelve el identificador del archivo y cualquier campo asociado, jun
 >
 >**Ejemplo:** Obtenga el archivo ZIP de la carpeta [!DNL Dropbox] definida (por ejemplo, Archivos), extráigalo mediante el módulo [!UICONTROL Archive] y envíe los archivos extraídos a la dirección de correo electrónico deseada como archivos adjuntos con el módulo [!UICONTROL Email] o [!DNL Gmail].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>![Dropbox de ejemplo](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive]
 
@@ -98,7 +98,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 >
 >**Ejemplo:** Vea los correos electrónicos entrantes usando el módulo [!DNL Gmail] >[!UICONTROL Watch emails]. Si se recibe un correo electrónico, los archivos adjuntos se repiten en paquetes individuales y, a continuación, se archivan en el archivo [!DNL ZIP] y se guardan en la carpeta Dropbox definida.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>![Ejemplo de Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate]
 

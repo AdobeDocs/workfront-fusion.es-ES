@@ -4,9 +4,9 @@ description: Puede copiar módulos, grupos de módulos o escenarios completos en
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 53%
 
 ---
@@ -103,7 +103,7 @@ Al clonar un escenario, se crea una copia del mismo que luego puede editar.
 
       O
 
-      Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+      Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic con el botón derecho en **[!UICONTROL Options]** en la parte superior derecha de la página.
 1. Seleccione **[!UICONTROL Clone]**.

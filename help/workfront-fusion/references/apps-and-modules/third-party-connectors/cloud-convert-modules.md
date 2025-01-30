@@ -4,9 +4,9 @@ description: Módulos CloudConvert
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 24%
 
 ---
@@ -541,7 +541,7 @@ Déclencheur cuando se crea, finaliza o falla un trabajo en su cuenta o tarea.
 >* Si trabaja con el agregador de matrices (por ejemplo, tiene muchos archivos en diferentes formatos para convertir), use la opción **[!UICONTROL I don't know the input format]** en el cuadro de diálogo [!UICONTROL Add a task]. De lo contrario, se devuelve el error.
 >* Vinculando tareas dentro del trabajo (nombre > entrada, nombre > entrada, etc.):
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![Vinculando nombres entre trabajos](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### Tareas
 
@@ -745,13 +745,13 @@ URL: `/v2/tasks`
 
 Método: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![Entrada de ejemplo de API](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 Las coincidencias de la búsqueda se pueden encontrar en la salida del módulo en [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data].
 
 En nuestro ejemplo, se devolvieron 6 tareas:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![Salida de ejemplo de API](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Resolución de problemas {#troubleshooting}
 
@@ -817,6 +817,6 @@ Consulte la siguiente tabla para ver los posibles errores y sus soluciones:
 >1. Abra la configuración del módulo.
 >1. Configure el módulo como se muestra a continuación:
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![Ejemplo de CloudConvert](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. Asegúrese de incluir todos los ajustes en el campo Conversión y opciones específicas del motor: para cada ajuste del paso 5, busque el parámetro correspondiente del paso 13 y su valor correspondiente.

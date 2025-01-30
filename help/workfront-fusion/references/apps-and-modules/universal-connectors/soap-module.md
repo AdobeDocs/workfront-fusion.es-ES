@@ -4,7 +4,7 @@ description: SOAP SOAP Puede utilizar el módulo de la para conectarse a las API
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 16%
@@ -119,7 +119,7 @@ Si el módulo [!UICONTROL SOAP] se niega a procesar el archivo WSDL o genera var
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. Abra una nueva ventana o pestaña del explorador web.
 1. Pegue la URL de WSDL en la barra de direcciones del explorador web y recupere el archivo XML.
@@ -129,7 +129,7 @@ Si el módulo [!UICONTROL SOAP] se niega a procesar el archivo WSDL o genera var
 1. Si el archivo WSDL no se muestra directamente en el explorador web, abra el archivo descargado en un editor de texto.
 1. Busque la etiqueta `<service>` o `<wsdl:service>`:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Una vez localizada, copie la dirección URL del atributo `location`.
 1. En [!DNL Workfront Fusion], pegue la dirección URL en el campo URL del módulo HTTP.
@@ -141,7 +141,7 @@ Si el módulo [!UICONTROL SOAP] se niega a procesar el archivo WSDL o genera var
 1. En [!UICONTROL Workfront Fusion], pegue el contenido copiado en el campo URL del módulo.
 1. Proporcione valores para los parámetros seleccionados reemplazando los signos de interrogación por valores reales:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. Cierre la configuración del módulo haciendo clic en **[!UICONTROL OK]**.
 1. Ejecute el escenario o módulo.

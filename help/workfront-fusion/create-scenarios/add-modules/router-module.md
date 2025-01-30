@@ -4,10 +4,10 @@ description: El módulo Enrutador permite bifurcar el flujo en varias rutas y pr
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 15%
+source-wordcount: '829'
+ht-degree: 14%
 
 ---
 
@@ -71,13 +71,13 @@ Debe agregar un módulo Enrutador antes de configurar las rutas.
 1. En el editor de escenarios, haga clic en el controlador derecho del módulo después del cual desea agregar el enrutador.
 1. Seleccione **[!UICONTROL Flow Control]** > **Enrutador** en la lista de módulos que se muestra.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Conectar la ruta](assets/connect-the-router-350x108.png)
 
    O
 
    Para insertar el módulo Router entre dos módulos, haga clic en el icono de llave inglesa debajo de la ruta que conecta los dos módulos y seleccione **[!UICONTROL Add a router]** del menú.
 
-   ![](assets/insert-router-350x191.png)
+   ![Insertar enrutador](assets/insert-router-350x191.png)
 1. Agregue la primera ruta al enrutador haciendo clic en el controlador derecho del enrutador y agregando un módulo, de forma similar a agregar cualquier módulo.
 1. Para agregar otra ruta, haga clic en el módulo enrutador. Aparecerá una ruta. Agregue módulos a esta ruta según desee.
 
@@ -125,13 +125,13 @@ Puede habilitar una ruta de reserva en el panel de filtros.
 1. En el campo de etiqueta del panel que se muestra, agregue una etiqueta. Esta etiqueta se muestra en el escenario.
 1. Active la casilla de verificación Ruta de reserva.
 
-   ![](assets/fallback-route-350x260.png)
+   ![Ruta de reserva](assets/fallback-route-350x260.png)
 
 1. Haga clic en **[!UICONTROL OK]** para guardar la configuración del filtro.
 
 La ruta de reserva se marca con una flecha diferente en el módulo Enrutador:
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Enrutador de inicio de sesión con flecha](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Ejemplo: caso de uso `if/else`
 
@@ -141,10 +141,10 @@ Un caso de uso típico de la ruta de reserva es continuar el flujo con una ruta 
 
 En este ejemplo, la primera ruta se configura con un filtro. Representa el componente `if`.
 
-![](assets/set-up-a-filter-2-350x242.png)
+![Configurar un filtro en la ruta](assets/set-up-a-filter-2-350x242.png)
 
 La segunda ruta se configura como una ruta de reserva. Representa el componente `else`.
 
-![](assets/enable-fallback-route-option-350x238.png)
+![Habilitar opción de reserva](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

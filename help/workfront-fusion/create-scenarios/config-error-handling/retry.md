@@ -4,9 +4,9 @@ description: A veces, resulta útil volver a ejecutar un módulo que falla si ex
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 10%
 
 ---
@@ -124,7 +124,7 @@ La solución del módulo Repetidor es más compleja, pero más personalizable.
 
 En este escenario de ejemplo, el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request] representa el módulo que podría dar error:
 
-![](assets/http-make-request.png)
+![HTTP realiza una solicitud](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 28%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 Muchos servicios proporcionan enlaces web para enviar notificaciones instantáneas cada vez que se produce un determinado cambio (evento) en el servicio. Para procesar estos eventos, le recomendamos que utilice déclencheur instantáneas. Los déclencheur instantáneos muestran la etiqueta `Instant` en la lista de módulos de un conector determinado.
 
-![](assets/instant.png)
+![Instantáneo](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
 
 Cuando se configura un déclencheur instantáneo, se le pide que seleccione cuándo se ejecuta.
 
-![](assets/schedule-setting.png)
+![Configuración de horario](assets/schedule-setting.png)
 
 Seleccione `Immediately` para ejecutar el escenario inmediatamente cuando [!DNL Workfront Fusion] reciba nuevos eventos del servicio. Estos eventos se envían inmediatamente a una cola y, a continuación, se procesan en el escenario de uno en uno, en el mismo orden en que se reciben los datos.
 
@@ -62,7 +62,7 @@ Para obtener más información sobre los ciclos, vea [Ejecución de escenarios, 
 
 Si utiliza cualquier otra configuración de programación distinta de [!UICONTROL Immediately], el escenario se ejecutará a los intervalos especificados. Dado que se pueden agrupar varios enlaces web en la cola durante el intervalo, se recomienda establecer la opción [!UICONTROL Maximum number of cycles] en un valor mayor que el valor predeterminado 1 para procesar más enlaces web en un escenario en el que se ejecute:
 
-1. Haga clic en el icono [!UICONTROL Scenario settings] ![](assets/scenario-settings-icon.png) en la parte inferior del escenario.
+1. Haga clic en el icono [!UICONTROL Scenario settings] ![icono de configuración de escenario](assets/scenario-settings-icon.png) en la parte inferior del escenario.
 1. En el panel **[!UICONTROL Scenario settings]** que aparece, escriba un número en el campo **[!UICONTROL Max number of cycles]** para indicar el número de eventos de la cola que desea ejecutar cada vez que ejecute el escenario.
 
 Los eventos que permanecen en cola se procesarán la próxima vez que se ejecute el escenario, hasta el número establecido en el campo Número máximo de ciclos.

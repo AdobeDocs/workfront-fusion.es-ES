@@ -4,9 +4,9 @@ description: Para usar [!DNL Google Sheets] con la extensión de [!DNL Adobe Wor
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 83%
 
 ---
@@ -726,7 +726,7 @@ Utilice el módulo [!UICONTROL Search Rows (Advanced)] y utilice esta fórmula p
 1. Ejecute el escenario.
 1. En Hojas de cálculo de Google, elija **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... en la barra de menús principal.
 
-1. En la ventana [!UICONTROL Drawing], haga clic en el icono **[!UICONTROL Text box]** ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) cerca de la parte superior de la ventana.
+1. En la ventana [!UICONTROL Drawing], haga clic en el icono **[!UICONTROL Text box]** ![Cuadro de texto](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) cerca de la parte superior de la ventana.
 1. Diseñe un botón y haga clic en el botón **[!UICONTROL Save and Close]** en la esquina superior derecha:
 1. El botón se colocará en la hoja de cálculo. Haga clic en los tres puntos verticales de la esquina superior derecha del botón:
 1. Elija **[!UICONTROL Assign script..].** en el menú.
@@ -750,7 +750,7 @@ Utilice el módulo [!UICONTROL Search Rows (Advanced)] y utilice esta fórmula p
 
 Si almacena un valor de fecha en una hoja de cálculo sin ningún formato, aparecerá en la hoja de cálculo como texto en formato ISO 8601. Sin embargo, las fórmulas o funciones de [!DNL Google Sheets] que trabajan con fechas que no entienden este texto (ejemplo: fórmula `=A1+10`) mostrarán el siguiente error:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![Error](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 Para permitir que [!DNL Google Sheets] entienda la fecha, debe aplicarle formato con la función [[!UICONTROL formatDate] (fecha; formato; [zona horaria])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda). El formato correcto pasado a la función como segundo argumento depende de la configuración regional de la hoja de cálculo.
 
@@ -764,7 +764,7 @@ Para determinar el formato correcto:
 
 **Ejemplo:** Uso del formato `MM/DD/YYYY HH:mm:ss` para la configuración regional de Estados Unidos:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![Fórmula de hora local](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Aprovechar las funciones de [!DNL Google Sheets]
 

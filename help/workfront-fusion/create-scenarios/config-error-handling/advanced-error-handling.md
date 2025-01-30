@@ -4,9 +4,9 @@ description: Puede añadir técnicas avanzadas de gestión de errores a la ruta 
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 16%
 
 ---
@@ -89,11 +89,11 @@ Este escenario de ejemplo muestra cómo funcionan estos filtros para la administ
 
 Si utiliza el módulo Dropbox > Crear una carpeta y ya existe una carpeta con el mismo nombre, el módulo genera un error de datos:
 
-![](assets/dropbox.png)
+![Error en el Dropbox](assets/dropbox.png)
 
 El escenario completo funciona de la siguiente manera:
 
-![](assets/dropbox-scenario.png)
+![Escenario de Dropbox](assets/dropbox-scenario.png)
 
 1. El módulo Herramientas > Establecer variable contiene el nombre de la carpeta
 1. El módulo HTTP > Obtener un archivo obtiene el archivo que debe cargarse en la carpeta
@@ -111,19 +111,19 @@ A continuación se muestra una explicación detallada de la ruta DataError.
 
 Para utilizar la carpeta existente en los módulos posteriores, como Upload a file, debe añadir una ruta de controlador de error al módulo y recuperar la ruta de la carpeta que se va a asignar al módulo de directiva Resume que sigue:
 
-![](assets/add-error-handler-route.png)
+![Agregar ruta del controlador de error](assets/add-error-handler-route.png)
 
 El filtro de la primera ruta está configurado para controlar únicamente el error concreto (DataError) que aparece cuando ya existe una carpeta con el mismo nombre:
 
-![](assets/condition.png)
+![Condición](assets/condition.png)
 
 El Dropbox > List all files in a folder module está configurado para devolver todas las carpetas de la carpeta de destino. El siguiente filtro solo pasa el que estábamos intentando crear originalmente. (El nombre de la carpeta se almacena en el 33. Elemento Nombre de carpeta.)
 
-![](assets/condition2.png)
+![Condición](assets/condition2.png)
 
 A continuación, la directiva Resume proporciona la ruta Folder como salida para el módulo con error. Tenga en cuenta que el ID de carpeta se ha dejado en blanco, ya que el módulo Cargar un archivo no lo necesita.
 
-![](assets/flow-control.png)
+![Control de flujo](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Ejemplo:
 
 Una ruta de controladores de error anidada con filtros:
 
-![](assets/nested-error-handling-route.png)
+![Ruta anidada de control de errores](assets/nested-error-handling-route.png)
 
 En este escenario, la segunda ruta del controlador de errores está anidada en la primera ruta del controlador de errores.
 

@@ -4,9 +4,9 @@ description: La carpeta [!UICONTROL Incomplete executions] almacena ejecuciones 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 60%
 
 ---
@@ -79,7 +79,7 @@ Si un módulo encuentra un error durante su operación, se añade una nueva ejec
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ Si desea ver el registro de todas las operaciones del módulo antes de intentar 
 1. Abra el registro del módulo donde se muestran todas las operaciones del módulo.
 1. Busque la operación fallida y haga clic en **[!UICONTROL Resolve]**:
 
-   ![](assets/resolve-btn-350x188.png)
+   ![Botón Resolver](assets/resolve-btn-350x188.png)
 
 ## Opciones relacionadas con ejecuciones incompletas
 

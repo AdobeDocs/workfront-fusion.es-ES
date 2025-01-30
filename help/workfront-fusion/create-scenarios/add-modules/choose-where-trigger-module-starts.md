@@ -4,10 +4,10 @@ description: Algunos módulos de activación le permiten seleccionar el primer p
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 60%
+source-wordcount: '325'
+ht-degree: 59%
 
 ---
 
@@ -73,7 +73,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
    Haga clic con el botón derecho en el déclencheur del módulo y seleccione **Elegir por dónde empezar**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Elija por dónde empezar](assets/choose-where-to-start.png)
 
 1. Seleccione una opción en el cuadro **[!UICONTROL Choose where to start]** que aparece.
 

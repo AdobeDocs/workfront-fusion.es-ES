@@ -4,9 +4,9 @@ description: Los módulos  [!DNL Adobe Workfront Fusion Google Forms]  permiten 
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 82%
 
 ---
@@ -85,7 +85,7 @@ Para trabajar con las respuestas del formulario, se debe crear la hoja de cálcu
 
 1. Abra el formulario.
 1. Vaya a la ficha **[!UICONTROL Responses]**.
-1. Haga clic en el icono **[!UICONTROL Create Spreadsheet]** ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Haga clic en el icono **[!UICONTROL Create Spreadsheet]** ![Icono de hoja de cálculo](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Seleccione si desea crear una hoja de cálculo nueva o usar una existente
 1. Haga clic en **[!UICONTROL Create]**.

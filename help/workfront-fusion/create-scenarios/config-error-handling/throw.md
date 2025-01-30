@@ -8,10 +8,10 @@ description: En algunos casos, es posible que desee detener forzosamente la ejec
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 41%
+source-wordcount: '380'
+ht-degree: 40%
 
 ---
 
@@ -85,4 +85,4 @@ A continuación, puede adjuntar una de las directivas de gestión de errores a l
 
 El ejemplo siguiente muestra el uso de la directiva [!DNL Rollback]:
 
-![](assets/rollback-directive.png)
+![Directiva de reversión](assets/rollback-directive.png)

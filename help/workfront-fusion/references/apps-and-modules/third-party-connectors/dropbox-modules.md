@@ -4,9 +4,9 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2876'
 ht-degree: 88%
 
 ---
@@ -744,15 +744,15 @@ Para modificar automáticamente la dirección URL, puede usar la función `repla
 
 * Reemplazar www por dl
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
+  ![Reemplazar www por dl](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * Y para quitar ?dl=0
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
+  ![Quitar DL](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 Para hacerlo en un solo paso, combine estas funciones:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
+![Reemplazar ambos](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 También puede copiarlo y pegarlo en el campo. Reemplazar `1.url` por la URL.
 

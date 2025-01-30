@@ -4,10 +4,10 @@ description: Puede crear nuevas plantillas de escenario en  [!DNL Adobe] Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 7%
+source-wordcount: '745'
+ht-degree: 6%
 
 ---
 
@@ -71,16 +71,16 @@ Puede crear una plantilla en un proceso similar a la creación de un escenario. 
 
 ### Creación de una plantilla
 
-1. Haga clic en **[!UICONTROL Templates]** ![](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en **[!UICONTROL Templates]** ![icono de plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
 1. Haga clic en **[!UICONTROL Create a new template]** en la esquina superior derecha.
 1. (Opcional) Cambie el nombre de la plantilla reemplazando el valor predeterminado **[!UICONTROL New template name]** en la esquina superior izquierda.
-1. (Opcional) Para cambiar el idioma de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) y seleccione el idioma en la lista desplegable Idioma.
+1. (Opcional) Para cambiar el idioma de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![Icono de configuración de escenario](assets/scenario-settings-icon.png) y seleccione el idioma en la lista desplegable Idioma.
 
    >[!IMPORTANT]
    >
    >La selección Idiomas corresponde a los idiomas disponibles en la configuración del sistema y afecta únicamente al nombre de la plantilla pública y su descripción. No puede cambiar un idioma de plantilla una vez guardada la plantilla.
 
-1. (Opcional) Para escribir una descripción de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) e introduzca la descripción.
+1. (Opcional) Para escribir una descripción de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![icono de configuración de escenario](assets/scenario-settings-icon.png) e introduzca la descripción.
 1. Añada aplicaciones, módulos y herramientas con los mismos procesos que al agregar módulos a un escenario.
 
    Para obtener instrucciones, consulte los artículos en [Agregar módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -94,7 +94,7 @@ Puede crear una plantilla en un proceso similar a la creación de un escenario. 
    >Si la plantilla incluye módulos que requieren agregar la conexión, las credenciales u otra información confidencial, esta información no se comparte con los usuarios de la plantilla.
 
 1. (Opcional) Haga clic en **[!UICONTROL Run once]** para probar la plantilla.
-1. Haga clic en el icono **[!UICONTROL Save]** ![](assets/save-icon.png) para guardar la plantilla.
+1. Haga clic en el icono **[!UICONTROL Save]** ![Guardar icono](assets/save-icon.png) para guardar la plantilla.
 
 Al guardar la plantilla, los integrantes del equipo la verán. Si desea que la plantilla sea accesible fuera del equipo, debe enviar una solicitud para que se apruebe y publique. La solicitud se envía al equipo de Adobe Workfront Fusion para su aprobación. Una vez aprobada, otros miembros externos al equipo pueden acceder a la plantilla.
 
@@ -113,13 +113,13 @@ Para obtener información sobre cómo publicar plantillas, consulte [Publish y c
 
    El escenario se copia en una página Nueva plantilla.
 1. (Opcional) Cambie el nombre de la plantilla reemplazando el valor predeterminado **[!UICONTROL New template name]** en la esquina superior izquierda.
-1. (Opcional) Para cambiar el idioma de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) y seleccione el idioma en la lista desplegable Idioma.
+1. (Opcional) Para cambiar el idioma de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![Icono de configuración de escenario](assets/scenario-settings-icon.png) y seleccione el idioma en la lista desplegable Idioma.
 
    >[!IMPORTANT]
    >
    >La selección Idiomas corresponde a los idiomas disponibles en la configuración del sistema y afecta únicamente al nombre de la plantilla pública y su descripción. No puede cambiar un idioma de plantilla una vez guardada la plantilla.
 
-1. (Opcional) Para escribir una descripción de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) e introduzca la descripción.
+1. (Opcional) Para escribir una descripción de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![icono de configuración de escenario](assets/scenario-settings-icon.png) e introduzca la descripción.
 1. Edite las aplicaciones, los módulos y las herramientas según desee, utilizando los mismos procesos que al añadir módulos a un escenario.
 
    Para obtener instrucciones, consulte los artículos en [Agregar módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -131,7 +131,7 @@ Para obtener información sobre cómo publicar plantillas, consulte [Publish y c
    >Si la plantilla incluye módulos que requieren agregar la conexión, las credenciales u otra información confidencial, esta información no se comparte con los usuarios de la plantilla.
 
 1. (Opcional) Haga clic en **[!UICONTROL Run once]** para probar la plantilla.
-1. Haga clic en el icono **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Haga clic en el icono **[!UICONTROL Save]** ![Guardar icono](assets/save-icon.png).
 
 ## Configurar la funcionalidad de [!UICONTROL Wizard] {#set-up-wizard-functionality}
 

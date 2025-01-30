@@ -4,9 +4,9 @@ description: Los módulos de Google Slides de Adobe Workfront Fusion le permiten
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1243'
 ht-degree: 73%
 
 ---
@@ -457,17 +457,17 @@ Realiza una llamada de API autorizada arbitraria.
 >
 >**Ejemplo:** con una llamada de API, puede obtener los detalles de presentación del ID de presentación que ha introducido. Puede encontrar el ID de presentación en la dirección URL cuando abra la presentación en [!DNL Google Slides].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+>![Ejemplo de llamada API](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 >
 >La siguiente llamada de API devuelve los detalles de la presentación:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+>![Detalles de presentación](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 >
 >Las coincidencias de la búsqueda se pueden encontrar en la salida del módulo en [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId].
 >
 >En nuestro ejemplo, se han devuelto los detalles de presentación solicitados:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+>![Detalles de la presentación](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 #### [!UICONTROL Insert Links in a Presentation]
 

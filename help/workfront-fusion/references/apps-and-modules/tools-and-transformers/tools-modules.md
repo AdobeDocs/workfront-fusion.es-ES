@@ -4,9 +4,9 @@ description: La sección  [!DNL Adobe Workfront Fusion Tools] incluye varios mó
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 63%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 63%
 
 La sección [!DNL Adobe Workfront Fusion Tools] incluye varios módulos útiles que pueden mejorar su escenario.
 
-Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicaciones o en el icono de [!UICONTROL Tools] ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en la parte inferior de la pantalla.
+Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicaciones o en el icono de [!UICONTROL Tools] ![icono de herramientas](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en la parte inferior de la pantalla.
 
 ## Requisitos de acceso
 
@@ -161,14 +161,14 @@ Este módulo se puede utilizar para implementar una asignación &quot;round robi
 
 El siguiente escenario envía un correo electrónico al primer destinatario después de ejecutar cada escenario impar y al segundo destinatario después de ejecutar cada escenario par.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![Ejemplo de correo electrónico](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 Para crear este escenario, haga lo siguiente:
 
 1. Establezca el campo **[!UICONTROL Reset a value]** del módulo en Nunca.
 1. Defina la ruta para los valores impares. Establezca el filtro para esta ruta mediante la función de coincidencia de módulo igual a `1`:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Números impares](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **Nota**: No olvide cambiar el operador [!UICONTROL Equal to] del operador [!UICONTROL Text] predeterminado al operador [!UICONTROL Numeric].
 

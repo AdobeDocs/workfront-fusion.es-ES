@@ -4,9 +4,9 @@ description: Puede usar [!DNL Adobe Workfront Fusion] para conectarse a Microsof
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 86%
 
 ---
@@ -92,6 +92,6 @@ Si otro módulo intenta acceder a los mismos datos, debe esperar hasta que final
 
 Activar la confirmación automática. La confirmación automática finaliza (confirma) todas las transacciones inmediatamente después de que se haya completado la ejecución del módulo.
 
-1. Haga clic en el icono [!UICONTROL Scenario settings] ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) en la parte inferior de la pantalla.
+1. Haga clic en el icono [!UICONTROL Scenario settings] ![icono de configuración de escenario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)en la parte inferior de la pantalla.
 1. Haga clic en la casilla **[!UICONTROL Auto commit]**.
 1. Haga clic en **[!UICONTROL OK]** para guardar la configuración del escenario.

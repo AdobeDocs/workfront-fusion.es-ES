@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 85%
+source-wordcount: '1637'
+ht-degree: 84%
 
 ---
 
@@ -229,13 +229,13 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
 >
 >Especifica cuándo comienza la solicitud a comprobar los cambios de estado de los sobres de la cuenta.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
+>![Ejemplo de configuración de Docusign](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >El resultado se puede encontrar en la salida del módulo en Paquete > Cuerpo > Sobres.
 >
 >En nuestro ejemplo, se devolvieron 6 sobres:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+>![Ejemplo de salida de docusign](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 

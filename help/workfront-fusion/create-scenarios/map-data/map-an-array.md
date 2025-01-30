@@ -4,10 +4,10 @@ description: Puede asignar una matriz o elementos de matriz individuales a un ca
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 25%
+source-wordcount: '875'
+ht-degree: 24%
 
 ---
 
@@ -106,7 +106,7 @@ Para agregar elementos a la matriz:
 
 Los elementos de la matriz se muestran como un número entre corchetes después del nombre de la matriz. Puede asignar un elemento individual de una matriz a un campo utilizando este número de índice.
 
-![](assets/map-array-1st-element.png)
+![Asignar primer elemento](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Para asignar un elemento de matriz:
 
 1. Para asignar un elemento diferente de la matriz, haga clic en [1] e introduzca el número de índice del elemento de matriz que desea asignar.
 
-   ![](assets/access-another-element.png)
+   ![Acceder a otro elemento](assets/access-another-element.png)
 
 ### Asignar un elemento de una matriz con una clave determinada
 
@@ -138,13 +138,13 @@ Algunas matrices contienen colecciones con elementos clave-valor como metadatos,
 
 En el siguiente ejemplo se muestra el resultado de la aplicación [!DNL Jira].
 
-![](assets/output-of-jira-app-350x100.png)
+![Salida del módulo Jira](assets/output-of-jira-app-350x100.png)
 
 Este ejemplo obtiene un nombre de archivo de una matriz de archivos adjuntos, para el archivo adjunto específico con un ID de 10108.
 
 Este ejemplo genera el siguiente resultado:
 
-![](assets/output-from-jira-350x261.png)
+![Salida del módulo Jira](assets/output-from-jira-350x261.png)
 
 La fórmula se puede explicar de la siguiente manera:
 
@@ -153,7 +153,7 @@ La fórmula se puede explicar de la siguiente manera:
    1. El primer parámetro de la función `map()` es todo el elemento de matriz.
    1. El segundo parámetro es el nombre sin procesar del elemento de valor. Para obtener el nombre sin procesar, pase el ratón sobre el elemento del panel [!UICONTROL mapping]:
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![Obtener nombre sin procesar](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ La fórmula se puede explicar de la siguiente manera:
 
    1. El tercer parámetro es el nombre sin procesar del elemento clave:
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![Tercer parámetro](assets/3rd-parameter-350x166.png)
 
    1. El cuarto parámetro es el valor de clave dado.
 
@@ -175,7 +175,7 @@ La fórmula se puede explicar de la siguiente manera:
 
 Este ejemplo genera el siguiente resultado:
 
-![](assets/output-from-jira-350x261.png)
+![Salida del módulo Jira](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Para obtener más información acerca de la función `get()`, vea [Funciones gen
 
 Las matrices se pueden convertir en una serie de paquetes mediante el módulo [!UICONTROL Iterator]. Para obtener más información, consulte [[!UICONTROL Iterator] módulo](/help/workfront-fusion/references/modules/iterator-module.md).
 
-![](assets/series-of-bundles.png)
+![Serie de paquetes](assets/series-of-bundles.png)

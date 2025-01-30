@@ -5,9 +5,9 @@ description: Este artículo explica cómo se ejecuta un escenario y cómo fluyen
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ El primer paso del escenario, realizado por el primer módulo, es inspeccionar l
 
 Si el primer módulo devuelve un paquete, este pasará por el resto del escenario. En este ejemplo, el paquete iría al segundo módulo, que convierte la solicitud en un proyecto.
 
-![](assets/example-execution-flow-wf-only.png)
+![Flujo de ejecución del escenario de Workfront](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ El primer paso del escenario, realizado por el primer módulo, es inspeccionar l
 
 Si se devuelve un paquete, este pasa por el resto del escenario. En este ejemplo, el resto del escenario consiste en el segundo módulo, que carga el paquete en la carpeta [!DNL Dropbox].
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![Flujo de ejecución del escenario de integración](assets/example-execution-flow-wf-dropbox.png)
 
 Si el primer módulo devuelve varios paquetes, el primer paquete se cargará en [!DNL Dropbox] antes de que se cargue el segundo paquete. Luego se carga el segundo paquete, luego el tercero, etc.
 
@@ -71,7 +71,7 @@ Para cada módulo, el paquete pasa por un proceso de 4 pasos antes de pasar al s
 
 Una vez finalizada la ejecución de un escenario, cada módulo muestra un icono con el número de operaciones realizadas. Puede hacer clic en este icono para mostrar la información detallada sobre los paquetes procesados para cada paso del proceso. Puede ver qué configuración de módulo se utilizó y qué paquetes devolvió cada módulo.
 
-![](assets/Info-processed-bundles.png)
+![Paquetes procesados](assets/Info-processed-bundles.png)
 
 En este ejemplo, el módulo recibió información de entrada como:
 

@@ -4,10 +4,10 @@ description: Las siguientes plantillas públicas están disponibles actualmente 
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: ba205314949f2b061ba483efa8b972367928f8fe
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 96%
+source-wordcount: '1279'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Las siguientes plantillas públicas están disponibles actualmente en Adobe Work
 
 Es posible que su equipo u organización tenga disponibles otras plantillas creadas por el equipo.
 
-Para ver las plantillas disponibles, haga clic en el icono **Plantillas** ![](assets/templates-icon.png) del menú de navegación lateral en Fusion.
+Para ver las plantillas disponibles, haga clic en el icono **Plantillas** ![Icono de plantillas](assets/templates-icon.png) en el menú de navegación lateral en Fusion.
 
 ## Plantillas de Workfront
 

@@ -4,9 +4,9 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 69%
 
 ---
@@ -1212,7 +1212,7 @@ Este módulo de acción añade un comentario a una tarjeta seleccionada.
 
 Si desea editar una tarjeta o crear un nuevo comentario, debe conocer el ID de la tarjeta o su vínculo abreviado. Puede obtener esta información de la salida del déclencheur [!UICONTROL New Card]. El enlace corto para una tarjeta también se puede obtener abriendo la tarjeta y haciendo clic en el botón [!UICONTROL Share]. El vínculo abreviado se encuentra en el cuadro [!UICONTROL Link to this card], al final de la dirección URL después de `https://trello.com/c/`.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![Compartir y más](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### Buscar los ID de otros objetos en [!DNL Trello]
 

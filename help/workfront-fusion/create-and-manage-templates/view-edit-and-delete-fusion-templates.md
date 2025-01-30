@@ -7,10 +7,10 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 26%
+source-wordcount: '839'
+ht-degree: 25%
 
 ---
 
@@ -117,7 +117,7 @@ Para obtener instrucciones sobre cómo crear un escenario a partir de una planti
 
 Puede editar cualquier plantilla disponible en la ficha [!UICONTROL Team templates].
 
-1. Haga clic en el icono **[!UICONTROL Templates]** ![](assets/templates-icon.png) en el menú de navegación lateral.
+1. Haga clic en el icono **[!UICONTROL Templates]** ![Icono de plantillas](assets/templates-icon.png) en el menú de navegación lateral.
 1. Haga clic en la ficha **[!UICONTROL Team templates]**.
 1. Haga clic en la ficha **[!UICONTROL Private]**.
 1. Haga clic en la plantilla que desee editar.
@@ -128,7 +128,7 @@ Puede editar cualquier plantilla disponible en la ficha [!UICONTROL Team templat
    Haga clic en el diagrama de plantilla.
 
 1. Realice cambios en la plantilla. Puede acceder a todas las opciones disponibles al crear la plantilla. Para ver estas opciones, consulte [Crear nuevas plantillas](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Haga clic en el icono **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Haga clic en el icono **[!UICONTROL Save]** ![Guardar icono](assets/save-icon.png).
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Solo puede eliminar plantillas que aún no estén aprobadas. Si desea eliminar u
 
 Tenga en cuenta que después de eliminar una plantilla, esta no se puede restaurar. Las plantillas de equipo están disponibles para todos los miembros de su equipo, por lo que antes de eliminarlas, le recomendamos que se ponga en contacto con sus equipos para asegurarse de que la plantilla no es necesaria.
 
-1. Haga clic en el icono **[!UICONTROL Templates]** ![](assets/templates-icon.png) en el menú de navegación lateral.
+1. Haga clic en el icono **[!UICONTROL Templates]** ![Icono de plantillas](assets/templates-icon.png) en el menú de navegación lateral.
 1. Haga clic en la ficha **[!UICONTROL Team templates]**.
 1. Haga clic en **[!UICONTROL Delete]** junto al nombre de la plantilla
 

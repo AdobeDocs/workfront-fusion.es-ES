@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 82%
+source-wordcount: '795'
+ht-degree: 81%
 
 ---
 
@@ -211,12 +211,12 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
 
 URL: `/v1/dashboard`
 
-Método: `GET`
+Método: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Ejemplo de llamada de API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 El resultado se puede encontrar en los paneles de control Salida del módulo, en Paquete > Cuerpo >.
 
 En nuestro ejemplo, se han devuelto 3 paneles de control:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Respuesta de la API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)

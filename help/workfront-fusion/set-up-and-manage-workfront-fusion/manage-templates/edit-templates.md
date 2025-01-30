@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 86b0d7b16a4ed7e15888f6ee1a58f0279e96fb70
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 13%
 
 ---
@@ -73,13 +73,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Haga clic en **[!UICONTROL All Templates]** en el panel de navegación izquierdo.
 1. Haga clic en **[!UICONTROL Detail]** a la derecha de la plantilla que desee editar.
 1. (Opcional) Cambie el nombre de la plantilla haciendo clic en **Opciones** en la esquina superior derecha y seleccionando **Cambiar nombre**.
-1. (Opcional) Para cambiar el idioma de la plantilla, haga clic en **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png) y seleccione el idioma en la lista desplegable Idioma.
+1. (Opcional) Para cambiar el idioma de la plantilla, haga clic en **[!UICONTROL Create a new template]** ![Icono de configuración de escenario](assets/fusion-scenario-settings-icon.png) y seleccione el idioma en la lista desplegable Idioma.
 
    >[!IMPORTANT]
    >
    >La selección Idiomas corresponde a los idiomas disponibles en la configuración del sistema y afecta únicamente al nombre de la plantilla pública y su descripción. No puede cambiar un idioma de plantilla una vez guardada la plantilla.
 
-1. (Opcional) Para editar la descripción de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png) e introduzca la descripción.
+1. (Opcional) Para editar la descripción de la plantilla, haga clic en **[!UICONTROL Set up a template]** ![icono de configuración del escenario](assets/fusion-scenario-settings-icon.png) e introduzca la descripción.
 1. Añada o edite aplicaciones, módulos y herramientas del mismo modo que lo haría al crear un escenario estándar.
 
    Para agregar ayuda contextual a los módulos, consulte [Configurar la funcionalidad de [!UICONTROL Wizard]](#set-up-wizard-functionality) en este artículo.
@@ -91,7 +91,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >Si la plantilla incluye módulos que requieren agregar la conexión, las credenciales u otra información confidencial, esta información no se comparte con los usuarios de la plantilla.
 
 1. (Opcional) Haga clic en **[!UICONTROL Run once]** para probar la plantilla.
-1. Haga clic en el icono **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Haga clic en el icono **[!UICONTROL Save]** ![Guardar icono](assets/save-icon.png).
 
 
 ## Configurar la funcionalidad de [!UICONTROL Wizard]

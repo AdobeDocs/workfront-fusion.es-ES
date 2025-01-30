@@ -5,9 +5,9 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 46%
 
 ---
@@ -75,7 +75,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 1. Haga clic en cualquier lugar del escenario para ingresar al editor de escenarios.
 1. Haga clic en el icono de engranaje situado cerca de la esquina inferior izquierda de la página.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Configuración de escenario](assets/scenario-settings-350x221.png)
 
    En el panel [!UICONTROL Scenario settings] que se muestra, puede configurar varias opciones avanzadas para el escenario.
 1. Habilite o deshabilite la configuración de Escenario según sea necesario. Consulte [Opciones de configuración de escenarios](#scenario-settings-options) a continuación.
@@ -162,13 +162,13 @@ La configuración de más ciclos puede resultar útil cuando desea evitar la int
 
 **Ejemplos:** [!DNL Workfront] > [!UICONTROL Watch record] observa nuevos problemas que se producen y [!DNL Workfront] >[!UICONTROL Convert object] convierte la nueva solicitud en un proyecto y le asigna la plantilla adecuada.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Configuración de escenario](assets/scenario-settings-ex-1-350x157.png)
 
 La configuración [!UICONTROL more cycles] solo se aplica cuando se programa la ejecución del escenario. Al usar el botón [!UICONTROL Run once], se tiene en cuenta la configuración del ciclo.
 
 #### El número máximo de ciclos se establece en 1 (predeterminado)
 
-![](assets/max-number-cycles-1-350x201.png)
+![Número máximo de ciclos](assets/max-number-cycles-1-350x201.png)
 
 El número máximo de ciclos en el módulo Workfront > Ver registros está establecido en `10`.
 Si se envían 100 solicitudes a [!DNL Workfront] y el campo Número máximo de ciclos se establece en 10, entonces quedan 90 archivos sin procesar después de que se ejecute un escenario. Los siguientes 10 archivos se procesan en la posterior ejecución de escenario programada.
@@ -183,7 +183,7 @@ Todos los archivos se procesan en un escenario de ejecución.
 
 Puede ver los ciclos ya ejecutados en los detalles del escenario:
 
-![](assets/scenario-detail-350x207.png)
+![Detalle del escenario](assets/scenario-detail-350x207.png)
 
 Para obtener más información acerca de esta página, vea [Detalles del escenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 

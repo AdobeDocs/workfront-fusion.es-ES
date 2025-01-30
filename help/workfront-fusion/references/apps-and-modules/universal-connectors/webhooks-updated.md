@@ -4,10 +4,10 @@ description: Un webhook es una llamada HTTP activada por un evento. Puede utiliz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 69%
+source-wordcount: '1331'
+ht-degree: 68%
 
 ---
 
@@ -120,7 +120,7 @@ O bien, puede enviar los datos de ejemplo a través del módulo [!UICONTROL HTTP
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![Nueva configuración de escenario](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Abra el escenario con el módulo [!UICONTROL Webhooks] en una pestaña o ventana independiente del explorador.
 1. En el módulo de webhooks, haga clic en **[!UICONTROL Redetermine data structure]**.
@@ -132,7 +132,7 @@ O bien, puede enviar los datos de ejemplo a través del módulo [!UICONTROL HTTP
 
    Un mensaje &quot;[!UICONTROL Successfully determined]&quot; significa que el módulo ha determinado correctamente la estructura de datos.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![Determinado correctamente](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Haga clic en **[!UICONTROL OK]** para guardar la estructura de datos.
 
@@ -241,7 +241,7 @@ Puede extraer un valor de encabezado determinado con la combinación de las func
 >
 >El ejemplo siguiente muestra una fórmula que extrae el valor del encabezado `authorization` de la matriz `Headers[]`. La fórmula se utiliza en un filtro que compara el valor extraído con el texto dado para pasar solo webhooks si hay una coincidencia.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![Configurar un filtro](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >Para obtener más información sobre cómo obtener un elemento de una matriz con una clave determinada, vea [Asignar un elemento de una matriz con una clave determinada](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) en el artículo Asignar una matriz.
 
@@ -311,11 +311,11 @@ El tiempo de espera para enviar una respuesta es de 40 segundos. Si la respuesta
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![Encabezados personalizados](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >Esto producirá una respuesta del HTML que se mostrará en un explorador web:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![Respuesta HEML](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Ejemplo de redireccionamiento
 
@@ -342,7 +342,7 @@ El tiempo de espera para enviar una respuesta es de 40 segundos. Si la respuesta
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Respuesta de webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Desactivación de un webhook
 
@@ -360,6 +360,6 @@ Los webhooks desactivados se borran y no se registran automáticamente si no est
 
 Si faltan algunos elementos en el panel de asignación en la configuración de los módulos que siguen al módulo [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook], haga clic en el módulo **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** para abrir su configuración y haga clic en **[!UICONTROL Re-determine data structure]**:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![Volver a determinar la estructura de datos](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 A continuación, siga los pasos descritos en la sección [Configurar la estructura de datos del webhook](#configure-the-webhook-s-data-structure) en este artículo.

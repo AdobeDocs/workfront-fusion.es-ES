@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 21%
+source-wordcount: '1245'
+ht-degree: 20%
 
 ---
 
@@ -84,11 +84,11 @@ Puede usar un módulo [!DNL Microsoft Word Template] para combinar datos de vari
 
 Por ejemplo, podría usar esta plantilla [!DNL Microsoft Word]:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Plantilla de Word anterior a](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 Para crear este documento:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Plantilla de Word rellenada](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## Acerca de las etiquetas de valor
 
@@ -110,7 +110,7 @@ Una etiqueta de valor simple se sustituye simplemente por un valor correspondien
 
 Para ello, debe configurar el módulo de la siguiente manera:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Valor simple de plantilla de Word](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Etiqueta de condición {#condition-tag}
 
@@ -125,7 +125,7 @@ Puede utilizar una etiqueta de condición para ajustar el texto que se debe repr
 
 Para ello, debe configurar el módulo de la siguiente manera:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Plantilla de Word condicional](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 En el documento, el número de teléfono aparecería de la siguiente manera:
 
@@ -148,7 +148,7 @@ Puede utilizar una etiqueta de bucle, también conocida como etiqueta de secció
 Para ello, debe configurar el módulo de la siguiente manera:
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Rellenar un documento](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 El módulo crearía el siguiente documento:
 

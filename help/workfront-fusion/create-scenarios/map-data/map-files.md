@@ -4,9 +4,9 @@ description: Algunos módulos tienen la capacidad de procesar archivos. Estos m�
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 39%
 
 ---
@@ -92,10 +92,10 @@ Para asignar un archivo:
 1. En el módulo de destino, que es el destino al que está asignando, busque el área **archivo Source**.
 1. Para asignar una salida de archivo de un módulo anterior, seleccione el módulo que genera el archivo.
 
-   ![](assets/wf-download-document.png)
+   ![Documento de descarga de Workfront](assets/wf-download-document.png)
 
 1. Para asignar el nombre y los datos manualmente, seleccione Asignar y, a continuación, introduzca o asigne el nombre y los datos del archivo.
 
-   ![](assets/use-the-map-option.png)
+   ![Usar la opción de asignación](assets/use-the-map-option.png)
 
 1. Continúe configurando el módulo o haga clic en **Aceptar**.

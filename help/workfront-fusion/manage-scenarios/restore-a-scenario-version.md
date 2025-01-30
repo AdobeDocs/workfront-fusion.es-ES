@@ -4,10 +4,10 @@ description: Puede restaurar una versión anterior de un escenario. Esto le perm
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 72%
+source-wordcount: '199'
+ht-degree: 71%
 
 ---
 
@@ -68,7 +68,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 ## Restaurar una versión de escenario
 
 1. Abra el escenario.
-1. Haga clic en el icono [!UICONTROL More] ![](assets/more-icon.png) en la parte inferior de la pantalla y luego haga clic en **[!UICONTROL Previous Versions]**.
+1. Haga clic en el icono [!UICONTROL More] ![Más icono](assets/more-icon.png) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Previous Versions]**.
 
 1. Haga clic en **[!UICONTROL Pick the version]** y luego en la versión que desee restaurar.
 1. Haga clic en **[!UICONTROL OK]**.

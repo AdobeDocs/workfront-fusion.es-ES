@@ -4,9 +4,9 @@ description: Detalles del escenario en  [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '539'
 ht-degree: 20%
 
 ---
@@ -77,11 +77,11 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
    O
 
-   Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. En la página que se muestra, puede revisar los elementos que se enumeran en la siguiente tabla:
 
-   ![](assets/scenario-detail-350x207.png)
+   ![Detalle del escenario](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 

@@ -4,9 +4,9 @@ description: Al crear o editar un escenario, es posible configurar opciones para
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 50%
 
 ---
@@ -62,13 +62,13 @@ Por ejemplo, podría utilizar un módulo [!UICONTROL Repeater] para enviar cinco
 
 Para usar un módulo [!UICONTROL Repeater]:
 
-1. Haga clic en el icono [!UICONTROL Flow Control] ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Repeater]** en el menú que se muestra.
+1. Haga clic en el icono [!UICONTROL Flow Control] ![icono de control de flujo](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Repeater]** en el menú que se muestra.
 1. Haga clic en el paquete [!UICONTROL Repeater] y, a continuación, haga clic en **[!UICONTROL Connect automatically]** en el cuadro que se muestra.
 1. En el cuadro [!UICONTROL Flow Control] que aparece, escriba el número de repeticiones (paquetes generados) que desee en el cuadro **[!UICONTROL Repeats]**.
 
    En el ejemplo de correo electrónico, debe escribir 5.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Repetidor](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    El valor del elemento aumenta en cada repetición según este valor especificado en el campo **[!UICONTROL Step]**, que puede ver seleccionando **[!UICONTROL Show advanced settings]**. Este número se establece en 1 de forma predeterminada.
 
@@ -79,7 +79,7 @@ Para usar un módulo [!UICONTROL Repeater]:
 
    En nuestro ejemplo de correo electrónico, escribiría Hello en el cuadro [!UICONTROL Subject] y, a continuación, asignaría `i` desde el módulo de repetición.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Repetidor](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | Elemento | Descripción |
 |---|---|

@@ -4,9 +4,9 @@ description: En algunos casos, solo debe trabajar con paquetes que cumplan crite
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 9%
 
 ---
@@ -87,7 +87,7 @@ Debe agregar ambos módulos a un escenario para poder agregar un filtro entre el
 
    Por ejemplo, si desea que el filtro pase los archivos de [!DNL Adobe Workfront] que terminen con XML, debe escribir **[!UICONTROL File name]** en el primer cuadro y .**[!UICONTROL xml]** en el segundo cuadro. En el menú desplegable que hay entre ellos, debe seleccionar **[!UICONTROL Ends with (case insensitive)]**. Este filtro se aplicaría a los paquetes entrantes del primer módulo (Workfront). Solo los paquetes que contengan archivos XML pasarán al siguiente módulo.
 
-   ![](assets/set-up-filter-box.png)
+   ![Configurar un filtro](assets/set-up-filter-box.png)
 
 1. Haga clic en **[!DNL OK]**.
 
@@ -110,7 +110,7 @@ Para copiar un filtro sin copiar módulos, puede utilizar Fusion DevTool
 
    Si no ve el icono DevTool, vea [Depurar un escenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) para obtener instrucciones sobre cómo abrir DevTool.
 
-1. Haga clic en el icono **[!UICONTROL Tools]** ![](assets/devtools-tools-icon.png) en la barra lateral izquierda.
+1. Haga clic en el icono **[!UICONTROL Tools]** ![Herramientas DevTool](assets/devtools-tools-icon.png) en la barra lateral izquierda.
 
 1. Haga clic en **[!UICONTROL Copy Filter]** y, a continuación, configure la herramienta **[!UICONTROL Copy Filter]** en el panel derecho:
 

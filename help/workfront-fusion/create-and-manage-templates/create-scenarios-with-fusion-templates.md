@@ -4,9 +4,9 @@ description: La función Plantillas de Adobe Workfront Fusion le permite crear y
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 15%
 
 ---
@@ -64,7 +64,7 @@ Debe crear una plantilla para poder utilizarla.
 
 ## Creación de un escenario a partir de una plantilla
 
-1. Haga clic en el icono **[!UICONTROL Templates]** ![](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el icono **[!UICONTROL Templates]** ![Icono de plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
 1. Haga clic en la ficha que contiene la plantilla que desea utilizar (Plantillas públicas o Plantillas de equipo).
 1. Haga clic en la plantilla que desee utilizar para empezar a crear un escenario. Puede utilizar el cuadro de búsqueda en la esquina superior derecha para buscar la plantilla por su nombre o por el nombre de la aplicación incluida en ella.
 1. (Condicional) Si es miembro de más de una organización o equipo, seleccione para qué organización o equipo desea crear su escenario y haga clic en **[!UICONTROL Continue]**.
@@ -78,4 +78,4 @@ Debe crear una plantilla para poder utilizarla.
 
    Para obtener información sobre cómo crear un escenario, consulte [Flujo de trabajo para crear un escenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
-1. Haga clic en el icono **[!UICONTROL Save]** ![](assets/save-icon.png) para guardar el escenario. El escenario se guarda en el área Escenario de Workfront Fusion.
+1. Haga clic en el icono **[!UICONTROL Save]** ![Guardar icono](assets/save-icon.png) para guardar su escenario. El escenario se guarda en el área Escenario de Workfront Fusion.

@@ -4,10 +4,10 @@ description: La aplicación XML permite analizar un texto con formato XML median
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 64%
+source-wordcount: '1302'
+ht-degree: 63%
 
 ---
 
@@ -95,7 +95,7 @@ El módulo [!UICONTROL XML] > [!UICONTROL Parse XML] analiza un texto con format
 >
 >   **URL**: URL del archivo XML (p. ej., `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![Ejemplo de URL del archivo XML](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Haga clic en **[!UICONTROL OK]** para guardar y cerrar la configuración del módulo.
 1. Agregue el módulo [!UICONTROL XML] > [!UICONTROL Parse XML], conéctelo después del módulo [!UICONTROL HTTP] > [!UICONTROL Get a file] y configúrelo de la siguiente manera:
@@ -143,7 +143,7 @@ De manera predeterminada, el módulo [!UICONTROL XML] > [!UICONTROL Parse XML] c
 
 se convierte en este paquete:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML convertido en paquete](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Crear XML
 
@@ -198,7 +198,7 @@ La configuración del módulo requiere una estructura de datos que describa la e
 >
 1. Haga clic en el botón **[!UICONTROL Generator]** y pegue la muestra XML en el campo [!UICONTROL Sample data]:
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![Campo de datos de muestra](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. Haga clic en **[!UICONTROL Save]**. El campo Especificación de la estructura de datos contiene ahora la estructura generada.
 1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.

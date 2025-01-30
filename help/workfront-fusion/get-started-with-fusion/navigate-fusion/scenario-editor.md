@@ -4,9 +4,9 @@ description: El editor de escenarios permite crear y editar escenarios en una in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 34%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 34%
 
 El editor de escenarios permite crear y editar escenarios en una interfaz visual.
 
-![](assets/scenario-editor.jpg)
+![Editor de escenarios](assets/scenario-editor.jpg)
 
 ## Requisitos de acceso
 
@@ -71,7 +71,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 ## Abra el editor de escenarios y agregue un módulo:
 
-1. Haga clic en **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) en el panel izquierdo.
+1. Haga clic en **[!UICONTROL Scenarios]** ![icono de escenarios](assets/scenarios-icon.png) en el panel izquierdo.
 1. Haga clic en el icono de signo de interrogación ![icono de pregunta](assets/question-mark-full-size.png) y, a continuación, busque y haga clic en la aplicación o el servicio con el que desee comenzar. Para obtener información detallada sobre la configuración de un módulo, consulte [Configurar un módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Acciones del editor de escenarios disponibles

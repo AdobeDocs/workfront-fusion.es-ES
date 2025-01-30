@@ -4,10 +4,10 @@ description: La carpeta [!UICONTROL Incomplete executions] almacena ejecuciones 
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 37%
+source-wordcount: '821'
+ht-degree: 31%
 
 ---
 
@@ -86,7 +86,7 @@ La ficha [!UICONTROL History] muestra más detalles de los que están disponible
 
    O
 
-   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en **Historial** cerca del nombre del escenario.
    ![ficha de historial](assets/history-tab.png)
@@ -115,7 +115,7 @@ La ficha [!UICONTROL History] muestra más detalles de los que están disponible
 
    O
 
-   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en la ficha **[!UICONTROL History]** en el panel derecho.
 1. (Opcional) Para obtener información detallada sobre la ejecución de un escenario seleccionado, haga clic en la ejecución en el panel derecho.
@@ -133,7 +133,7 @@ La ficha [!UICONTROL History] muestra más detalles de los que están disponible
 Puede filtrar el historial de ejecuciones para ver solo las ejecuciones con los valores especificados.
 
 1. Abra el historial de página completa de un escenario como se describe en [Ver el historial de ejecución de un escenario en la ficha [!UICONTROL History]](#view-scenario-history-on-the-history-tab) de este artículo.
-1. Haga clic en el icono [!UICONTROL filter] ![](assets/fusion-scenario-filter-icon.png) en el encabezado de la columna por la que desee filtrar.
+1. Haga clic en el icono [!UICONTROL filter] ![icono de filtro de escenario](assets/fusion-scenario-filter-icon.png) en el encabezado de la columna por la que desee filtrar.
 1. En el cuadro de diálogo [!UICONTROL filter], escriba los valores por los que desea filtrar.
 1. Haga clic en **[!UICONTROL Save]**.
 

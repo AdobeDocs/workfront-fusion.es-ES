@@ -4,9 +4,9 @@ description: Cuando se producen errores durante la ejecución de un escenario, s
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 30%
 
 ---
@@ -82,7 +82,7 @@ Para agregar un controlador de error a un módulo:
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Haga clic con el botón secundario en el módulo después del cual desea agregar una ruta de controlador de error y seleccione **[!UICONTROL Add error handler]**:
 
-   ![](assets/error-handler-route.png)
+   ![Ruta del controlador de error](assets/error-handler-route.png)
 
    Se agrega una ruta de controlador de error al módulo. Si el módulo es el último módulo de una ruta, el controlador de errores le seguirá directamente. Si el módulo tiene más módulos después, se agrega una ruta de controlador de error independiente.
 

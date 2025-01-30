@@ -4,10 +4,10 @@ description: La aplicación HTTP de  [!DNL Adobe Workfront Fusion]  proporciona 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 92%
+source-wordcount: '394'
+ht-degree: 91%
 
 ---
 
@@ -105,7 +105,7 @@ Es posible generar un token JWT con la ayuda de funciones integradas:
 
 Encabezado:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![Encabezado JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 Código para copiar y pegar:
 
@@ -115,7 +115,7 @@ Código para copiar y pegar:
 
 Carga útil:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![Carga útil JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 Código para copiar y pegar:
 
@@ -125,7 +125,7 @@ Código para copiar y pegar:
 
 Token:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![Token JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 Código para copiar y pegar:
 
