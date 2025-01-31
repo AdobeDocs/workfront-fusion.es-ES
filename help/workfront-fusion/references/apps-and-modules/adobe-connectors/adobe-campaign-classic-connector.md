@@ -4,10 +4,10 @@ description: Con los módulos de  [!DNL Adobe Campaign] , puede iniciar un escen
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 80%
+source-wordcount: '1097'
+ht-degree: 75%
 
 ---
 
@@ -17,49 +17,53 @@ Con los módulos de [!DNL Adobe Campaign], puede iniciar un escenario de [!DNL A
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] o superior</p> </td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
 Debe añadir las direcciones IP de Fusion a [!DNL Adobe Campaign].
 
 * Para obtener instrucciones sobre cómo añadir direcciones IP a la lista de permitidos de Campaign, consulte [Adición de direcciones IP a la lista de permitidos](https://experienceleague.adobe.com/es/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) en la documentación de Adobe Campaign.
-* Para obtener una lista de direcciones IP que añadir a la lista de permitidos, consulte [Direcciones IP para acceder a Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
+* Para obtener una lista de direcciones IP que agregar a la lista de permitidos, consulte [Configuración de direcciones IP para Fusion en la lista de permitidos de su organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Información de API de Adobe Campaign
 
@@ -124,15 +128,7 @@ El conector de Adobe Campaign utiliza lo siguiente:
           <td role="rowheader">[!UICONTROL Client Secret]</td>
           <td>Si está creando una conexión servidor a servidor, escriba su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].
         </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
-          <td>Seleccione si está conectado a un entorno de producción o de no producción.
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Seleccione si desea conectarse a una cuenta de servicio o a una personal.
-        </tr>
-   </tbody>
+     </tbody>
     </table>
 1. Haga clic en **[!UICONTROL Continue]** para crear la conexión y volver al módulo.
 
@@ -144,15 +140,15 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Activadores](#triggers)
+<!--* [Triggers](#triggers)-->
 * [Acciones](#actions)
 * [Búsquedas](#searches)
 
-### Activadores
+<!--### Triggers
 
 #### [!UICONTROL Watch records]
 
-Este módulo del activador programado inicia un escenario cuando cambia un registro.
+This scheduled trigger module starts a scenario when a record changes.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -160,39 +156,39 @@ Este módulo del activador programado inicia un escenario cuando cambia un regis
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión con [!DNL Adobe Campaign]</a> en este artículo.</td> 
+   <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Create a connection to [!DNL Adobe Campaign]</a> in this article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td>Seleccione si desea buscar registros nuevos, registros actualizados o ambos.</td> 
+   <td>Select whether you want to watch for new records, updated records, or both.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Seleccione el recurso que desea inspeccionar.</td> 
+   <td>Select the resource that you want to watch for.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields to include in output]</td> 
-   <td>Seleccione los campos que desea incluir en la salida del módulo.</td> 
+   <td>Select the fields that you want to include in the module's output.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields to include in output]</td> 
-   <td>Para cada campo personalizado que desee incluir en la salida, haga clic en <b>[!UICONTROL Add]</b> e introduzca el nombre del campo personalizado.</td> 
+   <td>For each custom field that you want to include in output, click <b>[!UICONTROL Add]</b> and enter the name of the custom field.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>
+</table>-->
 
 
 ### Acciones
 
 * [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
 * [[!UICONTROL Delete a record]](#delete-record)
+* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
 * [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#-read-a-record)
+* [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
 * [[!UICONTROL Update a record]](#update-record)
 
@@ -219,6 +215,29 @@ Este módulo de acción crea un nuevo registro en [!DNL Adobe Campaign].
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
    <td> Para cada campo personalizado que desee agregar al nuevo registro, haga clic en <b>[!UICONTROL Add item]</b> y escriba o asigne el nombre y valor del campo. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete Record]
+
+Este módulo de acción elimina un único registro de [!DNL Adobe Campaign].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión con [!DNL Adobe Campaign]</a> en este artículo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>Seleccione el tipo de recurso que desea eliminar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td>Introduzca o asigne el ID del recurso que desea eliminar.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,29 +278,6 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ca
   </tbody>
 </table>
 
-#### [!UICONTROL Delete Record]
-
-Este módulo de acción elimina un único registro de [!DNL Adobe Campaign].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión con [!DNL Adobe Campaign]</a> en este artículo.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Seleccione el tipo de recurso que desea eliminar.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Introduzca o asigne el ID del recurso que desea eliminar.</td> 
-  </tr> 
- </tbody> 
-</table>
-
 
 #### [!UICONTROL Perform an action]
 
@@ -308,7 +304,7 @@ Para obtener información sobre acciones y campos específicos, consulte [[!DNL 
    <li><p><b>[!UICONTROL Delete]</b></p><p> Para ver los campos disponibles, consulte <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> en este artículo. </p></li>
    </ul>
    </td>
-</tr> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -419,6 +415,10 @@ Este módulo de búsqueda devuelve registros basados en los criterios especifica
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
    <td>Seleccione el tipo de registro de [!DNL Adobe Campaign] que desea crear. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td>Introduzca los campos y valores que desea que utilice la búsqueda. Los campos dependen del recurso seleccionado.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 

@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 77%
+source-wordcount: '2260'
+ht-degree: 71%
 
 ---
 
@@ -21,42 +21,46 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
-   </td>  
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -112,9 +116,59 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Libro
 
-* [Ver libros](#watch-workbooks)
-* [Buscar libros](#search-workbooks)
 * [Descargar un libro](#download-a-workbook)
+* [Buscar libros](#search-workbooks)
+* [Ver libros](#watch-workbooks)
+
+#### [!UICONTROL Download a Workbook]
+
+Este módulo de acción descarga el contenido del libro de Excel especificado.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
+   <td> <p>Seleccione cómo desea identificar el libro para que el módulo lo descargue.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>En el campo [!UICONTROL Workbook ID], escriba o asigne el identificador del libro específico que desea que descargue el módulo.</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>En el campo [!UICONTROL Workbook], seleccione el libro que desea que descargue el módulo, incluida su ruta de acceso si no se encuentra en la carpeta raíz.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody>
+
+#### [!UICONTROL Search Workbooks]
+
+Este módulo de acción busca libros de [!DNL Excel].
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Seleccione la carpeta en la que desea buscar libros.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>Puede definir un filtro para buscar solo libros que cumplan los criterios seleccionados.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND u OR.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Introduzca o asigne el número máximo de hojas de cálculo que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+</table>
 
 #### [!UICONTROL Watch Workbooks]
 
@@ -143,73 +197,46 @@ Este módulo de activador inicia un escenario cuando se crea un libro.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Workbooks]
-
-Este módulo de acción busca libros de [!DNL Excel].
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>Seleccione la carpeta en la que desea buscar libros.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
-   <td> <p>Puede definir un filtro para buscar solo libros que cumplan los criterios seleccionados.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND u OR.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Introduzca o asigne el número máximo de hojas de cálculo que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download a Workbook]
-
-Este módulo de acción descarga el contenido del libro de Excel especificado.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
-   <td> <p>Seleccione cómo desea identificar el libro para que el módulo lo descargue.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>En el campo [!UICONTROL Workbook ID], escriba o asigne el identificador del libro específico que desea que descargue el módulo.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>En el campo [!UICONTROL Workbook], seleccione el libro que desea que descargue el módulo.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Hoja de cálculo
 
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
 * [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
 * [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
 * [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
+* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
+* [[!UICONTROL List Worksheets]](#list-worksheets)
+* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
+* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL Add a Worksheet]
 
-Este módulo del activador inicia un escenario cuando se añade una nueva fila a la hoja.
+Este módulo de acción crea una nueva hoja de cálculo dentro del libro seleccionado.
 
 <table style="table-layout:auto"> 
- <col> 
- <col> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Seleccione el libro en el que desea agregar una hoja de cálculo, incluida la ruta de acceso si el libro no se encuentra en el directorio raíz.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Name] </td>
+   <td> <p>Introduzca o asigne un nombre a la nueva hoja de cálculo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Add a Worksheet Row]
+
+Este módulo de acción añade una nueva fila a la hoja de cálculo seleccionada.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -217,11 +244,74 @@ Este módulo del activador inicia un escenario cuando se añade una nueva fila a
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro que contiene la hoja de cálculo que desea inspeccionar para buscar nuevas filas.</p> </td> 
+   <td> <p>Seleccione el libro que contiene la hoja de cálculo donde desea agregar una fila, incluida la ruta de acceso si el libro no se encuentra en el directorio raíz.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Seleccione la hoja de cálculo donde desea añadir una fila.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td> <p>Seleccione el tipo de valor que se va a introducir en la hoja de cálculo. </p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel intenta evaluar la expresión especificada. Los nombres de las funciones de una fórmula están en inglés. Ejemplo: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel intenta evaluar la expresión especificada. Los nombres de las funciones están en el idioma de la aplicación de Excel. Ejemplo: <code>=SUM(A1, 1.5)</code> frente a <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel no evalúa el valor. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td>Para cada columna, introduzca el valor que desea que tenga la columna en la nueva fila.</td>
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Worksheet Row]
+
+Este módulo de acción elimina una fila de una hoja de cálculo.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Seleccione el libro que contiene la hoja de cálculo que incluye la fila que desea eliminar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet]</td>
+   <td> <p> Seleccione la hoja de cálculo que contiene la fila que desea eliminar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row ID]</td>
+   <td>Introduzca o asigne el ID de la fila que desea eliminar.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Worksheet Rows]
+
+Este módulo de acción recupera una lista de filas de la hoja de cálculo especificada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Seleccione el libro que contiene la hoja de cálculo que incluye las filas que desea enumerar, incluida la ruta de acceso si el libro no se encuentra en el directorio raíz.</p> </td> 
+  </tr> 
+  <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Seleccione la hoja de Excel que desea inspeccionar para buscar nuevas filas.</p> </td> 
+   <td> <p>Seleccione la hoja de cálculo que contiene las filas que desea enumerar.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
@@ -249,92 +339,6 @@ Este módulo de acción recupera una lista de hojas de cálculo del libro especi
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Introduzca o asigne el número máximo de hojas de cálculo que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Worksheet Rows]
-
-Este módulo de acción recupera una lista de filas de la hoja de cálculo especificada.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro que contiene la hoja de cálculo que incluye las filas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Seleccione la hoja de cálculo que contiene las filas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Introduzca o asigne el número máximo de filas de hojas de cálculo que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet]
-
-Este módulo de acción crea una nueva hoja de cálculo dentro del libro seleccionado.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro en el que desea añadir una hoja de cálculo.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Name] </td>
-   <td> <p>Introduzca o asigne un nombre a la nueva hoja de cálculo.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet Row]
-
-Este módulo de acción añade una nueva fila a la hoja de cálculo seleccionada.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro que contiene la hoja de cálculo donde desea añadir una fila.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Seleccione la hoja de cálculo donde desea añadir una fila.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
-   <td> <p>Seleccione el tipo de valor que se va a introducir en la hoja de cálculo. </p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel intenta evaluar la expresión especificada. Los nombres de las funciones de una fórmula están en inglés. Ejemplo: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel intenta evaluar la expresión especificada. Los nombres de las funciones están en el idioma de la aplicación de Excel. Ejemplo: <code>=SUM(A1, 1.5)</code> frente a <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel no evalúa el valor. </p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
-    <td>Para cada columna, introduzca el valor que desea que tenga la columna en la nueva fila.</td>
   </tr> 
  </tbody> 
 </table>
@@ -375,18 +379,17 @@ Este módulo de acción actualiza una fila de hoja de cálculo existente.
   <tr> 
     <td role="rowheader" >[!UICONTROL Row]</td>
     <td>Para cada columna, introduzca el valor que desea que tenga la columna en la nueva fila.</td>
-   --&gt; 
-  </tr> 
+    </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Watch Worksheet Rows]
 
-Este módulo de acción elimina una fila de una hoja de cálculo.
+Este módulo del activador inicia un escenario cuando se añade una nueva fila a la hoja.
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -394,151 +397,33 @@ Este módulo de acción elimina una fila de una hoja de cálculo.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro que contiene la hoja de cálculo que incluye la fila que desea eliminar.</p> </td> 
+   <td> <p>Seleccione el libro que contiene la hoja de cálculo que desea inspeccionar para buscar nuevas filas.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Seleccione la hoja de Excel que desea inspeccionar para buscar nuevas filas.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+   <td> <p>Active esta opción para no devolver paquetes para filas vacías de la hoja de cálculo.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet]</td>
-   <td> <p> Seleccione la hoja de cálculo que contiene la fila que desea eliminar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row ID]</td>
-   <td>Introduzca o asigne el ID de la fila que desea eliminar.</td> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Introduzca o asigne el número máximo de filas de hojas de cálculo que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Tabla
 
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL Get a Table]](#get-a-table)
 * [[!UICONTROL Add a table]](#add-a-table)
 * [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Update a table]](#update-a-table)
 * [[!UICONTROL Delete a table]](#delete-a-table)
-
-#### [!UICONTROL Watch table rows]
-
-Este activador inicia un escenario cuando se añade una nueva fila a una tabla.
-
->[!NOTE]
->
->La tabla aquí hace referencia al elemento de tabla incrustado en el libro. No toda la tabla (libro/hoja de cálculo).
-
-![Tabla incrustada](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
-   <td> <p>Seleccione el libro que contiene la tabla que desea ver.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p> Seleccione la hoja de cálculo que contiene la tabla que desea ver.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
-   <td> <p>Seleccione la tabla que desee ver.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Introduzca o asigne el número máximo de filas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List tables]
-
-Este módulo de búsqueda recupera una lista de todos los objetos de tabla.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro que contiene las tablas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Seleccione la hoja de cálculo que contiene las tablas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Introduzca o asigne el número máximo de tablas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List table rows]
-
-Este módulo de búsqueda recupera una lista de todas las filas de tabla de un libro.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Seleccione el libro que contiene la tabla que incluye las filas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Seleccione la hoja de cálculo que contiene la tabla que incluye las filas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Table] </td>
-   <td> <p>Seleccione la tabla que contiene las filas que desea enumerar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Introduzca o asigne el número máximo de filas de tablas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Table]
-
-Este módulo de acción recupera los metadatos de la tabla especificada.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> 
-     <p >[!UICONTROL Connection]</p>
-   </td> 
-   <td> 
-     <p>Para obtener instrucciones acerca de cómo conectar su cuenta de Office 365 a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p>
-    --&gt; </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Seleccione cómo desea identificar la tabla que desea recuperar.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo [!UICONTROL Workbook ID], escriba o asigne el identificador del libro que contiene la tabla que desea recuperar.</p> <p>En el campo [!UICONTROL Table Name], escriba o asigne el nombre de la tabla que desea recuperar.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el libro y la hoja de cálculo que contienen la tabla que desea recuperar y, a continuación, seleccione la tabla.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Get a Table]](#get-a-table)
+* [[!UICONTROL List table rows]](#list-table-rows)
+* [[!UICONTROL List tables]](#list-tables)
+* [[!UICONTROL Update a table]](#update-a-table)
+* [[!UICONTROL Watch table rows]](#watch-table-rows)
 
 #### [!UICONTROL Add a table]
 
@@ -606,6 +491,114 @@ Este módulo de acción modifica una tabla existente.
  </tbody> 
 </table>
 
+#### [!UICONTROL Delete a table]
+
+Este módulo de acción elimina la tabla especificada de una hoja de cálculo de [!DNL Excel].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td> <p>Seleccione cómo desea identificar la tabla que desea eliminar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Introduzca o asigne el identificador del libro que contiene la tabla que desea eliminar y, a continuación, introduzca o asigne el identificador de la hoja de cálculo que contiene la tabla.</p> <p>En el campo [!UICONTROL Table Name], escriba o asigne el nombre de la tabla que desea eliminar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el libro y la hoja de cálculo que contienen la tabla que desea eliminar y, a continuación, seleccione la tabla.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Table]
+
+Este módulo de acción recupera los metadatos de la tabla especificada.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> 
+     <p >[!UICONTROL Connection]</p>
+   </td> 
+   <td> 
+     <p>Para obtener instrucciones acerca de cómo conectar su cuenta de Office 365 a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p>
+    --&gt; </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Get a table]</td> 
+   <td> <p>Seleccione cómo desea identificar la tabla que desea recuperar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Introduzca o asigne el identificador del libro que contiene la tabla que desea recuperar y, a continuación, introduzca o asigne el identificador de la hoja de cálculo que contiene la tabla.</p> <p>En el campo [!UICONTROL Table Name], escriba o asigne el nombre de la tabla que desea recuperar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el libro y la hoja de cálculo que contienen la tabla que desea recuperar y, a continuación, seleccione la tabla.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List table rows]
+
+Este módulo de búsqueda recupera una lista de todas las filas de tabla de un libro.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Seleccione el libro que contiene la tabla que incluye las filas que desea enumerar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Seleccione la hoja de cálculo que contiene la tabla que incluye las filas que desea enumerar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Table] </td>
+   <td> <p>Seleccione la tabla que contiene las filas que desea enumerar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Introduzca o asigne el número máximo de filas de tablas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List tables]
+
+Este módulo de búsqueda recupera una lista de todos los objetos de tabla.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Seleccione el libro que contiene las tablas que desea enumerar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Seleccione la hoja de cálculo que contiene las tablas que desea enumerar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Introduzca o asigne el número máximo de tablas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Update a table]
 
 Este módulo de acción actualiza una tabla existente.
@@ -627,10 +620,6 @@ Este módulo de acción actualiza una tabla existente.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table] </td> 
-   <td> <p>Seleccione la tabla que desea actualizar.</p> </td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>Si desea cambiar el nombre de la tabla, escriba o asigne un nombre nuevo para la tabla.</p> </td> 
   </tr> 
@@ -649,9 +638,15 @@ Este módulo de acción actualiza una tabla existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Watch table rows]
 
-Este módulo de acción elimina la tabla especificada de una hoja de cálculo de [!DNL Excel].
+Este activador inicia un escenario cuando se añade una nueva fila a una tabla.
+
+>[!NOTE]
+>
+>La tabla aquí hace referencia al elemento de tabla incrustado en el libro. No toda la tabla (libro/hoja de cálculo).
+
+![Tabla incrustada](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -662,47 +657,28 @@ Este módulo de acción elimina la tabla especificada de una hoja de cálculo de
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Seleccione cómo desea identificar la tabla que desea eliminar.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo [!UICONTROL Workbook ID], escriba o asigne el identificador del libro que contiene la tabla que desea eliminar.</p> <p>En el campo [!UICONTROL Table Name], escriba o asigne el nombre de la tabla que desea eliminar.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el libro y la hoja de cálculo que contienen la tabla que desea eliminar y, a continuación, seleccione la tabla.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
+   <td> <p>Seleccione el libro que contiene la tabla que desea ver.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p> Seleccione la hoja de cálculo que contiene la tabla que desea ver.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
+   <td> <p>Seleccione la tabla que desee ver.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Introduzca o asigne el número máximo de filas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Otro
 
-* [[!UICONTROL Retrieve data]](#retrieve-data)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
-
-#### [!UICONTROL Retrieve data]
-
-Esta acción recupera datos del intervalo definido de las hojas de cálculo y devuelve un paquete para cada fila.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
-   <td> <p>Seleccione el libro que contiene los datos que desea recuperar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
-   <td> <p>Seleccione la hoja de cálculo que contiene los datos que desea recuperar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
-   <td> <p>Especifique el área de la hoja de la que desea recuperar datos indicando las celdas superior, izquierda e inferior derecha. Ejemplo: <code>A1:D10</code></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Retrieve data]](#retrieve-data)
 
 #### [!UICONTROL Make an API Call]
 
@@ -734,10 +710,37 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:   <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:   <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Retrieve data]
+
+Esta acción recupera datos del intervalo definido de las hojas de cálculo y devuelve un paquete para cada fila.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td> <p>Seleccione el libro que contiene los datos que desea recuperar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td> <p>Seleccione la hoja de cálculo que contiene los datos que desea recuperar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Range] </td> 
+   <td> <p>Especifique el área de la hoja de la que desea recuperar datos indicando las celdas superior, izquierda e inferior derecha. Ejemplo: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
