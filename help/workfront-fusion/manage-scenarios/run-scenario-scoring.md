@@ -4,14 +4,18 @@ description: El experto en puntuación de escenarios puede ayudarle a garantizar
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 20%
 
 ---
 
 # Ejecutar el experto en puntuación de escenarios
+
+>[!IMPORTANT]
+>
+>El experto en puntuación de escenarios se ha desactivado temporalmente.
 
 El experto en puntuación de escenarios puede ayudarle a garantizar que su escenario se configura de una manera que siga las prácticas recomendadas. Comprueba el escenario y ofrece recomendaciones para su estructura y organización.
 
