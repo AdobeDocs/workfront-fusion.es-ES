@@ -4,10 +4,10 @@ description: Las opciones de notificación por correo electrónico se establecen
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 26%
+source-wordcount: '240'
+ht-degree: 29%
 
 ---
 
@@ -89,7 +89,7 @@ Las opciones de notificación por correo electrónico se establecen en el nivel 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>Reciba un correo electrónico cuando se desactive un escenario.</p><p><b>Nota:</b> Se le notifica la desactivación del escenario solamente cuando el escenario se ha desactivado automáticamente debido a errores. No recibe notificaciones sobre escenarios que se desactivan manualmente.</p><p>En algunos casos, el equipo de ingeniería de [!DNL Workfront Fusion] podría desactivar un escenario debido a que el escenario está causando problemas de rendimiento o de otro tipo. En estos casos, no recibe notificaciones en [!DNL Workfront Fusion]. </p></td>
+      <td><p>Reciba un correo electrónico cuando se desactive un escenario.</p><p>En algunos casos, el equipo de ingeniería de [!DNL Workfront Fusion] podría desactivar un escenario debido a que el escenario está causando problemas de rendimiento o de otro tipo. En estos casos, no recibe notificaciones en [!DNL Workfront Fusion]. </p></td>
 
 </tr>
 </tbody>
