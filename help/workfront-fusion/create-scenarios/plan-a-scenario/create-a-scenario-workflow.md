@@ -4,9 +4,9 @@ description: Siga este flujo de trabajo general para crear un escenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '739'
 ht-degree: 22%
 
 ---
@@ -145,6 +145,26 @@ Puede utilizar los siguientes métodos abreviados del teclado al crear o editar 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl + Mayús + Intro</td> 
    <td><span style="font-weight: normal;">Cmd + Mayús + Entrar</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td>F12</td> 
+   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl + C</td> 
+   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl + V</td> 
+   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td>Mayús + Arrastrar</td> 
+   <td><span style="font-weight: normal;">Mayús+Arrastrar</span> </td> 
   </tr> 
  </tbody> 
 </table>
