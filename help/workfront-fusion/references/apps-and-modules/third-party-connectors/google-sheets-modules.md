@@ -4,9 +4,9 @@ description: Para usar [!DNL Google Sheets] con la extensión de [!DNL Adobe Wor
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '3372'
+source-wordcount: '3373'
 ht-degree: 83%
 
 ---
