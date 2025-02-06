@@ -4,10 +4,10 @@ description: Siga este flujo de trabajo general para crear un escenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
+source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 20%
+source-wordcount: '772'
+ht-degree: 21%
 
 ---
 
@@ -26,6 +26,7 @@ Los escenarios están diseñados para satisfacer las necesidades de su organizac
 * [Configuración de escenarios](#onfigure-scenario-settings)
 * [Prueba y revisión](#test-and-revise)
 * [Activar el escenario](#activate-the-scenario)
+* [Métodos abreviados del teclado para escenarios de Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
 
 Métodos abreviados del teclado
 
