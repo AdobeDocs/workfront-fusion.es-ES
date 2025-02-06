@@ -4,10 +4,10 @@ description: Siga este flujo de trabajo general para crear un escenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
+source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 22%
+source-wordcount: '767'
+ht-degree: 20%
 
 ---
 
@@ -139,35 +139,41 @@ Puede utilizar los siguientes métodos abreviados del teclado al crear o editar 
   <tr> 
    <td role="rowheader">[!UICONTROL Save] </td> 
    <td>Ctrl + Mayús + S</td> 
-   <td><span style="font-weight: normal;">Cmd + Mayús + S</span> </td> 
+   <td>Cmd + Mayús + S</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl + Mayús + Intro</td> 
-   <td><span style="font-weight: normal;">Cmd + Mayús + Entrar</span> </td> 
+   <td>Cmd+Mayús+Entrar</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
-   <td>Ctrl + C</td> 
-   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
-   <td>Ctrl + V</td> 
-   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+   <td>Ctrl + Fn + F12 </span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Mayús + Arrastrar</td> 
-   <td><span style="font-weight: normal;">Mayús+Arrastrar</span> </td> 
+   <td>Mayús + Arrastrar</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl + C</td> 
+   <td>Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl + V</td> 
+   <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Pegue cURL en el escenario para crear el módulo HTTP</td> 
+   <td colspan="2">Copie cURL y, a continuación, pegue en cualquier lugar del editor de escenarios.<p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Usar cURL para agregar un módulo HTTP</a>.</td> 
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 
