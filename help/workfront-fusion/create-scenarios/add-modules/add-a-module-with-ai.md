@@ -4,10 +4,10 @@ description: Puede utilizar IA para escribir un mensaje de texto que describa lo
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 22%
+source-wordcount: '600'
+ht-degree: 23%
 
 ---
 
@@ -68,6 +68,15 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 +++
 
+## Requisitos previos
+
+Su organización debe cumplir los siguientes requisitos previos para utilizar esta funcionalidad:
+
+* Su organización debe haber participado en el programa Beta de Workfront AI Assistant.
+* El Adobe debe tener un acuerdo de IA general de Adobe firmado en el archivo para su organización.
+
+  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo de IA de generación de Adobe](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) en el artículo Información general del asistente de IA en la documentación de Workfront.
+
 ## Aplicaciones de módulo de IA admitidas actualmente
 
 Fusion AI puede generar actualmente módulos que se conectan a las siguientes aplicaciones:
@@ -95,15 +104,8 @@ Fusion AI puede generar actualmente módulos que se conectan a las siguientes ap
 1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar un módulo.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
-1. Haga clic en el icono Generar con IA ![Generar con IA](assets/generate-with-ai-icon-beta.png) cerca de la parte inferior de la página del editor de escenarios.
-
-   O
-
-   Empiece a agregar un módulo y seleccione **Generar con IA** de la lista de aplicaciones. Esta opción no aparece al añadir el primer módulo (déclencheur) a un escenario.
-
-   Se abrirá el panel Ayudante de IA.
-1. (Condicional) Si es la primera vez que usa IA para agregar un segmento de escenario, lea el Acuerdo que aparece y haga clic en **Aceptar**.
-1. Escriba un mensaje de texto en el cuadro.
+1. Haga clic en el icono **Asistente de IA** ![icono Asistente de IA](assets/ai-assistant-icon.png) cerca de la esquina superior derecha de la pantalla.
+1. Escriba un mensaje de texto en el panel Asistente de IA.
 
    Para obtener sugerencias sobre las solicitudes, consulte [Sugerencias para crear solicitudes para segmentos de escenario](#tips-for-creating-prompts-for-scenario-segments) en este artículo.
 
