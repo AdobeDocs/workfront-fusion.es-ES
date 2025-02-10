@@ -4,18 +4,14 @@ description: Este módulo de acción de  [!DNL Adobe Workfront Fusion]  envía u
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 83%
+source-wordcount: '864'
+ht-degree: 78%
 
 ---
 
 # HTTP > [!UICONTROL Make an API Key Authorization request]
-
->[!NOTE]
->
->[!DNL Adobe Workfront Fusion] requiere una licencia de [!DNL Adobe Workfront Fusion] además de una licencia de Adobe Workfront.
 
 Este [!DNL Adobe Workfront Fusion] módulo de acción envía una solicitud HTTPS a una URL especificada que requiere una autorización de una clave de API y procesa la respuesta.
 
@@ -27,46 +23,50 @@ Este [!DNL Adobe Workfront Fusion] módulo de acción envía una solicitud HTTPS
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre licencias de [!UICONTROL Adobe Workfront Fusion], consulte [Licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] configuración del módulo
++++
 
-Al configurar el módulo [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+## [!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request] configuración de módulo
+
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -88,7 +88,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
-   <td> <p>Utilice esta opción para configurar la gestión de errores.</p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Control de errores en Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>Utilice esta opción para configurar la gestión de errores.</p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Control de errores</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -138,7 +138,25 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Cargue el certificado si desea utilizar TLS con el certificado autofirmado.</p> </td> 
+   <td> <p>Para agregar un certificado autofirmado:</p>
+          <ol>
+            <li value="1">
+              <p>Haga clic en <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Seleccione el tipo de archivo que va a extraer.</p>
+            </li>
+            <li value="3">
+              <p>Seleccione el archivo que contiene el certificado o.</p>
+            </li>
+            <li value="4">
+              <p>Introduzca la contraseña del archivo.</p>
+            </li>
+            <li value="5">
+              <p>Haga clic en <b>[!UICONTROL Save]</b> para extraer el archivo y volver a la configuración del módulo.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 

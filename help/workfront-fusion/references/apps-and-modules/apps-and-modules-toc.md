@@ -6,7 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 42%
@@ -23,7 +23,7 @@ ht-degree: 42%
 
 Estos conectores le permiten conectarse a cualquier aplicación o servicio web que tenga una API pública.
 
-* [Módulo HTTP >[!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [módulo http > [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
