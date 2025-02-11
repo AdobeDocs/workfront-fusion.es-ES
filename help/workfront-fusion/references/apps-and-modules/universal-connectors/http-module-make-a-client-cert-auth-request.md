@@ -1,13 +1,13 @@
 ---
-title: Módulo HTTP > Realizar una solicitud de autorización de certificado de cliente
+title: HTTP > Crear un módulo de solicitud de autorización de certificados de cliente
 description: Este módulo de  [!DNL Adobe Workfront Fusion]  permite configurar una petición HTTP con autorización de certificado de cliente HTTP y enviarla a un servidor. La respuesta HTTP recibida se incluye entonces en el paquete de salida.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 81%
+source-wordcount: '804'
+ht-degree: 80%
 
 ---
 
@@ -64,9 +64,9 @@ Para saber de qué plan, tipo de licencia o acceso dispone, póngase en contacto
 
 Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] configuración del módulo
+## [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] configuración de módulo
 
-Al configurar el módulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -114,7 +114,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP de varias partes que se usa para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]), o bien ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]), o bien ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

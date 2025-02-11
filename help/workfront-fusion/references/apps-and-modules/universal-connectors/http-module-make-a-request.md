@@ -1,13 +1,13 @@
 ---
-title: HTTP &gt; Crear un módulo de solicitud
-description: El módulo de Adobe Workfront Fusion HTTP > Crear un módulo de solicitud es un módulo universal que permite configurar una petición HTTP y enviarla a un servidor. La respuesta HTTP recibida se incluye entonces en el paquete de salida.
+title: HTTP > Crear un módulo de solicitud
+description: El módulo Adobe Workfront Fusion HTTP > Crear una solicitud es un módulo universal que permite configurar una solicitud HTTP y enviarla a un servidor. La respuesta HTTP recibida se incluye entonces en el paquete de salida.
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 68%
+source-wordcount: '815'
+ht-degree: 64%
 
 ---
 
@@ -104,7 +104,7 @@ Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request], [!DNL 
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] es una solicitud HTTP de varias partes que se usa para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt; Descargar un archivo), o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt; Descargar un archivo), o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

@@ -6,7 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 42%
@@ -24,10 +24,10 @@ ht-degree: 42%
 Estos conectores le permiten conectarse a cualquier aplicación o servicio web que tenga una API pública.
 
 * [módulo http > [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > Otros módulos](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [Módulo SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [Módulos FTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -36,7 +36,7 @@ Estos conectores le permiten conectarse a cualquier aplicación o servicio web q
 
 ## Conectores para productos de Adobe
 
-Fusion ofrece conectores para muchos de los productos y servicios de Adobe.
+Fusion ofrece conectores para muchos productos y servicios de Adobe.
 
 * [Módulos de Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
 * [módulo de Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
@@ -44,7 +44,7 @@ Fusion ofrece conectores para muchos de los productos y servicios de Adobe.
 * [Módulos de Bibliotecas de Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Módulos de Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Módulos de Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
-* [módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+* [Módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Módulos Frame.io de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Módulos de Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Módulos de Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
@@ -53,7 +53,7 @@ Fusion ofrece conectores para muchos de los productos y servicios de Adobe.
 * [Módulos de servicios de Adobe PDF](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Módulos de Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
 * [Módulos de Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
-* [Adobe de módulos de User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+* [Módulos de administración de usuarios de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Módulos de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Módulos de Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
 * [Módulos de placas Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)

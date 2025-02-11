@@ -4,7 +4,7 @@ description: Los módulos de  [!DNL Adobe Workfront Fusion Google Team Drive]  l
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 74%
@@ -162,7 +162,7 @@ Carga un archivo en la unidad compartida especificada.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Especifique el archivo que desea cargar en la unidad compartida.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (p. ej. [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)]), o indique el nombre de archivo y los datos de archivo manualmente.</p> </td> 
+   <td> <p>Especifique el archivo que desea cargar en la unidad compartida.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (p. ej. [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)]), o indique el nombre de archivo y los datos de archivo manualmente.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 

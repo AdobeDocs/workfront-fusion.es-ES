@@ -1,13 +1,13 @@
 ---
-title: Módulo HTTP > Realizar una solicitud OAuth 2.0
+title: HTTP > Crear un módulo de solicitud OAuth 2.0
 description: Para realizar una solicitud HTTP(S)  [!DNL Adobe Workfront Fusion] a servidores que requieran una autorización de OAuth 2.0, primero debe crear una conexión OAuth. [!DNL Adobe Workfront Fusion] garantiza que todas las llamadas realizadas con esta conexión tengan los encabezados de autorización adecuados y que actualicen automáticamente los tokens asociados cuando sea necesario.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 72%
+source-wordcount: '1978'
+ht-degree: 71%
 
 ---
 
@@ -227,7 +227,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
 1. Continúe con [Configurar el módulo de solicitud Crear un OAuth 2.0](#configure-the-make-an-oauth-20-request-module).
 
-### Instrucciones para crear una conexión con [!DNL Google] en [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]
+### Instrucciones para crear una conexión con [!DNL Google] en [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]
 
 El siguiente ejemplo muestra cómo usar el módulo de solicitud [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] para conectarse a [!DNL Google].
 
@@ -342,7 +342,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP de varias partes que se usa para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt;[!UICONTROL Get a File]) o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File]), o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

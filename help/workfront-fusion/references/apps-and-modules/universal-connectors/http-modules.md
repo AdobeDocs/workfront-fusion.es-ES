@@ -1,37 +1,76 @@
 ---
-title: HTTP &gt; Otros módulos
+title: HTTP > Otros módulos
 description: La aplicación HTTP de  [!DNL Adobe Workfront Fusion]  proporciona varios módulos de comunicación basados en el protocolo HTTP (Protocolo de transferencia de hipertexto). HTTP es la base de la comunicación de datos para la Internet. Puede utilizar los módulos para descargar páginas web y archivos, llamar a webhooks y extremos de API, etc.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 91%
+source-wordcount: '525'
+ht-degree: 67%
 
 ---
 
 # HTTP > Otros módulos
 
->[!NOTE]
->
->[!UICONTROL Adobe Workfront Fusion] requiere una licencia de [!UICONTROL Adobe Workfront Fusion] además de una licencia de [!UICONTROL Adobe Workfront].
-
 La aplicación [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] proporciona varios módulos de comunicación basados en el protocolo HTTP (Protocolo de transferencia de hipertexto). HTTP es la base de la comunicación de datos para la Internet. Puede utilizar los módulos para descargar páginas web y archivos, llamar a webhooks y extremos de API, etc.
 
 La elección correcta del módulo depende del mecanismo de autenticación/autorización que emplee el recurso al que desea acceder. A continuación, se muestran ejemplos de módulos
 
-* Realizar una solicitud: módulo universal destinado principalmente a recursos que no utilizan ningún tipo de autenticación o autorización
-* Realizar una solicitud de autenticación básica: para recursos que emplean la autenticación básica (BA) [!DNL HTTP]
-* Realizar una solicitud de OAuth 2.0: para recursos que emplean el protocolo de autorización de OAuth 2.0
-* Realizar una solicitud de autenticación de certificado de cliente: para recursos que emplean un protocolo de autorización que requiere un certificado del lado del cliente.
-* Realizar una solicitud de autorización de clave API: para recursos que utilizan claves de API para la autorización.
+* **Realizar una solicitud**: destinado principalmente a recursos que no utilizan ningún tipo de autenticación o autorización
+* **Realizar una solicitud de autenticación básica**: para recursos que usan [!DNL HTTP] autenticación básica (BA)
+* **Realizar una solicitud OAuth 2.0**: Para recursos que utilizan el protocolo de autorización OAuth 2.0
+* **Realizar una solicitud de autenticación de certificado de cliente**: Para recursos que emplean un protocolo de autorización que requiere un certificado del lado del cliente
+* **Realizar una solicitud de autorización de clave API**: Para recursos que emplean claves API para la autorización
 
 >[!NOTE]
 >
 >Si se está conectando a un producto de Adobe que actualmente no tiene un conector dedicado, le recomendamos utilizar el módulo de Adobe Authenticator.
 >
 >Para obtener más información, consulte [Módulo de Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
+
+## Requisitos de acceso
+
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
+Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>O</p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
+   <p>O</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Módulos de solicitud
 
@@ -57,8 +96,16 @@ Este módulo de acción descarga un archivo desde la dirección URL especificada
  <col> 
  <tbody> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td> <p>Utilice esta opción para configurar la gestión de errores.</p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Control de errores en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>Introduzca o asigne la dirección URL del archivo que desea descargar. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td> <p>Active esta opción si desea que las cookies de este sitio estén disponibles para otros módulos. </p> </td> 
   </tr> 
  </tbody> 
 </table>

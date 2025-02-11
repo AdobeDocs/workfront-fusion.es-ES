@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Crear un módulo de solicitud de autorización básica
+title: HTTP > Crear un módulo de solicitud de autorización básico
 description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion y de Adobe Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '771'
 ht-degree: 75%
 
 ---
@@ -60,9 +60,9 @@ Para saber de qué plan, tipo de licencia o acceso dispone, póngase en contacto
 
 Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] configuración del módulo
+## [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] configuración de módulo
 
-Al configurar el módulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
