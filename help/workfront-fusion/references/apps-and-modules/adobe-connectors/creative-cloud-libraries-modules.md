@@ -4,10 +4,10 @@ description: Con los módulos de Bibliotecas de  [!DNL Adobe Workfront Fusion Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 91%
+source-wordcount: '1223'
+ht-degree: 81%
 
 ---
 
@@ -25,47 +25,46 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-      <td>
-        <p>[!UICONTROL Pro] o superior</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td>
-      <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Producto</td>
-      <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -135,11 +134,11 @@ Este módulo de acción archiva un elemento de una biblioteca.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Seleccione la biblioteca que contiene el elemento que desea archivar.</td>
+      <td >Seleccione o asigne la biblioteca que contiene el elemento que desea archivar.</td>
     </tr>
     <tr>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL Element ID]</td>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-LightGray">Seleccione el elemento que desea archivar.</td>
+      <td role="rowheader">[!UICONTROL Element ID]</td>
+      <td>Seleccione o asigne el elemento que desea archivar.</td>
     </tr>
   </tbody>
 </table>
@@ -158,7 +157,7 @@ Este módulo de acción devuelve un solo elemento de una biblioteca.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Seleccione la biblioteca que contiene el elemento que desea recuperar.</td>
+      <td>Seleccione o asigne la biblioteca que contiene el elemento que desea recuperar.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Element ID]</td>
@@ -204,15 +203,15 @@ Este módulo de acción recupera una lista de elementos de una biblioteca.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Seleccione la biblioteca de la que desee enumerar los elementos.</td>
+      <td >Seleccione o asigne la biblioteca de la que desee enumerar los elementos.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Order by]</td>
-      <td>Seleccione si desea ordenar los resultados por el nombre o por la última fecha de modificación del elemento.</td>
+      <td>Seleccione si desea ordenar los resultados por nombre o por la última fecha de modificación del elemento.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Type]</td>
-      <td >Introduzca un tipo MIME para limitar los resultados a los elementos identificados con el tipo MIME especificado. Ejemplo: <code>string</code>.</td>
+      <td >Introduzca o asigne un tipo MIME para limitar los resultados a los elementos identificados con el tipo MIME especificado. Ejemplo: <code>string</code>.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Selector]</td>
@@ -240,57 +239,6 @@ Este módulo de acción recupera una lista de elementos de una biblioteca.
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</td>
-    </tr>
-  </tbody>
-</table>
-
-#### [!UICONTROL Upload an Element]
-
-Este módulo de acción carga un recurso de archivo pequeño en una biblioteca existente. El tamaño máximo de archivo es de 1 GB.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Seleccionar una conexión de Bibliotecas de Creative Cloud existente. Actualmente, la creación de conexiones no está disponible en el conector de Bibliotecas de Creative Cloud. Las conexiones existentes funcionan según lo esperado.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Seleccione la biblioteca de la que desee enumerar los elementos.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
-      <td>
-        <p>Seleccione el modo de procesamiento con el que invocar este proceso de solicitud.</p>
-        <ul>
-          <li>
-            <p><b>[!UICONTROL sync]</b>
-            </p>
-            <p>La llamada de la API se procesa de forma síncrona. La respuesta se envía cuando se completa el procesamiento (salvo que se agote el tiempo de espera de la llamada).</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL async]</b>
-            </p>
-            <p>La respuesta asíncrona del monitor se devuelve inmediatamente y el procesamiento de la solicitud se produce de forma asíncrona. La llamada es responsable del sondeo del punto final hasta la finalización.</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL sync,async]</b> (Predeterminado)</p>
-            <p>Se intenta el procesamiento síncrono de la solicitud. Cuando el procesamiento se extiende más allá de 5000 ms, se devuelve la respuesta asíncrona del monitor. Se debe sondear la URL del monitor hasta que se complete la solicitud.</p>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Type File]</td>
-      <td >Introduzca o asigne el tipo MIME del archivo cargado.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Source File]</td>
-      <td>
-        <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p>
-      </td>
     </tr>
   </tbody>
 </table>
@@ -389,6 +337,9 @@ Este módulo de activador inicia un escenario cuando se actualiza una biblioteca
 
 ### Otro
 
+* [Realizar una llamada de API](#make-an-api-call)
+* [Cargar un recurso](#upload-an-asset)
+
 #### [!UICONTROL Make an API Call]
 
 Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Creative Cloud Libraries].
@@ -445,6 +396,66 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Cr
       <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p>
     </td>
     </tr>
-
 </tbody>
 </table>
+
+
+#### [!UICONTROL Upload an Asset]
+
+Este módulo de acción carga un recurso de archivo pequeño en una biblioteca existente. El tamaño máximo de archivo es de 1 GB.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Seleccionar una conexión de Bibliotecas de Creative Cloud existente. Actualmente, la creación de conexiones no está disponible en el conector de Bibliotecas de Creative Cloud. Las conexiones existentes funcionan según lo esperado.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td >Seleccione la biblioteca en la que desea cargar un recurso.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
+      <td>
+        <p>Seleccione el modo de procesamiento con el que invocar este proceso de solicitud.</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL sync]</b>
+            </p>
+            <p>La llamada de la API se procesa de forma síncrona. La respuesta se envía cuando se completa el procesamiento (salvo que se agote el tiempo de espera de la llamada).</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL async]</b>
+            </p>
+            <p>La respuesta asíncrona del monitor se devuelve inmediatamente y el procesamiento de la solicitud se produce de forma asíncrona. La llamada es responsable del sondeo del punto final hasta la finalización.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL sync,async]</b> (Predeterminado)</p>
+            <p>Se intenta el procesamiento síncrono de la solicitud. Cuando el procesamiento se extiende más allá de 5000 ms, se devuelve la respuesta asíncrona del monitor. Se debe sondear la URL del monitor hasta que se complete la solicitud.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td >Seleccione el tipo de elemento que desea cargar</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td >Introduzca o asigne el tipo MIME del archivo cargado.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source File]</td>
+      <td>
+        <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
