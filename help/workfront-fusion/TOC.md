@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: da0c82d66bcd90a9e676f54c93252218f9b1de99
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1648'
 ht-degree: 57%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 57%
 * Actividad de versión de Fusion {#fusion-release-activity}
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2025 {#fusion-releases-2025}
+      * [Actividad de la versión de Workfront Fusion: semana del martes, 10 de febrero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 20 de enero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 13 de enero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 06 de enero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
@@ -229,7 +230,7 @@ ht-degree: 57%
    * [Creación de nuevas plantillas](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Creación de escenarios con plantillas](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Ver, editar y eliminar plantillas](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
-   * [Publish y uso compartido de plantillas](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+   * [Publicación y uso compartido de plantillas](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Plantillas de Adobe Workfront Fusion disponibles actualmente](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Preguntas frecuentes sobre plantillas de [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referencias {#references}
@@ -296,7 +297,7 @@ ht-degree: 57%
          * [Módulos de Bibliotecas de Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
          * [Módulos de Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Módulos de Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
-         * [módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+         * [Módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
          * [Módulos Frame.io de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Módulos de Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Módulos de Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
@@ -305,7 +306,7 @@ ht-degree: 57%
          * [Módulos de servicios de Adobe PDF](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Módulos de Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
          * [Módulos de Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
-         * [Adobe de módulos de User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+         * [Módulos de administración de usuarios de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Módulos de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
          * [Módulos de Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
          * [Módulos de placas Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
