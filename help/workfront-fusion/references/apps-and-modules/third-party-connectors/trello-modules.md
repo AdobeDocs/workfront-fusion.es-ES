@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
-ht-degree: 60%
+source-wordcount: '4370'
+ht-degree: 58%
 
 ---
 
@@ -872,7 +872,7 @@ Este módulo de acción devuelve tarjetas que coinciden con la consulta de búsq
 
 +++ **[!UICONTROL Watch cards]**
 
-Este módulo de activador se activa cuando se añade una tarjeta nueva.
+Este módulo de déclencheur inicia un escenario cuando se agrega una tarjeta nueva.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Este módulo de activador se activa cuando se añade una tarjeta nueva.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>El número máximo de tarjetas que [!DNL Workfront Fusion] devolverá durante un ciclo de ejecución.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Este módulo de acción recupera información sobre [!UICONTROL Trello] miembros
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Introduzca el nombre completo o el nombre de usuario del usuario que desea encontrar.</p> </td> 
+   <td> <p>Introduzca el nombre o el nombre de usuario del usuario que desea buscar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Este módulo de acción recupera información sobre [!UICONTROL Trello] miembros
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> El número máximo de abonados que [!DNL Workfront Fusion] devolverá durante un ciclo de ejecución.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Este módulo de acción crea una lista de comprobación en la tarjeta selecciona
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Seleccione si desea agregar la lista de comprobación a la parte superior o [!UICONTROL append the] lista de comprobación a la parte inferior de la tarjeta.</p> </td> 
+   <td> <p>Seleccione si desea agregar la lista de comprobación a la parte superior o anexar la lista de comprobación a la parte inferior de la tarjeta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Introduzca o asigne el ID de una lista de verificación de fuente que desee copiar en la nueva.</p> </td> 
+   <td> <p>Si está creando la lista de comprobación copiando una lista de comprobación existente, introduzca o asigne el ID de una lista de comprobación de origen que desee copiar en la nueva.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Este módulo de acción añade un elemento a una lista de verificación específ
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Seleccione cómo desea introducir el ID de la lista de verificación en la que desea añadir un elemento.</p> 
+   <td> <p> Si va a crear una nueva lista de comprobación copiando una lista existente, seleccione cómo desea introducir el ID de la lista de comprobación en la que desea agregar un elemento.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo <strong>[!UICONTROL Checklist ID]</strong>, escriba o asigne el ID de la tarjeta donde desea agregar una lista de comprobación.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleccione el tablero que contiene la tarjeta en la que desea añadir una lista de verificación, luego la lista que contiene la tarjeta, luego la tarjeta y, a continuación, la lista de verificación.</p> </li> 
@@ -1136,7 +1136,7 @@ Este módulo de acción añade un comentario a una tarjeta seleccionada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Escriba el comentario que quiera añadir a la tarjeta seleccionada.</p> </td> 
+   <td> <p>Escriba o asigne el comentario que desea agregar a la tarjeta seleccionada.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Este módulo de acción añade un comentario a una tarjeta seleccionada.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Recupera detalles del comentario cuando hay un nuevo comentario en una ubicación especificada.
+Este módulo de déclencheur inicia un escenario cuando se agrega un comentario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Recupera detalles del comentario cuando hay un nuevo comentario en una ubicació
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Número máximo de comentarios que [!DNL Workfront Fusion] devolverá durante un ciclo de ejecución.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de comentarios que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Si desea editar una tarjeta o crear un nuevo comentario, debe conocer el ID de l
 
 ### Buscar los ID de otros objetos en [!DNL Trello]
 
-Los ID de tablero, lista y comentario solo se pueden obtener mediante activadores. El sitio web [!DNL trello.com] no muestra estos ID.
+Los ID de tablero, lista y comentario solo se pueden obtener mediante activadores. El sitio web [!DNL `trello.com`] no muestra estos ID.
