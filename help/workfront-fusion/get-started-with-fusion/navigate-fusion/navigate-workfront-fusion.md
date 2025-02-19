@@ -4,7 +4,7 @@ description: Al abrir Fusion, tiene muchas opciones para las acciones. Este art�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
+source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 8%
@@ -32,3 +32,4 @@ Este artículo presenta estas áreas y proporciona vínculos a más información
 >[!NOTE]
 >
 >Todas las áreas bajo el encabezado de Equipo son propiedad de equipos individuales. Para ver la página que pertenece a un equipo diferente (como la página Escenarios de un equipo diferente), haga clic en el menú desplegable Equipo situado cerca de la parte superior de la página y seleccione otro equipo.
+
