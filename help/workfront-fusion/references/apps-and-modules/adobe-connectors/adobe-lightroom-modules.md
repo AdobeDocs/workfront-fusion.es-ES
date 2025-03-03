@@ -4,10 +4,10 @@ description: Con los módulos de Adobe Lightroom, puede iniciar un escenario de 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 21%
+source-wordcount: '2019'
+ht-degree: 22%
 
 ---
 
@@ -190,10 +190,10 @@ Este módulo de acción recupera un ID de versión de servidor de Lightroom, que
 
 * [Crear un archivo original de recurso](#create-an-asset-external-xmp-develop-setting-file)
 * [Crear un recurso](#create-an-asset)
-* [XMP Creación de un recurso externo que desarrolle un archivo de configuración](#create-an-asset-external-xmp-develop-setting-file)
+* [Crear un archivo de configuración de desarrollo de XMP externo de recursos](#create-an-asset-external-xmp-develop-setting-file)
 * [Generar representaciones para un archivo original](#generate-renditions-for-an-original-file)
 * [Obtener un recurso de catálogo](#get-a-catalog-asset)
-* [XMP Obtenga la configuración de desarrollo de recursos externos más reciente](#get-the-latest-asset-external-xmp-develop-setting-file)
+* [Obtenga la configuración de desarrollo de XMP externo de recursos más reciente](#get-the-latest-asset-external-xmp-develop-setting-file)
 * [Obtener la última representación de recursos](#get-the-latest-asset-rendition)
 * [Recuperar recursos](#retrieve-assets)
 
@@ -295,9 +295,9 @@ Este módulo de acción crea un nuevo recurso con metadatos iniciales e informac
   </tbody>
 </table>
 
-#### XMP Creación de un recurso externo que desarrolle un archivo de configuración
+#### Crear un archivo de configuración de desarrollo de XMP externo de recursos
 
-Este módulo de acción admite dos flujos de trabajo. XMP El primer flujo de trabajo consiste en cargar el archivo de configuración de desarrollo de recursos externo del recurso. XMP El segundo flujo de trabajo es crear un archivo de configuración de desarrollo de XMP externo de otro recurso copiándolo del archivo de configuración de desarrollo de XMP externo.
+Este módulo de acción admite dos flujos de trabajo. El primer flujo de trabajo es cargar el archivo de configuración de desarrollo de XMP externo para el recurso. El segundo flujo de trabajo es crear un archivo de configuración de desarrollo de XMP externo copiando del archivo de configuración de desarrollo de xmp externo de otro recurso.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -407,9 +407,9 @@ Este módulo de acción recupera información sobre un único recurso de un cat�
 </table>
 
 
-#### XMP Obtenga el recurso más reciente externo para desarrollar el archivo de configuración
+#### Obtenga el archivo de configuración de desarrollo de XMP externo de recursos más reciente
 
-XMP Este módulo de acción recupera el archivo de configuración de recursos externos más reciente de la.
+Este módulo de acción recupera el archivo de configuración de XMP externo de recursos más reciente.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -428,7 +428,7 @@ XMP Este módulo de acción recupera el archivo de configuración de recursos ex
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>XMP Introduzca o asigne el ID del recurso asociado con el archivo de configuración de desarrollo de.</p>
+        <p>Introduzca o asigne el ID del recurso asociado al archivo de configuración de desarrollo de XMP.</p>
       </td>
     </tr>
   </tbody>
@@ -455,7 +455,7 @@ Este módulo de acción recupera la última representación de recursos del tipo
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>XMP Introduzca o asigne el ID del recurso asociado con el archivo de configuración de desarrollo de.</p>
+        <p>Introduzca o asigne el ID del recurso asociado al archivo de configuración de desarrollo de XMP.</p>
       </td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ Este módulo de acción recupera recursos propiedad del usuario cuyas credencial
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Establezca el número máximo de recursos que [!DNL Workfront Fusion] devolverá durante un ciclo de ejecución. Este número debe ser inferior o igual a 100.</p>
+        <p>Introduzca el número máximo de registros que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p>
       </td>
     </tr>
     <tr>
