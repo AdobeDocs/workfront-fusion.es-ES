@@ -3,19 +3,19 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Adobe de módulos de User Management
-description: En un  [!DNL Adobe Workfront Fusion] escenario, puede automatizar los flujos de trabajo que administran a los usuarios en su cuenta de Adobe.
+title: Módulos de administración de usuarios de Adobe
+description: En un  [!DNL Adobe Workfront Fusion] escenario, puede automatizar los flujos de trabajo que administran usuarios en su cuenta de Adobe.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 15%
 
 ---
 
-# Adobe de módulos de User Management
+# Módulos de administración de usuarios de Adobe
 
 En un escenario de [!DNL Adobe Workfront Fusion], puede automatizar los flujos de trabajo que administran a los usuarios en su cuenta de Adobe.
 
@@ -104,7 +104,7 @@ Para crear una conexión para los módulos de [!DNL Adobe User Management]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>Escriba sus credenciales de IMS [!DNL Adobe]. El identificador único de una organización. Es una cadena con el formato A495E53@AdobeOrg donde el prefijo antes de @ es un número hexadecimal. Puede encontrar este valor como parte de la ruta URL de la organización en el Admin Console o en la consola de adobe.io para su integración de User Management.</td>
+        <td>Escriba sus credenciales de IMS [!DNL Adobe]. El identificador único de una organización. Es una cadena con el formato A495E53@AdobeOrg donde el prefijo antes de @ es un número hexadecimal. Puede encontrar este valor como parte de la ruta URL para la organización en Admin Console o en la consola adobe.io para su integración de User Management.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -119,7 +119,7 @@ Para crear una conexión para los módulos de [!DNL Adobe User Management]:
 
 ## Módulos de administración de usuarios de Adobe y sus campos
 
-Al configurar los módulos de Administración de usuarios de Adobe, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, pueden mostrarse campos adicionales de Adobe de Administración de usuarios, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de Administración de usuarios de Adobe, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, pueden mostrarse campos adicionales de Administración de usuarios de Adobe, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -264,7 +264,7 @@ Este módulo de acción agrega un usuario como miembro del grupo o grupos especi
   </tr> 
   <tr> 
    <td role="rowheader">Uso de Adobe ID</td> 
-   <td>Seleccione true para asegurarse de que el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise o un Federated ID con el mismo nombre.</td> 
+   <td>Seleccione true para asegurarse de que el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise o Federated ID con el mismo nombre.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -319,7 +319,7 @@ Este módulo de acción crea un nuevo usuario en la organización.
   </tr> 
   <tr> 
    <td role="rowheader">Uso de Adobe ID</td> 
-   <td>Cuando es true, el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise o un Federated ID con el mismo nombre.</td> 
+   <td>Cuando es true, el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise ID o un Federated ID con el mismo nombre.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -350,7 +350,7 @@ Este módulo de acción elimina la pertenencia de un usuario a los grupos especi
   </tr> 
   <tr> 
    <td role="rowheader">Uso de Adobe ID</td> 
-   <td>Seleccione true para asegurarse de que el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise o un Federated ID con el mismo nombre.</td> 
+   <td>Seleccione true para asegurarse de que el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise o Federated ID con el mismo nombre.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -499,7 +499,7 @@ Este módulo de acción elimina usuarios o perfiles de un grupo de usuarios.
   </tr> 
   <tr> 
    <td role="rowheader">Uso de Adobe ID</td> 
-   <td>Cuando es true, el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise o un Federated ID con el mismo nombre.</td> 
+   <td>Cuando es true, el ID de usuario se interpreta como una referencia a un Adobe ID existente aunque exista un Enterprise ID o un Federated ID con el mismo nombre.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -528,13 +528,15 @@ Este módulo de acción actualiza un grupo de usuarios existente.
    <td role="rowheader">Nombre del grupo original</td> 
    <td>Introduzca o asigne la descripción actualizada del grupo.</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### Otro
 
-Este módulo de acción realiza una llamada personalizada a la API de administración de usuarios de Adobe.
 
 #### Realizar una llamada de API personalizada
+
+Este módulo de acción realiza una llamada personalizada a la API de administración de usuarios de Adobe.
 
 <table style="table-layout:auto"> 
   <col/>
