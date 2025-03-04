@@ -4,10 +4,10 @@ description: Los módulos [!DNL Adobe Workfront Fusion SFTP]  permiten supervisa
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1851'
-ht-degree: 81%
+source-wordcount: '2077'
+ht-degree: 84%
 
 ---
 
@@ -95,25 +95,25 @@ Para conectar su cuenta SFTP a [!DNL Workfront Fusion], debe crear una conexión
    <td> <p>Seleccione el método de autorización que desee utilizar para conectarse al servidor SFTP.</p> 
     <ul> 
      <li><strong>[!UICONTROL User name and password]</strong>: introduzca sus credenciales.</li> 
-     <li> <p><strong>[!UICONTROL User name and key]</strong>: introduzca su nombre de usuario y la clave privada/certificado</p> <p>Suba la clave privada para utilizar la autorización del lado del cliente o suba el certificado (archivo P12 o PFX) si desea utilizar TLS con el certificado autofirmado. Si utiliza la autorización de certificados del lado del cliente, puede introducir el certificado de CA aquí.</p> <p>[!DNL Workfront Fusion] no conserva ni almacena ningún dato (archivos, contraseñas) que usted proporciona aquí. El archivo y la contraseña solo se utilizan para extraer una clave privada o un certificado.</p> </li> 
+     <li> <p><strong>[!UICONTROL User name and key]</strong>: introduzca su nombre de usuario y la clave privada o certificado</p> <p>Suba la clave privada para utilizar la autorización del lado del cliente o suba el certificado (archivo P12 o PFX) si desea utilizar TLS con el certificado autofirmado. Si utiliza la autorización de certificados del lado del cliente, puede introducir el certificado de CA aquí.</p> <p>[!DNL Workfront Fusion] no conserva ni almacena ningún dato (archivos, contraseñas) que usted proporciona aquí. El archivo y la contraseña solo se utilizan para extraer una clave privada o un certificado.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Key exchange algorithms] </td> 
+   <td role="rowheader">[!UICONTROL Algoritmos de intercambio de claves] </td> 
    <td> <p>Puede introducir un conjunto de algoritmos para el intercambio de claves. El módulo prioriza los algoritmos en función del orden en que se agregaron. Para cada algoritmo que desee agregar, haga clic en <b>Agregar elemento</b> y seleccione el algoritmo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Ciphers] </td> 
+   <td role="rowheader">[!UICONTROL Cifras] </td> 
    <td> <p>Puede introducir un conjunto de cifras para el intercambio de claves. El módulo prioriza las cifras en función del orden en que se agregaron. Para cada cifrado que desee agregar, haga clic en <b>Agregar elemento</b> y seleccione el cifrado.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Después de escribir la información de conexión, haga clic en **[!UICONTROL Continue]** para establecer una conexión.
+Después de introducir la información de conexión, haga clic en **[!UICONTROL Continuar]** para establecer una conexión.
 
-## Módulos de [!UICONTROL SFTP] y sus campos
+## Módulos [!UICONTROL SFTP] y sus campos
 
-Al configurar módulos de [!UICONTROL SFTP], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!UICONTROL SFTP] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos [!UICONTROL SFTP], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos [!UICONTROL SFTP] adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -124,7 +124,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Ver archivos en una carpeta](#watch-files-in-a-folder)
 * [Ver subcarpetas en una carpeta](#watch-subfolders-in-a-folder)
 
-#### [!UICONTROL Watch Files in a Folder]
+#### [!UICONTROL Ver archivos en una carpeta]
 
 Devuelve archivos con detalles cuando se crea o cambia un archivo en una carpeta especificada.
 
@@ -151,7 +151,7 @@ Devuelve archivos con detalles cuando se crea o cambia un archivo en una carpeta
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Subfolders in a Folder]
+#### [!UICONTROL Ver subcarpetas en una carpeta]
 
 Devuelve carpetas con detalles cuando se crea o cambia una carpeta en una carpeta especificada.
 
@@ -187,13 +187,13 @@ Devuelve carpetas con detalles cuando se crea o cambia una carpeta en una carpet
 * [Actualizar permisos de archivo](#update-file-permissions)
 * [Cargar un archivo](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crear una carpeta]
 
-Crea una carpeta nueva en la ubicación especificada.
+Este módulo de acción crea una nueva carpeta en la ubicación especificada.
 
 >[!NOTE]
 >
->Si la carpeta ya existe, el módulo genera un error. Para continuar el flujo sin interrupciones, adjunte una ruta de controlador de error al módulo para detectar el error y use la directiva [!UICONTROL Resume] para continuar el flujo. Para obtener información acerca de cómo adjuntar una ruta de controlador de error, vea [Control de errores en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Para obtener información acerca de la ruta del controlador de error, vea [Directivas para la gestión de errores en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+>Si la carpeta ya existe, el módulo genera un error. Para continuar el flujo sin interrupciones, adjunte una ruta de controlador de error al módulo para detectar el error y use la directiva [!UICONTROL Reanudar] para continuar el flujo. Para obtener información acerca de cómo adjuntar una ruta de controlador de error, vea [Control de errores en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Para obtener información acerca de la ruta del controlador de error, vea [Directivas para la gestión de errores en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -218,7 +218,7 @@ Crea una carpeta nueva en la ubicación especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminar un archivo]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -235,7 +235,7 @@ Crea una carpeta nueva en la ubicación especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Eliminar una carpeta]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -252,7 +252,7 @@ Crea una carpeta nueva en la ubicación especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obtener un archivo]
 
 Este módulo recupera detalles del archivo, incluidos los datos de un archivo.
 
@@ -275,7 +275,7 @@ Este módulo recupera detalles del archivo, incluidos los datos de un archivo.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get files]
+#### [!UICONTROL Obtener archivos]
 
 Este módulo devuelve archivos de una carpeta especificada.
 
@@ -318,7 +318,7 @@ Este módulo devuelve archivos de una carpeta especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL List a folder's content]
+#### [!UICONTROL Enumerar el contenido de una carpeta]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -359,7 +359,7 @@ Este módulo devuelve archivos de una carpeta especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
+#### [!UICONTROL Mover un archivo]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -380,7 +380,7 @@ Este módulo devuelve archivos de una carpeta especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File]
+#### [!UICONTROL Cambiar el nombre de un archivo]
 
 Cambia el nombre de un archivo.
 
@@ -403,7 +403,7 @@ Cambia el nombre de un archivo.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update file permissions]
+#### [!UICONTROL Actualizar permisos de archivo]
 
 Le permite cambiar los permisos del archivo.
 
@@ -426,7 +426,7 @@ Le permite cambiar los permisos del archivo.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Subir un archivo]
 
 Este módulo le permite subir un archivo en el servidor SFTP.
 

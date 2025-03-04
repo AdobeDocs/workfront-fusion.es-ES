@@ -4,10 +4,10 @@ description: Los módulos FTP permiten supervisar los cambios realizados en un a
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c5e9c643c828e5556e386a5f46e1d17680b7d4e9
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 84%
+source-wordcount: '1328'
+ht-degree: 95%
 
 ---
 
@@ -17,46 +17,50 @@ Los módulos FTP permiten supervisar los cambios realizados en un archivo de una
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
+
 ## Requisitos previos
 
-Para usar la [aplicación Fusion] con [!DNL Workfront Fusion], es necesario tener una cuenta de FTP.
+Para utilizar módulos FTP, debe tener una cuenta de FTP.
 
 ## Crear una conexión en un módulo FTP {#create-a-connection}
 
@@ -94,7 +98,7 @@ Para usar la [aplicación Fusion] con [!DNL Workfront Fusion], es necesario ten
     <ul> 
      <li>debe estar firmado por una <a href="https://en.wikipedia.org/wiki/Certificate_authority">autoridad de certificación</a> raíz</li> 
      <li>debe firmarlo una autoridad de certificación intermedia (consulte, por ejemplo, <a href="https://knowledge.digicert.com/solution/SO16297.html">Cómo funcionan las cadenas de certificados</a> para obtener más información). En este caso, todos los certificados intermedios deben instalarse en el servidor FTP.</li> 
-     <li>ser un certificado firmado automáticamente suministrado en el campo [!UICONTROL Self-signed certificate] (ver a continuación)</li> </ul>
+     <li>ser un certificado firmado automáticamente suministrado en el campo [!UICONTROL Self-signed certificate] (consulte a continuación)</li> </ul>
 
 Si esta opción está desactivada, el certificado del servidor FTP no se verifica. Desaconsejamos desactivar la opción, ya que hace que la conexión sea insegura y supone un riesgo de seguridad grave.</td>
 </tr> 
@@ -112,9 +116,9 @@ Si esta opción está desactivada, el certificado del servidor FTP no se verific
 
 ### Activadores
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL Ver archivos]
 
-[!UICONTROL Watch files] es el único módulo de déclencheur para FTP. Supervisa el contenido del archivo de la carpeta seleccionada. El activador se ejecuta cuando se inserta un nuevo archivo en la carpeta especificada.
+[!UICONTROL Ver archivos] es el único módulo de activador para FTP. Supervisa el contenido del archivo de la carpeta seleccionada. El activador se ejecuta cuando se inserta un nuevo archivo en la carpeta especificada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,16 +141,16 @@ Si esta opción está desactivada, el certificado del servidor FTP no se verific
 
 ### Acciones
 
-* [[!UICONTROL Change permissions]](#change-permissions)
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL List of files in a folder]](#list-of-files-in-a-folder)
-* [[!UICONTROL Move a file or folder]](#move-a-file-or-folder)
-* [[!UICONTROL Upload] un archivo](#upload-a-file)
+* [[!UICONTROL Cambiar permisos]](#change-permissions)
+* [[!UICONTROL Crear una carpeta]](#create-a-folder)
+* [[!UICONTROL Eliminar un archivo]](#delete-a-file)
+* [[!UICONTROL Eliminar una carpeta]](#delete-a-folder)
+* [[!UICONTROL Obtener un archivo]](#get-a-file)
+* [[!UICONTROL Lista de archivos de una carpeta]](#list-of-files-in-a-folder)
+* [[!UICONTROL Mover un archivo o carpeta]](#move-a-file-or-folder)
+* [[!UICONTROL Subir] un archivo](#upload-a-file)
 
-#### [!UICONTROL Change permissions]
+#### [!UICONTROL Cambiar permisos]
 
 Este módulo de acción cambia la configuración de permisos de un archivo o carpeta.
 
@@ -156,7 +160,7 @@ Este módulo de acción cambia la configuración de permisos de un archivo o car
    <tbody>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Para obtener instrucciones sobre cómo establecer una conexión con la cuenta de FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] en un módulo FTP</a> en este artículo.</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Para obtener instrucciones sobre el establecimiento de una conexión en la cuenta de FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] en un módulo FTP</a> en este artículo.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Change permission settings of]</td>
@@ -178,7 +182,7 @@ Este módulo de acción cambia la configuración de permisos de un archivo o car
    </tbody>
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crear una carpeta]
 
 Este módulo de acción crea una nueva carpeta.
 
@@ -203,7 +207,7 @@ Este módulo de acción crea una nueva carpeta.
    </tbody>
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminar un archivo]
 
 Elimina un archivo de la carpeta especificada.
 
@@ -226,7 +230,7 @@ Elimina un archivo de la carpeta especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Eliminar una carpeta]
 
 Este módulo de acción elimina permanentemente la carpeta especificada.
 
@@ -247,7 +251,7 @@ Este módulo de acción elimina permanentemente la carpeta especificada.
    </tbody>
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obtener un archivo]
 
 Recupera un archivo del servidor FTP que se puede procesar posteriormente, por ejemplo, subirlo al [!DNL Dropbox].
 
@@ -266,7 +270,7 @@ Recupera un archivo del servidor FTP que se puede procesar posteriormente, por e
  </tbody> 
 </table>
 
-#### [!UICONTROL List of files in a folder]
+#### [!UICONTROL Lista de archivos en una carpeta]
 
 Recupera información de archivos o carpetas.
 
@@ -297,7 +301,7 @@ Recupera información de archivos o carpetas.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file or folder]
+#### [!UICONTROL Mover un archivo o carpeta]
 
 Este módulo de acción mueve un archivo o carpeta a una ubicación diferente.
 

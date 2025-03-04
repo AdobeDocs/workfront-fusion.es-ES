@@ -4,10 +4,10 @@ description: Con los módulos de Adobe Photoshop, puede iniciar un escenario de 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '3713'
-ht-degree: 95%
+source-wordcount: '4334'
+ht-degree: 97%
 
 ---
 
@@ -92,7 +92,7 @@ El conector de Adobe Photoshop utiliza lo siguiente:
 
 Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
 
-1. Haga clic en **[!UICONTROL Add]** junto al cuadro Conexión.
+1. En cualquier módulo, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 
@@ -110,19 +110,19 @@ Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Escriba su [!UICONTROL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección de detalles [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Introduzca el [!UICONTROL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección de detalles [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Escriba su [!UICONTROL Client Secret] de [!DNL Adobe]. Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Escriba su [!DNL Adobe] [!UICONTROL Technical account ID]. Esto se puede encontrar en la sección de detalles [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Introduzca su [!DNL Adobe] [!UICONTROL Technical account ID]. Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>Escriba su [!DNL Adobe] [!UICONTROL Organization ID]. Esto se puede encontrar en la sección de detalles [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Escriba su [!UICONTROL Organization ID] de [!DNL Adobe]. Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Private key]</td>
@@ -151,7 +151,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
       </tbody>
     </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
 ## Módulos de [!DNL Adobe Photoshop] y sus campos
 
@@ -204,43 +204,43 @@ Este módulo de acción aplica una variedad de ediciones a nivel de documento y 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
+        <p>[!UICONTROL (Options &gt; Document &gt; Image size) Height]</p>
       </td>
       <td> Introduzca o asigne la altura de la imagen en píxeles. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
+        <p>[!UICONTROL (Options &gt; Document &gt; Image size) Width]</p>
       </td>
       <td> Introduzca o asigne la anchura de la imagen en píxeles. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Top]</p>
+        <p>[!UICONTROL (Options &gt; Document &gt; Canvas size) Top]</p>
       </td>
    <td> Escriba o asigne, en píxeles, la coordenada y de la esquina superior izquierda del documento. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Bottom]</p>
+        <p>[!UICONTROL (Options &gt; Document &gt; Canvas size) Bottom]</p>
       </td>
    <td> Escriba o asigne, en píxeles, la coordenada y de la esquina inferior derecha del documento. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Left]</p>
+        <p>[!UICONTROL (Options &gt; Document &gt; Canvas size) Left]</p>
       </td>
    <td> Escriba o asigne, en píxeles, la coordenada x de la esquina superior izquierda del documento. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Right]</p>
+        <p>[!UICONTROL (Options &gt; Document &gt; Canvas size) Right]</p>
       </td>
    <td> Escriba o asigne, en píxeles, la coordenada x de la esquina inferior derecha del documento. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options > Document) Trim]</p>
+        <p>[!UICONTROL (Options &gt; Document) Trim]</p>
       </td>
    <td> Seleccione Píxeles transparentes para basar el recorte en píxeles transparentes de la imagen. </td> 
     </tr>
@@ -471,7 +471,7 @@ Este módulo de acción devuelve un archivo PNG con un más aplicado alrededor d
     <tr>
       <td role="rowheader">[!UICONTROL Overwrite]</td>
       <td>
-        <p>Seleccione si el archivo recién editado ha de sobrescribir cualquier archivo de salida que ya exista. Esto solo se aplica a los archivos en el almacenamiento de Adobe.</p>
+        <p>Seleccione si el archivo recién editado sobrescribirá cualquier archivo de salida que ya exista. Esto solo se aplica a los archivos en el almacenamiento de Adobe.</p>
       </td>
     </tr>
     <tr>
@@ -529,7 +529,7 @@ Este módulo de acción edita las capas de texto en un archivo Photoshop.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], vea <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Input file storage]</td>
@@ -714,7 +714,7 @@ Este módulo de acción ejecuta el desenfoque de la profundidad en el archivo se
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], vea <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Input file storage]</td>
@@ -777,7 +777,7 @@ Este módulo de acción ejecuta una acción de Photoshop en la imagen selecciona
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], vea <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Input file storage]</td>
@@ -864,7 +864,7 @@ Este módulo de acción ejecuta el recorte de productos en la imagen seleccionad
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], vea <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Input file storage]</td>
@@ -939,7 +939,7 @@ Este módulo de acción recupera información de capa del archivo de PSD especif
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], vea <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Input file storage]</td>
@@ -972,7 +972,7 @@ Este módulo de acción realiza una llamada personalizada a la API de Photoshop.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre la creación de una conexión a [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión a [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
@@ -1048,7 +1048,7 @@ Este módulo de acción identifica el asunto principal de la imagen y elimina el
     <tr>
       <td role="rowheader">[!UICONTROL Overwrite]</td>
       <td>
-        <p>Seleccione si el archivo recién editado ha de sobrescribir cualquier archivo de salida que ya exista. Esto solo se aplica a los archivos en el almacenamiento de Adobe.</p>
+        <p>Seleccione si el archivo recién editado sobrescribirá cualquier archivo de salida que ya exista. Esto solo se aplica a los archivos en el almacenamiento de Adobe.</p>
       </td>
     </tr>
     <tr>
@@ -1173,7 +1173,7 @@ Esta acción cambia el tamaño de una imagen con la misma relación de aspecto.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], vea <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Storage]</td>
@@ -1214,7 +1214,7 @@ Esta acción cambia el tamaño de una imagen con la misma relación de aspecto.
     <tr>
       <td role="rowheader">[!UICONTROL Overwrite]</td>
       <td>
-        <p>Seleccione si el archivo recién editado ha de sobrescribir cualquier archivo de salida que ya exista. Esto solo se aplica a los archivos en el almacenamiento de Adobe.</p>
+        <p>Seleccione si el archivo recién editado sobrescribirá cualquier archivo de salida que ya exista. Esto solo se aplica a los archivos en el almacenamiento de Adobe.</p>
       </td>
     </tr>
         <tr>
@@ -1236,7 +1236,7 @@ Este módulo de acción añade una marca de agua a la imagen seleccionada.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Crear una conexión con [!DNL Adobe Photoshop]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear conexiones con [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creación de conexiones con [!DNL Adobe Photoshop]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Base / Input) Storage]</td>

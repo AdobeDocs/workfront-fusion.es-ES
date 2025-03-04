@@ -4,14 +4,14 @@ description: Para realizar una solicitud HTTP(S)  [!DNL Adobe Workfront Fusion] 
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 71%
+source-wordcount: '2256'
+ht-degree: 83%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] módulo
+# Módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0]
 
 >[!NOTE]
 >
@@ -80,12 +80,12 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 ## Crear una conexión para una solicitud [!DNL OAuth]
 
 * [Instrucciones generales para crear una conexión en el módulo de solicitud HTTP > Crear una OAuth 2.0](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [Instrucciones para crear una conexión con Google en el módulo de solicitud http > [!UICONTROL Make] y OAuth 2.0](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [Instrucciones para crear una conexión con Google en el módulo de solicitud http > [!UICONTROL Make] an OAuth 2.0](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [Instrucciones para conectarse a la API de Microsoft Graph mediante el módulo de solicitud HTTP > Crear una OAuth 2.0](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
-### Instrucciones generales para crear una conexión en el módulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]
+### Instrucciones generales para crear una conexión en el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0]
 
-1. Cree un cliente OAuth en el servicio de [!DNL target] con el que desea que se comunique [!DNL Adobe Workfront Fusion]. Es muy probable que esta opción se encuentre en la sección [!UICONTROL Developer] del servicio dado.
+1. Cree un cliente OAuth en el servicio de [!DNL target] con el que desea que se comunique [!DNL Adobe Workfront Fusion]. Es muy probable que esta opción se encuentre en la sección [!UICONTROL Desarrollador] del servicio proporcionado.
 
    1. Al crear un cliente, introduzca la dirección URL correspondiente en el campo `[!UICONTROL Redirect URL]` o `[!UICONTROL Callback URL]`:
 
@@ -103,7 +103,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 1. (Condicional) Si el servicio de destino utiliza ámbitos (derechos de acceso), compruebe cómo separa los ámbitos individuales y asegúrese de establecer el separador en los ajustes avanzados en consecuencia. Si el separador no se ha establecido correctamente, [!DNL Workfront Fusion] no consigue crear la conexión y se recibe un error de ámbito no válido.
 1. Después de completar los pasos anteriores, puede comenzar a crear la conexión OAuth en [!DNL Workfront Fusion]. Añada el módulo de solicitud HTTP > Crear un OAuth 2 a su escenario.
-1. En el campo Conexión del módulo, haga clic en **[!UICONTROL Add]**.
+1. En el campo Conexión del módulo, haga clic en **[!UICONTROL Añadir]**.
 
 1. Rellene los campos siguientes para crear una conexión:
 
@@ -127,8 +127,8 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
       <td> <p>Seleccione el flujo para obtener tókenes.</p> 
        <ul> 
-        <li><strong>[!UICONTROL Authorization Code]</strong>: escriba <code>[!UICONTROL Authorize URI]</code> y <code>[!UICONTROL Token URI]</code> desde la documentación de API del servicio.</li> 
-        <li><strong>[!UICONTROL Implicit]</strong>: introduzca <code>[!UICONTROL Authorize URI]</code> desde la documentación de API del servicio.</li> 
+        <li><strong>[!UICONTROL Authorization Code]</strong>: introduzca el <code>[!UICONTROL Authorize URI]</code> y el <code>[!UICONTROL Token URI]</code> de la documentación de la API del servicio.</li> 
+        <li><strong>[!UICONTROL Implicit]</strong>: introduzca el <code>[!UICONTROL Authorize URI]</code> de la documentación de la API del servicio.</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -202,16 +202,16 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
         <li> <p><strong>[!UICONTROL grant_type]</strong>: <code>refresh_token</code></p> </li> 
         <li> <p><strong>[!UICONTROL refresh_token]</strong>: el token de actualización más reciente obtenido por el servicio al que se está conectando</p> </li> 
         <li> <p><strong>[!UICONTROL client_id]</strong>: el ID de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</p> </li> 
-        <li> <p><strong>[!UICONTROL client_secret]</strong>: el Secreto de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</p> </li> 
+        <li> <p><strong>[!UICONTROL client_secret]</strong>: el secreto de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</p> </li> 
        </ul> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] envía automáticamente el secreto y el ID de cliente especificados a través del método <code>[!UICONTROL client_secret_post]</code>. Por lo tanto, estos parámetros se incluyen automáticamente como parte del cuerpo de solicitud de token. </p> <p>Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Custom Headers]</p> </td> 
-      <td> <p>Especifique claves y valores adicionales para incluir en el encabezado de los pasos [!UICONTROL Token] y R[!UICONTROL efresh Token].</p> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] no admite automáticamente el método <code>[!UICONTROL client_secret_basic]</code>. Si el servicio al que se está conectando espera que el ID de cliente y el secreto del cliente se combinen en una sola cadena y luego se codifique base64 en el encabezado Autorización, debe añadir ese encabezado y valor clave aquí.</p> <p> Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
+      <td> <p>Especifique las claves y los valores adicionales que se incluirán en el encabezado de los pasos de [!UICONTROL Token] y [!UICONTROL Refresh Token].</p> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] no admite automáticamente el método <code>[!UICONTROL client_secret_basic]</code>. Si el servicio al que se está conectando espera que el ID de cliente y el secreto del cliente se combinen en una sola cadena y luego se codifique base64 en el encabezado Autorización, debe añadir ese encabezado y valor clave aquí.</p> <p> Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Token placement]</p> </td> 
-      <td> <p>Seleccione si desea enviar el token en [!UICONTROL header], [!UICONTROL query string] o en ambos al conectarse a la dirección URL especificada.</p> <p>Normalmente, los tokens se envían en el encabezado de la solicitud.</p> </td> 
+      <td> <p>Seleccione si desea enviar el token en el [!UICONTROL header], la [!UICONTROL query string] o en ambos al conectarse a la dirección URL especificada.</p> <p>Normalmente, los tokens se envían en el encabezado de la solicitud.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Header token name] </td> 
@@ -224,16 +224,16 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
     </tbody> 
    </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 1. Continúe con [Configurar el módulo de solicitud Crear un OAuth 2.0](#configure-the-make-an-oauth-20-request-module).
 
-### Instrucciones para crear una conexión con [!DNL Google] en [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]
+### Instrucciones para crear una conexión con [!DNL Google] en el [!UICONTROL HTTP] > [!UICONTROL Crear un módulo de solicitud OAuth 2.0]
 
-El siguiente ejemplo muestra cómo usar el módulo de solicitud [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] para conectarse a [!DNL Google].
+El siguiente ejemplo muestra cómo se usa el módulo de solicitud [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] para conectarse a [!DNL Google].
 
 1. Asegúrese de haber creado un proyecto, configurado la configuración de OAuth y generado sus credenciales tal como se describe en el artículo[Conectar [!DNL Adobe Workfront Fusion] a [!DNL Google Services] mediante un cliente de OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
-1. Abra el módulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request].
-1. Haga clic en **[!UICONTROL Add]** junto al cuadro de conexión.
+1. Abra el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0].
+1. En cualquier módulo, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 1. Introduzca los siguientes valores:
 
    <table style="table-layout:auto">  
@@ -287,14 +287,14 @@ El siguiente ejemplo muestra cómo usar el módulo de solicitud [!UICONTROL HTTP
     </tbody> 
    </table>
 
-1. Haga clic **[!UICONTROL Continue]** para guardar la configuración de conexión.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la configuración de conexión.
 1. Continúe con [Configurar el módulo de solicitud Crear un OAuth 2.0](#configure-the-make-an-oauth-20-request-module).
 
 ## Configuración del módulo de solicitud Make a OAuth 2.0
 
 Después de establecer una conexión OAuth 2.0, siga configurando el módulo como desee. Todos los tókenes de autorización se incluyen automáticamente en esta solicitud y en cualquier otra que utilice la misma conexión.
 
-Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -339,16 +339,16 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
        <p>Ejemplo del formato de petición HTTP resultante:</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP de varias partes que se usa para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>El [!UICONTROL Multipart/form-data] es una solicitud HTTP multipart utilizada para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File]), o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Obtener un archivo]) o introduzca el nombre de archivo y los datos de archivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>Habilite esta opción para analizar automáticamente las respuestas y convertir las respuestas JSON y XML para que no necesite utilizar los módulos [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] o [!UICONTROL XML] &gt; [!UICONTROL Parse XML].</p> <p>Antes de poder usar el contenido JSON o XML analizado, ejecute el módulo manualmente una vez para que el módulo pueda reconocer el contenido de la respuesta y le permita asociarlo en módulos posteriores.</p> </td> 
+   <td> <p>Habilite esta opción para analizar automáticamente las respuestas y convertir las respuestas JSON y XML, de modo que no necesite usar los módulos [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] o [!UICONTROL XML] &gt; [!UICONTROL Parse XML].</p> <p>Antes de poder usar el contenido JSON o XML analizado, ejecute el módulo manualmente una vez para que el módulo pueda reconocer el contenido de la respuesta y le permita asociarlo en módulos posteriores.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 

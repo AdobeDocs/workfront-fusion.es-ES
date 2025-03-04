@@ -8,10 +8,10 @@ description: En un  [!DNL Adobe Workfront Fusion] escenario, necesita crear y ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 17%
+source-wordcount: '1386'
+ht-degree: 19%
 
 ---
 
@@ -106,7 +106,7 @@ En la página de Adobe Admin Console, seleccione la pestaña Productos en la bar
 
 Para crear una conexión para los módulos de [!DNL Adobe Storage]:
 
-1. Haga clic en **[!UICONTROL Add]** junto al cuadro Conexión.
+1. En cualquier módulo, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 
@@ -127,11 +127,11 @@ Para crear una conexión para los módulos de [!DNL Adobe Storage]:
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Escriba su [!UICONTROL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección [!UICONTROL Credential details] del proyecto en [!DNL Adobe Developer Console].</td>
+        <td>Introduzca el [!UICONTROL Adobe] [!UICONTROL Client ID]. Se encuentra en la sección [!UICONTROL Credential details] del proyecto en [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credential details] del proyecto en [!DNL Adobe Developer Console].</td>
+        <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret].  Se encuentra en la sección [!UICONTROL Credential details] del proyecto en [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
@@ -140,7 +140,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Storage]:
       </tbody>
     </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
 ## Módulos de almacenamiento de Adobe y sus campos
 
