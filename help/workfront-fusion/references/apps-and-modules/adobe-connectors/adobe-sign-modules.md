@@ -4,10 +4,10 @@ description: Con los módulos de [!DNL Adobe Acrobat Sign] , puede iniciar un es
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '5503'
-ht-degree: 77%
+source-wordcount: '6666'
+ht-degree: 97%
 
 ---
 
@@ -36,13 +36,13 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>  
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront] su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!DNL Workfront] de [!UICONTROL Ultimate].</p>
    <p>O</p>
    <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
    </td> 
@@ -82,7 +82,7 @@ Los nuevos usuarios de [!DNL Adobe Sign] deben prestar mucha atención a algunas
 
 Los acuerdos de [!DNL Adobe Sign] necesitan un campo con el que trabajar. Hay algunas opciones para hacerlo, pero lo más fácil y habitual es cargar un documento transitorio y luego asignar ese documento a su acuerdo.
 
-![recomendaciones de Adobe Sign](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Recomendaciones de Adobe Sign](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## Módulos de [!DNL Adobe Acrobat Sign] y sus campos
 
@@ -113,7 +113,7 @@ Este módulo activador inicia un escenario cuando se crea o actualiza un acuerdo
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-<td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Adobe Acrobat Sign] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a></td>  </tr> 
+<td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Adobe Acrobat Sign] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión a [!DNL Adobe Workfront Fusion]: instrucciones básicas</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
    <td>Seleccione si desea buscar registros nuevos, registros actualizados o ambos.</td> 
@@ -135,7 +135,7 @@ Este módulo activador inicia un escenario cuando se crea o actualiza un acuerdo
 
 +++
 
-+++ **[!UICONTROL Watch for events]**
++++ **[!UICONTROL Observar eventos]**
 
 Este módulo de activador inicia un escenario cuando se produce un evento que selecciona.
 
@@ -145,7 +145,7 @@ Este módulo de activador inicia un escenario cuando se produce un evento que se
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td>Seleccione el enlace web que desee utilizar o haga clic en <b>[!UICONTROL Add]</b> y rellene los campos siguientes.</td> 
+   <td>Seleccione el webhook que desee utilizar o haga clic en <b>[!UICONTROL Add]</b> y llene los campos siguientes.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook name]</td> 
@@ -162,7 +162,7 @@ Este módulo de activador inicia un escenario cuando se produce un evento que se
      <li> <p>[!UICONTROL Account]</p> </li> 
      <li> <p>[!UICONTROL Group]</p> </li> 
      <li> <p>[!UICONTROL User]</p> </li> 
-     <li> <p>[!UICONTROL Resource]</p> <p>Si selecciona [!UICONTROL Resource], escriba el identificador de recurso y el tipo de recurso.</p> </li> 
+     <li> <p>[!UICONTROL Resource]</p> <p>Si selecciona [!UICONTROL Resource], introduzca el identificador de recurso y el tipo de recurso.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -189,11 +189,11 @@ Este módulo de activador inicia un escenario cuando se produce un evento que se
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Problem notification emails]</td> 
-   <td> <p>Esta configuración solo funciona para cuentas del administrador</p> <p>Para cada dirección de correo electrónico a la que desee enviar correos electrónicos de notificación de problemas, haga clic en <b>[!UICONTROL Add]</b> e introduzca la dirección de correo electrónico.</p> </td> 
+   <td> <p>Esta configuración solo funciona para cuentas del administrador</p> <p>Para cada dirección de correo electrónico a la que desea enviar correos electrónicos de notificación de problemas, haga clic en <b>[!UICONTROL Add]</b> e introduzca la dirección de correo electrónico.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Agreement conditional parameters]</td> 
-   <td>Si desea agregar parámetros condicionales, seleccione <b>[!UICONTROL Yes]</b> en el tipo de registro al que desee agregar parámetros y, a continuación, seleccione <b>[!UICONTROL Yes]</b> en cualquier parámetro que desee habilitar.</td> 
+   <td>Si desea añadir parámetros condicionales, seleccione <b>[!UICONTROL Yes]</b> en el tipo de registro al que desea añadir parámetros y, a continuación, seleccione <b>[!UICONTROL Yes]</b> en cualquier parámetro que desee habilitar.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -215,7 +215,7 @@ Este módulo de activador inicia un escenario cuando se produce un evento que se
 * [Upload document](#upload-document)
 -->
 
-+++ **[!UICONTROL Create a record]**
++++ **[!UICONTROL Crear un registro]**
 
 Este módulo de acción crea un nuevo registro del tipo seleccionado.
 
@@ -243,13 +243,13 @@ Este módulo de acción crea un nuevo registro del tipo seleccionado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group info]</td> 
-   <td> <p>Escriba o asigne [!UICONTROL Name] y [!UICONTROL ID] del grupo e indique si este grupo es el predeterminado para la cuenta.</p> </td> 
+   <td> <p>Introduzca o asigne el [!UICONTROL Name] y el [!UICONTROL ID] del grupo e indique si este grupo es el predeterminado para la cuenta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Library document info]</td> 
    <td> <p>Rellene los campos siguientes:</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Files to send]</b> </p> <p>Para cada archivo que desee agregar, haga clic en <b>[!UICONTROL Add item]</b> y rellene los campos.</p> 
+     <li> <p><b>[!UICONTROL Files to send]</b> </p> <p>Para cada archivo que desee añadir, haga clic en <b>[!UICONTROL Add item]</b> y rellene los campos.</p> 
       <ul> 
        <li><b>[!UICONTROL Transient document ID]</b> <p>Introduzca el ID del documento transitorio</p> </li> 
        <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>Rellene los campos siguientes:</p> 
@@ -263,7 +263,7 @@ Este módulo de acción crea un nuevo registro del tipo seleccionado.
      <li> <p><b>[!UICONTROL Library template name]</b> </p> <p>Introduzca o asigne el nombre de plantilla de la biblioteca</p> </li> 
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Especifique quién debe tener acceso al documento de la biblioteca.</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>Seleccione si el documento está en estado de creación o activo.</p> </li> 
-     <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Para cada tipo de plantilla de biblioteca que desee usar, haga clic en <b>[!UICONTROL Add item]</b> y seleccione el tipo de plantilla.</p> </li> 
+     <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Para cada tipo de plantilla de biblioteca que desee utilizar, haga clic en <b>[!UICONTROL Add item]</b> y seleccione el tipo de plantilla.</p> </li> 
      <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Introduzca la última fecha en la que se produjo un evento en el documento de la biblioteca.</p> <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos en [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>Seleccione el estado del documento de la biblioteca.</p> </li> 
     </ul> </td> 
@@ -300,33 +300,33 @@ Este módulo de acción crea un nuevo registro del tipo seleccionado.
      <li> <p><b>[!UICONTROL Web form state]</b> </p> <p>Seleccione el estado en el que se debe crear el nuevo formulario web.</p> </li> 
      <li> <p><b>[!UICONTROL Web form participant set info]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Para cada miembro que desee agregar al conjunto de participantes, haga clic en <b>[!UICONTROL Add item]</b>. </p> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Para cada miembro que desee añadir al conjunto de participantes, haga clic en <b>[!UICONTROL Add item]</b>. </p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Deje esta opción en blanco.</p> </li> 
-         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si desea agregar una opción de seguridad para autenticar a este usuario, seleccione <b>[!UICONTROL Yes]</b>, luego seleccione la opción de seguridad y rellene los campos que requiera.</p> </li> 
+         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si desea añadir una opción de seguridad para autenticar a este usuario, seleccione <b>[!UICONTROL Yes]</b>, luego seleccione la opción de seguridad y rellene los campos que requiera.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> <p>Seleccione la función. Todos los miembros de este conjunto de participantes comparten la función.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Web form additional participant sets info]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Para cada miembro que desee agregar al conjunto de participantes, haga clic en <b>[!UICONTROL Add item]</b>.</p> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Para cada miembro que desee añadir al conjunto de participantes, haga clic en <b>[!UICONTROL Add item]</b>.</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Deje esta opción en blanco.</p> </li> 
-         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si desea agregar una opción de seguridad para autenticar a este usuario, seleccione <b>[!UICONTROL Yes]</b>, luego seleccione la opción de seguridad y rellene los campos que requiera.</p> </li> 
+         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si desea añadir una opción de seguridad para autenticar a este usuario, seleccione <b>[!UICONTROL Yes]</b>, luego seleccione la opción de seguridad y rellene los campos que requiera.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL Web form participant ID] </b> </p> <p>Introduzca el ID del participante del formulario web.</p> </li> 
+       <li> <p><b>[!UICONTROL Web form participant ID] </b> </p> <p>Introduzca el ID del participante del formulario web.</p> </li> 
        <li> <p><b>[!UICONTROL Order]</b> </p> <p>Especifique el orden en que este conjunto de participantes debe interactuar con el formulario web. Por ejemplo, el grupo de participantes que tiene un valor de pedido de 1 debe ir primero, 2 debe ir después, y así sucesivamente. Los números de pedido deben comenzar por uno y no deben haber espacios en la serie. </p> </li> 
        <li> <p><b>[!UICONTROL Provider participant set info]</b> </p> <p>Si se desconoce el participante, introduzca si el proveedor debe proporcionar los detalles del participante e introduzca un mensaje con los detalles necesarios para el participante desconocido.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>Si desea proporcionar una página de error o error para los usuarios, seleccione <b>[!UICONTROL Yes]</b> y rellene los campos siguientes:</p> 
+     <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>Si desea proporcionar una página de fallo o error para los usuarios, seleccione <b>[!UICONTROL Yes]</b> y rellene los campos siguientes:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL URL]</b> </p> <p>Introducir la dirección URL de la página de error</p> </li> 
        <li> <p><b>[!UICONTROL Deframe]</b> </p> <p>Habilite esta opción si desea que la página de error aparezca dentro del formulario web</p> </li> 
        <li> <p><b>[!UICONTROL Delay]</b> </p> <p>Introduzca el retardo, en segundos, que debe producirse antes de redirigir al usuario a la página de error.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL CC info]</b> </p> <p>Para cada dirección de correo electrónico que desee recibir por correo electrónico cuando se firme el acuerdo final en el formulario web, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico.</p> </li> 
-     <li> <p><b>[!UICONTROL Completion info]</b> </p> <p style="font-style: normal;">Si desea proporcionar una página de éxito para los usuarios, seleccione <b>[!UICONTROL Yes]</b> y rellene los campos siguientes:</p> 
+     <li> <p><b>[!UICONTROL CC info]</b> </p> <p>Para cada dirección de correo electrónico que desee que reciba un correo electrónico cuando se firme el acuerdo final en el formulario web, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico.</p> </li> 
+     <li> <p><b>[!UICONTROL Completion info]</b> </p> <p style="font-style: normal;">Si desea proporcionar una página de finalización satisfactoria para los usuarios, seleccione <b>[!UICONTROL Yes]</b> y rellene los campos siguientes:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL URL]</b> </p> <p>Introducir la dirección URL de la página de finalización satisfactoria</p> </li> 
        <li> <p><b>[!UICONTROL Deframe]</b> </p> <p>Habilite esta opción si desea que la página de finalización satisfactoria aparezca dentro del formulario web</p> </li> 
@@ -350,7 +350,7 @@ Este módulo de acción crea un acuerdo, lo envía para su firma y devuelve el I
 
 >[!NOTE]
 >
->Se recomienda cargar el documento para firmarlo como documento transitorio y, a continuación, asignarlo al campo [!UICONTROL File to send] en el módulo [!UICONTROL Create an agreement]. Por ejemplo, consulte “Cargar documento” en este artículo.
+>Se recomienda cargar el documento para firmar como documento transitorio y, a continuación, asignarlo al campo [!UICONTROL File to send] del módulo [!UICONTROL Create an agreement]. Por ejemplo, consulte “Cargar documento” en este artículo.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -397,9 +397,9 @@ Este módulo de acción crea un acuerdo, lo envía para su firma y devuelve el I
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Participant sets info]</td> 
-   <td> <p>Para cada conjunto de participantes que desee agregar, haga clic en <b>[!UICONTROL Add item]</b> y rellene los campos siguientes.</p> 
+   <td> <p>Para cada conjunto de participantes que desee añadir, haga clic en <b>[!UICONTROL Add item]</b> y rellene los campos siguientes.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Members]</b> </p> <p>Para cada persona que desee agregar al conjunto de participantes, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico de la persona.</p> </li> 
+     <li> <p><b>[!UICONTROL Members]</b> </p> <p>Para cada persona que desee añadir al conjunto de participantes, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico de la persona.</p> </li> 
      <li> <p><b>[!UICONTROL Order]</b> </p> <p>Especifique el orden en que este conjunto de participantes debe firmar el acuerdo. Por ejemplo, el grupo de participantes que tiene un valor de orden de 1 debe firmar primero, el 2 debe firmar después, y así sucesivamente. Los números de pedido deben comenzar por uno y no deben haber espacios en la serie. </p> </li> 
      <li> <p><b>[!UICONTROL Role]</b> </p> <p>Seleccione una función para este conjunto de participantes. Todos los participantes en el conjunto reciben esta función.</p> </li> 
      <li> <p><b>[!UICONTROL ID]</b> </p> <p>Introduzca o asigne el ID de este conjunto de participantes.</p> </li> 
@@ -428,7 +428,7 @@ Este módulo de acción crea un acuerdo, lo envía para su firma y devuelve el I
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CCs]</td> 
-   <td> <p>Puede enviar este acuerdo a las partes interesadas que no necesiten firmarlo, como las partes interesadas. Reciben un correo electrónico al principio del proceso de firma y otro cuando se recibe la firma final. También reciben una copia del acuerdo en PDF. </p> <p>Para cada persona que desee incluir en el contrato, haga clic en <b>[!UICONTROL Add item]</b> y rellene los campos siguientes:</p> 
+   <td> <p>Puede enviar este acuerdo a las partes interesadas que no necesiten firmarlo, como las partes interesadas. Reciben un correo electrónico al principio del proceso de firma y otro cuando se recibe la firma final. También reciben una copia del acuerdo en PDF. </p> <p>Para cada persona que desee incluir en la copia de seguridad de este contrato, haga clic en <b>[!UICONTROL Add item]</b> y rellene los campos siguientes:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>Introduzca o asigne la dirección de correo electrónico que desea que aparezca en el contrato.</p> </li> 
      <li> <p><b>[!UICONTROL Label]</b> </p> <p>Introduzca o asigne una etiqueta para esta dirección de correo electrónico, tal como se ve en la descripción del flujo de trabajo</p> </li> 
@@ -488,7 +488,7 @@ Este módulo de acción crea un acuerdo, lo envía para su firma y devuelve el I
 
 +++
 
-+++ **[!UICONTROL Create related records]**
++++ **[!UICONTROL Crear registros relacionados]**
 
 Este módulo de acción crea registros vinculados a un módulo seleccionado.
 
@@ -519,12 +519,12 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
      <li> <p><b>[!UICONTROL Form fields]</b> </p> <p>Introduzca el ID de plantilla de la plantilla que contiene los campos que desea crear</p> </li> 
      <li> <p><b>[!UICONTROL Reminders]</b> </p> <p>Rellene los campos siguientes:</p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Recipient participant ID]</b> </p> <p>Para cada participante al que desea recibir un recordatorio, haga clic en [!UICONTROL Add item] e introduzca el ID del participante.</p> </li> 
-       <li> <p><b>[!UICONTROL Status]</b> </p> <p>Para los registros nuevos, el estado debe ser [!UICONTROL Active].</p> </li> 
+       <li> <p><b>[!UICONTROL Recipient participant ID]</b> </p> <p>Para cada participante al que desee enviar un recordatorio, haga clic en [!UICONTROL Add item] e introduzca el ID del participante.</p> </li> 
+       <li> <p><b>[!UICONTROL Status]</b> </p> <p>Para los nuevos registros, el estado debe ser [!UICONTROL Active].</p> </li> 
        <li> <p><b>[!UICONTROL First reminder delay]</b> </p> <p>Introduzca el retraso en horas antes de enviar el primer recordatorio. El valor mínimo permitido es una hora y el valor máximo no puede ser mayor que la diferencia entre la creación del acuerdo y la hora de caducidad del acuerdo en horas. Si no se ha establecido este retraso, el primer recordatorio se basará en la frecuencia.</p> </li> 
        <li> <p><b>[!UICONTROL Reminder frequency]</b> </p> <p>Establezca la frecuencia con la que desea que se envíe el recordatorio. Si no se ha indicado la frecuencia, el recordatorio se enviará una vez.</p> </li> 
        <li> <p><b>[!UICONTROL Last sent date]</b> </p> <p>Este campo lo establece el sistema.</p> </li> 
-       <li> <p><b>[!UICONTROL Next sent date]</b> </p> <p>Este campo debe estar en blanco o establecido en [!UICONTROL ONCE].</p> </li> 
+       <li> <p><b>[!UICONTROL Next sent date]</b> </p> <p>Este campo debe estar en blanco o establecido como [!UICONTROL ONCE].</p> </li> 
        <li> <p><b>[!UICONTROL Note]</b> </p> <p>Introduzca una nota para incluirla en el recordatorio. Esto resulta útil para indicar al participante por qué se requiere su participación.</p> </li> 
        <li> <p><b>[!UICONTROL Start reminder counter from]</b> </p> <p>Seleccione si el recordatorio se enviará en función del momento en el que se crea el acuerdo o cuando esté disponible.</p> </li> 
       </ul> </li> 
@@ -532,21 +532,21 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
      <li> <p><b>[!UICONTROL Views]</b> </p> <p>Introduzca los campos siguientes</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Seleccione el nombre de la vista que desea crear.</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente en la dirección URL devuelta.</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar automáticamente la sesión del usuario en la dirección URL devuelta.</p> </li> 
        <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Introduzca el idioma en el que desea crear la vista. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
-       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que la sección de carga de archivos se edite agregando o eliminando archivos. Este no es un mecanismo de control de acceso. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que los vínculos de documentos de biblioteca estén visibles. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezca el botón de carga del archivo local. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezcan los enlaces para adjuntar documentos de orígenes web. El valor predeterminado es Sí.</p> </li> 
+       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que la sección de carga de archivos se edite añadiendo o quitando archivos. Este no es un mecanismo de control de acceso. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que los enlaces de los documentos de la biblioteca estén visibles. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezca el botón de carga de archivos locales. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezcan los enlaces para adjuntar documentos desde orígenes web. El valor predeterminado es Sí.</p> </li> 
        <li> <p><b>[!UICONTROL Is preview selected]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para establecer la página de composición en modo de creación.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Para cada miembro con el que desee compartir el acuerdo, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico del miembro y un mensaje para dicho miembro.</p> </li> 
+     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Para cada miembro con el que desee compartir el acuerdo, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico del abonado y un mensaje para ese abonado.</p> </li> 
      <li> <p>[!UICONTROL Delegate participant set]</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Participant set ID]</b> </p> <p>Introduzca el ID del conjunto de participantes</p> </li> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Para cada miembro que desee agregar, haga clic en [!UICONTROL Add item] e introduzca la dirección de correo electrónico y la información de teléfono del miembro.</p> </li> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Para cada miembro que desee añadir, haga clic en [!UICONTROL Add item] e introduzca la dirección de correo electrónico y la información de teléfono del miembro.</p> </li> 
        <li> <p><b>[!UICONTROL Private message]</b> </p> <p>Introduzca un mensaje. Todos los miembros del conjunto de participantes reciben este mensaje.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -560,12 +560,12 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
      <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
      <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Introduzca el idioma en el que desea crear la vista. </p> </li> 
      <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
-     <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea configurar la vista [!UICONTROL Send] y, a continuación, rellene los campos siguientes.</p> 
+     <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea configurar la vista de [!UICONTROL Send] y, a continuación, rellene los campos siguientes.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Agreement name]</b> </p> <p>Introduzca o asigne el nombre del acuerdo para el documento de biblioteca en la página de redacción.</p> </li> 
-       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que la sección de carga de archivos se edite agregando o eliminando archivos. Este no es un mecanismo de control de acceso. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que la sección de carga de archivos se edite añadiendo o quitando archivos. Este no es un mecanismo de control de acceso. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
        <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que los vínculos de documentos de biblioteca estén visibles. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezcan los enlaces para adjuntar documentos de orígenes web. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezcan los vínculos para adjuntar documentos de orígenes web. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
        <li> <p><b>Es la vista previa seleccionada</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para establecer la página de composición en modo de creación.</p> </li> 
       </ul> <p> </p> </li> 
     </ul> </td> 
@@ -575,9 +575,9 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
    <td> <p>Rellene los campos siguientes</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>Seleccione el nombre de la vista de usuario solicitada.</p> </li> 
-     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente al usuario. Seleccione <b>[!UICONTROL No]</b> para requerir credenciales. El valor predeterminado es [!UICONTROL No].</p> </li> 
+     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente con el usuario. Seleccione <b>[!UICONTROL No]</b> para requerir credenciales. El valor predeterminado es [!UICONTROL No].</p> </li> 
      <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se deja vacío, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
-     <li> <p><b>Sin indicador de Chrome</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
+     <li> <p><b>Sin indicador de Chrome</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de exploración.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -587,11 +587,11 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
      <li> <p>[!UICONTROL Views]</p> <p>Cumplimente los campos siguientes.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Seleccione el nombre de la vista del formulario web solicitado</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente al usuario. Seleccione <b>[!UICONTROL No]</b> para requerir credenciales. El valor predeterminado es [!UICONTROL No].</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente con el usuario. Seleccione <b>[!UICONTROL No]</b> para requerir credenciales. El valor predeterminado es [!UICONTROL No].</p> </li> 
        <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Introduzca el idioma en el que desea crear la vista. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
-       <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>Si desea configurar una vista de firma personalizada, seleccione <b>[!UICONTROL Yes]</b> y rellene los campos siguientes:</p> 
+       <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>Si desea configurar una vista de firma personalizada, seleccione <b>[!UICONTROL Yes]</b> y cumplimente los campos siguientes:</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Introduzca la dirección de correo electrónico de la persona que recibe el formulario web recién creado</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Escriba un comentario que describa cómo el que llama a la API estableció la identidad del firmante. Esta información aparece en la pista de auditoría de [!DNL Adobe Acrobat Sign].</p> </li> 
@@ -599,7 +599,7 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que el firmante deseado pueda firmar el formulario más de una vez.</p> </li> 
         </ul> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Para cada miembro con el que desee compartir el acuerdo, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico del miembro y un mensaje para dicho miembro.</p> </li> 
+     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Para cada miembro con el que desee compartir el acuerdo, haga clic en <b>[!UICONTROL Add item]</b> e introduzca la dirección de correo electrónico del miembro y un mensaje para ese miembro.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -607,7 +607,7 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
 
 +++
 
-+++ **[!UICONTROL Custom API Call]**
++++ **[!UICONTROL Llamada de API personalizada]**
 Este módulo le permite realizar una llamada de API personalizada.
 
 <table style="table-layout:auto"> 
@@ -636,7 +636,7 @@ Este módulo le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -688,22 +688,22 @@ Este módulo de acción enumera todos los registros del tipo seleccionado a los 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cursor] / [!UICONTROL Start index]</td> 
-   <td> <p>Introduzca el número del primer registro que debe devolver el módulo. </p> <p>Nota: Este campo se combina con el campo [!UICONTROL Maximum number of returned records] para la paginación. Por ejemplo, si [!UICONTROL Maximum number of returned events] es 100 y [!UICONTROL Start index] es 101, el módulo devuelve los registros 101-200 o la segunda página de resultados.</p> </td> 
+   <td> <p>Introduzca el número del primer registro que debe devolver el módulo. </p> <p>Nota: Este campo se combina con el campo [!UICONTROL Maximum number of returned records] para la paginación. Por ejemplo, si el [!UICONTROL Maximum number of returned events] es 100 y el [!UICONTROL Start index] es 101, el módulo devuelve los registros 101-200 o la segunda página de resultados.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned records]</td> 
-   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo [action] ejecute durante cada ciclo de ejecución de escenario.</p> <p>Nota: Este campo se combina con el campo [!UICONTROL Cursor] o [!UICONTROL Start Index] para la paginación. Por ejemplo, si [!UICONTROL Maximum number of returned events] es 100 y [!UICONTROL Start index] es 101, el módulo devuelve los registros 101-200 o la segunda página de resultados.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> <p>Nota: Este campo se combina con el campo [!UICONTROL Cursor] o [!UICONTROL Start Index] para la paginación. Por ejemplo, si el [!UICONTROL Maximum number of returned events] es 100 y el [!UICONTROL Start index] es 101, el módulo devuelve los registros 101-200 o la segunda página de resultados.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent domain URLs]</td> 
-   <td> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </td> 
+   <td> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se deja vacío, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
 
-+++ **[!UICONTROL Read a record]**
++++ **[!UICONTROL Leer un registro]**
 
 Este módulo de acción recupera información de un único registro.
 
@@ -765,7 +765,7 @@ Lea información adicional relacionada con un único registro.
 
 +++
 
-+++ **[!UICONTROL Update a record]**
++++ **[!UICONTROL Actualizar un registro]**
 
 Este módulo de acción actualiza un único registro en [!DNL Adobe Acrobat Sign].
 
@@ -807,7 +807,7 @@ Este módulo de acción actualiza un único registro en [!DNL Adobe Acrobat Sign
        <li> <p><b>[!UICONTROL Status]</b> </p> <p>Seleccione el nuevo estado del documento de biblioteca.</p> </li> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Introduzca o asigne el nombre de plantilla de la biblioteca</p> </li> 
        <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Especifique quién debe tener acceso al documento de la biblioteca.</p> </li> 
-       <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Para cada tipo de plantilla de biblioteca que desee usar, haga clic en <b>[!UICONTROL Add item]</b> y seleccione el tipo de plantilla.</p> </li> 
+       <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Para cada tipo de plantilla de biblioteca que desee utilizar, haga clic en <b>[!UICONTROL Add item]</b> y seleccione el tipo de plantilla.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL User]</b> </p> <p> Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
       <ul> 
@@ -826,7 +826,7 @@ Este módulo de acción actualiza un único registro en [!DNL Adobe Acrobat Sign
 
 +++
 
-+++ **[!UICONTROL Update related record]**
++++ **[!UICONTROL Actualizar registro relacionado]**
 
 Este módulo de acción actualiza los registros relacionados con un objeto específico.
 
@@ -875,7 +875,7 @@ Este módulo de acción actualiza los registros relacionados con un objeto espec
         <ul> 
          <li> <p><b>[!UICONTROL Status]</b> </p> <p>Seleccione el nuevo estado del usuario.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>Introduzca el ID único del grupo</p> </li> 
-         <li> <p><b>[!UICONTROL Is group admin]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para convertir a este usuario en administrador de grupo.</p> </li> 
+         <li> <p><b>[!UICONTROL Is group admin]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para convertir al usuario en administrador de un grupo.</p> </li> 
          <li> <p><b>Es el grupo principal</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para actualizar este grupo al grupo principal del usuario.</p> </li> 
          <li> <p><b>[!UICONTROL Created date]</b> </p> <p>Introduzca la fecha de creación del grupo.</p> <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerción de tipos en [!UICONTROL Adobe Workfront Fusion]</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Name]</b> </p> <p>Introduzca o asigne el nombre del grupo.</p> </li> 
@@ -908,7 +908,7 @@ Este módulo de acción actualiza los registros relacionados con un objeto espec
 
 +++
 
-+++ **[!UICONTROL Upload document]**
++++ **[!UICONTROL Subir documento]**
 
 Suba un documento transitorio. Un documento transitorio está disponible durante 7 días después de subirse.
 
@@ -943,7 +943,7 @@ Suba un documento transitorio. Un documento transitorio está disponible durante
 
 (/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
-El módulo [!UICONTROL Upload document] proporciona al documento un ID [!DNL Adobe Acrobat Sign] al que se puede hacer referencia en módulos posteriores. Cuando se crea el acuerdo, el ID del documento cargado se incluye en el campo [!UICONTROL Files to send].
+El módulo [!UICONTROL Subir documento] proporciona al documento un ID [!DNL Adobe Acrobat Sign] al que se puede hacer referencia en módulos posteriores. Cuando se crea el acuerdo, el ID del documento cargado se incluye en el campo [!UICONTROL Archivos a enviar].
 
 ![Firmar ejemplo](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
@@ -951,7 +951,7 @@ El módulo [!UICONTROL Upload document] proporciona al documento un ID [!DNL Ado
 
 ### Búsquedas
 
-+++ **[!UICONTROL Search agreements]**
++++ **[!UICONTROL Buscar acuerdos]**
 
 Este módulo de búsqueda busca los acuerdos basándose en los criterios proporcionados.
 
@@ -989,23 +989,23 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL External ID]</td> 
-   <td> <p> El ID externo es un ID asignado por el remitente al acuerdo que puede presentarse bajo cualquier forma, aunque esta suele ser "&lt;groupID&gt;:&lt;ID&gt;".</p> <p>Para cada ID externo que desee agregar, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
+   <td> <p> El ID externo es un ID asignado por el remitente al acuerdo que puede presentarse bajo cualquier forma, aunque esta suele ser "&lt;groupID&gt;:&lt;ID&gt;".</p> <p>Para cada ID externo que desee añadir, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group ID]</td> 
-   <td> <p>El ID de grupo es un identificador asignado cuando se creó el grupo.</p> <p>Para cada ID externo que desee agregar, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
+   <td> <p>El ID de grupo es un identificador asignado cuando se creó el grupo.</p> <p>Para cada ID externo que desee añadir, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>Este es el ID asignado al acuerdo específico. </p> <p>Para cada ID externo que desee agregar, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
+   <td> <p>Este es el ID asignado al acuerdo específico. </p> <p>Para cada ID externo que desee añadir, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent ID]</td> 
-   <td> <p>Este es el ID asignado al objeto principal del acuerdo. </p> <p>Para cada ID externo que desee agregar, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
+   <td> <p>Este es el ID asignado al objeto principal del acuerdo. </p> <p>Para cada ID externo que desee añadir, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Participant email]</td> 
-   <td> <p>La dirección de correo electrónico de un participante. </p> <p>Para cada ID externo que desee agregar, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
+   <td> <p>La dirección de correo electrónico de un participante. </p> <p>Para cada ID externo que desee añadir, haga clic en <b>[!UICONTROL Add]</b> e introduzca o asigne el ID externo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Role]</td> 
@@ -1016,7 +1016,7 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
    <td>Si desea que el módulo ordene los resultados, seleccione el campo por el que desea ordenar los resultados.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort orde]r</td> 
+   <td role="rowheader">[!UICONTROL Sort order]</td> 
    <td>Si desea que el módulo ordene los resultados, seleccione si desea ordenar de forma ascendente o descendente.</td> 
   </tr> 
   <tr> 
@@ -1033,7 +1033,7 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL User ID]</td> 
-   <td> <p>El ID del usuario con el que se comparte el acuerdo.</p> <p>Para cada ID de usuario que desee agregar, haga clic en <b>[!UICONTROL Add]</b> y escriba o asigne el ID de usuario.</p> </td> 
+   <td> <p>El ID del usuario con el que se comparte el acuerdo.</p> <p>Para cada ID de usuario que desee añadir, haga clic en <b>[!UICONTROL Add]</b> y escriba o asigne el ID de usuario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Visibility]</td> 
@@ -1041,11 +1041,11 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start index]</td> 
-   <td> <p>Introduzca la posición del primer resultado que desea devolver. Combine esto con [!UICONTROL maximum returned results] para paginar los resultados</p> <p>Ejemplo: si devuelve 100 resultados a la vez, introduzca 100 para que se devuelvan los resultados 100-200.</p> </td> 
+   <td> <p>Introduzca la posición del primer resultado que desea devolver. Combine esto con los [!UICONTROL maximum returned results] para paginar resultados</p> <p>Ejemplo: si devuelve 100 resultados a la vez, introduzca 100 para que se devuelvan los resultados 100-200.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo [action] ejecute durante cada ciclo de ejecución de escenario.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
