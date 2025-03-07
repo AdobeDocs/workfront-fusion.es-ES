@@ -8,7 +8,7 @@ description: En un  [!DNL Adobe Workfront Fusion] escenario, necesita crear y ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 61a523398f00a9d9439b9e74bfbd1ae3f94b0749
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 19%
@@ -17,7 +17,7 @@ ht-degree: 19%
 
 # Módulos de almacenamiento de Adobe
 
-En un escenario de [!DNL Adobe Workfront Fusion], debe crear y administrar proyectos en Adobe Admin Console.
+En un escenario de [!DNL Adobe Workfront Fusion], puede crear y administrar proyectos en Adobe Admin Console.
 
 Si necesita instrucciones sobre cómo crear un escenario, vea los artículos en [Crear un escenario: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
