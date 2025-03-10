@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
-ht-degree: 96%
+source-wordcount: '4088'
+ht-degree: 95%
 
 ---
 
@@ -207,8 +207,6 @@ Este módulo de acción copia un archivo en la ubicación de la nueva carpeta
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Create a Folder]
 
 Este módulo de acción crea una nueva carpeta en la unidad especificada.
@@ -236,7 +234,7 @@ Este módulo de acción crea una nueva carpeta en la unidad especificada.
   </tr> 
   <tr> 
    <td role="rowheader"> [!UICONTROL Drive ID]</td> 
-   <td> <p>Seleccione la unidad en la que desea crear una carpeta. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
+   <td> <p>Seleccione la unidad donde desea crear una carpeta. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -253,9 +251,9 @@ Este módulo de acción crea una nueva carpeta en la unidad especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File/Folder]
+#### [!UICONTROL Eliminar archivo/carpeta]
 
-Este módulo de acción elimina el archivo seleccionado.
+Este módulo de acción elimina el archivo o la carpeta seleccionados.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ Este módulo realiza una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
