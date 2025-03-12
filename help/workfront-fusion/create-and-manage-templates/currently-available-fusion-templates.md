@@ -4,10 +4,10 @@ description: Las siguientes plantillas públicas están disponibles actualmente 
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 94%
+source-wordcount: '1351'
+ht-degree: 89%
 
 ---
 
@@ -25,11 +25,15 @@ Estas plantillas automatizan los procesos y flujos de trabajo de Workfront.
 
 ### [!BADGE Nuevo]{type=Informative}
 
+<!--New March 12, 2025-->
+
+Eliminar tarjetas archivadas de una columna designada en un tablero designado bajo demanda.
+
+### Tableros de Workfront > Crear una lista de comprobación estándar basada en la columna Tableros
+
 Esta plantilla de Fusion crea una lista de comprobación estándar para todas las tarjetas que introduzcan una columna específica en un tablero específico de forma cronometrada.
 
-### [!BADGE Nuevo]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Tableros de Workfront: cree un tablero con una configuración personalizada
 
 Este escenario se activa cuando se crea un nuevo proyecto. En este escenario es posible crear un tablero con el nombre del proyecto, cambiar el nombre de las columnas o crearlas según sus necesidades, crear etiquetas personalizadas y asociar un filtro de columnas de ingesta al proyecto de origen.  Se podrían realizar miles de cambios adicionales, pero al empezar con esto podrá ver las posibilidades de crear un punto de partida para la estandarización del tablero de la organización.
 
@@ -96,6 +100,12 @@ Una vez al mes, revise las plantillas de proyecto utilizando su propia directiva
 ## Workfront: plantillas de Workfront Proof
 
 Estas plantillas automatizan los flujos de trabajo que combinan Workfront con Workfront Proof.
+
+### [!BADGE Nuevo]{type=Informative}
+
+<!--New March 12, 2025-->
+
+Esta plantilla observa los proyectos que se actualizan a estados que equivalen a rechazados, completados o inactivos. A continuación, cambia los usuarios con decisiones de prueba pendiente a Solo lectura. Finalmente, bloquea las Pruebas y envía una actualización a los documentos.
 
 ### Workfront Proof > Workfront: Actualización del proyecto al tomar una decisión de la revisión
 
