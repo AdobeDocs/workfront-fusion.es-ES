@@ -4,10 +4,10 @@ description: Con el módulo Adobe Authenticator, puede conectarse a cualquier pr
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 74%
+source-wordcount: '1277'
+ht-degree: 80%
 
 ---
 
@@ -42,13 +42,13 @@ Para ver una lista de las API de Adobe disponibles, consulte [API de Adobe](http
       <td>
    <p>Requisito de licencia de Fusion actual: no se requiere licencia de [!DNL Workfront Fusion].</p>
    <p>O</p>
-   <p>Requisito de licencia de Fusion heredada: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Requisito de licencia de Fusion heredado: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">Producto</td>
       <td>
-   <p>Nuevo plan de Workfront: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para usar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo plan de Workfront: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!DNL Workfront] de [!UICONTROL Ultimate].</p>
    <p>O</p>
    <p>Plan actual de Workfront: su organización debe adquirir [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para poder usar la funcionalidad descrita en este artículo.</p>
    </td>
@@ -186,7 +186,7 @@ Para crear una conexión:
     </tbody>
     </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
 ## Módulos
 
@@ -243,20 +243,32 @@ Este módulo estuvo disponible el 14 de noviembre de 2024. Cualquier Adobe Authe
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body Type]</td>
+      <td role="rowheader">[!UICONTROL Tipo de cuerpo]</td>
    <td> Seleccione el tipo de cuerpo para esta solicitud de API:
    <ul>
-   <li>application/x-www-form-urlencoded</li>
    <li>Sin procesar</li>
+   <li>application/x-www-form-urlencoded</li>
    <li>multipart/form-data</li>
    </ul>
       </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Request content]  </td>
+      <td>
+        <p>Introduzca el contenido de la solicitud. Esta opción está disponible si seleccionó el tipo de cuerpo <code>Raw</code></p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Fields]  </td>
       <td>
-        <p>Para cada archivo que desee agregar a la solicitud de APU, haga clic en <b>Agregar elemento</b> e introduzca el texto del archivo (para datos sin procesar), o bien escriba la clave <code>uploadedFile</code> y asigne los datos del archivo.</p>
+        <p>Para cada archivo que desee agregar a la solicitud de API, haga clic en <b>Agregar elemento</b> e introduzca el texto del archivo (para datos sin procesar), o bien escriba la clave <code>uploadedFile</code> y asigne los datos del archivo. Esta opción está disponible si seleccionó el tipo de cuerpo <code>application</code> o <code>multipart</code>.</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Tipo de salida]  </td>
+      <td>
+        <p>Seleccione el tipo de datos que desea que el módulo envíe. Si no selecciona ningún tipo, el módulo selecciona un tipo automáticamente.</p>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -310,7 +322,7 @@ Este módulo de acción le permite realizar una llamada a cualquier API de Adobe
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
