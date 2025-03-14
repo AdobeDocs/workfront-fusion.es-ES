@@ -4,10 +4,10 @@ description: Con los módulos de  [!DNL Adobe Campaign] , puede iniciar un escen
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 75%
+source-wordcount: '1307'
+ht-degree: 90%
 
 ---
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -88,7 +88,7 @@ El conector de Adobe Campaign utiliza lo siguiente:
 >
 >Para obtener más información sobre los nuevos requisitos de conexión de Campaign, consulte [Migración de operadores técnicos de Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=es) en la documentación de Campaign.
 
-1. En cualquier módulo de [!DNL Adobe Campaign], haga clic en **[!UICONTROL Add]** junto al campo [!UICONTROL Connection].
+1. En cualquier módulo de [!DNL Adobe Campaign], haga clic en **[!UICONTROL Añadir]** junto al campo [!UICONTROL Conexión].
 1. Rellene los campos siguientes:
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -122,15 +122,15 @@ El conector de Adobe Campaign utiliza lo siguiente:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Si está creando una conexión servidor a servidor, escriba su [!DNL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].</td>
+          <td>Si está creando una conexión servidor a servidor, introduzca su [!DNL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Si está creando una conexión servidor a servidor, escriba su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].
+          <td>Si va a crear una conexión servidor a servidor, escriba [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].
         </tr>
      </tbody>
     </table>
-1. Haga clic en **[!UICONTROL Continue]** para crear la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para crear la conexión y volver al módulo.
 
 ## Módulos de [!DNL Adobe Campaign] y sus campos
 
@@ -185,14 +185,14 @@ This scheduled trigger module starts a scenario when a record changes.
 ### Acciones
 
 * [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Delete a record]](#delete-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
-* [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
-* [[!UICONTROL Update a record]](#update-record)
+* [[!UICONTROL Eliminar un registro]](#delete-record)
+* [[!UICONTROL Realizar una llamada de API personalizada]](#make-a-custom-api-call)
+* [[!UICONTROL Realizar una acción]](#perform-an-action)
+* [[!UICONTROL Leer un registro]](#read-a-record)
+* [[!UICONTROL Suscribirse o cancelar la suscripción]](#subscribe-or-unsubscribe)
+* [[!UICONTROL Actualizar un registro]](#update-record)
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Crear un registro]
 
 Este módulo de acción crea un nuevo registro en [!DNL Adobe Campaign].
 
@@ -242,7 +242,7 @@ Este módulo de acción elimina un único registro de [!DNL Adobe Campaign].
  </tbody> 
 </table>
 
-#### [!UICONTROL Make a custom API call]
+#### [!UICONTROL Realizar una llamada de API personalizada]
 
 Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Campaign]
 
@@ -252,7 +252,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ca
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión con [!DNL Adobe Campaign]</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión a [!DNL Adobe Campaign]</a> en este artículo.</td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
@@ -269,7 +269,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ca
       <td>
         <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p>
         <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] agrega automáticamente el encabezado de token [!UICONTROL x-security].</p>
+        <p>[!DNL Workfront Fusion] añade el encabezado de token de [!UICONTROL x-security] automáticamente.</p>
       </td>
     </tr>
     <tr>
@@ -291,24 +291,24 @@ Para obtener información sobre acciones y campos específicos, consulte [[!DNL 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión con [!DNL Adobe Campaign]</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión a [!DNL Adobe Campaign]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
    <td><p>Seleccione la acción que se realizará en el objeto.</p>
    <ul>
-   <li><p><b>[!DNL List]</b></p><p> Para ver los campos disponibles, consulte <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> en este artículo. </p></li>
-     <li><p><b>[!UICONTROL Get]</b></p><p> Para ver los campos disponibles, consulte <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> en este artículo. </p></li> 
-   <li><p><b>[!UICONTROL Create]</b></p><p> Para ver los campos disponibles, consulte <a href="#create-a-record" class="MCXref xref" >[!UICONTROL Create a record]</a> en este artículo. </p></li>
-   <li><p><b>[!UICONTROL Update]</b></p><p> Para ver los campos disponibles, consulte <a href="#update-record" class="MCXref xref" >[!UICONTROL Update a record]</a> en este artículo. </p></li>
-   <li><p><b>[!UICONTROL Delete]</b></p><p> Para ver los campos disponibles, consulte <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> en este artículo. </p></li>
+   <li><p><b>[!DNL List]</b></p><p> Para obtener información sobre los campos disponibles, consulte <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> en este artículo. </p></li>
+     <li><p><b>[!UICONTROL Get]</b></p><p> Para obtener información sobre los campos disponibles, consulte <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> en este artículo. </p></li> 
+   <li><p><b>[!UICONTROL Create]</b></p><p> Para obtener información sobre los campos disponibles, consulte <a href="#create-a-record" class="MCXref xref" >[!UICONTROL Create a record]</a> en este artículo. </p></li>
+   <li><p><b>[!UICONTROL Update]</b></p><p> Para obtener información sobre los campos disponibles, consulte <a href="#update-record" class="MCXref xref" >[!UICONTROL Update a record]</a> en este artículo. </p></li>
+   <li><p><b>[!UICONTROL Delete]</b></p><p> Para obtener información sobre los campos disponibles, consulte <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> en este artículo. </p></li>
    </ul>
    </td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Leer un registro]
 
 Este módulo de acción lee un registro de [!DNL Adobe Campaign].
 
@@ -340,7 +340,7 @@ Este módulo de acción lee un registro de [!DNL Adobe Campaign].
 </table>
 
 
-#### [!UICONTROL Subscribe or unsubscribe]
+#### [!UICONTROL Suscribirse o cancelar la suscripción]
 
 Este módulo de acción suscribe o cancela la suscripción de un usuario a un servicio de información.
 
@@ -367,7 +367,7 @@ Este módulo de acción suscribe o cancela la suscripción de un usuario a un se
  </tbody> 
 </table>
 
-#### [!UICONTROL Update record]
+#### [!UICONTROL Actualizar registro]
 
 Este módulo de acción actualiza un único registro en [!DNL Adobe Campaign].
 
@@ -381,7 +381,7 @@ Este módulo de acción actualiza un único registro en [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Seleccione el tipo de registro de [!DNL Adobe Campaign] que desea crear. </td> 
+   <td>Seleccione el tipo de registro de [!DNL Adobe Campaign] que desea crear.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -393,14 +393,14 @@ Este módulo de acción actualiza un único registro en [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> Para cada campo personalizado que desee actualizar, haga clic en <b>[!UICONTROL Add item]</b> e introduzca o asigne el nombre y valor del campo. </td> 
+   <td> Para cada campo personalizado que desee actualizar, haga clic en <b>[!UICONTROL Add item]</b> y escriba o asigne el nombre y valor del campo. </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Búsquedas
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Búsqueda]
 
 Este módulo de búsqueda devuelve registros basados en los criterios especificados.
 

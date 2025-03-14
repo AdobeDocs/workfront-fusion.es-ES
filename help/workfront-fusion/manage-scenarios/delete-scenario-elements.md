@@ -4,10 +4,10 @@ description: Puede ver y administrar las conexiones de sus equipos en el área C
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 52%
+source-wordcount: '224'
+ht-degree: 66%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 52%
 
 Puede almacenar y eliminar elementos de escenario en las siguientes áreas de su cuenta de [!DNL Adobe Workfront Fusion]:
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
+* [!UICONTROL escenario]
+* [!UICONTROL Conexiones]
 * [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL Claves]
+* [!UICONTROL Dispositivos]
+* [!UICONTROL Almacenes de datos]
+* [!UICONTROL Perfiles de usuario]
 
 
 ## Requisitos de acceso
@@ -45,7 +45,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -82,7 +82,7 @@ Para eliminar elementos de escenario:
 
 1. Haga clic en el área del panel izquierdo.
 
-   Por ejemplo, si desea eliminar un escenario, haga clic en **[!UICONTROL Scenario]** en el panel izquierdo.
+   Por ejemplo, si desea eliminar un escenario, haga clic en **[!UICONTROL Escenario]** en el panel izquierdo.
 
-1. Haga clic en la flecha hacia abajo a la derecha del elemento que desea eliminar y, a continuación, haga clic en **[!UICONTROL Delete]**.
-1. Haga clic en **[!UICONTROL Really]** para confirmar.
+1. Haga clic en la flecha hacia abajo a la derecha del elemento que desea eliminar y, a continuación, haga clic en **[!UICONTROL Eliminar]**.
+1. Haga clic en **[!UICONTROL Realmente]** para confirmar.

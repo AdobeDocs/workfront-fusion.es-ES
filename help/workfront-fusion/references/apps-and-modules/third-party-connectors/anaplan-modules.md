@@ -3,7 +3,7 @@ description: En un  [!DNL Adobe Workfront Fusion] escenario, puede automatizar l
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: defc5aa9b2e3ffa5c698c5a19dd8d9d8768d72c2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 29%
@@ -39,7 +39,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 

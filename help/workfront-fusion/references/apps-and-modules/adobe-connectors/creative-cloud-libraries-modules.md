@@ -4,10 +4,10 @@ description: Con los módulos de Bibliotecas de  [!DNL Adobe Workfront Fusion Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 81%
+source-wordcount: '1393'
+ht-degree: 82%
 
 ---
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -68,7 +68,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 ## Requisitos previos
 
-Para usar módulos de [!DNL Adobe Creative Cloud Libraries], debe disponer de una cuenta de [!UICONTROL Adobe Creative Cloud].
+Para usar módulos de [!DNL Adobe Creative Cloud Libraries], debe tener una cuenta de [!UICONTROL Adobe Creative Cloud].
 
 ## Información de API de bibliotecas Adobe Creative Cloud
 
@@ -89,9 +89,9 @@ El conector Bibliotecas Adobe Creative Cloud utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Módulos de [!UICONTROL Adobe Creative Cloud Libraries] y sus campos
+## Módulos de las [!UICONTROL Bibliotecas de Adobe Creative Cloud] y sus campos
 
-Al configurar módulos de [!UICONTROL Adobe Creative Cloud Libraries], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Adobe Creative Cloud Libraries] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de [!UICONTROL Bibliotecas de Adobe Creative Cloud], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos de [!DNL Adobe Creative Cloud Libraries] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -107,20 +107,20 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Elementos
 
-* [[!UICONTROL Archive an Element]](#archive-an-element)
+* [[!UICONTROL Archivar un elemento]](#archive-an-element)
 
-* [[!UICONTROL Get an Element]](#get-an-element)
+* [[!UICONTROL Obtener un elemento]](#get-an-element)
 
-* [[!UICONTROL List Elements]](#list-elements)
+* [[!UICONTROL Enumerar elementos]](#list-elements)
 
-* [[!UICONTROL Upload an Element]](#upload-an-element)
+* [[!UICONTROL Cargar un elemento]](#upload-an-element)
 
 * [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
-* [[!UICONTROL Watch Updated Elements]](#watch-updated-elements)
+* [[!UICONTROL Ver elementos actualizados]](#watch-updated-elements)
 
 
-#### [!UICONTROL Archive an Element]
+#### [!UICONTROL Archivar un elemento]
 
 Este módulo de acción archiva un elemento de una biblioteca.
 
@@ -143,7 +143,7 @@ Este módulo de acción archiva un elemento de una biblioteca.
   </tbody>
 </table>
 
-#### [!UICONTROL Get an Element]
+#### [!UICONTROL Obtener un elemento]
 
 Este módulo de acción devuelve un solo elemento de una biblioteca.
 
@@ -189,7 +189,7 @@ Este módulo de acción devuelve un solo elemento de una biblioteca.
   </tbody>
 </table>
 
-#### [!UICONTROL List Elements]
+#### [!UICONTROL Enumerar elementos]
 
 Este módulo de acción recupera una lista de elementos de una biblioteca.
 
@@ -243,7 +243,7 @@ Este módulo de acción recupera una lista de elementos de una biblioteca.
   </tbody>
 </table>
 
-#### [!UICONTROL Watch New Element in Library]
+#### [!UICONTROL Ver nuevo elemento en la biblioteca]
 
 Este módulo de activador inicia un escenario cuando se añade un elemento a una biblioteca.
 
@@ -267,7 +267,7 @@ Este módulo de activador inicia un escenario cuando se añade un elemento a una
 </table>
 
 
-#### [!UICONTROL Watch Updated Elements]
+#### [!UICONTROL Ver elementos actualizados]
 
 Este módulo de activador inicia un escenario cuando se actualiza un elemento de una biblioteca.
 
@@ -292,12 +292,12 @@ Este módulo de activador inicia un escenario cuando se actualiza un elemento de
 
 ### Bibliotecas
 
-* [[!UICONTROL Watch New Libraries]](#watch-new-libraries)
+* [[!UICONTROL Ver bibliotecas nuevas]](#watch-new-libraries)
 
-* [[!UICONTROL Watch Updated Libraries]](#watch-updated-libraries)
+* [[!UICONTROL Ver bibliotecas actualizadas]](#watch-updated-libraries)
 
 
-#### [!UICONTROL Watch New Libraries]
+#### [!UICONTROL Ver bibliotecas nuevas]
 
 Este módulo de activador inicia un escenario cuando se crea una biblioteca nueva.
 
@@ -316,7 +316,7 @@ Este módulo de activador inicia un escenario cuando se crea una biblioteca nuev
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Updated Libraries]
+#### [!UICONTROL Ver bibliotecas actualizadas]
 
 Este módulo de activador inicia un escenario cuando se actualiza una biblioteca existente.
 
@@ -340,7 +340,7 @@ Este módulo de activador inicia un escenario cuando se actualiza una biblioteca
 * [Realizar una llamada de API](#make-an-api-call)
 * [Cargar un recurso](#upload-an-asset)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realizar una llamada de API]
 
 Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Creative Cloud Libraries].
 
@@ -385,7 +385,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Cr
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -400,7 +400,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Cr
 </table>
 
 
-#### [!UICONTROL Upload an Asset]
+#### [!UICONTROL Cargar un recurso]
 
 Este módulo de acción carga un recurso de archivo pequeño en una biblioteca existente. El tamaño máximo de archivo es de 1 GB.
 
@@ -432,18 +432,18 @@ Este módulo de acción carga un recurso de archivo pequeño en una biblioteca e
             <p>La respuesta asíncrona del monitor se devuelve inmediatamente y el procesamiento de la solicitud se produce de forma asíncrona. La llamada es responsable del sondeo del punto final hasta la finalización.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL sync,async]</b> (Predeterminado)</p>
+            <p><b>[!UICONTROL sync,async]</b> (predeterminado)</p>
             <p>Se intenta el procesamiento síncrono de la solicitud. Cuando el procesamiento se extiende más allá de 5000 ms, se devuelve la respuesta asíncrona del monitor. Se debe sondear la URL del monitor hasta que se complete la solicitud.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td role="rowheader">[!UICONTROL Tipo de elemento]</td>
       <td >Seleccione el tipo de elemento que desea cargar</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td role="rowheader">[!UICONTROL Tipo de archivo]</td>
       <td >Introduzca o asigne el tipo MIME del archivo cargado.</td>
     </tr>
     <tr>

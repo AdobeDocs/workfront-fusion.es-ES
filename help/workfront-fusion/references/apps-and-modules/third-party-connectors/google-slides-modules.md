@@ -4,10 +4,10 @@ description: Los módulos de Google Slides de Adobe Workfront Fusion le permiten
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: c9c2957aad4c885a622a80b9f25303517db0c506
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 43%
+source-wordcount: '1970'
+ht-degree: 58%
 
 ---
 
@@ -40,7 +40,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -102,16 +102,16 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Presentación
 
-* [[!UICONTROL Add/Delete a Slide]](#adddelete-a-slide)
-* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
-* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
-* [[!UICONTROL Get a Presentation]](#get-a-presentation)
-* [[!UICONTROL List Presentations]](#list-presentations)
-* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
-* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
-* [[!UICONTROL Watch Presentations]](#watch-presentations)
+* [[!UICONTROL Añadir o eliminar una diapositiva]](#adddelete-a-slide)
+* [[!UICONTROL Crear una presentación a partir de una plantilla]](#create-a-presentation-from-a-template)
+* [[!UICONTROL Obtener una página o miniatura]](#get-a-pagethumbnail)
+* [[!UICONTROL Obtener una presentación]](#get-a-presentation)
+* [[!UICONTROL Lista de presentaciones]](#list-presentations)
+* [[!UICONTROL Actualizar un gráfico]](#refresh-a-chart)
+* [[!UICONTROL Subir una imagen a una presentación]](#upload-an-image-to-a-presentation)
+* [[!UICONTROL Ver presentaciones]](#watch-presentations)
 
-#### [!UICONTROL Add/Delete a Slide]
+#### [!UICONTROL Añadir o eliminar una diapositiva]
 
 Este módulo de acción crea una diapositiva o elimina una diapositiva existente en la presentación especificada.
 
@@ -163,7 +163,7 @@ Este módulo de acción crea una diapositiva o elimina una diapositiva existente
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Presentation From a Template]
+#### [!UICONTROL Crear una presentación a partir de una plantilla]
 
 Este módulo de acción crea una nueva presentación copiando una presentación y reemplazando todas las etiquetas como `{{Name}}`, `{{Email}}` en con los datos proporcionados.
 
@@ -197,7 +197,7 @@ Este módulo de acción crea una nueva presentación copiando una presentación 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> <p>Este campo aparece si está creando la presentación [!UICONTROL By Dropdown].</p> </td> 
   </tr> 
   <tr> 
@@ -208,35 +208,35 @@ Este módulo de acción crea una nueva presentación copiando una presentación 
    <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>Añada los valores:</p> 
     <ul> 
-     <li><strong>[!UICONTROL Tag]</strong>: introduzca la etiqueta que desea reemplazar en la presentación. Por ejemplo: <code>&#123;&#123;Name&#125;&#125;</code></li> 
-     <li><strong>[!UICONTROL Replaced Value]</strong>: introduzca el valor con el que se debe reemplazar la etiqueta existente. Por ejemplo, si una cadena <code>&#123;&#123;Name&#125;&#125;</code> en la presentación y el valor reemplazado es Sample, <code>&#123;&#123;Name&#125;&#125;</code> se reemplazará por <code>Sample</code>.</li> 
+     <li><strong>[!UICONTROL Tag]</strong>: escriba la etiqueta que desea reemplazar en la presentación. Por ejemplo: <code>&#123;&#123;Name&#125;&#125;</code></li> 
+     <li><strong>[!UICONTROL Replaced Value]</strong>: escriba el valor con el que se reemplazará la etiqueta existente. Por ejemplo, si una cadena <code>&#123;&#123;Name&#125;&#125;</code> en la presentación y el valor reemplazado es Sample, <code>&#123;&#123;Name&#125;&#125;</code> se reemplazará por <code>Sample</code>.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL New Drive Location]</td> 
+   <td role="rowheader">[!UICONTROL Nueva ubicación de unidad]</td> 
    <td> <p>Seleccione [!DNL Google Drive] donde desee almacenar o agregar la nueva presentación:</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL New Document's Location]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Ubicación de nuevo documento]</p> </td> 
    <td> <p>Seleccione la carpeta donde desea almacenar o agregar la presentación.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Shared] </td> 
+   <td role="rowheader">[!UICONTROL Compartido] </td> 
    <td> <p>Seleccione si desea compartir la presentación.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sharing with Other's Email Address]</td> 
+   <td role="rowheader">Compartir [!UICONTROL con la dirección de correo electrónico de otro usuario]</td> 
    <td> <p> Escriba la dirección de correo electrónico con la que desea compartir la presentación. Si activa la opción Compartido sin introducir un correo electrónico en este campo, la presentación se puede compartir con cualquier persona.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Page/Thumbnail]
+#### [!UICONTROL Obtener una página o miniatura]
 
 Este módulo de acción obtiene la última versión de la página especificada o de la miniatura de una página de la presentación.
 
@@ -249,7 +249,7 @@ Este módulo de acción obtiene la última versión de la página especificada o
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Google Slides] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Presentation and Page ID]</td> 
+   <td role="rowheader">[!UICONTROL Escriba una presentación y un Id. de página]</td> 
    <td> <p> Elija si desea introducir una presentación y un ID de página manualmente, o bien selecciónelos en una lista.</p> </td> 
   </tr> 
   <tr> 
@@ -267,7 +267,7 @@ Este módulo de acción obtiene la última versión de la página especificada o
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Presentation]
+#### [!UICONTROL Obtener una presentación]
 
 Este módulo de acción obtiene la última versión de una presentación especificada.
 
@@ -285,7 +285,7 @@ Este módulo de acción obtiene la última versión de una presentación especif
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -295,7 +295,7 @@ Este módulo de acción obtiene la última versión de una presentación especif
  </tbody> 
 </table>
 
-#### [!UICONTROL List Presentations]
+#### [!UICONTROL Lista de presentaciones]
 
 Este módulo recupera una lista de todas las presentaciones en la ubicación determinada.
 
@@ -313,7 +313,7 @@ Este módulo recupera una lista de todas las presentaciones en la ubicación det
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -327,7 +327,7 @@ Este módulo recupera una lista de todas las presentaciones en la ubicación det
  </tbody> 
 </table>
 
-#### [!UICONTROL Refresh a Chart]
+#### [!UICONTROL Actualizar un gráfico]
 
 Este módulo de acción actualiza los datos del gráfico almacenados en una presentación especificada por el identificador.
 
@@ -340,7 +340,7 @@ Este módulo de acción actualiza los datos del gráfico almacenados en una pres
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Google Slides] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Escriba un Id. de presentación]</td> 
    <td> <p> Elija si desea introducir un ID de presentación manualmente o seleccionarlo en una lista.</p> </td> 
   </tr> 
   <tr> 
@@ -349,7 +349,7 @@ Este módulo de acción actualiza los datos del gráfico almacenados en una pres
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -363,7 +363,7 @@ Este módulo de acción actualiza los datos del gráfico almacenados en una pres
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload an Image To a Presentation]
+#### [!UICONTROL Cargar una imagen en una presentación]
 
 Carga una imagen con los datos proporcionados.
 
@@ -389,7 +389,7 @@ Carga una imagen con los datos proporcionados.
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul>  </td> 
   </tr> 
   <tr> 
@@ -397,7 +397,7 @@ Carga una imagen con los datos proporcionados.
    <td> <p> Seleccione el identificador de la presentación en la que está cargando la imagen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select the Method]</td> 
+   <td role="rowheader">[!UICONTROL Seleccione el método]</td> 
    <td> <p> Seleccione cómo desea reemplazar la imagen.</p>
    <ul>
    <li><p><b>Cargar una imagen reemplazando la etiqueta de texto</b></p><p>En el campo Valores, para cada imagen que desee cargar, haga clic en <b>Agregar elemento</b> e introduzca la etiqueta de la imagen y la dirección URL de la nueva imagen.</p></li>
@@ -408,7 +408,7 @@ Carga una imagen con los datos proporcionados.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Presentations]
+#### [!UICONTROL Ver presentaciones]
 
 Este módulo de déclencheur inicia un escenario cuando se crea o actualiza una nueva presentación.
 
@@ -437,10 +437,10 @@ Este módulo de déclencheur inicia un escenario cuando se crea o actualiza una 
 
 ### Otro
 
-* [[!UICONTROL Insert Links in a Presentation]](#insert-links-in-a-presentation)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Insertar vínculos en una presentación]](#insert-links-in-a-presentation)
+* [[!UICONTROL Realizar una llamada de API]](#make-an-api-call)
 
-#### [!UICONTROL Insert Links in a Presentation]
+#### [!UICONTROL Insertar vínculos en una presentación]
 
 Este módulo permite hacer clic en todos los vínculos de una presentación o inserta un vínculo en todos los textos de entrada coincidentes.
 
@@ -466,7 +466,7 @@ Este módulo permite hacer clic en todos los vínculos de una presentación o in
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Unidad compartida]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> <p>Este campo aparece si está creando la presentación [!UICONTROL By Dropdown].</p> </td> 
   </tr> 
   <tr> 
@@ -484,7 +484,7 @@ Este módulo permite hacer clic en todos los vínculos de una presentación o in
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realizar una llamada de API]
 
 Realiza una llamada de API autorizada arbitraria.
 
@@ -532,7 +532,7 @@ La siguiente llamada de API devuelve los detalles de la presentación:
 
 ![Detalles de presentación](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
-Las coincidencias de la búsqueda se pueden encontrar en la salida del módulo en [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId].
+Las coincidencias de la búsqueda se encuentran en la salida del módulo en [!UICONTROL Paquete] > [!UICONTROL Cuerpo] > [!UICONTROL presentationId].
 
 En nuestro ejemplo, se han devuelto los detalles de presentación solicitados:
 

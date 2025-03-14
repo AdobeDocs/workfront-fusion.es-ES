@@ -4,10 +4,10 @@ description: Los módulos  [!DNL Adobe Workfront Fusion Google Drive] le permite
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 12%
+source-wordcount: '2041'
+ht-degree: 23%
 
 ---
 
@@ -42,7 +42,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -91,11 +91,11 @@ El conector de Google Drive utiliza lo siguiente:
 
 ## Conectar [!DNL Google Drive] a [!DNL Workfront Fusion]
 
-Si usa [!DNL @gmail.com] o [!DNL @googlemail.com] usuario, debe crear un cliente de OAuth en [!DNL Google Cloud Platform] para obtener [!UICONTROL Client ID] y [!UICONTROL Client Secret].
+Si usa [!DNL @gmail.com] o [!DNL @googlemail.com] usuario, debe crear un cliente de OAuth en [!DNL Google Cloud Platform] para obtener su [!UICONTROL ID de cliente] y [!UICONTROL Secreto de cliente].
 
-Para obtener instrucciones paso a paso sobre cómo crear el cliente OAuth (y obtener [!UICONTROL Client ID] y [!UICONTROL Client Secret]), consulte [Conectarse [!DNL Adobe Workfront Fusion] a [!DNL Google Services] mediante un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Para obtener instrucciones paso a paso sobre cómo crear el cliente OAuth (y obtener [!UICONTROL ID de cliente] y [!UICONTROL Secreto de cliente]), consulte [Conectarse [!DNL Adobe Workfront Fusion] a [!DNL Google Services] con un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Google Drive] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Google Drive] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## Módulos de [!DNL Google Drive] y sus campos
 
@@ -112,12 +112,12 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Activadores
 
-* [[!UICONTROL Watch all files]](#watch-all-files)
-* [[!UICONTROL Watch comments]](#watch-comments)
-* [[!UICONTROL Watch files in folder]](#watch-files-in-folder)
-* [[!UICONTROL Watch shared files]](#watch-shared-files)
+* [[!UICONTROL Ver todos los archivos]](#watch-all-files)
+* [[!UICONTROL Ver comentarios]](#watch-comments)
+* [[!UICONTROL Observar archivos en la carpeta]](#watch-files-in-folder)
+* [[!UICONTROL Ver archivos compartidos]](#watch-shared-files)
 
-#### [!UICONTROL Watch all files]
+#### [!UICONTROL Ver todos los archivos]
 
 Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un archivo de su [!DNL Google Drive].
 
@@ -141,19 +141,19 @@ Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] archivos para formatear]</td>
+    <td >[!UICONTROL Convert [!DNL Google Documents] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Documents].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Slides].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Drawings].</td>
   </tr>  
   <tr> 
@@ -167,7 +167,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comments]
+#### [!UICONTROL Ver comentarios]
 
 Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un comentario en el archivo seleccionado.
 
@@ -194,7 +194,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files in folder]
+#### [!UICONTROL Observar archivos en la carpeta]
 
 Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un archivo en la carpeta especificada.
 
@@ -207,7 +207,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un 
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Google Drive] a [!DNL Workfront Fusion], vea <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Select the folder to be watched]</td>
+    <td>[!UICONTROL Seleccione la carpeta que desea ver]</td>
     <td >Seleccione la carpeta de la unidad en la que desea inspeccionar los archivos.</td>
   </tr> 
   <tr> 
@@ -222,19 +222,19 @@ Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] archivos para formatear]</td>
+    <td >[!UICONTROL Convert [!DNL Google Documents] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Documents].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Slides].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Drawings].</td>
   </tr> 
   <tr>
@@ -248,7 +248,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega o modifica un 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch shared files]
+#### [!UICONTROL Ver archivos compartidos]
 
 Déclencheur cuando se comparte un nuevo archivo con usted o cuando se actualiza un archivo compartido existente.
 
@@ -261,7 +261,7 @@ Déclencheur cuando se comparte un nuevo archivo con usted o cuando se actualiza
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Google Drive] a [!DNL Workfront Fusion], vea <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Select the folder to be watched]</td> 
+   <td>[!UICONTROL Seleccione la carpeta que desea ver]</td> 
    <td>Seleccione la carpeta compartida en la que desea inspeccionar los archivos.</td> 
   </tr> 
   <tr> 
@@ -276,19 +276,19 @@ Déclencheur cuando se comparte un nuevo archivo con usted o cuando se actualiza
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] archivos para formatear]</td>
+    <td >[!UICONTROL Convert [!DNL Google Documents] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Documents].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Slides].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] archivos para formatear]</td>
+    <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
     <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Drawings].</td>
   </tr> 
   <tr> 
@@ -304,17 +304,17 @@ Déclencheur cuando se comparte un nuevo archivo con usted o cuando se actualiza
 
 ### Acciones
 
-* [[!UICONTROL Copy a file]](#copy-a-file)
-* [[!UICONTROL Create a fFolder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a share link]](#get-a-share-link)
-* [[!UICONTROL Move a file to trash]](#move-a-filefolder-to-trash)
-* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
-* [[!UICONTROL Update a File]](#update-a-file)
-* [[!UICONTROL Upload a File]](#upload-a-file)
+* [[!UICONTROL Copiar un archivo]](#copy-a-file)
+* [[!UICONTROL Crear una carpeta]](#create-a-folder)
+* [[!UICONTROL Eliminar un archivo]](#delete-a-file)
+* [[!UICONTROL Obtener un archivo]](#get-a-file)
+* [[!UICONTROL Obtener un vínculo compartido]](#get-a-share-link)
+* [[!UICONTROL Mover un archivo a la papelera]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Buscar archivos/carpetas]](#search-for-filesfolders)
+* [[!UICONTROL Actualizar un archivo]](#update-a-file)
+* [[!UICONTROL Subir un archivo]](#upload-a-file)
 
-#### [!UICONTROL Copy a file]
+#### [!UICONTROL Copiar un archivo]
 
 Este módulo de acción copia un archivo en la nueva ubicación.
 
@@ -331,11 +331,11 @@ Este módulo de acción copia un archivo en la nueva ubicación.
    <td> <p>Seleccione el destino en el que desea copiar un archivo.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL compartido conmigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Target folder]</td> 
+   <td>[!UICONTROL Carpeta de destino]</td> 
    <td>Seleccione la carpeta que contiene el archivo que desea copiar.</td> 
   </tr> 
   <tr> 
@@ -343,13 +343,13 @@ Este módulo de acción copia un archivo en la nueva ubicación.
    <td>Asigne el ID del archivo que desea copiar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the copy]</td> 
+   <td>[!UICONTROL El nombre de la copia]</td> 
    <td>Escriba un título para el nuevo archivo. Deje este campo en blanco si no desea cambiar el nombre del archivo original.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crear una carpeta]
 
 Este módulo de acción crea una carpeta en la ubicación especificada.
 
@@ -366,11 +366,11 @@ Este módulo de acción crea una carpeta en la ubicación especificada.
    <td> <p>Seleccione el destino en el que desea crear una carpeta.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL compartido conmigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New folder location]</td> 
+   <td>[!UICONTROL Nueva ubicación de carpeta]</td> 
    <td>Vaya a la ubicación en la que desea crear una carpeta nueva.</td> 
   </tr> 
   <tr> 
@@ -378,13 +378,13 @@ Este módulo de acción crea una carpeta en la ubicación especificada.
    <td>Escriba un nombre para la carpeta que está creando.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Share folder]</td> 
-   <td>Seleccione esta opción si desea compartir la carpeta con alguien que tenga el vínculo [!UICONTROL Share]. De lo contrario, el vínculo compartido solo es para el propietario.</td> 
+   <td>[!UICONTROL Compartir carpeta]</td> 
+   <td>Seleccione esta opción si desea compartir la carpeta con alguien que tenga el vínculo [!UICONTROL Compartir]. De lo contrario, el vínculo compartido solo es para el propietario.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminar un archivo]
 
 Este módulo de acción elimina permanentemente un archivo o una carpeta.
 
@@ -403,7 +403,7 @@ Este módulo de acción elimina permanentemente un archivo o una carpeta.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obtener un archivo]
 
 Este módulo de acción recupera el archivo con el ID especificado.
 
@@ -416,19 +416,19 @@ Este módulo de acción recupera el archivo con el ID especificado.
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Google Drive] a [!DNL Workfront Fusion], vea <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] archivos para formatear]</td> 
+   <td>[!UICONTROL Convert [!DNL Google Documents] files to format]</td> 
    <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Documents].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Spreadsheets] archivos para formatear]</td> 
+   <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td> 
    <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Spreadsheets].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] archivos para formatear]</td> 
+   <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td> 
    <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Slides].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] archivos para formatear]</td> 
+   <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td> 
    <td>Seleccione el formato de archivo al que desea convertir [!DNL Google Drawings].</td> 
   </tr> 
   <tr> 
@@ -438,7 +438,7 @@ Este módulo de acción recupera el archivo con el ID especificado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a share link]
+#### [!UICONTROL Obtener un vínculo compartido]
 
 Este módulo de acción recupera el vínculo compartido de un archivo en Google Drive.
 
@@ -457,7 +457,7 @@ Este módulo de acción recupera el vínculo compartido de un archivo en Google 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file to trash]
+#### [!UICONTROL Mover un archivo a la papelera]
 
 Este módulo de acción mueve un archivo o una carpeta a la papelera.
 
@@ -476,7 +476,7 @@ Este módulo de acción mueve un archivo o una carpeta a la papelera.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Files/Folders]
+#### [!UICONTROL Buscar archivos/carpetas]
 
 Este módulo de búsqueda busca archivos o carpetas según los criterios de búsqueda.
 
@@ -493,11 +493,11 @@ Este módulo de búsqueda busca archivos o carpetas según los criterios de bús
    <td> <p>Seleccione la unidad de destino que desea buscar.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL compartido conmigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL List a folder]</td> 
+   <td>[!UICONTROL Mostrar una carpeta]</td> 
    <td>Desplácese hasta la carpeta en la que desee buscar los archivos o carpetas.</td> 
   </tr> 
   <tr> 
@@ -508,18 +508,18 @@ Este módulo de búsqueda busca archivos o carpetas según los criterios de bús
    <td> <p>[!UICONTROL Search]</p> </td> 
    <td> <p>Seleccione el tipo de búsqueda que desea realizar.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Search within file/folder names]</strong> </p> 
+     <li> <p><strong>[!UICONTROL Buscar en nombres de archivo/carpeta]</strong> </p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Introduzca una parte del nombre de archivo o el nombre completo del archivo (incluido el sufijo) que desee buscar.</p> </li> 
-       <li> <p><strong>[!UICONTROL Search Options]</strong> </p> <p>Seleccione si desea buscar el término exacto o si desea buscar nombres que contengan el término de búsqueda.</p> </li> 
+       <li> <p><strong>[!UICONTROL Opciones de búsqueda]</strong> </p> <p>Seleccione si desea buscar el término exacto o si desea buscar nombres que contengan el término de búsqueda.</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Fulltext] búsqueda</strong> </p> 
+     <li> <p><strong>[!UICONTROL Texto completo] buscar</strong> </p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Escriba cualquier término de búsqueda que quiera buscar en su [!DNL Google Drive].</p> </li> 
       </ul> </li> 
      <li> <p><strong>Introducir consulta de búsqueda personalizada</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Introduzca la consulta de búsqueda personalizada. Para obtener más información, consulte la sección [!UICONTROL Search for Files] de este artículo.</p> </li> 
+       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Introduzca la consulta de búsqueda personalizada. Para obtener más información, consulte la sección [!UICONTROL Buscar archivos] de este artículo.</p> </li> 
        <li> <p><strong>Agregar la carpeta seleccionada arriba a la consulta</strong> </p> <p>Busca la carpeta en la colección primaria. Esto encuentra todos los archivos y carpetas ubicados directamente en la carpeta seleccionada anteriormente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -535,7 +535,7 @@ Este módulo de búsqueda busca archivos o carpetas según los criterios de bús
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a File]
+#### [!UICONTROL Actualizar un archivo]
 
 Este módulo de acción actualiza los metadatos o el contenido de un archivo.
 
@@ -552,11 +552,11 @@ Este módulo de acción actualiza los metadatos o el contenido de un archivo.
    <td> <p>Seleccione el destino que contiene el archivo que desea actualizar.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL compartido conmigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Move to a folder]</td> 
+   <td>[!UICONTROL Mover a una carpeta]</td> 
    <td>Si desea mover el archivo a una carpeta específica, seleccione la carpeta en la que desea mover el archivo.</td> 
   </tr> 
   <tr> 
@@ -568,7 +568,7 @@ Este módulo de acción actualiza los metadatos o el contenido de un archivo.
    <td>Escriba un título para el archivo actualizado.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Change a file content]</td> 
+   <td>[!UICONTROL Cambiar el contenido de un archivo]</td> 
    <td>Seleccione si desea reemplazar el contenido del archivo.</td> 
   </tr> 
   <tr> 
@@ -576,13 +576,13 @@ Este módulo de acción actualiza los metadatos o el contenido de un archivo.
    <td>Si va a reemplazar el contenido, seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Conver a file]</td> 
+   <td>[!UICONTROL Convertir un archivo]</td> 
    <td>Active esta opción para convertir el archivo al formato de archivo Google correspondiente.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Subir un archivo]
 
 Sube un archivo a su [!DNL Google Drive].
 
@@ -603,7 +603,7 @@ Sube un archivo a su [!DNL Google Drive].
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Target folder]</td> 
+   <td>[!UICONTROL Carpeta de destino]</td> 
    <td>Seleccione la carpeta en la que desea cargar un archivo. </td> 
   </tr> 
   <tr> 
@@ -615,7 +615,7 @@ Sube un archivo a su [!DNL Google Drive].
    <td>Escriba un título para el nuevo archivo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert a file]</td> 
+   <td>[!UICONTROL Convertir un archivo]</td> 
    <td>Al habilitar esta opción, el módulo podrá convertir archivos al formato [!DNL Google] correspondiente.</td> 
   </tr> 
  </tbody> 

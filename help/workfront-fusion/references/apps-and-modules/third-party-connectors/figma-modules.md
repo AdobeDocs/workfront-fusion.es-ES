@@ -4,10 +4,10 @@ description: Con los módulos  [!DNL Adobe Workfront Fusion] Figma, puede recupe
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 15%
+source-wordcount: '2560'
+ht-degree: 17%
 
 ---
 
@@ -40,7 +40,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -93,7 +93,7 @@ El conector Figma utiliza lo siguiente:
 
 Para crear una conexión para los módulos Figma:
 
-1. En cualquier módulo Figma, haga clic en **[!UICONTROL Add]** junto al cuadro Conexión.
+1. En cualquier módulo Figma, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 
@@ -117,11 +117,11 @@ Para crear una conexión para los módulos Figma:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Escriba su [!UICONTROL Figme] [!UICONTROL Client ID].</td>
+        <td>Escriba su [!UICONTROL Archivo] [!UICONTROL ID de cliente].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba su Figma [!UICONTROL Client Secret].</td>
+        <td>Escriba el Secreto de cliente de Figma [!UICONTROL].</td>
         </tr>
         <tr>
         <td role="rowheader">Ámbitos personalizados</td>
@@ -134,7 +134,7 @@ Para crear una conexión para los módulos Figma:
       </tbody>
     </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
 
 
@@ -164,7 +164,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Publicar un comentario](#post-a-comment)
 
 
-#### [!UICONTROL Delete a comment]
+#### [!UICONTROL Eliminar un comentario]
 
 Este módulo de acción elimina un solo comentario de un archivo.
 
@@ -188,7 +188,7 @@ Este módulo de acción elimina un solo comentario de un archivo.
   </tbody>
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL Enumerar comentarios]
 
 Este módulo de búsqueda enumera todos los comentarios adjuntos a un solo archivo en [!DNL Figma].
 
@@ -206,10 +206,10 @@ Este módulo de búsqueda enumera todos los comentarios adjuntos a un solo archi
         <p>Introduzca o asigne el ID de archivo del archivo para el que desea recuperar los comentarios. </p>
         <ul>
           <li>
-            <p>Si no conoce el identificador, haga clic en <b>[!UICONTROL Find Files]</b>, escriba o asigne el identificador del proyecto al que está asociado el archivo y, a continuación, seleccione el archivo.</p>
+            <p>Si no conoce el identificador, haga clic en <b>[!UICONTROL Buscar archivos]</b> y escriba o asigne el identificador del proyecto al que está asociado el archivo. A continuación, seleccione el archivo.</p>
           </li>
           <li>
-            <p>Si no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Find Projects]</b>, escriba o asigne el identificador del equipo propietario del proyecto con el que está asociado el archivo, seleccione el proyecto y, a continuación, seleccione el archivo.</p>
+            <p>Si no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Buscar proyectos]</b> y escriba o asigne el identificador del equipo propietario del proyecto al que está asociado el archivo. A continuación, seleccione el proyecto y, a continuación, seleccione el archivo.</p>
           </li>
         </ul>
       </td>
@@ -222,7 +222,7 @@ Este módulo de búsqueda enumera todos los comentarios adjuntos a un solo archi
 </table>
 
 
-#### [!UICONTROL Post a comment]
+#### [!UICONTROL Publicar un comentario]
 
 Este módulo de acción publica un comentario en un archivo Figma.
 
@@ -240,10 +240,10 @@ Este módulo de acción publica un comentario en un archivo Figma.
         <p>Introduzca o asigne el ID de archivo del archivo en el que desea publicar un comentario. </p>
         <ul>
           <li>
-            <p>Si no conoce el identificador del archivo, haga clic en <b>[!UICONTROL Find Files]</b>, escriba o asigne el identificador del proyecto al que está asociado el archivo y, a continuación, seleccione el archivo.</p>
+            <p>Si no conoce el identificador del archivo, haga clic en <b>[!UICONTROL Buscar archivos]</b> y escriba o asigne el identificador del proyecto al que está asociado el archivo. A continuación, seleccione el archivo.</p>
           </li>
           <li>
-            <p>Si está intentando encontrar el identificador del archivo y no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Find Projects]</b> y escriba o asigne el identificador del equipo propietario del proyecto con el que está asociado el archivo. Seleccione el proyecto y, a continuación, seleccione el archivo.</p>
+            <p>Si intenta encontrar el identificador del archivo y no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Buscar proyectos]</b> y escriba o asigne el identificador del equipo propietario del proyecto con el que está asociado el archivo. Seleccione el proyecto y, a continuación, seleccione el archivo.</p>
           </li>
         </ul>
       </td>
@@ -267,7 +267,7 @@ Este módulo de acción publica un comentario en un archivo Figma.
 * [Enumerar proyectos](#list-projects)
 
 
-#### [!UICONTROL Get a file or image]
+#### [!UICONTROL Obtener un archivo o imagen]
 
 Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figma
 
@@ -288,25 +288,25 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
             <p><b>[!UICONTROL File]</b>
             </p>
             <p>El módulo devuelve el documento al que hace referencia [!UICONTROL Key] como objeto JSON. La clave del archivo se puede analizar desde cualquier URL del archivo Figma.</p>
-            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
+            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Obtener un archivo o imagen: Archivo]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL File nodes]</b>
+            <p><b>[!UICONTROL Nodos de archivo]</b>
             </p>
             <p>Devuelve los nodos a los que hacen referencia los identificadores como un objeto JSON. Los nodos se recuperan del archivo [!DNL Figma] al que hace referencia [!UICONTROL Key].</p>
-            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
+            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Obtener un archivo o imagen: nodos de archivo]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Image]</b>
+            <p><b>[!UICONTROL Imagen]</b>
             </p>
             <p>El módulo procesa imágenes de un archivo.</p>
-            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
+            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Obtener un archivo o imagen: Imagen]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Image fills]</b>
+            <p><b>[!UICONTROL rellenos de imagen]</b>
             </p>
             <p>El módulo devuelve vínculos de descarga para todas las imágenes presentes en los rellenos de imagen de un documento. Los rellenos de imagen muestran [!DNL Figma] las imágenes que proporcionó el usuario. Cuando arrastra una imagen a [!DNL Figma], [!DNL Figma] crea un rectángulo con un solo relleno que representa la imagen y el usuario puede transformar el rectángulo (y las propiedades del relleno).</p>
-            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
+            <p>Para ver los campos, consulte <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Obtener un archivo o imagen: Rellenos de imagen]</a>.</p>
           </li>
         </ul>
       </td>
@@ -322,22 +322,22 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL Tecla de archivo]</td>
       <td>Seleccione el archivo desde el que desea devolver JSON.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL ID de versión]</td>
       <td>Introduzca o asigne la versión del archivo que desea que devuelva el módulo. Para el módulo actual, deje este campo en blanco.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL ID de nodo]</td>
       <td>
         <p>Para devolver sólo un subconjunto del documento, escriba los nodos que desea que devuelva el módulo. El módulo devuelve los nodos enumerados, sus nodos secundarios y cualquier elemento entre el nodo raíz y los nodos enumerados.</p>
         <p>Para cada nodo que desee devolver, haga clic en <b>[!UICONTROL Add]</b> e introduzca el texto del nodo.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Depth]</td>
+      <td role="rowheader">[!UICONTROL Profundidad]</td>
       <td>
         <p>Introduzca o asigne un entero que represente la profundidad en el árbol de documentos para la que desea devolver resultados. </p>
         <div class="example"><span class="autonumber"><span><b>Ejemplo:</b></span></span>
@@ -354,15 +354,15 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Geometry]</td>
+      <td role="rowheader">[!UICONTROL Geometría]</td>
       <td>Para devolver datos vectoriales, escriba <code>paths</code>.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Plugin data]</td>
-      <td>Lista separada por comas de los identificadores de complemento o de la cadena "[!UICONTROL shared]". Cualquier dato presente en el documento escrito por esos complementos se incluirá en el resultado en las propiedades <code>pluginData</code> y <code>sharedPluginData</code>.</td>
+      <td>Una lista separada por comas de los ID de complemento o la cadena "[!UICONTROL shared]". Cualquier dato presente en el documento escrito por esos complementos se incluirá en el resultado en las propiedades <code>pluginData</code> y <code>sharedPluginData</code>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Branch data]</td>
+      <td role="rowheader">[!UICONTROL Datos de rama]</td>
       <td>Active esta opción para devolver los metadatos de la rama del archivo solicitado. Si el archivo es una rama, la clave del archivo principal se incluye en la respuesta devuelta. Si el archivo tiene ramas, sus metadatos se incluyen en la respuesta devuelta. Predeterminado: <code>false</code>.</td>
     </tr>
   </tbody>
@@ -375,22 +375,22 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL Tecla de archivo]</td>
       <td>Seleccione el archivo desde el que desea devolver JSON.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL ID de nodo]</td>
       <td>
         <p>Introduzca los nodos que desea que devuelva y convierta el módulo</p>
         <p>Para cada nodo que desee devolver, haga clic en <b>[!UICONTROL Add]</b> e introduzca el texto del nodo.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL ID de versión]</td>
       <td>Introduzca o asigne la versión del archivo que desea que devuelva el módulo. Para el módulo actual, deje este campo en blanco.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Depth]</td>
+      <td role="rowheader">[!UICONTROL Profundidad]</td>
       <td>
         <p>Introduzca o asigne un entero que represente la profundidad en el árbol de documentos para la que desea devolver resultados. </p>
         <div class="example"><span class="autonumber"><span><b>Ejemplo:</b></span></span>
@@ -407,7 +407,7 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Geometry]</td>
+      <td role="rowheader">[!UICONTROL Geometría]</td>
       <td>Para devolver datos vectoriales, escriba <code>paths</code>.</td>
     </tr>
     <tr>
@@ -425,22 +425,22 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL Tecla de archivo]</td>
       <td>Seleccione el archivo desde el que desea devolver JSON.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL ID de nodo]</td>
       <td>
         <p>Introduzca los nodos que desea que procese el módulo.</p>
         <p>Para cada nodo que desee procesar, haga clic en <b>[!UICONTROL Add]</b> e introduzca el texto del nodo.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Scale]</td>
+      <td role="rowheader">[!UICONTROL Escala]</td>
       <td>Para escalar la imagen, introduzca o asigne el factor de escala. Este número debe estar entre 0,01 y 4.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Format]</td>
+      <td role="rowheader">[!UICONTROL Formato]</td>
       <td>
         <p>Seleccione el formato para la salida de imagen.</p>
         <ul>
@@ -460,16 +460,16 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG - Include ID]</td>
-      <td>Active esta opción para incluir los atributos de ID de todos los elementos del SVG. Predeterminado: [!UICONTROL false].</td>
+      <td role="rowheader">[!UICONTROL SVG - Incluir ID]</td>
+      <td>Active esta opción para incluir los atributos de ID de todos los elementos de SVG. Valor predeterminado: [!UICONTROL false].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG - Simplify Stroke]</td>
-      <td>Active esta opción para simplificar los trazos interiores/exteriores y utilice el atributo de trazo si es posible en lugar de &lt;máscara&gt;. Predeterminado: [!UICONTROL true].</td>
+      <td role="rowheader">[!UICONTROL SVG - Simplificar trazo]</td>
+      <td>Active esta opción para simplificar los trazos interiores/exteriores y utilice el atributo de trazo si es posible en lugar de &lt;máscara&gt;. Valor predeterminado: [!UICONTROL true].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Use absolute bounds]</td>
-      <td>Active esta opción para utilizar las dimensiones completas del nodo independientemente de si se recorta o no o el espacio alrededor está vacío. Utilice esta opción para exportar nodos de texto sin recortarlos. Predeterminado: [!UICONTROL false].</td>
+      <td role="rowheader">[!UICONTROL Utilizar límites absolutos]</td>
+      <td>Active esta opción para utilizar las dimensiones completas del nodo independientemente de si se recorta o no o el espacio alrededor está vacío. Utilice esta opción para exportar nodos de texto sin recortarlos. Valor predeterminado: [!UICONTROL false].</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Version]</td>
@@ -485,13 +485,13 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL Tecla de archivo]</td>
       <td>Seleccione el archivo desde el que desea devolver JSON.</td>
     </tr>
   </tbody>
 </table>
 
-### [!UICONTROL List file version history]
+### [!UICONTROL Historial de versiones de archivos de lista]
 
 Este módulo de búsqueda devuelve el historial de versiones de un solo archivo en [!UICONTROL Figma].
 <table style="table-layout:auto"> 
@@ -507,10 +507,10 @@ Este módulo de búsqueda devuelve el historial de versiones de un solo archivo 
         <p>Introduzca o asigne el ID de archivo del archivo para el que desea recuperar el historial de versiones. </p>
         <ul>
           <li>
-            <p>Si no conoce el identificador del archivo, haga clic en <b>[!UICONTROL Find Files]</b>, escriba o asigne el identificador del proyecto al que está asociado el archivo y, a continuación, seleccione el archivo.</p>
+            <p>Si no conoce el identificador del archivo, haga clic en <b>[!UICONTROL Buscar archivos]</b> y escriba o asigne el identificador del proyecto al que está asociado el archivo. A continuación, seleccione el archivo.</p>
           </li>
           <li>
-            <p>Si está intentando encontrar el identificador del archivo y no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Find Projects]</b> y escriba o asigne el identificador del equipo propietario del proyecto con el que está asociado el archivo. Seleccione el proyecto y, a continuación, seleccione el archivo.</p>
+            <p>Si intenta encontrar el identificador del archivo y no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Buscar proyectos]</b> y escriba o asigne el identificador del equipo propietario del proyecto con el que está asociado el archivo. Seleccione el proyecto y, a continuación, seleccione el archivo.</p>
           </li>
         </ul>
       </td>
@@ -522,7 +522,7 @@ Este módulo de búsqueda devuelve el historial de versiones de un solo archivo 
   </tbody>
 </table>
 
-#### [!UICONTROL List project files]
+#### [!UICONTROL Enumerar archivos de proyecto]
 
 Este módulo de búsqueda devuelve una lista de todos los archivos del proyecto especificado.
 
@@ -540,7 +540,7 @@ Este módulo de búsqueda devuelve una lista de todos los archivos del proyecto 
         <p>Escriba o asigne el Id. del proyecto para el que desea recuperar los archivos. </p>
         <ul>
           <li>
-            <p>Si no conoce el identificador del proyecto, haga clic en <b>[!UICONTROL Find Projects]</b>, escriba o asigne el identificador del equipo con el que está asociado el proyecto y, a continuación, seleccione el proyecto.</p>
+            <p>Si no conoce el id. del proyecto, haga clic en <b>[!UICONTROL Buscar proyectos]</b> y escriba o asigne el id. del equipo con el que está asociado el proyecto. A continuación, seleccione el proyecto.</p>
           </li>
         </ul>
       </td>
@@ -552,7 +552,7 @@ Este módulo de búsqueda devuelve una lista de todos los archivos del proyecto 
   </tbody>
 </table>
 
-#### [!UICONTROL List projects]
+#### [!UICONTROL Lista de proyectos]
 
 Este módulo de búsqueda devuelve una lista de todos los proyectos dentro del equipo especificado.
 
@@ -569,7 +569,7 @@ Este módulo de búsqueda devuelve una lista de todos los proyectos dentro del e
       <td>Escriba o asigne el Id. del proyecto para el que desea recuperar los archivos. El ID del equipo se puede encontrar en la dirección URL de la página del equipo en Figma</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
+      <td role="rowheader">[!UICONTROL Número máximo de proyectos devueltos]</td>
       <td>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</td>
     </tr>
   </tbody>
@@ -578,7 +578,7 @@ Este módulo de búsqueda devuelve una lista de todos los proyectos dentro del e
 
 ### Componentes y estilos
 
-#### [!UICONTROL Get a style or component]
+#### [!UICONTROL Obtener un estilo o componente]
 
 Este módulo de acción recupera un solo estilo o componente, o un conjunto de estilos o componentes.
 
@@ -595,7 +595,7 @@ Este módulo de acción recupera un solo estilo o componente, o un conjunto de e
       <td>Seleccione el tipo de objeto que desea recuperar.</td>
     </tr>
     <tr>
-      <td role="rowheader">&lt;[!UICONTROL Object> key]</td>
+      <td role="rowheader">&lt;[!UICONTROL Objeto&gt; clave]</td>
       <td>Introduzca la clave (identificador único) del objeto que desea recuperar.</td>
     </tr>
     <tr>
@@ -603,11 +603,11 @@ Este módulo de acción recupera un solo estilo o componente, o un conjunto de e
       <td>Si recupera un componente del equipo o un conjunto de componentes del equipo, introduzca o asigne el ID del equipo al que están asociados el registro o registros.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Page Size]</td>
+      <td role="rowheader">[!UICONTROL Tamaño de página]</td>
       <td>Si recupera un componente del equipo o un conjunto de componentes del equipo, introduzca o asigne el número o los resultados que se devolverán por página. Predeterminado: 30.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL After]</td>
+      <td role="rowheader">[!UICONTROL Después]</td>
       <td>
         <p>Si recupera un componente del equipo o un conjunto de componentes del equipo, introduzca o asigne el número del resultado después del cual se comenzará a recuperar los resultados. Esto se puede combinar con el campo [!UICONTROL Page Size] para paginar los resultados.</p>
         <p>Este valor no se corresponde con los ID de objeto.</p>
@@ -633,7 +633,7 @@ Este módulo de acción recupera un solo estilo o componente, o un conjunto de e
 * [Ver eventos](#watch-events)
 
 
-#### [!UICONTROL Make an API call]
+#### [!UICONTROL Realizar una llamada API]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API de Figma sin tener que pensar en la autenticación. De este modo, puede crear una automatización del flujo de datos que no se puede lograr con los otros módulos Figma.
 
@@ -680,7 +680,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
   </tbody>
 </table>
 
-#### [!UICONTROL Watch events]
+#### [!UICONTROL Ver eventos]
 
 Este módulo de déclencheur inicia un escenario cuando se produce uno de los siguientes eventos para un equipo específico en el espacio de equipo [!DNL Figma]:
 
@@ -705,13 +705,13 @@ Este módulo de déclencheur inicia un escenario cuando se produce uno de los si
         <p>Para añadir un nuevo webhook:</p>
         <ol>
           <li>
-            <p>Haga clic en <b>[!UICONTROL Add]</b> junto al campo [!UICONTROL Webhook].</p>
+            <p>Haga clic en <b>[!UICONTROL Agregar]</b> junto al campo [!UICONTROL Webhook].</p>
           </li>
           <li>
             <p>Introduzca un nombre para el webhook. </p>
           </li>
           <li>
-            <p>Seleccione la conexión que desea utilizar para este webhook. Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Figma] a [!UICONTROL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas.</a></p>
+            <p>Seleccione la conexión que desea utilizar para este webhook. Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Figma] a [!UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas.</a></p>
           </li>
           <li>
             <p>Seleccione el tipo de evento que desea que vea el módulo.</p>

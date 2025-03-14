@@ -4,9 +4,9 @@ description: Puede añadir técnicas avanzadas de gestión de errores a la ruta 
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '905'
 ht-degree: 16%
 
 ---
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -87,9 +87,9 @@ Para obtener información sobre cómo Fusion evalúa y procesa varios tipos de d
 
 Este escenario de ejemplo muestra cómo funcionan estos filtros para la administración de errores.
 
-Si utiliza el módulo Dropbox > Crear una carpeta y ya existe una carpeta con el mismo nombre, el módulo genera un error de datos:
+Si utiliza Dropbox > Crear un módulo de carpeta y ya existe una carpeta con el mismo nombre, el módulo genera un error de datos:
 
-![Error en el Dropbox](assets/dropbox.png)
+![Error en Dropbox](assets/dropbox.png)
 
 El escenario completo funciona de la siguiente manera:
 
@@ -101,7 +101,7 @@ El escenario completo funciona de la siguiente manera:
 1. La ruta del controlador de errores (burbujas transparentes) contiene un enrutador para filtrar los errores
 La primera ruta es para un tipo de error especificado denominado `DataError`.
 
-   1. Si se produce un `DataError` y los detalles del error pasan a través del filtro, el Dropbox >Enumerar todos los archivos/subcarpetas en un módulo de carpetas enumera todas las carpetas en el Dropbox.
+   1. Si se produce un `DataError` y los detalles del error pasan a través del filtro, Dropbox >Enumerar todos los archivos/subcarpetas en un módulo de carpetas enumera todas las carpetas de Dropbox.
    1. El filtro siguiente coincide con los nombres de carpeta.
    1. La directiva **Resume** especifica el ID de carpeta y la ruta de acceso de la carpeta existente, y la ejecución del escenario se reanuda desde el módulo Dropbox > Crear una carpeta. Sin embargo, en lugar de crear una carpeta nueva, Fusion utiliza los valores de la directiva Resume para pasar al siguiente módulo y cargar el archivo en la carpeta existente.
 
@@ -117,7 +117,7 @@ El filtro de la primera ruta está configurado para controlar únicamente el err
 
 ![Condición](assets/condition.png)
 
-El Dropbox > List all files in a folder module está configurado para devolver todas las carpetas de la carpeta de destino. El siguiente filtro solo pasa el que estábamos intentando crear originalmente. (El nombre de la carpeta se almacena en el 33. Elemento Nombre de carpeta.)
+El módulo Dropbox > Lista de todos los archivos de una carpeta está configurado para devolver todas las carpetas de la carpeta de destino. El siguiente filtro solo pasa el que estábamos intentando crear originalmente. (El nombre de la carpeta se almacena en el 33. Elemento Nombre de carpeta.)
 
 ![Condición](assets/condition2.png)
 
@@ -141,8 +141,8 @@ Una ruta de controladores de error anidada con filtros:
 
 En este escenario, la segunda ruta del controlador de errores está anidada en la primera ruta del controlador de errores.
 
-Si el módulo Dropbox > Crear una carpeta encuentra un error, la ejecución se mueve a la primera ruta. Si se pasa el filtro `DataError Takes Place`, se ejecuta el siguiente módulo, seguido del módulo de directiva Resume si no se produce un error en el Dropbox > Enumerar todos los archivos/subcarpetas de un módulo de carpetas.
+Si el módulo Dropbox > Crear una carpeta encuentra un error, la ejecución se mueve a la primera ruta. Si se pasa el filtro `DataError Takes Place`, se ejecuta el siguiente módulo, seguido del módulo de directiva Resume si no se produce un error en Dropbox > Enumerar todos los archivos/subcarpetas de un módulo de carpetas.
 
-Sin embargo, si se produce un error en el Dropbox > Enumerar todos los archivos/subcarpetas de un módulo de carpetas, la ejecución se mueve a la Ruta 2 del controlador de errores y finaliza con la directiva [!UICONTROL Ignore]. El módulo [!UICONTROL Resume directive] no se ejecuta en este caso.
+Sin embargo, si se produce un error en Dropbox > Enumerar todos los archivos/subcarpetas en un módulo de carpetas, la ejecución se mueve a la Ruta 2 del controlador de errores y termina con la directiva [!UICONTROL Ignore]. El módulo [!UICONTROL Reanudar directiva] no se ejecuta en este caso.
 
 >[!ENDSHADEBOX]

@@ -8,10 +8,10 @@ description: En algunos casos, es posible que desee detener forzosamente la ejec
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 40%
+source-wordcount: '383'
+ht-degree: 38%
 
 ---
 
@@ -48,7 +48,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -72,7 +72,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 ## Solución alternativa para `throw`
 
-Para generar un error de forma condicional, puede configurar un módulo para que falle a propósito durante su funcionamiento. Una posibilidad es emplear el módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON], configurado para generar opcionalmente un error (`BundleValidationError` en este caso):
+Para generar un error de forma condicional, puede configurar un módulo para que falle a propósito durante su funcionamiento. Una posibilidad es emplear el módulo [!UICONTROL JSON] > [!UICONTROL Analizar JSON], configurado para generar opcionalmente un error (`BundleValidationError` en este caso):
 
 ![Error JSON](assets/json-parse-json.png)
 

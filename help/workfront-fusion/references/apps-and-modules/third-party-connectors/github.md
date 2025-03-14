@@ -4,16 +4,16 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: e11c73482a3844bbc96c8d08f8e50a53bc302513
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 65%
+source-wordcount: '1851'
+ht-degree: 73%
 
 ---
 
 # Módulos de [!DNL GitHub]
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!UICONTROL GitHub], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de [!DNL Adobe Workfront Fusion], puede automatizar los flujos de trabajo que utilizan [!UICONTROL GitHub], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 ## Requisitos de acceso
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -64,7 +64,7 @@ Para usar los módulos [!DNL GitHub], debe tener una cuenta de [!DNL GitHub].
 
 ## Conectar [!DNL GitHub] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL GitHub] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitHub] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: Instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## Módulos [!DNL GitHub] y sus campos.
 
@@ -79,13 +79,13 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Activadores
 
-* [[!UICONTROL Watch Comments]](#watch-comments)
-* [[!UICONTROL Watch Forks]](#watch-forks)
-* [[!UICONTROL Watch Issues]](#watch-issues)
-* [[!UICONTROL Watch Pull Requests]](#watch-pull-requests)
-* [[!UICONTROL Watch Repositories]](#watch-repositories)
+* [[!UICONTROL Ver comentarios]](#watch-comments)
+* [[!UICONTROL Ver horquillas]](#watch-forks)
+* [[!UICONTROL Ver problemas]](#watch-issues)
+* [[!UICONTROL Ver solicitudes de cambio]](#watch-pull-requests)
+* [[!UICONTROL Ver repositorios]](#watch-repositories)
 
-#### [!UICONTROL Watch Comments]
+#### [!UICONTROL Ver comentarios]
 
 Este módulo de déclencheur inicia un escenario cuando se agrega un comentario nuevo o se modifica uno existente.
 
@@ -116,7 +116,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega un comentario 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Forks]
+#### [!UICONTROL Ver horquillas]
 
 Este módulo de déclencheur inicia un escenario cuando se crea una nueva ramificación.
 
@@ -139,7 +139,7 @@ Este módulo de déclencheur inicia un escenario cuando se crea una nueva ramifi
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Issues]
+#### [!UICONTROL Ver problemas]
 
 Este módulo de déclencheur inicia un escenario cuando se agrega un problema nuevo o se modifica uno existente.
 
@@ -189,7 +189,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega un problema nu
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Pull Requests]
+#### [!UICONTROL Solicitudes de extracción de observación]
 
 Este módulo se activa cuando se añade una nueva solicitud de extracción o se modifica una existente.
 
@@ -211,7 +211,7 @@ Este módulo se activa cuando se añade una nueva solicitud de extracción o se 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL State]</td> 
-   <td>Seleccione si desea ver [!UICONTROL only open pull] solicitudes, [!UICONTROL only closed ones] o todas las solicitudes de extracción. </td> 
+   <td>Seleccione si desea ver solicitudes [!UICONTROL only open pull], solicitudes [!UICONTROL only closed ones] o todas las solicitudes de extracción. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch]</td> 
@@ -220,7 +220,7 @@ Este módulo se activa cuando se añade una nueva solicitud de extracción o se 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Repositories]
+#### [!UICONTROL Ver repositorios]
 
 Este módulo de déclencheur inicia un escenario cuando se crea o modifica un repositorio.
 
@@ -245,18 +245,18 @@ Este módulo de déclencheur inicia un escenario cuando se crea o modifica un re
 
 ### Acciones
 
-* [[!UICONTROL Add assignees]](#add-assignees)
-* [[!UICONTROL Add labels to an issue]](#add-labels-to-an-issue)
-* [[!UICONTROL Create a comment]](#create-a-comment)
-* [[!UICONTROL Create an issue]](#create-an-issue)
-* [[!UICONTROL Get an issue]](#get-an-issue)
-* [[!UICONTROL List comments]](#list-comments)
-* [[!UICONTROL Remove a label from an issue]](#remove-a-label-from-an-issue)
-* [[!UICONTROL Remove assignees]](#remove-assignees)
-* [[!UICONTROL Search for an issue]](#search-for-an-issue)
-* [[!UICONTROL Update an issue]](#update-an-issue)
+* [[!UICONTROL Añadir asignados]](#add-assignees)
+* [[!UICONTROL Añadir etiquetas a un problema]](#add-labels-to-an-issue)
+* [[!UICONTROL Crear un comentario]](#create-a-comment)
+* [[!UICONTROL Crear un problema]](#create-an-issue)
+* [[!UICONTROL Obtener un problema]](#get-an-issue)
+* [[!UICONTROL Enumerar comentarios]](#list-comments)
+* [[!UICONTROL Quitar una etiqueta de un problema]](#remove-a-label-from-an-issue)
+* [[!UICONTROL Quitar asignados]](#remove-assignees)
+* [[!UICONTROL Buscar un problema]](#search-for-an-issue)
+* [[!UICONTROL Actualizar un problema]](#update-an-issue)
 
-#### [!UICONTROL Add assignees]
+#### [!UICONTROL Añadir asignados]
 
 Este módulo añade asignados al problema especificado
 
@@ -283,7 +283,7 @@ Este módulo añade asignados al problema especificado
  </tbody> 
 </table>
 
-#### [!UICONTROL Add labels to an issue]
+#### [!UICONTROL Añadir etiquetas a un problema]
 
 Este módulo añade etiquetas a un problema. Las etiquetas se definen en el nivel de repositorio y solo las puede crear alguien con acceso de escritura al repositorio.
 
@@ -310,7 +310,7 @@ Este módulo añade etiquetas a un problema. Las etiquetas se definen en el nive
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a comment]
+#### [!UICONTROL Crear un comentario]
 
 Este módulo crea un comentario sobre el problema especificado.
 
@@ -337,7 +337,7 @@ Este módulo crea un comentario sobre el problema especificado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an issue]
+#### [!UICONTROL Crear un problema]
 
 Este módulo crea un nuevo problema en el repositorio seleccionado.
 
@@ -376,7 +376,7 @@ Este módulo crea un nuevo problema en el repositorio seleccionado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an issue]
+#### [!UICONTROL Obtener un problema]
 
 Este módulo recupera detalles sobre el problema especificado
 
@@ -399,7 +399,7 @@ Este módulo recupera detalles sobre el problema especificado
  </tbody> 
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL Enumerar comentarios]
 
 Este módulo enumera todos los comentarios sobre el problema especificado.
 
@@ -430,7 +430,7 @@ Este módulo enumera todos los comentarios sobre el problema especificado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a label from an issue]
+#### [!UICONTROL Quitar una etiqueta de un problema]
 
 Este módulo quita una sola etiqueta de un problema.
 
@@ -457,7 +457,7 @@ Este módulo quita una sola etiqueta de un problema.
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove assignees]
+#### [!UICONTROL Quitar asignados]
 
 Este módulo quita los asignados del problema especificado.
 
@@ -484,7 +484,7 @@ Este módulo quita los asignados del problema especificado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for an issue]
+#### [!UICONTROL Buscar un problema]
 
 Este módulo busca los problemas que coinciden con los criterios de búsqueda.
 
@@ -512,7 +512,7 @@ Este módulo busca los problemas que coinciden con los criterios de búsqueda.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sort direction]</td> 
-   <td> <p>Seleccione de subida o de bajada. </p> <p>Para las fechas, seleccionar <strong>[!UICONTROL descending]</strong> devolverá primero la fecha más reciente. </p> <p>Para [!UICONTROL number of comments], seleccionar <strong>[!UICONTROL descending]</strong> devolverá el problema con el mayor número de comentarios primero.</p> </td> 
+   <td> <p>Seleccione de subida o de bajada. </p> <p>Para las fechas, al seleccionar <strong>[!UICONTROL descending]</strong> se obtendrá primero la fecha más reciente. </p> <p>Para [!UICONTROL number of comments], al seleccionar <strong>[!UICONTROL descending]</strong> se obtendrá el problema con el número más alto de comentarios primero.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -521,7 +521,7 @@ Este módulo busca los problemas que coinciden con los criterios de búsqueda.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an issue]
+#### [!UICONTROL Actualizar un problema]
 
 Este módulo actualiza un problema de [!DNL GitHub] existente.
 

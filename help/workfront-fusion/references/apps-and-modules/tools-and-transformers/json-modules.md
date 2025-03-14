@@ -4,16 +4,16 @@ description: La aplicación JSON de Adobe Workfront Fusion proporciona módulos 
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 64%
+source-wordcount: '1236'
+ht-degree: 91%
 
 ---
 
-# Módulos de [!UICONTROL JSON]
+# [!UICONTROL Módulos JSON]
 
-La aplicación [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] proporciona módulos para procesar datos en formato JSON para que [!DNL Adobe Workfront Fusion] pueda trabajar más con el contenido de datos o crear contenido JSON nuevo.
+La aplicación [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] proporciona módulos para procesar datos en formato JSON, de manera que [!DNL Adobe Workfront Fusion] pueda trabajar con el contenido de los datos o crear nuevo contenido JSON.
 
 ## Requisitos de acceso
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -67,10 +67,10 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 La estructura de datos describe cómo están organizados los datos JSON y permite asignar elementos JSON individuales a otros módulos en su escenario. Si no proporciona la estructura de datos, puede ejecutar manualmente el módulo y [!DNL Workfront Fusion] creará la estructura a partir del JSON proporcionado:
 
-1. Agregue el módulo [!UICONTROL Parse JSON] a un escenario.
-1. En el campo **[!UICONTROL JSON String]**, introduzca el JSON a partir del cual desea crear una estructura de datos.
-1. Aún no conecte otros módulos al módulo [!UICONTROL Parse JSON]. Debido a que [!DNL Workfront Fusion] aún no conoce la estructura de los datos JSON, aún no es posible asignar datos del módulo [!UICONTROL Parse JSON] a otros módulos en su escenario.
-1. Ejecute manualmente el escenario. Esto permite que el módulo [!UICONTROL Parse JSON] identifique la estructura JSON a partir del JSON proporcionado.
+1. Añada el módulo [!UICONTROL Analizar JSON] a un escenario.
+1. En el campo **[!UICONTROL cadena JSON]**, escriba el JSON a partir del cual desea crear una estructura de datos.
+1. Aún no conecte otros módulos al módulo [!UICONTROL Analizar JSON]. Debido a que [!DNL Workfront Fusion] aún no conoce la estructura de los datos JSON, aún no es posible asignar datos desde el módulo [!UICONTROL Parse JSON] a otros módulos en su escenario.
+1. Ejecute manualmente el escenario. Esto permite que el módulo [!UICONTROL Analizar JSON] identifique la estructura de JSON a partir del JSON que ha proporcionado.
 1. Ahora puede conectar los siguientes módulos. Los elementos del módulo JSON de análisis ya están disponibles para su asignación.
 
 Para obtener más información, consulte [Estructuras de datos en [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
@@ -119,9 +119,9 @@ Si el campo de cadena JSON contiene una matriz `[ ... ]`, el resultado es una se
 
 >[!ENDSHADEBOX]
 
-## Módulos de [!UICONTROL JSON] y sus campos
+## [!UICONTROL JSON] módulos y sus campos
 
-Al configurar módulos de [!DNL JSON], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, es posible que se muestren campos JSON adicionales, dependiendo de factores como su nivel de acceso en la aplicación o servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar [!DNL JSON] módulos, [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, es posible que se muestren campos JSON adicionales, dependiendo de factores como su nivel de acceso en la aplicación o servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -134,7 +134,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Agregadores
 
-#### [!UICONTROL Aggregate to JSON]
+#### [!UICONTROL Añadir a JSON]
 
 Este módulo de agregador agrega la salida de un módulo anterior a JSON.
 
@@ -172,7 +172,7 @@ Este módulo de agregador agrega la salida de un módulo anterior a JSON.
 * [Analizar JSON](#parse-json)
 * [Transformar JSON](#transform-json)
 
-#### [!UICONTROL Convert JSON to XML]
+#### [!UICONTROL Convertir JSON a XML]
 
 Este módulo de acción convierte una cadena JSON a XML.
 
@@ -187,7 +187,7 @@ Este módulo de acción convierte una cadena JSON a XML.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create JSON]
+#### [!UICONTROL Crear JSON]
 
 Este módulo de acción crea JSON a partir de una estructura de datos.
 
@@ -206,7 +206,7 @@ Este módulo de acción crea JSON a partir de una estructura de datos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Parse JSON]
+#### [!UICONTROL Analizar JSON]
 
 Este módulo de acción analiza una cadena JSON en una estructura de datos, lo que le permite acceder a los datos dentro de la cadena JSON.
 
@@ -225,7 +225,7 @@ Este módulo de acción analiza una cadena JSON en una estructura de datos, lo q
  </tbody> 
 </table>
 
-#### [!UICONTROL Transform JSON]
+#### [!UICONTROL Transformar JSON]
 
 Este módulo de acción transforma un objeto en una cadena JSON.
 
@@ -250,11 +250,11 @@ Este módulo de acción transforma un objeto en una cadena JSON.
 
 **Ejemplo:** El siguiente ejemplo muestra cómo transformar registros de datos de [!DNL Google Sheets] al formato JSON:
 
-1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Select rows] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el&#x200B;**[!UICONTROL Maximum number of returned rows]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Run this module only]**&quot;. Compruebe la salida del módulo.
+1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Seleccionar filas] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el **[!UICONTROL Número máximo de filas devueltas]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo de [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Ejecutar este módulo solamente]**&quot;. Compruebe la salida del módulo.
 
-1. Conecte el módulo [!UICONTROL Array Aggregator] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo [!DNL Google Sheets] en el campo **[!UICONTROL Source node]**. Deje los demás campos tal como están por el momento.
+1. Conecte el módulo [!UICONTROL Agregador de matrices] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo de [!DNL Google Sheets] en el campo **[!UICONTROL Nodo de origen]**. Deje los demás campos tal como están por el momento.
 
-1. Conectar el módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] después del módulo [!UICONTROL Array Aggregator]. La configuración del módulo requiere una estructura de datos que describa el formato JSON. Haga clic en **[!UICONTROL Add]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de una muestra JSON. Haga clic en **[!UICONTROL Generator]** y pegue la muestra JSON en el campo **[!UICONTROL Sample data]**:
+1. Conecte el módulo [!UICONTROL JSON] > [!UICONTROL Crear JSON] después del módulo [!UICONTROL Agregador de matrices]. La configuración del módulo requiere una estructura de datos que describa el formato JSON. Haga clic en **[!UICONTROL Añadir]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de una muestra JSON. Haga clic en **[!UICONTROL Generador]** y pegue la muestra JSON en el campo **[!UICONTROL Datos de muestra]**:
 
    **Ejemplo:**
 
@@ -270,30 +270,30 @@ Este módulo de acción transforma un objeto en una cadena JSON.
    }
    ```
 
-1. Haga clic en **[!UICONTROL Save]**. El campo [!UICONTROL Specification] de la estructura de datos ahora contiene la estructura generada.
-1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
+1. Haga clic en **[!UICONTROL Guardar]**. El campo [!UICONTROL Especificación] de la estructura de datos ahora contiene la estructura generada.
+1. Cambie el nombre de la estructura de datos por otro más específico y haga clic en **[!UICONTROL Guardar]**. Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
 
-1. Haga clic en el botón **[!UICONTROL Map]** que se encuentra junto al campo y asigne el elemento `Array[]` desde la salida del agregador de matrices al mismo.
+1. Haga clic en el botón **[!UICONTROL Map]** junto al campo y asigne el elemento `Array[]` de la salida del agregador de matrices a este.
 
-1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL JSON].
+1. Haga clic en **[!UICONTROL Aceptar]** para cerrar la configuración del módulo [!UICONTROL JSON].
 
-1. Abra la configuración del módulo [!UICONTROL Array Aggregator]. Cambie **[!UICONTROL Target structure]** de [!UICONTROL Custom] al campo del módulo [!UICONTROL JSON] correspondiente al atributo de matriz raíz. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
+1. Abra la configuración del módulo [!UICONTROL Agregador de matrices]. Cambie la **[!UICONTROL estructura de destino]** de [!UICONTROL Personalizado] al campo del módulo [!UICONTROL JSON] correspondiente al atributo de la matriz raíz. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
 
-1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo [!UICONTROL Array Aggregator].
+1. Haga clic en **[!UICONTROL Aceptar]** para cerrar la configuración del módulo [!UICONTROL Agregador de matrices].
 
 1. Ejecute el escenario.
 
    El módulo [!UICONTROL JSON] genera el formato JSON correcto.
 
-1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Maximum number of returned rows] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
+1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número de [!UICONTROL Número máximo de filas devueltas] para que sea mayor que el número de filas en su hoja de cálculo para procesar todos los datos.
 
 >[!ENDSHADEBOX]
 
 ## Resolución de problemas
 
-### No se pueden asignar datos del módulo [!UICONTROL Parse JSON]
+### No se pueden asignar datos del módulo [!UICONTROL Analizar JSON]
 
-Asegúrese de que el contenido JSON esté correctamente asignado al módulo [!UICONTROL Parse JSON] y de que la estructura de datos esté definida correctamente. Para obtener más información, consulte [Transformación de registros de datos a JSON](#transforming-data-records-to-json) en este artículo.
+Asegúrese de que el contenido JSON esté asignado correctamente al módulo [!UICONTROL Analizar JSON] y de que la estructura de datos esté definida correctamente. Para obtener más información, consulte [Transformación de registros de datos a JSON](#transforming-data-records-to-json) en este artículo.
 
 ### El módulo falla al utilizar afirmaciones condicionales en JSON
 

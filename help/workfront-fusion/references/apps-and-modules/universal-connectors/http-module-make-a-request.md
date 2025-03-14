@@ -4,16 +4,16 @@ description: El módulo Adobe Workfront Fusion HTTP > Crear una solicitud es un 
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 64%
+source-wordcount: '946'
+ht-degree: 73%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Make a request] módulo
+# [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud] módulo
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request module] es un módulo universal que le permite configurar una solicitud HTTP y enviarla a un servidor. La respuesta HTTP recibida se incluye entonces en el paquete de salida.
+El módulo [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Crear una solicitud] es un módulo universal que le permite configurar una petición HTTP y enviarla a un servidor. La respuesta HTTP recibida se incluye entonces en el paquete de salida.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>No se requiere licencia de Workfront Fusion.</p>
+   <p>No se requiere licencia de Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -62,9 +62,9 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL Make a request] configuración de módulo
+## [!UICONTROL HTTP] > [!UICONTROL Realice una solicitud] de configuración del módulo
 
-Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -95,16 +95,16 @@ Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request], [!DNL 
    <td> <p>El cuerpo HTTP son los bytes de datos transmitidos en un mensaje de transacción HTTP inmediatamente después de los encabezados, si los hay.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>El tipo de cuerpo Raw es generalmente adecuado para la mayoría de las solicitudes de cuerpo HTTP, incluso en situaciones donde la documentación para desarrolladores no especifica los datos a enviar.</p> <p>Especifique una forma de analizar los datos en el campo [!UICONTROL Content type].</p> <p>A pesar del tipo de contenido seleccionado, los datos se introducen en cualquier formato estipulado o requerido por la documentación del desarrollador.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de cuerpo es para [!UICONTROL POST] datos que utilizan <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>Para <code>application/x-www-form-urlencoded</code>, el cuerpo del mensaje HTTP enviado al servidor es esencialmente una cadena de consulta. Las claves y los valores se codifican en pares clave-valor separados por <code>&amp;</code> y con un <code>=</code> entre la clave y el valor. </p> <p>Para los datos binarios, use <code>[!UICONTROL multipart/form-data]</code> en su lugar.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de cuerpo es para [!UICONTROL POST] datos que usan <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>Para <code>application/x-www-form-urlencoded</code>, el cuerpo del mensaje HTTP enviado al servidor es esencialmente una cadena de consulta. Las claves y los valores se codifican en pares clave-valor separados por <code>&amp;</code> y con un <code>=</code> entre la clave y el valor. </p> <p>Para los datos binarios, use <code>[!UICONTROL multipart/form-data]</code> en su lugar.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Ejemplo:</b></span></span> 
        <p>Ejemplo del formato de petición HTTP resultante:</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] es una solicitud HTTP de varias partes que se usa para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP multiparte que se utiliza para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt; Descargar un archivo), o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Obtener un archivo] o [!UICONTROL Google Drive] &gt; Descargar un archivo), o introduzca el nombre de archivo y los datos de archivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -145,7 +145,7 @@ Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request], [!DNL 
               <p>Introduzca la contraseña del archivo.</p>
             </li>
             <li value="5">
-              <p>Haga clic en <b>[!UICONTROL Save]</b> para extraer el archivo y volver a la configuración del módulo.</p>
+              <p>Haga clic en <b>[!UICONTROL Guardar]</b> para extraer el archivo y volver a la configuración del módulo.</p>
             </li>
           </ol>
 </p> </td> 
@@ -179,10 +179,10 @@ Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request], [!DNL 
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo:** Este ejemplo muestra cómo configurar el módulo para enviar una solicitud [!UICONTROL POST] con carga útil JSON:
+**Ejemplo:** en este ejemplo se muestra cómo configurar el módulo para enviar una solicitud de [!UICONTROL POST] con carga útil JSON:
 
 ![Ponga un ejemplo de solicitud](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
-No se recomienda mezclar fragmentos de JSON con expresiones y elementos directamente en el campo [!UICONTROL Request content], ya que puede generar un JSON no válido.
+No recomendamos mezclar fragmentos de JSON con expresiones y elementos directamente en el campo [!UICONTROL Solicitar contenido], ya que puede generar un JSON no válido.
 
 >[!ENDSHADEBOX]

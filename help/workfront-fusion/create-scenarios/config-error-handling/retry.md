@@ -4,10 +4,10 @@ description: A veces, resulta útil volver a ejecutar un módulo que falla si ex
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 10%
+source-wordcount: '756'
+ht-degree: 9%
 
 ---
 
@@ -38,7 +38,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -82,7 +82,7 @@ Para obtener instrucciones sobre cómo resolver ejecuciones incompletas, vea [Ve
 * El intervalo mínimo de reintento es de un minuto.
 * Si el módulo procesa varios paquetes y falla el procesamiento de un paquete, la ejecución parcial (solo el paquete que provocó el error) se mueve a la carpeta de ejecuciones incompletas y se programa para reintentos según la configuración de la directiva [!UICONTROL Break]. Sin embargo, la ejecución actual continúa y el módulo continúa procesando los paquetes posteriores.
 
-  Para evitar que el escenario se vuelva a ejecutar hasta que la ejecución almacenada en la carpeta de ejecuciones incompletas se haya resuelto correctamente, habilite la opción &quot;[!UICONTROL Sequential processing]&quot; en [!UICONTROL Scenario settings].
+  Para evitar que el escenario se vuelva a ejecutar hasta que la ejecución almacenada en la carpeta de ejecuciones incompletas se haya resuelto correctamente, habilite la opción &quot;[!UICONTROL Procesamiento secuencial]&quot; en [!UICONTROL Configuración del escenario].
 
 Para obtener más información sobre las ejecuciones incompletas, vea [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -92,37 +92,37 @@ La solución del módulo Repetidor es más compleja, pero más personalizable.
 
 #### Configuración de la ruta del controlador de error
 
-1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar la solución.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Haga clic en el icono **Control de flujo** ![Control de flujo](assets/flow-control-icon.png) y seleccione **Repetidor**.
-1. En el módulo Repetidor, establezca el campo **[!UICONTROL Repeats]** al número máximo de veces que desea que el escenario se reintente.
-1. Adjunte el módulo que podría dar error después del módulo **[!UICONTROL Repeater]**.
+1. En el módulo Repetidor, establezca el campo **[!UICONTROL Repeticiones]** al número máximo de veces que desea que el escenario se reintente.
+1. Adjunte el módulo que podría fallar después del módulo **[!UICONTROL Repeater]**.
 1. Adjunte una ruta de controlador de error al módulo que podría fallar.
 
    Para obtener instrucciones, consulte [Agregar administración de errores](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
-1. Agregue el módulo **[!UICONTROL Tools]>[!UICONTROL Sleep]** a la ruta del controlador de error y establezca su campo **[!UICONTROL Delay]** en el número de segundos entre reintentos.
+1. Agregue el módulo **[!UICONTROL Tools] > [!UICONTROL Sleep]** a la ruta del controlador de errores y establezca su campo **[!UICONTROL Delay]** en el número de segundos entre reintentos.
 
-1. Agregue la directiva **[!UICONTROL Ignore]** después del módulo **[!UICONTROL Tools]>[!UICONTROL Sleep]**.
+1. Agregue la directiva **[!UICONTROL Ignore]** después del módulo **[!UICONTROL Tools] > [!UICONTROL Sleep]**.
 1. Continúe con [Configurar la ruta predeterminada](#configure-the-default-route).
 
 #### Configuración de la ruta predeterminada
 
-1. Agregue el módulo **[!UICONTROL Tools]>[!UICONTROL Set variable]** en una ruta independiente (que no sea de controlador de error) después del módulo que podría dar error y configúrelo para almacenar el resultado del módulo en una variable denominada, como `Result`.
+1. Agregue el módulo **[!UICONTROL Tools] > [!UICONTROL Set variable]** en una ruta independiente (que no sea de controlador de error) después del módulo que podría dar error y configúrelo para almacenar el resultado del módulo en una variable denominada, como `Result`.
 
-1. Agregue el módulo **[!UICONTROL Array aggregator]** después de **[!UICONTROL Tools]>[!UICONTROL Set variable]** y seleccione el módulo **[!DNL Repeater]** en el campo Módulo Source.
+1. Agregue el módulo **[!UICONTROL Array aggregator]** después del módulo **[!UICONTROL Tools] > [!UICONTROL Set variable]** y seleccione el módulo **[!DNL Repeater]** en el campo Source Module.
 
-1. Agregue el módulo **[!UICONTROL Tools]>[!UICONTROL Get variable]** después del módulo **[!UICONTROL Array aggregator]** y asígnele el valor de la variable `Result`.
+1. Agregue el módulo **[!UICONTROL Tools] > [!UICONTROL Get variable]** después del módulo **[!UICONTROL Array aggregator]** y asígnele el valor de la variable `Result`.
 
-1. Inserte el módulo **[!UICONTROL Tools]>[!UICONTROL Get variable]** entre el módulo **[!UICONTROL Repeater]** y el módulo que podría dar error, y asígnele el valor de la variable `Result`.
+1. Inserte el módulo **[!UICONTROL Tools] > [!UICONTROL Get variable]** entre el módulo **[!UICONTROL Repeater]** y el módulo que podría fallar, y asígnele el valor de la variable `Result`.
 
-1. Inserte un filtro entre este módulo **[!UICONTROL Tools]>[!UICONTROL Get variable]** y el módulo que podría dar error para continuar solamente si la variable `Result` no existe.
+1. Inserte un filtro entre este módulo **[!UICONTROL Tools] > [!UICONTROL Get variable]** y el módulo que podría dar error para continuar solo si la variable `Result` no existe.
 
 >[!BEGINSHADEBOX]
 
 **Ejemplo:**
 
-En este escenario de ejemplo, el módulo [!UICONTROL HTTP] > [!UICONTROL Make a request] representa el módulo que podría dar error:
+En este escenario de ejemplo, el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud] representa el módulo que podría fallar:
 
 ![HTTP realiza una solicitud](assets/http-make-request.png)
 

@@ -4,10 +4,10 @@ description: Puede utilizar el conector Adobe Workfront Fusion Adobe Workfront p
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '6213'
-ht-degree: 53%
+source-wordcount: '6684'
+ht-degree: 61%
 
 ---
 
@@ -38,7 +38,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -117,7 +117,7 @@ Puede crear una conexión a su cuenta de Workfront directamente desde un módulo
     </tbody>
     </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
    Si no ha iniciado sesión en Workfront, se le dirigirá a una pantalla de inicio de sesión. Después de iniciar sesión, puede permitir la conexión.
 
@@ -152,15 +152,15 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Watch Field](#watch-field)
 -->
 
-+++ **[!UICONTROL Watch Events]**
++++ **[!UICONTROL Ver eventos]**
 
 Este módulo de activación ejecuta un escenario en tiempo real cuando se añaden, actualizan o eliminan objetos de un tipo específico en Workfront
 
 El módulo devuelve cualquier campo estándar asociado con el registro, junto con los campos y valores personalizados a los que accede la conexión. Puede asignar esta información en módulos subsiguientes en el escenario.
 
-1. Haga clic en **[!UICONTROL Add]** a la derecha del cuadro **Gancho web**.
+1. Haga clic en **[!UICONTROL Añadir]** a la derecha del cuadro **Webhook**.
 
-1. Configure el webhook en el cuadro **[!UICONTROL Add a hook]** que aparece.
+1. Configure el webhook en el cuadro **[!UICONTROL Añadir un hook]** que se muestra.
 
    <table style="table-layout:auto"> 
     <col> 
@@ -180,11 +180,11 @@ El módulo devuelve cualquier campo estándar asociado con el registro, junto co
      </tr> 
      <tr> 
       <td>[!UICONTROL State]</td> 
-      <td>Seleccione si desea ver el estado antiguo o el nuevo.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Active un escenario cuando el registro cambia <b>a </b> un valor determinado.</p><p>Por ejemplo, si el estado se establece en [!UICONTROL New State] y el filtro se establece en [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], el webhook crea un déclencheur cuando [!UICONTROL Status] cambie a [!UICONTROL In Progress], independientemente del estado anterior. </p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Activa un escenario cuando el registro cambia <b>de </b> un valor determinado.</p><p>Por ejemplo, si el estado se establece en [!UICONTROL Old State] y el filtro se establece en [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], el webhook crea un déclencheur cuando un [!UICONTROL Status] que actualmente es [!UICONTROL In Progress] cambia a otro estado. </p></li></ul></td> 
+      <td>Seleccione si desea ver el estado antiguo o el nuevo.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Active un escenario cuando el registro cambia <b>a </b> un valor determinado.</p><p>Por ejemplo, si el estado se establece en [!UICONTROL New State] y el filtro se establece en [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], el webhook activa un escenario cuando el [!UICONTROL Status] cambia a [!UICONTROL In Progress], independientemente del estado anterior. </p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Activa un escenario cuando el registro cambia <b>de </b> un valor determinado.</p><p>Por ejemplo, si el estado se establece en [!UICONTROL Old State] y el filtro se establece en [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], el webhook activa un escenario cuando un [!UICONTROL Status] que está actualmente [!UICONTROL In Progress] cambia a otro estado. </p></li></ul></td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>Puede establecer filtros para ver solo los registros que cumplan los criterios seleccionados.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND.</p> <p><b>NOTA</b>: no puede editar filtros en los webhooks de Workfront existentes. Para configurar diferentes filtros para las suscripciones a eventos de Workfront, elimine el webhook actual y cree uno nuevo.</p> <p>Para obtener más información sobre los filtros de eventos, consulte <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de suscripción de eventos en Workfront &gt; [!UICONTROL Watch Events] módulos</a> en este artículo.</p> </td> 
+      <td> <p>Puede establecer filtros para ver solo los registros que cumplan los criterios seleccionados.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND.</p> <p><b>NOTA</b>: no puede editar filtros en los webhooks de Workfront existentes. Para configurar diferentes filtros para las suscripciones a eventos de Workfront, elimine el webhook actual y cree uno nuevo.</p> <p>Para obtener más información sobre los filtros de eventos, consulte <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de suscripción de eventos en los módulos Workfront &gt; [!UICONTROL Watch Events]</a> en este artículo.</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td>Excluir eventos realizados por esta conexión</td> 
@@ -193,8 +193,8 @@ El módulo devuelve cualquier campo estándar asociado con el registro, junto co
      <tr> 
       <td>[!UICONTROL Record Origin]</td> 
       <td>
-       <p>Elija si desea que el escenario vea [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records] o [!DNL Deleted Records Only].</p>
-       <p><b>NOTA</b>: Si elige [!UICONTROL New and Updated Records], la creación del gancho web crea 2 suscripciones de evento (para la misma dirección de gancho web).</p>
+       <p>Elija si desea que el escenario vea [!UICONTROL Solo registros nuevos], [!UICONTROL Solo registros actualizados], [!UICONTROL Registros nuevos y actualizados] o [!DNL Deleted Records Only].</p>
+       <p><b>NOTA</b>: Si elige [!UICONTROL Registros nuevos y actualizados], la creación del webhook crea 2 suscripciones de eventos (para la misma dirección de webhook).</p>
        </td> 
      </tr> 
     </tbody> 
@@ -212,7 +212,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Watch Field]**
++++ **[!UICONTROL Campo de observación]**
 
 Este módulo de activador ejecuta un escenario cuando se actualiza un campo que se haya especificado. El módulo devuelve el valor antiguo y el nuevo del campo especificado. Puede asignar esta información en módulos subsiguientes en el escenario.
 
@@ -249,7 +249,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Watch Record]**
++++ **[!UICONTROL Ver registro]**
 
 Este módulo de activación ejecuta un escenario cuando se añaden, actualizan o ambos objetos de un tipo específico. El módulo devuelve todos los campos estándar asociados con el registro o registros, junto con cualquier campo personalizado y valor al que acceda la conexión. Puede asignar esta información en módulos subsiguientes en el escenario.
 
@@ -269,7 +269,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>Elija si desea que el escenario vea [!UICONTROL New Records Only], [!UICONTROL Updated Records Only] o [!UICONTROL New and Updated Records].</p> </td> 
+   <td> <p>Elija si desea que el escenario vea [!UICONTROL Solo registros nuevos], [!UICONTROL Solo registros actualizados] o [!UICONTROL Registros nuevos y actualizados].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -280,7 +280,7 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td> <p>Seleccione los campos que desea incluir en el paquete de salida para este módulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reference]</td> 
+   <td role="rowheader">[!UICONTROL Referencia]</td> 
    <td> <p>Seleccione los campos de referencia que desee incluir en el paquete de salida para este módulo.</p> </td> 
   </tr> 
   <tr> 
@@ -318,7 +318,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 * [Upload Document](#upload-document)
 -->
 
-+++ **[!UICONTROL Convert object]**
++++ **[!UICONTROL Convertir objeto]**
 
 Este módulo de acción realiza una de las siguientes conversiones:
 
@@ -347,7 +347,7 @@ Este módulo de acción realiza una de las siguientes conversiones:
    <td>Seleccione el objeto al que desea convertirlo. Es el tipo que tiene el objeto después de la conversión.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL <Object> ID]</td> 
+   <td>[!UICONTROL &lt;Object&gt; ID]</td> 
    <td> <p>Introduzca el ID del objeto. </p> <p>Nota: Al introducir el ID de un objeto, puede empezar a escribir su nombre y, a continuación, seleccionarlo en la lista. A continuación, el módulo introducirá el ID adecuado en el campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -375,7 +375,7 @@ Este módulo de acción realiza una de las siguientes conversiones:
 
 +++
 
-+++ **[!UICONTROL Create a record (attaching custom forms)]**
++++ **[!UICONTROL Crear un registro (adjuntando formularios personalizados)]**
 
 Este módulo de acción crea un objeto, como un proyecto, una tarea o un problema en Workfront, y le permite agregar un formulario personalizado al nuevo objeto. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -399,11 +399,11 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Seleccione el tipo de registro de Workfront que desea que cree el módulo.</p> <p>Por ejemplo, si desea crear un proyecto, seleccione [!UICONTROL Project] en la lista desplegable.</p> </td> 
+   <td> <p>Seleccione el tipo de registro de Workfront que desea que cree el módulo.</p> <p>Por ejemplo, si desea crear un proyecto, seleccione [!UICONTROL Proyecto] en la lista desplegable.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
-   <td> <p>Seleccione los campos que desea que estén disponibles para la entrada de datos. Esto le permite utilizar estos campos sin tener que desplazarse por los que no necesita. A continuación, puede introducir o asignar datos en estos campos.</p> <p>Para los campos de los formularios personalizados, utilice el campo <b>[!UICONTROL Attach Custom Form]</b>.</p> </td> 
+   <td> <p>Seleccione los campos que desea que estén disponibles para la entrada de datos. Esto le permite utilizar estos campos sin tener que desplazarse por los que no necesita. A continuación, puede introducir o asignar datos en estos campos.</p> <p>En el caso de los campos de los formularios personalizados, utilice el campo <b>[!UICONTROL Attach Custom Form]</b>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
@@ -417,12 +417,12 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >[!NOTE]
 >
 >* Al introducir el ID de un objeto, puede empezar a escribir su nombre y, a continuación, seleccionarlo en la lista. A continuación, el módulo introducirá el ID adecuado en el campo.
->* Al escribir el texto de un campo personalizado o de un objeto [!UICONTROL Note] (Comentario o respuesta), puede utilizar etiquetas de HTML en el campo [!UICONTROL Note Text] para crear texto enriquecido, como negrita o cursiva.
+>* Al introducir el texto de un campo personalizado o un objeto [!UICONTROL Nota] (comentario o respuesta), puede usar etiquetas de HTML en el campo [!UICONTROL Texto de nota] para crear texto enriquecido, como texto en negrita o en cursiva.
 >
 
 +++
 
-+++ **[!UICONTROL Create Record]**
++++ **[!UICONTROL Crear registro]**
 
 Este módulo de acción crea un objeto en Workfront, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -432,7 +432,7 @@ El módulo devuelve el identificador del registro y cualquier campo asociado, ju
 
 Asegúrese de proporcionar el número mínimo de campos de entrada. Por ejemplo, si desea crear un problema, debe proporcionar un ID de proyecto principal válido en el campo ID de proyecto para indicar dónde debe residir el problema en Workfront. Puede utilizar el panel de asignación para asignar esta información desde otro módulo del escenario o puede introducirla manualmente escribiendo el nombre y seleccionándolo a continuación en la lista.
 
-Este módulo no adjunta formularios personalizados al crear el objeto. Para adjuntar formularios personalizados al crear un objeto, utilice el módulo [!UICONTROL Create a record (attaching custom forms)].
+Este módulo no adjunta formularios personalizados al crear el objeto. Para adjuntar formularios personalizados al crear un objeto, use el módulo [!UICONTROL Crear un registro (adjuntar formularios personalizados)].
 
 Al configurar este módulo, se muestran los campos siguientes.
 
@@ -448,7 +448,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Seleccione el tipo de registro de Workfront que desea que cree el módulo.</p> <p>Por ejemplo, si desea crear un proyecto, seleccione [!UICONTROL Project] en la lista desplegable.</p> </td> 
+   <td> <p>Seleccione el tipo de registro de Workfront que desea que cree el módulo.</p> <p>Por ejemplo, si desea crear un proyecto, seleccione [!UICONTROL Proyecto] en la lista desplegable.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -462,22 +462,22 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >[!NOTE]
 >
 >* Al introducir el ID de un objeto, puede empezar a escribir su nombre y, a continuación, seleccionarlo en la lista. A continuación, el módulo introducirá el ID adecuado en el campo.
->* Al escribir el texto de un campo personalizado o de un objeto [!UICONTROL Note] (Comentario o respuesta), puede utilizar etiquetas de HTML en el campo [!UICONTROL Note Text] para crear texto enriquecido, como negrita o cursiva.
+>* Al introducir el texto de un campo personalizado o un objeto [!UICONTROL Nota] (comentario o respuesta), puede usar etiquetas de HTML en el campo [!UICONTROL Texto de nota] para crear texto enriquecido, como texto en negrita o en cursiva.
 
 +++
 
-+++ **[!UICONTROL Custom API Call]**
++++ **[!UICONTROL Llamada de API personalizada]**
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API de Workfront. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los demás módulos de Workfront.
 
 El módulo devuelve la siguiente información:
 
-* **[!UICONTROL Status Code]** (número): esto indica el éxito o el error de la solicitud HTTP. Se trata de códigos estándar que puede buscar en internet.
-* **[!UICONTROL Headers]** (objeto): contexto más detallado para el código de respuesta/estado que no está relacionado con el cuerpo de salida. No todos los encabezados que aparecen en un encabezado de respuesta son de respuesta, por lo que algunos podrían no resultarle útiles.
+* **[!UICONTROL Código de estado]** (número): indica si la petición HTTP se ha realizado correctamente o no. Se trata de códigos estándar que puede buscar en internet.
+* **[!UICONTROL Encabezados]** (objeto): contexto más detallado para el código de respuesta/estado que no está relacionado con el cuerpo de salida. No todos los encabezados que aparecen en un encabezado de respuesta son de respuesta, por lo que algunos podrían no resultarle útiles.
 
   Los encabezados de respuesta dependen de la petición HTTP elegida al configurar el módulo.
 
-* **[!UICONTROL Body]** (objeto): Según la solicitud HTTP elegida al configurar el módulo, es posible que vuelva a recibir algunos datos. Esos datos, como los de una petición GET, están incluidos en este objeto.
+* **[!UICONTROL Cuerpo]** (objeto): según la petición HTTP elegida al configurar el módulo, es posible que reciba de vuelta algunos datos. Esos datos, como los de una petición GET, están incluidos en este objeto.
 
 Puede asignar esta información en módulos subsiguientes en el escenario.
 
@@ -525,7 +525,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Delete Record]**
++++ **[!UICONTROL Eliminación de registro]**
 
 Este módulo de acción elimina un objeto, como un proyecto, una tarea o un problema en Workfront.
 
@@ -548,7 +548,7 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td>Habilite esta opción para asegurarse de que se elimina el registro, incluso si la interfaz de usuario de Workfront solicitara confirmación de la eliminación.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Async delete]</td> 
+   <td>[!UICONTROL Eliminación asíncrona]</td> 
    <td>Active esta opción para permitir que el módulo elimine de forma asíncrona.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -574,7 +574,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Download Document]**
++++ **[!UICONTROL Descargar documento]**
 
 Este módulo de acción descarga un documento de Workfront.
 
@@ -603,7 +603,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Misc Action]**
++++ **[!UICONTROL Acciones diversas]**
 
 Este módulo de acción le permite realizar acciones en la API.
 
@@ -627,7 +627,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Action]</td> 
-   <td> <p>Seleccione la acción que desea que realice el módulo.</p> <p>Es posible que tenga que rellenar campos adicionales, según los [!UICONTROL Record Type] y [!UICONTROL Action] que elija. Algunas combinaciones de estas dos configuraciones pueden requerir solamente un id. de registro, mientras que otras (como Proyecto para <strong>[!UICONTROL Record Type]</strong> y [!UICONTROL Attach Template] para <strong>[!UICONTROL Action]</strong>) requieren información adicional (como un id. de objeto y un id. de plantilla).</p><p>Para ver las opciones disponibles para algunas acciones, consulte <a href="#misc-action-options" class="MCXref xref">Otras opciones de acción</a> en este artículo.</p> <p>Para obtener detalles sobre campos individuales, consulte la <a href="http://developer.workfront.com/">documentación para desarrolladores de Workfront</a>. <p><strong>Nota</strong>: El sitio de documentación para desarrolladores incluye información solamente a través de la versión 14 de la API, pero aún contiene información valiosa para las llamadas de la API. </p> 
+   <td> <p>Seleccione la acción que desea que realice el módulo.</p> <p>Es posible que tenga que rellenar campos adicionales, según el [!UICONTROL Record Type] and [!UICONTROL Action] que elija. Algunas combinaciones de estas dos configuraciones pueden requerir solamente un identificador de registro, mientras que otras (como Proyecto para <strong>[!UICONTROL Record Type]</strong> y [!UICONTROL Attach Template] para la <strong>[!UICONTROL Action]</strong>) requieren información adicional (como un identificador de objeto y un identificador de plantilla).</p><p>Para ver las opciones disponibles para algunas acciones, consulte <a href="#misc-action-options" class="MCXref xref">Otras opciones de acción</a> en este artículo.</p> <p>Para obtener detalles sobre campos individuales, consulte la <a href="http://developer.workfront.com/">documentación para desarrolladores de Workfront</a>. <p><strong>Nota</strong>: El sitio de documentación para desarrolladores incluye información solamente a través de la versión 14 de la API, pero aún contiene información valiosa para las llamadas de la API. </p> 
     <ol> 
      <li value="1"> <p>Seleccione el tipo de registro en el panel de navegación izquierdo de la página Documentación para desarrolladores de Workfront. Los siguientes tipos tienen sus propias páginas:</p> 
       <ul> 
@@ -636,10 +636,10 @@ Al configurar este módulo, se muestran los campos siguientes.
        <li> <p>[!UICONTROL Issues]</p> </li> 
        <li> <p>[!UICONTROL Users]</p> </li> 
        <li> <p>[!UICONTROL Documents]</p> </li> 
-      </ul> <p>Para el resto de tipos de registros, seleccione <b>[!UICONTROL Other objects and endpoints]</b> y busque el tipo de registro en las páginas ordenadas alfabéticamente.</p> </li> 
+      </ul> <p>Para todos los demás tipos de registro, seleccione <b>[!UICONTROL Other objects and endpoints]</b> y busque el tipo de registro en las páginas ordenadas alfabéticamente.</p> </li> 
      <li value="2"> <p>En la página del tipo de registro adecuado, busque (Ctrl-F o Cmd-F) la acción.</p> </li> 
      <li value="3"> <p>Vea las descripciones de los campos disponibles en la acción seleccionada.</p> </li> 
-    </ol> <p>Nota:  <p>Al crear una revisión a través del módulo Workfront SOAP [!UICONTROL Misc Action], se recomienda crear una revisión sin ninguna opción avanzada y luego actualizar la revisión a través de la API de [!DNL Workfront Proof].</p><p>Para obtener más información sobre cómo crear una revisión con la API de Workfront (que usa este módulo), consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Agregar opciones avanzadas de revisión al crear una revisión mediante la API de Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Nota:  <p>Al crear una revisión a través del módulo [!UICONTROL Misc Action] de Workfront, se recomienda crearla sin ninguna opción avanzada y, a continuación, actualizarla mediante la API de SOAP [!DNL Workfront Proof].</p><p>Para obtener más información sobre cómo crear una revisión con la API de Workfront (que usa este módulo), consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Agregar opciones avanzadas de revisión al crear una revisión mediante la API de Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -802,7 +802,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Read a Record]**
++++ **[!UICONTROL Leer un registro]**
 
 Este módulo de acción recupera datos de un único registro.
 
@@ -852,7 +852,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Update Record]**
++++ **[!UICONTROL Actualizar registro]**
 
 Este módulo de acción actualiza un objeto, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -892,11 +892,11 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >[!NOTE]
 >
 >* Al introducir el ID de un objeto, puede empezar a escribir su nombre y, a continuación, seleccionarlo en la lista. A continuación, el módulo introducirá el ID adecuado en el campo.
->* Al escribir el texto de un campo personalizado o de un objeto [!UICONTROL Note] (Comentario o respuesta), puede utilizar etiquetas de HTML en el campo [!UICONTROL Note Text] para crear texto enriquecido, como negrita o cursiva.
+>* Al introducir el texto de un campo personalizado o un objeto [!UICONTROL Nota] (comentario o respuesta), puede usar etiquetas de HTML en el campo [!UICONTROL Texto de nota] para crear texto enriquecido, como texto en negrita o en cursiva.
 
 +++
 
-+++ **[!UICONTROL Upload Document]**
++++ **[!UICONTROL Subir documento]**
 
 Este módulo de acción carga un documento en un objeto de Workfront, como un proyecto, una tarea o un problema. Este módulo carga el documento en fragmentos, lo que facilita el proceso de carga para Workfront.
 
@@ -939,7 +939,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Upload Document (Legacy)]**
++++ **[!UICONTROL Cargar documento (heredado)]**
 
 Este módulo de acción carga un documento en un objeto de Workfront, como un proyecto, una tarea o un problema. Carga todo el documento a la vez.
 
@@ -1024,7 +1024,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 +++
 
-+++ **[!UICONTROL Search]**
++++ **[!UICONTROL Búsqueda]**
 
 Este módulo de búsqueda busca registros en un objeto de Workfront que coincidan con la consulta de búsqueda especificada.
 
@@ -1406,7 +1406,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!NOTE]
 >
->El módulo [!UICONTROL Download Document] no se incluye en esta tabla porque los tipos de objetos Workfront no forman parte de su configuración.
+>El módulo [!UICONTROL Descargar documento] no se incluye en esta tabla porque los tipos de objetos de Workfront no forman parte de su configuración.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2026,15 +2026,15 @@ Le recomendamos que lo verifique bien para asegurarse de que esto funciona de la
 
 +++
 
-## Filtros de suscripción de eventos en los módulos Workfront > [!UICONTROL Watch Events]
+## Filtros de suscripción a eventos en los módulos Workfront > [!UICONTROL Ver eventos]
 
 >[!NOTE]
 >
->Recomendamos encarecidamente el uso de filtros de suscripción de evento en los módulos de [!UICONTROL Watch Events].
+>Recomendamos encarecidamente usar filtros de suscripción de eventos en sus módulos Ver eventos de .
 
-El módulo Workfront [!UICONTROL Watch Events] déclencheur escenarios basados en un webhook que crea una suscripción de evento en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo de [!UICONTROL Watch Events] que está vigilando problemas, la suscripción de evento solo enviará eventos relacionados con los problemas.
+El módulo [!UICONTROL Ver eventos] de Workfront déclencheur los escenarios en función de un enlace web que crea una suscripción de evento en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 
-Mediante filtros de suscripción de eventos, los usuarios de Fusion pueden crear suscripciones de eventos que se adapten mejor a sus casos de uso. Por ejemplo, puede configurar una suscripción de evento en la API de Workfront para enviar solo los problemas que están en un proyecto específico al webhook, asegurándose de que el módulo [!UICONTROL Watch Events] solo entrará en déclencheur para los problemas de ese proyecto. La capacidad de crear activadores más limitados mejora el diseño de escenarios al reducir el número de activadores irrelevantes.
+Mediante filtros de suscripción de eventos, los usuarios de Fusion pueden crear suscripciones de eventos que se adapten mejor a sus casos de uso. Por ejemplo, puede configurar una suscripción de evento en la API de Workfront para enviar al webhook solo los problemas que estén en un proyecto específico, asegurándose de que el módulo [!UICONTROL Ver eventos] solo entrará en déclencheur para los problemas de ese proyecto. La capacidad de crear activadores más limitados mejora el diseño de escenarios al reducir el número de activadores irrelevantes.
 
 Esto es diferente a la configuración de un filtro en el escenario de Workfront Fusion. Sin un filtro de suscripción de eventos, el webhook recibe todos los eventos relacionados con el tipo de objeto seleccionado. La mayoría de estos eventos serían irrelevantes para el escenario y deben filtrarse para que el escenario pueda continuar.
 
@@ -2074,7 +2074,7 @@ Los siguientes operadores están disponibles en el filtro Workfront > Ver evento
 >
 >### Filtrar eventos dentro del escenario (no recomendado)
 >
->Para filtrar eventos de modo que solo se procesen los problemas asignados a Ana, puede crear un filtro después del módulo [!UICONTROL Watch Events].
+>Para filtrar eventos de modo que solo se procesen los problemas asignados a Ana, puede crear un filtro después del módulo [!UICONTROL Ver eventos].
 >
 >![Sin filtro de eventos](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >

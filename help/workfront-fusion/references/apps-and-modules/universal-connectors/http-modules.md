@@ -4,10 +4,10 @@ description: La aplicación HTTP de  [!DNL Adobe Workfront Fusion]  proporciona 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 67%
+source-wordcount: '603'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -76,18 +76,18 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 Consulte los siguientes artículos para obtener instrucciones específicas sobre los módulos de solicitud:
 
-* [[!UICONTROL HTTP] > [!UICONTROL Make a request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud de autorización básica] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [Módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud de autorización de certificado de cliente] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud de autorización de clave API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## Otros módulos de acción
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL Obtener un archivo]](#get-a-file)
+* [[!UICONTROL Resolver una dirección URL de destino]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL Obtener un archivo]
 
 Este módulo de acción descarga un archivo desde la dirección URL especificada. Una vez descargado el archivo, puede procesarlo aún más (asignar los datos del archivo) mediante otros módulos en el escenario.
 
@@ -110,7 +110,7 @@ Este módulo de acción descarga un archivo desde la dirección URL especificada
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL Resolver una dirección URL de destino]
 
 Este módulo de acción resuelve una cadena de redirecciones HTTP y devuelve una dirección URL de destino.
 
@@ -131,7 +131,7 @@ Este módulo de acción resuelve una cadena de redirecciones HTTP y devuelve una
 
 ## Módulos de iterador
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL Recuperar encabezados]
 
 Este módulo devuelve cada encabezado (nombre y valor) del módulo HTTP especificado en un paquete independiente.
 

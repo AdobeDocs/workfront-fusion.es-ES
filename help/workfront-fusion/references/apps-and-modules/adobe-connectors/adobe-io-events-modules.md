@@ -4,10 +4,10 @@ description: Con los módulos de Adobe I/O Events, puede iniciar un escenario de
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 35%
+source-wordcount: '957'
+ht-degree: 36%
 
 ---
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -184,7 +184,7 @@ Para crear un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook description]
+           Descripción del webhook de [!UICONTROL]
          </td>
          <td>
            Escriba una descripción para este webhook.
@@ -192,7 +192,7 @@ Para crear un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Proveedor de eventos]
          </td>
          <td>
            Seleccione el producto o la cuenta desde los que desea crear eventos.
@@ -227,7 +227,7 @@ Este módulo de búsqueda recupera todos los eventos para un registro desde un h
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL ID de registro]
          </td>
          <td>
            Seleccione el registro para el que desea recuperar eventos.
@@ -243,7 +243,7 @@ Este módulo de búsqueda recupera todos los eventos para un registro desde un h
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Return events that occur after]
+           [!UICONTROL Devolver eventos que se producen después de]
          </td>
          <td>
          </td>
@@ -257,7 +257,7 @@ Este módulo de búsqueda recupera todos los eventos para un registro desde un h
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Latest]
+           [!UICONTROL Última versión]
          </td>
          <td>
          Active esta opción para devolver el evento más reciente.
@@ -333,7 +333,7 @@ Este módulo de búsqueda obtiene los Adobe I/O Events ID del proveedor y los ev
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Proveedor de eventos]
          </td>
          <td>
            Seleccione el proveedor para el que desea recuperar el ID.

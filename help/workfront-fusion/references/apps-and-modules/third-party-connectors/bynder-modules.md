@@ -4,10 +4,10 @@ description: En un escenario de [!DNL Adobe Workfront Fusion] puede automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 76%
+source-wordcount: '1779'
+ht-degree: 85%
 
 ---
 
@@ -40,7 +40,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -92,22 +92,22 @@ El conector Bynder utiliza lo siguiente:
 >Bynder utiliza el tipo de concesión de código de autorización o token de actualización. Este es el único tipo de concesión que utiliza el conector Fusion Bynder.
 
 * [Crear una conexión a [!DNL Bynder] desde [!DNL Workfront Fusion]](#create-a-connection-to-bynder-from-workfront-fusion)
-* [Generar un(a) [!UICONTROL Client ID] y [!UICONTROL Client Secret] en  [!DNL Bynder]  (opcional)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [Generar un [!UICONTROL ID de cliente] y [!UICONTROL Secreto de cliente] en [!DNL Bynder] (opcional)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Crear una conexión a [!DNL Bynder] desde [!DNL Workfront Fusion]
 
 Puede crear una conexión desde [!DNL Workfront Fusion] a su cuenta de [!DNL Bynder] directamente desde un módulo de [!DNL Bynder].
 
-1. En cualquier módulo de [!DNL Bynder], haga clic en **[!UICONTROL Add]** junto al campo [!UICONTROL Connection].
-1. Seleccione el dominio [!DNL Bynder] al que desea conectarse.
-1. (Opcional) Haga clic en **[!UICONTROL Advanced settings]**, luego ingrese sus [!UICONTROL Client ID] y [!UICONTROL Client Secret].
+1. En cualquier módulo de [!DNL Bynder], haga clic en **[!UICONTROL Añadir]** junto al campo [!UICONTROL Conexión].
+1. Seleccione el dominio de [!DNL Bynder] al que desea conectarse.
+1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]** y, a continuación, introduzca su [!UICONTROL ID de cliente] y [!UICONTROL Secreto de cliente].
 
    Para obtener instrucciones sobre cómo generar el ID de cliente y el Secreto de cliente, consulte [Generar un ID de cliente y un Secreto de cliente en [!DNL Bynder] (opcional)](#generate-a-client-id-and-client-secret-in-bynder-optional) en este artículo.
 
-1. En la ventana [!UICONTROL login], escriba su nombre de usuario (dirección de correo electrónico) y contraseña.
-1. Haga clic en **[!UICONTROL Continue]** para crear la conexión y volver al módulo.
+1. En la ventana de [!UICONTROL inicio de sesión], introduzca su nombre de usuario (dirección de correo electrónico) y contraseña.
+1. Haga clic en **[!UICONTROL Continuar]** para crear la conexión y volver al módulo.
 
-### Generar un(a) [!UICONTROL Client ID] y [!UICONTROL Client Secret] en [!DNL Bynder] (opcional)
+### Generar un [!UICONTROL ID de cliente] y [!UICONTROL Secreto de cliente] en [!DNL Bynder] (opcional)
 
 Si desea crear una conexión utilizando el ID de cliente y el Secreto de cliente, puede generarlos desde su cuenta de [!DNL Bynder]. El ID de cliente y el Secreto de cliente se generan al crear una aplicación en [!DNL Bynder].
 
@@ -136,17 +136,17 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Acciones
 
-* [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download asset]](#download-asset)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Remove a tag] de recursos](#remove-a-tag-from-assets)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Upload asset]](#upload-asset)
+* [[!UICONTROL Añadir una etiqueta a los recursos]](#add-a-tag-to-assets)
+* [[!UICONTROL Añadir recursos a una colección]](#add-assets-to-a-collection)
+* [[!UICONTROL Llamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Descargar recurso]](#download-asset)
+* [[!UICONTROL Leer metadatos de recursos]](#read-asset-metadata)
+* [[!UICONTROL Quitar una etiqueta] de los recursos](#remove-a-tag-from-assets)
+* [[!UICONTROL Quitar recursos de la colección]](#remove-assets-from-collection)
+* [[!UICONTROL Actualizar metadatos de recursos]](#update-asset-metadata)
+* [[!UICONTROL Cargar recurso]](#upload-asset)
 
-#### [!UICONTROL Add a tag to assets]
+#### [!UICONTROL Añadir una etiqueta a los recursos]
 
 Este módulo de acción agrega una etiqueta a uno o varios recursos
 
@@ -156,7 +156,7 @@ Este módulo de acción agrega una etiqueta a uno o varios recursos
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tag ID]</td> 
@@ -164,12 +164,12 @@ Este módulo de acción agrega una etiqueta a uno o varios recursos
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Para cada recurso que desee etiquetar, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, introduzca o asigne el ID del recurso.</p> </td> 
+   <td> <p>Para cada recurso que desee etiquetar, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, escriba o asigne el ID del recurso.</p> </td> 
   </tr> 
  </tbody> 
  </table>
 
-#### [!UICONTROL Add assets to a collection]
+#### [!UICONTROL Añadir recursos a una colección]
 
 Este módulo de acción añade uno o más recursos a una colección.
 
@@ -187,12 +187,12 @@ Este módulo de acción añade uno o más recursos a una colección.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Para cada recurso que desee agregar a la colección, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, escriba o asigne el ID del recurso.</p> </td> 
+   <td> <p>Para cada recurso que desee añadir a la colección, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, escriba o asigne el ID del recurso.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Llamada de API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Bynder]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Bynder] módulos.
 
@@ -234,7 +234,7 @@ El módulo devuelve un código de estado, junto con los encabezados y el cuerpo 
  </tbody> 
 </table>
 
-#### [!UICONTROL Download asset]
+#### [!UICONTROL Descargar recurso]
 
 Este módulo de acción descarga un solo recurso.
 
@@ -257,7 +257,7 @@ Este módulo de acción descarga un solo recurso.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read asset metadata]
+#### [!UICONTROL Leer metadatos de recursos]
 
 Este módulo de acción lee los metadatos de un recurso.
 
@@ -280,7 +280,7 @@ Este módulo de acción lee los metadatos de un recurso.
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a tag from assets]
+#### [!UICONTROL Quitar una etiqueta de los recursos]
 
 Este módulo de acción elimina una etiqueta de uno o varios recursos
 
@@ -290,7 +290,7 @@ Este módulo de acción elimina una etiqueta de uno o varios recursos
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tag ID]</td> 
@@ -298,12 +298,12 @@ Este módulo de acción elimina una etiqueta de uno o varios recursos
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Para cada recurso del que desee quitar una etiqueta, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, introduzca o asigne el ID del recurso.</p> </td> 
+   <td> <p>Para cada recurso del que desee quitar una etiqueta, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, escriba o asigne el ID del recurso.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove assets from collection]
+#### [!UICONTROL Quitar recursos de la colección]
 
 Este módulo de acción quita uno o varios recursos de una colección.
 
@@ -321,12 +321,12 @@ Este módulo de acción quita uno o varios recursos de una colección.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Para cada recurso que desee eliminar de la colección, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, escriba o asigne el ID del recurso.</p> </td> 
+   <td> <p>Para cada recurso que desee quitar de la colección, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, escriba o asigne el ID del recurso.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update asset metadata]
+#### [!UICONTROL Actualizar metadatos de recursos]
 
 Este módulo de acción actualiza los metadatos de un recurso existente.
 
@@ -353,7 +353,7 @@ Este módulo de acción actualiza los metadatos de un recurso existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload asset]
+#### [!UICONTROL Cargar recurso]
 
 Este módulo de acción carga un solo recurso.
 
@@ -363,7 +363,7 @@ Este módulo de acción carga un solo recurso.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save as]</td> 
@@ -378,7 +378,7 @@ Este módulo de acción carga un solo recurso.
    <td>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td role="rowheader">[!UICONTROL Carga asincrónica de archivos]</td> 
    <td>Active esta opción al cargar archivos grandes. Esto evita que los archivos grandes bloqueen la ejecución de escenarios.</td> 
   </tr> 
  </tbody> 
@@ -386,10 +386,10 @@ Este módulo de acción carga un solo recurso.
 
 ### Búsquedas
 
-* [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search Assets]](#search-assets)
+* [[!UICONTROL Enumerar registro]](#list-record)
+* [[!UICONTROL Buscar en Assets]](#search-assets)
 
-#### [!UICONTROL List record]
+#### [!UICONTROL Enumerar registro]
 
 Este módulo de búsqueda recupera todos los elementos de un tipo específico.
 
@@ -399,7 +399,7 @@ Este módulo de búsqueda recupera todos los elementos de un tipo específico.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -421,7 +421,7 @@ Este módulo de búsqueda recupera todos los elementos de un tipo específico.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Assets]
+#### [!UICONTROL Buscar en Assets]
 
 Este módulo de búsqueda busca recursos en función de los criterios suministrados.
 
@@ -467,7 +467,7 @@ Este módulo de búsqueda busca recursos en función de los criterios suministra
 
 ### Activadores
 
-#### [!UICONTROL Watch assets]
+#### [!UICONTROL Ver recursos]
 
 Este módulo activador inicia un escenario cuando se crea o actualiza un recurso.
 

@@ -4,9 +4,9 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1339'
 ht-degree: 20%
 
 ---
@@ -40,7 +40,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -70,7 +70,7 @@ Para usar [!DNL Miscrosoft Word Templates] con [!DNL Adobe Workfront Fusion], es
 
 ## Conexión del servicio de [!DNL Office] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Estos módulos no requieren conexión.
 * [Rellenar un documento](#fill-out-a-document)
 * [Rellenar un documento con un lote de datos](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL Rellenar un documento] {#fill-out-a-document}
 
 Este módulo transformador permite rellenar un documento con los datos especificados. Se puede utilizar con etiquetas de valores simples, etiquetas condicionales o etiquetas de bucle.
 
@@ -173,11 +173,11 @@ Este módulo transformador permite rellenar un documento con los datos especific
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Delimitador de inicio del texto que se va a reemplazar]</td> 
    <td> <p>Introduzca los caracteres que desea marcar al principio del texto que se va a reemplazar. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span>Escriba <code>&#91;&#91;</code> para reemplazar a <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Delimitador final del texto que se va a reemplazar]</p> </td> 
    <td> <p>Introduzca los caracteres que desea que marquen el final del texto que se va a reemplazar. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span>Escriba <code>&#93;&#93;</code> para reemplazar <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
@@ -185,11 +185,11 @@ Este módulo transformador permite rellenar un documento con los datos especific
    <td> <p> Seleccione un archivo de origen de un módulo anterior o asigne los datos del archivo de origen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Nombre del archivo rellenado]</td> 
    <td>Introduzca un nombre de archivo (incluida la extensión) para el archivo de salida de destino.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
+   <td role="rowheader">[!UICONTROL Origen de datos]</td> 
    <td> <p>Seleccione una opción para indicar si los datos que está utilizando proceden de un formulario o de una recopilación de datos sin procesar (datos de equipo no procesados).</p> </td> 
   </tr> 
   <tr> 
@@ -203,7 +203,7 @@ Este módulo transformador permite rellenar un documento con los datos especific
     </ul> 
     <p>Para agregar una entrada:</p>
     <ol> 
-     <li> Haga clic en <b>[!UICONTROL Add Item]</b>. </li> 
+     <li> Haga clic en <b>[!UICONTROL Agregar elemento]</b>. </li> 
      <li>Seleccione el tipo de valor de la entrada.</li> 
      <li>Añada el nombre y el valor. Para obtener más información, consulte el ejemplo del tipo de valor elegido en este artículo. 
       <ul> 
@@ -216,7 +216,7 @@ Este módulo transformador permite rellenar un documento con los datos especific
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL Rellenar un documento con un lote de datos] {#fill-a-document-with-a-batch-of-data}
 
 Este módulo de agregador es útil si las entradas de datos se incluyen como paquetes independientes. Con este módulo, puede configurar fácilmente la estructura necesaria para el campo Valor y asignar elementos a cada elemento de valor. A diferencia del módulo Rellenar un documento, el campo Valores del módulo Rellenar un documento con un lote de datos solo permite una única entrada que contenga variables.
 
@@ -235,11 +235,11 @@ Este módulo de agregador es especialmente útil para crear listas o informes.
    <td>Seleccione el módulo que es el origen del texto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Delimitador de inicio del texto que se va a reemplazar]</td> 
    <td> <p>Introduzca los caracteres que desea marcar al principio del texto que se va a reemplazar. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span>Escriba <code>&#91;&#91;</code> para reemplazar a <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Delimitador final del texto que se va a reemplazar]</p> </td> 
    <td> <p>Introduzca los caracteres que desea que marquen el final del texto que se va a reemplazar. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span>Escriba <code>&#93;&#93;</code> para reemplazar a <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -255,7 +255,7 @@ Este módulo de agregador es especialmente útil para crear listas o informes.
    <td> <p> Seleccione un archivo de origen de un módulo anterior o asigne los datos del archivo de origen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Nombre del archivo rellenado]</td> 
    <td>Introduzca un nombre de archivo (incluida la extensión) para el archivo de salida de destino.</td> 
   </tr> 
   <tr> 
@@ -269,7 +269,7 @@ Este módulo de agregador es especialmente útil para crear listas o informes.
     </ul> 
     <p>Para agregar una entrada:</p>
     <ol> 
-     <li> Haga clic en <b>[!UICONTROL Add Item]</b>. </li> 
+     <li> Haga clic en <b>[!UICONTROL Agregar elemento]</b>. </li> 
      <li>Seleccione el tipo de valor de la entrada.</li> 
      <li>Añada el nombre y el valor. Para obtener más información, consulte el ejemplo del tipo de valor elegido en este artículo. 
       <ul> 

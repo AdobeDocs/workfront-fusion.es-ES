@@ -4,10 +4,10 @@ description: Los módulos  [!DNL Adobe Workfront Fusion Google Forms]  permiten 
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 78%
+source-wordcount: '1383'
+ht-degree: 82%
 
 ---
 
@@ -42,7 +42,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -88,11 +88,11 @@ El conector de Google Forms utiliza lo siguiente:
 Para trabajar con las respuestas del formulario, primero debe crear la hoja de cálculo de respuestas.
 
 1. Abra el formulario.
-1. Vaya a la ficha **[!UICONTROL Responses]**.
-1. Haga clic en el icono **[!UICONTROL Create Spreadsheet]** ![Icono de hoja de cálculo](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Vaya a la pestaña **[!UICONTROL Responses]**.
+1. Haga clic en el icono **[!UICONTROL Crear hoja de cálculo]** ![Icono de hoja de cálculo](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Seleccione si desea crear una hoja de cálculo nueva o usar una existente
-1. Haga clic en **[!UICONTROL Create]**.
+1. Haga clic en **[!UICONTROL Crear]**.
 
 ## Módulos de [!DNL Google Forms] y sus campos
 
@@ -143,7 +143,7 @@ Inspecciona el formulario en busca de nuevas respuestas.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Date and time render option]</td> 
-   <td>Seleccione cómo desea que se muestren las fechas, las horas y la duración en la salida. Este campo se ignora si [!UICONTROL Value Render Option] se establece en [!UICONTROL Formatted Value].</td> 
+   <td>Seleccione cómo desea que se muestren las fechas, las horas y la duración en la salida. Este campo se omite si [!UICONTROL Value Render Option] se ha establecido como [!UICONTROL Formatted Value].</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -154,11 +154,11 @@ Inspecciona el formulario en busca de nuevas respuestas.
 
 ### Acciones
 
-* [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Delete a Response]](#delete-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
+* [[!UICONTROL Añadir una respuesta]](#add-a-response)
+* [[!UICONTROL Eliminar una respuesta]](#delete-a-response)
+* [[!UICONTROL Actualizar una respuesta]](#update-a-response)
 
-#### [!UICONTROL Add a Response]
+#### [!UICONTROL Añadir una respuesta]
 
 Este módulo anexa una nueva respuesta a la parte inferior de la hoja de cálculo del formulario.
 
@@ -182,7 +182,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>Introduzca los valores deseados en las columnas de la hoja. Las columnas están disponibles según la hoja.</p> <p>Para la columna [!UICONTROL Timestamp], use el siguiente valor:</p><pre>formatDate (ahora;DD/MM/AAAA HH:mm;UTC)</pre> </td> 
+   <td> <p>Introduzca los valores deseados en las columnas de la hoja. Las columnas están disponibles según la hoja.</p> <p>Para la columna [!UICONTROL Timestamp], utilice el valor siguiente:</p><pre>formatDate (ahora;DD/MM/AAAA HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -203,7 +203,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Response]
+#### [!UICONTROL Eliminar una respuesta]
 
 Este módulo elimina una respuesta seleccionada.
 
@@ -230,7 +230,7 @@ Este módulo elimina una respuesta seleccionada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Response]
+#### [!UICONTROL Actualizar una respuesta]
 
 Este módulo actualiza la respuesta seleccionada.
 
@@ -273,10 +273,10 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 ### Búsquedas
 
-* [[!UICONTROL Search Responses]](#search-responses)
-* [[!UICONTROL Search Responses (Advanced])](#search-responses-advanced)
+* [[!UICONTROL Búsqueda de respuestas]](#search-responses)
+* [[!UICONTROL Búsqueda de respuestas (avanzada])](#search-responses-advanced)
 
-#### [!UICONTROL Search Responses]
+#### [!UICONTROL Búsqueda de respuestas]
 
 Este módulo devuelve respuestas que coinciden con los criterios especificados.
 
@@ -322,7 +322,7 @@ Este módulo devuelve respuestas que coinciden con los criterios especificados.
   </tr> 
   <tr data-mc-conditions="">
     <td>[!UICONTROL Date and time render option]</td>
-    <td>Seleccione cómo desea que se muestren las fechas, las horas y la duración en la salida. Este campo se ignora si la opción [!UICONTROL Value Render] está establecida en Valor con formato. </td>
+    <td>Seleccione cómo desea que se muestren las fechas, las horas y la duración en la salida. Este campo se omite si la opción [!UICONTROL Value Render] está establecida como valor con formato. </td>
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
@@ -331,7 +331,7 @@ Este módulo devuelve respuestas que coinciden con los criterios especificados.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Responses (Advanced)]
+#### [!UICONTROL Búsqueda de respuestas (avanzada)]
 
 Este módulo realiza una búsqueda utilizando [[!DNL Google Charts Query Language]](https://developers.google.com/chart/interactive/docs/querylanguage). Este módulo no devuelve un número de fila.
 

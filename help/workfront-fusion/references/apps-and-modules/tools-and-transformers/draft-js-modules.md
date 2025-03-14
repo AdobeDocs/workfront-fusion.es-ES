@@ -1,25 +1,27 @@
 ---
 title: Módulos Draft.js
-description: En un  [!DNL Adobe Workfront Fusion] escenario, puede usar los módulos Draft.js para convertir Draft.js a HTML y Draft.js a HTML.
+description: En un  [!DNL Adobe Workfront Fusion] escenario, puede usar los módulos Draft.js para convertir Draft.js a HTML y HTML a Draft.js.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 54098f2da1db85d9a596f3fc4753aebb298d5b78
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 27%
+source-wordcount: '244'
+ht-degree: 24%
 
 ---
 
-# Módulos de [!UICONTROL Draft.js]
+# [!UICONTROL Draft.js] módulos
 
-En un escenario [!DNL Adobe Workfront Fusion], puede utilizar los módulos [!UICONTROL Draft.js] para convertir Draft.js a HTML y HTML a Draft.js. Puede utilizarlo en combinación con los módulos de Workfront para agregar texto enriquecido o leer texto enriquecido de los campos de Workfront.
+En un escenario [!DNL Adobe Workfront Fusion], puede usar los módulos [!UICONTROL Draft.js] para convertir Draft.js a HTML y HTML a Draft.js. Puede utilizarlo en combinación con los módulos de Workfront para agregar texto enriquecido o leer texto enriquecido de los campos de Workfront.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
+
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
@@ -28,27 +30,25 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
-   <p>O</p>
-   <p>Heredado: cualquiera </p>
+   <p>No se requiere licencia de Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,9 +58,11 @@ Para obtener más información sobre esta tabla, consulte [Requisitos de acceso 
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL Draft.js to HTML]
++++
 
-Este módulo convierte Draft.js en un HTML.
+## [!UICONTROL Draft.js a HTML]
+
+Este módulo convierte Draft.js en HTML.
 
 Al configurar este módulo, se muestran los campos siguientes.
 
@@ -70,14 +72,14 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Introduzca el texto de Draft.js.</p> </td> 
+   <td> <p>Introduzca o asigne el texto de Draft.js que desea convertir a HTML.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML to Draft.js]
+## [!UICONTROL HTML a Draft.js]
 
-Este módulo convierte el código del HTML a Draft.js.
+Este módulo convierte el código de HTML a Draft.js.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -85,7 +87,7 @@ Este módulo convierte el código del HTML a Draft.js.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Introduzca el código de HTML que desea convertir a Draft.js.</p> </td> 
+   <td> <p>Introduzca o asigne el código HTML que desea convertir a Draft.js.</p> </td> 
   </tr> 
  </tbody> 
 </table>

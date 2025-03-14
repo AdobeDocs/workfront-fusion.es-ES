@@ -4,16 +4,16 @@ description: Puede usar la herramienta Analizador de texto para analizar el text
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 79%
+source-wordcount: '1290'
+ht-degree: 87%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL Analizador de texto]
 
-Puede usar [!UICONTROL Text parser tool] para analizar texto y utilizarlo en otros módulos de [!DNL Adobe Workfront Fusion] escenarios. [!UICONTROL Text parser] no requiere una conexión.
+Puede usar la [!UICONTROL Text parser tool] para analizar texto y utilizarlo en otros módulos de escenario de [!DNL Adobe Workfront Fusion]. El [!UICONTROL Text parser] no requiere una conexión.
 
 ## Requisitos de acceso
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>No se requiere licencia de Workfront Fusion.</p>
+   <p>No se requiere licencia de Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ El conector del analizador de texto utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Módulos de [!UICONTROL Text parser] y sus campos
+## [!UICONTROL Text parser] módulos y sus campos
 
-Al configurar módulos de [!UICONTROL Text parser], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de [!UICONTROL Text parser], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -138,7 +138,7 @@ Analiza elementos de texto en función del patrón determinado.
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL De HTML a texto]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -159,9 +159,9 @@ Analiza elementos de texto en función del patrón determinado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL Patrón de coincidencia]
 
-El módulo [!UICONTROL Match pattern] le permite buscar y extraer elementos de cadena que coincidan con un patrón de búsqueda de un texto determinado. Este módulo utiliza expresiones regulares (también conocidas como regex o regexp).
+El módulo [!UICONTROL Patrón de coincidencia] le permite buscar y extraer elementos de cadena que coincidan con un patrón de búsqueda de un texto determinado. Este módulo utiliza expresiones regulares (también conocidas como regex o regexp).
 
 Una expresión regular es una secuencia de caracteres en la que cada carácter es un metacarácter, que tiene un significado especial, o un carácter regular que tiene un significado literal. Estos caracteres y metacaracteres identifican un patrón que se puede utilizar para buscar texto. Por ejemplo, si desea buscar nombres, puede configurar una expresión regular para buscar un patrón que consista en dos palabras consecutivas que comiencen con mayúsculas. Las expresiones regulares son una potente herramienta para buscar y manipular texto.
 
@@ -206,7 +206,7 @@ El análisis de las expresiones regulares excede el ámbito de este artículo. R
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL Reemplazar]
 
 Busca un valor o una expresión regular especificados en el texto introducido y reemplaza el resultado por el nuevo valor.
 
@@ -249,7 +249,7 @@ Busca un valor o una expresión regular especificados en el texto introducido y 
 
 La extracción de datos, a veces denominada extracción web o recolección web, es el proceso de recopilar datos de sitios web y almacenarlos en la base de datos u hojas de cálculo locales. Si desea obtener datos de un sitio web y no está familiarizado con las expresiones regulares, puede utilizar una herramienta de extracción de datos.
 
-Si la herramienta de raspado de datos proporciona una API de REST, puede conectarse a ella a través de nuestros módulos [[!UICONTROL HTTP] universales](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) y [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+Si la herramienta de extracción de datos proporciona una API REST, puede conectarse a ella a través de nuestros módulos [[!UICONTROL HTTP] universales](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) y [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 ## Solución de problemas del analizador de texto
 

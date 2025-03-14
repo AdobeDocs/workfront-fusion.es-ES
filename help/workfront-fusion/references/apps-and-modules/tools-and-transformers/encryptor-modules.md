@@ -4,7 +4,7 @@ description: Los módulos del cifrador de datos de Adobe Workfront Fusion le per
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 30%
@@ -38,7 +38,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>No se requiere licencia de Workfront Fusion.</p>
+   <p>No se requiere licencia de Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 

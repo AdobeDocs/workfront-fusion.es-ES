@@ -4,16 +4,16 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2354'
-ht-degree: 62%
+source-wordcount: '2823'
+ht-degree: 68%
 
 ---
 
 # Módulos de [!DNL Microsoft Office 365 Email]
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!UICONTROL Microsoft Office 365 Email], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de [!DNL Adobe Workfront Fusion], puede automatizar los flujos de trabajo que utilizan el [!UICONTROL Microsoft Office 365 Email], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 ## Requisitos de acceso
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -87,7 +87,7 @@ El conector de correo electrónico de Microsoft Office 365 utiliza lo siguiente:
 
 ## Conexión del servicio de [!DNL Office 365 Email] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365 Email] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365 Email] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -110,16 +110,16 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Mensaje
 
-* [[!UICONTROL Create and Send a Message (legacy)]](#create-and-send-a-message)
-* [[!UICONTROL Delete a Message]](#delete-a-message)
-* [[!UICONTROL Get a message]](#get-a-message)
-* [[!UICONTROL Move a Message]](#move-a-message)
-* [[!UICONTROL Search messages]](#search-messages)
-* [[!UICONTROL Watch Messages]](#watch-messages)
+* [[!UICONTROL Crear y enviar un mensaje (heredado)]](#create-and-send-a-message)
+* [[!UICONTROL Eliminar un mensaje]](#delete-a-message)
+* [[!UICONTROL Obtener un mensaje]](#get-a-message)
+* [[!UICONTROL Mover un mensaje]](#move-a-message)
+* [[!UICONTROL Buscar mensajes]](#search-messages)
+* [[!UICONTROL Ver mensajes]](#watch-messages)
 
 
 
-#### [!UICONTROL Create and Send a Message (legacy)]
+#### [!UICONTROL Crear y enviar un mensaje (heredado)]
 
 Este módulo de acción crea y envía un mensaje de correo electrónico.
 
@@ -149,7 +149,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -176,7 +176,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>Para cada archivo adjunto que desee agregar al correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
+     <li> <p><strong>[!UICONTROL archivo Source]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -190,7 +190,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Message]
+#### [!UICONTROL Eliminar un mensaje]
 
 Este módulo de acción elimina un mensaje de correo electrónico existente.
 
@@ -304,7 +304,7 @@ Este módulo de búsqueda busca mensajes en función de criterios específicos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Messages]
+#### [!UICONTROL Ver mensajes]
 
 Este módulo de déclencheur inicia un escenario cuando se envía o recibe un nuevo mensaje de correo electrónico.
 
@@ -331,7 +331,7 @@ Este módulo de déclencheur inicia un escenario cuando se envía o recibe un nu
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Introduzca la consulta de búsqueda. El módulo devuelve mensajes que coinciden con esta consulta. Para obtener información sobre cómo escribir una consulta de búsqueda, consulte el artículo de soporte técnico de [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Buscar correo y personas en [!DNL Outlook.com]</a>.</td> 
+   <td>Introduzca la consulta de búsqueda. El módulo devuelve mensajes que coinciden con esta consulta. Para obtener información sobre cómo redactar una consulta de búsqueda, consulte el artículo de asistencia técnica [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Buscar correo y personas en [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -346,7 +346,7 @@ Este módulo de déclencheur inicia un escenario cuando se envía o recibe un nu
 * [Enviar un borrador de mensaje](#send-a-draft-message)
 * [Actualizar un mensaje](#update-a-message)
 
-#### [!UICONTROL Create a Draft Message]
+#### [!UICONTROL Crear un borrador de mensaje]
 
 Este módulo de acción crea un nuevo mensaje de correo electrónico como borrador.
 
@@ -380,7 +380,7 @@ Este módulo de acción crea un nuevo mensaje de correo electrónico como borrad
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -407,7 +407,7 @@ Este módulo de acción crea un nuevo mensaje de correo electrónico como borrad
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>Para cada archivo adjunto que desee agregar al correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
+     <li> <p><strong>[!UICONTROL archivo Source]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -417,7 +417,7 @@ Este módulo de acción crea un nuevo mensaje de correo electrónico como borrad
  </tbody> 
 </table>
 
-#### [!UICONTROL Send a Draft Message]
+#### [!UICONTROL Enviar un mensaje de borrador]
 
 Este módulo de acción envía un mensaje de correo electrónico que está actualmente en borrador.
 
@@ -440,7 +440,7 @@ Este módulo de acción envía un mensaje de correo electrónico que está actua
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Message]
+#### [!UICONTROL Actualizar un mensaje]
 
 Este módulo de acción actualiza un mensaje existente.
 
@@ -482,7 +482,7 @@ Este módulo de acción actualiza un mensaje existente.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -509,7 +509,7 @@ Este módulo de acción actualiza un mensaje existente.
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>Para cada archivo adjunto que desee agregar al correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
+     <li> <p><strong>[!UICONTROL archivo Source]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -521,7 +521,7 @@ Este módulo de acción actualiza un mensaje existente.
 
 ### Archivos adjuntos
 
-* [[!UICONTROL Download an Attachment]](#download-an-attachment)
+* [[!UICONTROL Descargar un archivo adjunto]](#download-an-attachment)
 * [[!UICONTROL List Attachments]](#list-attachments)
 
 #### [!UICONTROL Download an Attachment]
@@ -611,7 +611,7 @@ Este módulo añade un archivo adjunto grande a un mensaje.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create and Send a Message]
+#### [!UICONTROL Crear y enviar un mensaje]
 
 Este módulo de acción crea y envía un mensaje de correo electrónico.
 
@@ -640,7 +640,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -667,7 +667,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>Para cada archivo adjunto que desee agregar al correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
+     <li> <p><strong>[!UICONTROL archivo Source]</strong> </p> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -687,7 +687,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realizar una llamada de API]
 
 Este módulo le permite realizar una llamada de API personalizada.
 

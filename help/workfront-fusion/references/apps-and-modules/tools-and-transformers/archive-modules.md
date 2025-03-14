@@ -4,33 +4,34 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede conectar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 76%
+source-wordcount: '552'
+ht-degree: 84%
 
 ---
 
-# Módulos de [!UICONTROL Archive]
+# Módulos de [!UICONTROL Archivo]
 
 En un escenario de [!DNL Adobe Workfront Fusion], puede usar un archivo, como un archivo comprimido, en su escenario, lo que le permite utilizarlo en sus automatizaciones o integraciones.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
-## Módulos de [!UICONTROL Archive] y sus campos
+## Módulos de [!UICONTROL Archivo] y sus campos
 
-Al configurar módulos de [!UICONTROL Archive], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!UICONTROL Archive] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de [!UICONTROL Archivo], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con ellos, podrían mostrarse campos adicionales de [!UICONTROL Archivo], según determinados factores como su nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Extract an archive]](#extract-an-archive)
-* [[!UICONTROL Create an archive]](#create-an-archive)
-* [[!UICONTROL Inflate]](#inflate)
-* [[!UICONTROL Deflate]](#deflate)
+* [Acciones](#actions)
+* [Agregadores](#aggregators)
+* [Transformadores](#transformers)
 
-## [!UICONTROL Extract an archive]
+## Acciones
+
+### [!UICONTROL Extraer un archivo]
 
 Este módulo de acción extrae un archivo que usted identifica en un archivo.
 
@@ -42,20 +43,24 @@ El módulo devuelve el identificador del archivo y cualquier campo asociado, jun
  <tbody> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p> Seleccione el archivo que desee extraer. Este archivo se puede asignar desde un módulo anterior (como el módulo [!DNL Workfront] &gt;[!UICONTROL Download a document]).</p>  </td> 
+   <td> <p>  <p>Seleccione un archivo de origen de un módulo anterior o asigne los datos de origen.</p></p>  </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Ejemplo:** Obtenga el archivo ZIP de la carpeta [!DNL Dropbox] definida (por ejemplo, Archivos), extráigalo mediante el módulo [!UICONTROL Archive] y envíe los archivos extraídos a la dirección de correo electrónico deseada como archivos adjuntos con el módulo [!UICONTROL Email] o [!DNL Gmail].
->
->![Dropbox de ejemplo](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Create an archive]
+**Ejemplo:** obtenga el archivo ZIP de la carpeta [!DNL Dropbox] definida (por ejemplo, Archivos), extráigalo mediante el módulo de [!UICONTROL Archivo] y envíe los archivos extraídos a la dirección de correo electrónico deseada como archivos adjuntos con el módulo de [!UICONTROL Correo electrónico] o de [!DNL Gmail].
 
-Este módulo de agregador agrega los archivos deseados a un archivo de [!UICONTROL ZIP] o [!UICONTROL TAR].
+![Ejemplo de Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+
+>[!ENDSHADEBOX]
+
+## Agregadores
+
+### [!UICONTROL Crear un archivo]
+
+Este módulo de agregador agrega los archivos deseados a un archivo [!UICONTROL ZIP], GZIP o [!UICONTROL TAR].
 
 Al configurar este módulo, se muestran los campos siguientes.
 
@@ -69,7 +74,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
-   <td> <p>Seleccione si desea agregar archivos a un archivo [!UICONTROL ZIP] o a un archivo [!UICONTROL TAR].</p> </td> 
+   <td> <p>Seleccione si desea agregar archivos a un archivo [!UICONTROL ZIP], GZIP o [!UICONTROL TAR].</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Comment]</td> 
@@ -94,28 +99,20 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Ejemplo:** Vea los correos electrónicos entrantes usando el módulo [!DNL Gmail] >[!UICONTROL Watch emails]. Si se recibe un correo electrónico, los archivos adjuntos se repiten en paquetes individuales y, a continuación, se archivan en el archivo [!DNL ZIP] y se guardan en la carpeta Dropbox definida.
->
->![Ejemplo de Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Inflate]
+**Ejemplo:** Vea los correos electrónicos entrantes con el módulo [!DNL Gmail] > [!UICONTROL Ver correos electrónicos]. Si se recibe un correo electrónico, los archivos adjuntos se repiten en paquetes individuales y, a continuación, se archivan en el archivo [!DNL ZIP] y se guardan en la carpeta Dropbox definida.
 
-Este módulo transformador descomprime datos binarios usando un algoritmo de inflación.
+![Ejemplo de Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data] </td> 
-   <td> <p>Introduzca o asigne los datos que desea descomprimir con la función de inflado.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
 
-## [!UICONTROL Deflate]
+## Transformadores
+
+* [[!UICONTROL Desinflar]](#deflate)
+* [[!UICONTROL Inflar]](#inflate)
+
+### [!UICONTROL Desinflar]
 
 Este módulo transformador comprime datos binarios usando un algoritmo de desinflado.
 
@@ -126,6 +123,21 @@ Este módulo transformador comprime datos binarios usando un algoritmo de desinf
   <tr> 
    <td>[!UICONTROL Data] </td> 
    <td> <p>Introduzca o asigne los datos que desea comprimir con la función de desinflado.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Inflar]
+
+Este módulo transformador descomprime datos binarios usando un algoritmo de inflación.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data] </td> 
+   <td> <p>Introduzca o asigne los datos que desea descomprimir con la función de inflado.</p> </td> 
   </tr> 
  </tbody> 
 </table>

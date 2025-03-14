@@ -4,16 +4,16 @@ description: La aplicación XML permite analizar un texto con formato XML median
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 5351c2386ed6f2d030df1df01fcf9ea0de7d813f
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 57%
+source-wordcount: '1442'
+ht-degree: 88%
 
 ---
 
 # XML
 
-La aplicación [!UICONTROL XML] le permite analizar un texto con formato XML a través del módulo [!UICONTROL XML] > [!UICONTROL Parse XML] y convertirlo en un paquete para que los datos estén disponibles para otros módulos. También puede convertir un paquete a texto con formato XML a través del módulo [!UICONTROL XML] > [!UICONTROL Create XML]
+La aplicación [!UICONTROL XML] permite analizar un texto con formato XML mediante el módulo [!UICONTROL XML] > [!UICONTROL Parse XML] y convertirlo en un paquete para que los datos estén disponibles para otros módulos. También puede convertir un paquete en texto con formato XML a través del módulo [!UICONTROL XML] > [!UICONTROL Create XML]
 
 ## Requisitos de acceso
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>No se requiere licencia de Workfront Fusion.</p>
+   <p>No se requiere licencia de Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,7 +58,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 ## Crear XML
 
-El módulo [!UICONTROL XML] > [!UICONTROL Create XML] convierte un paquete en un texto con formato XML.
+El módulo [!UICONTROL XML] > [!UICONTROL Crear XML] convierte un paquete en texto con formato XML.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -101,31 +101,31 @@ El módulo [!UICONTROL XML] > [!UICONTROL Create XML] convierte un paquete en un
 
 Un caso de uso típico es transformar datos de una hoja de cálculo de [!DNL Google] > en XML.
 
-1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Select rows] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el&#x200B;**[!UICONTROL Maximum number of returned rows]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Run this module only]**&quot;. Compruebe la salida del módulo.
-1. Conecte el módulo [!UICONTROL Array Aggregator] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo [!DNL Google Sheets] en el campo **[!UICONTROL Source node]**. Deje los demás campos tal como están por el momento.
-1. Conecte el módulo [!UICONTROL XML] > [!UICONTROL Create XML] después del módulo [!UICONTROL Array Aggregator].
+1. Coloque el módulo [!DNL Google Sheets] > [!UICONTROL Seleccionar filas] en su escenario para recuperar los datos. Configure el módulo para recuperar filas de la hoja de cálculo de [!DNL Google]. Establezca el **[!UICONTROL Número máximo de filas devueltas]** en un número pequeño, pero mayor que uno para realizar pruebas (por ejemplo, tres). Ejecute el módulo de [!DNL Google Sheets] haciendo clic con el botón secundario en él y eligiendo &quot;**[!UICONTROL Ejecutar este módulo solamente]**&quot;. Compruebe la salida del módulo.
+1. Conecte el módulo [!UICONTROL Agregador de matrices] después del módulo [!DNL Google Sheets]. En la configuración del módulo, elija el módulo de [!DNL Google Sheets] en el campo **[!UICONTROL Nodo de origen]**. Deje los demás campos tal como están por el momento.
+1. Conecte el módulo [!UICONTROL XML] > [!UICONTROL Crear XML] después del módulo [!UICONTROL Agregador de matrices].
 
-   La configuración del módulo requiere una estructura de datos que describa la estructura de la salida XML. Haga clic en el botón **[!UICONTROL Add]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de un ejemplo XML.
+   La configuración del módulo requiere una estructura de datos que describa la estructura de la salida XML. Haga clic en el botón **[!UICONTROL Añadir]** para abrir la configuración de la estructura de datos. La forma más sencilla de crear esta estructura de datos es generarla automáticamente a partir de un ejemplo XML.
 
-1. Haga clic en el botón **[!UICONTROL Generator]** y pegue la muestra XML en el campo [!UICONTROL Sample data]:
+1. Haga clic en el botón **[!UICONTROL Generador]** y pegue el XML de ejemplo en el campo [!UICONTROL Datos de muestra]:
 
    ![Campo de datos de muestra](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 
-1. Haga clic en **[!UICONTROL Save]**.
+1. Haga clic en **[!UICONTROL Guardar]**.
 
    El campo Especificación de la estructura de datos contiene ahora la estructura generada.
-1. Cambie el nombre de la estructura de datos a algo más específico y haga clic en **[!UICONTROL Save]**.
+1. Cambie el nombre de la estructura de datos por otro más específico y haga clic en **[!UICONTROL Guardar]**.
 
    Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
-1. Haga clic en el botón **[!UICONTROL Map]** al lado del campo y asigne el elemento `Array[]` de la salida [!UICONTROL Array aggregator] a él:
-1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo XML.
-1. Abra la configuración del módulo [!UICONTROL Array Aggregator]. Cambie **[!UICONTROL Target structure]** de Personalizado a un campo de módulo XML correspondiente al elemento XML principal. Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
-1. Haga clic en **[!UICONTROL OK]** para cerrar la configuración del módulo Array Aggregator.
+1. Haga clic en el botón **[!UICONTROL Asignar]** que está al lado del campo y asígnele el elemento `Array[]` de la salida del [!UICONTROL Agregador de matrices]:
+1. Haga clic en **[!UICONTROL Aceptar]** para cerrar la configuración del módulo XML.
+1. Abra la configuración del módulo [!UICONTROL Agregador de matrices]. Cambie la **[!UICONTROL estructura de destino]** del campo personalizado a un campo del módulo XML correspondiente al elemento XML principal. Asigne elementos del módulo de [!DNL Google Sheets] a los campos apropiados.
+1. Haga clic en **[!UICONTROL Aceptar]** para cerrar la configuración del módulo Agregador de matrices.
 1. Ejecute el escenario.
 
    El módulo XML genera el archivo XML correcto.
 
-1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Maximum number of returned rows] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
+1. Abra la configuración del módulo [!DNL Google Sheets] y aumente el número [!UICONTROL Máximo número de filas devueltas] para que sea mayor que el número de filas de la hoja de cálculo y procesar todos los datos.
 
    El XML resultante se puede guardar en [!DNL Dropbox], enviar como archivo adjunto por correo electrónico, subir por FTP a un servidor, etc.
 
@@ -158,9 +158,9 @@ Si desea añadir atributos a un nodo complejo (un nodo que contendrá otros nodo
 }
 ```
 
-## [!UICONTROL Parse XML]
+## [!UICONTROL Analizar XML]
 
-El módulo [!UICONTROL XML] > [!UICONTROL Parse XML] analiza un texto con formato XML y genera un solo paquete que contiene toda la información extraída del XML.
+El módulo [!UICONTROL XML] > [!UICONTROL Analizar XML] analiza un texto con formato XML y genera un solo paquete que contiene toda la información extraída del XML.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -172,7 +172,7 @@ El módulo [!UICONTROL XML] > [!UICONTROL Parse XML] analiza un texto con format
     <ol> 
      <li value="1">Haga clic en el botón <strong>[!UICONTROL Add]</strong>.</li> 
      <li value="2">Haga clic en el botón <strong>[!UICONTROL Generator]</strong>.</li> 
-     <li value="3">Copiar y pegar el ejemplo XML en el campo <strong>[!UICONTROL Sample data]</strong>.</li> 
+     <li value="3">Copie y pegue la muestra de XML en el campo <strong>[!UICONTROL Sample data]</strong>.</li> 
      <li value="4">Haga clic en <strong>[!UICONTROL Save]</strong>.</li> 
      <li value="5">Compruebe que la estructura de datos se haya generado correctamente.</li> 
      <li value="6"> <p>Haga clic en el botón <strong>[!UICONTROL Save]</strong> para guardar la estructura de datos.</p> <p>Puede omitir los pasos 2-5 para proporcionar una estructura de datos vacía. Si la estructura de datos está vacía, la salida del módulo no estará disponible en el panel de asignación hasta que el módulo se haya ejecutado al menos una vez.</p> </li> 
@@ -184,7 +184,7 @@ El módulo [!UICONTROL XML] > [!UICONTROL Parse XML] analiza un texto con format
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL XML]</p> </td> 
-   <td> <p>Introduzca o asigne el texto con formato XML que desee analizar.</p> <p>Si usa una fórmula, asegúrese de que su tipo de valor de resultado es (o se puede forzar automáticamente) el tipo de datos [!UICONTROL Text]. </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>Si el tipo de valor de resultado es [!UICONTROL Buffer] (datos binarios), use la función <code>toString()</code> para convertirlo al tipo de datos Text. Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a> y <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipos de datos de elementos</a>.</p> </td> 
+   <td> <p>Introduzca o asigne el texto con formato XML que desee analizar.</p> <p>Si usa una fórmula, asegúrese de que su tipo de valor resultante sea el tipo de datos [!UICONTROL Text] (o se pueda forzar automáticamente a dicho tipo de datos). </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>Si el tipo de valor resultante es [!UICONTROL Buffer] (datos binarios), use la función <code>toString()</code> para convertirlo al tipo de datos de texto. Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a> y <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipos de datos de elementos</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -196,15 +196,15 @@ El módulo [!UICONTROL XML] > [!UICONTROL Parse XML] analiza un texto con format
 Para descargar un archivo XML desde una dirección URL y analizar su contenido:
 
 1. Cree un nuevo escenario. 
-1. Agregar el módulo [!UICONTROL HTTP] > [!UICONTROL Get a file]
+1. Agregar el módulo [!UICONTROL HTTP] > [!UICONTROL Obtener un archivo]
 1. Abra la configuración del módulo y configúrelo de la siguiente manera:
 
    **URL**: URL del archivo XML (p. ej., `https://siftrss.com/f/rqLy05ayMBJ`)
 
    ![Ejemplo de URL del archivo XML](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 
-1. Haga clic en **[!UICONTROL OK]** para guardar y cerrar la configuración del módulo.
-1. Agregue el módulo [!UICONTROL XML] > [!UICONTROL Parse XML], conéctelo después del módulo [!UICONTROL HTTP] > [!UICONTROL Get a file] y configúrelo de la siguiente manera:
+1. Haga clic en **[!UICONTROL Aceptar]** para guardar y cerrar la configuración del módulo.
+1. Añada el módulo [!UICONTROL XML] > [!UICONTROL Analizar XML], conéctelo después del módulo [!UICONTROL HTTP] > [!UICONTROL Obtenga un archivo] y configúrelo de la siguiente manera:
 
    <table style="table-layout:auto"> 
     <col> 
@@ -235,9 +235,9 @@ Para descargar un archivo XML desde una dirección URL y analizar su contenido:
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL Parsing XML attributes]
+### [!UICONTROL Análisis de atributos XML]
 
-De manera predeterminada, el módulo [!UICONTROL XML] > [!UICONTROL Parse XML] coloca los atributos en una colección especial `_attributes` como elemento secundario del nodo que tiene estos atributos. Si el nodo es un nodo de texto y tiene atributos, se añaden dos propiedades especiales: `_attributes` para los atributos y `_value` para el contenido de texto del nodo.
+De manera predeterminada, el módulo [!UICONTROL XML] > [!UICONTROL Analizar XML] coloca los atributos en una colección especial `_attributes` como elemento secundario del nodo que tiene estos atributos. Si el nodo es un nodo de texto y tiene atributos, se añaden dos propiedades especiales: `_attributes` para los atributos y `_value` para el contenido de texto del nodo.
 
 >[!BEGINSHADEBOX]
 
@@ -255,6 +255,6 @@ se convierte en este paquete:
 
 >[!ENDSHADEBOX]
 
-## Solución de problemas: no se pueden asignar datos del módulo [!UICONTROL Parse XML]
+## Solución de problemas: no se pueden asignar datos del módulo [!UICONTROL Analizar XML]
 
 Asegúrese de que la estructura de datos está definida correctamente. También puede utilizar una estructura de datos vacía y ejecutar el módulo al menos una vez para procesar una entrada XML.

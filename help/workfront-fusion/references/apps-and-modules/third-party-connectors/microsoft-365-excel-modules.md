@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 71%
+source-wordcount: '2637'
+ht-degree: 78%
 
 ---
 
@@ -40,7 +40,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -93,7 +93,7 @@ El conector de Excel de Microsoft Office 365 utiliza lo siguiente:
 
 ## Conexión del servicio de [!DNL Office 365 Excel] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365 Excel] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365 Excel] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Este módulo de acción busca libros de [!DNL Excel].
 </table>
 </table>
 
-#### [!UICONTROL Watch Workbooks]
+#### [!UICONTROL Ver libros]
 
 Este módulo de activador inicia un escenario cuando se crea un libro.
 
@@ -266,7 +266,7 @@ Este módulo de acción añade una nueva fila a la hoja de cálculo seleccionada
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Eliminar una fila de hoja de cálculo]
 
 Este módulo de acción elimina una fila de una hoja de cálculo.
 
@@ -404,7 +404,7 @@ Este módulo del activador inicia un escenario cuando se añade una nueva fila a
    <td> <p>Seleccione la hoja de Excel que desea inspeccionar para buscar nuevas filas.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+    <td role="rowheader" >[!UICONTROL Omitir filas vacías] </td>
    <td> <p>Active esta opción para no devolver paquetes para filas vacías de la hoja de cálculo.</p> </td> 
   </tr> 
   <tr> 
@@ -416,14 +416,14 @@ Este módulo del activador inicia un escenario cuando se añade una nueva fila a
 
 ### Tabla
 
-* [[!UICONTROL Add a table]](#add-a-table)
-* [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Delete a table]](#delete-a-table)
-* [[!UICONTROL Get a Table]](#get-a-table)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL Update a table]](#update-a-table)
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
+* [[!UICONTROL Añadir una tabla]](#add-a-table)
+* [[!UICONTROL Añadir una fila de tabla]](#add-a-table-row)
+* [[!UICONTROL Eliminar una tabla]](#delete-a-table)
+* [[!UICONTROL Obtener una tabla]](#get-a-table)
+* [[!UICONTROL Lista de filas de tabla]](#list-table-rows)
+* [[!UICONTROL Lista de tablas]](#list-tables)
+* [[!UICONTROL Actualizar una tabla]](#update-a-table)
+* [[!UICONTROL Ver filas de tabla]](#watch-table-rows)
 
 #### [!UICONTROL Add a table]
 
@@ -456,7 +456,7 @@ Este módulo de acción crea un elemento de tabla en la hoja de cálculo de Exce
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a table row]
+#### [!UICONTROL Añadir una fila de tabla]
 
 Este módulo de acción modifica una tabla existente.
 
@@ -491,7 +491,7 @@ Este módulo de acción modifica una tabla existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Eliminar una tabla]
 
 Este módulo de acción elimina la tabla especificada de una hoja de cálculo de [!DNL Excel].
 
@@ -504,7 +504,7 @@ Este módulo de acción elimina la tabla especificada de una hoja de cálculo de
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td role="rowheader">[!UICONTROL Eliminar una tabla]</td> 
    <td> <p>Seleccione cómo desea identificar la tabla que desea eliminar.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Introduzca o asigne el identificador del libro que contiene la tabla que desea eliminar y, a continuación, introduzca o asigne el identificador de la hoja de cálculo que contiene la tabla.</p> <p>En el campo [!UICONTROL Table Name], escriba o asigne el nombre de la tabla que desea eliminar.</p> </li> 
@@ -599,7 +599,7 @@ Este módulo de búsqueda recupera una lista de todos los objetos de tabla.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a table]
+#### [!UICONTROL Actualizar una tabla]
 
 Este módulo de acción actualiza una tabla existente.
 
@@ -638,7 +638,7 @@ Este módulo de acción actualiza una tabla existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch table rows]
+#### [!UICONTROL Ver filas de tabla]
 
 Este activador inicia un escenario cuando se añade una nueva fila a una tabla.
 
@@ -677,10 +677,10 @@ Este activador inicia un escenario cuando se añade una nueva fila a una tabla.
 
 ### Otro
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Retrieve data]](#retrieve-data)
+* [[!UICONTROL Realización de una llamada de API]](#make-an-api-call)
+* [[!UICONTROL Recuperar datos]](#retrieve-data)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realizar una llamada de API]
 
 Este módulo de acción le permite realizar una llamada de API personalizada.
 
@@ -718,7 +718,7 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Retrieve data]
+#### [!UICONTROL Recuperar datos]
 
 Esta acción recupera datos del intervalo definido de las hojas de cálculo y devuelve un paquete para cada fila.
 

@@ -4,14 +4,14 @@ description: Este módulo de acción de  [!DNL Adobe Workfront Fusion]  envía u
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 77%
+source-wordcount: '1020'
+ht-degree: 83%
 
 ---
 
-# HTTP > [!UICONTROL Make an API Key Authorization request]
+# HTTP > [!UICONTROL Realizar una solicitud de autorización de clave API]
 
 Este [!DNL Adobe Workfront Fusion] módulo de acción envía una solicitud HTTPS a una URL especificada que requiere una autorización de una clave de API y procesa la respuesta.
 
@@ -42,7 +42,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -64,9 +64,9 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request] configuración de módulo
+## [!UICONTROL HTTP] > [!UICONTROL Realice una solicitud de autorización de clave de API] para la configuración del módulo
 
-Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud de autorización de clave de API], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -78,7 +78,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Credentials]</td> 
-   <td> <p>Seleccione la clave que contiene las credenciales de autenticación de la clave de API. Para agregar una clave nueva, haga clic en <strong>[!UICONTROL Add]</strong> y configure la siguiente información:</p> 
+   <td> <p>Seleccione la clave que contiene las credenciales de autenticación de la clave de API. Para añadir una clave nueva, haga clic en <strong>[!UICONTROL Add]</strong> y configure la siguiente información:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Key name]</strong></p> <p>Introduzca un nombre para este conjunto de credenciales de API.</p> </li> 
      <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>Introduzca la clave API.</p> </li> 
@@ -111,22 +111,22 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
    <td> <p>El cuerpo HTTP son los bytes de datos transmitidos en un mensaje de transacción HTTP inmediatamente después de los encabezados, si los hay.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>El tipo de cuerpo Raw es generalmente adecuado para la mayoría de las solicitudes de cuerpo HTTP, incluso en situaciones donde la documentación para desarrolladores no especifica los datos a enviar.</p> <p>Especifique una forma de analizar los datos en el campo [!UICONTROL Content type].</p> <p>A pesar del tipo de contenido seleccionado, el módulo introduce los datos en cualquier formato estipulado o requerido por la documentación del desarrollador.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de cuerpo es para [!UICONTROL POST] datos que utilizan <code>application/x-www-form-urlencoded</code>.</p> <p>Para <code>[!UICONTROL application/x-www-form-urlencoded]</code>, el cuerpo del mensaje HTTP enviado al servidor es esencialmente una cadena de consulta. Las claves y los valores se codifican en pares clave-valor separados por <code>&amp;</code> y con un <code>=</code> entre la clave y el valor. </p> <p>Para los datos binarios, use <code>[!UICONTROL multipart/form-data]</code> en su lugar.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de cuerpo es para [!UICONTROL POST] datos que usan <code>application/x-www-form-urlencoded</code>.</p> <p>Para <code>[!UICONTROL application/x-www-form-urlencoded]</code>, el cuerpo del mensaje HTTP enviado al servidor es esencialmente una cadena de consulta. Las claves y los valores se codifican en pares clave-valor separados por <code>&amp;</code> y con un <code>=</code> entre la clave y el valor. </p> <p>Para los datos binarios, use <code>[!UICONTROL multipart/form-data]</code> en su lugar.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Ejemplo:</b></span></span> 
        <p>Ejemplo del formato de petición HTTP resultante:</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP de varias partes que se usa para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>El [!UICONTROL Multipart/form-data] es una solicitud HTTP multipart utilizada para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File]), o ingrese el nombre de archivo y los datos de archivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Obtener un archivo] o [!UICONTROL Google Drive] &gt;[!UICONTROL Descargar un archivo]), o introduzca el nombre de archivo y los datos de archivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>Habilite esta opción para analizar automáticamente las respuestas y convertir las respuestas JSON y XML para que no necesite utilizar los módulos [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] o [!UICONTROL XML] &gt; [!UICONTROL Parse XML].</p> <p>Antes de poder usar el contenido JSON o XML analizado, ejecute el módulo manualmente una vez para que el módulo pueda reconocer el contenido de la respuesta y le permita asociarlo en módulos posteriores.</p> </td> 
+   <td> <p>Habilite esta opción para analizar automáticamente las respuestas y convertir las respuestas JSON y XML, de modo que no necesite usar los módulos [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] o [!UICONTROL XML] &gt; [!UICONTROL Parse XML].</p> <p>Antes de poder usar el contenido JSON o XML analizado, ejecute el módulo manualmente una vez para que el módulo pueda reconocer el contenido de la respuesta y le permita asociarlo en módulos posteriores.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
@@ -153,7 +153,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
               <p>Introduzca la contraseña del archivo.</p>
             </li>
             <li value="5">
-              <p>Haga clic en <b>[!UICONTROL Save]</b> para extraer el archivo y volver a la configuración del módulo.</p>
+              <p>Haga clic en <b>[!UICONTROL Guardar]</b> para extraer el archivo y volver a la configuración del módulo.</p>
             </li>
           </ol>
 </p> </td> 

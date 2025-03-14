@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '3623'
-ht-degree: 80%
+source-wordcount: '4125'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Para obtener información sobre la API utilizada para PDF Services, consulte [Ad
 [!DNL Adobe PDF Services] puede leer, convertir o modificar sus archivos, pero ni [!DNL Adobe] ni [!DNL Workfront Fusion] almacenan sus archivos o datos. Esto significa lo siguiente:
 
 * Usted mantiene el control sobre sus archivos, incluyendo su seguridad
-* No necesita tener una cuenta de almacenamiento o almacenamiento en la nube de [!UICONTROL Adobe] para usar los servicios de PDF.
+* No necesita tener una cuenta de almacenamiento o almacenamiento en la nube de [!UICONTROL Adobe] para usar PDF Services.
 
 ## Requisitos de acceso
 
@@ -50,7 +50,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -101,7 +101,7 @@ El conector de Adobe PDF Services utiliza lo siguiente:
 
 Para crear una conexión para los módulos de [!DNL Adobe PDF Services]:
 
-1. En cualquier módulo de [!DNL Adobe PDF Services], haga clic en **[!UICONTROL Add]** junto al cuadro Conexión.
+1. En cualquier módulo de [!DNL Adobe PDF Services], haga clic en **[!UICONTROL Añadir]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 
@@ -125,19 +125,19 @@ Para crear una conexión para los módulos de [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Escriba su [!DNL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> en la documentación de Adobe developer.</p></td>
+          <td>Introduzca su [!UICONTROL Client ID] [!DNL Adobe]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> en la documentación de Adobe developer.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Escriba su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> en la documentación de Adobe developer.</p>
+          <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret].  Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenciales</a> en la documentación para desarrolladores de Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID] (solo JWT)</td>
-          <td>Escriba su [!DNL Adobe] [!UICONTROL Technical account ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> en la documentación de Adobe developer.</p>
+          <td>Entre su [!DNL Adobe] [!UICONTROL Technical account ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenciales</a> en la documentación para desarrolladores de Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID] (solo JWT)</td>
-          <td>Escriba su [!DNL Adobe] [!UICONTROL Organization ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> en la documentación de Adobe developer.</p>
+          <td>Escriba su [!UICONTROL Organization ID] [!DNL Adobe]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo localizar las credenciales, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenciales</a> en la documentación para desarrolladores de Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Meta scopes] (solo JWT)</td>
@@ -171,7 +171,7 @@ Para crear una conexión para los módulos de [!DNL Adobe PDF Services]:
       </tr>
        </tbody>
     </table>
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
 
 ## Módulos de [!DNL Adobe PDF Services] y sus campos
@@ -182,26 +182,26 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Combine PDF files]](#combine-pdf-files)
-* [[!UICONTROL Compress PDF files]](#compress-pdf-files)
-* [[!UICONTROL Convert document to PDF file]](#convert-document-to-pdf-file)
-* [[!UICONTROL Convert HTML to PDF file]](#convert-html-to-pdf-file)
-* [[!UICONTROL Convert image to PDF file]](#convert-image-to-pdf-file)
-* [[!UICONTROL Convert PDF to document]](#convert-pdf-to-document)
-* [[!UICONTROL Convert PDF to image]](#convert-pdf-to-image)
-* [[!UICONTROL Extract Text / Table]](#extract-text--table)
-* [[!UICONTROL Generate document]](#generate-document)
-* [[!UICONTROL Linearize a PDF file]](#linearize-a-pdf-file)
+* [[!UICONTROL Combinar archivos PDF]](#combine-pdf-files)
+* [[!UICONTROL Comprimir archivos PDF]](#compress-pdf-files)
+* [[!UICONTROL Convertir documento en archivo PDF]](#convert-document-to-pdf-file)
+* [[!UICONTROL Convertir HTML en archivo PDF]](#convert-html-to-pdf-file)
+* [[!UICONTROL Convertir imagen en archivo PDF]](#convert-image-to-pdf-file)
+* [[!UICONTROL Convertir PDF en documento]](#convert-pdf-to-document)
+* [[!UICONTROL Convertir PDF en imagen]](#convert-pdf-to-image)
+* [[!UICONTROL Extraer texto/tabla]](#extract-text--table)
+* [[!UICONTROL Generar documento]](#generate-document)
+* [[!UICONTROL Linealizar un archivo PDF]](#linearize-a-pdf-file)
 * [Realizar una llamada de API personalizada](#make-a-custom-api-call)
-* [[!UICONTROL OCR for PDF file]](#ocr-for-pdf-file)
-* [[!UICONTROL Page manipulation]](#page-manipulation)
-* [[!UICONTROL PDF accessibility auto-tag]](#pdf-accessibility-auto-tag)
-* [[!UICONTROL PDF file properties]](#pdf-file-properties)
-* [[!UICONTROL Protect PDF file]](#protect-pdf-file)
-* [[!UICONTROL Remove protection of a PDF file]](#remove-protection-of-a-pdf-file)
+* [[!UICONTROL OCR para archivo PDF]](#ocr-for-pdf-file)
+* [[!UICONTROL Manipulación de páginas]](#page-manipulation)
+* [[!UICONTROL Etiquetado automático de accesibilidad de PDF]](#pdf-accessibility-auto-tag)
+* [[!UICONTROL Propiedades de archivos PDF]](#pdf-file-properties)
+* [[!UICONTROL Proteger archivo PDF]](#protect-pdf-file)
+* [[!UICONTROL Quitar la protección de un archivo de PDF]](#remove-protection-of-a-pdf-file)
 * [División de un archivo PDF](#split-a-pdf-file)
 
-### [!UICONTROL Combine PDF files]
+### [!UICONTROL Combinar archivos PDF]
 
 Este módulo de acción toma varios archivos PDF y los combina en un solo archivo PDF. Por ejemplo, este módulo podría combinar todos los documentos de un proyecto de [!UICONTROL Workfront] en un solo PDF al finalizar el proyecto.
 
@@ -211,22 +211,22 @@ Este módulo de acción toma varios archivos PDF y los combina en un solo archiv
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Seleccione la conexión que usará en ese módulo.</p> Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe PDF Services], consulte <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >Crear una conexión a [!DNL Adobe PDF Services]</a> en este artículo. </td> 
+   <td> <p>Seleccione la conexión que usará en ese módulo.</p> Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe PDF Services], consulte <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >Crear una conexión con [!DNL Adobe PDF Services]</a> en este artículo. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Documents]</td> 
-   <td> <p>Puede utilizar un módulo de agregador para recopilar documentos para combinarlos en un PDF o puede añadir los documentos manualmente. </p> <p>Se recomienda utilizar un módulo [!UICONTROL Array Aggregator] para agregar el resultado de un módulo anterior. Al utilizar un agregador, no es necesario conocer los nombres, ubicaciones o números de archivos que se van a combinar. Por lo tanto, el uso de un agregador es mucho más flexible y escalable que la introducción manual de los documentos que se van a combinar.</p> <p>Para usar el módulo de archivos de [!UICONTROL Combine PDF] con un agregador, debe habilitar la asignación en el campo [!UICONTROL Documents]. </p> <p>En este ejemplo, el módulo [!UICONTROL Read Related Records] identifica los documentos asociados con un proyecto y el módulo [!UICONTROL Download Documents] descarga cada uno de ellos. Todos los PDF se agregan a una matriz, que se pasa al módulo de archivos [!UICONTROL Combine PDF].</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>También puede introducir documentos manualmente.</p> <p>Para que cada documento se incluya en el PDF combinado:</p> 
+   <td> <p>Puede utilizar un módulo de agregador para recopilar documentos para combinarlos en un PDF o puede añadir los documentos manualmente. </p> <p>Se recomienda utilizar un módulo [!UICONTROL Array aggregator] para añadir los resultados de un módulo anterior. Al utilizar un agregador, no es necesario conocer los nombres, ubicaciones o números de archivos que se van a combinar. Por lo tanto, el uso de un agregador es mucho más flexible y escalable que la introducción manual de los documentos que se van a combinar.</p> <p>Para utilizar el módulo de archivos de [!UICONTROL Combine PDF] con un agregador, debe habilitar la asignación en el campo [!UICONTROL Documents]. </p> <p>En este ejemplo, el módulo [!UICONTROL Read Related Records] identifica los documentos asociados a un proyecto y el módulo [!UICONTROL Download Documents] descarga cada uno de ellos. Todos los PDF se añaden en una matriz, que se pasa al módulo de archivos de [!UICONTROL Combine PDF].</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>También puede introducir documentos manualmente.</p> <p>Para que cada documento se incluya en el PDF combinado:</p> 
     <ol> 
-     <li value="1"> <p>Haga clic [!UICONTROL Add a Document]</p> </li> 
+     <li value="1"> <p>Haga clic en [!UICONTROL Add a Document]</p> </li> 
      <li value="2"> <p>En el campo [!UICONTROL Source file], seleccione el módulo que genera el documento que desea incluir o asigne el nombre y los datos del archivo de origen. </p> </li> 
-     <li value="3"> <p>(Opcional) Si desea incluir solo ciertas páginas del archivo de origen, para cada intervalo de páginas que desee agregar, haga clic en <strong>[!UICONTROL Add item]</strong> en el campo [!UICONTROL Pages], luego introduzca la primera y la última página del intervalo de páginas que desea incluir y haga clic en <strong>[!UICONTROL Add]</strong>. Puede incluir más de un intervalo de páginas de un solo documento.</p> </li> 
+     <li value="3"> <p>(Opcional) Si desea incluir solo ciertas páginas del archivo de origen, para cada intervalo de páginas que desee añadir, haga clic en <strong>[!UICONTROL Add item]</strong> en el campo [!UICONTROL Pages], luego introduzca la primera y la última página del intervalo de páginas que desea incluir y haga clic en <strong>[!UICONTROL Add]</strong>. Puede incluir más de un intervalo de páginas de un solo documento.</p> </li> 
      <li value="4"> <p>Haga clic en <strong>[!UICONTROL Add]</strong>. </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Compress PDF files]
+### [!UICONTROL Comprimir archivos PDF]
 
 Este módulo de acción toma un archivo de PDF y lo comprime. Esto puede resultar útil para conservar ancho de banda o memoria.
 
@@ -251,7 +251,7 @@ Este módulo de acción toma un archivo de PDF y lo comprime. Esto puede resulta
  </tbody> 
 </table>
 
-### [!UICONTROL Convert document to PDF file]
+### [!UICONTROL Convertir documento en archivo PDF]
 
 Esta herramienta convierte un documento en un archivo PDF. El archivo de origen debe tener uno de los siguientes formatos de documento:
 
@@ -326,7 +326,7 @@ Esta herramienta convierte un documento en un archivo PDF. El archivo de origen 
  </tbody> 
 </table>
 
-### [!UICONTROL Convert HTML to PDF file]
+### [!UICONTROL Convertir HTML a archivo PDF]
 
 Esta herramienta convierte un archivo HTML a un archivo PDF.
 
@@ -371,7 +371,7 @@ Esta herramienta convierte un archivo HTML a un archivo PDF.
  </tbody> 
 </table>
 
-### [!UICONTROL Convert image to PDF file]
+### [!UICONTROL Convertir una imagen en un archivo PDF]
 
 Esta herramienta convierte una imagen en un archivo PDF.
 
@@ -392,7 +392,7 @@ Esta herramienta convierte una imagen en un archivo PDF.
  </tbody> 
 </table>
 
-### [!UICONTROL Convert PDF to document]
+### [!UICONTROL Convertir un PDF en un documento]
 
 Esta herramienta convierte un archivo PDF en un documento. Puede seleccionar uno de los siguientes formatos para el archivo de salida.
 
@@ -471,7 +471,7 @@ Esta herramienta convierte un archivo PDF en un documento. Puede seleccionar uno
  </tbody> 
 </table>
 
-### [!UICONTROL Convert PDF to image]
+### [!UICONTROL Convertir un PDF en una imagen]
 
 Esta herramienta convierte un PDF en una imagen en formato PNG o JPEG., que luego se muestra como una lista o se combina en un ZIP.
 
@@ -502,14 +502,14 @@ Por ejemplo, un archivo denominado &quot;TestFile&quot; con 8 páginas producir�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de salida]</td> 
    <td> <p>Seleccione si desea que los archivos se muestren como una lista de archivos o como un archivo ZIP.</td> 
   </tr> 
   <tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Extract Text / Table]
+### [!UICONTROL Extraer texto/tabla]
 
 Este módulo de acción le permite extraer datos de un archivo de PDF. El módulo genera elementos de texto individuales, como un párrafo o el texto en una sola celda de una tabla.
 
@@ -544,28 +544,28 @@ Este módulo de acción le permite extraer datos de un archivo de PDF. El módul
  </tbody> 
 </table>
 
-### [!UICONTROL Generate document]
+### [!UICONTROL Generar documento]
 
-El módulo [!UICONTROL Generate document] es una forma eficaz de crear un PDF que contenga los datos seleccionados. Puede aplicarle formato utilizando una plantilla [!DNL Microsoft Word] o proporcionando datos en formato JSON.
+El módulo [!UICONTROL Generar documento] es una forma eficaz de crear un PDF que contenga los datos seleccionados. Puede aplicarle formato utilizando una plantilla [!DNL Microsoft Word] o proporcionando datos en formato JSON.
 
-Para obtener más información sobre la funcionalidad [!UICONTROL [!DNL Adobe PDF Services] Generate document], consulte la [Información general sobre la generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) en la documentación de [!DNL Adobe Document Services].
+Para obtener más información sobre la funcionalidad [!UICONTROL [!DNL Adobe PDF Services]Generar documento], consulte la [Información general sobre la generación de documentos](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) en la documentación de [!DNL Adobe Document Services].
 
-* [Usar el módulo [!UICONTROL Generate document] con una [!DNL Microsoft Word] plantilla](#use-the-generate-document-module-with-a-microsoft-word-template)
-* [Usar el módulo [!UICONTROL Generate document] con JSON](#use-the-generate-document-module-with-json)
+* [Uso del módulo [!UICONTROL Generar documento] con una  [!DNL Microsoft Word] plantilla](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [Uso del módulo [!UICONTROL Generar documento] con JSON](#use-the-generate-document-module-with-json)
 
-#### Usar el módulo [!UICONTROL Generate document] con una plantilla [!DNL Microsoft Word]
+#### Uso del módulo [!UICONTROL Generar documento] con una plantilla [!DNL Microsoft Word]
 
 
 >[!NOTE]
 >
 >Para ver un análisis de las plantillas de Microsoft Word, consulte [Módulos de plantillas de Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md).
 >
->No es necesario utilizar módulos de plantilla de Microsoft Word para utilizar una plantilla de Microsoft Word con el módulo de documento Generar de servicios de PDF.
+>No es necesario utilizar módulos de plantilla de Microsoft Word para utilizar una plantilla de Microsoft Word con el módulo de documento Generar de PDF Services.
 
 
-Para usar el módulo [!UICONTROL Generate document] con una plantilla [!UICONTROL Microsoft Word], primero debe crear la plantilla. Para obtener instrucciones, busque “Crear una plantilla” en la documentación de [!DNL Microsoft Office].
+Para usar el módulo [!UICONTROL Generar documento] con una plantilla de [!UICONTROL Microsoft Word], debe primero crearla. Para obtener instrucciones, busque “Crear una plantilla” en la documentación de [!DNL Microsoft Office].
 
-Rellene los campos del módulo [!UICONTROL Generate document] de la siguiente manera:
+Rellene los campos del módulo [!UICONTROL Generar documento] de la siguiente manera:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -577,7 +577,7 @@ Rellene los campos del módulo [!UICONTROL Generate document] de la siguiente ma
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> <p>Este archivo de origen es la plantilla [!DNL Microsoft Word] que utiliza el módulo para generar el nuevo PDF.</p> <p>Se recomienda crear un proyecto en [!DNL Workfront] para las plantillas [!DNL Microsoft Word] que usa en [!DNL Workfront Fusion]. A continuación, puede usar el módulo [!DNL Workfront] &gt; [!UICONTROL Download document] para extraer la plantilla adecuada a su escenario.</p> </td> 
+   <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> <p>Este archivo de origen es la plantilla [!DNL Microsoft Word] que usa el módulo para generar el nuevo PDF.</p> <p>Se recomienda crear un proyecto en [!DNL Workfront] para las plantillas [!DNL Microsoft Word] que usa en [!DNL Workfront Fusion]. A continuación, puede utilizar el módulo [!DNL Workfront] &gt; [!UICONTROL Download document] para extraer la plantilla adecuada a su escenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -599,9 +599,9 @@ Rellene los campos del módulo [!UICONTROL Generate document] de la siguiente ma
  </tbody> 
 </table>
 
-#### Usar el módulo [!UICONTROL Generate document] con JSON
+#### Usar el módulo [!UICONTROL Generar documento] con JSON
 
-Para utilizar el módulo [!UICONTROL Generate document] con JSON, rellene los campos de la siguiente manera:
+Para usar el módulo [!UICONTROL Generar documento] con JSON, rellene los campos de la siguiente manera:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -630,7 +630,7 @@ Para utilizar el módulo [!UICONTROL Generate document] con JSON, rellene los ca
  </tbody> 
 </table>
 
-### [!UICONTROL Linearize a PDF file]
+### [!UICONTROL Linealizar un archivo PDF]
 
 Esta herramienta linealiza un documento PDF para crear un documento PDF optimizado para web. Un documento PDF linealizado puede visualizarse página por página sin necesidad de descargar todo el documento.
 
@@ -661,7 +661,7 @@ Este módulo de acción envía una petición HTTP personalizada a la API de serv
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Seleccione la conexión que usará en ese módulo.</p> Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe PDF Services], consulte <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >Crear una conexión a [!DNL Adobe PDF Services]</a> en este artículo. </td> 
+   <td> <p>Seleccione la conexión que usará en ese módulo.</p> Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe PDF Services], consulte <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >Crear una conexión con [!DNL Adobe PDF Services]</a> en este artículo. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -690,7 +690,7 @@ Este módulo de acción envía una petición HTTP personalizada a la API de serv
 </table>
 
 
-### [!UICONTROL OCR for PDF file]
+### [!UICONTROL OCR para archivo PDF]
 
 Esta herramienta realiza el reconocimiento óptico de caracteres (OCR) en un archivo y produce un PDF.
 
@@ -710,20 +710,20 @@ Esta herramienta realiza el reconocimiento óptico de caracteres (OCR) en un arc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>Seleccione el idioma de este documento.<p>Para ver las opciones de idioma, consulte <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convertir documento en archivo PDF</a> en este artículo. </td> 
+   <td>Seleccione el idioma de este documento.<p>Para ver las opciones de idioma, consulte <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convertir documento a archivo PDF</a> en este artículo. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
    <td> 
     <ul> 
-     <li> <p>[!UICONTROL Modified original image] type garantiza que el texto se pueda buscar y seleccionar, pero modifica la imagen original durante el proceso de limpieza (por ejemplo, lo deskews) antes de colocar una capa de texto invisible sobre ella. Este tipo elimina los artefactos no deseados y puede resultar en un documento más legible en algunos casos. </p> </li> 
-     <li> <p>[!UICONTROL Unchanged original image] texto también superpone una capa de texto en la que se puede buscar sobre la imagen original, pero en este caso, la imagen original no cambia. Este tipo produce la máxima fidelidad con respecto a la imagen original.</p> </li> 
+     <li> <p>El tipo [!UICONTROL Modified original image] garantiza que el texto se pueda buscar y seleccionar, pero modifica la imagen original durante el proceso de limpieza (por ejemplo, la endereza) antes de colocar una capa de texto invisible sobre ella. Este tipo elimina los artefactos no deseados y puede resultar en un documento más legible en algunos casos. </p> </li> 
+     <li> <p>El tipo [!UICONTROL Unchanged original image] también superpone una capa de texto que se puede buscar sobre la imagen original, pero en este caso, la imagen original no cambia. Este tipo produce la máxima fidelidad con respecto a la imagen original.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Page manipulation]
+### [!UICONTROL Manipulación de páginas]
 
 Este módulo le permite rotar o eliminar selectivamente páginas de un documento de PDF. Por ejemplo, puede cambiar la vista vertical a la horizontal o quitar determinadas páginas del documento de PDF.
 
@@ -767,7 +767,7 @@ Este módulo le permite rotar o eliminar selectivamente páginas de un documento
  </tbody> 
 </table>
 
-### [!UICONTROL PDF accessibility auto-tag]
+### [!UICONTROL Etiqueta automática de accesibilidad de PDF]
 
 Este módulo de acción crea un PDF etiquetado para casos de uso de accesibilidad. También crea un informe opcional de Microsoft Excel que enumera los problemas y sugiere correcciones.
 
@@ -790,13 +790,13 @@ Este módulo de acción crea un PDF etiquetado para casos de uso de accesibilida
    <td> <p>Active esta opción para cambiar los encabezados del documento.</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Generate Report]</td> 
+   <td role="rowheader">[!UICONTROL Generar informe]</td> 
    <td> <p>Active esta opción para generar un informe que enumere los problemas de accesibilidad en el PDF junto con su ubicación y proporcione sugerencias para solucionarlos.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL PDF file properties]
+### [!UICONTROL Propiedades del archivo PDF]
 
 Esta herramienta extrae información básica sobre el documento, como:
 
@@ -823,7 +823,7 @@ Esta herramienta extrae información básica sobre el documento, como:
  </tbody> 
 </table>
 
-### [!UICONTROL Protect a PDF file]
+### [!UICONTROL Proteger un archivo de PDF]
 
 Esta herramienta asegura un documento PDF con una contraseña de usuario o de propietario. También establece restricciones en determinadas funciones, como imprimir, editar y copiar en el documento PDF. Usted selecciona el tipo de contenido que desea cifrar y el algoritmo de cifrado.
 
@@ -845,8 +845,8 @@ Esta herramienta asegura un documento PDF con una contraseña de usuario o de pr
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>Active esta opción para utilizar contraseñas para cifrar el documento PDF de entrada. Si activa esta opción, debe especificar e introducir un valor para una o ambas de las siguientes opciones: </p> 
     <ul> 
-     <li> <p>[!UICONTROL User Password]</p> </li> 
-     <li> <p>[!UICONTROL Owner Password] </p> </li> 
+     <li> <p>[!UICONTROL Contraseña de usuario]</p> </li> 
+     <li> <p>[!UICONTROL Contraseña de propietario] </p> </li> 
     </ul> <p>Cada contraseña puede tener hasta 128 caracteres de longitud.</p> </td> 
   </tr> 
   <tr> 
@@ -864,16 +864,16 @@ Esta herramienta asegura un documento PDF con una contraseña de usuario o de pr
      <li> <p>[!UICONTROL All content]</p> </li> 
      <li> <p>[!UICONTROL All content except metadata]</p> </li> 
      <li> <p>[!UICONTROL Only embedded data] </p> </li> 
-    </ul> <p>Si se selecciona "[!UICONTROL Only embedded data]", los permisos de acceso proporcionados se considerarán ineficaces.</p> </td> 
+    </ul> <p>Si selecciona "[!UICONTROL Only embedded data]", los permisos de acceso proporcionados se considerarán ineficaces.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>Seleccione los permisos que desee incluir para permitir la impresión, edición o copia de contenido.</p> <p>La configuración de permisos solo se usa si [!UICONTROL Owner Password] está establecido en el campo [!UICONTROL Password Protection Type].</p> </td> 
+   <td> <p>Seleccione los permisos que desee incluir para permitir la impresión, edición o copia de contenido.</p> <p>La configuración de permisos sólo se utiliza si la [!UICONTROL Owner Password] está establecida en el campo [!UICONTROL Password Protection Type].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Remove protection of a PDF file]
+### [!UICONTROL Quitar la protección de un archivo DF]
 
 Esta herramienta elimina la seguridad (protección con contraseña) de un documento de PDF.
 
@@ -898,7 +898,7 @@ Esta herramienta elimina la seguridad (protección con contraseña) de un docume
  </tbody> 
 </table>
 
-### [!UICONTROL Split a PDF file]
+### [!UICONTROL Dividir un archivo PDF]
 
 Este módulo de acción divide un documento PDF en varios documentos más pequeños. Especifique si desea dividirlo por número de archivos, páginas por archivo o intervalos de páginas.
 

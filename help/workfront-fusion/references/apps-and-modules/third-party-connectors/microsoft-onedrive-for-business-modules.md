@@ -4,10 +4,10 @@ description: En un [!DNL Adobe Workfront Fusion] escenario, puede automatizar lo
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 74%
+source-wordcount: '1109'
+ht-degree: 78%
 
 ---
 
@@ -40,7 +40,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -68,7 +68,7 @@ Para usar [!DNL Microsoft OneDrive for Business] con [!DNL Adobe Workfront Fusio
 
 ## Conexión del servicio de [!DNL Microsoft OneDrive for Business] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Microsoft OneDrive for Business] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Microsoft OneDrive for Business] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -89,10 +89,10 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Activadores
 
-* [[!UICONTROL Watch files]](#watch-files)
-* [[!UICONTROL Watch folders]](#watch-folders)
+* [[!UICONTROL Ver archivos]](#watch-files)
+* [[!UICONTROL Ver carpetas]](#watch-folders)
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL Ver archivos]
 
 Este módulo de activación se activa cuando se añade o actualiza un nuevo archivo en una carpeta que se está viendo.
 
@@ -105,7 +105,7 @@ Este módulo de activación se activa cuando se añade o actualiza un nuevo arch
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p> [!UICONTROL Drive ID]</p> </td> 
    <td> <p>Seleccione la unidad que desea ver.</p> </td> 
   </tr> 
   <tr> 
@@ -123,7 +123,7 @@ Este módulo de activación se activa cuando se añade o actualiza un nuevo arch
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch folders]
+#### [!UICONTROL Ver carpetas]
 
 Este módulo de activación se activa cuando se añade una nueva carpeta a la carpeta que se está viendo.
 
@@ -136,7 +136,7 @@ Este módulo de activación se activa cuando se añade una nueva carpeta a la ca
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p> [!UICONTROL Drive ID]</p> </td> 
    <td> <p>Seleccione la unidad que desea ver.</p> </td> 
   </tr> 
   <tr> 
@@ -156,14 +156,14 @@ Este módulo de activación se activa cuando se añade una nueva carpeta a la ca
 
 ### Acciones
 
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL Crear una carpeta]](#create-a-folder)
+* [[!UICONTROL Eliminar un archivo]](#delete-a-file)
+* [[!UICONTROL Eliminar una carpeta]](#delete-a-folder)
+* [[!UICONTROL Obtener un archivo]](#get-a-file)
+* [[!UICONTROL Obtener un vínculo para compartir]](#get-a-sharing-link)
+* [[!UICONTROL Subir un archivo]](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crear una carpeta]
 
 Crea una carpeta dentro de la carpeta principal especificada.
 
@@ -191,7 +191,7 @@ Crea una carpeta dentro de la carpeta principal especificada.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminar un archivo]
 
 Este módulo de acción mueve el archivo especificado a la papelera de reciclaje.
 
@@ -205,7 +205,7 @@ Este módulo de acción mueve el archivo especificado a la papelera de reciclaje
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td> [!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad desde la que desea eliminar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -215,7 +215,7 @@ Este módulo de acción mueve el archivo especificado a la papelera de reciclaje
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Eliminar una carpeta]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -227,7 +227,7 @@ Este módulo de acción mueve el archivo especificado a la papelera de reciclaje
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td> [!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad desde la que desea eliminar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -237,7 +237,7 @@ Este módulo de acción mueve el archivo especificado a la papelera de reciclaje
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obtener un archivo]
 
 Este módulo de acción recupera el archivo mediante el ID proporcionado.
 
@@ -251,7 +251,7 @@ Este módulo de acción recupera el archivo mediante el ID proporcionado.
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td> [!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad desde la que desea recuperar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +261,7 @@ Este módulo de acción recupera el archivo mediante el ID proporcionado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a sharing link]
+#### [!UICONTROL Obtener un vínculo de uso compartido]
 
 Este módulo recupera un vínculo que puede compartir para dar acceso al archivo especificado.
 
@@ -275,7 +275,7 @@ Este módulo recupera un vínculo que puede compartir para dar acceso al archivo
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td> [!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad en la que desea cargar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -293,7 +293,7 @@ Este módulo recupera un vínculo que puede compartir para dar acceso al archivo
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Subir un archivo]
 
 Este módulo de acción carga un archivo binario o de texto en una carpeta especificada
 
@@ -307,7 +307,7 @@ Este módulo de acción carga un archivo binario o de texto en una carpeta espec
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td> [!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad en la que desea cargar un archivo.</p> </td> 
   </tr> 
   <tr> 

@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 80%
+source-wordcount: '3050'
+ht-degree: 85%
 
 ---
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -89,7 +89,7 @@ El conector de Workfront Proof utiliza lo siguiente:
 
 Puede crear una conexión con su cuenta de [!DNL Workfront Proof] directamente desde un módulo de [!DNL Workfront Fusion].
 
-1. En cualquier módulo de [!DNL Workfront Fusion], haga clic en [!UICONTROL **Agregar**] junto al campo [!UICONTROL Connection]
+1. En cualquier módulo de [!DNL Workfront Fusion], haga clic en [!UICONTROL **Añadir**] junto al campo [!UICONTROL Conexión]
 
 2. Rellene los campos siguientes:
 
@@ -152,10 +152,10 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 ### Activadores
 
 * [Ver el resumen del PDF](#watch-for-pdf-summary)
-* [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [[!UICONTROL Ver la actividad de revisión]](#watch-proof-activity)
 * [Ver pruebas](#watch-proofs)
 
-#### [!UICONTROL Watch for PDF Summary]
+#### [!UICONTROL Ver el resumen del PDF]
 
 Este módulo de activación instantánea ejecuta un escenario cuando alguien crea un resumen PDF para una prueba.
 
@@ -180,7 +180,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proof Activity]
+#### [!UICONTROL Ver actividad de la prueba]
 
 Este módulo de activación ejecuta un escenario cuando ocurre una actividad específica en una prueba.
 
@@ -207,7 +207,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proofs]
+#### [!UICONTROL Ver pruebas]
 
 Este módulo de activación programada ejecuta un escenario cuando alguien crea o toma una decisión sobre una prueba.
 
@@ -244,15 +244,15 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 ### Acciones
 
-* [[!UICONTROL Create Proof]](#create-proof)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download Proof]](#download-proof)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Request PDF Summary]](#request-pdf-summary)
-* [[!UICONTROL Update Proof]](#update-proof)
-* [[!UICONTROL Upload File]](#upload-file)
+* [[!UICONTROL Crear prueba]](#create-proof)
+* [[!UICONTROL Llamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Descargar prueba]](#download-proof)
+* [[!UICONTROL Leer un registro]](#read-a-record)
+* [[!UICONTROL Solicitar resumen de PDF]](#request-pdf-summary)
+* [[!UICONTROL Actualizar prueba]](#update-proof)
+* [[!UICONTROL Cargar archivo]](#upload-file)
 
-#### [!UICONTROL Create Proof]
+#### [!UICONTROL Crear prueba]
 
 <!--Cannot test Jan 2025-->
 
@@ -274,7 +274,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof Type]</td> 
-   <td> <p>Especifique si desea que la revisión creada tenga un flujo de trabajo básico o [!UICONTROL Automated Workflow].</p> <p>A continuación, rellene los campos que se muestran para el tipo de prueba elegido. Por ejemplo, si elige [!UICONTROL Automated Workflow], rellene el campo <strong>[!UICONTROL Workflow Stages]</strong> para configurar las fases.</p></td> 
+   <td> <p>Especifique si desea que la prueba creada tenga un flujo de trabajo básico o un [!UICONTROL Automated Workflow].</p> <p>A continuación, rellene los campos que se muestran para el tipo de prueba elegido. Por ejemplo, si elige [!UICONTROL Automated Workflow], rellene el campo <strong>[!UICONTROL Workflow Stages]</strong> para configurar las fases.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Allow original file to be downloaded]</td> 
@@ -385,7 +385,7 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td>Introduzca el tipo de prueba del SWF.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Show] [elemento]</td> 
+   <td>[!UICONTROL Show] [item]</td> 
    <td>Para cada elemento, seleccione si desea mostrarlo en la prueba.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -405,7 +405,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Llamada de API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Workfront Proof]. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los otros [!DNL Workfront Proof] módulos.
 
@@ -441,7 +441,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 >
 >![Ejemplo del módulo de API de prueba](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
-#### [!UICONTROL Download Proof]
+#### [!UICONTROL Descargar prueba]
 
 Este módulo de acción descarga el archivo de origen de una prueba concreta que identifica con su ID.
 
@@ -463,12 +463,12 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Escriba el identificador único de la revisión que se encuentra en la página [!UICONTROL Proof Details].  </td> 
+   <td> <p>Escriba el identificador único de la prueba, que se encuentra en la página [!UICONTROL Proof Details].  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL Leer un registro]
 
 Este módulo de acción lee datos de una sola revisión en [!DNL Workfront Proof].
 
@@ -503,7 +503,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Request PDF Summary]
+#### [!UICONTROL Solicitar resumen de PDF]
 
 Este módulo de acción solicita el resumen del PDF para una revisión en particular en [!DNL Workfront Proof].
 
@@ -536,10 +536,10 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 ##### Posible error
 
-* **Error**: &quot;[!UICONTROL You do not have privilege to perform this request. The stage must contain at least one recipient.]&quot;
+* **Error**: “[!UICONTROL No cuenta con privilegios para realizar esta solicitud. La fase debe contener al menos un destinatario]”.
 * **Solución**: asegúrese de que no es el único que está asignado a las fases del flujo de trabajo. Debe haber otro usuario asignado a las fases del flujo de trabajo.
 
-#### [!UICONTROL Update Proof]
+#### [!UICONTROL Actualizar revisión]
 
 Este módulo de acción actualiza una revisión existente en [!DNL Workfront Proof].
 
@@ -561,7 +561,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Escriba el identificador único de la revisión que se encuentra en la página [!UICONTROL Proof Details]. </td> 
+   <td> <p>Escriba el identificador único de la prueba, que se encuentra en la página [!UICONTROL Proof Details]. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -589,7 +589,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Seleccione si se permite que las personas que no son participantes se suscriban a la prueba.<br>Si selecciona esta opción, también puede seleccionar una opción en el campo [!UICONTROL Default Role].</td> 
+   <td>Seleccione si se permite que las personas que no son participantes se suscriban a la prueba.<br>Si selecciona esta opción, también puede seleccionar una opción en el campo [!UICONTROL Función predeterminada].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -630,9 +630,9 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL Cargar archivo]
 
-Este módulo de acción carga un archivo para utilizarlo con el módulo [!UICONTROL Create Proof] en [!DNL Workfront Proof].
+Este módulo de acción carga un archivo para utilizarlo con el módulo [!UICONTROL Crear revisión] en [!DNL Workfront Proof].
 
 El módulo devuelve un ID de hash para el archivo cargado. Puede asignar esta información en módulos subsiguientes en el escenario.
 
@@ -655,10 +655,10 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 ### Búsquedas
 
-* [[!UICONTROL List Workflow Templates]](#list-workflow-templates)
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL Plantillas de flujo de trabajo de pruebas]](#list-workflow-templates)
+* [[!UICONTROL Búsqueda]](#search)
 
-#### [!UICONTROL List Workflow Templates]
+#### [!UICONTROL Plantillas de flujo de trabajo de pruebas]
 
 Este módulo de búsqueda enumera todas las plantillas de flujo de trabajo disponibles.
 
@@ -681,7 +681,7 @@ Este módulo de búsqueda enumera todas las plantillas de flujo de trabajo dispo
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Búsqueda]
 
 Este módulo de búsqueda busca registros en un objeto de [!DNL Workfront Proof] que coincidan con la consulta de búsqueda especificada.
 
@@ -700,7 +700,7 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workfront Proof] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Search for]</td> 
+   <td>[!UICONTROL Buscar]</td> 
    <td> <p>Seleccione el tipo de registro que desea que busque el módulo.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Introduzca el Nombre de la revisión que desea buscar.</p> </li> 
@@ -709,7 +709,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Result Set]</td> 
-   <td>Indique si el módulo buscará <strong>[!UICONTROL All Matching Records]</strong> o solo <strong>[!UICONTROL First Matching Record]</strong>.</td> 
+   <td>Indique si el módulo buscará <strong>[!UICONTROL All Matching Records]</strong> o solo el <strong>[!UICONTROL First Matching Record]</strong>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Sort By]</td> 

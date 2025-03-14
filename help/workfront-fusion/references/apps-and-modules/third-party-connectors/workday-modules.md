@@ -5,10 +5,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 46%
+source-wordcount: '1027'
+ht-degree: 51%
 
 ---
 
@@ -41,7 +41,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -92,7 +92,7 @@ El conector de Workday utiliza lo siguiente:
 
 ## Conectar [!DNL Workday] a [!DNL Workfront Fusion]
 
-1. En cualquier módulo de [!DNL Workfront Fusion], haga clic en [!UICONTROL Add] junto al campo [!UICONTROL Connection]
+1. En cualquier módulo de [!DNL Workfront Fusion], haga clic en [!UICONTROL Añadir] junto al campo [!UICONTROL Conexión]
 
 2. Rellene los campos siguientes:
 
@@ -111,11 +111,11 @@ El conector de Workday utiliza lo siguiente:
                 <td>Escriba la dirección de su host [!DNL Workday] sin <code>https://</code>. Por ejemplo, <code>mycompany.workday.com</code></td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Services URL]</td>
+                <td role="rowheader">[!UICONTROL URL de servicios]</td>
                 <td>Escriba la dirección de los servicios web de [!DNL Workday] sin <code>https://</code>. Por ejemplo, <code>mycompany-services.workday.com</code></td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant name]</td>
+                <td  role="rowheader">[!UICONTROL Nombre de inquilino]</td>
                 <td>Escriba el inquilino de esta cuenta de [!DNL Workday]. El inquilino es el identificador de su organización y se puede ver en la dirección URL que utiliza para iniciar sesión en Workday. Ejemplo: en la dirección <code>https://www.myworkday.com/mycompany</code>, el usuario es <code>mycompany</code>.</td>
             </tr>
             <tr>
@@ -127,14 +127,14 @@ El conector de Workday utiliza lo siguiente:
                 <td>Escriba el Secreto de cliente para la aplicación [!DNL Workday] que utiliza esta conexión. Esto se obtiene al crear la aplicación en [!DNL Workday].</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Session timeout (min)]</td>
+                <td role="rowheader">[!UICONTROL Tiempo de espera de sesión (min)]</td>
                 <td >Introduzca el número de minutos tras los cuales caduca el token de autorización.</td>
             </tr>
         </tbody>
     </table>
 
 
-3. Haga clic en [!UICONTROL Continue] para guardar la conexión y volver al módulo
+3. Haga clic en [!UICONTROL Continuar] para guardar la conexión y volver al módulo
 
 ## Módulos de [!DNL Workday] y sus campos
 
@@ -153,14 +153,14 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [[!UICONTROL Create a record]](#create-a-record)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Eliminar un registro]](#delete-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL Realizar una llamada de API personalizada]](#make-a-custom-api-call)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Actualizar un registro]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Crear un registro]
 
 Este módulo de acción crea un único registro en [!DNL Workday].
 
@@ -181,13 +181,13 @@ Este módulo de acción crea un único registro en [!DNL Workday].
             <td>Introduzca o asigne el ID del registro que desea crear.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL Id. de subrecurso]</td>
             <td >Introduzca o asigne el ID del subrecurso que desea crear.</td>
         </tr>
     </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Eliminar un registro]
 
 Este módulo de acción elimina un único registro de [!DNL Workday].
 
@@ -206,11 +206,11 @@ Este módulo de acción elimina un único registro de [!DNL Workday].
             <td>Seleccione el tipo de registro que desea eliminar.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL Tipo de registro específico]</td>
             <td>Seleccione el tipo de registro específico que desea eliminar. Se basan en el tipo de registro elegido.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td  role="rowheader">[!UICONTROL Id. de subrecurso]</td>
             <td>Introduzca o asigne el ID del subrecurso que desea eliminar.</td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@ Este módulo de acción elimina un único registro de [!DNL Workday].
 </table>
 
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL Realizar una llamada de API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Workday]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Workday] módulos.
 
@@ -263,7 +263,7 @@ El módulo devuelve el código de estado, junto con los encabezados y el cuerpo 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Actualizar un registro]
 
 Este módulo de acción actualiza un único registro en [!DNL Workday].
 
@@ -273,7 +273,7 @@ Este módulo de acción actualiza un único registro en [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] a Workfront Fusion]</a></td>
+            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -284,7 +284,7 @@ Este módulo de acción actualiza un único registro en [!DNL Workday].
             <td>Introduzca o asigne el ID del registro que desea actualizar.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL Id. de subrecurso]</td>
             <td >Introduzca o asigne el ID del subrecurso que desea actualizar.</td>
         </tr>
     </tbody>
@@ -292,12 +292,12 @@ Este módulo de acción actualiza un único registro en [!DNL Workday].
 
 ### Buscar
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Leer un registro]](#read-a-record)
 
 * [[!UICONTROL List records]](#list-records)
 
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Leer un registro]
 
 Este módulo de acción lee un solo registro.
 
@@ -309,14 +309,14 @@ Este módulo de acción lee un solo registro.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] a Workfront Fusion]</a></td>
+            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
             <td>Seleccione el tipo de registro que desea eliminar.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL Tipo de registro específico]</td>
             <td>Seleccione el tipo de registro específico que desea leer. Se basan en el tipo de registro elegido.</td>
         </tr>
         <tr>

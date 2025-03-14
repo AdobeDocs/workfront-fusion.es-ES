@@ -4,18 +4,18 @@ description: La sección  [!DNL Adobe Workfront Fusion Tools] incluye varios mó
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 63%
+source-wordcount: '2286'
+ht-degree: 86%
 
 ---
 
-# [!UICONTROL Tools]
+# [!UICONTROL Herramientas]
 
 La sección [!DNL Adobe Workfront Fusion Tools] incluye varios módulos útiles que pueden mejorar su escenario.
 
-Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicaciones o en el icono de [!UICONTROL Tools] ![icono de herramientas](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en la parte inferior de la pantalla.
+Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicaciones o en el icono de [!UICONTROL Tools] ![Tools icon](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en la parte inferior de la pantalla.
 
 ## Requisitos de acceso
 
@@ -38,7 +38,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>No se requiere licencia de Workfront Fusion.</p>
+   <p>No se requiere licencia de Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -54,11 +54,11 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte Licencias de [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## [!UICONTROL Tools] y sus campos
+## [!UICONTROL Herramientas] y sus campos
 
 * [Activadores](#triggers)
 * [Acciones](#actions)
@@ -67,11 +67,11 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 ### Activadores
 
-#### [!UICONTROL Basic trigger]
+#### [!UICONTROL Activador básico]
 
 Este módulo le permite crear un activador personalizado y definir sus paquetes de entrada.
 
-Puede utilizar este módulo, por ejemplo, para contactos o cualquier otra lista que esté programada para enviarse a una dirección de correo electrónico especificada (como [!UICONTROL Email] >[!UICONTROL Send an Email] o [!DNL Gmail] >[!UICONTROL Send an Email] módulos), o como un simple recordatorio para activarse cuando desee.
+Puede usar este módulo, por ejemplo, para contactos o cualquier otra lista programada para enviarse a una dirección de correo electrónico especificada (como los módulos [!UICONTROL Correo electrónico] >[!UICONTROL Enviar un correo electrónico] o [!DNL Gmail] >[!UICONTROL Enviar un correo electrónico]), o como un simple recordatorio que se activará cuando quiera.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -86,18 +86,18 @@ Puede utilizar este módulo, por ejemplo, para contactos o cualquier otra lista 
 
 ### Acciones
 
-* [[!UICONTROL Get Multiple Variables]](#get-multiple-variables)
-* [[!UICONTROL Get Variable]](#get-variable)
-* [[!UICONTROL Increment function]](#increment-function)
-* [[!UICONTROL Set Multiple Variables]](#set-multiple-variables)
-* [[!UICONTROL Set Variable]](#set-variable)
-* [[!UICONTROL Sleep]](#sleep)
+* [[!UICONTROL Obtener múltiples variables]](#get-multiple-variables)
+* [[!UICONTROL Obtener variable]](#get-variable)
+* [[!UICONTROL Función de incremento]](#increment-function)
+* [[!UICONTROL Establecer varias variables]](#set-multiple-variables)
+* [[!UICONTROL Establecer variable]](#set-variable)
+* [[!UICONTROL Suspensión]](#sleep)
 
-#### [!UICONTROL Get Multiple Variables]
+#### [!UICONTROL Obtener múltiples variables]
 
-Este módulo recupera valores creados previamente por el módulo [!UICONTROL Set Variable] o [!UICONTROL Set Multiple Variables].
+Este módulo recupera valores creados anteriormente por el módulo [!UICONTROL Establecer variable] o [!UICONTROL Establecer múltiples variables].
 
-Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Get Multiple Variables]. El único requisito es que el módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] o [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] se ejecute antes que el módulo [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Obtener múltiples variables]. El único requisito es que el módulo [!UICONTROL Herramientas] > [!UICONTROL Establecer variable] o [!UICONTROL Herramientas] > [!UICONTROL Establecer múltiples variables] se ejecute antes que el módulo [!UICONTROL Herramientas] > [!UICONTROL Obtener múltiples variables].  Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
@@ -108,19 +108,19 @@ Este módulo puede leer variables que se establecieron en cualquier parte del es
 
 >[!BEGINSHADEBOX]
 
-**Ejemplos:** Los siguientes son posibles usos de los módulos [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]:
+**Ejemplos:** los siguientes son posibles usos de los módulos [!UICONTROL Establecer]/[!UICONTROL Obtener (múltiples) variables]:
 
 * Para almacenar un valor calculado para su uso posterior, incluso en una ruta diferente. Esto resulta útil en casos en los que el valor se utiliza en varios módulos y la fórmula para calcularlo es demasiado compleja.
-* Para depurar una fórmula. Si una fórmula utilizada en un módulo no proporciona aparentemente un resultado correcto, copie la fórmula y péguela en un módulo [!UICONTROL Set Variable] que inserte antes del módulo correspondiente. Desconecte los módulos después del módulo [!UICONTROL Set Variable] y ejecute el escenario. Compruebe el resultado del módulo [!UICONTROL Set Variable], ajuste o simplifique la fórmula, ejecute de nuevo el escenario y continúe haciéndolo hasta que se haya resuelto el problema.
+* Para depurar una fórmula. Si una fórmula utilizada en un módulo no proporciona aparentemente un resultado correcto, copie la fórmula y péguela en un módulo [!UICONTROL Establecer variable] que inserte antes del módulo correspondiente. Desconecte los módulos después del módulo [!UICONTROL Establecer variable] y ejecute el escenario. Compruebe el resultado del módulo [!UICONTROL Establecer variable], ajuste o simplifique la fórmula, ejecute de nuevo el escenario y continúe haciéndolo hasta que se haya resuelto el problema.
 
 >[!ENDSHADEBOX]
 
 
-#### [!UICONTROL Get Variable]
+#### [!UICONTROL Obtener variable]
 
-Este módulo recupera un valor que fue creado previamente por el módulo [!UICONTROL Set Variable] o [!UICONTROL Set Multiple Variables].
+Este módulo recupera un valor creado anteriormente por el módulo [!UICONTROL Establecer variable] o [!UICONTROL Establecer múltiples variables].
 
-Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Get Variable]. El único requisito es que el módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] o [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] se ejecute antes que el módulo [!UICONTROL Tools] > [!UICONTROL Get Variable]. Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a donde se encuentra el módulo [!UICONTROL Obtener variable]. El único requisito es que el módulo [!UICONTROL Herramientas] > [!UICONTROL Establecer variable] o [!UICONTROL Herramientas] > [!UICONTROL Establecer múltiples variables] se ejecute antes que el módulo [!UICONTROL Herramientas] > [!UICONTROL Obtener variable].  Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -133,7 +133,7 @@ Este módulo puede leer variables que se establecieron en cualquier parte del es
  </tbody> 
 </table>
 
-#### [!UICONTROL Increment function]
+#### [!UICONTROL Función de incremento]
 
 Este módulo devuelve un valor incrementado en 1 después de cada ciclo o cada escenario ejecutado.
 
@@ -165,12 +165,12 @@ El siguiente escenario envía un correo electrónico al primer destinatario desp
 
 Para crear este escenario, haga lo siguiente:
 
-1. Establezca el campo **[!UICONTROL Reset a value]** del módulo en Nunca.
+1. Establezca el campo **[!UICONTROL Restablecer un valor]** del módulo en Nunca.
 1. Defina la ruta para los valores impares. Establezca el filtro para esta ruta mediante la función de coincidencia de módulo igual a `1`:
 
    ![Números impares](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
-**Nota**: No olvide cambiar el operador [!UICONTROL Equal to] del operador [!UICONTROL Text] predeterminado al operador [!UICONTROL Numeric].
+**Nota**: no olvide cambiar el operador [!UICONTROL Igual a] del operador [!UICONTROL Texto] predeterminado al operador [!UICONTROL Numérico].
 
 1. Establezca la ruta para los valores pares utilizando la función de coincidencia de módulo igual a `0`:
 
@@ -178,9 +178,9 @@ La función de incremento añade uno cada vez que se ejecuta el escenario. Los f
 
 >[!ENDSHADEBOX]
 
-#### [!UICONTROL Set Multiple Variables]
+#### [!UICONTROL Establecer múltiples variables]
 
-Este módulo crea variables que otros módulos pueden asignar en la ruta. La variable también se puede asignar a los módulos [!UICONTROL Get Variable] o [!UICONTROL Get Multiple Variables] para cualquier ruta del escenario.
+Este módulo crea variables que otros módulos pueden asignar en la ruta. La variable también se puede asignar a los módulos [!UICONTROL Obtener variable] u [!UICONTROL Obtener varias variables] para cualquier ruta del escenario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -194,16 +194,16 @@ Este módulo crea variables que otros módulos pueden asignar en la ruta. La var
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Seleccione el tiempo que desea que las variables sigan siendo válidas (mantengan el mismo valor).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: la variable es válida para un ciclo. Esto resulta útil cuando se reciben varios webhooks en una ejecución de escenario, porque más webhooks crean más ciclos. </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: la variable es válida durante un ciclo. Esto resulta útil cuando se reciben varios webhooks en una ejecución de escenario, porque más webhooks crean más ciclos. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: la variable es válida para una ejecución de escenario. Una ejecución puede contener uno o más ciclos.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Set Variable]
+#### [!UICONTROL Establecer variable]
 
-Este módulo crea una variable que otros módulos pueden asignar en la ruta. La variable también se puede asignar a los módulos [!UICONTROL Get Variable] o [!UICONTROL Get Multiple Variables] para cualquier ruta del escenario.
+Este módulo crea una variable que otros módulos pueden asignar en la ruta. La variable también se puede asignar a los módulos [!UICONTROL Obtener variable] u [!UICONTROL Obtener varias variables] para cualquier ruta del escenario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -217,7 +217,7 @@ Este módulo crea una variable que otros módulos pueden asignar en la ruta. La 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Seleccione el tiempo que desea que las variables sigan siendo válidas (mantengan el mismo valor).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: la variable es válida para un ciclo. Resulta útil cuando se reciben varios webhooks en una ejecución de escenario (más webhooks = más ciclos). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: la variable es válida durante un ciclo. Resulta útil cuando se reciben varios webhooks en una ejecución de escenario (más webhooks = más ciclos). </li> 
      <li><strong>[!UICONTROL One execution]</strong>: la variable es válida para una ejecución de escenario. Una ejecución puede contener uno o más ciclos.</li> 
     </ul> </td> 
   </tr> 
@@ -228,7 +228,7 @@ Este módulo crea una variable que otros módulos pueden asignar en la ruta. La 
  </tbody> 
 </table>
 
-#### [!UICONTROL Sleep]
+#### [!UICONTROL Suspensión]
 
 Este módulo le permite retrasar el flujo del escenario hasta 300 segundos (5 minutos).
 
@@ -256,15 +256,15 @@ Esta función puede resultar útil, por ejemplo, si desea reducir la carga del s
 >
 ><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->Para obtener más información sobre módulos de almacén de datos específicos, vea [[!UICONTROL Data store] módulos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
+>Para obtener más información sobre módulos de almacenes de datos específicos, consulte [[!UICONTROL Módulos de almacenes de datos]](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
 ### Agregadores
 
-* [[!UICONTROL Numeric aggregator]](#numeric-aggregator)
-* [[!UICONTROL Table aggregator]](#table-aggregator)
-* [[!UICONTROL Text aggregator]](#text-aggregator)
+* [[!UICONTROL Agregador numérico]](#numeric-aggregator)
+* [[!UICONTROL Agregador de tablas]](#table-aggregator)
+* [[!UICONTROL Agregador de texto]](#text-aggregator)
 
-#### [!UICONTROL Numeric aggregator]
+#### [!UICONTROL Agregador numérico]
 
 Este módulo le permite recuperar valores numéricos y, a continuación, aplicar una de las funciones seleccionadas (SUM, AVG, COUNT, MAX, MIN) y devolver el resultado en un paquete.
 
@@ -295,7 +295,7 @@ Este módulo le permite recuperar valores numéricos y, a continuación, aplicar
  </tbody> 
 </table>
 
-#### [!UICONTROL Table aggregator]
+#### [!UICONTROL Agregador de tablas]
 
 Este módulo combina los valores de los campos seleccionados de los paquetes recibidos en un solo paquete utilizando un separador de columnas y filas especificado (que le permite crear una tabla).
 
@@ -313,11 +313,11 @@ Este módulo combina los valores de los campos seleccionados de los paquetes rec
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>Seleccione o introduzca el tipo de separador que separará las columnas de valor de campo en el paquete resultante. Si selecciona [!UICONTROL Other], escriba el carácter que desee utilizar para separar valores en el campo separador.</p> </td> 
+   <td> <p>Seleccione o introduzca el tipo de separador que separará las columnas de valor de campo en el paquete resultante. Si selecciona [!UICONTROL Other], introduzca el carácter que desea utilizar para separar valores en el campo separador.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Seleccione o introduzca el tipo de separador que separará las filas de valor de campo en el paquete resultante. Si selecciona [!UICONTROL Other], escriba el carácter que desee utilizar para separar valores en el campo separador.</p> </td> 
+   <td> <p>Seleccione o introduzca el tipo de separador que separará las filas de valor de campo en el paquete resultante. Si selecciona [!UICONTROL Other], introduzca el carácter que desea utilizar para separar valores en el campo separador.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -330,7 +330,7 @@ Este módulo combina los valores de los campos seleccionados de los paquetes rec
  </tbody> 
 </table>
 
-#### [!UICONTROL Text aggregator]
+#### [!UICONTROL Agregador de texto]
 
 Este módulo combina los valores de los campos seleccionados de los paquetes recibidos en un solo paquete.
 
@@ -344,7 +344,7 @@ Este módulo combina los valores de los campos seleccionados de los paquetes rec
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Seleccione o introduzca el tipo de separador que separará las filas de valor de campo en el paquete resultante. Si selecciona [!UICONTROL Other], escriba el carácter que desee utilizar para separar valores en el campo separador.</p> </td> 
+   <td> <p>Seleccione o introduzca el tipo de separador que separará las filas de valor de campo en el paquete resultante. Si selecciona [!UICONTROL Other], introduzca el carácter que desea utilizar para separar valores en el campo separador.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -369,11 +369,11 @@ Este módulo combina los valores de los campos seleccionados de los paquetes rec
 
 ### Transformadores
 
-* [[!UICONTROL Compose a string]](#compose-a-string)
-* [[!UICONTROL Convert the encoding of the text]](#convert-the-encoding-of-the-text)
-* [[!UICONTROL Switch]](#switch)
+* [[!UICONTROL Escribir una cadena]](#compose-a-string)
+* [[!UICONTROL Convertir la codificación del texto]](#convert-the-encoding-of-the-text)
+* [[!UICONTROL Conmutador]](#switch)
 
-#### [!UICONTROL Compose a string]
+#### [!UICONTROL Escribir una cadena]
 
 Convierte cualquier valor en un tipo de datos de cadena (texto). Esto facilita la asignación al asignar, por ejemplo, datos binarios.
 
@@ -388,7 +388,7 @@ Convierte cualquier valor en un tipo de datos de cadena (texto). Esto facilita l
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert the encoding of the text]
+#### [!UICONTROL Convertir la codificación del texto]
 
 Convierte el texto de entrada (o los datos binarios) a la codificación seleccionada.
 
@@ -411,7 +411,7 @@ Convierte el texto de entrada (o los datos binarios) a la codificación seleccio
  </tbody> 
 </table>
 
-#### [!UICONTROL Switch]
+#### [!UICONTROL Conmutador]
 
 Comprueba si el valor de entrada coincide con la lista de valores proporcionada. Devuelve la salida en función del resultado.
 
@@ -438,7 +438,7 @@ Comprueba si el valor de entrada coincide con la lista de valores proporcionada.
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> Para cada caso que desee agregar, haga clic en <b>Agregar elemento</b> e introduzca el patrón y el resultado del elemento. <p>Si la entrada contiene un valor introducido en el campo [!UICONTROL Pattern], se devuelve el valor introducido en el campo [!UICONTROL Output].</p> <p>Si la entrada no coincide con ninguno de los valores establecidos en un campo [!UICONTROL Pattern], se producirá una de las siguientes situaciones:</p> 
+   <td> Para cada caso que desee agregar, haga clic en <b>Agregar elemento</b> e introduzca el patrón y el resultado del elemento. <p>Si la entrada contiene un valor introducido en el campo [!UICONTROL Pattern], se devuelve el valor introducido en el campo [!UICONTROL Output].</p> <p>Si la entrada no coincide con ninguno de los valores establecidos en un campo de [!UICONTROL Pattern], se produce una de las siguientes situaciones:</p> 
     <ul> 
      <li>Se devuelve el valor del campo [!UICONTROL Else]</li> 
      <li>Si no hay ningún valor en el campo [!UICONTROL Else], no se devuelve ningún resultado.</li> 

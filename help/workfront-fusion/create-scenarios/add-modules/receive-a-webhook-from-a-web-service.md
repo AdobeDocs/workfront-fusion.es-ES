@@ -4,10 +4,10 @@ description: Si un servicio web no tiene actualmente un conector específico en 
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 29%
+source-wordcount: '373'
+ht-degree: 28%
 
 ---
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -60,7 +60,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 ## Recepción de un webhook
 
-1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar un webhook.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Agregue el módulo **Webhooks > Webhook personalizado** para comenzar su escenario.

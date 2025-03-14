@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , es posible auto
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: ddebec2d03d9d843c46182d92df6c8a871799999
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 66%
+source-wordcount: '1962'
+ht-degree: 80%
 
 ---
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -87,7 +87,7 @@ El conector Microsoft Office 365 Calendar utiliza lo siguiente:
 
 ## Conexión del servicio de [!DNL Office 365 Calendar] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Office 365 Calendar] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365 Calendar] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -109,14 +109,14 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Evento
 
-* [[!UICONTROL Create an Event]](#create-an-event)
-* [[!UICONTROL Delete an Event]](#delete-an-event)
-* [[!UICONTROL Get an Event]](#get-an-event)
-* [[!UICONTROL Search Events]](#search-events)
-* [[!UICONTROL Update an Event]](#update-an-event)
-* [[!UICONTROL Watch Events]](#watch-events)
+* [[!UICONTROL Crear un evento]](#create-an-event)
+* [[!UICONTROL Eliminar un evento]](#delete-an-event)
+* [[!UICONTROL Obtener un evento]](#get-an-event)
+* [[!UICONTROL Buscar eventos]](#search-events)
+* [[!UICONTROL Actualizar un evento]](#update-an-event)
+* [[!UICONTROL Ver eventos]](#watch-events)
 
-#### [!UICONTROL Create an Event]
+#### [!UICONTROL Crear un evento]
 
 Este módulo de acción crea un nuevo evento.
 
@@ -162,9 +162,9 @@ Este módulo de acción crea un nuevo evento.
    <td> <p>Seleccione la confidencialidad de este evento.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve un mensaje "[!UICONTROL Please treat this as Personal]".</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>El destinatario ve un mensaje "[!UICONTROL Please treat this as Private]". Las reglas de la bandeja de entrada del destinatario no reenvían ni redirigen este evento.</p> </li> 
-     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>El destinatario ve un mensaje "[!UICONTROL Please treat this as Confidential]". </p> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Personal]”. </p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Private]”. Las reglas de la bandeja de entrada del destinatario no reenvían ni redirigen este evento.</p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Confidential]”. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ Este módulo de acción crea un nuevo evento.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Introduzca o asigne el cuerpo del mensaje asociado con el evento. Puede estar en formato de HTML o texto (como se especifica en el campo [!UICONTROL Body Content Type] anterior).</td> 
+   <td>Introduzca o asigne el cuerpo del mensaje asociado con el evento. Puede tener el formato HTML o de texto (como se especifica en el campo [!UICONTROL Body Content Type] anterior).</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -204,13 +204,13 @@ Este módulo de acción crea un nuevo evento.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Categories]</td> 
+   <td role="rowheader">[!UICONTROL Categorías]</td> 
    <td>Para cada categoría que desee que muestre el evento como en el calendario, haga clic en <b>Agregar elemento</b> y escriba o asigne la categoría.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Event]
+#### [!UICONTROL Eliminar un evento]
 
 Este módulo de acción elimina un evento existente.
 
@@ -229,7 +229,7 @@ Este módulo de acción elimina un evento existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Event]
+#### [!UICONTROL Obtener un evento]
 
 Este módulo de acción recupera detalles del evento especificado.
 
@@ -248,7 +248,7 @@ Este módulo de acción recupera detalles del evento especificado.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Events]
+#### [!UICONTROL Buscar eventos]
 
 Este módulo de búsqueda recupera los detalles de un evento cuando este se crea, actualiza, elimina, inicia o finaliza en el calendario seleccionado.
 
@@ -283,9 +283,9 @@ Este módulo de búsqueda recupera los detalles de un evento cuando este se crea
    <td role="rowheader">[!UICONTROL Order by]</td> 
    <td> <p>Seleccione cómo desea ordenar los resultados.</p> 
     <ul> 
-     <li><strong>[!UICONTROL Subject]</strong>, ascendente o descendente</li> 
-     <li><strong>[!UICONTROL Created Date Time]</strong>, ascendente o descendente</li> 
-     <li><strong>[!UICONTROL Last Modified Date Time]</strong>, ascendente o descendente</li> 
+     <li><strong>[!UICONTROL Subject]</strong>, de subida o de bajada</li> 
+     <li><strong>[!UICONTROL Created Date Time]</strong>, de subida o de bajada</li> 
+     <li><strong>[!UICONTROL Last Modified Date Time]</strong>, de subida o de bajada</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -295,7 +295,7 @@ Este módulo de búsqueda recupera los detalles de un evento cuando este se crea
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an Event]
+#### [!UICONTROL Actualizar un evento]
 
 Este módulo de acción actualiza un evento existente.
 
@@ -345,9 +345,9 @@ Este módulo de acción actualiza un evento existente.
    <td> <p>Seleccione la confidencialidad de este evento.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve un mensaje "[!UICONTROL Please treat this as Personal]".</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>El destinatario ve un mensaje "[!UICONTROL Please treat this as Private]". Las reglas de la bandeja de entrada del destinatario no reenvían ni redirigen este evento.</p> </li> 
-     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>El destinatario ve un mensaje "[!UICONTROL Please treat this as Confidential]". </p> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Personal]”. </p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Private]”. Las reglas de la bandeja de entrada del destinatario no reenvían ni redirigen este evento.</p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Confidential]”. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -356,7 +356,7 @@ Este módulo de acción actualiza un evento existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Introduzca o asigne el cuerpo del mensaje asociado con el evento. Puede estar en formato de HTML o texto (como se especifica en el campo [!UICONTROL Body Content Type] anterior).</td> 
+   <td>Introduzca o asigne el cuerpo del mensaje asociado con el evento. Puede tener el formato HTML o de texto (como se especifica en el campo [!UICONTROL Body Content Type] anterior).</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -393,13 +393,13 @@ Este módulo de acción actualiza un evento existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Events]
+#### [!UICONTROL Ver eventos]
 
 Este módulo de activador recupera los detalles de un evento cuando el evento se crea, actualiza, elimina, inicia o finaliza en el calendario seleccionado.
 
 >[!NOTE]
 >
->Para buscar ocurrencias eliminadas de una serie de eventos, seleccione [!UICONTROL By Updated Time] en el campo [!UICONTROL Watch events]. Este módulo no ve los eventos únicos eliminados ni las series de eventos eliminadas.
+>Para buscar ocurrencias eliminadas de una serie de eventos, seleccione [!UICONTROL Por hora de actualización] en el campo [!UICONTROL Ver eventos]. Este módulo no ve los eventos únicos eliminados ni las series de eventos eliminadas.
 
 
 <table style="table-layout:auto"> 
@@ -439,15 +439,15 @@ Este módulo de activador recupera los detalles de un evento cuando el evento se
 
 ### Calendario
 
-* [[!UICONTROL Create a Calendar]](#create-a-calendar)
-* [[!UICONTROL Delete a Calendar]](#delete-a-calendar)
-* [[!UICONTROL Get a Calendar]](#get-a-calendar)
-* [[!UICONTROL List Calendars]](#list-calendars)
-* [[!UICONTROL Update a Calendar]](#update-a-calendar)
+* [[!UICONTROL Crear un calendario]](#create-a-calendar)
+* [[!UICONTROL Eliminar un calendario]](#delete-a-calendar)
+* [[!UICONTROL Obtener un calendario]](#get-a-calendar)
+* [[!UICONTROL Enumerar calendarios]](#list-calendars)
+* [[!UICONTROL Actualizar un calendario]](#update-a-calendar)
 
 
 
-#### [!UICONTROL Create a Calendar]
+#### [!UICONTROL Crear un calendario]
 
 Este módulo de acción crea un nuevo calendario en su cuenta de Office 365.
 
@@ -466,7 +466,7 @@ Este módulo de acción crea un nuevo calendario en su cuenta de Office 365.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Calendar]
+#### [!UICONTROL Eliminar un calendario]
 
 Este módulo de acción elimina un calendario existente.
 
@@ -480,12 +480,12 @@ Este módulo de acción elimina un calendario existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>Escriba el identificador [!UICONTROL Calendar] del calendario que desea eliminar.</td> 
+   <td>Escriba el ID de [!UICONTROL Calendar] del calendario que desea eliminar.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Calendar]
+#### [!UICONTROL Obtener un calendario]
 
 Este módulo de acción recupera detalles sobre un solo calendario.
 
@@ -504,7 +504,7 @@ Este módulo de acción recupera detalles sobre un solo calendario.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Calendars]
+#### [!UICONTROL Enumerar calendarios]
 
 Este módulo de búsqueda recupera una lista de todos los calendarios del usuario autenticado.
 
@@ -527,7 +527,7 @@ Este módulo de búsqueda recupera una lista de todos los calendarios del usuari
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Calendar]
+#### [!UICONTROL Actualizar un calendario]
 
 Este módulo de acción edita un calendario existente.
 
@@ -541,7 +541,7 @@ Este módulo de acción edita un calendario existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>Escriba [!UICONTROL Calendar ID] para el calendario que desea actualizar. </td> 
+   <td>Escriba el [!UICONTROL Calendar ID] del calendario que desea actualizar. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New Calendar name]</td> 
@@ -552,7 +552,7 @@ Este módulo de acción edita un calendario existente.
 
 ### Otro
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realizar una llamada de API]
 
 Este módulo le permite realizar una llamada de API personalizada.
 

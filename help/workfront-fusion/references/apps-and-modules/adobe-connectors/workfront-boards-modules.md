@@ -4,10 +4,10 @@ description: Puede utilizar el conector de tableros de Adobe Workfront para auto
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 12%
+source-wordcount: '2869'
+ht-degree: 18%
 
 ---
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -93,7 +93,7 @@ El conector de los paneles de Adobe Workfront utiliza lo siguiente:
 
 Para crear una conexión de Workfront Boards:
 
-1. En cualquier módulo de [!DNL Adobe Workfront Boards], haga clic en **[!UICONTROL Add]** junto al cuadro Conexión.
+1. En cualquier módulo de [!DNL Adobe Workfront Boards], haga clic en **[!UICONTROL Añadir]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 
@@ -119,11 +119,11 @@ Para crear una conexión de Workfront Boards:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>
-          <td>Escriba su [!DNL Adobe] [!UICONTROL Client ID]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].</td>
+          <td>Introduzca su [!UICONTROL Client ID] [!DNL Adobe]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]<p>(Opcional)</p></td>
-          <td>Escriba su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].
+          <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret].  Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Authentication URL]<p>(Opcional)</p></td>
@@ -135,7 +135,7 @@ Para crear una conexión de Workfront Boards:
         </tr>
       </tbody>
     </table>
-1. Haga clic en **[!UICONTROL Continue]** para guardar la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
 ## Módulos de tableros de Adobe Workfront y sus campos
 
@@ -178,7 +178,7 @@ Este módulo de acción agrega un elemento de lista de comprobación a la tarjet
    <td>Introduzca o asigne el ID de la tarjeta a la que desea agregar un elemento de lista de comprobación.<p>Puede encontrar el ID de la tarjeta en la dirección URL cuando la visualice en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Checklist items]</td> 
+   <td>[!UICONTROL Elementos de lista de comprobación]</td> 
    <td>Para cada elemento de la lista de comprobación que desee agregar, haga clic en Agregar elemento, escriba el nombre del elemento de la lista de comprobación y seleccione si el elemento se ha completado.</p></td> 
   </tr> 
  </tbody> 
@@ -197,7 +197,7 @@ Este módulo de acción agrega una subtarea a una tarjeta en los paneles. La tar
       <td> <p>Puede utilizar una conexión existente de Workfront para conectarse a los tableros de Workfront o puede utilizar una conexión específica de los tableros de Workfront. </p><p>Para obtener instrucciones sobre cómo conectar su aplicación [!DNL Workfront] a [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Crear una conexión a los paneles de Workfront</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Parent card ID]</td> 
+   <td>[!UICONTROL Id. de tarjeta principal]</td> 
    <td>Introduzca o asigne el ID de la tarjeta a la que desea agregar una subtarea.<p>Puede encontrar el ID de la tarjeta en la dirección URL cuando la visualice en Workfront.</p></td> 
   </tr> 
   <tr> 
@@ -228,7 +228,7 @@ Este módulo de acción crea una nueva tarjeta en un tablero de Workfront.
    <td>Introduzca o asigne el ID del tablero al que desea agregar una tarjeta.<p>Puede encontrar el ID del tablero en la URL cuando visualice el tablero en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL Id. de columna]</td> 
    <td>Introduzca o asigne el ID de la columna a la que desea agregar una subtarea.<p>Puede encontrar el ID de columna en la información que devuelve el módulo Leer un tablero.</p></td> 
   </tr> 
   <tr> 
@@ -259,7 +259,7 @@ Este módulo de acción mueve una tarjeta a una columna diferente en el mismo ta
    <td>Introduzca o asigne el ID del tablero que contiene la tarjeta que desea mover.<p>Puede encontrar el ID del tablero en la URL cuando visualice el tablero en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination column ID]</td> 
+   <td>[!UICONTROL ID de columna de destino]</td> 
    <td>Introduzca o asigne el ID de la columna a la que desea mover la tarjeta.<p>Puede encontrar el ID de columna en la información que devuelve el módulo Leer un tablero.</p></td> 
   </tr> 
   <tr> 
@@ -355,7 +355,7 @@ Este módulo de acción crea un tablero en Workfront. Puede especificar el tipo 
       <td> <p>Puede utilizar una conexión existente de Workfront para conectarse a los tableros de Workfront o puede utilizar una conexión específica de los tableros de Workfront. </p><p>Para obtener instrucciones sobre cómo conectar su aplicación [!DNL Workfront] a [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Crear una conexión a los paneles de Workfront</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board name]</td> 
+   <td>[!UICONTROL Nombre de tablero]</td> 
    <td>Introduzca o asigne un nombre para el nuevo tablero.</td> 
   </tr> 
   <tr> 
@@ -407,11 +407,11 @@ Este módulo de acción crea una nueva columna en el tablero especificado.
    <td>Introduzca o asigne el ID del tablero al que desea agregar una columna.<p>Puede encontrar el ID del tablero en la URL cuando visualice el tablero en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL Id. de columna]</td> 
    <td>Introduzca o asigne el ID de la columna que desea actualizar.<p>Puede encontrar el ID de columna en la información que devuelve el módulo Leer un tablero.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column name]</td> 
+   <td>[!UICONTROL Nombre de columna]</td> 
    <td>Introduzca o asigne un nombre nuevo para la columna.</td> 
   </tr> 
  </tbody> 
@@ -434,7 +434,7 @@ Este módulo de búsqueda devuelve información sobre la columna con el nombre e
    <td>Introduzca o asigne el ID del tablero que contiene la columna que desea recuperar.<p>Puede encontrar el ID del tablero en la URL cuando visualice el tablero en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL Nombre de columna]</td> 
    <td>Introduzca o asigne el nombre de la columna que desea recuperar.</td> 
   </tr> 
  </tbody> 
@@ -457,11 +457,11 @@ Este módulo de acción actualiza el nombre o el límite de trabajo en curso de 
    <td>Introduzca o asigne el ID del tablero que contiene la columna que desea recuperar.<p>Puede encontrar el ID del tablero en la URL cuando visualice el tablero en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL Nombre de columna]</td> 
    <td>Introduzca o asigne el nombre de la columna que desea recuperar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
+   <td>[!UICONTROL Límite WIP]</td> 
    <td>Introduzca o asigne un nuevo límite de WIP para la columna.</td> 
   </tr> 
  </tbody> 
@@ -516,11 +516,11 @@ Este módulo de acción crea una etiqueta nueva y le asigna un color.
    <td>Introduzca o asigne el ID del tablero para el que desea crear una etiqueta.<p>Puede encontrar el ID del tablero en la URL cuando visualice el tablero en Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag name]</td> 
+   <td>[!UICONTROL Nombre de etiqueta]</td> 
    <td>Introduzca o asigne un nombre para la nueva etiqueta.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag Color]</td> 
+   <td>[!UICONTROL Color de etiqueta]</td> 
    <td>Seleccione el color de esta etiqueta.</td> 
   </tr> 
  </tbody> 
@@ -639,11 +639,11 @@ Este módulo de acción realiza una solicitud personalizada de GraphQL a la API 
    <td> <p>Añada la consulta para la llamada de API en forma de objeto JSON estándar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td role="rowheader">[!UICONTROL Nombre de operación]</td> 
    <td> <p>Introduzca un nombre para esta operación. Esto puede facilitar el seguimiento y la depuración de la llamada.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td role="rowheader">[!UICONTROL Origen de datos de variables]</td> 
    <td> <p>Seleccione si las variables procederán de un formulario o de una colección.</p> </td> 
   </tr> 
   <tr> 

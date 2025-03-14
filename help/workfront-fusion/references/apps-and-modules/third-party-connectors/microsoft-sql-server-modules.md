@@ -4,10 +4,10 @@ description: Puede usar [!DNL Adobe Workfront Fusion] para conectarse a Microsof
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 83%
+source-wordcount: '498'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
    <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
@@ -60,7 +60,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
 ## Conexión con el servicio [!DNL Microsoft SQL Server] a [!DNL Workfront Fusion]
 
-Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Microsoft SQL Server] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión con [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Microsoft SQL Server] a [!UICONTROL Workfront Fusion], consulte [Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Para obtener más información acerca de cómo crear un procedimiento almacenado
 >
 >[!DNL Workfront Fusion] no admite varios conjuntos de registros. Solo se procesa el primero.
 
-## Solucionando problemas de error [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
+## Error de solución de problemas [!UICONTROL ER_LOCK_WAIT_TIMEOUT: tiempo de espera de bloqueo superado; intente reiniciar la transacción]
 
 Este error se produce cuando se modifican los mismos datos utilizando varios módulos. Se debe a transacciones SQL.
 
@@ -94,6 +94,6 @@ Si otro módulo intenta acceder a los mismos datos, debe esperar hasta que final
 
 Activar la confirmación automática. La confirmación automática finaliza (confirma) todas las transacciones inmediatamente después de que se haya completado la ejecución del módulo.
 
-1. Haga clic en el icono [!UICONTROL Scenario settings] ![icono de configuración de escenario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)en la parte inferior de la pantalla.
-1. Haga clic en la casilla **[!UICONTROL Auto commit]**.
+1. Haga clic en el icono [!UICONTROL Configuración de escenario] ![Icono de configuración de escenario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)en la parte inferior de la pantalla.
+1. Haga clic en la casilla de verificación **[!UICONTROL Auto commit]**.
 1. Haga clic en **[!UICONTROL OK]** para guardar la configuración del escenario.
