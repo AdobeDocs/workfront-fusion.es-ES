@@ -4,10 +4,10 @@ description: La automatización del trabajo requiere un procesamiento rápido, p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 74%
+source-wordcount: '871'
+ht-degree: 65%
 
 ---
 
@@ -55,8 +55,8 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 ## Webhooks
 
 * El tamaño máximo predeterminado de una carga útil es de **5 MB**.
-* Los enlaces web están limitados a **100 solicitudes por segundo**. Cuando se alcanza este límite, Workfront Fusion envía un estado 429 ([!UICONTROL Too Many Requests]).
-* [!DNL Workfront Fusion] almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de gancho web más de 30 días después de recibirla provoca el error &quot;[!UICONTROL Failed to read file from storage.]&quot;
+* Los enlaces web están limitados a **100 solicitudes por segundo**. Cuando se alcanza este límite, Workfront Fusion envía un estado 429 ([!UICONTROL Demasiadas solicitudes]).
+* [!DNL Workfront Fusion] almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de webhook más de 30 días después de recibirla provoca el error “[!UICONTROL No se pudo leer el archivo desde el almacenamiento.]”
 * Los webhooks se desactivan automáticamente si se aplica cualquiera de las siguientes opciones:
 
    * El webhook no ha estado conectado a ningún escenario durante más de 5 días
@@ -76,3 +76,17 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 ## Reintentos
 
 * Al utilizar el módulo Break y especificar la directiva de reintento, si un escenario falla de forma consecutiva 10 veces dentro de un periodo de tiempo de 2 minutos, el escenario se desactivará automáticamente.
+
+## Recursión
+
+La recursión se produce cuando un escenario déclencheur déclencheur una nueva ejecución de sí mismo, lo que provoca una nueva ejecución, y así sucesivamente en un bucle infinito.
+
+Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea una tarea. La tarea recién creada déclencheur de nuevo el escenario, lo que crea otra tarea. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta, se crea una tarea.
+
+La recursión puede causar problemas de rendimiento tanto para la organización propietaria del escenario recursivo como para otras organizaciones.
+
+Tenga en cuenta lo siguiente con respecto a la recursión:
+
+* **Cuando un escenario está causando recursión, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
+* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluye acciones que lo déclencheur.
+
