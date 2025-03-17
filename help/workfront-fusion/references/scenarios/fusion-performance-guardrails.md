@@ -4,10 +4,10 @@ description: La automatización del trabajo requiere un procesamiento rápido, p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 65%
+source-wordcount: '880'
+ht-degree: 64%
 
 ---
 
@@ -81,12 +81,12 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 
 La recursión se produce cuando un escenario déclencheur déclencheur una nueva ejecución de sí mismo, lo que provoca una nueva ejecución, y así sucesivamente en un bucle infinito.
 
-Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea una tarea. La tarea recién creada déclencheur de nuevo el escenario, lo que crea otra tarea. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta, se crea una tarea.
+Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea dos tareas. Las tareas recién creadas vuelven a almacenar en déclencheur el escenario, lo que crea cuatro tareas nuevas. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta, se duplica el número de tareas. El número de tareas aumenta exponencialmente.
 
 La recursión puede causar problemas de rendimiento tanto para la organización propietaria del escenario recursivo como para otras organizaciones.
 
 Tenga en cuenta lo siguiente con respecto a la recursión:
 
 * **Cuando un escenario está causando recursión, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
-* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluye acciones que lo déclencheur.
+* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo déclencheur.
 
