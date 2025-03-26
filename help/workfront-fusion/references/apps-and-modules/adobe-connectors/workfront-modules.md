@@ -4,10 +4,10 @@ description: Puede utilizar el conector Adobe Workfront Fusion Adobe Workfront p
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
 workflow-type: tm+mt
-source-wordcount: '6684'
-ht-degree: 61%
+source-wordcount: '7075'
+ht-degree: 60%
 
 ---
 
@@ -849,6 +849,79 @@ Al configurar este módulo, se muestran los campos siguientes.
 </table>
 
 Vea una lista de los tipos de objetos Workfront para los que puede usar este módulo en [tipos de objetos Workfront disponibles para cada módulo Workfront](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **Actualizar la versión de carga de eventos**
+
+Workfront acaba de lanzar una nueva versión de su servicio de suscripción a eventos. La nueva versión no es un cambio en la API de Workfront, sino un cambio en la funcionalidad de suscripción de evento. Este módulo de acción actualiza la versión de carga útil de evento utilizada para este escenario.
+
+Para obtener más información sobre la nueva versión de suscripción de evento, consulte [Versiones de suscripción de evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar Workfront a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Version]</td> 
+   <td> Seleccione la versión de la suscripción de evento que desea utilizar para esta carga útil. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
++++
+
++++ **Actualizar un registro (adjuntando formularios personalizados)**
+
+
+Este módulo de acción actualiza un objeto, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
+
+Especifique el identificador del registro.
+
+El módulo devuelve el ID del objeto y cualquier campo asociado, junto con cualquier campo personalizado y valor al que acceda la conexión. Puede asignar esta información en módulos subsiguientes en el escenario.
+
+Al configurar este módulo, se muestran los campos siguientes.
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar Workfront a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL ID]</td> 
+   <td> <p>Introduzca el ID único de Workfront del registro que desea que actualice el módulo.</p> <p>Para obtener el ID, abra el objeto Workfront en el explorador y copie el texto al final de la dirección URL después de "ID=". Por ejemplo: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Record Type]</td> 
+   <td> <p>Seleccione el tipo de registro de Workfront que desea que actualice el módulo.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Select fields to map]</td> 
+   <td>Seleccione los campos que desea que estén disponibles para la entrada de datos. Esto le permite utilizar estos campos sin tener que desplazarse por los que no necesita. A continuación, puede introducir o asignar datos en estos campos.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Attach Custom Form]</td> 
+   <td>Seleccione los formularios personalizados que desee adjuntar al nuevo registro. Después de seleccionar el formulario, escriba los datos de los campos de ese formulario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Vea una lista de los tipos de objetos Workfront para los que puede usar este módulo en [tipos de objetos Workfront disponibles para cada módulo Workfront](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+> Al introducir el texto de un campo personalizado o un objeto [!UICONTROL Nota] (comentario o respuesta), puede usar etiquetas de HTML en el campo [!UICONTROL Texto de nota] para crear texto enriquecido, como texto en negrita o en cursiva.
+
 
 +++
 
