@@ -4,9 +4,9 @@ description: Con los módulos de Adobe Photoshop, puede iniciar un escenario de 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '4352'
 ht-degree: 97%
 
 ---
@@ -68,6 +68,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 Antes de poder usar el conector de [!DNL Adobe Photoshop], debe asegurarse de que se cumplen los siguientes requisitos previos:
 
 * Debe tener una cuenta de [!DNL Adobe Photoshop] activa.
+* Debe tener un ID de cliente y un Secreto de cliente. Puede adquirirlos en Adobe Developer Console.
 
 ## Información de API de Adobe Photoshop
 
