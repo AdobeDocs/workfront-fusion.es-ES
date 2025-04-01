@@ -4,10 +4,10 @@ description: Puede utilizar el conector Adobe Workfront Fusion Adobe Workfront p
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '7075'
-ht-degree: 60%
+source-wordcount: '7796'
+ht-degree: 58%
 
 ---
 
@@ -375,7 +375,7 @@ Este módulo de acción realiza una de las siguientes conversiones:
 
 +++
 
-+++ **[!UICONTROL Crear un registro (adjuntando formularios personalizados)]**
++++ **[!UICONTROL Create a record]**
 
 Este módulo de acción crea un objeto, como un proyecto, una tarea o un problema en Workfront, y le permite agregar un formulario personalizado al nuevo objeto. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -422,7 +422,12 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Crear registro]**
++++ **[!UICONTROL Crear registro (heredado)]**
+
+>[!IMPORTANT]
+>
+>Este módulo se ha reemplazado por el módulo Crear un registro. Se recomienda utilizar ese módulo en nuevos escenarios.
+>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de acción crea un objeto en Workfront, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -820,8 +825,65 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
+    <td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar Workfront a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Record Type]</td>
 
-<td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar Workfront a Workfront Fusion</a> en este artículo.</p> </td> 
+<td>Elija el tipo de objeto Workfront que desea que lea el módulo.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Outputs]</td>
+
+<td> <p>Seleccione la información que desea incluir en el paquete de salida para este módulo.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Formulario personalizado de salida]</td>
+     <td> <p>Seleccione los formularios personalizados que desea incluir en el paquete de salida para este módulo y, a continuación, seleccione los campos específicos de los formularios personalizados que desea incluir en la salida.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL References]</td>
+   <td>Seleccione cualquier campo de referencia que desee incluir en la salida.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>Seleccione cualquier campo de referencia que desee incluir en la salida.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>Introduzca el ID único de Workfront del registro que desea que lea el módulo.</p> <p>Para obtener el ID, abra el objeto Workfront en el explorador y copie el texto al final de la dirección URL después de "ID=". Por ejemplo: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Vea una lista de los tipos de objetos Workfront para los que puede usar este módulo en [tipos de objetos Workfront disponibles para cada módulo Workfront](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **[!UICONTROL Leer un registro (heredado)]**
+
+>[!IMPORTANT]
+>
+>Este módulo se ha reemplazado por el módulo Leer un registro. Se recomienda utilizar ese módulo en nuevos escenarios.
+>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
+
+Este módulo de acción recupera datos de un único registro.
+
+Especifique el identificador del registro. También puede especificar qué registros relacionados desea que lea el módulo.
+
+Por ejemplo, si el registro que está leyendo el módulo es un proyecto, puede especificar que desea que se lean las tareas del proyecto.
+
+El módulo devuelve una matriz de datos de los campos de salida especificados.
+
+Al configurar este módulo, se muestran los campos siguientes.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar Workfront a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -876,7 +938,12 @@ Para obtener más información sobre la nueva versión de suscripción de evento
 
 +++
 
-+++ **Actualizar un registro (adjuntando formularios personalizados)**
++++ **Actualizar un registro**
+
+>[!IMPORTANT]
+>
+>Este módulo se ha reemplazado por el módulo Actualizar un registro. Se recomienda utilizar ese módulo en nuevos escenarios.
+>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 
 Este módulo de acción actualiza un objeto, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
@@ -925,7 +992,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 +++
 
-+++ **[!UICONTROL Actualizar registro]**
++++ **[!UICONTROL Actualizar registro (heredado)]**
 
 Este módulo de acción actualiza un objeto, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -1095,9 +1162,69 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
++++ **[!UICONTROL Buscar registros]**
+
+Este módulo de búsqueda busca registros en un objeto de Workfront que coincidan con la consulta de búsqueda especificada.
+
+Puede asignar esta información en módulos subsiguientes en el escenario.
+
+Al configurar este módulo, se muestran los campos siguientes.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar Workfront a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type]</td> 
+   <td> <p>Seleccione el tipo de registro de Workfront que desea que busque el módulo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Lista de formularios personalizados]</td> 
+   <td> <p>Seleccione al menos un formulario personalizado. Los campos de estos formularios personalizados estarán disponibles para la consulta de búsqueda.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Result Set]</td> 
+   <td>Seleccione una opción para especificar si desea que el módulo obtenga el primer resultado que coincida con sus criterios de búsqueda o todos los resultados que coincidan con estos.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal]</td> 
+   <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria fields]</td> 
+   <td> <p>Seleccione los campos que desea utilizar para los criterios de búsqueda. Estos campos estarán disponibles en el menú desplegable Criterios de búsqueda.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria]</td> 
+   <td> <p>Introduzca el campo por el que desea buscar, el operador que desea utilizar en la consulta y el valor que está buscando en el campo.</p> <p>Nota: No use <code>username </code> en los criterios de búsqueda. Si se incluye <code>username </code> en una consulta de API en Workfront, el usuario inicia sesión en Workfront y la búsqueda no se realizará correctamente.</p> <p>Nota: <code>In</code> y <code>NotIn</code> funcionan con matrices. Las entradas deben estar en formato de matriz.</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Outputs]</td> 
+   <td> <p>Seleccione los campos que desea incluir en la salida para este módulo.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL References]</td> 
+   <td>Seleccione los campos de referencia que desea incluir en la búsqueda.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Collections]</td> 
+   <td>Seleccione las colecciones que desea añadir a la búsqueda.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL Búsqueda]**
++++ **[!UICONTROL Buscar (Heredado)]**
+
+>[!IMPORTANT]
+>
+>Este módulo se ha reemplazado por el módulo Buscar registros. Se recomienda utilizar ese módulo en nuevos escenarios.
+>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de búsqueda busca registros en un objeto de Workfront que coincidan con la consulta de búsqueda especificada.
 
