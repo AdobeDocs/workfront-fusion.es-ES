@@ -4,10 +4,10 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , es posible auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: e52af924094722b0d212098ae2af5eded12a5309
+source-git-commit: eb0518ba0d1a0c758cb547e362c722f4be3674c7
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 77%
+source-wordcount: '1954'
+ht-degree: 67%
 
 ---
 
@@ -186,8 +186,6 @@ Este módulo de acción crea un nuevo mensaje.
  </tbody> 
 </table>
 
-<!--Becky start here-->
-
 
 #### [!UICONTROL Eliminar un mensaje]
 
@@ -208,6 +206,10 @@ Este módulo de acción elimina un mensaje especificado.
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
    <td> <p> Introduzca o asigne la marca de tiempo del mensaje que desea eliminar.</p> <p>Nota: La marca de tiempo se puede recuperar mediante otro módulo, como el módulo Ver mensajes de canal privado.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Como usuario]</td> 
+   <td> <p> Active esta opción para eliminar el mensaje como el usuario con las credenciales utilizadas en la conexión.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -230,14 +232,14 @@ Este módulo de acción recupera los detalles de un mensaje desde un canal selec
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
-   <td> <p> Introduzca o asigne la marca de tiempo del mensaje del que desea recuperar información.</p> <p>Nota: La marca de tiempo se puede recuperar mediante otro módulo, como el módulo [!UICONTROL Watch Public Channel].</p> </td> 
+   <td> <p> Introduzca o asigne la marca de tiempo del mensaje del que desea recuperar información.</p> <p>Nota: La marca de tiempo se puede recuperar mediante otro módulo, como el módulo [!UICONTROL Watch Private Channel Messages].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Obtener un mensaje del canal público]**
 
-Este módulo de acción devuelve un mensaje con un ID determinado de un canal público especificado.
+Este módulo de acción devuelve un mensaje con una ID determinada de un canal público especificado.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -253,7 +255,7 @@ Este módulo de acción devuelve un mensaje con un ID determinado de un canal p�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Introduzca o asigne la marca de tiempo del mensaje del que desea recuperar información.</p> <p>Nota: La marca de tiempo se puede recuperar mediante otro módulo, como el módulo [!UICONTROL Watch Public Channel].</p> </td> 
+   <td> <p> Introduzca o asigne la marca de tiempo del mensaje del que desea recuperar información.</p> <p>Nota: La marca de tiempo se puede recuperar mediante otro módulo, como el módulo [!UICONTROL Watch Public Channel Messages].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -270,21 +272,33 @@ Este módulo de acción le permite editar un mensaje existente.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Slack] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
   </tr> 
-  <tr> 
+<!--  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
-   <td> <p>Elija cómo desea seleccionar el mensaje que desea enviar</p> 
+   <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo <strong>[!UICONTROL Channel ID or name]</strong>, escriba o asigne el ID de canal o del canal que contiene el mensaje y, a continuación, escriba la <strong>[!UICONTROL Time Stamp (Message ID)]</strong> del mensaje.</p> <p>Nota: el ID del canal se puede recuperar mediante el módulo [!UICONTROL List Channels].</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el tipo de canal, seleccione el canal y, a continuación, seleccione el mensaje.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
+  </tr> -->
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
+   <td> <p>Introduzca o asigne el ID del canal que contiene el mensaje que desea actualizar.</p> <p>Nota: el ID del canal se puede recuperar mediante el módulo [!UICONTROL List Channels].</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
+   <td> <p> Introduzca o asigne la marca de tiempo del mensaje del que desea recuperar información.</p> <p>Nota: La marca de tiempo se puede recuperar mediante otro módulo, como el módulo [!UICONTROL Watch Public Channel Messages].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
    <td> <p>Introduzca el nuevo contenido de texto del mensaje que desea actualizar.</p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Blocks]</td> 
-   <td>Los bloques son componentes reutilizables que puede utilizar para personalizar y organizar los mensajes. Para obtener más información sobre bloques, consulte <a href="https://api.slack.com/block-kit">Kit de bloques</a> en la documentación de [!DNL Slack].</td> 
+   <td role="rowheader">[!UICONTROL Como usuario]</td> 
+   <td>Active esta opción para actualizar el mensaje como el usuario propietario de las credenciales utilizadas por la conexión para este módulo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachments]</td> 
+   <td>Para cada elemento que desee adjuntar al mensaje, haga clic en <b>Agregar elemento</b> y rellene los detalles del elemento.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
@@ -409,14 +423,14 @@ Este módulo de búsqueda devuelve una lista de usuarios en el canal seleccionad
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Slack] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channel type]</td> 
-   <td>Seleccione el tipo de canal que contiene la lista de miembros que desea enumerar.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private Channel]</td> 
-   <td>Seleccione el canal del que desea enumerar a los miembros.</td> 
-  </tr> 
+<tr> 
+   <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
+   <td> <p>Elija cómo desea seleccionar el mensaje que desea enviar</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo <strong>[!UICONTROL ID o nombre de canal]</strong>, escriba o asigne el ID de canal o del canal desde el que desee enumerar a los usuarios.</p> <p>Nota: el ID del canal se puede recuperar mediante el módulo [!UICONTROL List Channels].</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el tipo de canal y, a continuación, seleccione el canal.</p> </li> 
+    </ul> </td> 
+  </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>Establezca el número máximo de miembros que [!DNL Workfront Fusion] devolverá durante un ciclo de ejecución.</p> </td> 
@@ -465,6 +479,10 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
    <td>Seleccione la dirección URL de base que desee utilizar para la llamada de API.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enviar token de acceso]</td> 
+   <td>Seleccione si desea enviar el token de acceso como encabezado o como parámetro de consulta.</td> 
   </tr> 
  </tbody> 
 </table>
