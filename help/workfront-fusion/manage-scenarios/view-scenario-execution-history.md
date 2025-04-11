@@ -1,21 +1,21 @@
 ---
-title: Ver y resolver ejecuciones incompletas
-description: La carpeta [!UICONTROL Incomplete executions] almacena ejecuciones de escenarios que no se finalizaron correctamente debido a un error. Cada ejecución incompleta almacenada se puede resolver manualmente o automáticamente.
+title: Visualización del historial de ejecución de un escenario
+description: Puede mostrar información sobre los eventos o las ejecuciones de un escenario, o puede buscar datos específicos en todas las ejecuciones del escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 31%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Visualización del historial de ejecución de un escenario
 
-Puede mostrar información sobre los eventos o las ejecuciones de un escenario, o puede buscar datos específicos en todas las ejecuciones del escenario.
+Puede mostrar información sobre los eventos o ejecuciones de un escenario, o puede búsqueda todas las ejecuciones del escenario para datos específicos.
 
-La ejecución de un escenario representa una única ejecución del escenario.
+La ejecución de un escenario representa una sola ejecución del escenario.
 
 Un evento de escenario es una modificación del escenario, como editarlo, activarlo o desactivarlo.
 
@@ -52,7 +52,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -80,44 +80,44 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 ### Ver el historial de escenarios en la pestaña Historial
 
-La ficha [!UICONTROL History] muestra más detalles de los que están disponibles en la página [!UICONTROL Scenario detail]. También puede filtrar y ordenar las ejecuciones en la ficha [!UICONTROL History].
+La ficha [!UICONTROL Historial] muestra más detalles de los que están disponibles en la página [!UICONTROL Detalles del escenario]. También puede filtrar y ordenar las ejecuciones en la ficha [!UICONTROL Historial].
 
-1. Haga clic en la ficha **[!UICONTROL Scenario]** en el panel izquierdo y, a continuación, haga clic en el escenario.
+1. Haga clic en la ficha **[!UICONTROL Escenario]** en el panel izquierdo y, a continuación, haga clic en el escenario.
 
    O
 
-   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el editor Escenario, haga clic en la flecha ![izquierda Salir flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en **Historial** cerca del nombre del escenario.
    ![ficha de historial](assets/history-tab.png)
 
    Se enumeran los siguientes detalles para cada ejecución del escenario:
 
-   * Fecha en la que se ejecutó **[!UICONTROL Started]**
+   * Fecha en la que se **[!UICONTROL inició]** la ejecución
    * ID de ejecución
-   * **[!UICONTROL Status]** (correcto o fallido)
-   * Ejecutar **[!UICONTROL Duration]**
-   * Número de **[!UICONTROL Operations]**
-   * Tamaño de **[!UICONTROL Data Transfer]**
+   * **[!UICONTROL Estado]** (correcto o fallido)
+   * **[!UICONTROL Duración]** de la ejecución
+   * Número de **[!UICONTROL operaciones]**
+   * Tamaño de la **[!UICONTROL transferencia de datos]**
 
    >[!NOTE]
    >
    >El historial de escenarios muestra un distintivo **En procesamiento** junto a los escenarios que se han ejecutado recientemente, mientras que los detalles de la ejecución se escriben en el almacenamiento. El procesamiento se produce inmediatamente después de que se ejecute el escenario. y no debe durar más de unos minutos. Es posible que los detalles de la ejecución del escenario no estén visibles mientras se procesa la ejecución.
 
-1. Para ver los detalles de una ejecución de escenario específico, haga clic en **Detalles** en el extremo derecho. El vínculo [!UICONTROL details] solo es visible si la ejecución tiene detalles disponibles.
+1. Para ver los detalles de una ejecución de escenario específico, haga clic en **Detalles** en el extremo derecho. El vínculo [!UICONTROL detalles] solo es visible si la ejecución tiene detalles disponibles.
 1. Para ver los eventos, activa o desactiva **Mostrar eventos**.
 
 
 ### Ver el historial de escenarios en la página Detalles del escenario
 
 
-1. Haga clic en la ficha **[!UICONTROL Scenario]** en el panel izquierdo y, a continuación, haga clic en el escenario.
+1. Haga clic en la ficha **[!UICONTROL Escenario]** en el panel izquierdo y, a continuación, haga clic en el escenario.
 
    O
 
    Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
-1. Haga clic en la ficha **[!UICONTROL History]** en el panel derecho.
+1. Haga clic en la ficha **[!UICONTROL Historial]** en el panel derecho.
 1. (Opcional) Para obtener información detallada sobre la ejecución de un escenario seleccionado, haga clic en la ejecución en el panel derecho.
 
    Para obtener más información sobre el procesamiento de paquetes, consulte [Flujo de ejecución de escenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
@@ -132,10 +132,10 @@ La ficha [!UICONTROL History] muestra más detalles de los que están disponible
 
 Puede filtrar el historial de ejecuciones para ver solo las ejecuciones con los valores especificados.
 
-1. Abra el historial de página completa de un escenario como se describe en [Ver el historial de ejecución de un escenario en la ficha [!UICONTROL History]](#view-scenario-history-on-the-history-tab) de este artículo.
-1. Haga clic en el icono [!UICONTROL filter] ![icono de filtro de escenario](assets/fusion-scenario-filter-icon.png) en el encabezado de la columna por la que desee filtrar.
-1. En el cuadro de diálogo [!UICONTROL filter], escriba los valores por los que desea filtrar.
-1. Haga clic en **[!UICONTROL Save]**.
+1. Abra el historial de página completa de un escenario como se describe en [Ver el historial de ejecuciones de un escenario en la ficha [!UICONTROL Historial]](#view-scenario-history-on-the-history-tab) de este artículo.
+1. Haga clic en el icono [!UICONTROL filter] ![Icono de filtro de escenario](assets/fusion-scenario-filter-icon.png) en el encabezado de la columna por la que desee filtrar.
+1. En el cuadro de diálogo [!UICONTROL filtrar], escriba los valores por los que desea filtrar.
+1. Haga clic en **[!UICONTROL Guardar]**.
 
 El icono de filtro es de color naranja en las columnas con un filtro activo.
 
@@ -151,48 +151,48 @@ You can sort the scenario execution history.
 
 ## Buscar todas las ejecuciones de un escenario
 
-1. Abra el historial de página completa de un escenario como se describe en [Ver el historial de ejecución de un escenario en la ficha [!UICONTROL History]](#view-scenario-history-on-the-history-tab) de este artículo.
-1. Haga clic en **[!UICONTROL Fulltext search]** en la parte superior de la lista de ejecuciones.
+1. Abra el historial de página completa de un escenario como se describe en [Ver el historial de ejecuciones de un escenario en la ficha [!UICONTROL Historial]](#view-scenario-history-on-the-history-tab) de este artículo.
+1. Haga clic en **[!UICONTROL Búsqueda de texto completo]** en la parte superior de la lista de ejecuciones.
 
    O
 
    Escriba **Ctrl+Mayús+F** (Windows) o **Cmd+Mayús+F** (Mac)
-Se abre la ventana [!UICONTROL Search in history].
+Se abre la ventana [!UICONTROL Buscar en el historial].
 
-1. (Opcional) Para buscar ejecuciones que contengan texto específico, escriba el texto en la barra de búsqueda de la ventana **[!UICONTROL Search in history]**.
+1. (Opcional) Para buscar ejecuciones que contengan texto específico, escriba el texto en la barra de búsqueda de la ventana **[!UICONTROL Buscar en el historial]**.
 
    Para buscar texto exacto, escriba el texto entre comillas dobles (&quot;ejemplo&quot;).
 
    >[!INFO]
    >
-   >**Ejemplo:** Si desea encontrar la ejecución que creó un proyecto específico, escriba el identificador de proyecto en la barra [!UICONTROL Fulltext search].
+   >**Ejemplo:** si desea encontrar la ejecución que creó un proyecto específico, escriba el identificador de proyecto en la barra [!UICONTROL Búsqueda de texto completo].
    >
    >&quot;625ef2ef0006036bd1794b6e52d737c5&quot;
 
-1. (Opcional) Para limitar la búsqueda por intervalo de fechas, seleccione las fechas de inicio y finalización de la búsqueda deseada en el área [!UICONTROL By date range].
+1. (Opcional) Para limitar la búsqueda por intervalo de fechas, seleccione las fechas de inicio y finalización de la búsqueda deseada en el área [!UICONTROL Por intervalo de fechas].
 
    >[!NOTE]
    >
    >* Las ejecuciones solo están disponibles durante los 30 días anteriores.
    >
-   >* [!DNL Workfront Fusion] almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de gancho web más de 30 días después de crearla provoca el error &quot;[!UICONTROL Failed to read file from storage.]&quot;
+   >* [!DNL Workfront Fusion] almacena cargas útiles de webhooks durante 30 días. Al acceder a una carga útil de webhook más de 30 días después de su creación se produce el error &quot;[!UICONTROL No se pudo leer el archivo desde el almacenamiento]&quot;.
 
 
-1. (Opcional) Para limitar la búsqueda por estado, seleccione el estado que desee en la lista desplegable **[!UICONTROL By status]**.
+1. (Opcional) Para limitar la búsqueda por estado, seleccione el estado que desee en la lista desplegable **[!UICONTROL Por estado]**.
 
 
    Los estados disponibles son:
 
-   * [!UICONTROL All]
+   * [!UICONTROL Todo]
 
    * [!UICONTROL Error]
 
-   * [!UICONTROL Warning]
+   * [!UICONTROL Advertencia]
 
-   * [!UICONTROL Success]
+   * [!UICONTROL Correcto]
 
-1. (Opcional) Cambie el orden en que se muestran los resultados en la lista desplegable **[!UICONTROL Sort by dates]**.
+1. (Opcional) Cambie el orden en que se muestran los resultados en la lista desplegable **[!UICONTROL Ordenar por fechas]**.
 
-1. (Opcional) Para copiar un ID de ejecución de escenario, haga clic en el icono **[!UICONTROL Copy execution ID]** <img src="assets/copy-fusion-execution-id-icon.png"> en la fila de la ejecución deseada.
+1. (Opcional) Para copiar un ID de ejecución de escenario, haga clic en el icono **[!UICONTROL Copiar ID de ejecución]** <img src="assets/copy-fusion-execution-id-icon.png"> en la fila de la ejecución deseada.
 
-1. (Opcional) Haga clic en un resultado de [!UICONTROL Fulltext search] para examinar el paquete de salida del módulo de escenario que contiene la información.
+1. (Opcional) Haga clic en un resultado de la [!UICONTROL búsqueda de texto completo] para examinar el paquete de salida del módulo de escenario que contiene la información.
