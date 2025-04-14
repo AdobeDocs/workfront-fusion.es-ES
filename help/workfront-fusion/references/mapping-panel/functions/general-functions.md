@@ -4,16 +4,23 @@ description: Las siguientes funciones generales están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 8%
+source-wordcount: '303'
+ht-degree: 7%
 
 ---
 
 # Funciones generales
 
-## [!UICONTROL get (object or array; path)]
+## Variables
+
+Existen dos variables generales que puede utilizar para identificar los detalles de una ejecución:
+
+* `executionID`: el ID de esta ejecución de escenario
+* `triggerTimestamp`: hora a la que se activó esta ejecución
+
+## [!UICONTROL get (objeto o matriz; ruta de acceso)]
 
 Devuelve la ruta de valor de un objeto o matriz. Para acceder a objetos anidados, utilice la notación de puntos. El primer elemento de una matriz es el índice 1.
 
@@ -28,7 +35,7 @@ Devuelve la ruta de valor de un objeto o matriz. Para acceder a objetos anidados
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL if (expression; value1; value2)]
+## [!UICONTROL if (expresión; valor1; valor2)]
 
 Devuelve `value1` si la expresión se evalúa como verdadera; en caso contrario, devuelve `value2`.
 
@@ -78,7 +85,7 @@ Devuelve `value1` si este valor no está vacío; en caso contrario, devuelve `va
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
+## [!UICONTROL modificador (expresión; valor1; resultado1; [valor2; resultado2; ...]; [Else])]
 
 Evalúa un valor (denominado expresión) frente a una lista de valores; devuelve el resultado correspondiente al primer valor coincidente. Para incluir un valor `else`, agréguelo después de la expresión o valor final.
 
@@ -102,7 +109,7 @@ Evalúa un valor (denominado expresión) frente a una lista de valores; devuelve
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL omit(object; key1; [key2; ...])]
+## [!UICONTROL omitir(objeto; clave1; [clave2; ...])]
 
 Omite las claves dadas del objeto y devuelve el resto.
 
