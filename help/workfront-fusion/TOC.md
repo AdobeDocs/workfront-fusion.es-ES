@@ -2,17 +2,17 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: 0115892ccd9569efbd5d5ed585847c763280ddca
+source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 58%
+source-wordcount: '1737'
+ht-degree: 57%
 
 ---
 
 
 # Documentación de Adobe Workfront Fusion {#using}
 
-* [Adobe Systems Documentación de Workfront Fusion](home.md)
+* [Documentación de Adobe Workfront Fusion](home.md)
 * Actividad de versión de Fusion {#fusion-release-activity}
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2025 {#fusion-releases-2025}
@@ -26,7 +26,7 @@ ht-degree: 58%
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 20 de enero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 13 de enero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 06 de enero de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
-   * Versiones de Fusion - 2024 {#fusion-releases-2024}
+   * Versiones de Fusion: 2024 {#fusion-releases-2024}
       * [Actividad de la versión de Workfront Fusion: semana del martes, 16 de diciembre de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
       * [Actividad de la versión de Workfront Fusion: semana del martes, 02 de diciembre de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
       * [Actividad en la versión de Workfront Fusion: semana del martes, 25 de noviembre de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
@@ -51,7 +51,7 @@ ht-degree: 58%
       * [Actividad de la versión de Workfront Fusion: Semana del 26 de febrero de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-26.md)
       * [Actividad de la versión de Workfront Fusion: semana del 5 de febrero de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-5.md)
       * [Actividad de la versión de Workfront Fusion: Semana del 1 de enero de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-1-4.md)
-   * Versiones de Fusion - 2023 {#fusion-releases-2023}
+   * Versiones de Fusion: 2023 {#fusion-releases-2023}
       * [Actividad de la versión de Workfront Fusion: semana del 27 de noviembre de 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-30.md)
       * [Actividad en la versión de Workfront Fusion: semana del 13 de noviembre de 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-14.md)
       * [Actividad de la versión de Workfront Fusion: semana del 30 de octubre de 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-10-26.md)
@@ -86,7 +86,7 @@ ht-degree: 58%
       * [Actividad de la versión de Workfront Fusion: semana del 21 de febrero de 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md)
       * [Actividad de la versión de Workfront Fusion: semana del 14 de febrero de 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md)
       * [Actividad de la versión de Workfront Fusion: semana del 3 de enero de 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
-   * Versiones de Fusion - 2021 {#fusion-releases-2021}
+   * Versiones de Fusion: 2021 {#fusion-releases-2021}
       * [Actividad de la versión de Workfront Fusion: semana del 29 de noviembre de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md)
       * [Actividad de la versión de Workfront Fusion: semana del 15 de noviembre de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-15-21.md)
       * [Actividad de la versión de Workfront Fusion: semana del 8 de noviembre de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-8-21.md)
@@ -111,7 +111,7 @@ ht-degree: 58%
       * [Actividad de la versión de Workfront Fusion: semana del 18 de enero de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
       * [Actividad de la versión de Workfront Fusion: Semana del martes, 11 de enero de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
       * [Actividad de la versión de Workfront Fusion: semana del 4 de enero de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-4.md)
-   * Versiones de Fusion: 2020 {#fusion-releases-2020}
+   * Versiones de Fusion - 2020 {#fusion-releases-2020}
       * [Actividad de la versión de Workfront Fusion: semana del 7 de diciembre de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-dec-7.md)
       * [Actividad de la versión de Workfront Fusion: semana del 30 de noviembre de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
       * [Actividad de la versión de Workfront Fusion: semana del 16 de noviembre de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
@@ -124,21 +124,21 @@ ht-degree: 58%
    * Comprender Workfront Fusion {#understand-workfront-fusion}
       * [Comprender Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Información general de Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
-      * [Glosario de Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
+      * [Glosario de Adobe Systems Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [Información general del escenario](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
       * [Información general sobre la conexión](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
       * [Información general del módulo](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
-      * [Información general sobre la asignación](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
-      * [Información general de funciones](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+      * [Resumen de asignación](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
+      * [Resumen de funciones](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
    * Navegar por Workfront Fusion {#navigate-workfront-fusion}
       * [Navegar por Workfront Fusion: índice de artículos](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
-      * [Navegar Adobe Systems Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
-      * [Resumen del editor del escenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
+      * [Navegar por Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
+      * [Información general del editor de escenarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
       * [Información general sobre escenarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
       * [Cambiar entre organizaciones o equipos](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
       * [Cambio de configuración de perfil](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
-* Configuración y administrar Workfront Fusion {#set-up-and-manage-fusion}
-   * [Configuración y administrar Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
+* Configurar y administrar Workfront Fusion {#set-up-and-manage-fusion}
+   * [Configuración y administración de Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
    * Información general sobre licencias y operaciones {#licensing-and-operations-overviews}
       * [Información general sobre licencias y operaciones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
@@ -152,8 +152,8 @@ ht-degree: 58%
          * [Crear un equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
          * [Añadir usuarios a Adobe Workfront Fusion mediante Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
          * [Añadir un usuario a un equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
-         * [Establecer opciones de notificación del equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
-         * [Ver el registro de actividades de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
+         * [Establecer notificación de equipo Opciones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
+         * [Ver registro actividad de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
       * Administrar usuarios y equipos {#manage-users-and-teams}
          * [Administrar usuarios y equipos: índice de artículos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [Visualización o edición de los detalles del usuario](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
@@ -170,8 +170,8 @@ ht-degree: 58%
       * [Preguntas frecuentes sobre planificación de escenarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [Vídeos introductorios](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [Flujo de trabajo para crear un escenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
-   * Agregar módulos {#add-modules}
-      * [Añadir módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
+   * añadir módulos {#add-modules}
+      * [añadir módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [Adición de un módulo a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [Configuración de un módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
       * [Generación de un segmento de escenario mediante IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
@@ -183,33 +183,33 @@ ht-degree: 58%
       * [añadir un filtro a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
       * [Elegir dónde se inicia un módulo de activador](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
    * Asignar datos {#map-data}
-      * [Asignar datos](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
-      * [Asignación de información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
+      * [Datos de mapa](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+      * [Información de asignación de una módulo a otra](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [Asignar elementos mediante funciones](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [Asignar matrices y elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [Asignación de un archivo entre módulos](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [Almacenes de datos](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
-   * Conectar a aplicaciones {#connect-to-applications}
-      * [Conectar a aplicaciones](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
-      * [Crear conexiones](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
-      * [Crear una conexión - Instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-      * [Conexión Adobe Systems Workfront Fusion a un servicio Web que utilice la autorización de token API](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
+   * Conectar con aplicaciones {#connect-to-applications}
+      * [Conexión a las aplicaciones](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
+      * [Creación de conexiones](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
+      * [Creación de una conexión: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+      * [Conecte Adobe Workfront Fusion a un servicio web que utilice la autorización de tokens de API](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
       * [Conexión de Adobe Workfront Fusion a los servicios de Google con medidas de seguridad actualizadas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)
       * [Conexión de Adobe Workfront Fusion a Google Services con un cliente de OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
       * [Llamar a la API de REST de MS Graph](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
       * [Administrar conexiones](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
-   * Configuración del tratamiento de errores {#configure-error-handling}
-      * [Configuración del tratamiento de errores](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
+   * Configurar la administración de errores {#configure-error-handling}
+      * [Configuración de la gestión de errores](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
       * [Añadir gestión de errores](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
       * [Añadir filtrado y anidamiento a las rutas de gestión de errores](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
       * [Configurar la solución del error de lanzamiento](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
       * [Configurar la solución de reintento de administración de errores](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [Resolver errores gestionados por la directiva Break](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-   * Configurar las opciones del escenario {#configure-scenario-settings}
-      * [Configurar las opciones del escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+   * Configurar opciones de escenario {#configure-scenario-settings}
+      * [Configuración de escenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [Programar un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
-      * [Configurar las opciones del escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
-      * [añadir notas a un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
+      * [Configuración de escenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
+      * [Adición de notas a un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
 * Administrar escenarios {#manage-scenarios}
    * [Administrar escenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
    * [Administrar conexiones](/help/workfront-fusion/manage-scenarios/manage-connections.md)
@@ -223,16 +223,16 @@ ht-degree: 58%
    * [Ver el flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Ver la cola de un webhooks](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Asistente de IA en Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
-   * [Ejecute el experto en puntuación de escenarios](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
-   * [Eliminar elementos del escenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
+   * [Ejecutar el experto en puntuación de escenarios](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
+   * [Eliminar elementos de escenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
 * Escenarios de práctica de compilación {#build-practice-scenarios}
    * [Escenarios de práctica de compilación](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
    * [Adición de un módulo de activador a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
-   * [Usar una función para actualizar un proyecto en un escenario básico](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
+   * [Uso de una función para actualizar un proyecto en un escenario básico](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
    * [Añadir un filtro a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
-   * [Agregar un webhook a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
-* Crear y administrar plantillas {#create-and-manage-templates}
+   * [añadir un webhook a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
+* Crear y plantillas administrar {#create-and-manage-templates}
    * [Creación y administración de plantillas](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Creación de nuevas plantillas](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Creación de escenarios con plantillas](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
@@ -249,12 +249,12 @@ ht-degree: 58%
    * Escenarios {#scenarios}
       * [Escenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
       * [Barreras de seguridad de rendimiento Fusion](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
-      * [Flujo de ejecución de escenarios](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
+      * [Flujo de ejecución de escenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
       * [Ejecución de escenarios, ciclos y fases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
-      * [Trabajar con archivos de gran tamaño](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
+      * [Uso de archivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
    * Módulos {#modules}
       * [Módulos](/help/workfront-fusion/references/modules/modules-toc.md)
-      * [Webhooks (disparadores instantáneos)](/help/workfront-fusion/references/modules/webhooks-reference.md)
+      * [Webhooks (déclencheur instantáneos)](/help/workfront-fusion/references/modules/webhooks-reference.md)
       * [Módulos acumuladores](/help/workfront-fusion/references/modules/aggregator-module.md)
       * [Módulos de iterador](/help/workfront-fusion/references/modules/iterator-module.md)
       * [petición HTTP métodos](/help/workfront-fusion/references/modules/http-request-methods.md)
@@ -270,8 +270,8 @@ ht-degree: 58%
          * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
-         * [Tokens para formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
-         * [Tokens para análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
+         * [Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
+         * [Tokens para el análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
          * [Funciones de cadena](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
          * [Funciones matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
          * [Variables matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
@@ -282,7 +282,7 @@ ht-degree: 58%
       * [Tipos de error](/help/workfront-fusion/references/errors/error-processing.md)
    * Conexiones {#connections}
       * [Referencia de conexión: índice de artículos](/help/workfront-fusion/references/connections/connection-reference-toc.md)
-      * [metadatos de conexión](/help/workfront-fusion/references/connections/connection-metadata.md)
+      * [Metadatos de conexión](/help/workfront-fusion/references/connections/connection-metadata.md)
    * Aplicaciones y sus módulos {#apps-and-their-modules}
       * [Aplicaciones y sus módulos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * Conectores universales {#universal-connectors}
@@ -304,13 +304,14 @@ ht-degree: 58%
          * [Módulos de Bibliotecas de Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
          * [Módulos de Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Módulos de Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
-         * [Módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-         * [Módulos Frame.io de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+         * [Adobe Systems módulos Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+         * [Adobe Systems Frame.io módulos Beta (V4)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
+         * [Adobe Systems Frame.io módulos heredados (V3)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Adobe Systems módulos de eventos de E/S](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Módulos de Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Módulos de Adobe Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
-         * [Módulos Marketo de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
-         * [Módulos de servicios de Adobe PDF](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
+         * [Módulos Adobe Systems de Marketo](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
+         * [Adobe PDF Módulos de servicios](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Módulos de Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
          * [Módulos de almacenamiento de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Módulos de Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
@@ -345,14 +346,14 @@ ht-degree: 58%
          * [Módulos de Google Sheets](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
          * [Módulos de Google Slides](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
          * [Módulos de Google Team Drive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
-         * [Módulos de CRM Hubspot](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
+         * [Módulos de Hubspot CRM](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
          * [Módulos de software Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
          * [Módulos MariaDB](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
          * [Módulos de calendario de Microsoft 365](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
          * [Módulos de correo electrónico de Microsoft 356](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
          * [Módulos de Excel de Microsoft 365](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
          * [Módulos de Microsoft Dynamics](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
-         * [Módulos de operaciones y finanzas de Microsoft Dynamics](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
+         * [Módulos de finanzas y operaciones de Microsoft Dynamics](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
          * [Módulos de Microsoft OneDrive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
          * [Módulos de Microsoft OneDrive para empresas](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
          * [Módulos de Microsoft SharePoint Online](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
@@ -370,7 +371,7 @@ ht-degree: 58%
          * [Módulos Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Módulos Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Módulos de Widen](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
-         * [Módulos de Workday](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
+         * [Módulos de día de trabajo](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * Herramientas y transformadores {#tools-and-transformers}
          * [Módulos de archivo](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
          * [Módulos CSV](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
@@ -378,7 +379,7 @@ ht-degree: 58%
          * [Módulos Draft.js](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)
          * [Módulos de cifrado](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/encryptor-modules.md)
          * [Flujo módulos de control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md)
-         * [Imagen módulos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/image-module.md)
+         * [Módulos de imagen](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/image-module.md)
          * [Módulos JSON](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
          * [Módulos JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
          * [Módulos JWT](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
@@ -386,7 +387,7 @@ ht-degree: 58%
          * [Matemáticas módulo](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
          * [Módulos del analizador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
-         * [Herramientas módulos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
+         * [Módulos de herramientas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
          * [Módulos XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
 
 
