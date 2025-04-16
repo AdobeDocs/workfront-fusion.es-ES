@@ -1,29 +1,29 @@
 ---
-title: Módulos Frame.io
+title: Frame.io módulos (heredado)
 description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
+source-git-commit: 31266e79d736cdb055bb0ad36a75ac61ce426ec2
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2587'
 ht-degree: 77%
 
 ---
 
-# [!DNL Frame.io] módulos heredados
+# [!DNL Frame.io] Módulos heredados
 
 >[!IMPORTANT]
 >
 >Este artículo describe la versión heredada del conector Frame.io. Este conector se utiliza para conectarse a Frame.io versión 3.
 >
->Para obtener instrucciones sobre la nueva versión (beta) del conector Frame.io, consulte [Conector Frame.io de Beta](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+>Para obtener instrucciones sobre la nueva versión (beta) del conector Frame.io, consulte [Frame.io conector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) Beta.
 
 Los módulos [!DNL Frame.io] de [!DNL Adobe Workfront Fusion] le permiten supervisar, crear, actualizar, recuperar o eliminar recursos y comentarios en la cuenta de [!DNL Frame.io].
 
-Workfront ofrece dos conectores Frame.io, basados en la versión de Frame.io a la que se está conectando.
+Workfront ofrece dos conectores Frame.io, basados en la versión de Frame.io a la que se esté conectando.
 
-| Conector | Versión de Frame.io |
+| Conector | Versión Frame.io |
 |---|---|
 | Frame.io (Beta) | V4 |
 | Frame.io (heredado) | V3 |
@@ -55,15 +55,15 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
+   <p>Vigente: No hay requisito de licencia de Workfront Fusion</p>
    <p>O</p>
-   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Legado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Seleccionar o Prime Paquete Workfront: Su organización debe adquirir Adobe Systems Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
    <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
@@ -123,7 +123,7 @@ Para conectar la cuenta de [!DNL Frame.io] a [!DNL Workfront Fusion] mediante un
 1. Copie el token proporcionado.
 1. Vaya a [!DNL Workfront Fusion] y abra el diálogo **[!UICONTROL Crear una conexión]** del módulo [!DNL Frame.io].
 1. En el campo **[!UICONTROL Tipo de conexión]**, seleccione **[!DNL Frame.io]**.
-1. Escriba el token que copió en el paso 5 en el campo **[!UICONTROL Su clave de API [!DNL Frame.io]]**
+1. Escriba el token que ha copiado en el paso 5 en el campo Su [!DNL Frame.io] clave ]**de**[!UICONTROL  API
 1. Haga clic en **[!UICONTROL Continuar]** para establecer la conexión y volver al módulo.
 
 ### Conectarse a [!DNL Frame.io] mediante OAuth 2.0 PKCE
@@ -169,7 +169,7 @@ Puede crear una conexión a [!DNL Frame.io] mediante OAuth 2.0 PKCE con un ID de
 
 Al configurar módulos de [!DNL Frame.io], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Frame.io] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Información de mapa de una módulo a otra](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -233,14 +233,14 @@ Este módulo de acción crea un nuevo recurso.
   --> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
-   <td> <p>Si crea un archivo, introduzca la dirección URL del archivo que desea cargar.</p> </td> 
+   <td> <p>Si está creando un archivo, escriba el URL del archivo que desea cargar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Description] </td> 
-   <td> <p>Si crea un archivo, introduzca una breve descripción del recurso.</p> </td> 
+   <td> <p>Si está creando un archivo, introduzca una breve descripción del recurso.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Etiqueta] </td> 
+   <td role="rowheader">[! UICONTROL Etiquetar] </td> 
    <td> <p>Si crea un archivo, seleccione si el archivo está en curso, si necesita revisión o si está aprobado.</p> </td> 
   </tr> 
  </tbody> 
@@ -409,11 +409,11 @@ Si agrega un gancho web, escriba la siguiente información.
 
 #### [!UICONTROL Ver etiqueta de recurso actualizado]
 
-Este módulo de déclencheur inicia un escenario en el que la etiqueta de un recurso propiedad del equipo especificado se establece, cambia o elimina.
+Este módulo desencadenador inicia una situación en la que, cambia, cambia o quita una etiqueta de un recurso propiedad del equipo especificado.
 
-Como se trata de un déclencheur instantáneo, debe seleccionar o crear un webhook para que lo utilice el módulo.
+Debido a que este es un disparador instantáneo, debe seleccionar o crear un webhook para que el módulo lo use.
 
-Si agrega un gancho web, escriba la siguiente información.
+Si añade un webhook, introduzca la siguiente información.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -438,7 +438,7 @@ Si agrega un gancho web, escriba la siguiente información.
 
 Este módulo de déclencheur inicia un escenario cuando se crea un nuevo recurso para el equipo especificado.
 
-Como se trata de un déclencheur instantáneo, debe seleccionar o crear un webhook para que lo utilice el módulo.
+Debido a que este es un disparador instantáneo, debe seleccionar o crear un webhook para que el módulo lo use.
 
 Si agrega un gancho web, escriba la siguiente información.
 
@@ -548,7 +548,7 @@ Este módulo de acción elimina un comentario existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
-   <td> <p>Introduzca o asigne el ID del comentario que desea eliminar.</p> </td> 
+   <td> <p>Escriba o asigne el ID del comentario que desea eliminar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -697,9 +697,9 @@ Si agrega un gancho web, escriba la siguiente información.
 
 Este módulo de activador inicia un escenario cuando se crea un nuevo comentario o respuesta.
 
-Como se trata de un déclencheur instantáneo, debe seleccionar o crear un webhook para que lo utilice el módulo.
+Debido a que este es un disparador instantáneo, debe seleccionar o crear un webhook para que el módulo lo use.
 
-Si agrega un gancho web, escriba la siguiente información.
+Si añade un webhook, introduzca la siguiente información.
 
 <table style="table-layout:auto"> 
  <col> 
