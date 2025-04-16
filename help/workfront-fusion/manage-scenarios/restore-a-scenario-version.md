@@ -4,14 +4,16 @@ description: Puede restaurar una versión anterior de un escenario. Esto le perm
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 71%
+source-wordcount: '287'
+ht-degree: 47%
 
 ---
 
-# Restaurar una versión de escenario
+# Visualización y administración de versiones de escenarios
+
+Puede ver, restaurar o cambiar el nombre de versiones anteriores de un escenario.
 
 ## Requisitos de acceso
 
@@ -42,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -65,16 +67,20 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 +++
 
-## Restaurar una versión de escenario
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Abra el escenario.
-1. Haga clic en el icono [!UICONTROL More] ![Más icono](assets/more-icon.png) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Previous Versions]**.
+## Ver y administrar el historial de versiones de un escenario
 
-1. Haga clic en **[!UICONTROL Pick the version]** y luego en la versión que desee restaurar.
-1. Haga clic en **[!UICONTROL OK]**.
+1. Haga clic en **[!UICONTROL Icono de escenarios]** ![escenarios](assets/scenarios-icon.png) en el panel izquierdo y, a continuación, haga clic en el escenario para abrirlo.
+1. Haga clic en el icono [!UICONTROL Más] ![Más iconos](assets/more-icon.png) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Versiones anteriores]**.
 
-   Se restaura la versión del escenario seleccionado.
+   Se muestra una lista de versiones anteriores.
+1. (Opcional) Para cambiar el nombre de la versión, haga clic en el menú Más ![Menú Más](assets/more-icon-vertical.png) en la línea de esa versión, seleccione **Editar** e introduzca un nombre en el campo. Haga clic en **Guardar** para guardar el nuevo nombre.
 
->[!NOTE]
->
->La versión restaurada del escenario no se guarda automáticamente. Si desea guardar la versión restaurada del escenario, debe guardarla manualmente.
+   Se recomienda asignar un nombre que describa los cambios realizados en esta versión.
+1. (Opcional) Para restaurar la versión, haga clic en restaurar ![menú Más](assets/more-icon-vertical.png) en la línea de esa versión
+
+
+   >[!NOTE]
+   >
+   >La versión restaurada del escenario no se guarda automáticamente. Si desea guardar la versión restaurada del escenario, debe guardarla manualmente.
