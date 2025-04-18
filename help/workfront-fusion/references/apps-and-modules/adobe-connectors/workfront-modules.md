@@ -4,9 +4,9 @@ description: Puede utilizar el conector Adobe Workfront Fusion Adobe Workfront p
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
+source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
 workflow-type: tm+mt
-source-wordcount: '7796'
+source-wordcount: '7795'
 ht-degree: 58%
 
 ---
@@ -1162,7 +1162,9 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-+++ **[!UICONTROL Buscar registros]**
++++
+
++++ **[!UICONTROL Búsqueda]**
 
 Este módulo de búsqueda busca registros en un objeto de Workfront que coincidan con la consulta de búsqueda especificada.
 
