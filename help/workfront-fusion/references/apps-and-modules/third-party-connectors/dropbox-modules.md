@@ -4,7 +4,7 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
 source-wordcount: '3203'
 ht-degree: 83%
@@ -122,7 +122,6 @@ Para crear una conexión para los módulos de [!DNL Dropbox]:
         <tr>
         <td role="rowheader">[!UICONTROL Type]</td>
         <td>Seleccione si desea conectarse a una cuenta de servicio o a una personal.</td>
-        </tr>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>

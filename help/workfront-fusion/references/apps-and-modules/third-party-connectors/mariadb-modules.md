@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 46%
+source-wordcount: '621'
+ht-degree: 50%
 
 ---
 
@@ -22,42 +22,46 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -67,7 +71,7 @@ Para usar los módulos de [!DNL MariaDB], debe tener una cuenta de [!DNL MariaDB
 
 Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un módulo de [!DNL MariaDB].
 
-1. En cualquier módulo de [!DNL MariaDB], haga clic en **[!UICONTROL Add]** junto al campo [!UICONTROL Connection].
+1. En cualquier módulo de [!DNL MariaDB], haga clic en **[!UICONTROL Añadir]** junto al campo [!UICONTROL Conexión].
 1. Configure los campos siguientes:
 
    <table style="table-layout:auto"> 
@@ -78,6 +82,14 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>Introduzca un nombre para la nueva conexión.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>Seleccione si esta conexión es para un entorno de producción o de no producción.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>Seleccione si desea conectarse a una cuenta de servicio o a una personal.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Host]</td> 
       <td> <p>Introduzca la dirección IP o el nombre de host de la instancia de base de datos. Se debe poder acceder a este host desde fuera de la red.</p> <p>Ejemplo: <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
@@ -87,11 +99,11 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
       <td>El puerto predeterminado es 3306. Si utiliza un puerto no estándar, establezca este número en el puerto. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database Name]</td> 
+      <td role="rowheader">[!UICONTROL Base de datos ]</td> 
       <td>Introduzca el nombre de la base de datos con la que desea interactuar.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Username]</td> 
+      <td role="rowheader">[!UICONTROL User]</td> 
       <td>Escriba su nombre de usuario.</td> 
      </tr> 
      <tr> 
@@ -101,7 +113,7 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
     </tbody> 
    </table>
 
-1. Haga clic en **[!UICONTROL Continue]** para crear la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para crear la conexión y volver al módulo.
 
 ## Módulos de [!DNL MariaDB] y sus campos
 
@@ -130,7 +142,7 @@ Este módulo de acción recupera información de la base de datos, en función d
  </tbody> 
 </table>
 
-### [!UICONTROL Select rows from a table (advanced)]
+### [!UICONTROL Seleccionar filas de una tabla (avanzado)]
 
 Este módulo lee registros de la base de datos.
 
@@ -157,7 +169,7 @@ Este módulo lee registros de la base de datos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sort] </td> 
-   <td> <p>Para cada nivel por el que desee ordenar los resultados, haga clic en <strong>[!UICONTROL Add item]</strong> y, a continuación, seleccione el campo por el que desea ordenar los resultados y si desea ordenarlos en orden ascendente o descendente</p> </td> 
+   <td> <p>Para cada nivel por el que desee ordenar los resultados, haga clic en <strong>[!UICONTROL Agregar elemento]</strong> y, a continuación, seleccione el campo por el que desea ordenar los resultados y si desea ordenar de forma ascendente o descendente</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
