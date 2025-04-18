@@ -4,61 +4,83 @@ description: Puede utilizar tipos MIME en Adobe Workfront Fusion. Los tipos MIME
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 88%
+source-wordcount: '377'
+ht-degree: 78%
 
 ---
 
-# Módulos de [!UICONTROL MIME]
+# [!UICONTROL Módulos MIME]
 
 Puede utilizar tipos MIME en Adobe Workfront Fusion. Los tipos MIME (Multipurpose Internet Extension) son etiquetas que permiten al software identificar diferentes tipos de datos compartidos en Internet. Los servidores y exploradores web utilizan el tipo MIME para determinar qué se debe hacer con un archivo. Por ejemplo, un archivo con el tipo MIME `text/html` se procesará en un explorador de forma distinta que un archivo con el tipo MIME `image/jpeg`. Los tipos MIME funcionan independientemente del sistema operativo y del hardware.
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
+   <p>O</p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
+   <p>O</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Módulos [!UICONTROL MIME] y sus campos
+
+* [Obtener una extensión de archivo](#get-a-file-extension)
+* [Obtener un tipo MIME](#get-a-mime-type)
+
+### [!UICONTROL Obtener una extensión de archivo]
+
+Este módulo transformador devuelve la extensión de archivo original para un tipo MIME determinado.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
-   <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
-   <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo, [!UICONTROL [!DNL Workfront Fusion] para automatización de trabajo</p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Producto</td> 
-   <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
-   <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
-   </td> 
+   <td role="rowheader">[!UICONTROL MIME type]</td> 
+   <td> <p>Introduzca o asigne el tipo MIME para el que desea determinar la extensión de archivo. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+### [!UICONTROL Obtener un tipo MIME]
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-## Módulos de [!UICONTROL MIME] y sus campos
-
-### [!UICONTROL Get a MIME type]
-
-Este módulo transformador devuelve el tipo MIME asociado con un nombre, ruta o extensión determinados.
+Este módulo transformador devuelve el tipo MIME asociado con un nombre de archivo, ruta o extensión determinados.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -72,21 +94,6 @@ Este módulo transformador devuelve el tipo MIME asociado con un nombre, ruta o 
      <li><strong>[!UICONTROL File name]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span>image.jpeg</p> </li> 
      <li><strong>[!UICONTROL File extension]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span>jpeg</p> </li> 
     </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a file extension]
-
-Este módulo transformador devuelve la extensión de archivo original para un tipo MIME determinado.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL MIME type]</td> 
-   <td> <p>Introduzca o asigne el tipo MIME para el que desea determinar la extensión de archivo. </p> </td> 
   </tr> 
  </tbody> 
 </table>
