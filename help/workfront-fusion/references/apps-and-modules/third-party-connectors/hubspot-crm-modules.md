@@ -4,10 +4,10 @@ description: Los módulos de HubSpot CRM de  [!DNL Adobe Workfront Fusion]  le p
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '6203'
-ht-degree: 40%
+source-wordcount: '7003'
+ht-degree: 36%
 
 ---
 
@@ -118,9 +118,6 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Objetos de CRM
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL Buscar objetos de CRM]**
 
 Este módulo de búsqueda busca objetos de CRM por propiedades personalizadas o por consulta. Para buscar productos o elementos de línea, utilice una conexión especial con un ámbito personalizado requerido.
@@ -208,15 +205,6 @@ Este módulo de déclencheur inicia un escenario cuando se crea o actualiza un o
 +++
 
 ### Registros (acuerdos, contactos y compañías)
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **Create a record**
 
@@ -464,17 +452,6 @@ Este módulo de activación inicia un escenario en el que se ha modificado o cre
 +++
 
 ### Contactos
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL Añadir contactos a una lista]**
 
@@ -744,9 +721,6 @@ Este módulo de activador inicia un escenario cuando se añade un nuevo contacto
 
 ### Acuerdos
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL Obtener la canalización de CRM de un acuerdo]**
 
 Devuelve una canalización de acuerdo específica.
@@ -825,11 +799,6 @@ Recupera una lista de compañías en función de una coincidencia exacta con la 
 +++
 
 ### Participaciones
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **Asociar una participación con un objeto CRM**
 
@@ -1117,11 +1086,6 @@ Este módulo de déclencheur inicia un escenario cuando se crea una nueva partic
 
 ### Eventos y notificaciones
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **Crear/actualizar un evento de escala de tiempo**
 
 Este módulo de acción crea o actualiza un evento de cronología. Este módulo solo se puede utilizar con una conexión de desarrollador que incluya su identificador de usuario, su clave de API de HubSpot, el ID de cliente y el secreto de cliente.
@@ -1253,14 +1217,6 @@ Para crear un webhook para este módulo, haz clic en **Agregar** junto al campo 
 +++
 
 ### Archivos
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL Crear una carpeta]**
 
@@ -1451,10 +1407,6 @@ Este módulo de déclencheur inicia un escenario cuando se guarda un nuevo archi
 
 ### Tareas
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **Crear una tarea de calendario**
 
 Este módulo de acción crea una nueva tarea para un calendario. La conexión utilizada en este módulo debe utilizar las credenciales de un usuario con una cuenta de marketing de pago.
@@ -1552,9 +1504,6 @@ Este módulo de déclencheur inicia un escenario cuando hay un nuevo evento de t
 
 ### Usuarios
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **Obtener un propietario**
 
 Este módulo de acción devuelve los detalles de un propietario.
@@ -1595,13 +1544,6 @@ Este módulo de búsqueda devuelve una lista de todos los propietarios de una cu
 
 ### Entradas
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL Eliminar un ticket]**
@@ -1634,11 +1576,6 @@ Elimina un ticket existente por su ID.
 <!-- Watch Tickets Need to find a working connection-->
 
 ### Formularios
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **Obtener un archivo cargado mediante formulario**
 
@@ -1689,10 +1626,6 @@ Este módulo de acción devuelve todos los formularios que se han creado en la c
 &lt;!—#### Ver los envíos de un formulario—Necesita encontrar una conexión que funcione>—>
 
 ### Medios sociales (difusión)
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **Cancelar un mensaje de difusión**
 
@@ -1791,16 +1724,90 @@ Este módulo de déclencheur inicia un escenario cuando se publica un mensaje de
 
 ### Publicaciones de blog
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;!—* [Publicar/Cancelar publicación de una publicación de blog](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **Crear una publicación de blog**
 
-<!--
-#### Create a Blog Post May need connection
--->
+Este módulo de acción crea una nueva publicación de blog.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre</td> 
+   <td>Escriba o asigne el título de la publicación (el nombre interno de la publicación).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Cuerpo del anuncio</td> 
+   <td>Introduzca o asigne el cuerpo principal de la publicación en formato HTML.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Enviar resumen</td> 
+   <td>Introduzca o asigne un resumen de la publicación. Este resumen aparece en la página de lista principal.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de autor del blog</td> 
+   <td>Introduzca o asigne el ID del autor asociado con la publicación.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de grupo de contenido</td> 
+   <td>Introduzca o asigne el ID del blog al que pertenece esta publicación.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">HTML de pie</td> 
+   <td>Introduzca o asigne la HTML para los códigos incrustados o JavaScript que deben colocarse antes de la etiqueta de la página.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Head HTML</td> 
+   <td>Introduzca o asigne el HTML para códigos incrustados o JavaScript que deben colocarse en la parte superior.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de campaña</td> 
+   <td>Introduzca o asigne el ID de la campaña a la que está asociada esta publicación.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Imagen destacada</td> 
+   <td>Introduzca o asigne la dirección URL de la imagen que esta publicación utilizará como imagen destacada.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Palabra clave</td> 
+   <td>Para cada palabra clave que desee agregar a esta publicación, haga clic en <b>Agregar elemento</b> e introduzca la palabra clave y el GUID de palabra clave.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Meta descripción</td> 
+   <td>Escriba o asigne el texto de la etiqueta <code>meta</code> en la página.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fecha de publicación</td> 
+   <td>Introduzca o asigne la fecha en la que se publicará la publicación del blog. <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos en [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre</td> 
+   <td>Active esta opción para publicar la publicación de blog inmediatamente cuando se cree. Si se establece en Yes, esta opción ignora el campo Publish Date.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Basura</td> 
+   <td>Introduzca o asigne el slug de la publicación. El slug se anexa al final del dominio para formar la dirección URL de la publicación de blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de temas</td> 
+   <td>Para cada tema que desee agregar a la publicación, haga clic en <b>Agregar elemento</b> e introduzca el identificador del tema.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Usar imagen destacada</td> 
+   <td>Active esta opción para utilizar la imagen destacada para la publicación de blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Widgets</td> 
+   <td>Introduzca o asigne una estructura de datos que contenga la fecha de todos los módulos de esta publicación de blog. Esto hace referencia a los módulos de la publicación del blog, no a los módulos Fusion.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Eliminar una publicación de blog**
 
@@ -1823,9 +1830,70 @@ Este módulo de acción elimina una sola publicación de blog.
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **Enumerar entradas de blog**
 
-This search module retrieves posts from a HubSpot blog.-->
+Este módulo de búsqueda recupera entradas de un blog de HubSpot.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Límite</td> 
+   <td>Introduzca o asigne el número máximo de entradas de blog que se devolverán en un ciclo de ejecución.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archivado</td> 
+   <td>Active esta opción para incluir publicaciones archivadas en los resultados.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de autor del blog</td> 
+   <td>Introduzca o asigne el ID de un autor para devolver las publicaciones asociadas a ese autor.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de campaña</td> 
+   <td>Introduzca o asigne el ID de una campaña para devolver las publicaciones asociadas a esa campaña.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de grupo de contenido</td> 
+   <td>Introduzca o asigne el ID de un blog para devolver las publicaciones asociadas a dicho blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre</td> 
+   <td>Introduzca un nombre de entrada para devolver solo las entradas con ese nombre.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrar por Creado</td> 
+   <td>Seleccione Filtrar para devolver entradas por el valor de tiempo creado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrar por actualizado</td> 
+   <td>Seleccione Filtrar para devolver entradas por el valor de tiempo actualizado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrar por eliminado</td> 
+   <td>Seleccione Filtrar para devolver entradas por el valor de tiempo eliminado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Basura</td> 
+   <td>Introduzca o asigne un slug para devolver publicaciones que coincidan con el slug. El slug se anexa al final del dominio para formar la dirección URL de la publicación de blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Estado</td> 
+   <td>Seleccione un estado (Borrador, Publicado o Programado) para incluir solo los resultados en ese estado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ordenar por fecha de publicación</td> 
+   <td>Seleccione si desea ordenar los resultados en orden ascendente o descendente por fecha de publicación.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Publicar/Cancelar publicación de una publicación de blog**
 
@@ -1852,7 +1920,70 @@ Este módulo de acción programa o cancela la publicación de una publicación d
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **Ver publicaciones de blog**
+
+Este módulo de déclencheur inicia un escenario en el que se crea, actualiza o elimina una publicación de blog que coincide con los criterios establecidos.
+
+
+
+Este módulo de búsqueda recupera entradas de un blog de HubSpot.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Límite</td> 
+   <td>Introduzca o asigne el número máximo de entradas de blog que se devolverán en un ciclo de ejecución.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archivado</td> 
+   <td>Active esta opción para incluir publicaciones archivadas en los resultados.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de autor del blog</td> 
+   <td>Introduzca o asigne el ID de un autor para devolver las publicaciones asociadas a ese autor.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de campaña</td> 
+   <td>Introduzca o asigne el ID de una campaña para devolver las publicaciones asociadas a esa campaña.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de grupo de contenido</td> 
+   <td>Introduzca o asigne el ID de un blog para devolver las publicaciones asociadas a dicho blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre</td> 
+   <td>Introduzca un nombre de entrada para devolver solo las entradas con ese nombre.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrar por Creado</td> 
+   <td>Seleccione Filtrar para devolver entradas por el valor de tiempo creado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrar por actualizado</td> 
+   <td>Seleccione Filtrar para devolver entradas por el valor de tiempo actualizado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrar por eliminado</td> 
+   <td>Seleccione Filtrar para devolver entradas por el valor de tiempo eliminado.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Basura</td> 
+   <td>Introduzca o asigne un slug para devolver publicaciones que coincidan con el slug. El slug se anexa al final del dominio para formar la dirección URL de la publicación de blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Estado</td> 
+   <td>Seleccione un estado (Borrador, Publicado o Programado) para incluir solo los resultados en ese estado.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ Este módulo de acción programa o cancela la publicación de una publicación d
 <!--+++-->
 
 ### Suscripciones
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **Actualizar suscripción por correo electrónico**
 
