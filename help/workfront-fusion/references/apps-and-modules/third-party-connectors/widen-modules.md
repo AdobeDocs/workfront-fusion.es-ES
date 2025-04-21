@@ -1,20 +1,20 @@
 ---
 title: Módulos de Widen
-description: En un  [!DNL Adobe Workfront Fusion] escenario, puede automatizar los flujos de trabajo que utilizan [!UICONTROL Widen], así como conectarlo a varias aplicaciones y servicios de terceros.
+description: En un escenario [!DNL Adobe Workfront Fusion] , puede automatizar los flujos de trabajo que usan [!UICONTROL Widen], así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 89%
+source-wordcount: '1601'
+ht-degree: 84%
 
 ---
 
-# Módulos de [!DNL Widen]
+# [!DNL Widen] módulos
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!UICONTROL Widen], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario [!DNL Adobe Workfront Fusion], puede automatizar los flujos de trabajo que usan [!UICONTROL Widen], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -22,42 +22,46 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 ## Requisitos de acceso
 
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
 Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -82,14 +86,15 @@ El conector Widen utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Conectar [!DNL Widen] a [!DNL Workfront Fusion] {#connect-widen-to-workfront-fusion}
+## Conectar [!DNL Widen] a [!DNL Workfront Fusion]  {#connect-widen-to-workfront-fusion}
 
 Puede crear una conexión con su cuenta de [!DNL Widen] directamente desde un módulo de [!DNL Widen].
 
-1. En cualquier módulo de [!DNL Widen], haga clic en **[!UICONTROL Add]** junto al campo [!UICONTROL Connection].
+1. En cualquier módulo de [!DNL Widen], haga clic en **[!UICONTROL Añadir]** junto al campo [!UICONTROL Conexión].
+1. Seleccione el entorno y el tipo de cuenta a la que se está conectando. Esto es solo para obtener información y aparece en el área Conexiones de Fusion.
 1. Seleccione el dominio [!DNL Widen] al que desea conectarse.
 1. Introduzca el token para su cuenta de [!DNL Widen]. Para obtener instrucciones sobre cómo localizar este token, consulte [[!DNL Widen] Preguntas frecuentes sobre API](https://community.widen.com/collective/s/article/API-FAQs).
-1. Haga clic en **[!UICONTROL Continue]** para crear la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]** para crear la conexión y volver al módulo.
 
 ## Módulos de [!DNL Widen] y sus campos
 
@@ -105,7 +110,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Módulos de activador
 
-#### [!UICONTROL Watch assets]
+#### [!UICONTROL Ver recursos]
 
 Este módulo activador inicia un escenario cuando se crea o actualiza un recurso.
 
@@ -138,15 +143,44 @@ Este módulo activador inicia un escenario cuando se crea o actualiza un recurso
 
 ### Módulos de acción
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset info]](#read-asset-info)
-* [[!UICONTROL Add assets to collections]](#add-assets-to-collections)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Download File]](#download-file)
-* [[!UICONTROL Upload] un archivo](#upload-a-file)
+* [[!UICONTROL Añadir recursos a colecciones]](#add-assets-to-collections)
+* [[!UICONTROL Llamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Descargar archivo]](#download-file)
+* [[!UICONTROL Leer información de recurso]](#read-asset-info)
+* [[!UICONTROL Quitar recursos de la colección]](#remove-assets-from-collection)
+* [[!UICONTROL Actualizar metadatos de recursos]](#update-asset-metadata)
+* [[!UICONTROL Cargar un archivo]](#upload-a-file)
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Añadir recursos a colecciones]
+
+Este módulo de acción añade uno o más recursos a las colecciones.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collections ID]</td> 
+   <td>Para cada colección a la que desee agregar los recursos, haga clic en <strong>[ID de colección]</strong> e introduzca o asigne el [!UICONTROL ID de colección].</li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> Para cada recurso que desee agregar a una colección, haga clic en <strong>[!UICONTROL Assets ID]</strong> e introduzca o asigne el ID del recurso.</p> </li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Introduzca o asigne el número máximo de recursos con los que desea que trabaje el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Llamada de API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Widen]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Widen] módulos.
 
@@ -161,7 +195,7 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL API Version]</td> 
+   <td role="rowheader">[!UICONTROL API Version]</td> 
    <td>Seleccione si desea utilizar la última versión de la API [!DNL Widen] o la versión 1.0</td> 
   </tr> 
   <tr> 
@@ -190,7 +224,26 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read asset info]
+#### [!UICONTROL Descargar archivo]
+
+Este módulo de acción descarga un recurso de su cuenta de [!DNL Widen].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>Introduzca o asigne el ID del recurso que desea descargar.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Leer información de recurso]
 
 Este módulo de acción recupera un recurso individual por su ID único.
 
@@ -217,44 +270,7 @@ Este módulo de acción recupera un recurso individual por su ID único.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to collections]
-
-Este módulo de acción añade uno o más recursos a las colecciones.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>Para cada colección a la que desee añadir los recursos:</p> 
-    <ol> 
-     <li value="1"> <p> Haga clic en <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Escriba o asigne [!UICONTROL Collection ID].</p> </li> 
-     <li value="3"> <p>Haga clic en <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Assets ID]</td> 
-   <td> <p>Para cada recurso que desee añadir a una colección:</p> 
-    <ol> 
-     <li value="1"> <p> Haga clic en <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Introduzca o asigne el ID de recurso.</p> </li> 
-     <li value="3"> <p>Haga clic en <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Introduzca o asigne el número máximo de recursos con los que desea que trabaje el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
+#### [!UICONTROL Quitar recursos de la colección]
 
 Este módulo de acción elimina uno o varios recursos de las colecciones.
 
@@ -267,22 +283,15 @@ Este módulo de acción elimina uno o varios recursos de las colecciones.
   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>Para cada colección de la que desee quitar los recursos:</p> 
-    <ol> 
-     <li value="1"> <p> Haga clic en <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Introduzca o asigne el ID de colección.</p> </li> 
-     <li value="3"> <p>Haga clic en <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td>Para cada colección de la que desee quitar recursos, haga clic en <strong>[ID de colección]</strong> e introduzca o asigne el [!UICONTROL ID de colección].</li> 
+   </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recursos</td> 
-   <td> <p>Para cada recurso que desee quitar de una colección:</p> 
-    <ol> 
-     <li value="1"> <p> Haga clic en <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Introduzca o asigne el ID de recurso.</p> </li> 
-     <li value="3"> <p>Haga clic en <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> Para cada recurso que desee eliminar de una colección, haga clic en <strong>[!UICONTROL Assets ID]</strong> e introduzca o asigne el ID del recurso.</p> </li> 
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -291,7 +300,7 @@ Este módulo de acción elimina uno o varios recursos de las colecciones.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update asset metadata]
+#### [!UICONTROL Actualizar metadatos de recurso]
 
 Este módulo de acción actualiza los campos de metadatos de un recurso.
 
@@ -322,26 +331,7 @@ Este módulo de acción actualiza los campos de metadatos de un recurso.
  </tbody> 
 </table>
 
-#### [!UICONTROL Download File]
-
-Este módulo de acción descarga un recurso de su cuenta de [!DNL Widen].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>Introduzca o asigne el ID del recurso que desea descargar.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Subir un archivo]
 
 Este módulo de acción carga un archivo a su cuenta de [!DNL Widen].
 
@@ -351,7 +341,7 @@ Este módulo de acción carga un archivo a su cuenta de [!DNL Widen].
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+  <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Widen] a [!DNL Workfront Fusion], consulte <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Widen] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload Profile]</td> 
@@ -375,17 +365,17 @@ Este módulo de acción carga un archivo a su cuenta de [!DNL Widen].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Metadata]</td> 
-   <td>Seleccione los campos de metadatos que desee incluir en la carga del archivo. Para cada campo, ingrese [!UICONTROL value] para el campo.</td> 
+   <td>Seleccione los campos de metadatos que desee incluir en la carga del archivo. Para cada campo, introduzca el [!UICONTROL value] para el campo.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Módulos de búsqueda
 
-* [[!UICONTROL Read collection assets]](#read-collection-assets)
-* [[!UICONTROL Search assets]](#search-assets)
+* [[!UICONTROL Leer recursos de colección]](#read-collection-assets)
+* [[!UICONTROL Buscar recursos]](#search-assets)
 
-#### [!UICONTROL Read collection assets]
+#### [!UICONTROL Leer recursos de colección]
 
 Este módulo de acción recupera una lista de recursos dentro de una colección.
 
@@ -424,7 +414,7 @@ Este módulo de acción recupera una lista de recursos dentro de una colección.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search assets]
+#### [!UICONTROL Buscar recursos]
 
 Este módulo de búsqueda recupera una lista de recursos que coinciden con los criterios de búsqueda específicos.
 
@@ -458,7 +448,7 @@ Este módulo de búsqueda recupera una lista de recursos que coinciden con los c
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search document text]</td> 
-   <td>Active esta opción para incluir el texto del documento en la búsqueda o active la opción Falso para incluir solo los recursos cuyo título coincida con los criterios de búsqueda.</td> 
+   <td>Active esta opción para incluir el texto del documento en la búsqueda o establezca en falso para incluir solo los recursos cuyo título coincida con los criterios de búsqueda.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
