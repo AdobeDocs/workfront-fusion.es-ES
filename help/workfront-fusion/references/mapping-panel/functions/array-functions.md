@@ -4,10 +4,10 @@ description: Las siguientes funciones de matriz están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 95%
+source-wordcount: '608'
+ht-degree: 88%
 
 ---
 
@@ -39,7 +39,7 @@ Comprueba si una matriz contiene el valor.
 
 ## [!UICONTROL remove (array; value1; value2; ...)]
 
-Quita los valores especificados en los parámetros de una matriz. Esta función sólo es efectiva en matrices primitivas de texto o números.
+Quita los valores especificados en los parámetros de una matriz. Esta función solo es efectiva en matrices primitivas de texto o números.
 
 ## [!UICONTROL add (array; value1; value2; ...)]
 
@@ -138,6 +138,39 @@ Elimina los duplicados dentro de una matriz de contactos comparando la propiedad
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* Esta función toma una matriz que contiene pares de clave-valor y la convierte en una colección. La función tiene tres argumentos:
+
+* (matriz) que contiene pares de valor clave
+* (cadena) el nombre del campo que se utilizará como clave
+* (cadena) el nombre del campo que se utilizará como valor
+
+>[!BEGINSHADEBOX]
+
+Ejemplo:
+
+Dada una matriz:
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+y argumentos
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+la función devuelve
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 
