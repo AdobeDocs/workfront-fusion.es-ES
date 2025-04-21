@@ -4,10 +4,10 @@ description: Las siguientes funciones de fecha y hora están disponibles en el p
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 90%
+source-wordcount: '1876'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ Obtiene la hora actual como una marca de tiempo Unix.
 
 ## Funciones 
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds (fecha; número)]
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de segundos a una fecha. Para restar segundos, introduzca un número negativo.
 
@@ -43,7 +43,7 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de seg
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes (fecha; número)] {#addminutes-date-number}
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de minutos a una fecha. Para restar minutos, introduzca un número negativo.
 
@@ -61,7 +61,7 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de min
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours (fecha; número)] {#addhours-date-number}
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de horas a una fecha. Para restar horas, introduzca un número negativo.
 
@@ -79,7 +79,7 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de hor
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays (fecha; número)] {#adddays-date-number}
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de días a una fecha. Para restar días, introduzca un número negativo.
 
@@ -97,7 +97,7 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de dí
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths (fecha; número)]
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de meses a una fecha. Para restar meses, introduzca un número negativo.
 
@@ -115,7 +115,7 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de mes
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears (fecha; número)]
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de años a una fecha. Para restar años, introduzca un número negativo.
 
@@ -133,13 +133,13 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de añ
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond (fecha; número)]
 
 Esta función devuelve una nueva fecha con los segundos especificados en parámetros.
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (date; number)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -149,13 +149,13 @@ Si necesita especificar un número fuera del intervalo, le recomendamos que util
 
   Devuelve 2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   Devuelve 2015-10-07T11:37:01.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute (fecha; número)]
 
 Esta función devuelve una nueva fecha con los minutos especificados en los parámetros.
 
@@ -177,7 +177,7 @@ Si necesita especificar un número fuera del intervalo, le recomendamos que util
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour (fecha; número)]
 
 Esta función devuelve una nueva fecha con la hora especificada en parámetros.
 
@@ -199,7 +199,7 @@ Si necesita especificar un número fuera del intervalo, le recomendamos que util
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDay (date; number/name of the day in English)]
+### [!UICONTROL setDay (fecha; número/nombre del día en inglés)]
 
 Esta función devuelve una nueva fecha con el día especificado en parámetros.
 
@@ -225,7 +225,7 @@ Si necesita especificar un número fuera del intervalo, le recomendamos que util
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDate (date; number)]
+### [!UICONTROL setDate (fecha; número)]
 
 Esta función devuelve una nueva fecha con el día del mes especificado en parámetros.
 
@@ -313,7 +313,7 @@ Para obtener más información, consulte Fecha y texto en el artículo [Tipos de
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Texto </td> 
-   <td> <p>Permite especificar un formato mediante tokens de formato de fecha y hora. Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens para el formato de fecha y hora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo:</b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Permite especificar un formato mediante tokens de formato de fecha y hora. Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens para el formato de fecha y hora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -353,7 +353,7 @@ La función `formatDate` devuelve una representación de texto del valor Fecha e
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate (texto; formato; [zona horaria])]
 
 Utilice esta función cuando tenga un valor de texto que represente una fecha (como `12-10-2019 20:30` o `Aug 18, 2019 10:00 AM`) y desee convertirlo (analizarlo) en un valor de fecha (una representación binaria legible por máquina). Para obtener más información, consulte Fecha y texto en el artículo [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -381,7 +381,7 @@ La segunda columna indica el tipo esperado. Si se proporciona un tipo diferente,
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Texto </td> 
-   <td> <p>Permite especificar un formato mediante tokens de formato de fecha y hora. Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens para el formato de fecha y hora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo:</b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Permite especificar un formato mediante tokens de formato de fecha y hora. Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens para el formato de fecha y hora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Ejemplo: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -419,7 +419,7 @@ Esta función convierte una cadena de texto en una fecha, según el formato y la
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dateDifference (Date1; Date2; Unidad)]
 
 Devuelve un número que representa la diferencia entre las dos fechas, expresado en la unidad especificada.
 
