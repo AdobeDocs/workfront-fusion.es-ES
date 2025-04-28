@@ -4,10 +4,10 @@ description: Puede restaurar una versión anterior de un escenario. Esto le perm
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 47%
+source-wordcount: '309'
+ht-degree: 44%
 
 ---
 
@@ -78,7 +78,8 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 1. (Opcional) Para cambiar el nombre de la versión, haga clic en el menú Más ![Menú Más](assets/more-icon-vertical.png) en la línea de esa versión, seleccione **Editar** e introduzca un nombre en el campo. Haga clic en **Guardar** para guardar el nuevo nombre.
 
    Se recomienda asignar un nombre que describa los cambios realizados en esta versión.
-1. (Opcional) Para restaurar la versión, haga clic en restaurar ![menú Más](assets/more-icon-vertical.png) en la línea de esa versión
+1. (Opcional) Para descargar el modelo de una versión anterior, haga clic en el menú Más ![Menú Más](assets/more-icon-vertical.png) en la línea de esa versión y, a continuación, seleccione **Descargar**.
+1. (Opcional) Para restaurar la versión, haga clic en **Restaurar** en la línea de esa versión
 
 
    >[!NOTE]

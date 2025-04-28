@@ -4,10 +4,10 @@ description: Puede copiar módulos, grupos de módulos o escenarios completos en
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 53%
+source-wordcount: '908'
+ht-degree: 66%
 
 ---
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -77,18 +77,18 @@ Tenga en cuenta lo siguiente al pegar módulos en un escenario diferente:
 
 Copiar un grupo de módulos es similar a copiar un solo módulo.
 
-1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea copiar un módulo.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Haga clic con el botón derecho en el módulo que desea copiar.
 
    >[!NOTE]
    >
-   >Para seleccionar más de un módulo, mantenga presionada la tecla [!UICONTROL shift] y haga clic en los módulos que desea copiar. Al copiar un grupo de módulos también se copian las líneas de conexión, los filtros o la lógica de enrutamiento entre ellos.
+   >Para seleccionar más de un módulo, mantenga presionada la tecla [!UICONTROL Mayús] y haga clic en los módulos que desea copiar. Al copiar un grupo de módulos también se copian las líneas de conexión, los filtros o la lógica de enrutamiento entre ellos.
 
-1. Seleccione **[!UICONTROL Copy module]**.
+1. Seleccione **[!UICONTROL Copiar módulo]**.
 1. Mueva el cursor al área del escenario donde desea la copia del escenario.
-1. Haga clic con el botón derecho y seleccione **[!UICONTROL Paste]**.
+1. Haga clic con el botón derecho y seleccione **[!UICONTROL Pegar]**.
 1. Conecte los módulos pegados al escenario arrastrándolos a la ubicación adecuada en el escenario.
 
    También puede utilizar métodos abreviados del teclado para copiar y pegar.
@@ -99,17 +99,17 @@ Al clonar un escenario, se crea una copia del mismo que luego puede editar.
 
 1. Abra la página de detalles del escenario:
 
-   1. Haga clic en la ficha **[!UICONTROL Scenario]** en el panel izquierdo y, a continuación, haga clic en un escenario sobre el que desee obtener detalles.
+   1. Haga clic en la pestaña **[!UICONTROL Escenario]** en el panel izquierdo y, a continuación, haga clic en un escenario sobre el que desea obtener detalles.
 
       O
 
       Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
-1. Haga clic con el botón derecho en **[!UICONTROL Options]** en la parte superior derecha de la página.
-1. Seleccione **[!UICONTROL Clone]**.
+1. Haga clic con el botón derecho en **[!UICONTROL Opciones]** en la parte superior derecha de la página.
+1. Seleccione **[!UICONTROL Clonar]**.
 1. (Opcional) Escriba un nombre para el nuevo escenario.
-1. (Opcional) Habilite **[!UICONTROL Keep the states of any new modules the same as those being duplicated]** para asegurarse de que el escenario copiado también incluya información sobre los registros más recientes procesados por el escenario original.
-1. Haga clic en **[!UICONTROL Save]** para crear el escenario.
+1. (Opcional) Habilite **[!UICONTROL Mantener los estados de los nuevos módulos igual que los que se están duplicando]** para asegurarse de que el escenario copiado también incluya información sobre los registros más recientes procesados por el escenario original.
+1. Haga clic en **[!UICONTROL Guardar]** para crear el escenario.
 
 ## Copiar un escenario mediante modelos
 
@@ -119,13 +119,17 @@ Un modelo de escenario representa todo el escenario. Si desea copiar solamente c
 
 ### Exportar un modelo de escenario
 
-1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea exportar un modelo.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
-1. En el escenario, haga clic en el menú **[!UICONTROL More]** en el área de configuración del escenario.
-1. Haga clic en **[!UICONTROL Export Blueprint]**.
+1. En el escenario, haga clic en el menú **[!UICONTROL Más]** del área de configuración del escenario.
+1. Haga clic en **[!UICONTROL Exportar modelo]**.
 
    Se crea un archivo JSON y se descarga en el equipo. Puede localizar este archivo en la carpeta [!DNL Downloads].
+
+>[!NOTE]
+>
+>Para exportar el modelo de una versión anterior de un escenario, consulte [Ver y administrar versiones de escenarios](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 
 ### Importar un modelo
 
@@ -134,13 +138,13 @@ Un modelo de escenario representa todo el escenario. Si desea copiar solamente c
 >Si importa un modelo a un escenario existente, el modelo de escenario reemplazará al escenario existente. No se puede anexar un modelo a un escenario existente.
 
 1. Empiece a crear un nuevo escenario.
-1. En el escenario, haga clic en el menú **[!UICONTROL More]** en el área de configuración del escenario.
-1. Haga clic en **[!UICONTROL Import Blueprint]**.
-1. En el diálogo que aparece, haga clic en **[!UICONTROL Browse]**
-1. Vaya al modelo que desee importar y haga clic en **[!UICONTROL Open]**.
-1. Haga clic en **[!UICONTROL Save]**.
+1. En el escenario, haga clic en el menú **[!UICONTROL Más]** del área de configuración del escenario.
+1. Haga clic en **[!UICONTROL Importar modelo]**.
+1. En el diálogo que aparece, haga clic en **[!UICONTROL Examinar]**
+1. Vaya al modelo que desee importar y haga clic en **[!UICONTROL Abrir]**.
+1. Haga clic en **[!UICONTROL Guardar]**.
 
-   Se crea un archivo JSON y se descarga en el equipo. Puede localizar este archivo en la carpeta [!UICONTROL Downloads].
+   Se crea un archivo JSON y se descarga en el equipo. Encontrará este archivo en su carpeta [!UICONTROL Descargas].
 
 ## Copiar y reutilizar escenarios mediante plantillas
 
