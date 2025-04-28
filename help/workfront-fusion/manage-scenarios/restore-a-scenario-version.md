@@ -1,19 +1,19 @@
 ---
-title: Restaurar una versión de escenario
-description: Puede restaurar una versión anterior de un escenario. Esto le permite realizar cambios en un escenario y, a continuación, revertirlos fácilmente si prefiere la funcionalidad anterior.
+title: Visualización y administración de versiones de escenarios
+description: Puede ver, restaurar, cambiar el nombre o descargar modelos para versiones anteriores de un escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 44%
+source-wordcount: '298'
+ht-degree: 34%
 
 ---
 
 # Visualización y administración de versiones de escenarios
 
-Puede ver, restaurar o cambiar el nombre de versiones anteriores de un escenario.
+Puede ver, restaurar, cambiar el nombre o descargar modelos para versiones anteriores de un escenario.
 
 ## Requisitos de acceso
 
