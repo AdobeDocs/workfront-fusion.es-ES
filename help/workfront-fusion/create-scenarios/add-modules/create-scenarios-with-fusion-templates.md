@@ -66,7 +66,7 @@ Las plantillas públicas están disponibles sin requisitos previos.
 
 ## Creación de un escenario a partir de una plantilla
 
-1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas![&#128279;](assets/templates-icon.png) de la ficha Plantillas** en el panel de navegación izquierdo.
 1. Haga clic en la ficha que contiene la plantilla que desea usar (**Plantillas públicas** o **Plantillas de equipo**).
 1. Busque una plantilla específica utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en la plantilla que desee utilizar para crear un escenario.

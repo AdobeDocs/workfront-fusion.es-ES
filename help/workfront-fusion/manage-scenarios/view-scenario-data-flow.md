@@ -55,7 +55,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[! UICONTROL Seleccionar] o [! UICONTROL Prime] plan: [!DNL Workfront] Su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[! UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>[!UICONTROL Seleccionar] o [!UICONTROL Prime] plan: [!DNL Workfront] Su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 

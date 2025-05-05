@@ -56,7 +56,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 &#42;Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
 
-&#42;&#42;Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Requisitos previos
 
@@ -652,7 +652,7 @@ Este módulo de acción crea un nuevo álbum en Lightroom.
         <p>Seleccione el subtipo del álbum.</p>
       </td>
     <tr>
-      <td role="rowheader">Clave de API [!UICONTROL]</td>
+      <td role="rowheader">Clave de API </td>
       <td>
         <p>Introduzca la clave API del servicio que está creando el álbum.</p>
       </td>

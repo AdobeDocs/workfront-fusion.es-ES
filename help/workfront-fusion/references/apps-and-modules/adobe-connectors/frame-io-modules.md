@@ -123,7 +123,7 @@ Para conectar la cuenta de [!DNL Frame.io] a [!DNL Workfront Fusion] mediante un
 1. Copie el token proporcionado.
 1. Vaya a [!DNL Workfront Fusion] y abra el diálogo **[!UICONTROL Crear una conexión]** del módulo [!DNL Frame.io].
 1. En el campo **[!UICONTROL Tipo de conexión]**, seleccione **[!DNL Frame.io]**.
-1. Escriba el token que ha copiado en el paso 5 en el campo Su [!DNL Frame.io] clave ]**de**[!UICONTROL  API
+1. Escriba el token que ha copiado en el paso 5 en el campo Su [!DNL Frame.io] clave **de** API
 1. Haga clic en **[!UICONTROL Continuar]** para establecer la conexión y volver al módulo.
 
 ### Conectarse a [!DNL Frame.io] mediante OAuth 2.0 PKCE
@@ -240,7 +240,7 @@ Este módulo de acción crea un nuevo recurso.
    <td> <p>Si está creando un archivo, introduzca una breve descripción del recurso.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Etiquetar] </td> 
+   <td role="rowheader">[!UICONTROL Etiquetar] </td> 
    <td> <p>Si crea un archivo, seleccione si el archivo está en curso, si necesita revisión o si está aprobado.</p> </td> 
   </tr> 
  </tbody> 

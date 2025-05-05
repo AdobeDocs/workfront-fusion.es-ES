@@ -760,10 +760,10 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ta
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Target], consulte <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >}Crear una conexión con [!DNL Adobe Target]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Target], consulte <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >&rbrace;Crear una conexión con [!DNL Adobe Target]</a> en este artículo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
+      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
       <td>Escriba o asigne la dirección URL base de [!DNL Target].</td>
     </tr>
     <tr>

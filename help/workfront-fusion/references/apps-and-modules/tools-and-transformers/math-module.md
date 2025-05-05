@@ -52,7 +52,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre licencias de [!DNL Adobe Workfront Fusion], consulte licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) de [[!DNL Adobe Workfront Fusion] .
+Para obtener información sobre licencias de [!DNL Adobe Workfront Fusion], consulte licencias[&#128279;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) de [!DNL Adobe Workfront Fusion] .
 
 +++
 

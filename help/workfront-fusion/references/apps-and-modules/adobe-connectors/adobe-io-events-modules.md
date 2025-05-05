@@ -184,7 +184,7 @@ Para crear un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           Descripción del webhook de [!UICONTROL]
+           Descripción del webhook de 
          </td>
          <td>
            Escriba una descripción para este webhook.

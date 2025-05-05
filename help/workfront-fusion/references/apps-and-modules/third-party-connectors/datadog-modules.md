@@ -124,7 +124,7 @@ Puede crear una conexión con su cuenta de [!DNL Datadog] directamente desde un 
       <td> <p>Seleccione el dominio al que desea conectarse (EE. UU. o UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Ubicación de la clave API [!UICONTROL] </td> 
+      <td role="rowheader">Ubicación de la clave API  </td> 
       <td> <p>Seleccione si desea incluir la clave de API en el encabezado o en la cadena de consulta.</p> </td> 
      </tr> 
      <tr> 

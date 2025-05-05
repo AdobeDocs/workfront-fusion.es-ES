@@ -116,7 +116,7 @@ Este módulo de déclencheur instantáneo inicia un escenario cuando la acción 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Seleccione el webhook que desee utilizar para ver los mensajes salientes o agregue un webhook. </p><p>Para añadir un webhook, haga clic en <strong>[! UICONTROL añadir]</strong> e introduzca el nombre y la conexión del webhook, el archivo que desea ver y los desencadenadores que desea ver.</p> <p> Para obtener instrucciones sobre cómo conectar su [! UICONTROL Box] cuenta a [! UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectarse a un servicio: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Seleccione el webhook que desee utilizar para ver los mensajes salientes o agregue un webhook. </p><p>Para añadir un webhook, haga clic en <strong>[!UICONTROL añadir]</strong> e introduzca el nombre y la conexión del webhook, el archivo que desea ver y los desencadenadores que desea ver.</p> <p> Para obtener instrucciones sobre cómo conectar su [!UICONTROL Box] cuenta a [!UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectarse a un servicio: instrucciones básicas</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -302,7 +302,7 @@ Este módulo de acción crea una nueva carpeta vacía dentro de la carpeta princ
    <td> <p>Cuando se ha establecido este parámetro, los usuarios pueden enviar archivos por correo electrónico a la dirección de correo electrónico que se ha creado automáticamente para esta carpeta. Las opciones de colaboradores permiten solo correos electrónicos registrados para colaboradores.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Estado de sincronización UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Estado de sincronización]</td> 
    <td> <p>Especifica si una carpeta se debe sincronizar o no con el dispositivo de un usuario. Esto se usa en Box Sync (interrumpido) y no en Box Drive.</p> </td> 
   </tr> 
  </tbody> 
@@ -453,11 +453,11 @@ Este búsqueda módulo busca los elementos que están disponibles para el usuari
    <td> <p>Para búsqueda en una carpeta específica, para cada carpeta que desee búsqueda, haga clic en <b>añadir elemento</b> e introduzca el ID de la carpeta. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Creado desde]</td> 
+   <td role="rowheader">[!UICONTROL Creado desde]</td> 
    <td> <p>Para búsqueda los activos creados en un intervalo de fecha determinado, introduzca la fecha más temprana del intervalo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Creado para]</td> 
+   <td role="rowheader">[!UICONTROL Creado para]</td> 
    <td> <p>Para búsqueda para activos creado en un intervalo de fecha determinado, introduzca la última fecha del intervalo.</p> </td> 
   </tr> 
   <tr> 
