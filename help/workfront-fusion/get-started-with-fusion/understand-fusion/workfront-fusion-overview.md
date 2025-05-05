@@ -31,7 +31,7 @@ Workfront Fusion también ofrece funciones que admiten escenarios, como plantill
 
 A medida que empiece a trabajar con Workfront Fusion, puede encontrar útiles los siguientes recursos:
 
-* Para obtener recursos de formación de Workfront Fusion, consulte [Información general sobre formación de Workfront Fusion](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Para obtener recursos de formación de Workfront Fusion, consulte [Información general sobre formación de Workfront Fusion](https://experienceleague.adobe.com/es/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Para obtener más información sobre los escenarios, vea [Información general sobre escenarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).

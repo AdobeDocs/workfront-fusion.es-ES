@@ -70,7 +70,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 Puede eliminar un usuario de Workfront Fusion sin modificar los demás permisos de productos de Adobe.
 
-Para obtener instrucciones, consulte &quot;Quitar usuarios y grupos de usuarios de un producto&quot; en el artículo [Administrar productos en el Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html).
+Para obtener instrucciones, consulte &quot;Quitar usuarios y grupos de usuarios de un producto&quot; en el artículo [Administrar productos en el Admin Console](https://helpx.adobe.com/es/enterprise/using/manage-products.html).
 
 ## Desactivar un usuario en todos los productos de [!DNL Adobe Admin Console]
 
@@ -83,7 +83,7 @@ Un usuario se desactiva de la [!DNL Adobe Admin Console] cuando se da una de las
 * El usuario se elimina de un perfil de producto y no se asigna a otro perfil de producto.
 * El usuario se elimina o desactiva en la organización que incluye Workfront Fusion.
 
-  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/enterprise/using/manage-users-individually.html?lang=es).
+  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/es/enterprise/using/manage-users-individually.html?lang=es).
 
 En [!DNL Workfront Fusion], la desactivación afecta al usuario de una de las siguientes maneras:
 
