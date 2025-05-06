@@ -4,10 +4,10 @@ description: Los módulos [!DNL Adobe Workfront Fusion SFTP]  permiten supervisa
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 84%
+source-wordcount: '2121'
+ht-degree: 82%
 
 ---
 
@@ -449,6 +449,10 @@ Este módulo le permite subir un archivo en el servidor SFTP.
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Establezca los permisos deseados para el archivo o la carpeta. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Tamaño del búfer (B)]</p> </td> 
+   <td> <p>Establezca el tamaño (en bytes) de cada fragmento al cargar el archivo. Esto resulta útil en archivos grandes o cuando los límites de memoria del servidor requieren cargas más pequeñas. Si no se establece este valor, el archivo se escribe en una sola operación.</p> </td> 
   </tr> 
  </tbody> 
 </table>
