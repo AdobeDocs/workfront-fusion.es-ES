@@ -4,7 +4,7 @@ description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: d81785ec60dfd74583a54a75ab1bfc1a253d8faf
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 46%
@@ -92,7 +92,7 @@ El conector Frame.io utiliza lo siguiente:
  <tbody> 
   <tr> 
    <td role="rowheader">URL básica</td> 
-   <td> https://api.frame.io/v2</td> 
+   <td> https://api.frame.io/v4</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 

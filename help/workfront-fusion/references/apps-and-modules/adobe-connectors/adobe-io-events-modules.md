@@ -4,9 +4,9 @@ description: Con los módulos de Adobe I/O Events, puede iniciar un escenario de
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '969'
 ht-degree: 36%
 
 ---
@@ -104,6 +104,12 @@ Para crear una conexión para los módulos de Adobe I/O Events:
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Entorno</td>
+        <td>
+          <p>Seleccione si desea conectarse al entorno de producción o de no producción.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Tipo</td>
         <td>
           <p>Seleccione si desea conectarse a una cuenta de servicio o a una cuenta personal.</p>
@@ -161,6 +167,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Activadores
 
+<!--Becky start here-->
+
 #### Crear un registro de eventos
 
 Este módulo de acción utiliza un webhook para crear una descripción de evento. Puede configurar un webhook aquí. Si utiliza un webhook existente, los campos de este módulo son de solo lectura.
@@ -184,7 +192,7 @@ Para crear un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           Descripción del webhook de 
+           Descripción del webhook de [!UICONTROL]
          </td>
          <td>
            Escriba una descripción para este webhook.
