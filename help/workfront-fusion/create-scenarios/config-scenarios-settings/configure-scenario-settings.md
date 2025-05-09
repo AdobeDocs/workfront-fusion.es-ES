@@ -5,10 +5,10 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 46%
+source-wordcount: '1288'
+ht-degree: 54%
 
 ---
 
@@ -45,7 +45,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>Plan [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] está incluido.</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -77,12 +77,12 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
    ![Configuración de escenario](assets/scenario-settings-350x221.png)
 
-   En el panel [!UICONTROL Scenario settings] que se muestra, puede configurar varias opciones avanzadas para el escenario.
+   En el panel [!UICONTROL Configuración de escenario] que se muestra, puede configurar varias opciones avanzadas para el escenario.
 1. Habilite o deshabilite la configuración de Escenario según sea necesario. Consulte [Opciones de configuración de escenarios](#scenario-settings-options) a continuación.
 
 ## Opciones de configuración de escenarios
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL Procesamiento secuencial]
 
 Esta opción fuerza que todas las ejecuciones se produzcan en orden y es principalmente relevante para los webhooks y para las ejecuciones incompletas.
 
@@ -111,13 +111,13 @@ Cuando se habilita el procesamiento secuencial, se desactivan las ejecuciones pa
 
 ### Los datos son confidenciales
 
-Una vez ejecutado un escenario, puede mostrar de forma predeterminada información sobre los datos que han procesado los módulos en el escenario. Si no desea almacenar esta información, habilite la opción [!UICONTROL Data is confidential].
+Una vez ejecutado un escenario, puede mostrar de forma predeterminada información sobre los datos que han procesado los módulos en el escenario. Si no desea almacenar esta información, habilite la opción [!UICONTROL Datos confidenciales].
 
 >[!IMPORTANT]
 >
 >Si activa esta opción, puede resultar difícil resolver los errores que pueden producirse durante la ejecución de un escenario.
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL Permitir almacenar ejecuciones incompletas]
 
 Esta opción determina cómo procede [!DNL Adobe Workfront Fusion] si se produce un error durante la ejecución de un escenario. Con esta opción habilitada, el escenario se detiene y se mueve a la carpeta de ejecución incompleta. Esto le ofrece la posibilidad de solucionar el problema y seguir ejecutando desde el lugar en el que se detuvo el escenario. Si esta opción está desactivada, la ejecución del escenario se detiene y se inicia una fase de reversión.
 
@@ -127,7 +127,7 @@ Para obtener más información sobre las ejecuciones incompletas, vea [Ver y res
 
 Esta opción tiene que ver con habilitar la pérdida de datos si [!DNL Workfront Fusion] no puede guardar un paquete en la cola de ejecuciones incompletas (por ejemplo, debido a la falta de espacio libre). Con esta opción habilitada, los datos se pierden para evitar interrupciones en la ejecución general del escenario. Esto resulta útil en escenarios en los que la prioridad más alta es la ejecución continua y los datos erróneos entrantes no son tan importantes.
 
-Aparte de esto, al ejecutar un escenario, un módulo a veces puede encontrar un archivo que sea más grande que el tamaño máximo permitido. En este caso, [!DNL Workfront Fusion] procede de acuerdo con la configuración de la opción [!UICONTROL Enable data loss] y se muestra un mensaje de advertencia.
+Aparte de esto, al ejecutar un escenario, un módulo a veces puede encontrar un archivo que sea más grande que el tamaño máximo permitido. En este caso, [!DNL Workfront Fusion] procede de acuerdo con la configuración de la opción [!UICONTROL Habilitar la pérdida de datos] y se muestra un mensaje de advertencia.
 
 Para obtener más información sobre las ejecuciones incompletas, vea [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -135,9 +135,9 @@ Para obtener más información sobre el tamaño máximo de archivo, consulte [Pr
 
 Para obtener más información sobre las advertencias, consulte [Tipos de error](/help/workfront-fusion/references/errors/error-processing.md).
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL Confirmación automática]
 
-La configuración de [!UICONTROL Auto commit] se aplica a las transacciones y define la forma de procesar un escenario. Si la opción de confirmación automática está activada, la fase de confirmación de cada módulo se inicia inmediatamente después de completar la fase de operación. Con la opción de confirmación automática desactivada, no se produce ninguna confirmación hasta que se ejecutan las operaciones para todos los módulos (este es el modo predeterminado).
+La configuración de [!UICONTROL confirmación automática] se aplica a las transacciones y define la forma de procesar un escenario. Si la opción de confirmación automática está activada, la fase de confirmación de cada módulo se inicia inmediatamente después de completar la fase de operación. Con la opción de confirmación automática desactivada, no se produce ninguna confirmación hasta que se ejecutan las operaciones para todos los módulos (este es el modo predeterminado).
 
 ### Número máximo de ciclos
 
@@ -160,11 +160,11 @@ La configuración de más ciclos puede resultar útil cuando desea evitar la int
 
 >[!BEGINSHADEBOX]
 
-**Ejemplos:** [!DNL Workfront] > [!UICONTROL Watch record] observa nuevos problemas que se producen y [!DNL Workfront] >[!UICONTROL Convert object] convierte la nueva solicitud en un proyecto y le asigna la plantilla adecuada.
+**Ejemplos:** [!DNL Workfront] > [!UICONTROL Observar registro] observa los nuevos problemas que se producen y [!DNL Workfront] >[!UICONTROL Convertir objeto] convierte la nueva solicitud en un proyecto y le asigna la plantilla adecuada.
 
 ![Configuración de escenario](assets/scenario-settings-ex-1-350x157.png)
 
-La configuración [!UICONTROL more cycles] solo se aplica cuando se programa la ejecución del escenario. Al usar el botón [!UICONTROL Run once], se tiene en cuenta la configuración del ciclo.
+La configuración [!UICONTROL más ciclos] solo se aplica cuando se programa la ejecución del escenario. Al usar el botón [!UICONTROL Ejecutar una vez], se tiene en cuenta la configuración del ciclo.
 
 #### El número máximo de ciclos se establece en 1 (predeterminado)
 
@@ -177,7 +177,7 @@ Si se envían 100 solicitudes a [!DNL Workfront] y el campo Número máximo de c
 
 El número máximo de ciclos en el módulo Workfront > Ver registros está establecido en `10`.
 
-Si se añaden 100 archivos a la carpeta Dropbox y la opción Número máximo de ciclos se define en 10, se procesarán 10 archivos durante el primer ciclo, los siguientes 10 archivos del segundo ciclo, los siguientes 10 archivos del tercer ciclo, etc., hasta que se procesen todos los archivos.
+Si se añaden 100 archivos a la carpeta Dropbox y la opción Número máximo de ciclos se define en 10, se procesarán 10 archivos durante el primer ciclo, los 10 archivos siguientes en el segundo, los 10 archivos siguientes en el tercer ciclo, etc., hasta que se procesen todos los archivos.
 
 Todos los archivos se procesan en un escenario de ejecución.
 
@@ -198,3 +198,14 @@ Para obtener más información sobre los errores, consulte [Tipos de error](/hel
 >[!NOTE]
 >
 >Si un escenario comienza con un activador instantáneo, la configuración se ignora y el escenario se desactiva inmediatamente después de que se haya producido el primer error.
+
+### Grupo de trabajo
+
+>[!NOTE]
+>
+>Esta configuración solo es visible si se cumplen las dos condiciones siguientes:
+>
+>* Es administrador o propietario de una organización
+>* Hay más de un grupo de trabajadores asociado a su organización.
+
+Esta configuración asigna el escenario a un grupo de trabajadores específico asociado a su organización, lo que le permite dedicar recursos a escenarios de alta prioridad.
