@@ -4,9 +4,9 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2466'
 ht-degree: 19%
 
 ---
@@ -241,7 +241,7 @@ Este módulo funciona con la API de Firefly V3 asincrónica. La versión anterio
 
 Este módulo ha quedado obsoleto y se eliminará en un futuro próximo. En su lugar, utilice el módulo Fill an image.
 
-## Generar una imagen
+### Generar una imagen
 
 Este módulo de acción genera una imagen basada en una solicitud proporcionada. También puede proporcionar una imagen de referencia opcional, y la imagen generada coincidirá con el estilo de la imagen de referencia.
 
@@ -258,6 +258,10 @@ Este módulo funciona con la API de Firefly V3 asincrónica. La versión anterio
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
    <td>Introduzca o asigne un mensaje para la imagen que desea generar. Más detalles en la solicitud le permitirá tener más control sobre lo que aparece en la imagen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Versión de modelo]</td> 
+   <td>Seleccione la versión del modelo de Firefly que desee utilizar para generar la imagen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número de variaciones]</td> 
@@ -388,6 +392,10 @@ Este módulo de acción genera imágenes similares a la imagen de origen especif
   <tr> 
    <td role="rowheader">[!UICONTROL Número de variaciones]</td> 
    <td>Escriba un número entre 1 y 4. El módulo generará este número de variaciones de imagen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Versión de modelo]</td> 
+   <td>Seleccione la versión del modelo de Firefly que desee utilizar para generar las imágenes.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato de imagen generado]</td> 
