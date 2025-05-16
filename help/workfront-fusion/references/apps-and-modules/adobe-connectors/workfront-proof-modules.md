@@ -4,7 +4,7 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 85%
@@ -101,7 +101,7 @@ Puede crear una conexión con su cuenta de [!DNL Workfront Proof] directamente d
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Introduzca un nombre para la conexión</td>
+                <td>Introduzca un nombre para la conexión. </td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Environment]</td>

@@ -4,10 +4,10 @@ description: Algunos módulos de activación le permiten seleccionar el primer p
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 59%
+source-wordcount: '328'
+ht-degree: 58%
 
 ---
 
@@ -48,7 +48,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -64,7 +64,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
 ## Elegir dónde se inicia un módulo de activador
 
-1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea elegir dónde comienza el déclencheur.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Configure y guarde un módulo de déclencheur.
@@ -75,7 +75,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
    ![Elija por dónde empezar](assets/choose-where-to-start.png)
 
-1. Seleccione una opción en el cuadro **[!UICONTROL Choose where to start]** que aparece.
+1. Seleccione una opción en el cuadro **[!UICONTROL Elegir por dónde empezar]** que aparece.
 
    Las opciones mostradas dependen de las posibilidades de un servicio determinado. Pueden incluir lo siguiente:
 
@@ -84,11 +84,11 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] (predeterminado)</td>
+    <td>[!UICONTROL From now on] (valor predeterminado)</td>
     <td>Recupera todos los paquetes añadidos o actualizados (según la configuración) después de seleccionar esta opción</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[!UICONTROL Desde fecha específica]</td>
     <td>Recupera todos los paquetes añadidos o actualizados (según la configuración) después de una fecha y hora especificadas</td>
       </tr>
       <tr>
@@ -96,27 +96,8 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
     <td>Recupera todos los paquetes disponibles</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL Elegir manualmente]</td>
     <td>Permite seleccionar el primer paquete desde el que se va a iniciar la recuperación de paquetes</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Escriba un nombre para la nueva conexión de [!DNL DocuSign]</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Seleccione si la cuenta a la que desea conectarse es una cuenta de producción o una cuenta de demostración.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-

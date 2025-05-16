@@ -5,7 +5,7 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 51%
@@ -104,7 +104,7 @@ El conector de Workday utiliza lo siguiente:
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Introduzca un nombre para la conexión</td>
+                <td>Introduzca un nombre para la conexión. </td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Workday host]</td>

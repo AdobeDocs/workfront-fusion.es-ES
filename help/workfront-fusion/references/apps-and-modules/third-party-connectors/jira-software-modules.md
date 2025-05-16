@@ -4,7 +4,7 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion]  puede automatiza
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 81%
@@ -251,7 +251,7 @@ Para adquirir una clave privada para la conexión de [!DNL Workfront Fusion Jira
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td> <p>Introduzca un nombre para la conexión</p> </td> 
+      <td> <p>Introduzca un nombre para la conexión. </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
