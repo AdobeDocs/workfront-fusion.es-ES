@@ -4,18 +4,18 @@ description: Puede mostrar información sobre los eventos o las ejecuciones de u
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '894'
+ht-degree: 64%
 
 ---
 
 # Visualización del historial de ejecución de un escenario
 
-Puede mostrar información sobre los eventos o ejecuciones de un escenario, o puede búsqueda todas las ejecuciones del escenario para datos específicos.
+Puede mostrar información sobre los eventos o las ejecuciones de un escenario, o puede buscar datos específicos en todas las ejecuciones del escenario.
 
-La ejecución de un escenario representa una sola ejecución del escenario.
+La ejecución de un escenario representa una única ejecución del escenario.
 
 Un evento de escenario es una modificación del escenario, como editarlo, activarlo o desactivarlo.
 
@@ -86,7 +86,7 @@ La ficha [!UICONTROL Historial] muestra más detalles de los que están disponib
 
    O
 
-   Si está trabajando en el escenario en el editor Escenario, haga clic en la flecha ![izquierda Salir flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en **Historial** cerca del nombre del escenario.
    ![ficha de historial](assets/history-tab.png)
@@ -105,6 +105,8 @@ La ficha [!UICONTROL Historial] muestra más detalles de los que están disponib
    >El historial de escenarios muestra un distintivo **En procesamiento** junto a los escenarios que se han ejecutado recientemente, mientras que los detalles de la ejecución se escriben en el almacenamiento. El procesamiento se produce inmediatamente después de que se ejecute el escenario. y no debe durar más de unos minutos. Es posible que los detalles de la ejecución del escenario no estén visibles mientras se procesa la ejecución.
 
 1. Para ver los detalles de una ejecución de escenario específico, haga clic en **Detalles** en el extremo derecho. El vínculo [!UICONTROL detalles] solo es visible si la ejecución tiene detalles disponibles.
+
+   Para obtener más información sobre cómo ver los detalles de ejecución de un escenario, vea [Ver una ejecución de escenario específica](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. Para ver los eventos, activa o desactiva **Mostrar eventos**.
 
 

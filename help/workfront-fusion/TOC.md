@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: 2b970a6f0b6abac7b8dfb38922f30d59b4f91486
+source-git-commit: 0f7626e549b872b868855c0fbc54dd0f06ce0154
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1772'
 ht-degree: 59%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 59%
    * [Administrar escenarios bloqueados](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
    * [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [Visualización del historial de ejecución de un escenario](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+   * [Ver la ejecución de un escenario específico](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
    * [Ver el flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Ver la cola de un webhooks](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Asistente de IA en Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
