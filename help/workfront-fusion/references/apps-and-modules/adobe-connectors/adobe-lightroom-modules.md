@@ -698,7 +698,7 @@ Este módulo de acción crea un nuevo álbum en Lightroom.
         <p>Seleccione el subtipo del álbum.</p>
       </td>
     <tr>
-      <td role="rowheader">Clave de API [!UICONTROL]</td>
+      <td role="rowheader">Clave de API </td>
       <td>
         <p>Introduzca la clave API del servicio que está creando el álbum.</p>
       </td>
