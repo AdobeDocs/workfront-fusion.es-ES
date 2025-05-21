@@ -4,10 +4,10 @@ description: Con los módulos de Adobe Lightroom, puede iniciar un escenario de 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2563'
-ht-degree: 23%
+source-wordcount: '2770'
+ht-degree: 21%
 
 ---
 
@@ -246,8 +246,6 @@ Este módulo de acción recupera metadatos de un catálogo en Adobe Lightroom. U
 
 Este módulo de acción crea y carga un archivo original para un recurso.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -293,7 +291,6 @@ Este módulo de acción crea y carga un archivo original para un recurso.
 
 Este módulo de acción crea un nuevo recurso con metadatos iniciales e información de importación.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -335,6 +332,30 @@ Este módulo de acción crea un nuevo recurso con metadatos iniciales e informac
     <tr>
       <td role="rowheader">[!UICONTROL Fecha de captura]</td>
       <td>
+        <p>Escriba o asigne la fecha de captura del recurso con el formato <code>YYYY-MM-DDT00:00:00-00:00</code>. El servidor establecerá esto si la fecha capturada está establecida en <code>0000-00-00T00:00:00</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File name]</td>
+      <td>
+        <p>Introduzca o asigne el nombre de archivo del recurso que está importando a Lightroom.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nombre del dispositivo importado en]</td>
+      <td>
+        <p>Escriba o asigne el nombre del dispositivo que importa el recurso.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID de cuenta del usuario que importó]</td>
+      <td>
+        <p>Introduzca o asigne el ID del usuario que importa el recurso.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Importar marca de tiempo]</td>
+      <td>
         <p>Escriba o asigne una fecha con el formato <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
     </tr>
@@ -343,7 +364,7 @@ Este módulo de acción crea un nuevo recurso con metadatos iniciales e informac
 
 #### Crear un archivo de configuración de desarrollo de XMP externo de recursos
 
-Este módulo de acción admite dos flujos de trabajo. El primer flujo de trabajo es cargar el archivo de configuración de desarrollo de XMP externo para el recurso. El segundo flujo de trabajo es crear un archivo de configuración de desarrollo de XMP externo copiando del archivo de configuración de desarrollo de xmp externo de otro recurso.
+Este módulo de acción admite dos flujos de trabajo: cargar el archivo de configuración de desarrollo de XMP externo para el recurso o crear un archivo de configuración de desarrollo de XMP externo copiando del archivo de configuración de desarrollo de xmp externo de otro recurso.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -354,7 +375,7 @@ Este módulo de acción admite dos flujos de trabajo. El primer flujo de trabajo
       <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Lightroom], consulte <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Crear una conexión con [!DNL Adobe Lightroom]</a> en este artículo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Longitud del contenido en bytes]</td>
+      <td role="rowheader">[!UICONTROL Longitud de contenido en bytes]</td>
       <td>
         <p>Introduzca o asigne la longitud del contenido en bytes.</p>
       </td>
@@ -368,7 +389,7 @@ Este módulo de acción admite dos flujos de trabajo. El primer flujo de trabajo
     <tr>
       <td role="rowheader">[!UICONTROL ID de catálogo]</td>
       <td>
-        <p>Introduzca o asigne el ID del catálogo que contiene el recurso.</p>
+        <p>Introduzca o asigne el ID del catálogo en el que desea crear el recurso.</p>
       </td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Este módulo de acción genera de forma asíncrona representaciones para un arch
     <tr>
       <td role="rowheader">[!UICONTROL ID de catálogo]</td>
       <td>
-        <p>Introduzca o asigne el ID del catálogo que contiene el recurso.</p>
+        <p>Introduzca o asigne el ID del catálogo en el que desea generar las representaciones.</p>
       </td>
     </tr>
     <tr>
@@ -468,7 +489,7 @@ Este módulo de acción recupera el archivo de configuración de XMP externo de 
     <tr>
       <td role="rowheader">[!UICONTROL ID de catálogo]</td>
       <td>
-        <p>Introduzca o asigne el ID del catálogo que contiene el recurso.</p>
+        <p>Introduzca o asigne el ID del catálogo que contiene el recurso asociado al archivo de configuración de desarrollo de XMP.</p>
       </td>
     </tr>
     <tr>
@@ -495,13 +516,13 @@ Este módulo de acción recupera la última representación de recursos del tipo
     <tr>
       <td role="rowheader">[!UICONTROL ID de catálogo]</td>
       <td>
-        <p>Introduzca o asigne el ID del catálogo que contiene el recurso.</p>
+        <p>Introduzca o asigne el ID del catálogo que contiene el recurso para el que desea recuperar una representación.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Introduzca o asigne el ID del recurso asociado al archivo de configuración de desarrollo de XMP.</p>
+        <p>Introduzca o asigne el ID del recurso para el que desea recuperar una representación.</p>
       </td>
     </tr>
     <tr>
@@ -538,9 +559,15 @@ Este módulo de acción recupera recursos propiedad del usuario cuyas credencial
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Devolver recursos capturados antes]</td>
+      <td role="rowheader">[!UICONTROL Devolver recursos capturados antes de un tiempo determinado]</td>
       <td>
-        <p>Escriba una fecha con el formato <code>YYYY-MM-DDT00:00:00</code>. El módulo devuelve los resultados capturados antes de esta fecha.</p><p> Este campo no se puede usar con el campo <code>Return assets captured after</code>.</p>
+        <p>Escriba una fecha con el formato <code>YYYY-MM-DDT00:00:00</code>. El módulo devuelve los resultados capturados antes de esta fecha.</p><p> Este campo no se puede usar con el campo <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Devolver recursos capturados después de un tiempo determinado]</td>
+      <td>
+        <p>Escriba una fecha con el formato <code>YYYY-MM-DDT00:00:00</code>. El módulo devuelve los resultados capturados antes de esta fecha.</p><p> Este campo no se puede usar con el campo <code>Return assets captured before given time</code>.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Este módulo de acción recupera recursos propiedad del usuario cuyas credencial
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 Valor hash del archivo original]</td>
       <td>
-        <p></p>
+        <p>Introduzca o asigne el valor hash del archivo original. Se devuelven Assets con un hash coincidente.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL ¿Ocultar recursos que están dentro de pilas?"]</td>
       <td>
-        <p></p>
+        <p>Seleccione Sí para ocultar los recursos de las pilas (no se devolverán los recursos de las pilas). Seleccione No para incluir recursos dentro de las pilas en los resultados.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Valores de subtipo de recurso]</td>
       <td>
-        <p></p>
+        <p>Introduzca o asigne una lista de valores de subtipo separados por punto y coma para que se devuelvan.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Este módulo de acción recupera recursos propiedad del usuario cuyas credencial
     <tr>
       <td role="rowheader">[!UICONTROL Valores de grupo]</td>
       <td>
-        <p></p>
+        <p>Escriba o asigne una lista de valores de grupo separados por punto y coma.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name values]</td>
       <td>
-        <p></p>
+        <p>Introduzca o asigne una lista de valores de nombre separados por punto y coma.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Estado favorito]</td>
       <td>
-        <p></p>
+        <p>Introduzca o asigne el estado favorito para el que desea obtener resultados.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### Álbumes
 
@@ -698,7 +727,7 @@ Este módulo de acción crea un nuevo álbum en Lightroom.
         <p>Seleccione el subtipo del álbum.</p>
       </td>
     <tr>
-      <td role="rowheader">Clave de API </td>
+      <td role="rowheader">Clave de API [!UICONTROL]</td>
       <td>
         <p>Introduzca la clave API del servicio que está creando el álbum.</p>
       </td>
