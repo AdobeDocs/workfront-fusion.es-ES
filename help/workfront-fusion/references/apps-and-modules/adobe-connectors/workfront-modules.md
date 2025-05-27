@@ -4,10 +4,10 @@ description: Puede utilizar el conector Adobe Workfront Fusion Adobe Workfront p
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 32de8028b8870c9a3b569b87032513318c255171
+source-git-commit: 9dfab6838057a5852a2725dbfd398144ea2097dd
 workflow-type: tm+mt
-source-wordcount: '7942'
-ht-degree: 57%
+source-wordcount: '8061'
+ht-degree: 56%
 
 ---
 
@@ -206,7 +206,7 @@ El módulo devuelve cualquier campo estándar asociado con el registro, junto co
 
 Una vez creado el webhook, podrá ver la dirección del punto final al que se envían los eventos.
 
-Para obtener más información, consulte la sección [Ejemplos de cargas útiles de eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) en el artículo API de suscripción de eventos en la documentación de Workfront.
+Para obtener más información, consulte la sección [Ejemplos de cargas útiles de eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) en el artículo API de suscripción de eventos en la documentación de Workfront.
 
 Vea una lista de los tipos de objetos Workfront para los que puede usar este módulo en [tipos de objetos Workfront disponibles para cada módulo Workfront](#workfront-object-types-available-for-each-workfront-module).
 
@@ -419,6 +419,27 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >* Al introducir el ID de un objeto, puede empezar a escribir su nombre y, a continuación, seleccionarlo en la lista. A continuación, el módulo introducirá el ID adecuado en el campo.
 >* Al introducir el texto de un campo personalizado o un objeto [!UICONTROL Nota] (comentario o respuesta), puede usar etiquetas de HTML en el campo [!UICONTROL Texto de nota] para crear texto enriquecido, como texto en negrita o en cursiva.
 >
+
+
+
+>[!NOTE]
+>
+>Los usuarios se crean en estado Desactivado y Pendiente de aprobación. Si su organización se ha migrado a Adobe Admin Console y el distintivo de Aprobación pendiente no se elimina en unos minutos, puede aprobar al usuario.
+>
+>* **Resolver usuarios individuales**
+>
+>      Puede resolver usuarios individuales en la lista Usuarios.
+>
+>      1. Seleccione el usuario o usuarios en la lista Usuarios.
+>      1. Haga clic en el menú de tres puntos del encabezado de la lista.
+>      1. Seleccione **Aprobar**.
+>      1. Después de unos minutos, actualice la página.
+>
+>* **Resolver usuarios agregados en un lote grande**
+>
+>   Para resolver los usuarios que se agregaron en un lote grande, puede agregar el lote de usuarios directamente a Adobe Admin Console.
+>
+>   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
 
 +++
 
@@ -644,7 +665,7 @@ Al configurar este módulo, se muestran los campos siguientes.
       </ul> <p>Para todos los demás tipos de registro, seleccione <b>[!UICONTROL Other objects and endpoints]</b> y busque el tipo de registro en las páginas ordenadas alfabéticamente.</p> </li> 
      <li value="2"> <p>En la página del tipo de registro adecuado, busque (Ctrl-F o Cmd-F) la acción.</p> </li> 
      <li value="3"> <p>Vea las descripciones de los campos disponibles en la acción seleccionada.</p> </li> 
-    </ol> <p>Nota:  <p>Al crear una revisión a través del módulo [!UICONTROL Misc Action] de Workfront, se recomienda crearla sin ninguna opción avanzada y, a continuación, actualizarla mediante la API de SOAP [!DNL Workfront Proof].</p><p>Para obtener más información sobre cómo crear una revisión con la API de Workfront (que usa este módulo), consulte <a href="https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Agregar opciones avanzadas de revisión al crear una revisión mediante la API de Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Nota:  <p>Al crear una revisión a través del módulo [!UICONTROL Misc Action] de Workfront, se recomienda crearla sin ninguna opción avanzada y, a continuación, actualizarla mediante la API de SOAP [!DNL Workfront Proof].</p><p>Para obtener más información sobre cómo crear una revisión con la API de Workfront (que usa este módulo), consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Agregar opciones avanzadas de revisión al crear una revisión mediante la API de Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -918,9 +939,9 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 
 Workfront acaba de lanzar una nueva versión de su servicio de suscripción a eventos. La nueva versión no es un cambio en la API de Workfront, sino un cambio en la funcionalidad de suscripción de evento. Este módulo de acción actualiza la versión de carga útil de evento utilizada para este escenario.
 
-Para obtener más información sobre la nueva versión de suscripción de evento, consulte [Versiones de suscripción de evento](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
+Para obtener más información sobre la nueva versión de suscripción de evento, consulte [Versiones de suscripción de evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 
-Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de las suscripciones a eventos V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de las suscripciones a eventos V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2238,9 +2259,9 @@ Le recomendamos que lo verifique bien para asegurarse de que esto funciona de la
 >
 >* Workfront acaba de lanzar una nueva versión de su servicio de suscripción a eventos. La nueva versión no es un cambio en la API de Workfront, sino un cambio en la funcionalidad de suscripción de evento. Este módulo de acción actualiza la versión de carga útil de evento utilizada para este escenario.
 >
->   Para obtener más información sobre la nueva versión de suscripción de evento, consulte [Versiones de suscripción de evento](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
+>   Para obtener más información sobre la nueva versión de suscripción de evento, consulte [Versiones de suscripción de evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 >
->   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones al evento(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es)].
+>   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones al evento(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 El módulo [!UICONTROL Ver eventos] de Workfront déclencheur los escenarios en función de un enlace web que crea una suscripción de evento en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 
@@ -2290,7 +2311,7 @@ Los siguientes operadores están disponibles en el filtro Workfront > Ver evento
 >
 >Si se crean 100 problemas en un día, pero solo dos de ellos se asignan a Ana, el escenario se ejecutaría 100 veces. 98 de las ejecuciones se detendrían en el filtro, pero el módulo de activador sigue consumiendo datos y realizando operaciones en todas las ejecuciones.
 
-Para obtener más información sobre las suscripciones a eventos de Workfront, consulte [Preguntas más frecuentes - Suscripciones a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Para obtener más información sobre las suscripciones a eventos de Workfront, consulte [Preguntas más frecuentes - Suscripciones a eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Para obtener más información sobre los webhooks, consulte [déclencheur instantáneos (webhooks) en Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
