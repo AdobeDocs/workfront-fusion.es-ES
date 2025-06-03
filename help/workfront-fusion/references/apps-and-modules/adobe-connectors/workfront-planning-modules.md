@@ -4,10 +4,10 @@ description: 'Con los módulos  [!DNL Adobe Workfront Planning] puede iniciar un
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 44%
+source-wordcount: '1591'
+ht-degree: 42%
 
 ---
 
@@ -472,3 +472,20 @@ Esta acción actualiza un único registro en Workfront Planning.
      <tr>
   </tbody>
 </table>
+
+
+## Usar JSONata para el desglose legible `record-types`
+
+La siguiente expresión JSONata crea un resultado legible en lenguaje natural de la consulta de Planning que le proporciona el desglose de tipos de registros. Esto hace que el nombre del tipo de registro, los nombres de campo y los nombres de opciones de campo (cuando corresponda) sean legibles por un nombre y mantiene el resto de la estructura intacta.
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+Para obtener información sobre el uso de módulos JSONata, consulte [módulos JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
+
