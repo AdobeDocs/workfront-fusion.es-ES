@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: ad00d7c404701ad526befae9b61c3480f4fb82b6
+source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1791'
 ht-degree: 59%
 
 ---
@@ -393,6 +393,7 @@ ht-degree: 59%
          * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [Módulo matemático](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
+         * [Módulo de Protocolo de contexto de modelo (MCP)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
          * [Módulos del analizador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
          * [Módulos de herramientas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
          * [Módulos XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
