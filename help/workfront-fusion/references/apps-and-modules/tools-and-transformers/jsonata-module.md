@@ -4,14 +4,14 @@ description: El conector JSONata de Adobe Workfront Fusion proporciona un módul
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 25%
+source-wordcount: '325'
+ht-degree: 20%
 
 ---
 
-# Módulos de [!UICONTROL JSONata]
+# Módulos [!UICONTROL JSONata]
 
 El conector [!DNL Adobe Workfront Fusion] [!UICONTROL JSONata] le permite consultar objetos JSON. Este módulo no requiere conexión.
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -58,7 +58,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 +++
 
-## Módulo JSONata y sus campos
+## Módulos JSONata y sus campos
 
 ### Evaluar
 
@@ -105,3 +105,31 @@ El objetivo es devolver una matriz de nombres del siguiente objeto JSON:
 El módulo devuelve una matriz de nombres extraídos del objeto JSON.
 
 >[!ENDSHADEBOX]
+
+
+
+### MCP de JSONata
+
+Este módulo de acción genera expresiones JSONata analizando los esquemas de entrada y salida especificados. Proporcione los esquemas que utiliza el Protocolo de contexto de modelo (MCP) para generar la expresión que transforma la entrada en la salida.
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Seleccione la conexión que utiliza para conectarse al modelo de idioma grande (LLM) que desea utilizar para este módulo.</p> <p>Actualmente, solo se admite la clave API Anthropic.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Esquema de entrada]</td> 
+   <td> <p>Introduzca o asigne el esquema de entrada que se utilizará para esta expresión.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Esquema de salida]</td> 
+   <td> <p>Introduzca o asigne el esquema de salida que se utilizará para esta expresión.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
