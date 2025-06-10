@@ -4,9 +4,9 @@ description: El módulo Enrutador permite bifurcar el flujo en varias rutas y pr
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 15%
 
 ---
@@ -88,6 +88,8 @@ Debe agregar un módulo Enrutador antes de configurar las rutas.
    Las rutas se organizan en el orden en que se ejecutan. La ruta superior se ejecuta primero.
 
 1. (Opcional) Para cambiar el orden de las rutas, haga clic con el botón derecho en el módulo Enrutador y seleccione **Ordenar rutas** Arrastre y suelte las rutas en el orden en que desee que se ejecuten. Las rutas están marcadas por el primer módulo que sigue al enrutador (el primer módulo de la ruta).
+
+   ![Solicitar ruta](assets/order-routes.png)
 
 1. Continuar a [Agregar un filtro a una ruta](#add-a-filter-to-a-route).
 

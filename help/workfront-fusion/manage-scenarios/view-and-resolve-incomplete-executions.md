@@ -1,23 +1,23 @@
 ---
 title: Ver y resolver ejecuciones incompletas
-description: La carpeta [!UICONTROL Incomplete executions] almacena ejecuciones de escenarios que no se finalizaron correctamente debido a un error. Cada ejecución incompleta almacenada se puede resolver manualmente o automáticamente.
+description: La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecuciones de escenarios que no se finalizaron correctamente debido a un error. Cada ejecución incompleta almacenada se puede resolver manualmente o automáticamente.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 60%
+source-wordcount: '649'
+ht-degree: 75%
 
 ---
 
 # Ver y resolver ejecuciones incompletas
 
-La carpeta [!UICONTROL Incomplete executions] almacena ejecuciones de escenarios que no se finalizaron correctamente debido a un error. Cada ejecución incompleta almacenada se puede resolver manualmente o automáticamente.
+La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecuciones de escenarios que no se finalizaron correctamente debido a un error. Cada ejecución incompleta almacenada se puede resolver manualmente o automáticamente.
 
 >[!NOTE]
 >
->De forma predeterminada, el almacenamiento de ejecuciones incompletas está deshabilitado. Para habilitarlo, habilite la opción [!UICONTROL Allow storing incomplete executions] en la configuración avanzada del escenario.
+>De forma predeterminada, el almacenamiento de ejecuciones incompletas está deshabilitado. Para habilitarlo, habilite la opción [!UICONTROL Permitir el almacenamiento de ejecuciones incompletas] en la configuración avanzada del escenario.
 >
 >Para obtener más información acerca de la configuración de escenarios, vea [Configurar escenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
@@ -50,7 +50,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -75,7 +75,7 @@ Para obtener más información sobre [!DNL Adobe Workfront Fusion] licencias, co
 
 ## Ver ejecuciones incompletas
 
-Si un módulo encuentra un error durante su operación, se añade una nueva ejecución incompleta a la carpeta Ejecuciones incompletas. Cada ejecución incompleta contiene el modelo del escenario y todos los paquetes que se pueden asignar al módulo fallido. Para abrir la lista de ejecuciones incompletas, haga clic en la ficha [!UICONTROL Incomplete Executions] de la página de detalles del escenario.
+Si un módulo encuentra un error durante su operación, se añade una nueva ejecución incompleta a la carpeta Ejecuciones incompletas. Cada ejecución incompleta contiene el modelo del escenario y todos los paquetes que se pueden asignar al módulo fallido. Para abrir la lista de ejecuciones incompletas, haga clic en la pestaña [!UICONTROL Ejecuciones incompletas] de la página de detalles del escenario.
 
 <!--
 
@@ -99,25 +99,30 @@ Para obtener más información, consulte [Errores que resultan en ejecuciones in
 Cuando se almacena una nueva ejecución incompleta, puede resolverla de la siguiente manera:
 
 1. Abra el escenario afectado.
-1. Haga clic en la ficha **[!UICONTROL Incomplete Executions]**.
-1. Busque la ejecución incompleta que desea resolver y haga clic en **[!UICONTROL Details]**.
+1. Haga clic en la pestaña **[!UICONTROL Ejecuciones incompletas]**.
+1. Busque la ejecución incompleta que desea resolver y haga clic en **[!UICONTROL Detalles]**.
+1. Abra el registro del módulo donde se muestran todas las operaciones del módulo.
+1. Busque la operación fallida y haga clic en **[!UICONTROL Resolver]**:
+
+   ![Botón Resolver](assets/resolve-btn-350x188.png)
+
 
 
 ## Resolver ejecuciones incompletas desde la pestaña Historial
 
-Si desea ver el registro de todas las operaciones del módulo antes de intentar resolver la ejecución incompleta, puede resolver la ejecución incompleta desde la carpeta [!UICONTROL History]:
+Si desea ver el registro de todas las operaciones del módulo antes de intentar resolver la ejecución incompleta, puede resolver la ejecución incompleta desde la carpeta [!UICONTROL Historial]:
 
 1. Abra el escenario afectado.
-1. Haga clic en la ficha **[!UICONTROL History]**.
-1. Busque la ejecución fallida del escenario y haga clic en **[!UICONTROL Details]**.
+1. Haga clic en la pestaña **[!UICONTROL Historial]**.
+1. Busque la ejecución fallida del escenario y haga clic en **[!UICONTROL Detalles]**.
 1. Abra el registro del módulo donde se muestran todas las operaciones del módulo.
-1. Busque la operación fallida y haga clic en **[!UICONTROL Resolve]**:
+1. Busque la operación fallida y haga clic en **[!UICONTROL Resolver]**:
 
    ![Botón Resolver](assets/resolve-btn-350x188.png)
 
 ## Opciones relacionadas con ejecuciones incompletas
 
-Las siguientes opciones del panel [!UICONTROL Scenario settings] determinan si se almacenan las ejecuciones incompletas y cómo se almacenan:
+Las siguientes opciones del panel [!UICONTROL Configuración de escenarios] determinan si se almacenan las ejecuciones incompletas y cómo se almacenan:
 
 * Permitir almacenar ejecuciones incompletas
 * Procesamiento secuencial
@@ -136,6 +141,20 @@ Si se produce un error en el primer módulo del escenario, la ejecución se deti
 
 Si se produce un error en cualquier otro módulo y no hay ninguna ruta de controlador de error adjunta, puede ocurrir lo siguiente:
 
-* Si el tipo de error es `ConnectionError`, `RateLimitError`, `OutOfSpaceError` o `ModuleTimeoutError`, se almacena un registro de ejecución incompleto con reintento automático.
-* Si el tipo de error es `DataError`, `InvalidConfigurationError`, `InvalidAccessTokenError`, `UnexpectedError`, `MaxFileSizeExceededError` o `MaxResultsExceededError`, se almacena un registro de ejecución incompleto sin reintento automático.
+* Se almacena un registro de ejecución incompleto con reintento automático para los siguientes tipos de error:
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* Se almacena un registro de ejecución incompleto sin reintento automático para los siguientes tipos de error:
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+
 * Si el tipo de error es cualquier cosa que no sea lo anterior, la ejecución falla.

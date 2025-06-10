@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 9c0ecebddbd02d34e936bc06ddd1c27186d2433f
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 40%
 
 ---
@@ -123,6 +123,7 @@ Fusion ofrece conectores para muchas aplicaciones de terceros.
 Estos módulos le permiten realizar acciones en los datos, pero no requieren conectarse a ningún servicio fuera de Fusion.
 
 * [Módulos de archivo](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+* [Encadenar módulos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
 * [Módulos CSV](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
 * [Módulos del almacén de datos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
 * [Módulos Draft.js](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

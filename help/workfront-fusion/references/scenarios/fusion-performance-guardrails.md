@@ -4,10 +4,10 @@ description: La automatización del trabajo requiere un procesamiento rápido, p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 64%
+source-wordcount: '904'
+ht-degree: 63%
 
 ---
 
@@ -22,6 +22,8 @@ La automatización del trabajo requiere un procesamiento rápido, por lo que [!D
 ## Escenarios
 
 * El tiempo de espera de ejecución del escenario predeterminado es de **40 minutos**. Cuando la ejecución alcanza este tiempo de espera, [!DNL Workfront Fusion] interrumpe la ejecución del escenario después del siguiente ciclo u operación, según el escenario. Esto obliga al escenario a detenerse poco después de alcanzar el límite de 40 minutos
+
+  Encadenar escenarios no cuenta para el tiempo de espera de ejecución del escenario. Un escenario principal no acumula tiempo mientras espera a que se ejecute un escenario secundario.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
