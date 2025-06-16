@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
+source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 40%
+source-wordcount: '457'
+ht-degree: 41%
 
 ---
 
@@ -136,7 +136,6 @@ Estos módulos le permiten realizar acciones en los datos, pero no requieren con
 * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Módulo matemático](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
 * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-* [Módulo de Protocolo de contexto de modelo (MCP)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [Módulos del analizador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Módulos de herramientas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
 * [Módulos XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
