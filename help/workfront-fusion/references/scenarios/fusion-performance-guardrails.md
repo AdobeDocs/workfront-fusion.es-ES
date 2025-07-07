@@ -4,10 +4,10 @@ description: La automatización del trabajo requiere un procesamiento rápido, p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 63%
+source-wordcount: '926'
+ht-degree: 61%
 
 ---
 
@@ -92,3 +92,7 @@ Tenga en cuenta lo siguiente con respecto a la recursión:
 * **Cuando un escenario está causando recursión, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
 * Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo déclencheur.
 
+## TLS
+
+* Fusion admite actualmente TLS versión 1.2 de forma predeterminada.
+* Las organizaciones pueden solicitar que se habilite TLS versión 1.3 para su instancia de Fusion.
