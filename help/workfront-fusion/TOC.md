@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: 2e89b74dbd0702b152c366f5d08f8868165a538c
+source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1809'
 ht-degree: 59%
 
 ---
@@ -394,6 +394,7 @@ ht-degree: 59%
          * [Módulos JSON](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
          * [Módulos JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
          * [Módulos JWT](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
+         * [Módulos léxicos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
          * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [Módulo matemático](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)

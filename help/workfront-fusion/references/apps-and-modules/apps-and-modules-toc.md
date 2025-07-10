@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 8a707d6852c79bff5c2772e03d0888b4a637ba9a
+source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 40%
 
 ---
@@ -134,6 +134,7 @@ Estos módulos le permiten realizar acciones en los datos, pero no requieren con
 * [Módulos JSON](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
 * [Módulos JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
 * [Módulos JWT](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
+* [Módulos léxicos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Módulo matemático](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
 * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
