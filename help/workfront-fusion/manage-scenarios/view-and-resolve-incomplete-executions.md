@@ -4,10 +4,10 @@ description: La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecucione
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 75%
+source-wordcount: '662'
+ht-degree: 70%
 
 ---
 
@@ -87,9 +87,11 @@ Para obtener más información, consulte [Errores que resultan en ejecuciones in
 
 >[!NOTE]
 >
->El límite de tamaño actual de la carpeta de ejecuciones incompletas sin resolver por organización es de 500 MB. Si su organización supera este límite, es posible que vea el siguiente error:
+>El límite de tamaño actual de la carpeta de ejecuciones incompletas sin resolver por escenario es de 10 MB. Si su escenario supera este límite, es posible que vea el siguiente error:
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>Los equipos están limitados a un total de 500 MB para todas las ejecuciones incompletas sin resolver.
 >
 >Para obtener más información, consulte [Habilitar la pérdida de datos](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) en el artículo Configurar opciones de escenario.
 
