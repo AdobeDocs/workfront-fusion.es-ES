@@ -4,10 +4,10 @@ description: Los módulos de HubSpot CRM de  [!DNL Adobe Workfront Fusion]  le p
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '7003'
-ht-degree: 36%
+source-wordcount: '7000'
+ht-degree: 35%
 
 ---
 
@@ -1433,7 +1433,7 @@ Este módulo de acción crea una nueva tarea para un calendario. La conexión ut
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fecha de evento]</td> 
-   <td>Escriba o asigne la fecha de esta tarea.<p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos en [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Escriba o asigne la fecha de esta tarea.<p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
@@ -1682,7 +1682,7 @@ Este módulo de acción crea y publica inmediatamente un mensaje en el canal de 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Déclencheur en]</td> 
-   <td>Escriba o asigne la fecha y la hora en que desea que se envíe la difusión. Si se deja en blanco, la emisión se envía inmediatamente.<p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos en [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Escriba o asigne la fecha y la hora en que desea que se envíe la difusión. Si se deja en blanco, la emisión se envía inmediatamente.<p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1782,7 +1782,7 @@ Este módulo de acción crea una nueva publicación de blog.
   </tr> 
   <tr> 
    <td role="rowheader">Fecha de publicación</td> 
-   <td>Introduzca o asigne la fecha en la que se publicará la publicación del blog. <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos en [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Introduzca o asigne la fecha en la que se publicará la publicación del blog. <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nombre</td> 
@@ -2021,11 +2021,11 @@ Este módulo de acción actualiza una suscripción de correo electrónico en Hub
    <td>Para cada estado para el que desee actualizar la suscripción, haga clic en <b>Agregar elemento</b> e introduzca el ID del estado, y si la dirección de correo electrónico se suscribirá a ese estado.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Estado legal de la suscripción al portal de </td> 
+   <td role="rowheader">Estado legal de la suscripción al portal de [!UICONTROL]</td> 
    <td>Para registrar la base legal de esta suscripción para el RGPD, seleccione el estado legal de esta suscripción.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Explicación de la base jurídica de la suscripción al portal </td> 
+   <td role="rowheader">Explicación de la base jurídica de la suscripción al portal [!UICONTROL]</td> 
    <td>Para añadir una nota sobre la base legal de esta suscripción para el RGPD, introduzca o asigne el texto de la nota.</td> 
   </tr> 
  </tbody> 

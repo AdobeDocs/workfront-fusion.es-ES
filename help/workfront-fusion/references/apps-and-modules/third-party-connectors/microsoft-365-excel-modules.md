@@ -4,7 +4,7 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatiz
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 78%
@@ -140,7 +140,8 @@ Este módulo de acción descarga el contenido del libro de Excel especificado.
      <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>En el campo [!UICONTROL Workbook], seleccione el libro que desea que descargue el módulo, incluida su ruta de acceso si no se encuentra en la carpeta raíz.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL Search Workbooks]
 
