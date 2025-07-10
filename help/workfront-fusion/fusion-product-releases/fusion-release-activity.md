@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: ad00d7c404701ad526befae9b61c3480f4fb82b6
+source-git-commit: 2e89b74dbd0702b152c366f5d08f8868165a538c
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '946'
 ht-degree: 98%
 
 ---
@@ -21,6 +21,11 @@ ht-degree: 98%
 Adobe Workfront Fusion conecta sus aplicaciones y servicios web sin problemas para que pueda concentrarse en nuevas tareas en lugar de repetir las mismas una y otra vez.
 
 ## Versiones de Fusion en 2025
+
+### Junio de 2025
+
+* [Actividad de la versión de Workfront Fusion: semana del martes, 23 de junio de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
+
 
 ### Mayo de 2025
 
