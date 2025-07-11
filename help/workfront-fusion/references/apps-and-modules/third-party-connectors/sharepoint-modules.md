@@ -4,10 +4,10 @@ description: En un escenario  [!DNL Adobe Workfront Fusion] , puede automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
+source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
 workflow-type: tm+mt
-source-wordcount: '3383'
-ht-degree: 57%
+source-wordcount: '3979'
+ht-degree: 51%
 
 ---
 
@@ -221,6 +221,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Crear un archivo](#create-a-file)
 * [Crear una carpeta](#create-a-folder)
 * [Obtener un archivo](#get-a-file)
+* [Obtener una carpeta](#get-a-folder)
+* [Actualización de una carpeta o un archivo](#update-a-folder-or-a-file)
 * [Ver elementos de la carpeta](#watch-folder-items)
 
 #### Crear un archivo
@@ -299,6 +301,56 @@ Este módulo de acción recupera el archivo SharePoint especificado.
 </tbody> 
 </table>
 
+#### Obtener una carpeta
+
+Este módulo recuperó detalles sobre la carpeta especificada
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Especificar sitio, unidad y archivo                ID]</td> 
+   <td> <p>Seleccione cómo identificar la ubicación del archivo que desea obtener.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong>, <strong>[!UICONTROL Id. de lista]</strong> y <strong>[!UICONTROL Ruta de carpeta]</strong> para la carpeta que desea recuperar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Seleccione la ubicación de la carpeta. </p> </li> 
+    </ul> </td> 
+  </tr> 
+</tbody> 
+</table>
+
+#### Actualización de una carpeta o un archivo
+
+Este módulo de acción actualiza los metadatos de una carpeta o un archivo
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Especificar sitio, unidad y archivo                ID]</td> 
+   <td> <p>Seleccione cómo identificar la ubicación del archivo que desea obtener.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong>, <strong>[!UICONTROL Id. de lista]</strong> y <strong>[!UICONTROL Id. de carpeta o elemento]</strong> para la carpeta o archivo que desea recuperar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Seleccione la ubicación de la carpeta. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td>Para cada campo de metadatos que desee actualizar, haga clic en <b>Agregar elemento</b> e introduzca la ruta y el valor del campo.</td> 
+  <tr>
+</tbody> 
+</table>
+
 #### Ver elementos de la carpeta
 
 Este módulo de activación inicia un escenario cuando se actualiza un elemento en una carpeta seleccionada.
@@ -332,8 +384,9 @@ Este módulo de activación inicia un escenario cuando se actualiza un elemento 
 * [[!UICONTROL Crear un elemento]](#create-an-item)
 * [[!UICONTROL Eliminar un elemento]](#delete-an-item)
 * [[!UICONTROL Obtener un elemento]](#get-an-item)
+* [Obtener detalles](#get-details)
 * [[!UICONTROL Enumerar elementos]](#list-items)
-* [[!UICONTROL Mover elemento]](#move-an-item)
+* [[!UICONTROL Mover un elemento]](#move-an-item)
 * [[!UICONTROL Actualizar un elemento]](#update-an-item)
 * [[!UICONTROL Ver elementos] (Programados)](#watch-items-scheduled)
 
@@ -440,6 +493,25 @@ Este módulo de acción devuelve los datos de un elemento especificado.
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
+
+#### Obtener detalles
+
+Este módulo obtiene detalles del elemento de la dirección URL especificada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL web</td> 
+   <td> Escriba o asigne la dirección URL del elemento cuyos detalles desea recuperar. </td> 
+  </tr> 
+</tbody> 
 </table>
 
 #### [!UICONTROL Enumerar elementos]
@@ -687,6 +759,11 @@ Este módulo de activación inicia un escenario cuando se crea o modifica una li
 >
 >Las API de la versión `beta` en [!DNL Microsoft Graph] están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
+* [Obtener una página](#get-a-page)
+* [Enumerar páginas](#list-pages)
+* [Publicar una página](#publish-a-page)
+* [Ver páginas](#watch-pages)
+
 #### [!UICONTROL Obtener una página]
 
 Este módulo de acción devuelve los datos de una página especificada.
@@ -706,6 +783,83 @@ Este módulo de acción devuelve los datos de una página especificada.
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Introduzca o asigne el <strong>[!UICONTROL Site ID]</strong>y <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el sitio que contiene la página que desea recuperar y, a continuación, seleccione la página.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Enumerar páginas
+
+Este módulo recupera una lista de todas las páginas.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Páginas de lista]</td> 
+   <td> <p>Seleccione cómo desea identificar las páginas que desea enumerar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong> del sitio que contiene las páginas que desea enumerar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el sitio que contiene las páginas que desea enumerar.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Introduzca o asigne el número máximo de páginas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Publicar una página
+
+Este módulo de acción publica la última versión de la página seleccionada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Publicar una página]</td> 
+   <td> <p>Seleccione cómo desea identificar la página que desea publicar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Introduzca o asigne el <strong>[!UICONTROL Site ID]</strong>y <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el sitio que contiene la página que desea publicar y, a continuación, seleccione la página.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ver páginas
+
+Este módulo de déclencheur inicia un escenario cuando se modifica una página en el sitio especificado.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Introducir ID de sitio]</td> 
+   <td> <p>Seleccione cómo desea identificar las páginas que desea enumerar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong> del sitio que contiene las páginas que desea ver.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Seleccione el sitio que contiene las páginas que desea ver.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Introduzca o asigne el número máximo de páginas que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
