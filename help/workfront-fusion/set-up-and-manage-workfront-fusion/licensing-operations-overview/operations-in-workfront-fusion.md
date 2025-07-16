@@ -4,10 +4,10 @@ description: Una operación en Adobe Workfront Fusion es una tarea realizada por
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 78%
+source-wordcount: '352'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Una operación en Adobe Workfront Fusion es una tarea realizada por un módulo. 
 * En general, cualquier ejecución correcta de la etapa de acción se considera una operación.
 * El primer módulo de un escenario se ejecuta solo una vez y siempre se cuenta como una operación, aunque no devuelva un paquete.
 * El número de veces que se ejecuta el resto de los módulos depende del número de paquetes que deben procesar.  Una ejecución de un módulo para un paquete es una operación. Una excepción es el módulo del agregador, que se cuenta como una operación por cada conjunto de paquetes que se procesa.
-* Las operaciones se cuentan en la fase [!UICONTROL Finalization] de la ejecución de un escenario.
+* Las operaciones se cuentan en la fase [!UICONTROL Finalización] de la ejecución de un escenario.
 * Los siguientes **no** se cuentan como operaciones:
    * Cualquier paso del filtro.
    * Cualquier acción que falle o se detenga.
@@ -29,9 +29,16 @@ Una operación en Adobe Workfront Fusion es una tarea realizada por un módulo. 
 
 ## Límites de operación
 
-Es posible que su organización tenga un límite mensual de operaciones. Esto se basa en el plan de [!DNL Workfront] que compró su organización. El plan [!UICONTROL Ultimate] [!DNL Workfront] ofrece operaciones ilimitadas.
+Es posible que su organización tenga un límite mensual de operaciones. Esto se basa en el plan de [!DNL Workfront] que compró su organización. El plan [!UICONTROL Ultimate] de [!DNL Workfront] ofrece operaciones ilimitadas.
 
 Si su organización tiene un límite mensual, se le notificará cuando su organización esté cerca del límite. Si su organización sobrepasa el límite, [!DNL Workfront] se pondrá en contacto con su organización para asegurarse de que su plan satisfaga sus necesidades.
+
+Workfront Fusion envía una notificación cuando su organización alcanza los siguientes porcentajes del límite mensual de la organización:
+
+* 50 %
+* 75 %
+* 90 %
+* 100 %
 
 ## Visualización del número de operaciones realizadas en los últimos 30 días
 
