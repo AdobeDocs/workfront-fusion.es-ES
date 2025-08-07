@@ -5,10 +5,11 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 9%
+source-wordcount: '628'
+ht-degree: 8%
 
 ---
 
@@ -50,7 +51,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -105,6 +106,7 @@ Para configurar el módulo Llamar a un escenario secundario
    Los campos configurados en el módulo déclencheur del escenario secundario aparecen en el módulo Llamar a un escenario secundario.
 
 1. Escriba o asigne la información que se va a pasar al escenario secundario en el módulo Llamar a un escenario secundario.
+1. (Condicional) Si desea que el escenario principal continúe su ejecución sin esperar una respuesta del escenario secundario, habilite la opción **Fire and Olvidar**.
 1. Haga clic en **Aceptar** para guardar el módulo.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ Para configurar el módulo Agregar Respondedor:
    Para obtener instrucciones sobre cómo crear una estructura de datos, vea [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Haga clic en **Aceptar** para guardar el módulo.
-
