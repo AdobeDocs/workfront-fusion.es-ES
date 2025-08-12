@@ -5,7 +5,7 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 54%
@@ -191,7 +191,7 @@ Para obtener más información acerca de esta página, vea [Detalles del escenar
 
 ### Número de errores consecutivos
 
-Define el número máximo de intentos de ejecución consecutivos antes de desactivar la ejecución de un escenario (excluyendo `DataError`, `DuplicateDataError` y `ConnectionError`).
+Define el número máximo de intentos de ejecución consecutivos antes de desactivar la ejecución de un escenario (excluyendo `DataError`, `DuplicateDataError`, `ModuleTimeoutError` y `ConnectionError`).
 
 Para obtener más información sobre los errores, consulte [Tipos de error](/help/workfront-fusion/references/errors/error-processing.md).
 
