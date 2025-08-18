@@ -4,10 +4,10 @@ description: Puede usar la herramienta Analizador de texto para analizar el text
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 87%
+source-wordcount: '1311'
+ht-degree: 85%
 
 ---
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -129,7 +129,7 @@ Analiza elementos de texto en función del patrón determinado.
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>Seleccione el patrón que refleje los elementos del texto que desee analizar.</p> </td> 
+   <td> <p>Seleccione el patrón que refleje los elementos del texto que desee analizar.</p> <p>Para introducir una expresión regular personalizada, seleccione Personalizado en la lista y, a continuación, introduzca la expresión personalizada en el campo Regex personalizada.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
