@@ -3,10 +3,11 @@ title: Ver la ejecución de un escenario específico
 description: Puede ver los detalles de la ejecución de un escenario específico, incluido el filtrado y la búsqueda de eventos de escenario.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 5915476de34a883560d207d101a14e5b24abf3da
+exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 19%
+source-wordcount: '430'
+ht-degree: 17%
 
 ---
 
@@ -43,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -85,3 +86,17 @@ Puede ver una ejecución desde el historial de escenarios del escenario.
 1. Para ver los paquetes que pasan por un filtro, haga clic en el filtro. El número cerca del filtro representa el número de paquetes que han pasado a través del filtro.
 1. Para buscar un módulo o evento específico en el panel de ejecución, escriba el término de búsqueda en el cuadro **Buscar eventos de ejecución**. Los resultados aparecen a medida que escribe.
 1. Para limitar los resultados de búsqueda del panel de ejecución por estado, como Correcto o Advertencia, haga clic en el menú desplegable **Filtro de estado** y seleccione el estado.
+
+
+
+
+>[!NOTE]
+>
+>Para crear un vínculo a un módulo específico, agregue `?moduleId=<module-id>` a la dirección URL cuando visualice las siguientes páginas:
+>
+>* Página de edición de escenario (la dirección URL termina en `/edit`)
+>* Ejecución de un escenario específico (la dirección URL termina en `/logs/<log-id>`)
+>
+>`<module-id>` hace referencia al número que hay junto a la etiqueta del módulo cuando visualiza el escenario.
+>
+>Esto puede resultar útil al depurar escenarios o copiar la configuración del módulo.

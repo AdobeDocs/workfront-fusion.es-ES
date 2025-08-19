@@ -4,10 +4,10 @@ description: Este artículo describe el proceso básico de agregar un módulo a 
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 9%
+source-wordcount: '682'
+ht-degree: 8%
 
 ---
 
@@ -108,3 +108,14 @@ Se abrirá la lista de conectores, con los conectores que ya se hayan utilizado 
 1. Configure el módulo.
 
    Para obtener instrucciones sobre cómo configurar módulos específicos, consulte el artículo de las aplicaciones seleccionadas, que se enumeran en [Referencias de aplicaciones Fusion y sus módulos: índice de artículos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>Para crear un vínculo a un módulo específico, agregue `?moduleId=<module-id>` a la dirección URL cuando visualice las siguientes páginas:
+>
+>* Página de edición de escenario (la dirección URL termina en `/edit`)
+>* Ejecución de un escenario específico (la dirección URL termina en `/logs/<log-id>`)
+>
+>`<module-id>` hace referencia al número que hay junto a la etiqueta del módulo cuando visualiza el escenario.
+>
+>Esto puede resultar útil al depurar escenarios o copiar la configuración del módulo.
