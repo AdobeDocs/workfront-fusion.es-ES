@@ -4,14 +4,18 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion]  puede automatiza
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 81%
+source-wordcount: '2238'
+ht-degree: 80%
 
 ---
 
 # Módulos de [!DNL Jira Software]
+
+>[!NOTE]
+>
+>Estas instrucciones se aplican a los conectores heredados de Jira Cloud y Jira Server. Para obtener instrucciones acerca de la nueva versión del conector Jira, que simplemente se denomina Jira, consulte [Módulos Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
 
 En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Jira Software], así como conectarlo a varias aplicaciones y servicios de terceros.
 
@@ -52,7 +56,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
