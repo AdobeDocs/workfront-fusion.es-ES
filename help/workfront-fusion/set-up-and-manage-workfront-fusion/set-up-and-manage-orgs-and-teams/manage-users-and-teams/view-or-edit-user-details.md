@@ -1,13 +1,13 @@
 ---
-title: Administración de los usuarios de  [!DNL Adobe Workfront Fusion]  en la organización
+title: Visualización o edición de los detalles del usuario
 description: Administración de los usuarios de  [!DNL Adobe Workfront Fusion]  en la organización
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 45%
+source-wordcount: '232'
+ht-degree: 59%
 
 ---
 
@@ -48,7 +48,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
    <p>O</p>
    <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -75,7 +75,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 Los administradores de [!DNL Adobe Workfront Fusion] pueden ver y actualizar los detalles del usuario.
 
-1. Cuando haya iniciado sesión como administrador de [!DNL Workfront Fusion], seleccione **[!UICONTROL All users]** en el panel de navegación izquierdo.
-1. Haga clic en **[!UICONTROL Details]** en la fila del usuario que desee ver.
-1. (Opcional) Para actualizar los detalles del usuario, haga clic en **[!UICONTROL Options]** en la esquina superior derecha de la pantalla y seleccione **[!UICONTROL Change Details]**.
+1. Cuando haya iniciado sesión como administrador de [!DNL Workfront Fusion], seleccione **[!UICONTROL Todos los usuarios]** en el panel de navegación izquierdo.
+1. Haga clic en **[!UICONTROL Detalles]** en la fila del usuario que desee ver.
+1. (Opcional) Para actualizar los detalles del usuario, haga clic en **[!UICONTROL Opciones]** en la esquina superior derecha de la pantalla y seleccione **[!UICONTROL Cambiar detalles]**.
 1. Edite los detalles y, a continuación, haga clic en **Guardar**.

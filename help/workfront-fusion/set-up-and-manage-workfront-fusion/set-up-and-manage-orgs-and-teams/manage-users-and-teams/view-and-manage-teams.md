@@ -1,25 +1,30 @@
 ---
-title: Crear un equipo
-description: Los equipos son grupos más pequeños dentro de la organización y comparten recursos de Fusion como escenarios, conexiones y plantillas. Puede crear tantos equipos como desee.
+title: Ver y administrar equipos
+description: Puede ver una lista de los equipos de su organización y editar los nombres de los equipos.
 author: Becky
 feature: Workfront Fusion
-exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 24%
+source-wordcount: '301'
+ht-degree: 28%
 
 ---
 
-# Crear un equipo
+# Ver y administrar equipos
 
-Los equipos son grupos más pequeños dentro de la organización y comparten recursos de Fusion como escenarios, conexiones y plantillas. Puede crear tantos equipos como desee.
+Los equipos son grupos de usuarios que comparten el acceso a recursos específicos. Estos recursos pueden incluir:
 
-Las organizaciones pueden tener tantos equipos como necesiten y los usuarios pueden pertenecer a uno o más equipos.
+* Escenarios
+* Conexiones
+* Webhooks
+* Claves
+* Almacenes de datos
+* Estructuras de datos
+* Configuración de notificaciones por correo electrónico
 
->[!NOTE]
->
->Como los equipos comparten recursos, a veces resulta útil que un equipo tenga solo un miembro. Por ejemplo, los usuarios en formación pueden crear conexiones con sus cuentas individuales de [!DNL Workfront]. Los integrantes del equipo también podrían conectarse a la cuenta individual de [!DNL Workfront]. En este caso, recomendamos que el usuario sea el único miembro de un equipo de formación.
+Puede ver una lista de los equipos de su organización y editar sus nombres.
+
+Para agregar usuarios a los equipos, consulte [Agregar un usuario a un equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Requisitos de acceso
 
@@ -73,26 +78,17 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 +++
 
+## Ver y administrar equipos del área de equipos
+
+1. En el panel de navegación izquierdo, haga clic en **Org overview** en la esquina superior izquierda de la pantalla.
+1. Seleccione la ficha **Equipos**.
+
+   Se abre la lista Equipos.
+
+1. (Opcional) Para ordenar la lista de equipos por cualquier columna, haga clic en el icono **Ordenar** ![Icono Ordenar](assets/sort-icon.png) para esa columna.
+1. (Opcional) Para ocultar o mostrar columnas, haga clic en el icono **Columnas** ![Icono de Columnas](assets/columns-icon.png) cerca de la esquina superior derecha de la lista y, a continuación, habilite o deshabilite las columnas.
+1. (Opcional) Para filtrar la lista, empiece a escribir en la barra de búsqueda. La lista filtra para incluir solo equipos que incluyen el término de búsqueda.
+1. (Opcional) Para cambiar el nombre de un equipo, haga clic en **Editar** en la línea correspondiente, luego ingrese el nuevo nombre del equipo y haga clic en **Guardar**.
 
 
-## Crear un equipo
-
-Los propietarios y administradores de organizaciones pueden crear equipos. Los equipos se crean agregando un nuevo equipo a una organización.
-
-Para crear un equipo:
-
-1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Descripción general de la organización]**
-1. Seleccione la ficha **[!UICONTROL Equipos]**.
-1. Haga clic en **[!UICONTROL Agregar nuevo equipo]**.
-   ![Crear un equipo](assets/create-new-team-button.png)
-1. Escriba un nombre para el nuevo equipo y haga clic en **Agregar**.
-
-## Editar un equipo
-
-Puede editar el nombre de un equipo.
-
-1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Descripción general de la organización]**
-1. Seleccione la ficha **[!UICONTROL Equipos]**.
-1. Busque el equipo cuyo nombre desea editar y luego haga clic en **Editar** en la línea correspondiente a ese equipo.
-1. Escriba un nombre nuevo para el equipo y haga clic en **Guardar**.
 

@@ -2,10 +2,10 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: f28dd04df0a527a35a9ef82fa92fc07a363a7144
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 60%
+source-wordcount: '1849'
+ht-degree: 59%
 
 ---
 
@@ -167,8 +167,10 @@ ht-degree: 60%
          * [Ver el registro de actividades de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
       * Administrar usuarios y equipos {#manage-users-and-teams}
          * [Administrar usuarios y equipos: índice de artículos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
+         * [Ver usuarios de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
          * [Visualización o edición de los detalles del usuario](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [Visualización o edición de las funciones de usuario](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
+         * [Ver y administrar equipos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
          * [Eliminar usuarios en Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
    * Administrar plantillas {#manage-templates-admin}
       * [Administración de plantillas](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
