@@ -115,7 +115,7 @@ Inicie manualmente el escenario en el editor de escenarios.
 >Para evitar que se ejecute todo el escenario, puede:
 >
 >* Desvincule los módulos después del módulo [!UICONTROL JSON] > [!UICONTROL Analice el JSON] para evitar que el flujo continúe.
->  >   O
+>  &#x200B;>   O
 >* Haga clic con el botón derecho en el módulo [!UICONTROL JSON] > [!UICONTROL Analizar JSON] y elija **[!UICONTROL Ejecutar este módulo solo]** del menú contextual para ejecutar solo el módulo [!UICONTROL JSON] > [!UICONTROL Analizar JSON].
 
 Después de ejecutar [!UICONTROL JSON] > [!UICONTROL Analizar JSON], puede proporcionar información sobre sus resultados a todos los módulos subsiguientes, incluido el módulo Iterator. A continuación, el panel de asignación de la configuración del iterador muestra los elementos siguientes:

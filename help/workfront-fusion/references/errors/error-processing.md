@@ -165,7 +165,7 @@ Para obtener más información, consulte [Número de errores consecutivos](/help
 >[!NOTE]
 >
 >Si un escenario comienza con un déclencheur instantáneo y encuentra este error, se omite la configuración de [!UICONTROL Número máximo de errores consecutivos] y el escenario se desactiva inmediatamente.
->>Para obtener más información, consulte [déclencheur instantáneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) en el artículo Información general sobre los módulos.
+>&#x200B;>Para obtener más información, consulte [déclencheur instantáneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) en el artículo Información general sobre los módulos.
 
 ## Error de incoherencia
 

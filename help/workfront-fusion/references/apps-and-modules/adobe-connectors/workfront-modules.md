@@ -448,7 +448,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >[!IMPORTANT]
 >
 >Este módulo se ha reemplazado por el módulo Crear un registro. Se recomienda utilizar ese módulo en nuevos escenarios.
->>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
+>&#x200B;>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de acción crea un objeto en Workfront, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -886,7 +886,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >[!IMPORTANT]
 >
 >Este módulo se ha reemplazado por el módulo Leer un registro. Se recomienda utilizar ese módulo en nuevos escenarios.
->>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
+>&#x200B;>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de acción recupera datos de un único registro.
 
@@ -1015,7 +1015,7 @@ Vea una lista de los tipos de objetos Workfront para los que puede usar este mó
 >[!IMPORTANT]
 >
 >Este módulo se ha reemplazado por el módulo Actualizar un registro. Se recomienda utilizar ese módulo en nuevos escenarios.
->>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
+>&#x200B;>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de acción actualiza un objeto, como un proyecto, una tarea o un problema. El módulo le permite seleccionar qué campos del objeto están disponibles en el módulo.
 
@@ -1249,7 +1249,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 >[!IMPORTANT]
 >
 >Este módulo se ha reemplazado por el módulo Buscar registros. Se recomienda utilizar ese módulo en nuevos escenarios.
->>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
+>&#x200B;>Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de búsqueda busca registros en un objeto de Workfront que coincidan con la consulta de búsqueda especificada.
 

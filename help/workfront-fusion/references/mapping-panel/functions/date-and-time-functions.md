@@ -139,7 +139,7 @@ Esta función devuelve una nueva fecha con los segundos especificados en paráme
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 

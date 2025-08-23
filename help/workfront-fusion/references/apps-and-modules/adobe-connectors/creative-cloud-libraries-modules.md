@@ -115,7 +115,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [[!UICONTROL Cargar un elemento]](#upload-an-element)
 
-* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
+* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Ver elementos actualizados]](#watch-updated-elements)
 
