@@ -184,7 +184,7 @@ Esta plantilla le permite ver si hay un cambio en una carpeta de SharePoint.
 
 Estas plantillas admiten la integración de Workfront y Anaplan y esperan una configuración específica tanto en Anaplan como en Workfront. Para obtener información sobre estas plantillas y sus configuraciones necesarias, consulte los artículos correspondientes a las plantillas individuales.
 
-Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
+Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +192,19 @@ Para obtener más información sobre la integración de Workfront y Anaplan, con
 
 ### Flujos de trabajo de optimización de gasto
 
-* [Enviar actualizaciones de proyecto de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Enviar gastos de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Enviar actualizaciones de horas reales de Adobe Workfront a un [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Enviar actualizaciones de proyecto de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Enviar gastos de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Enviar actualizaciones de horas reales de Adobe Workfront a un [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Flujos de trabajo para vincular solicitudes de presupuesto
 
-* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Aplicar una [!DNL Anaplan] asignación de presupuesto a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Aplicar una [!DNL Anaplan] asignación de presupuesto a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Flujos de trabajo para vincular solicitudes de campaña
 
-* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Aplicar una [!DNL Anaplan] asignación de presupuesto a una solicitud de campaña o proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Aplicar una [!DNL Anaplan] asignación de presupuesto a una solicitud de campaña o proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->
