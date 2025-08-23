@@ -4,10 +4,10 @@ description: La aplicación XML permite analizar un texto con formato XML median
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 88%
+source-wordcount: '1448'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -52,7 +52,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -70,7 +70,7 @@ El módulo [!UICONTROL XML] > [!UICONTROL Crear XML] convierte un paquete en tex
     <ol> 
      <li value="1">Haga clic en el botón <strong>[!UICONTROL Add]</strong>.</li> 
      <li value="2">Haga clic en el botón <strong>[!UICONTROL Generator]</strong>.</li> 
-     <li value="3">Copie y pegue el XML de ejemplo en el campo Datos de ejemplo.</li> 
+     <li value="3">Copie y pegue el XML de muestra en el campo Datos de muestra.</li> 
      <li value="4">Haga clic en el botón <strong>[!UICONTROL Save]</strong>.</li> 
      <li value="5">Compruebe que la estructura de datos se haya generado correctamente.</li> 
      <li value="6">Haga clic en <strong>[!UICONTROL Save]</strong> para guardar la estructura de datos.</li> 

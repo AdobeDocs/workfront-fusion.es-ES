@@ -1,13 +1,13 @@
 ---
 title: Tipos de datos de elementos
-description: Sus escenarios de  [!DNL Adobe Workfront Fusion]  pueden contener los tipos de elementos que se enumeran a continuación en un paquete.
+description: Los escenarios de Adobe Workfront Fusion pueden contener los tipos de elementos que se enumeran a continuación en un paquete.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 80%
+source-wordcount: '577'
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 Puede contener los tipos de elementos enumerados a continuación en un paquete.
 
-Para obtener información sobre los tipos de elementos [!DNL Workfront Fusion] que permiten la conversión entre ellos, vea [Coerción de tipos](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+Para obtener información sobre los tipos de elementos que Workfront Fusion permite convertir entre sí, consulte [Coerción de tipos](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -23,11 +23,11 @@ Para obtener información sobre los tipos de elementos [!DNL Workfront Fusion] q
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Texto</p> </td> 
-   <td> <p>El tipo de elemento más común. Para algunos elementos de texto, [!DNL Adobe Workfront Fusion] comprueba si se cumple la longitud máxima o mínima permitida, o si el elemento realiza la validación de formato (correo electrónico, URL o nombre de archivo).</p> </td> 
+   <td> <p>El tipo de elemento más común. Para algunos elementos de texto, Adobe Workfront Fusion comprueba si se cumple la longitud máxima o mínima permitida o si el elemento realiza la validación de formato (correo electrónico, URL o nombre de archivo).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Número</p> </td> 
-   <td> <p>Para algunos elementos numéricos, [!DNL Workfront Fusion] puede validar la entrada para un intervalo especificado (el valor mínimo o máximo permitido).</p> </td> 
+   <td> <p>Para algunos elementos numéricos, Workfront Fusion puede validar la entrada para un rango especificado (el valor mínimo o máximo permitido).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Booleano (Sí/No)</p> </td> 
@@ -39,11 +39,11 @@ Para obtener información sobre los tipos de elementos [!DNL Workfront Fusion] q
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Fecha</p> </td> 
-   <td> <p>Las fechas se especifican en formato ISO 8601, por ejemplo, <code>2015-09-18T11:58Z</code>. Puede cambiar la zona horaria en la configuración de su perfil. </p> <p>Si hace clic en un campo que requiera una fecha, aparecerá un calendario emergente en la configuración del módulo. No se requiere tiempo para algunos elementos.</p> <p>Los valores de los elementos de fecha se formatean con la zona horaria local y web seleccionada en el perfil. Puede mostrar la versión ISO 8601 del valor de un elemento de fecha pasando el ratón por encima del elemento.</p> <p>Nota: Si no se muestra el valor ISO, es probable que el elemento sea texto, no una fecha.</p> <p>La hora se especifica en el formato <code>hours:minutes:seconds</code>, por ejemplo, <code>14:03:52</code>.</p> </td> 
+   <td> <p>Las fechas se especifican en formato ISO 8601, por ejemplo, <code>2015-09-18T11:58Z</code>. Puede cambiar la zona horaria en la configuración de su perfil. </p> <p>Si hace clic en un campo que requiera una fecha, aparecerá un calendario emergente en la configuración del módulo. No se requiere tiempo para algunos elementos.</p> <p>Los valores de los elementos de fecha se formatean con la zona horaria local y web seleccionada en el perfil. Puede mostrar la versión ISO 8601 del valor de un elemento de fecha pasando el puntero por encima del elemento.</p> <p>Nota: Si no se muestra el valor ISO, es probable que el elemento sea texto, no una fecha.</p> <p>La hora se especifica en el formato <code>hours:minutes:seconds</code>, por ejemplo, <code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Búfer (datos binarios)</p> </td> 
-   <td> <p>El contenido del archivo se suele enviar como contenido de tipo búfer (contenido de imagen, archivo de vídeo, etc.). En algunos casos, los datos de texto se incluyen en este tipo (por ejemplo, un archivo de texto). [!DNL Workfront Fusion] puede convertir automáticamente los datos de texto en código binario en texto y datos de texto a datos en código binario. Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Asignar archivos</a>.</p> </td> 
+   <td> <p>El contenido del archivo se suele enviar como contenido de tipo búfer (contenido de imagen, archivo de vídeo, etc.). En algunos casos, los datos de texto se incluyen en este tipo (por ejemplo, un archivo de texto). Workfront Fusion puede convertir automáticamente los datos de texto en código binario a texto y texto a datos de texto en código binario. Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Asignar archivos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Colección</p> </td> 
@@ -55,11 +55,11 @@ Para obtener información sobre los tipos de elementos [!DNL Workfront Fusion] q
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Matriz</p> </td> 
-   <td> <p>Puede utilizar el tipo de matriz para trabajar con varios valores del mismo tipo, incluidas colecciones. Un ejemplo son los módulos [!UICONTROL Email]: devuelven una matriz de archivos adjuntos y cada archivo adjunto contiene un nombre, contenido, tamaño, etc. Para obtener más información, vea <a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">Asignar una matriz o elemento de matriz</a>.</p> </td> 
+   <td> <p>Puede utilizar el tipo de matriz para trabajar con varios valores del mismo tipo, incluidas colecciones. Un ejemplo son los módulos de [!UICONTROL Email]: devuelven una matriz de archivos adjuntos y cada archivo adjunto contiene un nombre, contenido, tamaño, etc. Para obtener más información, vea <a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">Asignar una matriz o elemento de matriz</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validación</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] puede realizar la validación en cada tipo de elemento. Si un elemento no pasa la validación, el módulo detendrá el procesamiento debido a un error de datos. Para obtener más información, vea <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Tipos de error </a>. </p> </td> 
+   <td> <p>Workfront Fusion puede realizar la validación en cada tipo de elemento. Si un elemento no pasa la validación, el módulo detendrá el procesamiento debido a un error de datos. Para obtener más información, vea <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Tipos de error </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

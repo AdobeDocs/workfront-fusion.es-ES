@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3554'
-ht-degree: 90%
+source-wordcount: '4122'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion y de Adobe Workfront.
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!UICONTROL GitLab], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!UICONTROL GitLab], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 >[!NOTE]
 >
@@ -34,39 +34,39 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Plan de Adobe Workfront*</td>
   <td> <p>[!UICONTROL Pro] o superior</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
+   <td role="rowheader">Licencia de Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Requisito de licencia actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Requisito de licencia heredado: [!UICONTROL Workfront Fusion para automatización e integración de trabajo] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Requisito actual del producto: si tiene el plan de Adobe Workfront de [!UICONTROL Select] o [!UICONTROL Prime], su organización debe adquirir Adobe Workfront Fusion y Adobe Workfront para utilizar la funcionalidad que se describe en este artículo. Workfront Fusion está incluido en el plan de Workfront de [!UICONTROL Ultimate].</p>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Requisito de productos heredados: su organización debe adquirir Adobe Workfront Fusion así como Adobe Workfront para utilizar la funcionalidad descrita en este artículo.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
 
-Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Conectar [!DNL GitLab] a [!DNL Workfront Fusion] {#connect-gitlab-to-workfront-fusion}
+## Conexión de [!DNL GitLab] a Workfront Fusion {#connect-gitlab-to-workfront-fusion}
 
-1. En cualquier módulo [!DNL Workfront Fusion] [!DNL Gitlab], haga clic en **[!UICONTROL Add]** junto al campo de conexión.
+1. En cualquier módulo de Workfront Fusion [!DNL Gitlab], haga clic en **[!UICONTROL Agregar]** junto al campo de conexión.
 1. Configure los campos siguientes:
 
    <table style="table-layout:auto"> 
@@ -83,18 +83,18 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Access Token]</td> 
-      <td><p>Escriba su [!UICONTROL Private Token] o [!UICONTROL Personal Access Token].</p><p>Para obtener información sobre la localización o creación de un token de acceso personal en [!DNL GitLab], consulte “Crear un token de acceso personal” en <a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">Tókenes de acceso personal</a>, en la documentación de [!DNL GitLab].</p></td> 
+      <td><p>Introduzca su [!UICONTROL Private Token] o [!UICONTROL Personal Access Token].</p><p>Para obtener información sobre la localización o creación de un token de acceso personal en [!DNL GitLab], consulte “Crear un token de acceso personal” en <a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">Tókenes de acceso personal</a>, en la documentación de [!DNL GitLab].</p></td> 
      </tr> 
     </tbody> 
    </table>
 
 
-1. Haga clic en **[!UICONTROL Continue]**.
-1. Haga clic en **[!UICONTROL Authorize]** para crear la conexión y volver al módulo.
+1. Haga clic en **[!UICONTROL Continuar]**.
+1. Haga clic en **[!UICONTROL Autorizar]** para crear la conexión y volver al módulo.
 
 ## Módulos de [!DNL GitLab] y sus campos
 
-Al configurar módulos de [!DNL GitLab], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL GitLab] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL GitLab], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL GitLab] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -102,7 +102,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Activadores
 
-+++**[!UICONTROL Watch build status]**
++++**[!UICONTROL Ver el estado de la versión]**
 
 Este módulo de activador instantáneo inicia un escenario cuando cambia el estado de una compilación.
 
@@ -119,7 +119,7 @@ Este módulo de activador instantáneo inicia un escenario cuando cambia el esta
 
 +++
 
-+++**[!UICONTROL Watch commit/MR/issue/snippet comments]**
++++**[!UICONTROL Ver comentarios de confirmación/MR/problema/fragmento]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se realiza un comentario en una confirmación, solicitud de combinación, problema o fragmento de código.
 
@@ -136,7 +136,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se realiza un 
 
 +++
 
-+++**[!UICONTROL Watch commits (pushes)]**
++++**[!UICONTROL Ver confirmaciones (inserciones)]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se inserta una confirmación en un repositorio. Este módulo no inicia un escenario cuando se inserta una etiqueta.
 
@@ -153,7 +153,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se inserta una
 
 +++
 
-+++**[!UICONTROL Watch issue comment]**
++++**[!UICONTROL Ver comentario del problema]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se realiza un comentario sobre un problema.
 
@@ -170,9 +170,9 @@ Este módulo de activador instantáneo inicia un escenario cuando se realiza un 
 
 +++
 
-+++**[!UICONTROL Watch issues]**
++++**[!UICONTROL Problemas de observación]**
 
-Este módulo de [!UICONTROL instant trigger] inicia un escenario cuando se crea un problema o cuando se actualiza, cierra o vuelve a abrirse uno existente.
+Este módulo de [!UICONTROL activador instantáneo] inicia un escenario cuando se crea un problema o cuando se actualiza, cierra o reabre uno existente.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -187,7 +187,7 @@ Este módulo de [!UICONTROL instant trigger] inicia un escenario cuando se crea 
 
 +++
 
-+++**[!UICONTROL Watch merge requests]**
++++**[!UICONTROL Ver solicitudes de combinación]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se produce una de las siguientes situaciones:
 
@@ -209,7 +209,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se produce una
 
 +++
 
-+++**[!UICONTROL Watch merge request comments]**
++++**[!UICONTROL Ver comentarios de solicitud de combinación]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se realiza un comentario en una solicitud de combinación.
 
@@ -226,7 +226,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se realiza un 
 
 +++
 
-+++**[!UICONTROL Watch pipeline status]**
++++**[!UICONTROL Ver estado de la canalización]**
 
 Este módulo de activador instantáneo inicia un escenario cuando cambia el estado de una canalización.
 
@@ -243,7 +243,7 @@ Este módulo de activador instantáneo inicia un escenario cuando cambia el esta
 
 +++
 
-+++**[!UICONTROL Watch projects]**
++++**[!UICONTROL Ver proyectos]**
 
 Este módulo de activador programado inicia un escenario cuando se añade un nuevo proyecto del que es miembro el usuario autenticado.
 
@@ -253,7 +253,7 @@ Este módulo de activador programado inicia un escenario cuando se añade un nue
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su [!DNL GitLab]cuenta de[!DNL Workfront] a Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a [!DNL Workfront] Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Resultados máximos</td> 
@@ -264,7 +264,7 @@ Este módulo de activador programado inicia un escenario cuando se añade un nue
 
 +++
 
-+++**[!UICONTROL Watch repository branches]**
++++**[!UICONTROL Observar ramas del repositorio]**
 
 Este módulo de activador programado inicia un escenario cuando se añade una nueva rama a un repositorio.
 
@@ -274,7 +274,7 @@ Este módulo de activador programado inicia un escenario cuando se añade una nu
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su [!DNL GitLab]cuenta de[!DNL Workfront] a Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a [!DNL Workfront] Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Resultados máximos</td> 
@@ -285,7 +285,7 @@ Este módulo de activador programado inicia un escenario cuando se añade una nu
 
 +++
 
-+++**[!UICONTROL Watch repository tags]**
++++**[!UICONTROL Ver etiquetas de repositorio]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se crea o elimina una etiqueta en un repositorio.
 
@@ -302,7 +302,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se crea o elim
 
 +++
 
-+++**[!UICONTROL Watch snippet comments]**
++++**[!UICONTROL Observar comentarios de fragmentos]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se realiza un nuevo comentario en un fragmento.
 
@@ -319,7 +319,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se realiza un 
 
 +++
 
-+++**[!UICONTROL Watch todos]**
++++**[!UICONTROL Ver tareas pendientes]**
 
 Este módulo de activador programado inicia un escenario cuando se añade una nueva tarea pendiente. Cuando no se aplica ningún filtro, el activador se ejecuta al añadir una nueva tarea pendiente.
 
@@ -327,7 +327,7 @@ Para obtener información sobre los campos, consulte [Obtener una lista de tarea
 
 +++
 
-+++**[!UICONTROL Watch wiki page]**
++++**[!UICONTROL Ver la página de la wiki]**
 
 Este módulo de activador instantáneo inicia un escenario cuando se crea o edita una página wiki.
 
@@ -346,7 +346,7 @@ Este módulo de activador instantáneo inicia un escenario cuando se crea o edit
 
 ### Acciones
 
-+++**[!UICONTROL Accept merge request]**
++++**[!UICONTROL Aceptar una solicitud de combinación]**
 
 Este módulo de acción combina los cambios enviados con la solicitud de combinación en cuestión.
 
@@ -354,7 +354,7 @@ Para obtener información sobre los campos, consulte [Aceptar una solicitud de c
 
 +++
 
-+++**[!UICONTROL Cancel a build]**
++++**[!UICONTROL Cancelar una versión]**
 
 Este módulo de acción cancela una sola versión de un proyecto.
 
@@ -364,7 +364,7 @@ Este módulo de acción cancela una sola versión de un proyecto.
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL GitLab] a [!DNL Workfront] Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a [!DNL Workfront] Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -396,7 +396,7 @@ Este módulo de acción cancela una sola versión de un proyecto.
 
 +++
 
-+++**[!UICONTROL Cancel a pipeline's builds]**
++++**[!UICONTROL Cancelar las compilaciones de una canalización]**
 
 Este módulo de acción cancela las compilaciones de una sola canalización.
 
@@ -404,7 +404,7 @@ Para obtener información sobre los campos, consulte [Cancelar los trabajos de u
 
 +++
 
-+++**[!UICONTROL Cancel merge when pipeline succeeds]**
++++**[!UICONTROL Cancelar la combinación cuando la canalización se realice correctamente]**
 
 Si una solicitud de combinación está configurada para combinarse cuando una canalización se realiza correctamente, este módulo de acción cancela esa acción.
 
@@ -412,7 +412,7 @@ Para obtener información sobre los campos, consulte [Cancelar la combinación c
 
 +++
 
-+++**[!UICONTROL Cherry pick a commit]**
++++**[!UICONTROL Elegir un compromiso]**
 
 Este módulo de acción elige un compromiso para una rama determinada.
 
@@ -420,7 +420,7 @@ Para obtener información sobre los campos, consulte [Elegir un compromiso](http
 
 +++
 
-+++**[!UICONTROL Create a new label]**
++++**[!UICONTROL Crear una nueva etiqueta]**
 
 Este módulo de acción crea una nueva etiqueta para el repositorio en cuestión.
 
@@ -428,7 +428,7 @@ Para obtener información sobre los campos, consulte [Crear una nueva etiqueta](
 
 +++
 
-+++**[!UICONTROL Create a new pipeline]**
++++**[!UICONTROL Crear una nueva canalización]**
 
 Este módulo de acción crea una nueva canalización para el proyecto en cuestión.
 
@@ -436,7 +436,7 @@ Para obtener información sobre los campos, consulte [Crear una nueva canalizaci
 
 +++
 
-+++**[!UICONTROL Create a new release]**
++++**[!UICONTROL Crear una nueva versión]**
 
 Este módulo de acción añade notas de la versión a la etiqueta de Git existente.
 
@@ -444,7 +444,7 @@ Para obtener información sobre los campos, consulte [Crear una versión](https:
 
 +++
 
-+++**[!UICONTROL Create a new tag]**
++++**[!UICONTROL Crear una nueva etiqueta]**
 
 Este módulo de acción crea una nueva etiqueta en el repositorio que apunta a la referencia proporcionada.
 
@@ -452,7 +452,7 @@ Para obtener información sobre los campos, consulte [Crear una etiqueta nueva](
 
 +++
 
-+++**[!UICONTROL Create a todo]**
++++**[!UICONTROL Crear una tarea pendiente]**
 
 Este módulo de acción crea una tarea pendiente para el usuario actual en el problema seleccionado. El usuario actual es el usuario identificado por las credenciales de la conexión utilizada para este módulo.
 
@@ -460,7 +460,7 @@ Para obtener información sobre los campos, consulte [Crear una tarea pendiente]
 
 +++
 
-+++**[!UICONTROL Create a todo on a merge request]**
++++**[!UICONTROL Crear una tarea pendiente en una solicitud de combinación]**
 
 Este módulo de acción crea una tarea pendiente para el usuario actual en la solicitud de combinación seleccionada. El usuario actual es el usuario identificado por las credenciales de la conexión utilizada para este módulo.
 
@@ -468,7 +468,7 @@ Para obtener información sobre los campos, consulte [Crear una tarea pendiente]
 
 +++
 
-+++**[!UICONTROL Create merge request]**
++++**[!UICONTROL Crear solicitud de combinación]**
 
 Este módulo de acción crea una nueva solicitud de combinación en un proyecto.
 
@@ -476,7 +476,7 @@ Para obtener información sobre los campos, consulte [Crear solicitud de combina
 
 +++
 
-+++**[!UICONTROL Create new file in repository]**
++++**[!UICONTROL Crear nuevo archivo en el repositorio]**
 
 Este módulo de acción crea un nuevo archivo en el repositorio seleccionado.
 
@@ -484,7 +484,7 @@ Para obtener información sobre los campos, consulte [Crear nuevo archivo en el 
 
 +++
 
-+++**[!UICONTROL Create new issue note]**
++++**[!UICONTROL Crear nueva nota de problema]**
 
 Este módulo de acción crea una nota del problema para un solo problema de proyecto.
 
@@ -492,7 +492,7 @@ Para obtener información sobre los campos, consulte [Crear nueva nota de proble
 
 +++
 
-+++**[!UICONTROL Create new merge request note]**
++++**[!UICONTROL Crear nueva nota de solicitud de combinación]**
 
 Este módulo de acción crea una nota para una sola solicitud de combinación.
 
@@ -500,7 +500,7 @@ Para obtener información sobre los campos, consulte [Crear nueva nota de solici
 
 +++
 
-+++**[!UICONTROL Create a new milestone]**
++++**[!UICONTROL Crear un nuevo hito]**
 
 Este módulo de acción crea un nuevo hito para un proyecto.
 
@@ -508,7 +508,7 @@ Para obtener información sobre los campos, consulte [Crear nuevo hito](https://
 
 +++
 
-+++**[!UICONTROL Create new snippet note]**
++++**[!UICONTROL Crear nueva nota de fragmento]**
 
 Este módulo de acción crea una nota nueva para un solo fragmento. Las notas de fragmento son comentarios que los usuarios pueden publicar en un fragmento.
 
@@ -516,7 +516,7 @@ Para obtener información sobre los campos, consulte [Crear nueva nota de fragme
 
 +++
 
-+++**[!UICONTROL Create repository branch]**
++++**[!UICONTROL Crear rama de repositorio]**
 
 Este módulo de acción crea una sola rama del repositorio.
 
@@ -524,7 +524,7 @@ Para obtener información sobre los campos, consulte [Crear rama de repositorio]
 
 +++
 
-+++**[!UICONTROL Create build variable]**
++++**[!UICONTROL Crear variable de compilación]**
 
 Este módulo de acción crea una nueva variable de compilación.
 
@@ -532,7 +532,7 @@ Para obtener información sobre los campos, consulte [Crear variable](https://do
 
 +++
 
-+++**[!UICONTROL Delete a merge request]**
++++**[!UICONTROL Eliminar una solicitud de combinación]**
 
 Este módulo de acción es solo para administradores y propietarios de proyectos. Elimina la solicitud de combinación en cuestión
 
@@ -540,7 +540,7 @@ Para obtener información sobre los campos, consulte [Eliminar una solicitud de 
 
 +++
 
-+++**[!UICONTROL Delete existing file in repository]**
++++**[!UICONTROL Eliminar archivo existente en el repositorio]**
 
 Este módulo de acción elimina un archivo existente del repositorio.
 
@@ -548,7 +548,7 @@ Para obtener información sobre los campos, consulte [Eliminar archivo existente
 
 +++
 
-+++**[!UICONTROL Delete repository branch]**
++++**[!UICONTROL Eliminar rama del repositorio]**
 
 Este módulo de acción elimina una rama del repositorio.
 
@@ -556,7 +556,7 @@ Para obtener información sobre los campos, consulte [Eliminar la rama del repos
 
 +++
 
-+++**[!UICONTROL Edit issue]**
++++**[!UICONTROL Editar problema]**
 
 Este módulo de acción actualiza un problema existente del proyecto. Esta llamada también se utiliza para marcar un problema como cerrado.
 
@@ -564,14 +564,14 @@ Para obtener información sobre los campos, consulte [Editar problema](https://d
 
 +++
 
-+++**[!UICONTROL Edit Milestone]**
++++**[!UICONTROL Editar hito]**
 Este módulo de acción actualiza un hito de proyecto existente.
 
 Para obtener información sobre los campos, consulte [Editar hito](https://docs.gitlab.com/ee/api/milestones.html#edit-milestone) en la documentación de [!DNL GitLab].
 
 +++
 
-+++**[!UICONTROL Erase a build]**
++++**[!UICONTROL Borrar una versión]**
 
 Este módulo de acción borra una versión de un proyecto (elimina los artefactos de trabajo y el registro de trabajos).
 
@@ -579,7 +579,7 @@ Para obtener información sobre los campos, consulte [Borrar un trabajo](https:/
 
 +++
 
-+++**[!UICONTROL Get a list of todos]**
++++**[!UICONTROL Obtener una lista de elementos endientes]**
 
 Este módulo de búsqueda recupera una lista de elementos pendientes.
 
@@ -587,7 +587,7 @@ Para obtener información sobre los campos, consulte [Obtener una lista de eleme
 
 +++
 
-+++**[!UICONTROL Get a single build]**
++++**[!UICONTROL Obtener una sola versión]**
 
 Este módulo de acción recupera un solo trabajo de un proyecto.
 
@@ -595,7 +595,7 @@ Para obtener información sobre los campos, consulte [Obtener un solo trabajo](h
 
 +++
 
-+++**[!UICONTROL Get a single repository tag]**
++++**[!UICONTROL Obtener una sola etiqueta de repositorio]**
 
 Este módulo de acción recupera una etiqueta de repositorio específica determinada por su nombre.
 
@@ -603,7 +603,7 @@ Para obtener información sobre los campos, consulte [Obtener una sola etiqueta 
 
 +++
 
-+++**[!UICONTROL Get a specific deployment]**
++++**[!UICONTROL Obtener una implementación específica]**
 
 Este módulo de acción recupera una implementación específica.
 
@@ -611,7 +611,7 @@ Para obtener información sobre los campos, consulte [Obtener una implementació
 
 +++
 
-+++**[!UICONTROL Get all issues assigned to a single milestone]**
++++**[!UICONTROL Obtener todos los problemas asignados a un solo histo]**
 
 Este módulo de búsqueda recupera todos los problemas asignados a un solo hito de proyecto.
 
@@ -619,7 +619,7 @@ Para obtener información sobre los campos, consulte [Obtener todos los problema
 
 +++
 
-+++**[!UICONTROL Get file from repository]**
++++**[!UICONTROL Obtener archivo del repositorio]**
 
 Este módulo de acción recupera información sobre un archivo del repositorio, como el nombre, tamaño o contenido.
 
@@ -627,7 +627,7 @@ Para obtener información sobre los campos, consulte [Obtener archivo del reposi
 
 +++
 
-+++**[!UICONTROL Get project users]**
++++**[!UICONTROL Obtener usuarios del proyecto]**
 
 Este módulo de búsqueda recupera los usuarios del proyecto.
 
@@ -635,7 +635,7 @@ Para obtener información sobre los campos, consulte [Obtener usuarios del proye
 
 +++
 
-+++**[!UICONTROL Get a single issue]**
++++**[!UICONTROL Obtener un solo problema]**
 
 Este módulo de acción recupera los detalles de un problema.
 
@@ -645,7 +645,7 @@ Este módulo de acción recupera los detalles de un problema.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] a Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -660,7 +660,7 @@ Este módulo de acción recupera los detalles de un problema.
 
 +++
 
-+++**[!UICONTROL Get single issue note]**
++++**[!UICONTROL Obtener una sola nota de un problema]**
 
 Este módulo de acción recupera una sola nota para un problema específico del proyecto.
 
@@ -668,7 +668,7 @@ Para obtener información sobre los campos, consulte [Obtener una sola nota de u
 
 +++
 
-+++**[!UICONTROL Get single merge request]**
++++**[!UICONTROL Obtener una única solicitud de combinación]**
 
 Este módulo de acción recupera información sobre una única solicitud de combinación.
 
@@ -676,7 +676,7 @@ Para obtener información sobre los campos, consulte [Obtener una única solicit
 
 +++
 
-+++**[!UICONTROL Get single merge request changes]**
++++**[!UICONTROL Obtener cambios de una solicitud de combinación]**
 
 Este módulo de búsqueda recupera información sobre la solicitud de combinación, incluidos sus archivos y cambios.
 
@@ -684,7 +684,7 @@ Para obtener información sobre los campos, consulte [Obtener cambios de una sol
 
 +++
 
-+++**[!UICONTROL Get single merge request commits]**
++++**[!UICONTROL Obtener compromisos de solicitudes de combinación única]**
 
 Este módulo de acción recupera una lista de compromisos de solicitudes de combinación.
 
@@ -692,7 +692,7 @@ Para obtener información sobre los campos, consulte [Obtener compromisos de sol
 
 +++
 
-+++**[!UICONTROL Get single merge request note]**
++++**[!UICONTROL Obtener una nota de solicitud de combinación]**
 
 Este módulo de acción devuelve una sola nota para una solicitud de combinación determinada.
 
@@ -700,7 +700,7 @@ Para obtener información sobre los campos, consulte [Obtener una nota de solici
 
 +++
 
-+++**[!UICONTROL Get a Milestone]**
++++**[!UICONTROL Obtener un hito]**
 
 Este módulo de acción recupera los detalles de un hito.
 
@@ -708,7 +708,7 @@ Para obtener información sobre los campos, consulte [Obtener un hito](https://d
 
 +++
 
-+++**[!UICONTROL Get single project]**
++++**[!UICONTROL Obtener un proyecto]**
 
 Este módulo de acción recupera los detalles de un proyecto.
 
@@ -716,7 +716,7 @@ Para obtener información sobre los campos, consulte [Obtener un proyecto](https
 
 +++
 
-+++**[!UICONTROL Get single repository branch]**
++++**[!UICONTROL Obtener una rama de repositorio]**
 
 Este módulo de acción recupera los detalles de una rama del repositorio.
 
@@ -724,7 +724,7 @@ Para obtener información sobre los campos, consulte [Obtener una rama del repos
 
 +++
 
-+++**[!UICONTROL Get snippet note]**
++++**[!UICONTROL Obtener nota de un fragmento]**
 
 Este módulo recupera una nota para un fragmento determinado.
 
@@ -732,7 +732,7 @@ Para obtener información sobre los campos, consulte [Obtener nota de un fragmen
 
 +++
 
-+++**[!UICONTROL Get the comments of a commit]**
++++**[!UICONTROL Obtener los comentarios de un compromiso]**
 
 Este módulo de búsqueda recupera los comentarios de un compromiso en un proyecto.
 
@@ -740,7 +740,7 @@ Para obtener información sobre los campos, consulte [Obtener los comentarios de
 
 +++
 
-+++**[!UICONTROL Get the diff of a commit]**
++++**[!UICONTROL Obtener la diferencia de un compromiso]**
 
 Este módulo de acción obtiene la diferencia de un compromiso en un proyecto.
 
@@ -748,7 +748,7 @@ Para obtener información sobre los campos, consulte [Obtener la diferencia de u
 
 +++
 
-+++**[!UICONTROL Keep artifacts]**
++++**[!UICONTROL Conservar artefactos]**
 
 Evita que se eliminen artefactos cuando se establece la caducidad.
 
@@ -756,7 +756,7 @@ Para obtener información sobre los campos, consulte [Conservar artefactos](http
 
 +++
 
-+++**[!UICONTROL List all merge request notes]**
++++**[!UICONTROL Listar todas las notas de solicitud de combinación]**
 
 Este módulo de búsqueda recupera una lista de todas las notas de una única solicitud de combinación.
 
@@ -764,15 +764,15 @@ Para obtener información sobre los campos, consulte [Enumerar todas las notas d
 
 +++
 
-+++**[!UICONTROL List all snippet notes]**
++++**[!UICONTROL Listar todas las notas de un fragmento]**
 
 Este módulo obtiene una lista de todas las notas de un solo fragmento. Las notas de fragmento son comentarios que los usuarios pueden publicar en un fragmento.
 
-Para obtener información sobre los campos, consulte [??](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) en la documentación de [!DNL GitLab].
+Para obtener información sobre los campos, consulte [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) en la documentación de [!DNL GitLab].
 
 +++
 
-+++**[!UICONTROL List commit builds]**
++++**[!UICONTROL Listar compilaciones de un compromiso]**
 
 Este módulo de búsqueda devuelve una lista de compilaciones para un compromiso específico en un proyecto.
 
@@ -782,7 +782,7 @@ Este módulo de búsqueda devuelve una lista de compilaciones para un compromiso
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] a Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -797,7 +797,7 @@ Este módulo de búsqueda devuelve una lista de compilaciones para un compromiso
 
 +++
 
-+++**[!UICONTROL List issues]**
++++**[!UICONTROL Listar problemas]**
 
 Este módulo de búsqueda devuelve todos los problemas según la configuración de filtro especificada.
 
@@ -805,7 +805,7 @@ Para obtener información sobre los campos, consulte [Listar problemas](https://
 
 +++
 
-+++**[!UICONTROL List Issues That Close on Merge]**
++++**[!UICONTROL Listar problemas que se cerrarán al combinar]**
 
 Este módulo de búsqueda recupera todos los problemas que se cerrarían combinando la solicitud de combinación proporcionada.
 
@@ -813,7 +813,7 @@ Para obtener información sobre los campos, consulte [Listar problemas que se ce
 
 +++
 
-+++**[!UICONTROL List Labels]**
++++**[!UICONTROL Listar etiquetas]**
 
 Este módulo de búsqueda recupera todas las etiquetas del proyecto.
 
@@ -821,7 +821,7 @@ Para obtener información sobre los campos, consulte [Listar etiquetas](https://
 
 +++
 
-+++**[!UICONTROL List merge requests]**
++++**[!UICONTROL Listar solicitudes de combinación]**
 
 Este módulo de búsqueda recupera todas las solicitudes de combinación mediante la configuración del filtro.
 
@@ -829,7 +829,7 @@ Para obtener información sobre los campos, consulte [Listar solicitudes de comb
 
 +++
 
-+++**[!UICONTROL List Owned Projects]**
++++**[!UICONTROL Listar proyectos propios]**
 
 Este módulo de búsqueda recupera proyectos en los que el usuario autenticado está establecido como propietario.
 
@@ -837,7 +837,7 @@ Para obtener información sobre los campos, consulte [Listar proyectos de usuari
 
 +++
 
-+++**[!UICONTROL List project builds]**
++++**[!UICONTROL Listar compilaciones de un proyecto]**
 
 Este módulo de búsqueda recupera una lista de compilaciones de un proyecto.
 
@@ -845,7 +845,7 @@ Para obtener información sobre los campos, consulte [Listar trabajos de un proy
 
 +++
 
-+++**[!UICONTROL List project deployments]**
++++**[!UICONTROL Listar implementaciones de un proyecto]**
 
 Este módulo de búsqueda recupera una lista de implementaciones en un proyecto.
 
@@ -853,7 +853,7 @@ Para obtener información sobre los campos, consulte [Listar implementaciones de
 
 +++
 
-+++**[!UICONTROL List project issue notes]**
++++**[!UICONTROL Listar notas de un problema del proyecto]**
 
 Este módulo de búsqueda recupera una lista de todas las notas de un solo problema.
 
@@ -861,7 +861,7 @@ Para obtener información sobre los campos, consulte [Listar notas de un problem
 
 +++
 
-+++**[!UICONTROL List project issues]**
++++**[!UICONTROL Listar problemas de un proyecto]**
 
 Este módulo de búsqueda devuelve todos los problemas de un proyecto especificado.
 
@@ -869,7 +869,7 @@ Para obtener información sobre los campos, consulte [Listar problemas de un pro
 
 +++
 
-+++**[!UICONTROL List project milestones]**
++++**[!UICONTROL Listar hitos del proyecto]**
 
 Este módulo de búsqueda recupera todos los hitos del proyecto.
 
@@ -877,7 +877,7 @@ Para obtener información sobre los campos, consulte [Listar hitos del proyecto]
 
 +++
 
-+++**[!UICONTROL List project pipelines]**
++++**[!UICONTROL Listar canalizaciones del proyecto]**
 
 Este módulo de búsqueda recupera todas las canalizaciones del proyecto.
 
@@ -885,7 +885,7 @@ Para obtener información sobre los campos, consulte [Listar canalizaciones del 
 
 +++
 
-+++**[!UICONTROL List project repository tags]**
++++**[!UICONTROL Listar etiquetas de repositorio de un proyecto]**
 
 Este módulo de búsqueda recupera una lista de etiquetas de repositorio de un proyecto, ordenadas por el nombre en orden alfabético inverso.
 
@@ -893,7 +893,7 @@ Para obtener información sobre los campos, consulte [Listar etiquetas de reposi
 
 +++
 
-+++**[!UICONTROL List project variables]**
++++**[!UICONTROL Lista de variables de proyecto]**
 
 Este módulo de búsqueda recupera una lista de variables de un proyecto.
 
@@ -901,7 +901,7 @@ Para obtener información sobre los campos, consulte [Lista de variables de proy
 
 +++
 
-+++**[!UICONTROL List projects]**
++++**[!UICONTROL Lista de proyectos]**
 
 Este módulo de búsqueda recupera todos los proyectos de los que es miembro el usuario autenticado.
 
@@ -909,7 +909,7 @@ Para obtener información sobre los campos, consulte [Lista de todos los proyect
 
 +++
 
-+++**[!UICONTROL List repository branches]**
++++**[!UICONTROL Lista de ramas de repositorio]**
 
 Este módulo busca las ramas de repositorio por el término de búsqueda.
 
@@ -917,7 +917,7 @@ Para obtener información sobre los campos, consulte [Lista de ramas de reposito
 
 +++
 
-+++**[!UICONTROL List repository commits]**
++++**[!UICONTROL Lista de compromisos de repositorio]**
 
 Este módulo de búsqueda recupera una lista de compromisos de repositorio de un proyecto.
 
@@ -925,7 +925,7 @@ Para obtener información sobre los campos, consulte [Lista de compromisos de re
 
 +++
 
-+++**[!UICONTROL List repository contributors]**
++++**[!UICONTROL Lista de colaboradores del repositorio]**
 
 Este módulo de búsqueda recupera una lista de colaboradores del repositorio.
 
@@ -933,7 +933,7 @@ Para obtener información sobre los campos, consulte [Colaboradores](https://doc
 
 +++
 
-+++**[!UICONTROL List repository tree]**
++++**[!UICONTROL Lista de árboles de repositorios]**
 
 Este módulo de búsqueda recupera una lista de archivos y directorios de repositorio en un proyecto.
 
@@ -941,7 +941,7 @@ Para obtener información sobre los campos, consulte [Enumerar árbol de reposit
 
 +++
 
-+++**[!UICONTROL Mark a todo as done]**
++++**[!UICONTROL Marcar un elemento pendiente como listo]**
 
 Este módulo de acción marca un solo elemento pendiente especificado por su ID para el usuario actual como listo.
 
@@ -949,7 +949,7 @@ Para obtener información sobre los campos, consulte [Marcar un elemento pendien
 
 +++
 
-+++**[!UICONTROL Modify existing issue note]**
++++**[!UICONTROL Modificar nota existente de un problema]**
 
 Modifica una nota existente de un problema.
 
@@ -957,7 +957,7 @@ Para obtener información sobre los campos, consulte [Modificar una nota existen
 
 +++
 
-+++**[!UICONTROL Modify existing merge request note]**
++++**[!UICONTROL Modificar nota existente de solicitud de combinación]**
 
 Modifica la nota existente de una solicitud de combinación.
 
@@ -965,7 +965,7 @@ Para obtener información sobre los campos, consulte [Modificar nota existente d
 
 +++
 
-+++**[!UICONTROL Modify existing snippet note]**
++++**[!UICONTROL Modificar nota de fragmento existente]**
 
 Este módulo de acción modifica una nota existente de un fragmento.
 
@@ -973,7 +973,7 @@ Para obtener información sobre los campos, consulte [Modificar nota de fragment
 
 +++
 
-+++**[!UICONTROL New issue]**
++++**[!UICONTROL Nuevo problema]**
 
 Este módulo de acción crea un nuevo problema de proyecto.
 
@@ -981,7 +981,7 @@ Para obtener información sobre los campos, consulte [Nuevo problema](https://ww
 
 +++
 
-+++**[!UICONTROL Play a build]**
++++**[!UICONTROL Reproducir una compilación]**
 
 Este módulo de acción activa una acción manual para iniciar un trabajo.
 
@@ -989,7 +989,7 @@ Para obtener información sobre los campos, consulte [Reproducir un trabajo](htt
 
 +++
 
-+++**[!UICONTROL Post comment to commit]**
++++**[!UICONTROL Publicar comentario para compromiso]**
 
 Este módulo de acción añade un comentario a un compromiso.
 
@@ -997,7 +997,7 @@ Para obtener información sobre los campos, consulte [Publicar comentario para c
 
 +++
 
-+++**[!UICONTROL Remove variable]**
++++**[!UICONTROL Quitar variable]**
 
 Este módulo de acción quita la variable de un proyecto.
 
@@ -1005,7 +1005,7 @@ Para obtener información sobre los campos, consulte [Quitar variable](https://d
 
 +++
 
-+++**[!UICONTROL Retry a build]**
++++**[!UICONTROL Reintentar una compilación]**
 
 Este módulo de acción reintenta una sola compilación en un compromiso.
 
@@ -1015,7 +1015,7 @@ Este módulo de acción reintenta una sola compilación en un compromiso.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] a Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -1030,7 +1030,7 @@ Este módulo de acción reintenta una sola compilación en un compromiso.
 
 +++
 
-+++**[!UICONTROL Retry Failed Jobs in a Pipeline]**
++++**[!UICONTROL Reintentar trabajos con errores en una canalización]**
 
 Este módulo de acción reintenta las compilaciones con errores en una canalización.
 
@@ -1038,7 +1038,7 @@ Para obtener información sobre los campos, consulte [Reintentar trabajos en una
 
 +++
 
-+++**[!UICONTROL Get a Variable]**
++++**[!UICONTROL Obtener una variable]**
 
 Este módulo recupera detalles de la variable específica de un proyecto.
 
@@ -1046,7 +1046,7 @@ Para obtener información sobre los campos, consulte [Mostrar detalles de la var
 
 +++
 
-+++**[!UICONTROL Update a release]**
++++**[!UICONTROL Actualizar una versión]**
 
 Este módulo de acción actualiza una versión.
 
@@ -1054,7 +1054,7 @@ Para obtener información sobre los campos, consulte [Actualizar una versión](h
 
 +++
 
-+++**[!UICONTROL Update merge request]**
++++**[!UICONTROL Actualizar solicitud de combinación]**
 
 Este módulo de acción actualiza una solicitud de combinación existente. Puede cambiar la rama de destino, el título o incluso cerrar la MR.
 
@@ -1062,7 +1062,7 @@ Para obtener información sobre los campos, consulte [Actualizar solicitud de co
 
 +++
 
-+++**[!UICONTROL Update a Variable]**
++++**[!UICONTROL Actualizar una variable]**
 
 Este módulo de acción actualiza la variable de un proyecto.
 

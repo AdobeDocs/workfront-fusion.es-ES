@@ -4,20 +4,20 @@ description: Este artículo incluye información sobre el acceso y los permisos 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 94%
+source-wordcount: '396'
+ht-degree: 88%
 
 ---
 
 # Funciones de organización y equipo
 
-En este artículo se describe el acceso y la funcionalidad disponibles para las diferentes funciones de equipo y organización en [!DNL Workfront Fusion].
+Este artículo describe el acceso y la funcionalidad disponibles para las diferentes funciones de equipo y organización en Workfront Fusion.
 
 >[!NOTE]
 >
->Las funciones de organización están separadas de las funciones de equipo en [!DNL Workfront Fusion]. Para obtener más información sobre las funciones de organización y equipo, consulte [Información general sobre organizaciones y equipos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Las funciones de organización son independientes de las funciones de equipo en Workfront Fusion. Para obtener más información sobre las funciones de organización y equipo, consulte [Información general sobre organizaciones y equipos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Funciones de organización
 

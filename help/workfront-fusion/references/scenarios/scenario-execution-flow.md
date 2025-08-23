@@ -1,60 +1,60 @@
 ---
 content-type: overview
-title: Flujo de ejecución de escenarios
-description: En este artículo se explica cómo se ejecuta un escenario y cómo los datos fluyen a través de él. También explica dónde puede encontrar información sobre los datos procesados y cómo leerlos.
+title: Flujo de ejecución de escenario
+description: Este artículo explica cómo se ejecuta un escenario y cómo fluyen los datos a través de él. También explica dónde puede encontrar información sobre los datos procesados y cómo leerlos.
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Flujo de ejecución de escenarios
+# Flujo de ejecución de escenario
 
-En este artículo se explica cómo se ejecuta un escenario y cómo fluyen los datos a través de él, y cómo vista los datos procesados por cada módulo.
+Este artículo explica cómo se ejecuta un escenario y cómo fluyen los datos a través de él, y cómo ver los datos procesados por cada módulo.
 
-Para vista cómo fluyen los datos a través de un escenario activo, vea [Ver flujo de datos en un escenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md) en ejecución.
+Para ver cómo fluyen los datos en un escenario activo, vea [Ver flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
-## Flujo de ejecución de escenarios
+## Flujo de ejecución de escenario
 
-Después de configurar y activar un escenario correctamente, se ejecuta de acuerdo con su programación definida.
+Una vez que un escenario se configura correctamente y se activa, se ejecuta según su programación definida.
 
-A medida que comienza el escenario, la primera módulo responde a un evento que se ha configurado para observar. Cuando devuelve datos, esos datos se empaquetan en paquetes. El escenario devuelve un paquete por cada evento. Por ejemplo, si un módulo está configurado para vigilar los problemas, devolverá un paquete de datos por cada problema que encuentre.
+Cuando comienza el escenario, el primer módulo responde a un evento que se ha configurado para inspeccionar. Cuando devuelve datos, estos se empaquetan en paquetes. El escenario devuelve un paquete para cada evento. Por ejemplo, si un módulo está configurado para inspeccionar problemas, devolverá un paquete de datos para cada problema que encuentre.
 
-Si el módulo desencadenador devuelve paquetes de datos, esos paquetes pasan al siguiente módulo y el escenario continúa, pasando los paquetes a través de cada módulo sucesivo, uno a la vez.
+Si el módulo de déclencheur devuelve paquetes de datos, estos pasan al siguiente módulo y el escenario continúa, pasando los paquetes a través de cada módulo sucesivo, uno a la vez.
 
-Si los paquetes se procesan correctamente en todos los módulos, el escenario se marca como un éxito en el Página de detalles del escenario.
+Si los paquetes se procesan correctamente en todos los módulos, el escenario se marca como un éxito en la página de detalles del escenario.
 
-### Ejemplo: [!UICONTROL [!DNL Workfront Fusion] para la automatización del trabajo]
+### Ejemplo: [!UICONTROL Workfront Fusion para automatización de trabajo]
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo:** en este escenario que vigila las solicitudes [!DNL Workfront] entrantes y luego las convierte en [!DNL Workfront] proyectos, los datos fluirían de la siguiente manera:
+**Ejemplo:** En este escenario que vigila las solicitudes entrantes en Workfront y luego las convierte a proyectos de Workfront, los datos fluirían de la siguiente manera:
 
-El primer paso del escenario, realizado por el primer módulo, es observar las solicitudes. Cada solicitud que encuentra se considera una paquete. Si el módulo se ejecuta sin encontrar ningún paquete, el escenario finaliza después del primer módulo.
+El primer paso del escenario, realizado por el primer módulo, es inspeccionar las solicitudes. Cada solicitud que encuentra se considera un paquete. Si el módulo se ejecuta sin encontrar ningún paquete, el escenario finaliza después del primer módulo.
 
-Si la primera módulo devuelve un paquete, el paquete pasa por el resto del escenario. En este ejemplo, el paquete iría al segundo módulo, que convierte el solicitud en un proyecto.
+Si el primer módulo devuelve un paquete, este pasará por el resto del escenario. En este ejemplo, el paquete iría al segundo módulo, que convierte la solicitud en un proyecto.
 
-![Flujo de ejecución del escenario Workfront](assets/example-execution-flow-wf-only.png)
+![Flujo de ejecución del escenario de Workfront](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
-### Ejemplo: [!UICONTROL [!DNL Workfront Fusion] para automatización e integración del trabajo]
+### Ejemplo: [!UICONTROL Workfront Fusion para automatización e integración de trabajo]
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo:** en este escenario que descarga documentos y [!DNL Adobe Workfront] las envía a una carpeta en [!DNL Dropbox], los datos fluirían de la siguiente manera:
+**Ejemplo:** En este escenario que descarga documentos de Adobe Workfront y los envía a una carpeta de [!DNL Dropbox], los datos fluirían de la siguiente manera:
 
-El primer paso del escenario, realizado por el primer módulo, es observar documentos en Workfront. Cada documento que encuentra se considera una paquete. Si el módulo se ejecuta sin encontrar ningún paquete, el escenario finaliza después del primer módulo.
+El primer paso del escenario, realizado por el primer módulo, es inspeccionar los documentos en Workfront. Cada documento que encuentra se considera un paquete. Si el módulo se ejecuta sin encontrar ningún paquete, el escenario finaliza después del primer módulo.
 
-Si se devuelve un paquete, el paquete pasa por el resto del escenario. En este ejemplo, el resto del escenario consiste en el segundo módulo, que carga el paquete en la [!DNL Dropbox] carpeta.
+Si se devuelve un paquete, este pasa por el resto del escenario. En este ejemplo, el resto del escenario consiste en el segundo módulo, que carga el paquete en la carpeta [!DNL Dropbox].
 
 ![Flujo de ejecución del escenario de integración](assets/example-execution-flow-wf-dropbox.png)
 
-Si el primer módulo devuelve varios paquetes, el primer paquete se carga [!DNL Dropbox] antes de que se cargue el segundo paquete. Luego se carga el segundo paquete, luego el tercero, y así sucesivamente.
+Si el primer módulo devuelve varios paquetes, el primer paquete se cargará en [!DNL Dropbox] antes de que se cargue el segundo paquete. Luego se carga el segundo paquete, luego el tercero, etc.
 
 >[!ENDSHADEBOX]
 
@@ -64,38 +64,38 @@ Para cada módulo, el paquete pasa por un proceso de 4 pasos antes de pasar al s
 
 * Inicialización
 * Operación
-* Commit/Rollback
+* Confirmar/revertir
 * Finalización
 
 >[!NOTE]
 >
->El escenario más grande también pasa por este proceso. Para obtener información sobre este proceso en el nivel de escenario, vea [Ejecución de escenarios, ciclos y fases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+>El escenario más amplio también pasa por este proceso. Para obtener información acerca de este proceso en el nivel de escenario, vea [Ejecución de escenarios, ciclos y fases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-Una vez finalizada la ejecución de un escenario, cada módulo muestra un icono que muestra el número de operaciones realizadas. Puede hacer clic en este icono para ver la información detallada sobre los paquetes procesados para cada paso del proceso. Puede ver qué configuración de módulo se ha utilizado y qué paquetes han devuelto cada módulo.
+Una vez finalizada la ejecución de un escenario, cada módulo muestra un icono con el número de operaciones realizadas. Puede hacer clic en este icono para mostrar la información detallada sobre los paquetes procesados para cada paso del proceso. Puede ver qué configuración de módulo se utilizó y qué paquetes devolvió cada módulo.
 
 ![Paquetes procesados](assets/Info-processed-bundles.png)
 
 En este ejemplo, el módulo recibió información de entrada como:
 
-* El identificador del problema encontrado
-* El objeto en el que se convertirá el problema (proyecto)
-* ID de la plantilla que utilizará para crear el proyecto
-* El tipo de registro del objeto encontrado (OPTASK, que es un problema)
+* El ID del problema que encontró
+* El objeto al que se convertirá el problema (Proyecto)
+* El ID de la plantilla que utilizará para crear el proyecto
+* El tipo de registro del objeto que ha encontrado (OPTASK, que es un problema)
 
 Después del procesamiento, el módulo devolvió esta información de salida:
 
 * ID del proyecto recién creado.
 
-Si el módulo encontrado más de un problema, la información se captura para cada paquete por separado. Habría un área de Operación 2 con secciones de entrada y salida que describen el segundo paquete, y así sucesivamente.
+Si el módulo ha encontrado más de un problema, la información se captura para cada paquete por separado. Habría un área de Operación 2 con secciones de entrada y salida que describan el segundo paquete, y así sucesivamente.
 
 ## Errores al ejecutar un escenario
 
-Puede producirse un error durante la ejecución del escenario. Por ejemplo, si ha eliminado el plantilla que el módulo usará para crear el nuevo proyecto, el escenario termina con un mensaje de error. Para obtener más información acerca de cómo gestionar errores, consulte [Error tipos](/help/workfront-fusion/references/errors/error-processing.md).
+Se puede producir un error durante la ejecución del escenario. Por ejemplo, si ha eliminado la plantilla que el módulo utilizará para crear el nuevo proyecto, el escenario termina con un mensaje de error. Para obtener más información sobre cómo controlar los errores, consulte [Tipos de error](/help/workfront-fusion/references/errors/error-processing.md).
 
 ## Recursos
 
-* Para obtener más información sobre cómo configurar un escenario, consulte [El escenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
-* Para obtener más información sobre los detalles del escenario Página, consulte [Detalles](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md) del escenario.
-* Para obtener más información sobre cómo activar un escenario, consulte [Activar o desactivar un escenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+* Para obtener más información sobre la configuración de un escenario, consulte [Editor de escenarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
+* Para obtener más información sobre la página de detalles del escenario, consulte [Detalles del escenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
+* Para obtener más información sobre cómo activar un escenario, vea [Activar o desactivar un escenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * Para obtener más información sobre cómo programar un escenario, vea [Programar un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
-* Para obtener más información sobre los módulos, consulte [Información general](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md) sobre módulos.
+* Para obtener más información sobre los módulos, consulte [Información general sobre módulos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).

@@ -1,24 +1,24 @@
 ---
 title: 'Creación de una conexión: instrucciones básicas'
-description: Muchos conectores de  [!DNL Adobe Workfront Fusion]  no requieren una configuración personalizada al crear una conexión. Este artículo describe el proceso de creación de conexiones predeterminado.
+description: Muchos conectores de Adobe Workfront Fusion no requieren una configuración personalizada al crear una conexión. Este artículo describe el proceso de creación de conexiones predeterminado.
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 50%
+source-wordcount: '546'
+ht-degree: 41%
 
 ---
 
 # Creación de una conexión: instrucciones básicas
 
-Muchos conectores [!DNL Adobe Workfront Fusion] no requieren una configuración personalizada al crear una conexión. Este artículo describe el proceso de creación de conexiones predeterminado.
+Muchos conectores de Adobe Workfront Fusion no requieren una configuración personalizada al crear una conexión. Este artículo describe el proceso de creación de conexiones predeterminado.
 
 >[!NOTE]
 >
 >
->Si Adobe Workfront Fusion no ofrece una aplicación para el servicio web que le gustaría utilizar en su escenario, puede conectarse al servicio web utilizando [!DNL Workfront Fusion] módulos HTTP y Webhooks, como se explica en los siguientes artículos:
+>Si Adobe Workfront Fusion no ofrece una aplicación para el servicio web que le gustaría utilizar en su situación, puede conectarse al servicio web mediante los módulos HTTP y Webhooks de Workfront Fusion, como se explica en los siguientes artículos:
 >
 >* [Conecte Adobe Workfront Fusion a un servicio web que use la autorización de token de API](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [Configurar un webhook para un servicio web sin un conector](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -52,9 +52,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan Select or Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan Select or Prime Workfront: su organización debe comprar Adobe Workfront Fusion.</li><li>Plan Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -70,7 +70,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 Para crear una conexión con una aplicación determinada, debe estar en un módulo para esa aplicación. Por ejemplo, para crear una conexión con Workfront, debe estar en un módulo de Workfront.
 
-Para crear una conexión dentro de un módulo de [!DNL Workfront Fusion]:
+Para crear una conexión dentro de un módulo de Workfront Fusion:
 
 1. En cualquier módulo de la aplicación determinada, haga clic en **[!UICONTROL Agregar]** junto al cuadro [!UICONTROL Conexión] para abrir el panel **[!UICONTROL Crear una conexión]**.
 1. (Opcional) Cambie el **[!UICONTROL Nombre de conexión]** predeterminado.
@@ -82,7 +82,7 @@ Para crear una conexión dentro de un módulo de [!DNL Workfront Fusion]:
 
 1. Haga clic en **[!UICONTROL Continuar]**.
 1. En la ventana de inicio de sesión que aparece, introduzca sus credenciales para iniciar sesión en la aplicación si aún no lo ha hecho.
-1. (Condicional) Si aparece un botón **[!UICONTROL Permitir]**, examine las acciones que podrá realizar el conector y, a continuación, haga clic en el botón para conectar la aplicación a [!DNL Workfront Fusion].
+1. (Condicional) Si aparece un botón **[!UICONTROL Permitir]**, examine las acciones que podrá realizar el conector y, a continuación, haga clic en el botón para conectar la aplicación a Workfront Fusion.
 
    >[!NOTE]
    >

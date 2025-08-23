@@ -1,19 +1,19 @@
 ---
 title: Módulos de Adobe Campaign v7/v8
-description: Con los módulos de  [!DNL Adobe Campaign] , puede iniciar un escenario de  [!DNL Adobe Workfront Fusion]  basado en eventos en su cuenta de  [!DNL Adobe Campaign]  y crear, leer o actualizar acuerdos y otros registros, buscar registros usando los criterios que haya establecido y subir documentos.
+description: Con los módulos  [!DNL Adobe Campaign] , puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de su cuenta de  [!DNL Adobe Campaign] y crear, leer o actualizar acuerdos y otros registros, buscar registros con los criterios que haya establecido y cargar documentos.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 90%
+source-wordcount: '1326'
+ht-degree: 83%
 
 ---
 
 # Módulos de [!DNL Adobe Campaign]
 
-Con los módulos de [!DNL Adobe Campaign], puede iniciar un escenario de [!DNL Adobe Workfront Fusion] basado en los eventos de su cuenta de [!DNL Adobe Campaign v7/v8], crear, leer o actualizar registros, buscar registros con los criterios establecidos y realizar llamadas de API personalizadas.
+Con los módulos [!DNL Adobe Campaign], puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de su cuenta de [!DNL Adobe Campaign v7/v8], crear, leer o actualizar registros, buscar registros con los criterios que haya establecido y realizar llamadas de API personalizadas.
 
 ## Requisitos de acceso
 
@@ -46,7 +46,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,7 +54,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -80,7 +80,7 @@ El conector de Adobe Campaign utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Conectar [!DNL Adobe Campaign] a [!DNL Adobe Workfront Fusion]
+## Conectar [!DNL Adobe Campaign] a Adobe Workfront Fusion
 
 >[!IMPORTANT]
 >
@@ -134,7 +134,7 @@ El conector de Adobe Campaign utiliza lo siguiente:
 
 ## Módulos de [!DNL Adobe Campaign] y sus campos
 
-Al configurar módulos de [!DNL Adobe Campaign], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Adobe Campaign] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Adobe Campaign], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Adobe Campaign] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -269,7 +269,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ca
       <td>
         <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p>
         <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] añade el encabezado de token de [!UICONTROL x-security] automáticamente.</p>
+        <p>Workfront Fusion agrega automáticamente el encabezado de token de [!UICONTROL x-security].</p>
       </td>
     </tr>
     <tr>

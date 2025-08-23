@@ -4,16 +4,16 @@ description: Una estructura de datos es un documento que describe en detalle el 
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: 2a81e013845f8a0e2720292984c451501e6011a0
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '242'
 ht-degree: 59%
 
 ---
 
 # Estructuras de datos
 
-Una estructura de datos es un documento o patrón que describe en detalle el formato de los datos que se están procesando en [!DNL Adobe Workfront Fusion]. En función de este documento, el editor de escenarios es capaz de averiguar qué módulo devuelve o recibe qué tipo de datos. Los documentos de estructura de datos suelen utilizarse para serializar o analizar formatos de datos como JSON, XML, CSV y otros.
+Una estructura de datos es un documento o patrón que describe en detalle el formato de los datos que se procesan en Adobe Workfront Fusion. En función de este documento, el editor de escenarios es capaz de averiguar qué módulo devuelve o recibe qué tipo de datos. Los documentos de estructura de datos suelen utilizarse para serializar o analizar formatos de datos como JSON, XML, CSV y otros.
 
 Puede crear una estructura de datos haciendo clic en el botón [!UICONTROL Crear una nueva estructura de datos] de la sección [!UICONTROL Información general sobre la estructura de datos] o en la configuración del módulo que requiera la especificación de la estructura de datos.
 

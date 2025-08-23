@@ -1,19 +1,19 @@
 ---
 title: Módulos de Google Calendar
-description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatizar los flujos de trabajo que utilizan Google Calendar, así como conectarlo a varias aplicaciones y servicios de terceros.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Google Calendar, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 160e503adeca5404e18fd0cba9f475fee8510a48
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 59%
+source-wordcount: '2723'
+ht-degree: 67%
 
 ---
 
 # Módulos de [!DNL Google Calendar]
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!UICONTROL Google Calendar], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!UICONTROL Google Calendar], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -28,35 +28,35 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Plan de Adobe Workfront*</td>
   <td> <p>[!UICONTROL Pro] o superior</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
+   <td role="rowheader">Licencia de Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Requisito de licencia actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Requisito de licencia heredado: [!UICONTROL Workfront Fusion para automatización e integración de trabajo] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Requisito actual del producto: si tiene el plan de Adobe Workfront de [!UICONTROL Select] o [!UICONTROL Prime], su organización debe adquirir Adobe Workfront Fusion y Adobe Workfront para utilizar la funcionalidad que se describe en este artículo. Workfront Fusion está incluido en el plan de Workfront de [!UICONTROL Ultimate].</p>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Requisito de productos heredados: su organización debe adquirir Adobe Workfront Fusion así como Adobe Workfront para utilizar la funcionalidad descrita en este artículo.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Requisitos previos
 
@@ -71,7 +71,7 @@ El conector Google Calendar utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL básica</td> 
+   <td role="rowheader">Dirección URL base</td> 
    <td> https://www.googleapis.com/calendar/v3</td> 
   </tr> 
   <tr> 
@@ -87,7 +87,7 @@ El conector Google Calendar utiliza lo siguiente:
 
 ## Módulos de [!DNL Google Calendar] y sus campos
 
-Al configurar módulos de [!DNL Google Calendar], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Google Calendar] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Google Calendar], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Google Calendar] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -115,7 +115,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Google Calendar] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con el Adobe [!DNL Workfront Fusion]: instrucciones básicas</a></p> </td> 
+   <td> <p>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Calendar] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar] </td> 
@@ -134,8 +134,8 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td> <p>Escriba el texto para el que desea obtener resultados.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of events]</td> 
-   <td> <p> Establezca el número máximo de eventos con los que trabaja [!DNL Workfront Fusion] durante un ciclo (el número de repeticiones por escenario ejecutado). Si el valor se establece demasiado alto, la conexión se puede interrumpir en el lado del servicio de terceros proporcionado (tiempo de espera). [!DNL Workfront Fusion] no tiene ninguna influencia en esto. Le recomendamos que establezca un valor menor y defina un valor mayor para el número máximo de ciclos o que ejecute el escenario con más frecuencia.</p> </td> 
+   <td>[!UICONTROL Número máximo de eventos]</td> 
+   <td> <p> Establezca el número máximo de eventos con los que Workfront Fusion trabaja durante un ciclo (el número de repeticiones por ejecución de escenario). Si el valor se establece demasiado alto, la conexión se puede interrumpir en el lado del servicio de terceros proporcionado (tiempo de espera). Workfront Fusion no influye en esto. Le recomendamos que establezca un valor menor y defina un valor mayor para el número máximo de ciclos o que ejecute el escenario con más frecuencia.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,11 +150,11 @@ Este módulo de déclencheur utiliza un gancho de correo para crear una direcci�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Mailhook] </td> 
-   <td> <p>Seleccione el mailhook que desee utilizar para este módulo. Para crear un nuevo mailhook, haz clic en <b>Agregar</b> e ingresa la conexión que deseas usar para el mailhook.</p><p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Google Calendar] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con el Adobe [!DNL Workfront Fusion]: instrucciones básicas</a></p> </td> 
+   <td> <p>Seleccione el mailhook que desee utilizar para este módulo. Para crear un nuevo mailhook, haz clic en <b>Agregar</b> e ingresa la conexión que deseas usar para el mailhook.</p><p>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Calendar] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of events]</td> 
-   <td> <p> Establezca el número máximo de eventos con los que trabaja [!DNL Workfront Fusion] durante un ciclo (el número de repeticiones por escenario ejecutado). Si el valor se establece demasiado alto, la conexión se puede interrumpir en el lado del servicio de terceros proporcionado (tiempo de espera). [!DNL Workfront Fusion] no tiene ninguna influencia en esto. Le recomendamos que establezca un valor menor y defina un valor mayor para el número máximo de ciclos o que ejecute el escenario con más frecuencia.</p> </td> 
+   <td>[!UICONTROL Número máximo de eventos]</td> 
+   <td> <p> Establezca el número máximo de eventos con los que Workfront Fusion trabaja durante un ciclo (el número de repeticiones por ejecución de escenario). Si el valor se establece demasiado alto, la conexión se puede interrumpir en el lado del servicio de terceros proporcionado (tiempo de espera). Workfront Fusion no influye en esto. Le recomendamos que establezca un valor menor y defina un valor mayor para el número máximo de ciclos o que ejecute el escenario con más frecuencia.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ Este módulo de acción crea un calendario asociado a la cuenta.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Google Calendar] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con el Adobe [!DNL Workfront Fusion]: instrucciones básicas</a></p> </td> 
+   <td> <p>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Calendar] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Color] </td> 
@@ -190,7 +190,7 @@ Este módulo de acción crea un calendario asociado a la cuenta.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an event]
+#### [!UICONTROL Crear un evento]
 
 Este módulo de acción crea un evento.
 
@@ -218,7 +218,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Event name]</td> 
-   <td> <p> Introduzca o asigne un nombre para el evento. </p> <p>Nota: si ha seleccionado [!UICONTROL Quick add] en el campo [!UICONTROL Create an event], puede incluir la fecha y la hora del evento, y [!DNL Workfront Fusion] crea el evento para esa fecha y hora. Ejemplo: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Si seleccionó [!UICONTROL Quick add] pero no incluye una fecha y hora en el nombre del evento, el evento se crea a partir de la hora actual y dura una hora.</p> </td> 
+   <td> <p> Introduzca o asigne un nombre para el evento. </p> <p>Nota: Si ha seleccionado [!UICONTROL Quick add] en el campo [!UICONTROL Crear un evento], puede incluir la fecha y la hora del evento, y Workfront Fusion crea el evento para esa fecha y hora. Ejemplo: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Si seleccionó [!UICONTROL Quick add] pero no incluye una fecha y hora en el nombre del evento, el evento se creará a partir de la hora actual y durará una hora.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL All day event]</td> 
@@ -242,7 +242,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Use the default reminder settings for this event]</td> 
-   <td>Active esta opción para utilizar la configuración de recordatorio predeterminada. Si establece un recordatorio personalizado en el campo [!UICONTROL Reminder], este valor se establece en No.</td> 
+   <td>Active esta opción para utilizar la configuración de recordatorio predeterminada. Si establece un aviso personalizado en el campo [!UICONTROL Reminder], este valor se establece en No.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
@@ -267,7 +267,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Send notification about the event creation]</td> 
-   <td> <p>Seleccione si desea enviar notificaciones sobre la creación de un nuevo evento a todos los invitados, a invitados que no sean de [!DNL Google Calendar] o a nadie.</p> <p>Sugerencia: Se recomienda usar la opción [!UICONTROL None] solo para casos de uso de migración.</p> </td> 
+   <td> <p>Seleccione si desea enviar notificaciones sobre la creación de un nuevo evento a todos los invitados, a invitados que no sean de [!DNL Google Calendar] o a nadie.</p> <p>Sugerencia: Recomendamos utilizar la opción [!UICONTROL None] solo en los casos de uso de migración.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Guests can modify the event]</td> 
@@ -275,12 +275,12 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Recurrence]</td> 
-   <td>Añada las reglas de periodicidad que desee aplicar a este evento. Cada regla requiere una lista de [!UICONTROL RRULE], [!UICONTROL EXRULE], [!UICONTROL RDATE] y [!UICONTROL EXDATE] líneas para un evento recurrente. Tenga en cuenta que no se permiten las líneas [!UICONTROL DTSTART] y [!UICONTROL DTEND] en este campo; las horas de inicio y finalización del evento se especifican en los campos de inicio y finalización. Este campo se omite para eventos únicos o instancias de eventos recurrentes. Para obtener más información, consulte <a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a>.</td> 
+   <td>Añada las reglas de periodicidad que desee aplicar a este evento. Cada regla requiere una lista de líneas [!UICONTROL RRULE], [!UICONTROL EXRULE], [!UICONTROL RDATE] y [!UICONTROL EXDATE] para un evento recurrente. Tenga en cuenta que las líneas [!UICONTROL DTSTART] y [!UICONTROL DTEND] no están permitidas en este campo; las horas de inicio y finalización de los eventos se especifican en los campos de inicio y finalización. Este campo se omite para eventos únicos o instancias de eventos recurrentes. Para obtener más información, consulte <a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a>.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an event]
+#### [!UICONTROL Eliminar un evento]
 
 Este módulo de acción elimina un evento.
 
@@ -296,7 +296,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Google Calendar] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con el Adobe [!DNL Workfront Fusion]: instrucciones básicas</a></p> </td> 
+   <td> <p>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Calendar] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar]</td> 
@@ -309,7 +309,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get events]
+#### [!UICONTROL Obtener eventos]
 
 Este módulo recupera información sobre los eventos del calendario seleccionado en función de los criterios especificados.
 
@@ -351,18 +351,18 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td>[!UICONTROL Order by]</td> 
    <td> <p>Seleccione el orden de los eventos devueltos en el resultado.</p> 
     <ul> 
-     <li><strong>[!UICONTROL Start Time]</strong>: ordene por la fecha y hora de inicio (ascendente). Esto solo está disponible cuando se consultan eventos únicos.</li> 
-     <li><strong>[!UICONTROL Updated Time]</strong>: ordenar por hora de la última modificación (ascendente).</li> 
+     <li><strong>[!UICONTROL Start Time]</strong>: ordene por fecha y hora de inicio (orden ascendente). Esto solo está disponible cuando se consultan eventos únicos.</li> 
+     <li><strong>[!UICONTROL Updated Time]</strong>: ordene por hora de última modificación (orden ascendente).</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Mazimum number of returned events]</td> 
-   <td> <p>Establezca el número máximo de eventos que devuelve [!DNL Workfront Fusion] durante un ciclo de ejecución.</p> </td> 
+   <td>[!UICONTROL Número máximo de eventos devueltos]</td> 
+   <td> <p>Establezca el número máximo de eventos que Workfront Fusion devuelve durante un ciclo de ejecución.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an event]
+#### [!UICONTROL Actualizar un evento]
 
 Este módulo de acción cambia un evento existente.
 
@@ -378,7 +378,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Google Calendar] a [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con el Adobe [!DNL Workfront Fusion]: instrucciones básicas</a></p> </td> 
+   <td> <p>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Calendar] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar] </td> 
@@ -389,7 +389,7 @@ Al configurar este módulo, se muestran los campos siguientes.
    <td> <p>Introduzca el ID de evento del evento de [!DNL Google Calendar] creado anteriormente que desee actualizar.</p> </td> 
   </tr>   <tr> 
    <td>[!UICONTROL Event name]</td> 
-   <td> <p> Introduzca o asigne un nombre para el evento. </p> <p>Nota: si ha seleccionado [!UICONTROL Quick add] en el campo [!UICONTROL Create an event], puede incluir la fecha y la hora del evento, y [!DNL Workfront Fusion] crea el evento para esa fecha y hora. Ejemplo: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Si seleccionó [!UICONTROL Quick add] pero no incluye una fecha y hora en el nombre del evento, el evento se crea a partir de la hora actual y dura una hora.</p> </td> 
+   <td> <p> Introduzca o asigne un nombre para el evento. </p> <p>Nota: Si ha seleccionado [!UICONTROL Quick add] en el campo [!UICONTROL Crear un evento], puede incluir la fecha y la hora del evento, y Workfront Fusion crea el evento para esa fecha y hora. Ejemplo: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Si seleccionó [!UICONTROL Quick add] pero no incluye una fecha y hora en el nombre del evento, el evento se creará a partir de la hora actual y durará una hora.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL All day event]</td> 
@@ -413,7 +413,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Use the default reminder settings for this event]</td> 
-   <td>Active esta opción para utilizar la configuración de recordatorio predeterminada. Si establece un recordatorio personalizado en el campo [!UICONTROL Reminder], este valor se establece en No.</td> 
+   <td>Active esta opción para utilizar la configuración de recordatorio predeterminada. Si establece un aviso personalizado en el campo [!UICONTROL Reminder], este valor se establece en No.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
@@ -438,7 +438,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Send notification about the event creation]</td> 
-   <td> <p>Seleccione si desea enviar notificaciones sobre la creación de un nuevo evento a todos los invitados, a invitados que no sean de [!DNL Google Calendar] o a nadie.</p> <p>Sugerencia: Se recomienda usar la opción [!UICONTROL None] solo para casos de uso de migración.</p> </td> 
+   <td> <p>Seleccione si desea enviar notificaciones sobre la creación de un nuevo evento a todos los invitados, a invitados que no sean de [!DNL Google Calendar] o a nadie.</p> <p>Sugerencia: Recomendamos utilizar la opción [!UICONTROL None] solo en los casos de uso de migración.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Guests can modify the event]</td> 
@@ -446,7 +446,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Recurrence]</td> 
-   <td>Añada las reglas de periodicidad que desee aplicar a este evento. Cada regla requiere una lista de [!UICONTROL RRULE], [!UICONTROL EXRULE], [!UICONTROL RDATE] y [!UICONTROL EXDATE] líneas para un evento recurrente. Tenga en cuenta que no se permiten las líneas [!UICONTROL DTSTART] y [!UICONTROL DTEND] en este campo; las horas de inicio y finalización del evento se especifican en los campos de inicio y finalización. Este campo se omite para eventos únicos o instancias de eventos recurrentes. Para obtener más información, consulte <a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a>.</td> 
+   <td>Añada las reglas de periodicidad que desee aplicar a este evento. Cada regla requiere una lista de líneas [!UICONTROL RRULE], [!UICONTROL EXRULE], [!UICONTROL RDATE] y [!UICONTROL EXDATE] para un evento recurrente. Tenga en cuenta que las líneas [!UICONTROL DTSTART] y [!UICONTROL DTEND] no están permitidas en este campo; las horas de inicio y finalización de los eventos se especifican en los campos de inicio y finalización. Este campo se omite para eventos únicos o instancias de eventos recurrentes. Para obtener más información, consulte <a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a>.</td> 
   </tr>
 
 </tbody> 
@@ -490,44 +490,44 @@ Estos módulos de acción recorren en iteración los asistentes de un evento y g
 
 ## Activador de un escenario antes de un evento
 
-Puede almacenar en déclencheur un escenario un tiempo especificado antes de un evento con la ayuda de [!DNL Google Calendar] recordatorios de correo electrónico estándar y el módulo [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook].
+Puede activar un escenario en un tiempo especificado antes de un evento con la ayuda de [!DNL Google Calendar] recordatorios de correo electrónico estándar y el módulo [!UICONTROL Webhooks] >[!UICONTROL mailhook personalizado].
 
-1. Utilice el módulo [!UICONTROL Google Calendar] >[!UICONTROL Update an event] para agregar un recordatorio por correo electrónico al evento:
+1. Use el módulo [!UICONTROL Calendario de Google] >[!UICONTROL Actualizar un evento] para añadir un recordatorio por correo electrónico al evento:
 
    ![Escenario de Déclencheur antes del evento](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
-1. Cree un nuevo escenario a partir del módulo [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook].
+1. Cree un nuevo escenario a partir del módulo [!UICONTROL Webhooks] >[!UICONTROL mailhook personalizado].
 
    1. Copie la dirección de correo electrónico del mailhook.
    1. Guarde el escenario y ejecútelo.
 
 1. En [!DNL Gmail], redirija los recordatorios de correo electrónico de [!DNL Google Calendar] a la dirección de correo electrónico del mailhook:
 
-   1. Abra su **[!UICONTROL [!DNL Gmail] settings]**.
-   1. Abra la ficha **[!UICONTROL Forwarding and POP/IMAP]**.
-   1. Haga clic en **[!UICONTROL Add a forwarding address].**
-   1. Pegue la dirección de correo electrónico de los buzones copiados, haga clic en&#x200B;**[!UICONTROL Next]**, confirme pulsando **[!UICONTROL Proceed]** en la ventana emergente y, a continuación, haga clic en **[!UICONTROL OK]**.
+   1. Abra la configuración de **[!UICONTROL [!DNL Gmail]]**.
+   1. Abra la pestaña **[!UICONTROL Reenvío y POP/IMAP]**.
+   1. Haga clic en **[!UICONTROL Añadir una dirección de reenvío].**
+   1. Pegue la dirección de correo electrónico de los mailhooks copiados, haga clic en&#x200B;**[!UICONTROL Siguiente]**, confirme pulsando **[!UICONTROL Continuar]** en la ventana emergente y, a continuación, haga clic en **[!UICONTROL Aceptar]**.
 
-   1. En [!DNL Workfront Fusion], cambie al nuevo escenario que debería finalizar su ejecución al recibir el correo electrónico de confirmación.
+   1. En Workfront Fusion, cambie al nuevo escenario que debería finalizar su ejecución al recibir el correo electrónico de confirmación.
    1. Haga clic en la burbuja situada encima del módulo para inspeccionar su salida.
    1. Expanda el elemento `Text` y copie el código de confirmación:
 
       ![Código de confirmación](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
-   1. En Gmail, pegue el código de confirmación en el cuadro de edición y haga clic en&#x200B;**[!UICONTROL Verify]**:
+   1. En Gmail, pegue el código de confirmación en el cuadro de edición y haga clic en&#x200B;**[!UICONTROL Verificar]**:
 
       ![Pegar código](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
-   1. Abra la ficha **[!UICONTROL Filters and Blocked Addresses]**.
-   1. Haga clic en **[!UICONTROL Create a new filter]**.
-   1. Configure un filtro para todos los correos electrónicos que provengan de `     calendar-notification@google.com` y haga clic en&#x200B;**[!UICONTROL Create a filter]**:
-   1. Seleccione **[!UICONTROL Forward it to]** y elija la dirección de correo electrónico de los mailhooks en la lista.
-   1. Haga clic en **[!UICONTROL Create filter]** para crear el filtro.
+   1. Abra la pestaña **[!UICONTROL Filtros y direcciones bloqueadas]**.
+   1. Haga clic en **[!UICONTROL Crear un nuevo filtro]**.
+   1. Configure un filtro para todos los correos electrónicos que provengan de `     calendar-notification@google.com` y haga clic en&#x200B;**[!UICONTROL Crear un filtro]**:
+   1. Seleccione **[!UICONTROL Reenviarlo a]** y elija la dirección de correo electrónico de los mailhooks de la lista.
+   1. Haga clic en **[!UICONTROL Crear filtro]** para crear el filtro.
 
-1. (Opcional) En [!DNL Workfront Fusion], agregue el módulo [!UICONTROL Text parser] > [!UICONTROL Match pattern] después del módulo [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] para analizar el código HTML del correo electrónico y obtener la información que necesite.
+1. (Opcional) En Workfront Fusion, agregue el módulo [!UICONTROL Analizador de texto] > [!UICONTROL Patrón de coincidencia] después del módulo [!UICONTROL Webhooks] >[!UICONTROL Gancho de correo personalizado] para analizar el código HTML del correo electrónico y obtener la información que necesite.
 
    Por ejemplo, puede configurar el módulo de la siguiente manera para obtener el ID del evento:
 
    *Patrón*: `<meta itemprop="eventId/googleCalendar" content="(?<evenitID>.*?)"/>`
 
-   *Texto*: El elemento `HTML content` se obtuvo del módulo [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook].
+   *Texto*: el elemento `HTML content` se ha extraído del módulo [!UICONTROL Webhooks] >[!UICONTROL Mailhook personalizado].

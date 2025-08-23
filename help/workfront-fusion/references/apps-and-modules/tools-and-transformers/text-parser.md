@@ -1,19 +1,19 @@
 ---
 title: Analizador de texto
-description: Puede usar la herramienta Analizador de texto para analizar el texto y utilizarlo en otros módulos de escenarios  [!DNL Adobe Workfront Fusion] . El analizador de texto no requiere una conexión.
+description: Puede utilizar la herramienta Text parser para analizar el texto y utilizarlo en otros módulos de escenarios de Adobe Workfront Fusion. El analizador de texto no requiere una conexión.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 85%
+source-wordcount: '1326'
+ht-degree: 81%
 
 ---
 
 # [!UICONTROL Analizador de texto]
 
-Puede usar la [!UICONTROL Text parser tool] para analizar texto y utilizarlo en otros módulos de escenario de [!DNL Adobe Workfront Fusion]. El [!UICONTROL Text parser] no requiere una conexión.
+Puede utilizar la [!UICONTROL herramienta de análisis de texto] para analizar texto y utilizarlo en otros módulos de escenarios de Adobe Workfront Fusion. El [!UICONTROL Text parser] no requiere una conexión.
 
 ## Requisitos de acceso
 
@@ -52,7 +52,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ El conector del analizador de texto utiliza lo siguiente:
 
 ## [!UICONTROL Text parser] módulos y sus campos
 
-Al configurar los módulos de [!UICONTROL Text parser], [!DNL Adobe Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de [!UICONTROL Text parser], Adobe Workfront Fusion muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

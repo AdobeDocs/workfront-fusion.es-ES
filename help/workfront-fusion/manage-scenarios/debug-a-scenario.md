@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion Devtool le permite entender y solucionar pro
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 76%
+source-wordcount: '1483'
+ht-degree: 74%
 
 ---
 
 # Depuración de un escenario
 
-La herramienta de desarrollo [!DNL Adobe Workfront Fusion] le ayuda a comprender y solucionar problemas de escenarios. Con la herramienta de desarrollo, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para perfeccionar el escenario.
+Adobe Workfront Fusion DevTool le ayuda a comprender y solucionar problemas de escenarios. Con la herramienta de desarrollo, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para perfeccionar el escenario.
 
 >[!NOTE]
 >
@@ -35,17 +35,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -53,16 +53,16 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configuraciones de nivel de acceso*</td> 
    <td> 
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su organización.</p>
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su equipo.</p>
+     <p>Debe ser administrador de Workfront Fusion para su organización.</p>
+     <p>Debe ser administrador de Workfront Fusion para su equipo.</p>
    </td> 
   </tr> 
    </td> 
@@ -72,7 +72,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -91,7 +91,7 @@ O
 1. Haga clic con el botón derecho en un área vacía de la página (no en un módulo).
 1. Seleccione **abrir Devtool**.
 
-## Uso de herramienta Devtool de [!DNL Workfront Fusion]
+## Uso de Workfront Fusion Devtool
 
 La herramienta Devtool de Workfront Fusion se divide en tres secciones principales. Puede encontrarlas en el panel izquierdo de la ventana de Devtool.
 
@@ -103,7 +103,7 @@ La herramienta Devtool de Workfront Fusion se divide en tres secciones principal
 
 Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en Ejecutar una vez en su escenario.
 
-1. Haga clic en el icono **[!UICONTROL Live Stream]** ![icono de transmisión en vivo](assets/live-stream-icon.png) para abrir la sección Transmisión en vivo.
+1. Haga clic en el icono **[!UICONTROL Transmisión en vivo]** ![Icono de transmisión en vivo](assets/live-stream-icon.png) para abrir la sección Transmisión en vivo.
 1. Realice una de las siguientes acciones:
 
    <table style="table-layout:auto"> 
@@ -124,15 +124,15 @@ Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en
         <li> <p>Cuerpo de solicitud</p> </li> 
         <li> <p>Encabezados de respuesta</p> </li> 
         <li> <p>Cuerpo de respuesta</p> </li> 
-       </ul> <p>Para ver esta información, haga clic en la pestaña correspondiente del panel derecho de la herramienta Devtool de [!DNL Workfront Fusion].</p> </td> 
+       </ul> <p>Para ver esta información, haga clic en la pestaña correspondiente del panel derecho de Workfront Fusion DevTool.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Buscar eventos por contenido</p> </td> 
-      <td> <p>Escriba el término de búsqueda en el campo de búsqueda del panel izquierdo de la herramienta Devtool de [!DNL Workfront Fusion] para mostrar solamente las solicitudes que contienen el término de búsqueda.</p> </td> 
+      <td> <p>Introduzca el término de búsqueda en el campo de búsqueda del panel izquierdo de la herramienta Workfront Fusion para mostrar solo las solicitudes que contienen el término de búsqueda.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Borrar lista de solicitudes </p> </td> 
-      <td> <p>Haga clic en el icono de papelera en la esquina superior derecha del panel izquierdo de Devtool para borrar la lista de solicitudes registradas por la herramienta Devtool de [!DNL Workfront Fusion]. </p> </td> 
+      <td> <p>Haga clic en el icono de la papelera situado en la esquina superior derecha del panel izquierdo de Devtool para borrar la lista de solicitudes registradas por Devtool de Workfront Fusion. </p> </td> 
      </tr> 
      <!--<tr> 
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
@@ -142,7 +142,7 @@ Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en
       <td role="rowheader"> <p>Recuperar la solicitud en formato Raw JSON o cURL</p> </td> 
       <td> 
        <ul> 
-        <li> <p><strong>Raw JSON</strong> </p> <p>Haga clic en <strong>[!UICONTROL Copy RAW]</strong> en la esquina superior derecha del panel derecho de Devtool.</p> </li> 
+        <li> <p><strong>Raw JSON</strong> </p> <p>Haga clic en <strong>[!UICONTROL Copy RAW]</strong> en la esquina superior derecha del panel derecho de Devtool.</p> </li> 
         <li> <p><strong>cURL</strong> </p> <p>Haga clic en <strong>[!UICONTROL Copy cURL]</strong> en la esquina superior derecha del panel derecho de Devtool.</p> </li> 
        </ul> </td> 
      </tr> 
@@ -153,19 +153,19 @@ Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en
 
 El depurador de escenario resulta útil para escenarios más complejos. Muestra el historial de ejecuciones de escenarios y le permite buscar módulos por su nombre o ID.
 
-1. Haga clic en el icono **[!UICONTROL Scenario Debugger]** ![Icono de Debugger](assets/scenario-debugger-icon.png) para abrir Scenario Debugger.
+1. Haga clic en el icono **[!UICONTROL Depurador de escenarios]** ![Icono de depurador](assets/scenario-debugger-icon.png) para abrir el Depurador de escenarios.
 1. (Opcional) Introduzca el término de búsqueda (nombre o ID de módulo) en el campo de búsqueda.
 1. Haga clic en el nombre del módulo.
 1. Haga clic en la operación para ver los detalles de la solicitud.
 
 ### Herramientas
 
-[!DNL Workfront Fusion] Devtool incluye herramientas que facilitan la configuración del escenario.
+Workfront Fusion DevTool incluye herramientas que facilitan la configuración de su escenario.
 
-1. Haga clic en el icono **[!UICONTROL Tools]** ![icono de herramientas de consola](assets/console-tools-icon.png) para abrir las herramientas.
+1. Haga clic en el icono **[!UICONTROL Herramientas]** ![Icono de herramientas de consola](assets/console-tools-icon.png) para abrir las herramientas.
 1. Seleccione la herramienta que desee utilizar.
 1. Configure los campos como se indica a continuación.
-1. Haga clic en **[!UICONTROL Run]**.
+1. Haga clic en **[!UICONTROL Ejecutar]**.
 
 Herramientas y sus campos:
 
@@ -180,7 +180,7 @@ Herramientas y sus campos:
 * [Base 64](#base-64)
 * [Reasignar origen](#remap-source)
 
-#### [!UICONTROL Focus a Module]
+#### [!UICONTROL Enfoque en un módulo]
 
 Abre la configuración del módulo especificado por identificador.
 
@@ -191,7 +191,7 @@ Abre la configuración del módulo especificado por identificador.
     </tr>
 </table>
 
-#### [!UICONTROL Find Modules by Mapping]
+#### [!UICONTROL Buscar módulos por asignación]
 
 Permite buscar los valores de los módulos para el término especificado. La salida contiene los ID de los módulos que contienen el término que se ha buscado.
 
@@ -210,7 +210,7 @@ Permite buscar los valores de los módulos para el término especificado. La sal
  </tbody> 
 </table>
 
-#### [!UICONTROL Get App Metadata]
+#### [!UICONTROL Obtener metadatos de la aplicación]
 
 Recupera los metadatos de la aplicación por el nombre o ID del módulo de la aplicación. Esto resulta útil, por ejemplo, cuando necesita saber la versión de la aplicación utilizada en su escenario.
 
@@ -221,7 +221,7 @@ Recupera los metadatos de la aplicación por el nombre o ID del módulo de la ap
     </tr>
 </table>
 
-#### [!UICONTROL Copy Mapping]
+#### [!UICONTROL Copiar asignación]
 
 Copia los valores del módulo de origen en el módulo de destino.
 
@@ -244,7 +244,7 @@ Copia los valores del módulo de origen en el módulo de destino.
  </tbody> 
 </table>
 
-#### [!UICONTROL Copy Filter]
+#### [!UICONTROL Copiar filtro]
 
 Copia la configuración del filtro del módulo de origen al módulo de destino.
 
@@ -272,7 +272,7 @@ Copia la configuración del filtro del módulo de origen al módulo de destino.
 </table>
 
 
-#### [!UICONTROL Copy Module Name]
+#### [!UICONTROL Copiar nombre de módulo]
 
 Copia el nombre del módulo seleccionado en el portapapeles.
 
@@ -287,7 +287,7 @@ Copia el nombre del módulo seleccionado en el portapapeles.
  </tbody> 
 </table>
 
-#### [!UICONTROL Swap Connection]
+#### [!UICONTROL Intercambiar conexión]
 
 Duplica una conexión desde el módulo de origen a cada uno de los módulos en el escenario de la misma aplicación.
 
@@ -298,7 +298,7 @@ Duplica una conexión desde el módulo de origen a cada uno de los módulos en e
     </tr>
 </table>
 
-#### [!UICONTROL Swap Variable]
+#### [!UICONTROL Intercambiar variable]
 
 Busca las variables especificadas en el escenario y las reemplaza por una variable nueva.
 
@@ -308,7 +308,7 @@ Busca las variables especificadas en el escenario y las reemplaza por una variab
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Variable to Find]</td> 
-   <td> <p> Busque la píldora variable que desee reemplazar desde el módulo de variables en su escenario y cópiela en este campo ([!UICONTROL Variable to Find]). En el campo, aparece entre corchetes dobles. Ejemplo: <code>&#123;&#123;5.value&#125;&#125;</code></p> </td> 
+   <td> <p> Busque la píldora de variables que desee reemplazar desde el módulo de variables en su escenario y cópiela en este campo ([!UICONTROL Variable to Find]). En el campo, aparece entre corchetes dobles. Ejemplo: <code>&#123;&#123;5.value&#125;&#125;</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace With]</p> </td> 
@@ -331,16 +331,16 @@ Le permite codificar los datos introducidos en Base64 o descodificar Base64. Alg
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Operation] </td> 
-   <td> <p>Seleccione si desea codificar los datos del campo [!UICONTROL Raw Data] en Base64 o descodificar Base64 en Datos sin procesar.</p> </td> 
+   <td> <p>Seleccione si desea codificar los datos del campo [!UICONTROL Raw Data] a Base64 o descodificar Base64 a Raw Data.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Raw Data]</p> </td> 
-   <td> <p> Escriba los datos que desee codificar en Base64 o Base64 si desea descodificar en datos sin procesar, según la opción seleccionada en el campo [!UICONTROL Operation] anterior.</p> </td> 
+   <td> <p> Introduzca los datos que desea codificar a Base64 o Base64 si desea descodificarlos a datos sin procesar, según la opción seleccionada en el campo [!UICONTROL Operation] anterior.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remap Source]
+#### [!UICONTROL Reasignar origen]
 
 Le permite cambiar el origen de la asignación de un módulo a otro.
 

@@ -5,10 +5,10 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 54%
+source-wordcount: '1326'
+ht-degree: 46%
 
 ---
 
@@ -27,17 +27,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+   <td role="rowheader">Plan de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -45,16 +45,16 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>Plan [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configuraciones de nivel de acceso*</td> 
    <td> 
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su organización.</p>
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su equipo.</p>
+     <p>Debe ser administrador de Workfront Fusion para su organización.</p>
+     <p>Debe ser administrador de Workfront Fusion para su equipo.</p>
    </td> 
   </tr> 
    </td> 
@@ -62,9 +62,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación de Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación de Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -119,15 +119,15 @@ Una vez ejecutado un escenario, puede mostrar de forma predeterminada informaci�
 
 ### [!UICONTROL Permitir almacenar ejecuciones incompletas]
 
-Esta opción determina cómo procede [!DNL Adobe Workfront Fusion] si se produce un error durante la ejecución de un escenario. Con esta opción habilitada, el escenario se detiene y se mueve a la carpeta de ejecución incompleta. Esto le ofrece la posibilidad de solucionar el problema y seguir ejecutando desde el lugar en el que se detuvo el escenario. Si esta opción está desactivada, la ejecución del escenario se detiene y se inicia una fase de reversión.
+Esta opción determina cómo procede Adobe Workfront Fusion si se produce un error durante la ejecución de un escenario. Con esta opción habilitada, el escenario se detiene y se mueve a la carpeta de ejecución incompleta. Esto le ofrece la posibilidad de solucionar el problema y seguir ejecutando desde el lugar en el que se detuvo el escenario. Si esta opción está desactivada, la ejecución del escenario se detiene y se inicia una fase de reversión.
 
 Para obtener más información sobre las ejecuciones incompletas, vea [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Habilitar la pérdida de datos
 
-Esta opción tiene que ver con habilitar la pérdida de datos si [!DNL Workfront Fusion] no puede guardar un paquete en la cola de ejecuciones incompletas (por ejemplo, debido a la falta de espacio libre). Con esta opción habilitada, los datos se pierden para evitar interrupciones en la ejecución general del escenario. Esto resulta útil en escenarios en los que la prioridad más alta es la ejecución continua y los datos erróneos entrantes no son tan importantes.
+Esta opción tiene que ver con la activación de la pérdida de datos si Workfront Fusion no puede guardar un paquete en la cola de ejecuciones incompletas (por ejemplo, debido a la falta de espacio libre). Con esta opción habilitada, los datos se pierden para evitar interrupciones en la ejecución general del escenario. Esto resulta útil en escenarios en los que la prioridad más alta es la ejecución continua y los datos erróneos entrantes no son tan importantes.
 
-Aparte de esto, al ejecutar un escenario, un módulo a veces puede encontrar un archivo que sea más grande que el tamaño máximo permitido. En este caso, [!DNL Workfront Fusion] procede de acuerdo con la configuración de la opción [!UICONTROL Habilitar la pérdida de datos] y se muestra un mensaje de advertencia.
+Aparte de esto, al ejecutar un escenario, un módulo a veces puede encontrar un archivo que sea más grande que el tamaño máximo permitido. En este caso, Workfront Fusion se ejecuta de acuerdo con la configuración de la opción [!UICONTROL Habilitar pérdida de datos] y se muestra un mensaje de advertencia.
 
 Para obtener más información sobre las ejecuciones incompletas, vea [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -160,7 +160,7 @@ La configuración de más ciclos puede resultar útil cuando desea evitar la int
 
 >[!BEGINSHADEBOX]
 
-**Ejemplos:** [!DNL Workfront] > [!UICONTROL Observar registro] observa los nuevos problemas que se producen y [!DNL Workfront] >[!UICONTROL Convertir objeto] convierte la nueva solicitud en un proyecto y le asigna la plantilla adecuada.
+**Ejemplos:** Workfront > [!UICONTROL Observar registro] observa nuevos problemas que se producen y Workfront >[!UICONTROL Convertir objeto] convierte la nueva solicitud en un proyecto y le asigna la plantilla adecuada.
 
 ![Configuración de escenario](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ La configuración [!UICONTROL más ciclos] solo se aplica cuando se programa la 
 ![Número máximo de ciclos](assets/max-number-cycles-1-350x201.png)
 
 El número máximo de ciclos en el módulo Workfront > Ver registros está establecido en `10`.
-Si se envían 100 solicitudes a [!DNL Workfront] y el campo Número máximo de ciclos se establece en 10, entonces quedan 90 archivos sin procesar después de que se ejecute un escenario. Los siguientes 10 archivos se procesan en la posterior ejecución de escenario programada.
+Si se envían 100 solicitudes a Workfront y el campo Número máximo de ciclos se establece en 10, entonces se dejan 90 archivos sin procesar después de ejecutar un escenario. Los siguientes 10 archivos se procesan en la posterior ejecución de escenario programada.
 
 #### El número máximo de ciclos se establece en 10
 

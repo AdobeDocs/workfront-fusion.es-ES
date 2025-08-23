@@ -4,10 +4,10 @@ description: Las opciones de notificación por correo electrónico se establecen
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 26%
+source-wordcount: '332'
+ht-degree: 21%
 
 ---
 
@@ -28,17 +28,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -46,16 +46,16 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: su organización debe adquirir [!DNL Adobe Workfront Fusion].</li><li>Se incluye el plan [!DNL Workfront] de [!UICONTROL Ultimate]: [!DNL Workfront Fusion].</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configuraciones de nivel de acceso*</td> 
    <td> 
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su organización.</p>
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su equipo.</p>
+     <p>Debe ser administrador de Workfront Fusion para su organización.</p>
+     <p>Debe ser administrador de Workfront Fusion para su equipo.</p>
    </td> 
   </tr> 
    </td> 
@@ -65,7 +65,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -93,7 +93,7 @@ Las opciones de notificación por correo electrónico se establecen en el nivel 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Desactivación de escenario]</p> </td> 
-      <td><p>Reciba un correo electrónico cuando se desactive un escenario.</p><p>En algunos casos, el equipo de ingeniería de [!DNL Workfront Fusion] podría desactivar un escenario debido a que el escenario está causando problemas de rendimiento o de otro tipo. En estos casos, no recibe notificaciones en [!DNL Workfront Fusion]. </p></td>
+      <td><p>Reciba un correo electrónico cuando se desactive un escenario.</p><p>En algunos casos, el equipo de ingeniería de Workfront Fusion podría desactivar un escenario porque está causando problemas de rendimiento u otros. En estos casos, no recibe notificaciones en Workfront Fusion. </p></td>
 
 </tr>
 </tbody>

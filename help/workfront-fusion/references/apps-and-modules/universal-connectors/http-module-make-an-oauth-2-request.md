@@ -1,13 +1,13 @@
 ---
 title: HTTP > Crear un módulo de solicitud OAuth 2.0
-description: Para realizar una solicitud HTTP(S)  [!DNL Adobe Workfront Fusion] a servidores que requieran una autorización de OAuth 2.0, primero debe crear una conexión OAuth. [!DNL Adobe Workfront Fusion] garantiza que todas las llamadas realizadas con esta conexión tengan los encabezados de autorización adecuados y que actualicen automáticamente los tokens asociados cuando sea necesario.
+description: Para realizar una solicitud HTTP(S) de Adobe Workfront Fusion a servidores que requieran una autorización de OAuth 2.0, primero debe crear una conexión OAuth. Adobe Workfront Fusion garantiza que todas las llamadas realizadas con esta conexión tengan los encabezados de autorización adecuados y actualicen automáticamente los tokens asociados cuando sea necesario.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 82%
+source-wordcount: '2314'
+ht-degree: 71%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->[!DNL Adobe Workfront Fusion] requiere una licencia de [!DNL Adobe Workfront Fusion] además de una licencia de [!DNL Adobe Workfront].
+>Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion y de Adobe Workfront.
 
-Para realizar una petición HTTP(S) [!DNL Adobe Workfront Fusion] a servidores que requieran una autorización de OAuth 2.0, primero debe crear una conexión OAuth. [!DNL Adobe Workfront Fusion] garantiza que todas las llamadas realizadas con esta conexión tengan los encabezados de autorización adecuados y que actualicen automáticamente los tokens asociados cuando sea necesario.
+Para realizar una solicitud HTTP(S) de Adobe Workfront Fusion a servidores que requieran una autorización de OAuth 2.0, primero debe crear una conexión OAuth. Adobe Workfront Fusion garantiza que todas las llamadas realizadas con esta conexión tengan los encabezados de autorización adecuados y actualicen automáticamente los tokens asociados cuando sea necesario.
 
-[!DNL Workfront Fusion] admite los siguientes flujos de autenticación de OAuth 2.0:
+Workfront Fusion admite los siguientes flujos de autenticación de OAuth 2.0:
 
 * Flujo de código de autorización
 * Flujo implícito
@@ -65,7 +65,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -73,7 +73,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -85,7 +85,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 ### Instrucciones generales para crear una conexión en el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0]
 
-1. Cree un cliente OAuth en el servicio de [!DNL target] con el que desea que se comunique [!DNL Adobe Workfront Fusion]. Es muy probable que esta opción se encuentre en la sección [!UICONTROL Desarrollador] del servicio proporcionado.
+1. Cree un cliente de OAuth en el servicio [!DNL target] con el que desee que Adobe Workfront Fusion se comunique. Es muy probable que esta opción se encuentre en la sección [!UICONTROL Desarrollador] del servicio proporcionado.
 
    1. Al crear un cliente, introduzca la dirección URL correspondiente en el campo `[!UICONTROL Redirect URL]` o `[!UICONTROL Callback URL]`:
 
@@ -95,14 +95,14 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
    1. Después de crear el cliente, el servicio dado muestra 2 claves: `[!UICONTROL Client ID]` y `[!UICONTROL Client Secret]`. Algunos servicios llaman a estos `[!UICONTROL App Key]` y `[!UICONTROL App Secret]`. Guarde la clave y el secreto en una ubicación segura, para que pueda proporcionarlos al crear la conexión en Workfront Fusion.
 
-1. Busque `[!UICONTROL Authorize URI]` y `[!UICONTROL Token URI]` en la documentación de API del servicio proporcionado. Son direcciones URL a través de las cuales [!DNL Workfront Fusion] se comunica con el servicio [!DNL target]. Las direcciones sirven para la autorización de OAuth.
+1. Busque `[!UICONTROL Authorize URI]` y `[!UICONTROL Token URI]` en la documentación de API del servicio proporcionado. Son direcciones URL a través de las cuales Workfront Fusion se comunica con el servicio [!DNL target]. Las direcciones sirven para la autorización de OAuth.
 
    >[!NOTE]
    >
    >Si el servicio utiliza un flujo implícito, solo necesitará el `[!UICONTROL Authorize URI]`.
 
-1. (Condicional) Si el servicio de destino utiliza ámbitos (derechos de acceso), compruebe cómo separa los ámbitos individuales y asegúrese de establecer el separador en los ajustes avanzados en consecuencia. Si el separador no se ha establecido correctamente, [!DNL Workfront Fusion] no consigue crear la conexión y se recibe un error de ámbito no válido.
-1. Después de completar los pasos anteriores, puede comenzar a crear la conexión OAuth en [!DNL Workfront Fusion]. Añada el módulo de solicitud HTTP > Crear un OAuth 2 a su escenario.
+1. (Condicional) Si el servicio de destino utiliza ámbitos (derechos de acceso), compruebe cómo separa los ámbitos individuales y asegúrese de establecer el separador en los ajustes avanzados en consecuencia. Si el separador no se ha definido correctamente, Workfront Fusion no podrá crear la conexión y recibirá un error de ámbito no válido.
+1. Después de completar los pasos anteriores, puede empezar a crear la conexión OAuth en Workfront Fusion. Añada el módulo de solicitud HTTP > Crear un OAuth 2 a su escenario.
 1. En el campo Conexión del módulo, haga clic en **[!UICONTROL Añadir]**.
 
 1. Rellene los campos siguientes para crear una conexión:
@@ -137,7 +137,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Scope separator] </td> 
-      <td> <p>Seleccione por qué se deben separarse los ámbitos especificados anteriormente. Puede encontrar esta información en la documentación para desarrolladores (API) de un servicio determinado.</p> <p>Advertencia: si el separador no se establece correctamente, [!DNL Workfront Fusion] no crea la conexión y se recibe un error de ámbito no válido.</p> </td> 
+      <td> <p>Seleccione por qué se deben separarse los ámbitos especificados anteriormente. Puede encontrar esta información en la documentación para desarrolladores (API) de un servicio determinado.</p> <p>Advertencia: Si el separador no está configurado correctamente, Workfront Fusion no creará la conexión y recibirá un error de ámbito no válido.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID] </td> 
@@ -193,7 +193,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
         <li><strong>[!UICONTROL client_id]</strong>: el ID de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</li> 
         <li><strong>client_secret</strong>: el secreto de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</li> 
         <li><strong>code</strong>: código devuelto por la solicitud de autorización</li> 
-       </ul> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] envía automáticamente el secreto y el ID de cliente especificados a través del método <code>[!UICONTROL client_secret_post]</code>. Por lo tanto, estos parámetros se incluyen automáticamente como parte del cuerpo de solicitud de token. </p> <p>Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
+       </ul> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). Workfront Fusion envía automáticamente el ID de cliente y el secreto especificados mediante el método <code>[!UICONTROL client_secret_post]</code>. Por lo tanto, estos parámetros se incluyen automáticamente como parte del cuerpo de solicitud de token. </p> <p>Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Refresh token parameters]</p> </td> 
@@ -203,11 +203,11 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
         <li> <p><strong>[!UICONTROL refresh_token]</strong>: el token de actualización más reciente obtenido por el servicio al que se está conectando</p> </li> 
         <li> <p><strong>[!UICONTROL client_id]</strong>: el ID de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</p> </li> 
         <li> <p><strong>[!UICONTROL client_secret]</strong>: el secreto de cliente que recibió al crear la cuenta se incluye automáticamente en el cuerpo de la solicitud</p> </li> 
-       </ul> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] envía automáticamente el secreto y el ID de cliente especificados a través del método <code>[!UICONTROL client_secret_post]</code>. Por lo tanto, estos parámetros se incluyen automáticamente como parte del cuerpo de solicitud de token. </p> <p>Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
+       </ul> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). Workfront Fusion envía automáticamente el ID de cliente y el secreto especificados mediante el método <code>[!UICONTROL client_secret_post]</code>. Por lo tanto, estos parámetros se incluyen automáticamente como parte del cuerpo de solicitud de token. </p> <p>Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Custom Headers]</p> </td> 
-      <td> <p>Especifique las claves y los valores adicionales que se incluirán en el encabezado de los pasos de [!UICONTROL Token] y [!UICONTROL Refresh Token].</p> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). [!DNL Workfront Fusion] no admite automáticamente el método <code>[!UICONTROL client_secret_basic]</code>. Si el servicio al que se está conectando espera que el ID de cliente y el secreto del cliente se combinen en una sola cadena y luego se codifique base64 en el encabezado Autorización, debe añadir ese encabezado y valor clave aquí.</p> <p> Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
+      <td> <p>Especifique las claves y los valores adicionales que se incluirán en el encabezado de los pasos de [!UICONTROL Token] y [!UICONTROL Refresh Token].</p> <p>Nota:  <p>El estándar OAuth 2.0 admite al menos 2 métodos de autenticación de cliente durante este paso (<code>[!UICONTROL client_secret_basic]</code> y <code>[!UICONTROL client_secret_post]</code>). Workfront Fusion no admite automáticamente el método <code>[!UICONTROL client_secret_basic]</code>. Si el servicio al que se está conectando espera que el ID de cliente y el secreto del cliente se combinen en una sola cadena y luego se codifique base64 en el encabezado Autorización, debe añadir ese encabezado y valor clave aquí.</p> <p> Para obtener más información sobre la autenticación de OAuth 2.0, consulte <a href="https://tools.ietf.org/html/rfc6749">El marco de autorización de OAuth 2.0</a>.</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Token placement]</p> </td> 
@@ -231,7 +231,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
 
 El siguiente ejemplo muestra cómo se usa el módulo de solicitud [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] para conectarse a [!DNL Google].
 
-1. Asegúrese de haber creado un proyecto, configurado la configuración de OAuth y generado sus credenciales tal como se describe en el artículo[Conectar [!DNL Adobe Workfront Fusion] a [!DNL Google Services] mediante un cliente de OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+1. Asegúrese de haber creado un proyecto, de haber configurado la configuración de OAuth y de haber generado sus credenciales tal como se describe en el artículo[Conectar Adobe Workfront Fusion a [!DNL Google Services] mediante un cliente de OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 1. Abra el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0].
 1. En cualquier módulo, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 1. Introduzca los siguientes valores:
@@ -294,9 +294,9 @@ El siguiente ejemplo muestra cómo se usa el módulo de solicitud [!UICONTROL HT
 
 Después de establecer una conexión OAuth 2.0, siga configurando el módulo como desee. Todos los tókenes de autorización se incluyen automáticamente en esta solicitud y en cualquier otra que utilice la misma conexión.
 
-Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0], Workfront Fusion muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -376,7 +376,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
-   <td> <p>De manera predeterminada, [!DNL Workfront Fusion] administra varios valores para la misma clave de parámetro de cadena de consulta de URL que las matrices. Por ejemplo, <code>www.test.com?foo=bar&amp;foo=baz</code> se convertirá en <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Active esta opción para deshabilitar esta función. </p> </td> 
+   <td> <p>De forma predeterminada, Workfront Fusion gestiona varios valores para la misma clave de parámetro de cadena de consulta de URL que las matrices. Por ejemplo, <code>www.test.com?foo=bar&amp;foo=baz</code> se convertirá en <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Active esta opción para deshabilitar esta función. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 
@@ -384,7 +384,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Active esta opción para utilizar TLS mutuo en la solicitud HTTP.</p> <p>Para obtener más información sobre TLS mutuo, consulte <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Usar TLS mutuo en módulos HTTP en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Active esta opción para utilizar TLS mutuo en la solicitud HTTP.</p> <p>Para obtener más información sobre TLS mutuo, consulte <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Usar TLS mutuo en módulos HTTP en Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

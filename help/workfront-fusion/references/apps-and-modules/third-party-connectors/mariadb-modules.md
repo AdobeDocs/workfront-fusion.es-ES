@@ -1,20 +1,20 @@
 ---
 title: Módulos MariaDB
-description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatizar los flujos de trabajo que utilizan  [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan  [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 50%
+source-wordcount: '645'
+ht-degree: 38%
 
 ---
 
 # Módulos de [!DNL MariaDB]
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -51,7 +51,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,15 +59,15 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Requisitos previos
 
-Para usar los módulos de [!DNL MariaDB], debe tener una cuenta de [!DNL MariaDB].
+Para utilizar módulos de [!DNL MariaDB], debe disponer de una cuenta de [!DNL MariaDB].
 
-## Conectar [!DNL MariaDB] a [!DNL Workfront Fusion]
+## Conexión de [!DNL MariaDB] a Workfront Fusion
 
 Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un módulo de [!DNL MariaDB].
 
@@ -99,7 +99,7 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
       <td>El puerto predeterminado es 3306. Si utiliza un puerto no estándar, establezca este número en el puerto. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Base de datos &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL Base de datos ]</td> 
       <td>Introduzca el nombre de la base de datos con la que desea interactuar.</td> 
      </tr> 
      <tr> 
@@ -117,7 +117,7 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
 
 ## Módulos de [!DNL MariaDB] y sus campos
 
-Al configurar módulos de [!DNL MariaDB], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL MariaDB] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL MariaDB], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL MariaDB] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -133,7 +133,7 @@ Este módulo de acción recupera información de la base de datos, en función d
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL MariaDB] a [!DNL Workfront Fusion], consulte <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Conectar [!DNL MariaDB] a [!DNL Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL MariaDB] a Workfront Fusion, consulte <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Conectar [!DNL MariaDB] a Workfront Fusion</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -152,7 +152,7 @@ Este módulo lee registros de la base de datos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL MariaDB] a [!DNL Workfront Fusion], consulte <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Conectar [!DNL MariaDB] a [!DNL Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL MariaDB] a Workfront Fusion, consulte <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Conectar [!DNL MariaDB] a Workfront Fusion</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table]</td> 

@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: f169b9d918d42bbecd885aeec1505bd41088907b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 39%
+source-wordcount: '468'
+ht-degree: 38%
 
 ---
 
@@ -32,7 +32,7 @@ Estos conectores le permiten conectarse a cualquier aplicación o servicio web q
 * [Módulo SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [Módulos FTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [Módulos SFTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
-* [Usar TLS mutuo en módulos HTTP en  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+* [Uso de TLS mutuo en módulos HTTP en Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
 
 ## Conectores para productos de Adobe
 

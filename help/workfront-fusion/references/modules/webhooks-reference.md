@@ -4,9 +4,9 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 28%
 
 ---
@@ -41,7 +41,7 @@ Cuando se configura un déclencheur instantáneo, se le pide que seleccione cuá
 
 ![Configuración de horario](assets/schedule-setting.png)
 
-Seleccione `Immediately` para ejecutar el escenario inmediatamente cuando [!DNL Workfront Fusion] reciba nuevos eventos del servicio. Estos eventos se envían inmediatamente a una cola y, a continuación, se procesan en el escenario de uno en uno, en el mismo orden en que se reciben los datos.
+Seleccione `Immediately` para ejecutar el escenario inmediatamente cuando Workfront Fusion reciba nuevos eventos del servicio. Estos eventos se envían inmediatamente a una cola y, a continuación, se procesan en el escenario de uno en uno, en el mismo orden en que se reciben los datos.
 
 Cuando se ejecuta el escenario, se cuenta la cantidad total de eventos pendientes que esperan en la cola y el escenario realiza tantos ciclos como eventos pendientes, procesando un evento por ciclo.
 
@@ -60,10 +60,10 @@ Para obtener más información sobre los ciclos, vea [Ejecución de escenarios, 
 >
 
 
-Si utiliza cualquier otra configuración de programación distinta de [!UICONTROL Immediately], el escenario se ejecutará a los intervalos especificados. Dado que se pueden agrupar varios enlaces web en la cola durante el intervalo, se recomienda establecer la opción [!UICONTROL Maximum number of cycles] en un valor mayor que el valor predeterminado 1 para procesar más enlaces web en un escenario en el que se ejecute:
+Si usa cualquier otra configuración de programación distinta de [!UICONTROL Inmediatamente], el escenario se ejecutará a los intervalos especificados. Dado que se pueden agrupar varios enlaces web en la cola durante el intervalo, se recomienda establecer la opción [!UICONTROL Número máximo de ciclos] en un valor mayor que el predeterminado 1 para procesar más enlaces web en una ejecución de escenario:
 
-1. Haga clic en el icono [!UICONTROL Scenario settings] ![icono de configuración de escenario](assets/scenario-settings-icon.png) en la parte inferior del escenario.
-1. En el panel **[!UICONTROL Scenario settings]** que aparece, escriba un número en el campo **[!UICONTROL Max number of cycles]** para indicar el número de eventos de la cola que desea ejecutar cada vez que ejecute el escenario.
+1. Haga clic en el icono [!UICONTROL Configuración de escenario] ![Icono de configuración de escenario](assets/scenario-settings-icon.png) en la parte inferior del escenario.
+1. En el panel **[!UICONTROL Configuración de escenario]** que aparece, escriba un número en el campo **[!UICONTROL Número máximo de ciclos]** para indicar el número de eventos de la cola que desea ejecutar cada vez que ejecute el escenario.
 
 Los eventos que permanecen en cola se procesarán la próxima vez que se ejecute el escenario, hasta el número establecido en el campo Número máximo de ciclos.
 
@@ -81,20 +81,20 @@ Se eliminará un webhook que no se haya asignado a ningún escenario durante má
 
 ### Cargas útiles de webhook
 
-[!DNL Workfront Fusion] almacena cargas útiles de webhook durante 30 días. Acceder a una carga útil de gancho web más de 30 días después de crearla provoca el error [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion almacena las cargas útiles de los ganchos web durante 30 días. Acceder a una carga útil de gancho web más de 30 días después de crearla provoca el error [!UICONTROL `Failed to read file from storage.`]
 
 ### Gestión de errores
 
 Cuando hay un error en su escenario con un activador instantáneo, el escenario:
 
-* Se detiene inmediatamente cuando el escenario está configurado para ejecutarse [!UICONTROL Immediately].
+* Se detiene inmediatamente cuando el escenario está configurado para ejecutarse [!UICONTROL Inmediatamente].
 * Se detiene después de tres intentos fallidos (tres errores) cuando el escenario está configurado para ejecutarse según lo programado.
 
 Si se produce un error durante la ejecución del escenario, el evento se vuelve a colocar en la cola durante la fase de reversión del déclencheur instantáneo. En tal situación, puede corregir el escenario y ejecutarlo de nuevo.
 
 Para obtener más información, consulte [Inversión](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) en el artículo Ejecución de escenarios, ciclos y fases.
 
-Si hay un módulo de respuesta de webhook en su escenario, el error se envía ahí. El módulo de respuesta Webhook siempre se ejecuta en último lugar (cuando la opción [!UICONTROL Auto commit] en la configuración de Scenario no está habilitada).
+Si hay un módulo de respuesta de webhook en su escenario, el error se envía ahí. El módulo de respuesta Webhook siempre se ejecuta en último lugar (cuando la opción [!UICONTROL Confirmación automática] en la configuración de Escenario no está habilitada).
 
 Para obtener más información, consulte [Respuesta a los webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) en el artículo Webhooks.
 

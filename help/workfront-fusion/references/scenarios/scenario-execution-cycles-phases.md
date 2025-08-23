@@ -1,13 +1,13 @@
 ---
 title: Ejecución de escenarios, ciclos y fases
-description: En este artículo se describen los eventos que se producen mientras se ejecuta un escenario de  [!DNL Adobe Workfront Fusion] , como la inicialización, las operaciones, las confirmaciones y las reversiones.
+description: Este artículo describe los eventos que se producen mientras se ejecuta un escenario de Adobe Workfront Fusion, como la inicialización, las operaciones, las confirmaciones y las reversiones.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 31%
+source-wordcount: '481'
+ht-degree: 22%
 
 ---
 
@@ -42,7 +42,7 @@ Durante la fase de inicialización, se crean y comprueban todas las conexiones n
 
 Cada ciclo representa una unidad de trabajo indivisible compuesta por una serie de operaciones, cada una con una confirmación o reversión.
 
-Puede establecer el número máximo de ciclos en el panel [!UICONTROL scenario settings]. El número predeterminado es 1.
+Puede establecer el número máximo de ciclos en el panel [!UICONTROL configuración de escenario]. El número predeterminado es 1.
 
 * [Operación](#operation)
 * [Confirmar](#commit)
@@ -52,12 +52,12 @@ Puede establecer el número máximo de ciclos en el panel [!UICONTROL scenario s
 
 Durante la fase de operación, se realiza una operación de lectura o escritura:
 
-* Una operación de lectura consiste en obtener datos de un servicio que luego procesan otros módulos de acuerdo con un escenario predefinido. Por ejemplo, el módulo [!UICONTROL Workfront] >[!UICONTROL Watch records] devuelve nuevos paquetes (registros) creados desde la última ejecución del escenario.
-* Una operación de escritura consiste en enviar datos a un servicio determinado para un procesamiento posterior. Por ejemplo, el módulo [!DNL Workfront] >[!UICONTROL Upload Document] carga un archivo en Workfront.
+* Una operación de lectura consiste en obtener datos de un servicio que luego procesan otros módulos de acuerdo con un escenario predefinido. Por ejemplo, el módulo [!UICONTROL Workfront] >[!UICONTROL Observar registros] devuelve nuevos paquetes (registros) creados desde la última ejecución del escenario.
+* Una operación de escritura consiste en enviar datos a un servicio determinado para un procesamiento posterior. Por ejemplo, el módulo Workfront >[!UICONTROL Cargar documento] carga un archivo en Workfront.
 
 #### Confirmar
 
-Si la fase de operación es correcta, comienza la fase de confirmación durante la cual se confirman todas las operaciones realizadas por los módulos. Esto significa que [!DNL Workfront Fusion] envía información a todos los servicios involucrados en la fase de operación sobre su éxito.
+Si la fase de operación es correcta, comienza la fase de confirmación durante la cual se confirman todas las operaciones realizadas por los módulos. Esto significa que Workfront Fusion envía información a todos los servicios implicados en la fase de operación sobre su éxito.
 
 ### Reversión
 
@@ -65,7 +65,7 @@ Si se produce un error durante la fase de operación o confirmación en cualquie
 
 >[!IMPORTANT]
 >
->Todos los módulos de [!DNL Workfront Fusion] que admiten la reversión (también conocida como transaccionalidad) están marcados con la etiqueta ACID.
+>Todos los módulos de Workfront Fusion que admiten la reversión (también conocida como transaccionalidad) están marcados con la etiqueta ACID.
 >
 >![Módulos Acid](assets/acid-modules.png)
 >

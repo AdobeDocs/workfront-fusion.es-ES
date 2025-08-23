@@ -4,10 +4,10 @@ description: 'Adobe Workfront Fusion distingue cinco tipos de módulos: módulos
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 22%
+source-wordcount: '917'
+ht-degree: 24%
 
 ---
 
@@ -35,8 +35,8 @@ Los escenarios pueden contener un número ilimitado de módulos de acción, aunq
 
 **Ejemplos:**
 
-* **[!DNL Workfront]>[!UICONTROL Upload a file]** envía un archivo a [!DNL Workfront] y devuelve su identificador.
-* **[!UICONTROL Image]>[!UICONTROL Resize]** recibe una imagen, cambia su tamaño a las dimensiones especificadas y pasa la imagen redimensionada a la siguiente acción.
+* **Workfront > [!UICONTROL Cargar un archivo]** envía un archivo a Workfront y devuelve su identificador.
+* **[!UICONTROL Image] > [!UICONTROL Resize]** recibe una imagen, la cambia a las dimensiones especificadas y pasa la imagen cambiada a la siguiente acción.
 
 >[!ENDSHADEBOX]
 
@@ -80,7 +80,7 @@ Los escenarios pueden contener un número ilimitado de módulos de búsqueda, au
 
 **Ejemplo:**
 
-**[!DNL Workfront]>[!UICONTROL Read Related Records]** lee registros que coinciden con la consulta de búsqueda especificada, en un objeto primario concreto.
+**Workfront > [!UICONTROL Leer registros relacionados]** lee registros que coinciden con la consulta de búsqueda especificada, en un objeto primario concreto.
 
 >[!ENDSHADEBOX]
 
@@ -94,7 +94,7 @@ Debido a que los Déclencheur hacen que los escenarios comiencen a ejecutarse, s
 
 Cada escenario solo puede contener un activador.
 
-[!DNL Workfront Fusion] usa dos tipos de déclencheur: déclencheur de sondeo y déclencheur instantáneos.
+Workfront Fusion utiliza dos tipos de déclencheur: déclencheur de sondeo y déclencheur instantáneos.
 
 ### Activador de sondeo
 
@@ -110,15 +110,15 @@ Para obtener más información, consulte [Elegir dónde se inicia un módulo de 
 
 **Ejemplos:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch records]** devuelve registros que se agregaron recientemente después de la última vez que se ejecutó el escenario.
+* **Workfront > [!UICONTROL Ver registros]** devuelve registros que se agregaron recientemente después de la última vez que se ejecutó el escenario.
 
-* **[!DNL Google Sheets]>[!UICONTROL Watch Rows]** devuelve las filas nuevas agregadas después de la última vez que se ejecutó el escenario.
+* **[!DNL Google Sheets]> [!UICONTROL Filas de observación]** devuelve nuevas filas agregadas después de la última vez que se ejecutó el escenario.
 
 >[!ENDSHADEBOX]
 
 ### Activadores instantáneos
 
-Las déclencheur instantáneas permiten que un servicio notifique a [!DNL Workfront Fusion] un cambio inmediatamente después de que se produzca. Le recomendamos que programe un escenario que contenga un déclencheur instantáneo para que se ejecute de inmediato.
+Los déclencheur instantáneos permiten que un servicio notifique a Workfront Fusion un cambio inmediatamente después de que se produzca. Le recomendamos que programe un escenario que contenga un déclencheur instantáneo para que se ejecute de inmediato.
 
 Para obtener instrucciones, consulte [Programar un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -128,8 +128,8 @@ Para obtener más información sobre cómo un déclencheur instantáneo gestiona
 
 **Ejemplos:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch Events]** devuelve información cuando se produce un determinado tipo de evento en Workfront, como la creación de una tarea.
-* **[!DNL Google Sheets]>[!UICONTROL Watch Changes]** devuelve información cada vez que se actualiza una celda.
+* **Workfront > [!UICONTROL Ver eventos]** devuelve información cuando se produce un determinado tipo de evento en Workfront, como la creación de una tarea.
+* **[!DNL Google Sheets]> [!UICONTROL Observar cambios]** devuelve información cada vez que se actualiza una celda.
 
 >[!ENDSHADEBOX]
 
@@ -147,9 +147,9 @@ Los escenarios pueden contener un número ilimitado de agregadores, aunque un gr
 
 **Ejemplos:**
 
-* **[!UICONTROL Archive]>[!UICONTROL Create an archive]** comprime varios archivos en un archivo zip.
-* **[!UICONTROL CSV]>[!UICONTROL Aggregate to CSV]** combina varias cadenas de un archivo CSV en una sola fila.
-* **[!UICONTROL Tools]>[!UICONTROL Text aggregator]** combina varias cadenas en una sola.
+* **[!UICONTROL Archivo] > [!UICONTROL Crear un archivo]** comprime varios archivos en un archivo zip.
+* **[!UICONTROL CSV] > [!UICONTROL Agregado a CSV]** combina varias cadenas de un archivo CSV en una sola fila.
+* **[!UICONTROL Herramientas] > [!UICONTROL Agregador de texto]** combina varias cadenas en una sola.
 
 >[!ENDSHADEBOX]
 
@@ -169,7 +169,7 @@ Los escenarios pueden contener un número ilimitado de iteradores, aunque un gra
 
 **Ejemplo:**
 
-**[!UICONTROL Email]>[!UICONTROL Retrieve attachments]** divide una matriz de archivos adjuntos en paquetes separados.
+**[!UICONTROL Correo electrónico] > [!UICONTROL Recuperar archivos adjuntos]** divide una matriz de archivos adjuntos en paquetes separados.
 
 >[!ENDSHADEBOX]
 

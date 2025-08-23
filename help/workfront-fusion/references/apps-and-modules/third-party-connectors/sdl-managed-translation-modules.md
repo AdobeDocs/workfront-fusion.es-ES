@@ -1,19 +1,19 @@
 ---
 title: Módulos de traducción gestionada por SDL
-description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede conectar su cuenta de SDL Managed Translation a varias aplicaciones y servicios de terceros.
+description: En el caso de Adobe Workfront Fusion, puede conectar su cuenta de SDL Managed Translation a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 89%
+source-wordcount: '587'
+ht-degree: 73%
 
 ---
 
 # Módulos de [!DNL SDL Managed Translation]
 
-En un escenario de [!DNL Adobe Workfront Fusion], puede conectar su cuenta de [!DNL SDL Managed Translation] a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede conectar su cuenta de [!DNL SDL Managed Translation] a varias aplicaciones y servicios de terceros.
 
 ## Requisitos de acceso
 
@@ -24,35 +24,35 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Plan de Adobe Workfront*</td>
   <td> <p>[!UICONTROL Pro] o superior</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
+   <td role="rowheader">Licencia de Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Requisito de licencia actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!DNL Workfront Fusion] para automatización e integración de trabajo </p>
+   <p>Requisito de licencia heredado: [!UICONTROL Workfront Fusion para automatización e integración de trabajo] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Requisito actual del producto: si tiene el plan de Adobe Workfront de [!UICONTROL Select] o [!UICONTROL Prime], su organización debe adquirir Adobe Workfront Fusion y Adobe Workfront para utilizar la funcionalidad que se describe en este artículo. Workfront Fusion está incluido en el plan de Workfront de [!UICONTROL Ultimate].</p>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Requisito de productos heredados: su organización debe adquirir Adobe Workfront Fusion así como Adobe Workfront para utilizar la funcionalidad descrita en este artículo.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Información de la API de traducción gestionada de SDL
 
@@ -63,7 +63,7 @@ El conector de traducción gestionada por SDL utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL básica</td> 
+   <td role="rowheader">Dirección URL base</td> 
    <td>https://languagecloud.sdl.com</td> 
   </tr>
   <tr> 
@@ -115,20 +115,20 @@ Este módulo obtiene el archivo `zip` de archivos traducidos para el proyecto es
 
 Este módulo obtiene el proyecto especificado.
 
-#### [!UICONTROL Get Projects at Status]
+#### [!UICONTROL Obtener proyectos en estado]
 
 Este módulo obtiene todos los proyectos disponibles en el estado especificado. Este método permite paginar los resultados especificando los parámetros de consulta `$top`, `$skip` y `$orderby`.
 
-#### [!UICONTROL Get Projects List]
+#### [!UICONTROL Obtener lista de proyectos]
 
 Obtiene una lista simple de todos los proyectos, proporcionando información general sobre cada proyecto. Este método permite que los resultados sean páginas especificando los parámetros de consulta `$top`, `$skip` y `$orderby`.
 
-#### [!UICONTROL Search Project Creation Options]
+#### [!UICONTROL Buscar opciones de creación de proyectos]
 
 Este módulo obtiene las opciones de creación de proyectos.
 
 ### Otro
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realizar una llamada de API]
 
 Este módulo realiza una llamada de API autorizada arbitraria.

@@ -1,19 +1,19 @@
 ---
 title: Protecciones de rendimiento de Fusion
-description: La automatización del trabajo requiere un procesamiento rápido, por lo que [!DNL Adobe Workfront Fusion] está diseñado para ofrecer un alto rendimiento. Dado que los escenarios de larga duración pueden ralentizar el ritmo de su trabajo, hemos diseñado  [!DNL Workfront Fusion] con protecciones que preservan el rendimiento y limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros de escenario. [!DNL Workfront Fusion] los diseñadores deben tener en cuenta estas protecciones e incorporarlas en sus prácticas de diseño.
+description: La automatización del trabajo requiere un procesamiento rápido, por lo que Adobe Workfront Fusion está diseñado para ofrecer un alto rendimiento. Como los escenarios de larga duración pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con protecciones que preservan el rendimiento y limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros de escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estas protecciones e incorporarlas en sus prácticas de diseño.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 50%
+source-wordcount: '1104'
+ht-degree: 38%
 
 ---
 
 # Protecciones de rendimiento Fusion
 
-La automatización del trabajo requiere un procesamiento rápido, por lo que [!DNL Adobe Workfront Fusion] está diseñado para ofrecer un alto rendimiento. Como los escenarios de larga duración pueden ralentizar el ritmo de su trabajo, [!DNL Workfront Fusion] se ha diseñado con protecciones que preservan el rendimiento y que limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros de escenario. Los diseñadores de escenarios de [!DNL Workfront Fusion] deben tener en cuenta estas protecciones e incorporarlas en sus prácticas de diseño.
+La automatización del trabajo requiere un procesamiento rápido, por lo que Adobe Workfront Fusion está diseñado para ofrecer un alto rendimiento. Como los escenarios de larga duración pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con protecciones que preservan el rendimiento y limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros de escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estas protecciones e incorporarlas en sus prácticas de diseño.
 
 ## Navegadores
 
@@ -21,17 +21,17 @@ La automatización del trabajo requiere un procesamiento rápido, por lo que [!D
 
 ## Escenarios
 
-* El tiempo de espera de ejecución del escenario predeterminado es de **40 minutos**. Cuando la ejecución alcanza este tiempo de espera, [!DNL Workfront Fusion] interrumpe la ejecución del escenario después del siguiente ciclo u operación, según el escenario. Esto obliga al escenario a detenerse poco después de alcanzar el límite de 40 minutos
+* El tiempo de espera de ejecución del escenario predeterminado es de **40 minutos**. Cuando la ejecución alcanza este tiempo de espera, Workfront Fusion interrumpe la ejecución del escenario después del siguiente ciclo u operación, según el escenario. Esto obliga al escenario a detenerse poco después de alcanzar el límite de 40 minutos
 
   Encadenar escenarios no cuenta para el tiempo de espera de ejecución del escenario. Un escenario principal no acumula tiempo mientras espera a que se ejecute un escenario secundario.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
 
-   * Al usar la aplicación [!DNL Workfront], asegúrese de seleccionar solo los campos necesarios para los casos de uso de creación o actualización.
+   * Al utilizar la aplicación de Workfront, asegúrese de seleccionar solo los campos necesarios para los casos de uso de creación o actualización.
    * Cuando utilice otras aplicaciones, utilice módulos de API personalizados para interactuar con cualquier tipo de registro que tenga un gran número de campos.
 
-* Aunque no hay límite para el número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento del sistema [!DNL Workfront Fusion]. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
+* Aunque no hay límite para el número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento de su sistema Workfront Fusion. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
 
 ## Operaciones
 
@@ -60,7 +60,7 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 
 * El tamaño máximo predeterminado de una carga útil es de **5 MB**.
 * Los enlaces web están limitados a **100 solicitudes por segundo**. Cuando se alcanza este límite, Workfront Fusion envía un estado 429 ([!UICONTROL Demasiadas solicitudes]).
-* [!DNL Workfront Fusion] almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de webhook más de 30 días después de recibirla provoca el error “[!UICONTROL No se pudo leer el archivo desde el almacenamiento.]”
+* Workfront Fusion almacena las cargas útiles de los ganchos web durante 30 días. Acceder a una carga útil de webhook más de 30 días después de recibirla provoca el error “[!UICONTROL No se pudo leer el archivo desde el almacenamiento.]”
 * Los webhooks se desactivan automáticamente si se aplica cualquiera de las siguientes opciones:
 
    * El webhook no ha estado conectado a ningún escenario durante más de 5 días

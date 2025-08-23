@@ -4,16 +4,16 @@ description: Las funciones de organización y equipos de Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
 
-# Información general de [!DNL Adobe Workfront Fusion] organizaciones y equipos
+# Información general sobre organizaciones y equipos de Adobe Workfront Fusion
 
-Las características de organización y equipos de [!DNL Adobe Workfront Fusion] permiten a las empresas controlar el acceso a escenarios y otras características dentro de Fusion.
+Las funciones de organización y equipos de Adobe Workfront Fusion permiten a las empresas controlar el acceso a escenarios y otras funciones dentro de Fusion.
 
 Una organización es la entidad más grande de Adobe Workfront Fusion. Por ejemplo, su organización de Fusion puede representar la cuenta de Fusion para toda la compañía.
 
@@ -23,7 +23,7 @@ Para obtener instrucciones sobre cómo crear un equipo, consulte [Crear un equip
 
 ## Organizaciones
 
-[!DNL Workfront Fusion] usuarios pertenecen a una organización.
+Los usuarios de Workfront Fusion pertenecen a una organización.
 
 Los usuarios deben añadirse a una organización antes de que se añadan a un equipo.
 
@@ -33,7 +33,7 @@ Un usuario tiene una de las siguientes funciones en una organización:
 
 * **[!UICONTROL Propietario]**: el propietario tiene todos los permisos disponibles en la organización.
 * **[!UICONTROL Administrador]**: los administradores pueden crear y administrar equipos y usuarios para la organización, así como aprobar plantillas.
-* **[!UICONTROL Miembro]**: Los miembros pueden usar [!DNL Workfront Fusion], pero no pueden realizar cambios organizativos.
+* **[!UICONTROL Miembro]**: Los miembros pueden usar Workfront Fusion pero no pueden realizar cambios organizativos.
 * **[!UICONTROL Contador]**: los contables pueden ver información de licencia en el panel de organización, pero no pueden realizar ninguna acción.
 * **[!UICONTROL Desarrollador de aplicaciones]**: la funcionalidad de esta función no está disponible actualmente y estará disponible en un futuro próximo. No se recomienda asignar usuarios a esta función en este momento.
 
@@ -53,7 +53,7 @@ Los equipos son grupos de usuarios que comparten el acceso a recursos específic
 
 >[!NOTE]
 >
->Como los equipos comparten recursos, a veces resulta útil que un equipo tenga solo un miembro. Por ejemplo, los usuarios en formación pueden crear conexiones con sus cuentas individuales de [!DNL Workfront]. Los integrantes del equipo también podrían conectarse a la cuenta individual de [!DNL Workfront]. En este caso, recomendamos que el usuario sea el único miembro de un equipo de formación.
+>Como los equipos comparten recursos, a veces resulta útil que un equipo tenga solo un miembro. Por ejemplo, los usuarios en formación pueden crear conexiones con sus cuentas de Workfront individuales. Los integrantes del equipo también podrían conectarse a la cuenta de Workfront individual. En este caso, recomendamos que el usuario sea el único miembro de un equipo de formación.
 
 Las organizaciones pueden tener tantos equipos como necesiten y los usuarios pueden pertenecer a uno o más equipos.
 

@@ -4,16 +4,16 @@ description: Puede ver y administrar las conexiones de sus equipos en el área C
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 66%
 
 ---
 
 # Eliminar elementos de escenario
 
-Puede almacenar y eliminar elementos de escenario en las siguientes áreas de su cuenta de [!DNL Adobe Workfront Fusion]:
+Puede almacenar y eliminar elementos de escenarios en las siguientes áreas de su cuenta de Adobe Workfront Fusion:
 
 * [!UICONTROL escenario]
 * [!UICONTROL Conexiones]
@@ -53,9 +53,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan Select or Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan Select or Prime Workfront: su organización debe comprar Adobe Workfront Fusion.</li><li>Plan Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 

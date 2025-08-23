@@ -4,16 +4,16 @@ description: Los módulos CSV de Adobe Workfront Fusion le permiten crear archiv
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 38%
+source-wordcount: '957'
+ht-degree: 50%
 
 ---
 
 # CSV
 
-Los módulos [!DNL Adobe Workfront Fusion] [!UICONTROL CSV] le permiten crear archivos CSV y analizar texto CSV a partir de un valor de texto recibido o un archivo.
+Los módulos de Adobe Workfront Fusion [!UICONTROL CSV] le permiten crear archivos CSV y analizar texto CSV a partir de un valor de texto recibido o un archivo.
 
 Como se trata de un transformador, estos módulos no requieren una conexión.
 
@@ -46,7 +46,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,13 +54,13 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## [!UICONTROL Create CSV]
+## [!UICONTROL Crear CSV]
 
-El Agregador [!UICONTROL Create CSV] le permite crear un texto csv a partir de valores de texto recibidos.
+El agregador [!UICONTROL Crear CSV] le permite crear un texto CSV a partir de valores de texto recibidos.
 
 Para obtener más información sobre los agregadores, consulte [Módulo de agregador](/help/workfront-fusion/references/modules/aggregator-module.md).
 
@@ -87,9 +87,9 @@ Para obtener más información sobre los agregadores, consulte [Módulo de agreg
     </tr>
 </table>
 
-## [!UICONTROL Create CSV (advanced)]
+## [!UICONTROL Crear CSV (avanzado)]
 
-El acumulador [!UICONTROL Create CSV (advanced)] le permite crear un texto CSV a partir de valores de texto recibidos. Emplea una estructura de datos que define las columnas CSV en el archivo CSV resultante. Una vez definidas, las columnas aparecen como campos en la configuración del módulo CSV y se pueden asignar a módulos posteriores en el escenario.
+El acumulador [!UICONTROL Crear CSV (avanzado)] le permite crear un texto CSV a partir de valores de texto recibidos. Emplea una estructura de datos que define las columnas CSV en el archivo CSV resultante. Una vez definidas, las columnas aparecen como campos en la configuración del módulo CSV y se pueden asignar a módulos posteriores en el escenario.
 
 Para obtener más información sobre los agregadores, consulte [Módulo de agregador](/help/workfront-fusion/references/modules/aggregator-module.md).
 
@@ -125,10 +125,10 @@ Para obtener más información sobre los agregadores, consulte [Módulo de agreg
 
 **Ejemplo**:
 
-Este ejemplo muestra cómo exportar contactos de Google a un archivo CSV con dos columnas denominadas &quot;Full Name&quot; y &quot;Email&quot;. El paquete de salida del módulo [!UICONTROL Google Contacts] > [!UICONTROL Get contacts from a group] tiene la siguiente estructura. Las direcciones de correo electrónico se almacenan dentro de <code>[!UICONTROL Emails[]]</code> elemento, que es una matriz de colecciones, cada colección contiene dos elementos: <code>Label</code> y <code>correo electrónico</code>.
+Este ejemplo muestra cómo exportar contactos de Google a un archivo CSV con dos columnas denominadas &quot;Full Name&quot; y &quot;Email&quot;. El paquete de salida del módulo [!UICONTROL Contactos de Google] > [!UICONTROL Obtener contactos de un grupo] tiene la siguiente estructura. Las direcciones de correo electrónico se almacenan dentro de <code>[!UICONTROL Correos electrónicos[]]</code> elemento, que es una matriz de colecciones, cada colección contiene dos elementos: <code>Label</code> y <code>correo electrónico</code>.
 ![Transformando](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
-El módulo [!DNL Create CSV] simple ofrece una lista de casillas de verificación correspondientes a los elementos de nivel superior de un paquete. Si intenta seleccionar <code>Nombre completo</code> y <code>correos electrónicos</code> elementos, el módulo [!UICONTROL Create CSV] produce el siguiente resultado, que puede no ser el que desea:
+El módulo [!DNL Create CSV] simple ofrece una lista de casillas de verificación correspondientes a los elementos de nivel superior de un paquete. Si intenta seleccionar <code>Nombre completo</code> y <code>correos electrónicos</code> elementos, el módulo [!UICONTROL Crear CSV] produce el siguiente resultado, que puede no ser el que desea:
 
 ```
 "emails","fullName"
@@ -143,15 +143,15 @@ Debido a que el elemento <code>Nombre completo</code> es de tipo texto simple, s
 Para obtener más información, vea [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
 
-Para exportar el contenido de <code>correo electrónico </code>elemento de la primera colección de <code>correos electrónicos[]</code> en su lugar, debe utilizar el módulo [!UICONTROL Create CSV (advanced)]. Este módulo le permite definir columnas individuales del archivo CSV y asignarles elementos, incluidos los anidados.
+Para exportar el contenido de <code>correo electrónico </code>elemento de la primera colección de <code>correos electrónicos[]</code> en su lugar, debe usar el módulo [!UICONTROL Crear CSV (avanzado)]. Este módulo le permite definir columnas individuales del archivo CSV y asignarles elementos, incluidos los anidados.
 
-1. Inserte el módulo [!UICONTROL Create CSV (advanced)] en un escenario.
-1. Haga clic en el botón <strong>[!UICONTROL Add]</strong> junto al campo [!UICONTROL Data structure] para crear una nueva estructura de datos.
-1. Escriba un nombre para la estructura de datos y haga clic en <strong>[!UICONTROL Add item]</strong> para agregar las columnas individuales. Para exportar dos columnas: &quot;Nombre completo&quot; y &quot;Correo electrónico&quot;, la estructura de datos resultante tendría este aspecto:
+1. Inserte el módulo [!UICONTROL Crear CSV (avanzado)] en un escenario.
+1. Haga clic en el botón <strong>[!UICONTROL Agregar]</strong> junto al campo [!UICONTROL Estructura de datos] para crear una nueva estructura de datos.
+1. Escriba un nombre para la estructura de datos y haga clic en <strong>[!UICONTROL Agregar elemento]</strong> para agregar las columnas individuales. Para exportar dos columnas: &quot;Nombre completo&quot; y &quot;Correo electrónico&quot;, la estructura de datos resultante tendría este aspecto:
 
    ![Salida de contactos de Google](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
-1. Una vez definida la estructura de datos, los campos correspondientes a cada columna individual aparecen en la configuración del módulo [!UICONTROL Create CSV (advanced)] para que pueda asignar los elementos. Tomar el primer elemento de <code>[!UICONTROL Emails[]]</code> matriz y asignar su elemento <code>Correo electrónico </code>Vaya al campo/columna Correo electrónico:
+1. Después de definir la estructura de datos, los campos correspondientes a cada columna individual aparecen en la configuración del módulo [!UICONTROL Crear CSV (avanzado)] para que pueda asignar los elementos. Tomar el primer elemento de los <code>[!UICONTROL correos electrónicos[]]</code> matriz y asignar su elemento <code>Correo electrónico </code>Vaya al campo/columna Correo electrónico:
 
    ![Crear módulo avanzado de CSV](/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png)
 
@@ -167,9 +167,9 @@ Para exportar el contenido de <code>correo electrónico </code>elemento de la pr
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL Parse CSV]
+## [!UICONTROL Analizar CSV]
 
-El transformador [!UICONTROL Parse CSV] le permite analizar texto CSV desde un valor de texto recibido o un archivo.
+El transformador [!UICONTROL Analizar CSV] permite analizar texto CSV a partir de un valor de texto o un archivo recibidos.
 
 <table style="table-layout:auto">
  <col> 
@@ -198,7 +198,7 @@ El transformador [!UICONTROL Parse CSV] le permite analizar texto CSV desde un v
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>Introduzca o asigne el archivo CSV que desea analizar.<p>Nota: <p>Si los datos vienen en formato binario (normalmente de un archivo), debe utilizar la función "toString()" para convertir los datos binarios a [!UICONTROL String]:</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td>Introduzca o asigne el archivo CSV que desea analizar.<p>Nota: <p>Si los datos vienen en formato binario (normalmente de un archivo), debe utilizar la función “toString()” para convertir los datos binarios a [!UICONTROL String]:</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

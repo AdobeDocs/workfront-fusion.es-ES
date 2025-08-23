@@ -4,10 +4,10 @@ description: Puede asignar una matriz o elementos de matriz individuales a un ca
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 24%
+source-wordcount: '920'
+ht-degree: 29%
 
 ---
 
@@ -22,7 +22,7 @@ Una matriz es un elemento de paquete que puede contener lo siguiente:
 
 **Ejemplo:**
 
-* **Matriz compleja**: El módulo [!UICONTROL Watch emails] devuelve una matriz de archivos adjuntos para cada correo electrónico. Cada archivo adjunto representa una colección que puede contener un nombre, contenido, tamaño, etc.
+* **Matriz compleja**: El módulo [!UICONTROL Ver correos electrónicos] devuelve una matriz de archivos adjuntos para cada correo electrónico. Cada archivo adjunto representa una colección que puede contener un nombre, contenido, tamaño, etc.
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -55,9 +55,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Asignar una matriz completa
 
-1. Haga clic en la ficha **[!UICONTROL Scenarios]** en el panel izquierdo.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea asignar una matriz.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. En el módulo al que desee asignar la matriz, haga clic en el campo donde desee asignar la matriz. Este es el campo al que está asignada la matriz.
 
 1. En el cuadro que aparece, asigne el elemento.
 
-   El panel le permite asignar campos del mismo modo que con cualquier otro tipo de elemento. Si no desea rellenar cada elemento por separado pero desea asignar otra matriz al campo de destino, utilice el botón [!UICONTROL Map]. En este caso, asegúrese de que ambas matrices (la matriz de origen y la de destino) tienen la misma estructura.
+   El panel le permite asignar campos del mismo modo que con cualquier otro tipo de elemento. Si no desea rellenar cada elemento por separado, pero desea asignar otra matriz al campo de destino, utilice el botón [!UICONTROL Asignar]. En este caso, asegúrese de que ambas matrices (la matriz de origen y la de destino) tienen la misma estructura.
 
    Puede añadir cualquier número de elementos a una matriz.
 
-Puede dividir una matriz en paquetes individuales mediante un iterador. Para obtener más información, vea el módulo [[!UICONTROL Iterator] en  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md).
+Puede dividir una matriz en paquetes individuales mediante un iterador. Para obtener más información, consulte el módulo [[!UICONTROL Iterator] en Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Asignar elementos a una nueva matriz
 
@@ -151,7 +151,7 @@ La fórmula se puede explicar de la siguiente manera:
 * `map`
 
    1. El primer parámetro de la función `map()` es todo el elemento de matriz.
-   1. El segundo parámetro es el nombre sin procesar del elemento de valor. Para obtener el nombre sin procesar, pase el ratón sobre el elemento del panel [!UICONTROL mapping]:
+   1. El segundo parámetro es el nombre sin procesar del elemento de valor. Para obtener el nombre sin procesar, pase el puntero por encima del elemento del panel de [!UICONTROL asignación]:
 
       ![Obtener nombre sin procesar](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Para obtener más información acerca de la función `get()`, vea [Funciones gen
 
 ## Conversión de elementos de matriz en una serie de paquetes
 
-Las matrices se pueden convertir en una serie de paquetes mediante el módulo [!UICONTROL Iterator]. Para obtener más información, consulte [[!UICONTROL Iterator] módulo](/help/workfront-fusion/references/modules/iterator-module.md).
+Las matrices se pueden convertir en una serie de paquetes mediante el módulo [!UICONTROL Repetidor]. Para obtener más información, consulte [[!UICONTROL Iterator] module](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Serie de paquetes](assets/series-of-bundles.png)

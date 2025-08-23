@@ -1,19 +1,19 @@
 ---
 title: Módulos Datadog
-description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede automatizar los flujos de trabajo que utilizan Datadog, así como conectarlo a distintas aplicaciones y servicios de terceros.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Datadog, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 77%
+source-wordcount: '948'
+ht-degree: 65%
 
 ---
 
 # Módulos de [!DNL Datadog]
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Datadog], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Datadog], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -50,7 +50,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -81,11 +81,11 @@ El conector Datadog utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Conectar [!DNL Datadog] a [!DNL Workfront Fusion] {#connect-datadog-to-workfront-fusion}
+## Conexión de [!DNL Datadog] a Workfront Fusion {#connect-datadog-to-workfront-fusion}
 
 ### Recupere la clave de API y la clave de aplicación {#retrieve-your-api-key-and-application-key}
 
-Para conectar su cuenta de [!DNL Datadog] a [!DNL Workfront Fusion], debe recuperar una clave de API y una clave de aplicación de su cuenta de [!DNL Datadog].
+Para conectar su cuenta de [!DNL Datadog] a Workfront Fusion, debe recuperar una clave de API y una clave de aplicación de su cuenta de [!DNL Datadog].
 
 1. Inicie sesión en su cuenta de [!DNL Datadog].
 1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Integraciones]** y luego en **[!UICONTROL API]**.
@@ -96,7 +96,7 @@ Para conectar su cuenta de [!DNL Datadog] a [!DNL Workfront Fusion], debe recupe
 1. Pase el puntero por encima de la barra morada para mostrar la clave de la aplicación.
 1. Copie la clave de la aplicación en una ubicación segura.
 
-### Crear una conexión con [!DNL Datadog] en [!DNL Workfront Fusion]
+### Crear una conexión con [!DNL Datadog] en Workfront Fusion
 
 Puede crear una conexión con su cuenta de [!DNL Datadog] directamente desde un módulo [!UICONTROL Datadog].
 
@@ -124,7 +124,7 @@ Puede crear una conexión con su cuenta de [!DNL Datadog] directamente desde un 
       <td> <p>Seleccione el dominio al que desea conectarse (EE. UU. o UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Ubicación de la clave API  </td> 
+      <td role="rowheader">Ubicación de la clave API [!UICONTROL] </td> 
       <td> <p>Seleccione si desea incluir la clave de API en el encabezado o en la cadena de consulta.</p> </td> 
      </tr> 
      <tr> 
@@ -138,7 +138,7 @@ Puede crear una conexión con su cuenta de [!DNL Datadog] directamente desde un 
 
 ## Módulos de [!DNL Datadog] y sus campos
 
-Al configurar módulos de [!DNL Datadog], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Datadog] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Datadog], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Datadog] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -159,7 +159,7 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Datadog] a [!DNL Workfront Fusion], consulte <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Datadog] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Datadog] a Workfront Fusion, consulte <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Datadog] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Utilizar dominio dedicado]</td> 
@@ -217,7 +217,7 @@ El límite para las cargas útiles comprimidas es de 3,2 MB (3200000) y de 62 MB
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Datadog] a [!DNL Workfront Fusion], consulte <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Datadog] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Datadog] a Workfront Fusion, consulte <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Datadog] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

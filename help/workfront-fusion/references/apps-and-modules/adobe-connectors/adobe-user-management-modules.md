@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Módulos de administración de usuarios de Adobe
-description: En un  [!DNL Adobe Workfront Fusion] escenario, puede automatizar los flujos de trabajo que administran usuarios en su cuenta de Adobe.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que administran a los usuarios en su cuenta de Adobe.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 18%
+source-wordcount: '2417'
+ht-degree: 16%
 
 ---
 
 # Módulos de administración de usuarios de Adobe
 
-En un escenario de [!DNL Adobe Workfront Fusion], puede automatizar los flujos de trabajo que administran a los usuarios en su cuenta de Adobe.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que administran a los usuarios en su cuenta de Adobe.
 
 Si necesita instrucciones sobre cómo crear un escenario, vea los artículos en [Crear un escenario: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -34,35 +34,35 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Plan de Adobe Workfront*</td>
   <td> <p>[!UICONTROL Pro] o superior</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia*</td>
+   <td role="rowheader">Licencia de Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere ninguna licencia de [!DNL Workfront Fusion].</p>
+   <p>Requisito de licencia actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Requisito de licencia heredado: [!UICONTROL Workfront Fusion for Work Automation and Integration], [!UICONTROL Workfront Fusion for Work Automation]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito de producto actual: si tiene el plan [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], su organización debe adquirir [!DNL Adobe Workfront Fusion] así como [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo. [!DNL Workfront Fusion] está incluido en el plan [!DNL Workfront] de [!UICONTROL Ultimate].</p>
+   <p>Requisito actual del producto: si tiene el plan de Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], su organización debe adquirir Adobe Workfront Fusion y Adobe Workfront para utilizar la funcionalidad que se describe en este artículo. Workfront Fusion está incluido en el plan de Workfront de [!UICONTROL Ultimate].</p>
    <p>O</p>
-   <p>Requisito de productos heredados: su organización debe comprar [!DNL Adobe Workfront Fusion] y [!DNL Adobe Workfront] para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Requisito de productos heredados: su organización debe adquirir Adobe Workfront Fusion así como Adobe Workfront para utilizar la funcionalidad descrita en este artículo.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de [!DNL Workfront].
+Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -189,7 +189,7 @@ Este módulo de búsqueda recupera una lista de todos los usuarios del grupo de 
    <td>Para obtener instrucciones sobre cómo crear una conexión con Administración de usuarios de Adobe, consulte <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Crear una conexión con Administración de usuarios de Adobe</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nombre del grupo</td> 
+   <td role="rowheader">Nombre de grupo</td> 
    <td>El grupo de usuarios, el nombre del perfil de producto o un grupo administrativo. Para un grupo de administración, el nombre puede ser uno de los grupos fijos <code>_org_admin</code>, <code>_deployment_admin</code> o <code>_support_admin</code>; o un grupo de administración específico de un grupo. Se identifican con un prefijo en el nombre del grupo, como <code>_admin_groupName</code>, <code>_product_admin_productName</code> o <code>_developer_groupName</code>. Si el grupo existe pero el grupo de administradores no, se devuelve una lista vacía.</td> 
   </tr> 
   <tr> 
@@ -413,7 +413,7 @@ Este módulo de acción agrega usuarios y perfiles de producto a un grupo de usu
    <td>Para obtener instrucciones sobre cómo crear una conexión con Administración de usuarios de Adobe, consulte <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Crear una conexión con Administración de usuarios de Adobe</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nombre del grupo</td> 
+   <td role="rowheader">Nombre de grupo</td> 
    <td>Introduzca o asigne un nombre al grupo del que desee quitar los usuarios o perfiles.</td> 
   </tr> 
   <tr> 
@@ -440,7 +440,7 @@ Este módulo de acción crea un nuevo grupo de usuarios. Si ya existe un grupo c
    <td>Para obtener instrucciones sobre cómo crear una conexión con Administración de usuarios de Adobe, consulte <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Crear una conexión con Administración de usuarios de Adobe</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nombre del grupo</td> 
+   <td role="rowheader">Nombre de grupo</td> 
    <td>Introduzca o asigne un nombre para el nuevo grupo de usuarios.</td> 
   </tr> 
   <tr> 
@@ -467,7 +467,7 @@ Este módulo de acción elimina un grupo de usuarios existente.
    <td>Para obtener instrucciones sobre cómo crear una conexión con Administración de usuarios de Adobe, consulte <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Crear una conexión con Administración de usuarios de Adobe</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nombre del grupo</td> 
+   <td role="rowheader">Nombre de grupo</td> 
    <td>Introduzca o asigne el nombre del grupo que desea eliminar.</td> 
   </tr> 
  </tbody> 
@@ -486,7 +486,7 @@ Este módulo de acción elimina usuarios o perfiles de un grupo de usuarios.
    <td>Para obtener instrucciones sobre cómo crear una conexión con Administración de usuarios de Adobe, consulte <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Crear una conexión con Administración de usuarios de Adobe</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nombre del grupo</td> 
+   <td role="rowheader">Nombre de grupo</td> 
    <td>Introduzca o asigne un nombre al grupo del que desee quitar los usuarios o perfiles.</td> 
   </tr> 
   <tr> 
@@ -565,7 +565,7 @@ Este módulo de acción realiza una llamada personalizada a la API de administra
       <td>
         <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p>
         <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] añade automáticamente encabezados de autorización y encabezados x-api-key.</p>
+        <p>Workfront Fusion añade automáticamente encabezados de autorización y encabezados x-api-key.</p>
       </td>
     </tr>
     <tr>

@@ -1,13 +1,13 @@
 ---
 title: Información general sobre escenarios
-description: Detalles del escenario en  [!DNL Adobe Workfront Fusion]
+description: Detalles del escenario en Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 20%
+source-wordcount: '620'
+ht-degree: 22%
 
 ---
 
@@ -30,17 +30,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -48,16 +48,16 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configuraciones de nivel de acceso*</td> 
    <td> 
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su organización.</p>
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su equipo.</p>
+     <p>Debe ser administrador de Workfront Fusion para su organización.</p>
+     <p>Debe ser administrador de Workfront Fusion para su equipo.</p>
    </td> 
   </tr> 
    </td> 
@@ -67,13 +67,13 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Abrir la página [!UICONTROL Scenario detail]:
+## Abrir la página [!UICONTROL Detalles del escenario]:
 
-1. Haga clic en la ficha **[!UICONTROL Scenario]** en el panel izquierdo y, a continuación, haga clic en un escenario sobre el que desee obtener detalles.
+1. Haga clic en la pestaña **[!UICONTROL Escenario]** en el panel izquierdo y, a continuación, haga clic en un escenario sobre el que desea obtener detalles.
 
    O
 
@@ -88,16 +88,16 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Modules diagram] </td> 
+      <td role="rowheader">[!UICONTROL Diagrama de módulos] </td> 
       <td>Esta pestaña muestra la representación visual del escenario. El diagrama es el mismo que verá en el editor de escenarios.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Reports] pestaña </td> 
+      <td role="rowheader">Ficha [!UICONTROL Reports] </td> 
       <td> <p>Abra esta pestaña para ver un gráfico del número de operaciones realizadas por este escenario durante los últimos 30 días.</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL History] pestaña </td> 
-      <td> <p>Abra esta pestaña para ver el historial del escenario, incluidas las ediciones realizadas en él. </p> <p>La pestaña [!UICONTROL History] también proporciona el historial de ejecución de escenario de cada ejecución, que incluye lo siguiente:</p> 
+      <td role="rowheader">Ficha [!UICONTROL History] </td> 
+      <td> <p>Abra esta pestaña para ver el historial del escenario, incluidas las ediciones realizadas en él. </p> <p>La pestaña [!UICONTROL History] también proporciona el historial de ejecución de cada ejecución, que incluye lo siguiente:</p> 
        <ul> 
         <li>Estado de cada ejecución (éxito o error)</li> 
         <li>Duración de ejecución</li> 
@@ -107,7 +107,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Incomplete executions]</td> 
+      <td role="rowheader">[!UICONTROL Ejecuciones incompletas]</td> 
       <td> <p>Esta pestaña proporciona información sobre cualquier ejecución incompleta del escenario. Incluye la siguiente información para cada ejecución incompleta:</p> 
        <ul> 
         <li>Fecha de creación</li> 
@@ -118,7 +118,7 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Activate scenario] (Botón de activación/desactivación)</td> 
+      <td role="rowheader">[!UICONTROL Activar escenario] (botón Encendido/Apagado)</td> 
       <td>Una vez creado un escenario, debe activarse para que se ejecute según su programación. Al hacer clic en el botón Activado/Desactivado cerca de la esquina superior derecha, puede activar o desactivar el escenario. Una vez activado, el escenario se ejecuta según su programación.</td> 
      </tr> 
      <tr> 
@@ -127,20 +127,20 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Options]</td> 
-      <td> <p>Este menú le proporciona opciones adicionales sin tener que abrir el editor de escenarios. Estos incluyen:</p> 
+      <td> <p>Este menú le proporciona opciones adicionales sin tener que abrir el editor de escenarios. Se incluyen:</p> 
        <ul> 
-        <li>[!UICONTROL Scheduling]</li> 
-        <li>[!UICONTROL Rename]</li> 
+        <li>[!UICONTROL Programación]</li> 
+        <li>[!UICONTROL Cambiar nombre]</li> 
         <li>[!UICONTROL Clone]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Currently running]</td> 
+      <td role="rowheader">[!UICONTROL En ejecución]</td> 
       <td>Esta área muestra información relacionada con la ejecución que se está ejecutando.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL History] panel</p> <p> </p> </td> 
+      <td role="rowheader"> <p>Panel [!UICONTROL History]</p> <p> </p> </td> 
       <td> <p>Esta área muestra información relacionada con las últimas ejecuciones del escenario. Para cada ejecución, se muestra:</p> 
        <ul> 
         <li>Fecha de ejecución</li> 
@@ -151,11 +151,11 @@ Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consult
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Events] panel</p>  </td> 
+      <td role="rowheader"> <p>Panel [!UICONTROL Events]</p>  </td> 
       <td>Esta área muestra información sobre los eventos relacionados con el escenario.  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Processing banner]</p>  </td>
+      <td role="rowheader"> <p>[!UICONTROL Banner de procesamiento]</p>  </td>
 
    <td>Si el escenario se ha ejecutado recientemente, puede ver un titular que dice:<p><code>Data is still being processed. Only partial scenario history will show until processing is complete.</code></p>Esto aparece mientras los detalles de ejecución se escriben en el almacenamiento. El procesamiento se produce inmediatamente después de que se ejecute el escenario. y no debe durar más de unos minutos. Es posible que los detalles de la ejecución del escenario no estén visibles mientras se procesa la ejecución.</td> 
      </tr> 

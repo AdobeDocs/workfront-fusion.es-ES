@@ -1,13 +1,13 @@
 ---
 title: Módulos de software Jira
-description: En un escenario de  [!DNL Adobe Workfront Fusion]  puede automatizar los flujos de trabajo que utilizan  [!DNL Jira] Software, así como conectarlo a varias aplicaciones y servicios de terceros.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan  [!DNL Jira] Software, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 80%
+source-wordcount: '2324'
+ht-degree: 65%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 80%
 >
 >Estas instrucciones se aplican a los conectores heredados de Jira Cloud y Jira Server. Para obtener instrucciones acerca de la nueva versión del conector Jira, que simplemente se denomina Jira, consulte [Módulos Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Jira Software], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Jira Software], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 Estas instrucciones se aplican tanto a los módulos de Jira Cloud como al servidor Jira.
 
@@ -64,7 +64,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -103,18 +103,18 @@ El conector Jira utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]
+## Conexión de [!DNL Jira Software] a Workfront Fusion
 
 El método de conexión se basa en si se está usando [!DNL Jira Cloud] o [!DNL Jira Server].
 
 * [Conectar  [!DNL Jira Cloud]  a Workfront Fusion](#connect-jira-cloud-to-workfront-fusion)
-* [Conectar  [!DNL Jira Server]  a  [!DNL Workfront Fusion]](#connect-jira-server-to-workfront-fusion)
+* [Conectar  [!DNL Jira Server]  a Workfront Fusion](#connect-jira-server-to-workfront-fusion)
 
-### Conectar [!DNL Jira Cloud] a [!DNL Workfront Fusion]
+### Conexión de [!DNL Jira Cloud] a Workfront Fusion
 
-Conectar [!DNL Jira Cloud] a [!DNL Workfront Fusion]
+Conexión de [!DNL Jira Cloud] a Workfront Fusion
 
-Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], debe crear un token de API e insertarlo junto con la URL de servicio y el nombre de usuario en el campo [!UICONTROL Create a connection] de [!DNL Workfront Fusion].
+Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de API e insertarlo junto con su URL de servicio y nombre de usuario en el campo [!UICONTROL Crear una conexión] en Workfront Fusion.
 
 #### Crear un token de API en [!DNL Jira]
 
@@ -127,11 +127,11 @@ Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], debe crear un toke
    >
    >No se puede volver a ver el token después de cerrar este diálogo.
 1. Almacene el token generado en un lugar seguro.
-1. Continúe en [Configurar el token de API  [!DNL Jira]  en  [!DNL Workfront Fusion]](#configure-the-jira-api-token-in-workfront-fusion).
+1. Continúe con [Configuración del token de API [!DNL Jira] en Workfront Fusion](#configure-the-jira-api-token-in-workfront-fusion).
 
-#### Configurar el token de la API [!DNL Jira] en [!DNL Workfront Fusion]
+#### Configuración del token de la API [!DNL Jira] en Workfront Fusion
 
-1. En cualquier módulo de [!DNL Jira Cloud] en [!DNL Workfront Fusion], haga clic en **[!UICONTROL Añadir]** junto al campo [!UICONTROL conexión].
+1. En cualquier módulo de [!DNL Jira Cloud] en Workfront Fusion, haga clic en **[!UICONTROL Agregar]** junto al campo [!UICONTROL conexión].
 1. Especifique la siguiente información:
 
    * **Entorno**
@@ -142,13 +142,13 @@ Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], debe crear un toke
 
 1. Haga clic en [!UICONTROL Continue] para crear la conexión y volver al módulo.
 
-### Conectar [!DNL Jira Server] a [!DNL Workfront Fusion]
+### Conexión de [!DNL Jira Server] a Workfront Fusion
 
-Para autorizar una conexión entre [!DNL Workfront Fusion] y [!DNL Jira Server], necesita su clave de cliente, clave privada y URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
+Para autorizar una conexión entre Workfront Fusion y [!DNL Jira Server], necesita su clave de consumidor, clave privada y dirección URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
 
 * [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configuración de la aplicación cliente como consumidor en  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
-* [Creación de una conexión a  [!DNL Jira] Server o Jira Data Center en  [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+* [Crear una conexión con  [!DNL Jira] Server o Jira Data Center en Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### Generación de claves públicas y privadas para su conexión a [!DNL Jira]
 
@@ -238,15 +238,15 @@ Para adquirir una clave privada para la conexión de [!DNL Workfront Fusion Jira
    </table>
 
 1. Haga clic en **[!UICONTROL Continuar]**.
-1. Continúe para [Crear una conexión a  [!DNL Jira Server]  o a  [!DNL Jira Data Center]  en  [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+1. Continuar a [Crear una conexión con [!DNL Jira Server] o [!DNL Jira Data Center] en Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
-#### Crear una conexión a [!DNL Jira Server] o a [!DNL Jira Data Center] en [!DNL Workfront Fusion]
+#### Crear una conexión con [!DNL Jira Server] o [!DNL Jira Data Center] en Workfront Fusion
 
 >[!NOTE]
 >
 >Utilice la aplicación [!DNL Jira Server] para conectarse a [!DNL Jira Server] o a [!DNL Jira Data Center].
 
-1. En cualquier módulo de [!DNL Jira Server] en [!DNL Workfront Fusion], haga clic en **[!UICONTROL Añadir]** junto al campo [!UICONTROL conexión].
+1. En cualquier módulo de [!DNL Jira Server] en Workfront Fusion, haga clic en **[!UICONTROL Agregar]** junto al campo [!UICONTROL conexión].
 1. En el panel [!UICONTROL Crear una conexión], rellene los campos siguientes:
 
    <table style="table-layout:auto"> 
@@ -284,7 +284,7 @@ Para adquirir una clave privada para la conexión de [!DNL Workfront Fusion Jira
 
 ## Módulos de [!DNL Jira Software] y sus campos
 
-Al configurar módulos de [!DNL Jira Software], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Jira Software] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Jira Software], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Jira Software] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -310,7 +310,7 @@ Este módulo de activación inicia un escenario cuando se añade, actualiza o el
     <ol> 
      <li value="1">Haga clic en <strong>[!UICONTROL Add]</strong></li> 
      <li value="2">Introduzca un nombre para el webhook. </li> 
-     <li value="3"> <p>Seleccione la conexión que desea utilizar para su webhook. </p> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </li> 
+     <li value="3"> <p>Seleccione la conexión que desea utilizar para su webhook. </p> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </li> 
      <li value="4"> <p>Seleccione el tipo de registro que desea que vea el software:</p> 
       <ul> 
        <li>[!UICONTROL Comment] </li> 
@@ -345,7 +345,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sprint ID]</td> 
@@ -372,7 +372,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -401,7 +401,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -413,7 +413,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] añade los encabezados de autorización automáticamente.</p> </td> 
+   <td> <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion añade los encabezados de autorización para usted.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -443,7 +443,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -475,7 +475,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -500,7 +500,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -540,7 +540,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -579,7 +579,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -618,7 +618,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre la conexión de su cuenta de [!DNL Jira Software] a [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a [!DNL Workfront Fusion]</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 

@@ -1,25 +1,25 @@
 ---
 title: Módulos de archivo
-description: En un escenario de  [!DNL Adobe Workfront Fusion] , puede conectar un archivo, como un archivo comprimido, a varias aplicaciones y servicios de terceros. Por ejemplo, puede configurar un escenario que
+description: En el caso de Adobe Workfront Fusion, puede conectar un archivo, como un archivo comprimido, a varias aplicaciones y servicios de terceros. Por ejemplo, puede configurar un escenario que
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 84%
+source-wordcount: '560'
+ht-degree: 73%
 
 ---
 
 # Módulos de [!UICONTROL Archivo]
 
-En un escenario de [!DNL Adobe Workfront Fusion], puede usar un archivo, como un archivo comprimido, en su escenario, lo que le permite utilizarlo en sus automatizaciones o integraciones.
+En un escenario de Adobe Workfront Fusion, puede utilizar un archivo, como un archivo comprimido, en su escenario, lo que le permite utilizarlo en sus automatizaciones o integraciones.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Módulos de [!UICONTROL Archivo] y sus campos
 
-Al configurar los módulos de [!UICONTROL Archivo], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con ellos, podrían mostrarse campos adicionales de [!UICONTROL Archivo], según determinados factores como su nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos [!UICONTROL Archive], Workfront Fusion muestra los campos que se indican a continuación. Junto con ellos, podrían mostrarse campos adicionales de [!UICONTROL Archivo], según determinados factores como su nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

@@ -4,10 +4,10 @@ description: Las siguientes funciones de fecha y hora están disponibles en el p
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 92%
+source-wordcount: '1879'
+ht-degree: 90%
 
 ---
 
@@ -139,7 +139,7 @@ Esta función devuelve una nueva fecha con los segundos especificados en paráme
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -459,7 +459,7 @@ Si no se especifica ninguna unidad, la función devuelve la diferencia en milise
 
 #### Cómo calcular el enésimo día de la semana en un mes
 
-Esta sección está adaptada para [!DNL Workfront Fusion] de la página web [!DNL Exceljet] que explica cómo obtener el enésimo día de la semana de un mes.
+Esta sección está adaptada para Workfront Fusion desde la página web [!DNL Exceljet] que explica cómo obtener el enésimo día de la semana de un mes.
 
 Si necesita calcular una fecha correspondiente al enésimo día de la semana del mes (por ejemplo, primer martes, tercer viernes, etc.), puede utilizar la siguiente fórmula:
 

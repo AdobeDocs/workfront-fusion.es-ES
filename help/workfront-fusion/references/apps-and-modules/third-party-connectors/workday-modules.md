@@ -5,16 +5,16 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 51%
+source-wordcount: '1056'
+ht-degree: 47%
 
 ---
 
 # Módulos de [!DNL Workday]
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Workday], así como conectarlo a varias aplicaciones y servicios de terceros.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Workday], así como conectarlo a varias aplicaciones y servicios de terceros.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -51,7 +51,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,7 +59,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -80,7 +80,7 @@ El conector de Workday utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL básica</td> 
+   <td role="rowheader">Dirección URL base</td> 
    <td>https://{{connection.servicesUrl}}/api</td> 
   </tr>
   <tr> 
@@ -90,9 +90,9 @@ El conector de Workday utiliza lo siguiente:
  </tbody> 
  </table>
 
-## Conectar [!DNL Workday] a [!DNL Workfront Fusion]
+## Conexión de [!DNL Workday] a Workfront Fusion
 
-1. En cualquier módulo de [!DNL Workfront Fusion], haga clic en [!UICONTROL Añadir] junto al campo [!UICONTROL Conexión]
+1. En cualquier módulo de Workfront Fusion, haga clic en [!UICONTROL Agregar] junto al campo [!UICONTROL Conexión]
 
 2. Rellene los campos siguientes:
 
@@ -138,7 +138,7 @@ El conector de Workday utiliza lo siguiente:
 
 ## Módulos de [!DNL Workday] y sus campos
 
-Al configurar módulos de [!DNL Workday], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Workday] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Workday], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Workday] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -170,7 +170,7 @@ Este módulo de acción crea un único registro en [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a Workfront Fusion</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -199,7 +199,7 @@ Este módulo de acción elimina un único registro de [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a Workfront Fusion</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -235,7 +235,7 @@ El módulo devuelve el código de estado, junto con los encabezados y el cuerpo 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a Workfront Fusion</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -336,7 +336,7 @@ Este módulo de búsqueda recupera una lista de registros del tipo especificado.
       <tbody>
           <tr>
               <td role="rowheader">[!UICONTROL Connection]</td>
-              <td>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Workday] a [!DNL Workfront Fusion], vea <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a [!DNL Workfront Fusion]</a></td>
+              <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Workday] a Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] a Workfront Fusion</a></td>
           </tr>
           <tr>
               <td  role="rowheader">[!UICONTROL Record Type]</td>

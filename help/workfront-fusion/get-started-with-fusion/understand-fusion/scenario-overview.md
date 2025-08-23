@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 27%
+source-wordcount: '703'
+ht-degree: 21%
 
 ---
 
@@ -38,7 +38,7 @@ Un **escenario** es una serie de pasos automatizados creados por el usuario para
 
 Un escenario comienza con un **déclencheur**. El déclencheur inspecciona la existencia de datos nuevos y actualizados e inicia el escenario cuando se aplican determinadas condiciones configuradas en el módulo. Los déclencheur se pueden configurar para que inicien un escenario según una programación (sondeo) o siempre que se produzcan cambios en los datos (instantáneo).
 
-![Déclencheur](assets/scenario-trigger.png)
+![Activador](assets/scenario-trigger.png)
 
 ### Módulo
 
@@ -72,7 +72,7 @@ Expanda las siguientes secciones para ver escenarios de ejemplo y sus explicacio
 
 Workfront Fusion le permite automatizar flujos de trabajo simples o complejos dentro de Workfront, lo que ahorra tiempo y garantiza que el proceso se ejecute de forma coherente.
 
-En este ejemplo, el escenario se activa cuando un campo especificado cambia en una tarea o problema en [!DNL Workfront]. Cuando se activa, el escenario obtiene información del proyecto relacionado y crea una actualización adaptada para una persona asignada a una función específica en el proyecto.
+En este ejemplo, el escenario entra en déclencheur cuando un campo especificado cambia en una tarea o un problema en Workfront. Cuando se activa, el escenario obtiene información del proyecto relacionado y crea una actualización adaptada para una persona asignada a una función específica en el proyecto.
 
 ![Ejemplo de plantilla](assets/fusion-template-example.png)
 
@@ -86,9 +86,9 @@ En este ejemplo, el escenario se activa cuando un campo especificado cambia en u
 
 Workfront Fusion puede conectarse a otras aplicaciones y servicios web. Puede acceder, importar, manipular o exportar datos de otras aplicaciones, integrándolos con Workfront o entre sí.
 
-Muchas aplicaciones tienen conectores de [!DNL Workfront Fusion] dedicados. Si no hay ningún conector específico para la aplicación a la que desee acceder, puede utilizar los módulos HTTP o de la aplicación de Workfront SOAP Fusion para conectarse a la aplicación a través de su API.
+Muchas aplicaciones tienen conectores Workfront Fusion específicos. Si no hay ningún conector específico para la aplicación a la que desee acceder, puede utilizar los módulos HTTP o SOAP de Workfront Fusion para conectarse a la aplicación a través de su API.
 
-En este ejemplo, el escenario se activa cuando se añade un usuario a una hoja de cálculo de [!DNL Excel]. El escenario comprueba si el usuario está en [!DNL Workfront]. Si no es así, el escenario creará el usuario en [!DNL Workfront] y volverá a añadir su ID de usuario de Workfront a la hoja de cálculo.
+En este ejemplo, el escenario se activa cuando se añade un usuario a una hoja de cálculo de [!DNL Excel]. El escenario comprueba si el usuario está en Workfront. Si no es así, el escenario crea el usuario en Workfront y vuelve a añadir su ID de usuario de Workfront a la hoja de cálculo.
 
 ![Ejemplo de integración](assets/fusion-integration-example.png)
 
@@ -97,7 +97,7 @@ Para obtener una lista de conectores dedicados, consulte [Referencias de aplicac
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Workfront Fusion] puede conectarse a casi cualquier servicio web. Si la aplicación con la que desea trabajar no tiene un conector [!DNL Workfront Fusion] dedicado, utilice conectores universales para conectarse a la aplicación o al servicio.
+>Adobe Workfront Fusion puede conectarse a casi cualquier servicio web. Si la aplicación con la que desea trabajar no tiene un conector Workfront Fusion específico, puede utilizar conectores universales para conectarse a la aplicación o al servicio.
 >
 >Para obtener una lista de conectores universales, consulte [Conectores universales](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

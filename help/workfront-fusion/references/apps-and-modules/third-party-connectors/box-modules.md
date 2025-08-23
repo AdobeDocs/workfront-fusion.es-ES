@@ -1,19 +1,19 @@
 ---
 title: Módulos de Box
-description: En un escenario de [!DNL Adobe Workfront Fusion] puede automatizar los flujos de trabajo que usan Box, así como conectarlo a varias aplicaciones y servicios de terceros. monitoriza una carpeta especificada para comprobar si hay cambios en el archivo, modificar o eliminar archivos existentes, o cargar nuevos archivos en una carpeta.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Box y conectarlo a varias aplicaciones y servicios de terceros. monitoriza una carpeta especificada para comprobar si hay cambios en el archivo, modificar o eliminar archivos existentes, o cargar nuevos archivos en una carpeta.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 0ed33cbed2b8ed4ab2c89c86b7e8f37b2683ec75
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 33%
+source-wordcount: '1542'
+ht-degree: 29%
 
 ---
 
 # Módulos de Box
 
-En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Box], así como conectarlo a varias aplicaciones y servicios de terceros. monitoriza una carpeta especificada para comprobar si hay cambios en el archivo, modificar o eliminar archivos existentes, o cargar nuevos archivos en una carpeta.
+En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Box], así como conectarlo a varias aplicaciones y servicios de terceros. monitoriza una carpeta especificada para comprobar si hay cambios en el archivo, modificar o eliminar archivos existentes, o cargar nuevos archivos en una carpeta.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -38,9 +38,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Vigente: No hay requisito de licencia de Workfront Fusion</p>
+   <p>Actual: No se requiere licencia de Workfront Fusion</p>
    <p>O</p>
-   <p>Legado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
@@ -48,7 +48,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ El conector Box utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL básica</td> 
+   <td role="rowheader">Dirección URL base</td> 
    <td> https://api.box.com/2.0
     </td> 
   </tr> 
@@ -90,9 +90,9 @@ El conector Box utiliza lo siguiente:
 
 ## Módulos de [!DNL Box] y sus campos
 
-Al configurar módulos de [!DNL Box], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Box] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Box], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Box] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Información de mapa de una módulo a otra](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -106,7 +106,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Nuevo evento de carpeta](#new-folder-event)
 * [[!UICONTROL Ver archivos]](#watch-files)
 
-#### [!UICONTROL Nuevo evento Archivo]
+#### [!UICONTROL Nuevo evento de archivo]
 
 Este módulo de déclencheur instantáneo inicia un escenario cuando la acción seleccionada se produce en un archivo.
 
@@ -116,14 +116,14 @@ Este módulo de déclencheur instantáneo inicia un escenario cuando la acción 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Seleccione el webhook que desee utilizar para ver los mensajes salientes o agregue un webhook. </p><p>Para añadir un webhook, haga clic en <strong>[!UICONTROL añadir]</strong> e introduzca el nombre y la conexión del webhook, el archivo que desea ver y los desencadenadores que desea ver.</p> <p> Para obtener instrucciones sobre cómo conectar su [!UICONTROL Box] cuenta a [!UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectarse a un servicio: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Seleccione el webhook que desee utilizar para ver los mensajes salientes o agregue un webhook. </p><p>Para agregar un webhook, haga clic en <strong>[!UICONTROL Agregar]</strong> e introduzca el nombre y la conexión del webhook, el archivo que desea ver y los déclencheur que desea ver.</p> <p> Para obtener instrucciones acerca de cómo conectar su cuenta de [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectarse a un servicio: instrucciones básicas</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Nuevo Carpeta evento
+#### Nuevo evento de carpeta
 
-Esta módulo de activación instantánea inicia un escenario cuando la acción de selección ocurre en la carpeta.
+Este módulo de déclencheur instantáneo inicia un escenario cuando la acción de selección se produce en la carpeta.
 
 <table style="table-layout:auto">
  <col> 
@@ -131,7 +131,7 @@ Esta módulo de activación instantánea inicia un escenario cuando la acción d
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Seleccione el webhook que desea usar para ver los mensajes salientes o agregue un webhook. </p><p>Para agregar un webhook, haga clic en <strong>[!UICONTROL Agregar]</strong> e introduzca el nombre y la conexión del webhook, la carpeta que desea ver y los déclencheur que desea ver.</p> <p> Para obtener instrucciones acerca de cómo conectar su cuenta de [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectarse a un servicio: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Seleccione el webhook que desee utilizar para ver los mensajes salientes o agregue un webhook. </p><p>Para agregar un webhook, haga clic en <strong>[!UICONTROL Agregar]</strong> e introduzca el nombre y la conexión del webhook, la carpeta que desea ver y los déclencheur que desea ver.</p> <p> Para obtener instrucciones acerca de cómo conectar su cuenta de [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectarse a un servicio: instrucciones básicas</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -146,7 +146,7 @@ Este módulo de activación se inicia cuando se añade un archivo nuevo o se act
  <tbody> 
   <tr> 
    <td role="rowheader">Conexión</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Box] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Box] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
   <tr> 
    <td role="rowheader">Ver en carpeta</td> 
    <td> <p>Seleccione la carpeta que desee ver. Un escenario puede ver una sola carpeta.</p> 
@@ -174,8 +174,8 @@ Este módulo de activación se inicia cuando se añade un archivo nuevo o se act
 * [[!UICONTROL Update a file]](#update-a-file)
 * [[!UICONTROL Upload] a file](#upload-a-file)-->
 * [Crear una carpeta](#create-a-folder)
-* [Obtenga una Carpeta](#get-a-folder)
-* [Obtener metadatos de Carpeta](#get-folder-metadata)
+* [Obtener una carpeta](#get-a-folder)
+* [Obtener metadatos de carpeta](#get-folder-metadata)
 * [Realizar una llamada de API](#make-an-api-call)
 * [Actualizar metadatos de carpeta](#update-folder-metadata)
 
@@ -189,7 +189,7 @@ This action module deletes a file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the unique ID of the file that you want the module to delete.</td> 
@@ -213,7 +213,7 @@ You specify the ID of the file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the unique ID of the file that you want the module to retrieve.</td> 
@@ -233,7 +233,7 @@ You specify the ID of the file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the unique ID of the file that you want the module to update.</td> 
@@ -257,7 +257,7 @@ You specify the file. You can also provide a new filename for the file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -287,7 +287,7 @@ Este módulo de acción crea una nueva carpeta vacía dentro de la carpeta princ
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Box] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Box] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
@@ -318,7 +318,7 @@ Este módulo de acción recupera los detalles de una carpeta, incluidas las prim
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Box] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Box] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -337,7 +337,7 @@ Este módulo de acción recupera los metadatos de la carpeta por ID de carpeta.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Box] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Box] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Scope]</td> 
@@ -352,7 +352,7 @@ Este módulo de acción recupera los metadatos de la carpeta por ID de carpeta.
 
 #### Realizar una llamada de API
 
-Esta acción módulo realiza una llamada personalizada a la API de Box.
+Este módulo de acción realiza una llamada personalizada a la API Box.
 
 
 
@@ -362,7 +362,7 @@ Esta acción módulo realiza una llamada personalizada a la API de Box.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Bynder] a [!DNL Workfront Fusion], consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a [!DNL Workfront Fusion] </a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Bynder] a Workfront Fusion, consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] a Workfront Fusion </a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -370,7 +370,7 @@ Esta acción módulo realiza una llamada personalizada a la API de Box.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">petición HTTP métodos</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -392,7 +392,7 @@ Esta acción módulo realiza una llamada personalizada a la API de Box.
 
 #### Actualizar metadatos de carpeta
 
-Esta acción módulo crea o actualiza el metadatos de una carpeta.
+Este módulo de acción crea o actualiza los metadatos de una carpeta.
 
 <table style="table-layout:auto">
  <col> 
@@ -400,7 +400,7 @@ Esta acción módulo crea o actualiza el metadatos de una carpeta.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Box] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Box] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Scope]</td> 
@@ -416,9 +416,9 @@ Esta acción módulo crea o actualiza el metadatos de una carpeta.
 
 ### Búsquedas
 
-#### Search para el contenido
+#### Buscar contenido
 
-Este búsqueda módulo busca los elementos que están disponibles para el usuario o para la empresa emtire.
+Este módulo de búsqueda busca los elementos disponibles para el usuario o para toda la empresa.
 
 <table style="table-layout:auto">
  <col> 
@@ -426,7 +426,7 @@ Este búsqueda módulo busca los elementos que están disponibles para el usuari
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones acerca de cómo conectar su cuenta de [!DNL Box] a [!DNL Workfront Fusion], vea <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con [!DNL Adobe Workfront Fusion]: instrucciones básicas</a>.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Box] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -450,15 +450,15 @@ Este búsqueda módulo busca los elementos que están disponibles para el usuari
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Id. de carpeta principal]</td> 
-   <td> <p>Para búsqueda en una carpeta específica, para cada carpeta que desee búsqueda, haga clic en <b>añadir elemento</b> e introduzca el ID de la carpeta. </p> </td> 
+   <td> <p>Para buscar en una carpeta específica, para cada carpeta que desee buscar, haga clic en <b>Agregar elemento</b> e introduzca el identificador de la carpeta. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Creado desde]</td> 
-   <td> <p>Para búsqueda los activos creados en un intervalo de fecha determinado, introduzca la fecha más temprana del intervalo.</p> </td> 
+   <td role="rowheader">[!UICONTROL Creado Desde]</td> 
+   <td> <p>Para buscar recursos creados en un intervalo de fechas determinado, introduzca la fecha más antigua del intervalo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Creado para]</td> 
-   <td> <p>Para búsqueda para activos creado en un intervalo de fecha determinado, introduzca la última fecha del intervalo.</p> </td> 
+   <td role="rowheader">[!UICONTROL Creado en]</td> 
+   <td> <p>Para buscar recursos creados en un intervalo de fechas determinado, introduzca la fecha más reciente en el intervalo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Actualizado Desde]</td> 
@@ -478,7 +478,7 @@ Este búsqueda módulo busca los elementos que están disponibles para el usuari
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tamaño Desde]</td> 
-   <td> <p>Para búsqueda para activos en un rango de tamaño específico, introduzca el extremo pequeño del intervalo, en bytes.</p> </td> 
+   <td> <p>Para buscar recursos en un intervalo de tamaño específico, escriba el extremo pequeño del intervalo, en bytes.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tamaño A]</td> 
@@ -490,7 +490,7 @@ Este búsqueda módulo busca los elementos que están disponibles para el usuari
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Introduzca o asigne el número máximo de resultados que desea que la módulo devuelva en cada ciclo de ejecución.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de resultados que desea que devuelva el módulo en cada ciclo de ejecución.</p> </td> 
   </tr> 
  </tbody> 
 </table>

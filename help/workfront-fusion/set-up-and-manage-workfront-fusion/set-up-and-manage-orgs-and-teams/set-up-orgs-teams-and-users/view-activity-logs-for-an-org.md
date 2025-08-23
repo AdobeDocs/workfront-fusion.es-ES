@@ -4,10 +4,10 @@ description: Puede ver un registro de actividades, como la creación o activaci�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: edeed099b26dae635889fd35de61d66a1ea1ffc1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 13%
+source-wordcount: '536'
+ht-degree: 12%
 
 ---
 
@@ -26,17 +26,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td>
+   <td role="rowheader">Plan de Adobe Workfront</td>
    <td> <p>Nuevo: Ultimate</p> <p>O</p> <p>Actual: no disponible</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: no disponible</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: no disponible</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -48,15 +48,15 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Esta funcionalidad solo está disponible para organizaciones con el plan Ultimate Workfront, que incluye [!DNL Workfront Fusion]. No es necesario adquirir ningún producto adicional.</p>
+   <p>Esta funcionalidad solo está disponible para organizaciones con el plan Ultimate Workfront, que incluye Workfront Fusion. No es necesario adquirir ningún producto adicional.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación de Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación de Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,7 +66,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
 1. En el panel de navegación de la izquierda, haga clic en **Org overview** ![Org overview icon](assets/org-overview-icon.png).
 1. Si actualmente no se encuentra en la organización para la que desea ver el registro de actividad, haga clic en el nombre de la organización en la esquina superior derecha de la pantalla y seleccione la organización en el menú desplegable.
-1. Haga clic en la ficha **[!UICONTROL Activity Logs]** cerca de la parte superior de la pantalla.
+1. Haga clic en la ficha **[!UICONTROL Registros de actividad]** cerca de la parte superior de la pantalla.
 
    Se abre la página Registro de actividades.
 1. (Opcional) Filtre el registro de actividad para limitar los resultados según los criterios especificados.
@@ -82,7 +82,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
 1. En el panel de navegación de la izquierda, haga clic en **Org overview** ![Org overview icon](assets/org-overview-icon.png).
 1. Si actualmente no se encuentra en la organización para la que desea ver el registro de actividad, haga clic en el nombre de la organización en la esquina superior derecha de la pantalla y seleccione la organización en el menú desplegable.
-1. Haga clic en la ficha **[!UICONTROL Activity Logs]** cerca de la parte superior de la pantalla.
+1. Haga clic en la ficha **[!UICONTROL Registros de actividad]** cerca de la parte superior de la pantalla.
 
    Se abre la página Registro de actividades.
 1. Haga clic en **Filtro** ![Icono de filtro](assets/filter-activity-log.png).
@@ -100,7 +100,7 @@ Para obtener información sobre las licencias de [!DNL Adobe Workfront Fusion], 
 
 1. En el panel de navegación de la izquierda, haga clic en **Org overview** ![Org overview icon](assets/org-overview-icon.png).
 1. Si actualmente no se encuentra en la organización para la que desea ver el registro de actividad, haga clic en el nombre de la organización en la esquina superior derecha de la pantalla y seleccione la organización en el menú desplegable.
-1. Haga clic en la ficha **[!UICONTROL Activity Logs]** cerca de la parte superior de la pantalla.
+1. Haga clic en la ficha **[!UICONTROL Registros de actividad]** cerca de la parte superior de la pantalla.
 
    Se abre la página Registro de actividades.
 1. Seleccione el intervalo de fechas del calendario y (opcional) introduzca las horas.

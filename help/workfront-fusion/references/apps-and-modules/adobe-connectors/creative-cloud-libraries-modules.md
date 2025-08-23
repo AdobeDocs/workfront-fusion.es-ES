@@ -4,16 +4,16 @@ description: Con los módulos de Bibliotecas de  [!DNL Adobe Workfront Fusion Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 82%
+source-wordcount: '1404'
+ht-degree: 79%
 
 ---
 
 # Módulos de Bibliotecas de Adobe Creative Cloud
 
-Con los módulos [!DNL Adobe Workfront Fusion] [!DNL Adobe Creative Cloud Libraries], puede iniciar un escenario cuando se cree o actualice un elemento o biblioteca. También puede cargar, recuperar, archivar o enumerar elementos, o bien realizar una llamada a la API [!DNL Adobe Creative Cloud Libraries].
+Con los módulos de Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries], puede iniciar un escenario cuando se cree o actualice un elemento o biblioteca. También puede cargar, recuperar, archivar o enumerar elementos, o bien realizar una llamada a la API [!DNL Adobe Creative Cloud Libraries].
 
 Si necesita instrucciones sobre cómo crear un escenario, vea los artículos en [Crear un escenario: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -54,7 +54,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -62,7 +62,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -79,7 +79,7 @@ El conector Bibliotecas Adobe Creative Cloud utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL básica</td> 
+   <td role="rowheader">Dirección URL base</td> 
    <td>https://cc-libraries.adobe.io/api/v1</td> 
   </tr>
   <tr> 
@@ -91,7 +91,7 @@ El conector Bibliotecas Adobe Creative Cloud utiliza lo siguiente:
 
 ## Módulos de las [!UICONTROL Bibliotecas de Adobe Creative Cloud] y sus campos
 
-Al configurar los módulos de [!UICONTROL Bibliotecas de Adobe Creative Cloud], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos de [!DNL Adobe Creative Cloud Libraries] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de [!UICONTROL Bibliotecas Adobe Creative Cloud], Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Adobe Creative Cloud Libraries] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -115,7 +115,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [[!UICONTROL Cargar un elemento]](#upload-an-element)
 
-* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
+* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
 * [[!UICONTROL Ver elementos actualizados]](#watch-updated-elements)
 

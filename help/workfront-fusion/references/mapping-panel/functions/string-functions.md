@@ -4,16 +4,16 @@ description: Las siguientes funciones de cadena están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 95%
+source-wordcount: '619'
+ht-degree: 98%
 
 ---
 
 # Funciones de cadena
 
-## [!UICONTROL length (text or buffer)]
+## [!UICONTROL longitud (texto o búfer)]
 
 Devuelve la longitud de la cadena de texto (número de caracteres) o del búfer binario (tamaño del búfer en bytes).
 
@@ -27,7 +27,7 @@ Devuelve: 5
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL lower (text)]
+## [!UICONTROL inferior (texto)]
 
 Convierte a minúsculas todos los caracteres alfabéticos de una cadena de texto.
 
@@ -41,7 +41,7 @@ Devuelve: hello
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL capitalize (text)]
+## [!UICONTROL poner en mayúsculas (texto)]
 
 Convierte el primer carácter de una cadena de texto en mayúscula.
 
@@ -51,11 +51,11 @@ Convierte el primer carácter de una cadena de texto en mayúscula.
 
 `capitalize( workfront )`
 
-Devuelve: [!DNL Workfront]
+Devuelve: Workfront
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL startcase (text)]
+## [!UICONTROL mayúscula inicial (texto)]
 
 Pone en mayúscula la primera letra de cada palabra y en minúsculas todas las demás letras.
 
@@ -68,7 +68,7 @@ Devuelve: [!UICONTROL Hello World]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ascii (text; [remove diacritics])]
+## [!UICONTROL ascii (texto; [quitar diacríticos])]
 
 Quita todos los caracteres que no sean ascii de una cadena de texto.
 
@@ -78,7 +78,7 @@ Quita todos los caracteres que no sean ascii de una cadena de texto.
 
 * `ascii(` `Wěošrčkřfžrýoáníté` `)`
 
-Devuelve: [!DNL Workfront]
+Devuelve: Workfront
 
 * `ascii(` `ěščřž` `;` `true` `)`
 
@@ -86,7 +86,7 @@ Devuelve: [!UICONTROL escrz]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL replace (text;search string; replacement string)]
+## [!UICONTROL reemplazar (texto; cadena de búsqueda; cadena de reemplazo)]
 
 Reemplaza la cadena de búsqueda por la nueva cadena.
 
@@ -138,17 +138,17 @@ Devuelve: número de teléfono: `+420777111222`
 
 Para obtener más información sobre las expresiones regulares, consulte [Analizador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md).
 
-## [!UICONTROL trim (text)]
+## [!UICONTROL recortar (texto)]
 
 Quita los caracteres de espacio al principio o al final del texto.
 
-## [!UICONTROL upper (text)]
+## [!UICONTROL mayúsculas (texto)]
 
 Convierte todos los caracteres alfabéticos de una cadena de texto a mayúsculas.
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo:**
+**Ejemplo**
 
 `upper( Hello )`
 
@@ -156,7 +156,7 @@ Devuelve: [!UICONTROL HELLO]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL substring (text; start;end)]
+## [!UICONTROL subcadena (texto; inicio;fin)]
 
 Devuelve una parte de una cadena de texto entre la posición “inicial” y “final”.
 
@@ -196,7 +196,7 @@ Devuelve la posición de la primera aparición de un valor especificado en una c
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL toBinary (value)]
+## [!UICONTROL toBinary (valor)]
 
 Convierte cualquier valor en datos binarios.
 
@@ -216,15 +216,15 @@ También puede especificar la codificación como un segundo argumento para aplic
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL toString (value)]
+## [!UICONTROL toString (valor)]
 
 Convierte cualquier valor en una cadena.
 
-## [!UICONTROL encodeURL (text)]
+## [!UICONTROL encodeURL (texto)]
 
 Codifica los caracteres especiales de algún texto en una dirección URL válida.
 
-## [!UICONTROL decodeURL (text)]
+## [!UICONTROL decodeURL (texto)]
 
 Decodifica los caracteres especiales de una dirección URL en texto.
 
@@ -233,11 +233,11 @@ Decodifica los caracteres especiales de una dirección URL en texto.
 **Ejemplo:**
 `decodeURL( Automate%20your%20workflow )`
 
-Devuelve: [!UICONTROL Automate your workflow]
+Devuelve: [!UICONTROL Automatizar su flujo de trabajo]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeHTML (text)]
+## [!UICONTROL escapeHTML (texto)]
 
 Excluye todas las etiquetas de HTML del texto.
 
@@ -251,7 +251,7 @@ Devuelve: `&lt;b&gt;Hello&lt;/b&gt;`
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeMarkdown(text)]
+## [!UICONTROL escapeMarkdown(texto)]
 
 Excluye todas las etiquetas Markdown del texto.
 
@@ -351,7 +351,7 @@ Devuelve: ed3d7397eec7b94453035b67ba4468c883ee3bedeb57137f7371f2e0cf5e2bbc
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha512 (text; [output encoding]; [key]; [key encoding])]
+## [!UICONTROL sha512 (text; [codificación de salida]; [clave]; [codificación clave])]
 
 Calcula el hash sha512 de una cadena. Si se especifica el argumento clave, se devuelve un hash HMAC sha512 en su lugar.
 

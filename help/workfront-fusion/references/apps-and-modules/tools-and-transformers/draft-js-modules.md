@@ -1,19 +1,19 @@
 ---
 title: Módulos Draft.js
-description: En un  [!DNL Adobe Workfront Fusion] escenario, puede usar los módulos Draft.js para convertir Draft.js a HTML y HTML a Draft.js.
+description: En un escenario de Adobe Workfront Fusion, puede utilizar los módulos Draft.js para convertir Draft.js a HTML y HTML a Draft.js.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 25%
+source-wordcount: '256'
+ht-degree: 21%
 
 ---
 
 # [!UICONTROL Draft.js] módulos
 
-En un escenario [!DNL Adobe Workfront Fusion], puede usar los módulos [!UICONTROL Draft.js] para convertir Draft.js a HTML y HTML a Draft.js. Puede utilizarlo en combinación con los módulos de Workfront para agregar texto enriquecido o leer texto enriquecido de los campos de Workfront.
+En un escenario de Adobe Workfront Fusion, puede utilizar los módulos [!UICONTROL Draft.js] para convertir Draft.js a HTML y HTML a Draft.js. Puede utilizarlo en combinación con los módulos de Workfront para agregar texto enriquecido o leer texto enriquecido de los campos de Workfront.
 
 Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -48,7 +48,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

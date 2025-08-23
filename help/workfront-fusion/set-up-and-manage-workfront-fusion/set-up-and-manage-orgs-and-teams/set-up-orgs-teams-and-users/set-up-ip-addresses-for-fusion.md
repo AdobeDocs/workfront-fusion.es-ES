@@ -4,10 +4,10 @@ description: Fusion utiliza direcciones IP y dominios específicos para la comun
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 33%
+source-wordcount: '550'
+ht-degree: 31%
 
 ---
 
@@ -82,7 +82,7 @@ Si accede a Fusion a través de `experience.adobe.com`, puede comprobar la pesta
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Centro de datos UE</td> 
+   <td role="rowheader">Centro de datos Adobe Workfront EU</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ Si accede a Fusion a través de `experience.adobe.com`, puede comprobar la pesta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] US Datacenter</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> 
     <ul> 
      <li>54.244.142.219</li> 
@@ -103,7 +103,7 @@ Si accede a Fusion a través de `experience.adobe.com`, puede comprobar la pesta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] en el clúster de Microsoft Azure</td> 
+   <td role="rowheader">Adobe Workfront Fusion en el clúster de Microsoft Azure</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ Además, si su organización utiliza el filtrado de red saliente, añada el sigu
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Centro de datos UE</td> 
+   <td role="rowheader">Centro de datos Adobe Workfront EU</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] US Datacenter</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] en el clúster de Microsoft Azure</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront Fusion en el clúster de Microsoft Azure</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

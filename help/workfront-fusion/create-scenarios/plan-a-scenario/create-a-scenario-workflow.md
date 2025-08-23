@@ -4,10 +4,10 @@ description: Siga este flujo de trabajo general para crear un escenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 21%
+source-wordcount: '808'
+ht-degree: 23%
 
 ---
 
@@ -28,24 +28,24 @@ Los escenarios están diseñados para satisfacer las necesidades de su organizac
 * [Activar el escenario](#activate-the-scenario)
 * [Métodos abreviados del teclado para escenarios de Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
 
-Métodos abreviados del teclado
+Métodos abreviados de teclado
 
 
 
 ## Cree y asigne un nombre al escenario
 
-1. Inicie sesión en la cuenta de [!DNL Workfront Fusion].
-1. Haga clic en **[!UICONTROL Scenarios]** ![icono de escenarios](assets/scenarios-icon.png) en el panel izquierdo.
+1. Inicie sesión en su cuenta de Workfront Fusion.
+1. Haga clic en **[!UICONTROL Icono de escenarios]** ![escenarios](assets/scenarios-icon.png) en el panel izquierdo.
 
    >[!NOTE]
    >
    >Si no ve el panel de navegación izquierdo o sus iconos, haga clic en el icono Menú ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Opcional) En el panel [!UICONTROL **Carpetas**], haga clic en el icono **[!UICONTROL Add folder]** ![Agregar icono de carpeta](assets/add-folder-icon.png) y, a continuación, escriba un nombre como &quot;Escenarios de práctica&quot; para la primera carpeta.
+1. (Opcional) En el panel [!UICONTROL **Carpetas**], haga clic en el icono **[!UICONTROL Agregar carpeta]** ![Agregar icono de carpeta](assets/add-folder-icon.png) y, a continuación, escriba un nombre como &quot;Escenarios de práctica&quot; para la primera carpeta.
 
-1. (Opcional) Abra la carpeta y, a continuación, haga clic en **[!UICONTROL Create a new scenario]** en la esquina superior derecha de la página.
+1. (Opcional) Abra la carpeta y haga clic en **[!UICONTROL Crear un nuevo escenario]** en la esquina superior derecha de la página.
 
-1. Seleccione el nombre del marcador de posición **[!UICONTROL New scenario]** en la esquina superior izquierda y, a continuación, escriba un nombre como &quot;Escenario de práctica 1&quot;.
+1. Seleccione el nombre del marcador de posición **[!UICONTROL Nuevo escenario]** en la esquina superior izquierda y, a continuación, escriba un nombre como “Práctica de escenario 1&quot;.
 
    ![Nombrar el escenario](assets/name-the-scenario.png)
 
@@ -101,13 +101,13 @@ Para obtener instrucciones, vea los artículos en [Configurar opciones de escena
 
 La prueba del escenario permite determinar si el escenario funciona según lo previsto. A continuación, puede revisar el escenario en función de los resultados y, después, volver a probar.
 
-1. Haga clic en **[!UICONTROL Run once]** en la esquina inferior izquierda del editor de escenarios.
+1. Haga clic en **[!UICONTROL Ejecutar una vez]** en la esquina inferior izquierda del editor de escenarios.
 1. Una vez que el escenario termine de ejecutarse, haga clic en la burbuja del inspector de ejecución situada encima de cada módulo para ver la entrada de información y la salida de ese módulo.
 
    * Para obtener información general sobre cómo leer información de ejecución de escenarios, consulte [Flujo de ejecución de escenarios](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * Para obtener información acerca de los paquetes procesados, consulte [Ejecución de escenarios, ciclos y fases en  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * Para obtener información sobre los paquetes procesados, consulte [Ejecución de escenarios, ciclos y fases en Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. En [!DNL Workfront Fusion], haga clic en **[!UICONTROL Save]** ![icono de guardar](assets/save-icon.png) cerca de la esquina inferior izquierda para guardar su progreso en el escenario.
+1. En Workfront Fusion, haga clic en **[!UICONTROL Guardar]** ![Guardar icono](assets/save-icon.png) cerca de la esquina inferior izquierda para guardar su progreso en el escenario.
 
    >[!IMPORTANT]
    >
@@ -148,12 +148,12 @@ Puede utilizar los siguientes métodos abreviados del teclado al crear o editar 
    <td>Cmd+Mayús+Entrar</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL Abrir DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl + Fn + F12 </span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL Seleccionar varios módulos]</td> 
    <td>Mayús + Arrastrar</td> 
    <td>Mayús + Arrastrar</span> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Puede utilizar los siguientes métodos abreviados del teclado al crear o editar 
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[!UICONTROL Pegar]</td> 
    <td>Ctrl + V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

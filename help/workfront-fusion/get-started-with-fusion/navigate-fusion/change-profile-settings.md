@@ -1,19 +1,19 @@
 ---
 title: Cambio de configuración de perfil
-description: Puede cambiar la información en el perfil de su cuenta  [!DNL Adobe Workfront Fusion] .
+description: Puede cambiar la información en el perfil de su cuenta de Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: f7d561d8-5189-4c7a-811d-8a2509638f75
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 54%
+source-wordcount: '227'
+ht-degree: 50%
 
 ---
 
 # Cambio de configuración de perfil
 
-Puede cambiar la información en el perfil de cuenta de [!DNL Adobe Workfront Fusion].
+Puede cambiar la información en el perfil de su cuenta de Adobe Workfront Fusion.
 
 ## Requisitos de acceso
 
@@ -26,17 +26,17 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquete</td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
    <td> <p>Cualquiera</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licencia</td> 
-   <td> <p>Nuevo: [!UICONTROL Standard]</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
+   <td role="rowheader">Licencia de Adobe Workfront</td> 
+   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licencia**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
    <td>
-   <p>Actual: no se requiere licencia para [!DNL Workfront Fusion].</p>
+   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
    <p>O</p>
    <p>Heredado: cualquiera </p>
    </td> 
@@ -44,16 +44,16 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>[!UICONTROL Select] o plan [!UICONTROL Prime] [!DNL Workfront]: su organización debe comprar [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] está incluido.</li></ul>
+   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: su organización debe comprar [!DNL Adobe Workfront Fusion].</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configuraciones de nivel de acceso*</td> 
    <td> 
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su organización.</p>
-     <p>Debe ser administrador de [!DNL Workfront Fusion] de su equipo.</p>
+     <p>Debe ser administrador de Workfront Fusion para su organización.</p>
+     <p>Debe ser administrador de Workfront Fusion para su equipo.</p>
    </td> 
   </tr> 
    </td> 
@@ -63,7 +63,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre [!DNL Adobe Workfront Fusion] licencias, consulte [[!DNL Adobe Workfront Fusion] licencias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -74,7 +74,7 @@ Puede acceder a su perfil y a las opciones de preferencias haciendo clic en tu f
 
 Este menú le permite:
 
-* Elija el formato **[!UICONTROL Dark theme]** para [!DNL Adobe Experience Cloud].
-* Definir **[!UICONTROL Preferences]** para [!DNL Adobe Experience Cloud], incluidas las preferencias de idioma principal y secundario.
-* Acceda a su **[!UICONTROL [!DNL Workfront] Profile]**. Una vez que esté en el perfil, haga clic en el menú **[!UICONTROL More]** y seleccione **[!UICONTROL Edit]**.
-* **[!UICONTROL Sign out]** de Adobe Experience Cloud.
+* Elegir el formato **[!UICONTROL Tema oscuro]** para [!DNL Adobe Experience Cloud].
+* Establecer **[!UICONTROL preferencias]** para [!DNL Adobe Experience Cloud], incluidas las preferencias de idioma principal y secundario.
+* Acceda a su **[!UICONTROL perfil de Workfront]**. Una vez que esté en el perfil, haga clic en el menú **[!UICONTROL Más]** y seleccione **[!UICONTROL Editar]**.
+* **[!UICONTROL Cerrar sesión]** de Adobe Experience Cloud.
