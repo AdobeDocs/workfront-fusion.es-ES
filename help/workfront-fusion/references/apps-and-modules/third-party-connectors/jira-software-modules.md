@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 65%
+source-wordcount: '2460'
+ht-degree: 62%
 
 ---
 
@@ -564,6 +564,24 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 * [[!UICONTROL List records]](#list-records)
 * [[!UICONTROL Search for records]](#search-for-records)
+
+>[!IMPORTANT]
+>
+>El módulo de búsqueda utilizado por el conector Jira heredado puede provocar el siguiente error:
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>Esto se debe a una obsolescencia del lado de Jira.
+>
+>Si encuentra este error, puede reemplazar el módulo de búsqueda del conector Jira heredado con el módulo de búsqueda del conector nuevo. Tenga en cuenta que el nuevo conector le permite seleccionar la versión de API utilizada. Asegúrese de seleccionar V3 al crear la conexión.
+>
+> ![Opción de versión de API en el nuevo conector Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>Tenga en cuenta que:
+>
+>* Solo se ve afectado el módulo Buscar. En este momento, otros puntos finales de API de Jira utilizados por el conector Fusion no se ven afectados por esta obsolescencia.
+>
+>* El despliegue geográfico puede causar incoherencias. Atlassian está implementando este cambio a nivel regional, lo que significa que algunas instancias de Jira Cloud pueden seguir admitiendo temporalmente extremos más antiguos. Esto puede generar un comportamiento incoherente entre entornos.
 
 #### [!UICONTROL List records]
 
