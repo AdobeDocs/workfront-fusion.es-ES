@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Devtool le permite entender y solucionar pro
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 74%
+source-wordcount: '1514'
+ht-degree: 72%
 
 ---
 
@@ -151,6 +151,12 @@ Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en
 
 ### Depurador de escenario
 
+>[!NOTE]
+>
+>Para ir rápidamente al depurador a partir de un escenario en el que se ha producido un error, puede hacer clic en **Obtener detalles** en el mensaje de error de la salida del módulo.
+>
+>![Obtener detalles en la salida del módulo](assets/go-to-debugger.png)
+
 El depurador de escenario resulta útil para escenarios más complejos. Muestra el historial de ejecuciones de escenarios y le permite buscar módulos por su nombre o ID.
 
 1. Haga clic en el icono **[!UICONTROL Depurador de escenarios]** ![Icono de depurador](assets/scenario-debugger-icon.png) para abrir el Depurador de escenarios.
@@ -205,7 +211,7 @@ Permite buscar los valores de los módulos para el término especificado. La sal
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Use Only Values]</p> </td> 
-   <td> <p>Active esta opción para buscar únicamente en los valores de los campos del módulo.</p> <p>Deshabilite esta opción para buscar también en los nombres de los campos del módulo.</p> <p>La búsqueda se realiza mediante los parámetros de nombre y etiqueta.</p> </td> 
+   <td> <p>Habilite esta opción para buscar únicamente en los valores de los campos del módulo.</p> <p>Deshabilite esta opción para buscar también en los nombres de los campos del módulo.</p> <p>La búsqueda se realiza mediante los parámetros de nombre y etiqueta.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -266,7 +272,7 @@ Copia la configuración del filtro del módulo de origen al módulo de destino.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Preserve Fallback Route setting]</p> </td> 
-   <td> <p>El filtro de origen se establece como ruta de reserva. Active esta opción para establecer también que el filtro de destino se establezca como ruta de reserva.</p> </td> 
+   <td> <p>El filtro de origen se establece como ruta de reserva. Habilite esta opción para establecer también que el filtro de destino se establezca como ruta de reserva.</p> </td> 
   </tr> 
  </tbody> 
 </table>
