@@ -4,10 +4,10 @@ description: La automatización del trabajo requiere un procesamiento rápido, p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 38%
+source-wordcount: '1084'
+ht-degree: 37%
 
 ---
 
@@ -44,7 +44,7 @@ La automatización del trabajo requiere un procesamiento rápido, por lo que Ado
 ## Archivos
 
 * La capacidad total de procesamiento de archivos de Fusion es de **1 GB**. El límite se basa en el coste total de la memoria. Cada operación contribuye a ese coste. Si se descarga y carga un solo archivo de 400 MB, el coste total de la capacidad del archivo sería de 800 MB.
-* Las organizaciones del plan Workfront Ultimate tienen acceso a un mayor procesamiento de archivos que supera los 1 GB. La plataforma Fusion puede admitir archivos individuales de hasta 15 GB para una sola acción (por ejemplo, cargar archivo), pero hay otros factores que afectan a la transferencia de datos. El límite de tamaño de archivo de una sola acción depende del servicio web al que se conecte Fusion. La transferencia de datos es el procesamiento total de una sola ejecución. Esto significa que varias acciones en una sola ejecución contribuyen a la transferencia total de datos. Fusion procesará archivos hasta que se alcance el límite de ejecución de 40 minutos.
+* Las organizaciones del plan Workfront Ultimate tienen acceso a un mayor procesamiento de archivos que supera los 1 GB. Sin embargo, hay otros factores que afectan a la transferencia de datos. El servicio al que se está conectando Fusion puede limitar el tamaño del archivo, lo que afectaría a cualquier archivo procesado por ese servicio. Además, los archivos grandes pueden afectar al tiempo de ejecución de la situación. Fusion procesará archivos hasta que se alcance el límite de ejecución de 40 minutos, momento en el que la ejecución fallará.
 * Si un archivo se descarga mediante un módulo que admite archivos grandes y, a continuación, se pasa a un módulo que no admite archivos grandes, dicho módulo no procesará correctamente el archivo. Los archivos grandes deben gestionarse exclusivamente con módulos compatibles en todo el flujo de trabajo.
 * Los módulos que no admiten archivos grandes pueden procesar archivos de hasta **200 MB** de tamaño.
 
@@ -71,7 +71,7 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 ## Historial de ejecución
 
 * Los registros del historial de ejecución están limitados a un tamaño de **100 MB**. Si el historial de ejecución supera este tamaño, solo se mostrarán los primeros 100 MB.
-* Si un escenario tiene varias ejecuciones simultáneas. solo se muestran 5 ejecuciones en el área Ejecuciones de la página de detalles del escenario. Esto ocurre incluso cuando se están ejecutando más de 5 ejecuciones.
+* Si un escenario tiene varias ejecuciones simultáneas, solo se muestran 5 ejecuciones en el área Ejecuciones de la página de detalles del escenario. Esto ocurre incluso cuando se están ejecutando más de 5 ejecuciones.
 
 ## Ejecuciones incompletas
 
