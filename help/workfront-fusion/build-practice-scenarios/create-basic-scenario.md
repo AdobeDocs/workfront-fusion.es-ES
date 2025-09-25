@@ -7,10 +7,10 @@ description: Aprenda a crear un escenario de automatización sencillo con Adobe 
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 63%
+source-wordcount: '1426'
+ht-degree: 62%
 
 ---
 
@@ -191,9 +191,9 @@ En este caso, una prueba que se realice correctamente buscaría la solicitud y l
 >
 >1. Cierre el área **[!UICONTROL Notas]**.
 >
->     Después de agregar una nota a un escenario, aparece un punto naranja en el icono **[!UICONTROL Notas]** icono ![Notas icono con punto](assets/notes-icon-w-dot.png) en la parte inferior del editor de escenarios.
+>     Después de agregar una nota a un escenario, aparece un punto en el icono **[!UICONTROL Notas]** icono ![Notas icono con punto](assets/notes-icon-w-dot.png) en la parte inferior del editor de escenarios.
 >
->1. Haga clic en el icono **[!UICONTROL Notas]** ![Icono de notas con punto](assets/notes-icon-w-dot.png) para ver las notas.
+>1. Haga clic en el icono **[!UICONTROL Notas]** ![Icono de notas con punto](assets/notes-icon-w-dot.png) para ver las notas. Cuando las notas están abiertas, aparece un círculo alrededor del icono Notas.
 >
 
 ## Activar el escenario

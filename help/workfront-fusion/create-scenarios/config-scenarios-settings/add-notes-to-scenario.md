@@ -5,10 +5,10 @@ description: Recomendamos la práctica opcional pero útil de añadir notas sobr
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 8%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -25,3 +25,7 @@ Recomendamos la práctica opcional pero útil de agregar notas a su escenario. L
    Después de agregar una nota a un escenario, aparece un punto azul en el icono **[!UICONTROL Notas]** icono ![Notas icono con punto](assets/notes-icon-w-dot.png) en la parte inferior del editor de escenarios.
 
 1. Para ver u ocultar todas las notas, haga clic en el icono **[!UICONTROL Notas]** icono ![Notas con punto](assets/notes-icon-w-dot.png).
+
+   Cuando las notas están abiertas, aparece un círculo alrededor del icono Notas.
+
+   ![Icono de notas con círculo](assets/notes-icon-with-circle.png)
