@@ -4,10 +4,10 @@ description: Este artículo incluye información sobre el acceso y los permisos 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 84%
 
 ---
 
@@ -54,7 +54,7 @@ Este artículo describe el acceso y la funcionalidad disponibles para las difere
   <tr> 
    <td> <p>Administrar usuarios de la organización</p> </td> 
    <td>✓ </td> 
-   <td>✓</td> 
+   <td>✓<p>Puede administrar usuarios en Adobe Admin Console si su organización está en Adobe IMS. Solo puede invitar a usuarios a otras organizaciones.</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
