@@ -4,9 +4,9 @@ description: Puede mostrar información sobre los eventos o las ejecuciones de u
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c0a4e563657871f856b7d449432d563c6caa27a1
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 60%
 
 ---
@@ -21,7 +21,7 @@ Un evento de escenario es una modificación del escenario, como editarlo, activa
 
 >[!NOTE]
 >
->El historial de un escenario muestra todos los eventos y ejecuciones de un escenario durante los últimos 30 días.
+>El historial de un escenario muestra todas las ejecuciones de un escenario durante los últimos 30 días.
 
 ## Requisitos de acceso
 
