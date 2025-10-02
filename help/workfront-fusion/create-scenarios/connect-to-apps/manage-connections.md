@@ -7,9 +7,9 @@ description: Para la mayoría de las aplicaciones, es necesario crear una conexi
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 27%
 
 ---
@@ -83,7 +83,7 @@ Puede administrar todas las conexiones desde el área Conexiones.
 1. (Opcional) Para volver a autorizar una conexión, marque la casilla que hay junto a la conexión y luego haga clic en **Volver a autorizar**, cerca de la parte inferior de la pantalla.
 1. (Opcional) Para eliminar una conexión, marque la casilla que hay junto a la conexión, haga clic en **Eliminar**, cerca de la parte inferior de la pantalla, y después haga clic en **Realmente?**.
 1. (Opcional) Para verificar que la conexión al servicio se estableció correctamente, marque la casilla de verificación que hay junto a la conexión y luego haga clic en **Verificar** cerca de la parte inferior de la pantalla.
-1. Para ver los escenarios activos que usan esta conexión, marque la casilla que hay junto a la conexión y luego haga clic en **Recuperar escenarios activos**. A continuación, puede hacer clic en un escenario de la lista Escenarios activos para ir a ese escenario.
+1. (Opcional) Para ver los escenarios activos que utilizan esta conexión, marque la casilla que hay junto a la conexión y, a continuación, haga clic en **Recuperar escenarios activos**. A continuación, puede hacer clic en un escenario de la lista Escenarios activos para ir a ese escenario.
 
 ## Renovación de una conexión
 
