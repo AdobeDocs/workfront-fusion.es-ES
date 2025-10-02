@@ -7,10 +7,10 @@ description: Para la mayoría de las aplicaciones, es necesario crear una conexi
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 32%
+source-wordcount: '561'
+ht-degree: 27%
 
 ---
 
@@ -80,9 +80,10 @@ Puede administrar todas las conexiones desde el área Conexiones.
 1. (Opcional) Asigne un entorno y un tipo de conexión haciendo clic en los desplegables **Entorno** y **Tipo** y seleccionando una opción.
 1. (Opcional) Para ver qué permisos se concedieron a Workfront Fusion para la conexión, haga clic en el icono Ver ![Ver permisos de conexión](assets/view-connection-permissions.png) para esa conexión.
 1. (Opcional) Para cambiar el nombre de una conexión, resalte el nombre de la conexión y escriba el nuevo nombre.
-1. (Opcional) Para volver a autorizar una conexión, haga clic en **Volver a autorizar**.
-1. (Opcional) Para eliminar una conexión, haga clic en **Eliminar** y, a continuación, haga clic en **Realmente?**.
-1. (Opcional) Para comprobar que la conexión con el servicio se estableció correctamente, haga clic en **Verificar**.
+1. (Opcional) Para volver a autorizar una conexión, marque la casilla que hay junto a la conexión y luego haga clic en **Volver a autorizar**, cerca de la parte inferior de la pantalla.
+1. (Opcional) Para eliminar una conexión, marque la casilla que hay junto a la conexión, haga clic en **Eliminar**, cerca de la parte inferior de la pantalla, y después haga clic en **Realmente?**.
+1. (Opcional) Para verificar que la conexión al servicio se estableció correctamente, marque la casilla de verificación que hay junto a la conexión y luego haga clic en **Verificar** cerca de la parte inferior de la pantalla.
+1. Para ver los escenarios activos que usan esta conexión, marque la casilla que hay junto a la conexión y luego haga clic en **Recuperar escenarios activos**. A continuación, puede hacer clic en un escenario de la lista Escenarios activos para ir a ese escenario.
 
 ## Renovación de una conexión
 
@@ -92,7 +93,7 @@ Para renovar una conexión:
 
 1. Para abrir el área Conexiones, haga clic en **Conexiones** ![Icono de conexiones](assets/connections-icon.png) en el panel de navegación izquierdo.
 1. Busque la conexión que desea renovar.
-1. En la línea de esa conexión, haga clic en el botón **[!UICONTROL Volver a autorizar]** en el área de **[!UICONTROL Conexiones]**.
+1. En la línea de esa conexión, marca la casilla que hay junto a la conexión y luego haz clic en **Volver a autorizar** cerca de la parte inferior de la pantalla.
 
 ## Recursos
 
