@@ -4,10 +4,10 @@ description: Dado que las aplicaciones a las que se conecta Workfront Fusion pue
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 72%
+source-wordcount: '417'
+ht-degree: 58%
 
 ---
 
@@ -17,7 +17,7 @@ Dado que las aplicaciones a las que se conecta Workfront Fusion pueden actualiza
 
 Si ve un icono verde del módulo de actualización en un módulo en un escenario, significa que Workfront Fusion ha lanzado una nueva versión de ese módulo.
 
-![Icono de actualización](assets/update-indicator.png)
+![Icono de actualización](assets/update-indicator-workfront.png)
 
 Puede actualizar el módulo sin crear un nuevo escenario.
 
@@ -73,12 +73,29 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 +++
 
-## Actualización de un módulo a una nueva versión
+## Actualización de un módulo de Workfront a una nueva versión
+
+1. Haga clic en el icono **Actualizar módulo** ![Actualizar icono](assets/upgrade-icon.png) del módulo en el que desee actualizar a una nueva versión.
+   ![Icono de actualización](assets/update-indicator-workfront.png)
+1. Seleccione una de las siguientes opciones:
+
+   * Para seleccionar un módulo nuevo que reemplace este módulo (en lugar de actualizar el módulo), haga clic en **Elegir nuevo** y continúe como se describe en [Actualizar un módulo que no sea de Workfront a una nueva versión](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Para actualizar solo este módulo, conservando la configuración del módulo, haga clic en **Actualizar**.
+   * Para actualizar todos los módulos de Workfront en el escenario, haga clic en **Actualizar todo**.
+
+1. Guarde el escenario.
+
+>[!NOTE]
+>
+>Si ha actualizado los módulos de Workfront, le recomendamos que los abra y compruebe la configuración del módulo.
+
+## Actualización de un módulo que no sea de Workfront a una nueva versión
 
 1. Haga clic en el icono **Actualizar módulo** ![Actualizar icono](assets/upgrade-icon.png) del módulo en el que desee actualizar a una nueva versión.
    ![Icono de actualización](assets/update-indicator.png)
-1. Haga clic en **Mostrar nuevos módulos**.
-1. Seleccione el módulo nuevo que coincida con el módulo existente.
+1. Haga clic en **Elegir nuevo**.
+1. Seleccione el módulo que desea reemplazar al módulo anterior.
 1. Configure el módulo con los mismos ajustes que el módulo existente.
 1. Conecte el módulo nuevo al escenario en el mismo lugar que el módulo existente.
 1. Elimine el módulo antiguo.
+1. Guarde el escenario.

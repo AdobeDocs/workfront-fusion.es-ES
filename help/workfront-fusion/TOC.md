@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: a5dbbec63e0871037e6cc3a88255a84b36be85c7
+source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1891'
 ht-degree: 59%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 59%
       * [Resumen del módulo](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [Resumen de asignación](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [Resumen de funciones](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+      * [Información general sobre las API de Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
    * Navegar por Workfront Fusion {#navigate-workfront-fusion}
       * [Navegar por Workfront Fusion: índice de artículos](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Navegar por Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
@@ -286,7 +287,7 @@ ht-degree: 59%
          * [Coerción de tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funciones  {#functions}
-         * [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+         * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
