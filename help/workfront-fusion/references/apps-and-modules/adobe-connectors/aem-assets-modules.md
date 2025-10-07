@@ -4,7 +4,7 @@ description: Con el conector de Adobe Experience Manager Assets para Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 25%
@@ -50,7 +50,7 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
    <td>
    <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
    <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -67,10 +67,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 * Debe tener una cuenta de Adobe Experience Manager Assets para utilizar estos módulos.
 * Debe configurar el flujo de servidor a servidor en la consola de Adobe Developer.
 
-  Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en la consola de Adobe Developer, consulte [Generación de tokens de acceso para las API del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#the-server-to-server-flow).
+  Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en la consola de Adobe Developer, consulte [Generación de tokens de acceso para las API del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * La cuenta técnica de Adobe Experience Manager debe tener permisos de escritura.
 
-  Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
+  Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
 
 ## Información de API de Adobe Experience Manager Assets
 
@@ -118,11 +118,11 @@ Para crear una conexión para los módulos de Adobe Experience Manager Assets:
 >
 >* La información de estos campos se genera como parte de la configuración del flujo de servidor a servidor en Adobe Developer Console. Puede encontrar estos valores en el archivo JSON de credenciales de servicio generado como parte de esa configuración.
 >
->   Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tokens de acceso para las API del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#the-server-to-server-flow).
+>   Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tokens de acceso para las API del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* La cuenta técnica de Adobe Experience Manager debe tener permisos de escritura.
 >
->   Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
+>   Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Para crear una conexión para los módulos de Adobe Experience Manager Assets:
                   <td class="">Si introduce los detalles manualmente, introduzca el ID de su organización. Este es el campo "org" en el archivo JSON de credenciales del cliente.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Meta ámbitos</td>
-                  <td>Introduzca los metaámbitos generados en la configuración servidor a servidor.</td>
+                  <td role="rowheader">Ámbitos de Meta</td>
+                  <td>Introduzca los ámbitos de Meta generados en la configuración servidor a servidor.</td>
               </tr>
               <tr>
                   <td role="rowheader">Clave privada</td>
@@ -388,7 +388,7 @@ Este módulo de acción copia una carpeta o un recurso en otra ubicación de su 
   </tr> 
   <tr> 
    <td role="rowheader">Sobrescribir</td> 
-   <td>Active esta opción para sobrescribir cualquier carpeta o recurso en la ubicación de destino que tenga el mismo nombre que la carpeta o el recurso que se está copiando.</td> 
+   <td>Habilite esta opción para sobrescribir cualquier carpeta o recurso en la ubicación de destino que tenga el mismo nombre que la carpeta o el recurso que se está copiando.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -591,7 +591,7 @@ Este módulo de acción elimina un solo recurso por su ID.
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el ID del recurso que desea eliminar.</p> </td> 
   </tr> 
   <tr> 
@@ -669,7 +669,7 @@ Este módulo de acción recupera metadatos sobre el recurso especificado.
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el ID del recurso para el que desea obtener los metadatos.</p> </td> 
   </tr> 
  </tbody> 
@@ -688,7 +688,7 @@ Este módulo de acción actualiza los metadatos del recurso especificado.
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el ID del recurso para el que desea actualizar los metadatos.</p> </td> 
   </tr> 
   <tr> 
@@ -773,7 +773,7 @@ Este módulo de acción carga un nuevo recurso mediante la importación de archi
   </tr> 
   <tr> 
    <td role="rowheader">Fecha de caducidad</td> 
-   <td> <p>Introduzca o asigne la fecha de experimentación del recurso.</p><p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p>Introduzca o asigne la fecha de caducidad del recurso.</p><p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metadatos personalizados</td> 
@@ -814,7 +814,7 @@ Este módulo de acción crea nuevas relaciones de recurso para el recurso selecc
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el activo de ID con el que desea relacionar otros activos.</p> </td> 
   </tr> 
   <tr> 
@@ -837,7 +837,7 @@ Este módulo de acción elimina una relación de recurso para un recurso.
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el activo de ID desde el que desea eliminar una relación.</p> </td> 
   </tr> 
   <tr> 
@@ -869,7 +869,7 @@ Este módulo enumera los tipos de relación de recursos que existen para el recu
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el recurso de ID para el que desea enumerar los tipos de relación.</p> </td> 
   </tr> 
  </tbody> 
@@ -888,7 +888,7 @@ Este módulo enumera las relaciones de recurso para el recurso especificado.
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Adobe Experience Manager Assets a Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar Adobe Experience Manager Assets a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de recurso</td> 
+   <td role="rowheader">ID del recurso</td> 
    <td> <p>Introduzca o asigne el recurso de ID para el que desea enumerar las relaciones.</p> </td> 
   </tr> 
   <tr> 
