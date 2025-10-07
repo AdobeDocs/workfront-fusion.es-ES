@@ -287,7 +287,7 @@ ht-degree: 59%
          * [Coerción de tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funciones  {#functions}
-         * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+         * [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
