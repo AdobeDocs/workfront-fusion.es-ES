@@ -3,9 +3,9 @@ title: Resumen de API
 description: Las interfaces de programación de aplicaciones (API) son una forma de que las aplicaciones y los servicios se comuniquen entre sí. Fusion utiliza las API para comunicarse con la aplicación a la que se está conectando. Cada aplicación tiene una API independiente.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 1ee32ad1faa8c105142f85e83f1b522548fc7f93
+source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Una causa común de cambios importantes es la obsolescencia, cuando el propietar
 Como los escenarios de Fusion están configurados con los datos específicos, es posible que tenga que actualizar los escenarios.
 
 * Si los cambios estaban relacionados con la autenticación o la autorización, es posible que tenga que actualizar las conexiones para esa aplicación.
-* Si los cambios estaban relacionados con una acción específica (punto final) en la API, es posible que tenga que actualizar los módulos relacionados con esa acción a una nueva versión del módulo.
-* Si la versión completa de la API utilizada por Fusion está en desuso, es posible que tenga que actualizar todos los módulos de ese conector a una nueva versión de un conector.
+* Si los cambios estaban relacionados con una acción específica (punto final) en la API, es posible que tenga que actualizar cualquier módulo relacionado con esa acción a una nueva versión del módulo.
+* Si la versión completa de la API utilizada por Fusion está en desuso, es posible que tenga que actualizar todos los módulos de ese conector a una nueva versión.
 
 En muchos casos, puede actualizar a la nueva versión de un módulo sin necesidad de volver a configurar ese módulo.
 
