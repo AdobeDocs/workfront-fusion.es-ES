@@ -4,16 +4,16 @@ description: Dado que las aplicaciones a las que se conecta Workfront Fusion pue
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '417'
-ht-degree: 58%
+ht-degree: 51%
 
 ---
 
 # Actualización de un módulo a una nueva versión
 
-Dado que las aplicaciones a las que se conecta Workfront Fusion pueden actualizar o lanzar una nueva versión, a veces es necesario que Fusion lance módulos actualizados para esas aplicaciones.
+Dado que las aplicaciones a las que se conecta Workfront Fusion pueden actualizar o lanzar nuevas versiones, a veces es necesario que Fusion lance módulos actualizados para esas aplicaciones.
 
 Si ve un icono verde del módulo de actualización en un módulo en un escenario, significa que Workfront Fusion ha lanzado una nueva versión de ese módulo.
 
