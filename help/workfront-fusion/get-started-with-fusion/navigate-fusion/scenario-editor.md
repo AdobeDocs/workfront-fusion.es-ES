@@ -4,9 +4,9 @@ description: El editor de escenarios permite crear y editar escenarios en una in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 32%
 
 ---
@@ -100,7 +100,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 | Configuración de escenarios | El panel de configuración de escenario contiene la configuración avanzada del escenario. Para obtener más información acerca de la configuración disponible, vea [Configurar opciones de escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notas | Tome notas sobre el escenario. Otros usuarios pueden ver estas notas cuando se encuentren en el escenario. |
 | Alineación automática | Alinee automáticamente los módulos en su escenario. |
-| Explicar flujo | Vea una animación que muestra cómo fluyen los datos a través del escenario. |
+| Explicar flujo | Vea una animación en la que los puntos móviles muestran cómo fluyen los datos por el escenario. |
 | Herramientas de desarrollo | Con la herramienta de desarrollo, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para refinar el escenario. Para obtener más información, vea [Depurar un escenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Más | En el menú Más, puede importar o exportar modelos y restaurar el escenario a versiones anteriores. |
 
