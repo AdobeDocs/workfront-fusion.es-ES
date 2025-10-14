@@ -16,4 +16,4 @@ ht-degree: 3%
 # Referencias del panel Asignación: índice del artículo
 
 * [Tipos de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-* [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+* [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)

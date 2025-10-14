@@ -154,8 +154,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Módulos de activador](#trigger-modules)
-* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
-* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
+* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Otros módulos](#other-modules)
 
 ### Módulos de activador

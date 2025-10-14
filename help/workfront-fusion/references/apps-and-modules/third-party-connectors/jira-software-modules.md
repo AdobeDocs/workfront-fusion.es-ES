@@ -146,7 +146,7 @@ Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de AP
 
 Para autorizar una conexión entre Workfront Fusion y [!DNL Jira Server], necesita su clave de consumidor, clave privada y dirección URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
 
-* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
+* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configuración de la aplicación cliente como consumidor en  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crear una conexión con  [!DNL Jira] Server o Jira Data Center en Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 

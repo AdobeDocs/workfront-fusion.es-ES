@@ -91,7 +91,7 @@ El conector de SharePoint utiliza lo siguiente:
 
 ## Conexión de Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la configuración avanzada](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la autorización de certificados](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
