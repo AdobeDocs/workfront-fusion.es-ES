@@ -4,7 +4,7 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 28de0fbe4fd6dfbcdc8ea4032e1aa95ae3e7c556
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 74%
@@ -117,8 +117,8 @@ Puede crear una conexión con su cuenta de [!DNL Split.io] directamente desde un
         </td>
       </tr>
       <tr> 
-       <td role="rowheader">Clave de API </td> 
-       <td>Escriba su clave de API [!DNL Split.io].<p>Para obtener más información sobre las claves de API de [!DNL Split.io], consulte <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">claves de API</a> en la documentación de [!DNL Split.io].</p></td> 
+       <td role="rowheader">Clave de API [!UICONTROL]</td> 
+       <td>Escriba su clave de API de [!DNL Split.io].<p>Para obtener más información sobre las claves de API de [!DNL Split.io], consulte <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">claves de API</a> en la documentación de [!DNL Split.io].</p></td> 
       </tr> 
      </tbody> 
     </table>
