@@ -4,10 +4,10 @@ description: Las siguientes funciones de matriz están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 88%
+source-wordcount: '606'
+ht-degree: 86%
 
 ---
 
@@ -57,9 +57,9 @@ Devuelve una matriz primitiva que contiene los valores de una matriz compleja. E
 
   Devuelve una matriz primitiva con correos electrónicos
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  Devuelve una matriz primitiva con correos electrónicos que tienen una etiqueta igual a trabajo o inicio
+  Devuelve una matriz primitiva con correos electrónicos que tienen una etiqueta igual a trabajo
 
 >[!ENDSHADEBOX]
 
