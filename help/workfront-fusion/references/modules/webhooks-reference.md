@@ -4,10 +4,10 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 28%
+source-wordcount: '1064'
+ht-degree: 23%
 
 ---
 
@@ -34,6 +34,25 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
 
 * [Introducción a Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Webhooks intermedios](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## Ver detalles del webhook
+
+Puede ver una lista de los webhooks en el área de Webhooks.
+
+1. Para abrir el área de Webhooks, haga clic en el icono de Webhooks ![Webhooks](assets/webhooks-icon.png) en el panel de navegación izquierdo.
+
+   Aquí puede ver una lista de webhooks.
+
+   ![Lista de webhook](assets/list-of-webhooks.png)
+
+1. Para buscar un webhook específico, ingrese el término de búsqueda en el cuadro Buscar.
+1. Para copiar un gancho web, haga clic en el icono Copiar ![Copiar el icono del gancho web](assets/copy-webhook-icon.png) cerca de la dirección URL de la fila correspondiente.
+1. Para deshabilitar o habilitar un webhook, deshabilite o habilite la opción en la columna Estado de la fila correspondiente a dicho webhook.
+1. Para ver si una cola de webhooks está llena, marque la columna Full Queue. El número de esta columna es el número de elementos que hay actualmente en la cola.
+1. Para ver las operaciones administradas por un webhook, haga clic en **Operaciones** en la columna Cola completa de ese webhook.
+1. Para ver el escenario donde se usa un webhook, haga clic en el botón **Escenario** de la columna Escenario para ese webhook.
+1. Para ver la conexión usada para este webhook, haga clic en el botón **Conexión** en la columna Conexión para ese webhook.
+1. Para ocultar columnas o mostrar columnas previamente ocultas, haga clic en el icono **Columnas** ![Icono de columnas](assets/glist-column.png) y marque o desmarque los nombres de columna.
 
 ## Programar activadores instantáneos
 
