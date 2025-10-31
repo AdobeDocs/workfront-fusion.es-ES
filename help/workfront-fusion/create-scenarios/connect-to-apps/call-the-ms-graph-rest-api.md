@@ -4,10 +4,10 @@ description: Llame a la API de REST de MS Graph a través de Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 25%
+source-wordcount: '691'
+ht-degree: 18%
 
 ---
 
@@ -19,34 +19,29 @@ Se accede a muchos servicios web de Microsoft a través de la API de Microsoft G
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront 
-   <td> <p>Cualquiera</p> </td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
-   <p>O</p>
-   <p>Heredado: cualquiera </p>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan Select or Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe adquirir Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 

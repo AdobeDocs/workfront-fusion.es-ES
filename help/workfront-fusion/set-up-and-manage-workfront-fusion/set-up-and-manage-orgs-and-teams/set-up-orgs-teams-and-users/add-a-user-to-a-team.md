@@ -4,10 +4,10 @@ description: Sus usuarios se asignan a equipos cuando usted los crea. Si es nece
 author: Becky
 feature: Workfront Fusion
 exl-id: c972a9f0-5195-4d80-8a19-4251d8ec57de
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 73%
+source-wordcount: '323'
+ht-degree: 58%
 
 ---
 
@@ -16,6 +16,37 @@ ht-degree: 73%
 Sus usuarios se asignan a equipos cuando usted los crea. Si es necesario añadir un usuario existente a un equipo, puede añadirlo en la página Usuarios del equipo.
 
 Para agregar un usuario a Fusion, consulte [Agregar usuarios a Adobe Workfront Fusion a través de Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md).
+
+## Requisitos de acceso
+
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Agregar un usuario
 
 La adición de un usuario a un equipo se gestiona desde la página para ese equipo.
 

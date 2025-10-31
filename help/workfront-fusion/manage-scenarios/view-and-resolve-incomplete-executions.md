@@ -4,9 +4,9 @@ description: La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecucione
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '580'
 ht-degree: 66%
 
 ---
@@ -21,59 +21,9 @@ La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecuciones de escenari
 >
 >Para obtener más información acerca de la configuración de escenarios, vea [Configurar escenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Requisitos de acceso
+## Vista previa destacada para el artículo completo {#highlighted-preview-article-level}
 
-+++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
-
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
-   <p>O</p>
-   <p>Heredado: cualquiera </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Producto</td> 
-   <td>
-   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
-   </td> 
-  </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Configuraciones de nivel de acceso*</td> 
-   <td> 
-     <p>Debe ser administrador de Workfront Fusion para su organización.</p>
-     <p>Debe ser administrador de Workfront Fusion para su equipo.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Ver ejecuciones incompletas
+<span class="preview">La información de esta página hace referencia a una funcionalidad que aún no está disponible de forma general. Solo está disponible en el entorno de vista previa de espacio aislado.</span>## Ver ejecuciones incompletas
 
 Si un módulo encuentra un error durante su operación, se añade una nueva ejecución incompleta a la carpeta Ejecuciones incompletas. Cada ejecución incompleta contiene el modelo del escenario y todos los paquetes que se pueden asignar al módulo fallido. Para abrir la lista de ejecuciones incompletas, haga clic en la pestaña [!UICONTROL Ejecuciones incompletas] de la página de detalles del escenario.
 

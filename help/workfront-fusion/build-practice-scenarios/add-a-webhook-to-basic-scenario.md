@@ -7,10 +7,10 @@ description: Los webhooks, también conocidos como déclencheur instantáneos, s
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 36%
+source-wordcount: '510'
+ht-degree: 35%
 
 ---
 
@@ -32,26 +32,22 @@ En este ejemplo se modifica el escenario que se creó en [Crear un escenario bá
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete que incluya automatización e integración de Workfront</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
-   <td>
-   <p>No se requiere licencia de Workfront Fusion.</p>
-   </td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Debe tener una cuenta para cualquier aplicación o servicio al que se conecte con Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

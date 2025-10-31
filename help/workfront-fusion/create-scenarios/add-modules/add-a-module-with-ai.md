@@ -4,10 +4,10 @@ description: Puede utilizar IA para escribir un mensaje de texto que describa lo
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 23%
+source-wordcount: '612'
+ht-degree: 17%
 
 ---
 
@@ -29,34 +29,22 @@ Al igual que con cualquier elemento generado a partir de IA, le recomendamos que
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: [!UICONTROL Work] o superior</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
-   <p>O</p>
-   <p>Heredado: cualquiera </p>
-   </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -64,18 +52,14 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Requisitos previos
++++## Requisitos previos
 
 Su organización debe cumplir los siguientes requisitos previos para utilizar esta funcionalidad:
 
 * Su organización debe haber participado en el programa Beta de Workfront AI Assistant.
 * Adobe debe tener un acuerdo firmado de Adobe Gen AI archivado para su organización.
 
-  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo de IA de Adobe Gen](https://experienceleague.adobe.com/es/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) en el artículo Información general del Asistente de IA en la documentación de Workfront.
+  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo de IA de Adobe Gen](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) en el artículo Información general del Asistente de IA en la documentación de Workfront.
 
 ## Aplicaciones de módulo de IA admitidas actualmente
 
