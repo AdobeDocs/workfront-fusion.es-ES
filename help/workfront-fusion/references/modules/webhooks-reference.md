@@ -4,10 +4,10 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
+source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 23%
+source-wordcount: '1092'
+ht-degree: 22%
 
 ---
 
@@ -50,6 +50,7 @@ Puede ver una lista de los webhooks en el área de Webhooks.
 1. Para deshabilitar o habilitar un webhook, deshabilite o habilite la opción en la columna Estado de la fila correspondiente a dicho webhook.
 1. Para ver si una cola de webhooks está llena, marque la columna Full Queue. El número de esta columna es el número de elementos que hay actualmente en la cola.
 1. Para ver las operaciones administradas por un webhook, haga clic en **Operaciones** en la columna Cola completa de ese webhook.
+1. Para ver si un webhook ha caducado, marque la columna Caducado. Los webhooks caducados no están adjuntos a ningún escenario o no han recibido ningún evento durante 120 horas.
 1. Para ver el escenario donde se usa un webhook, haga clic en el botón **Escenario** de la columna Escenario para ese webhook.
 1. Para ver la conexión usada para este webhook, haga clic en el botón **Conexión** en la columna Conexión para ese webhook.
 1. Para ocultar columnas o mostrar columnas previamente ocultas, haga clic en el icono **Columnas** ![Icono de columnas](assets/glist-column.png) y marque o desmarque los nombres de columna.
