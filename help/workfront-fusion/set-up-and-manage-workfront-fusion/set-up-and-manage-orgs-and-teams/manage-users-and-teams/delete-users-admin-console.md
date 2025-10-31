@@ -69,7 +69,7 @@ Un usuario se desactiva de la [!DNL Adobe Admin Console] cuando se da una de las
 * El usuario se elimina de un perfil de producto y no se asigna a otro perfil de producto.
 * El usuario se elimina o desactiva en la organización que incluye Workfront Fusion.
 
-  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/enterprise/using/manage-users-individually.html?lang=es).
+  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/es/enterprise/using/manage-users-individually.html?lang=es).
 
 En Workfront Fusion, la desactivación afecta al usuario de una de las siguientes maneras:
 
