@@ -4,10 +4,10 @@ description: Los módulos FTP permiten supervisar los cambios realizados en un a
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 79%
+source-wordcount: '1397'
+ht-degree: 77%
 
 ---
 
@@ -19,34 +19,29 @@ Los módulos FTP permiten supervisar los cambios realizados en un archivo de una
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
-   <p>O</p>
-   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -106,7 +101,7 @@ Para utilizar módulos FTP, debe tener una cuenta con un servicio FTP.
      </tr> 
     <tr> 
    <td> <p>[!UICONTROL Reject unauthorized certificates]</p> </td> 
-   <td> <p>Active esta opción para comprobar el certificado del servidor FTP. Si la verificación falla, no se creará la conexión. Para aprobar la verificación, el certificado debe cumplir uno de los siguientes criterios:</p> 
+   <td> <p>Habilite esta opción para comprobar el certificado del servidor FTP. Si la verificación falla, no se creará la conexión. Para aprobar la verificación, el certificado debe cumplir uno de los siguientes criterios:</p> 
     <ul> 
      <li>estar firmado por una entidad emisora de certificados raíz</a></li> 
      <li>estar firmado por una autoridad de certificación intermedia. En este caso, todos los certificados intermedios deben instalarse en el servidor FTP.</li> 
@@ -364,7 +359,7 @@ Carga un archivo en el servidor FTP.
   </tr> 
   <tr> 
    <td>[!UICONTROL Append to an already existing file]</td> 
-   <td> <p>Si esta opción está habilitada y el archivo ya existe en el servidor FTP, el contenido del archivo se anexa al archivo existente. Si esta opción no está activada, el contenido del archivo se sobrescribirá.</p> </td> 
+   <td> <p>Si esta opción está habilitada y el archivo ya existe en el servidor FTP, el contenido del archivo se anexa al archivo existente. Si esta opción no está habilitada, el contenido del archivo se sobrescribirá.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Create folders if don't exist] </td> 

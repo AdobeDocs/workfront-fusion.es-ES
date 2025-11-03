@@ -4,10 +4,10 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 22%
+source-wordcount: '1182'
+ht-degree: 23%
 
 ---
 
@@ -35,6 +35,35 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
 * [Introducción a Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Webhooks intermedios](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
+## Requisitos de acceso
+
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
 ## Ver detalles del webhook
 
 Puede ver una lista de los webhooks en el área de Webhooks.
@@ -54,6 +83,7 @@ Puede ver una lista de los webhooks en el área de Webhooks.
 1. Para ver el escenario donde se usa un webhook, haga clic en el botón **Escenario** de la columna Escenario para ese webhook.
 1. Para ver la conexión usada para este webhook, haga clic en el botón **Conexión** en la columna Conexión para ese webhook.
 1. Para ocultar columnas o mostrar columnas previamente ocultas, haga clic en el icono **Columnas** ![Icono de columnas](assets/glist-column.png) y marque o desmarque los nombres de columna.
+
 
 ## Programar activadores instantáneos
 

@@ -4,9 +4,9 @@ description: Con los módulos  [!DNL Adobe Acrobat Sign] puede iniciar un escena
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '6790'
+source-wordcount: '6763'
 ht-degree: 93%
 
 ---
@@ -17,42 +17,41 @@ Con los módulos [!DNL Adobe Acrobat Sign], puede iniciar un escenario de Adobe 
 
 ## Requisitos de acceso
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Plan de Adobe Workfront*</td>
-  <td> <p>[!UICONTROL Pro] o superior</p> </td>
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Requisito de licencia actual: no se requiere licencia de Workfront Fusion.</p>
-   <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL Workfront Fusion para automatización e integración de trabajo] </p>
-   </td>  
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Requisito actual del producto: si tiene el plan de Adobe Workfront de [!UICONTROL Select] o [!UICONTROL Prime], su organización debe adquirir Adobe Workfront Fusion y Adobe Workfront para utilizar la funcionalidad que se describe en este artículo. Workfront Fusion está incluido en el plan de Workfront de [!UICONTROL Ultimate].</p>
-   <p>O</p>
-   <p>Requisito de productos heredados: su organización debe adquirir Adobe Workfront Fusion así como Adobe Workfront para utilizar la funcionalidad descrita en este artículo.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Información de la API [!DNL Adobe Acrobat Sign]
 
@@ -124,7 +123,7 @@ Este módulo activador inicia un escenario cuando se crea o actualiza un acuerdo
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Introduzca los términos que desea buscar. El módulo devuelve registros que incluyen estos términos como valores de campo.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte “Cómo funciona la búsqueda de texto” en <a href="https://helpx.adobe.com/es/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Búsqueda de Adobe Sign: cómo funciona</a>.</p> </td> 
+   <td> <p>Introduzca los términos que desea buscar. El módulo devuelve registros que incluyen estos términos como valores de campo.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte “Cómo funciona la búsqueda de texto” en <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Búsqueda de Adobe Sign: cómo funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -388,7 +387,7 @@ Este módulo de acción crea un acuerdo, lo envía para su firma y devuelve el I
         </ul> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Label]</b> </p> <p>Introduzca una etiqueta para el archivo.</p> </li> 
-     <li> <p><b>[!UICONTROL Notarize]</b> </p> <p>Active esta opción para indicar que el archivo debe estar certificado por un notario.</p> </li> 
+     <li> <p><b>[!UICONTROL Notarize]</b> </p> <p>Habilite esta opción para indicar que el archivo debe estar certificado por un notario.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -973,7 +972,7 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
     <ul> 
      <li> <p><b>[!UICONTROL Find text]</b> </p> <p>Escriba el texto que desea buscar en los metadatos del acuerdo. Cada palabra es tratada como un elemento de texto independiente. </p> </li> 
      <li> <p><b>[!UICONTROL Find text in]</b> </p> <p>Seleccione los campos de metadatos en los que desea buscar texto. Si no selecciona nada, los módulos buscan todos los metadatos.</p> </li> 
-    </ul> <p>El módulo devuelve cualquier acuerdo que contenga alguno de los textos introducidos en cualquiera de los campos seleccionados. Ejemplo: si introducimos “campaña de primavera” y seleccionamos las opciones Título y Nota, devuelve cualquier acuerdo con las palabras “primavera” o “campaña” en Título o Nota.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte "Cómo funciona la búsqueda de texto" en <a href="https://helpx.adobe.com/es/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Búsqueda: cómo funciona</a>.</p> </td> 
+    </ul> <p>El módulo devuelve cualquier acuerdo que contenga alguno de los textos introducidos en cualquiera de los campos seleccionados. Ejemplo: si introducimos “campaña de primavera” y seleccionamos las opciones Título y Nota, devuelve cualquier acuerdo con las palabras “primavera” o “campaña” en Título o Nota.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte "Cómo funciona la búsqueda de texto" en <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Búsqueda: cómo funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created date]</td> 

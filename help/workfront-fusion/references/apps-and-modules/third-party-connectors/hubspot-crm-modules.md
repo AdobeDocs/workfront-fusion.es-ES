@@ -4,9 +4,9 @@ description: Los módulos CRM de Adobe Workfront Fusion HubSpot le permiten supe
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '7317'
+source-wordcount: '7323'
 ht-degree: 32%
 
 ---
@@ -19,34 +19,29 @@ Los módulos de Adobe Workfront Fusion [!DNL HubSpot CRM] le permiten supervisar
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
-   <p>O</p>
-   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -1777,7 +1772,7 @@ Este módulo de acción crea una nueva publicación de blog.
    <td>Para cada palabra clave que desee agregar a esta publicación, haga clic en <b>Agregar elemento</b> e introduzca la palabra clave y el GUID de palabra clave.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Meta descripción</td> 
+   <td role="rowheader">Descripción de Meta</td> 
    <td>Escriba o asigne el texto de la etiqueta <code>meta</code> en la página.</td> 
   </tr> 
   <tr> 
@@ -2021,11 +2016,11 @@ Este módulo de acción actualiza una suscripción de correo electrónico en Hub
    <td>Para cada estado para el que desee actualizar la suscripción, haga clic en <b>Agregar elemento</b> e introduzca el ID del estado, y si la dirección de correo electrónico se suscribirá a ese estado.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Estado legal de la suscripción al portal de </td> 
+   <td role="rowheader">Estado legal de la suscripción al portal de [!UICONTROL]</td> 
    <td>Para registrar la base legal de esta suscripción para el RGPD, seleccione el estado legal de esta suscripción.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Explicación de la base jurídica de la suscripción al portal </td> 
+   <td role="rowheader">Explicación de la base jurídica de la suscripción al portal [!UICONTROL]</td> 
    <td>Para añadir una nota sobre la base legal de esta suscripción para el RGPD, introduzca o asigne el texto de la nota.</td> 
   </tr> 
  </tbody> 

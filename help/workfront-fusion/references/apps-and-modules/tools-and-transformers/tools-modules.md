@@ -4,10 +4,10 @@ description: La sección  [!DNL Adobe Workfront Fusion Tools] incluye varios mó
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 86%
+source-wordcount: '2277'
+ht-degree: 85%
 
 ---
 
@@ -21,32 +21,22 @@ Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicacione
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
-   <td>
-   <p>No se requiere licencia de Workfront Fusion</p>
-   </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +44,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## [!UICONTROL Herramientas] y sus campos
 
@@ -286,7 +276,7 @@ Este módulo le permite recuperar valores numéricos y, a continuación, aplicar
   </tr> 
   <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
-   <td>Active esta opción para detener el escenario cuando no haya resultados.</td> 
+   <td>Habilite esta opción para detener el escenario cuando no haya resultados.</td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Value]</p> </td> 
@@ -425,7 +415,7 @@ Comprueba si el valor de entrada coincide con la lista de valores proporcionada.
   </tr> 
   <tr> 
    <td>[!UICONTROL Use regular expressions to match]</td> 
-   <td> <p>Active esta opción para utilizar expresiones regulares. El módulo determina los casos en función de la expresión regular, en lugar de una coincidencia exacta.</p> 
+   <td> <p>Habilite esta opción para utilizar expresiones regulares. El módulo determina los casos en función de la expresión regular, en lugar de una coincidencia exacta.</p> 
     <div> 
      <p>Una expresión regular es una secuencia de caracteres en la que cada carácter es un metacarácter, que tiene un significado especial, o un carácter regular que tiene un significado literal. Estos caracteres y metacaracteres identifican un patrón que se puede utilizar para buscar texto. Por ejemplo, si desea buscar nombres, puede configurar una expresión regular para buscar un patrón que consista en dos palabras consecutivas que comiencen con mayúsculas. Las expresiones regulares son una potente herramienta para buscar y manipular texto.</p> 
      <p>El análisis de las expresiones regulares excede el ámbito de este artículo. Recomendamos los siguientes recursos:</p> 

@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 71%
+source-wordcount: '3292'
+ht-degree: 70%
 
 ---
 
@@ -23,34 +23,29 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
-   <p>O</p>
-   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -69,10 +64,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 >[!IMPORTANT]
 >
 >* Para utilizar el conector de Dropbox, primero debe crear una aplicación en Dropbox.
->  &#x200B;>   Para obtener más información, busque &quot;Crear una aplicación&quot; en la guía para desarrolladores de Dropbox.
+>  >   Para obtener más información, busque &quot;Crear una aplicación&quot; en la guía para desarrolladores de Dropbox.
 >* Al crear la aplicación, use el siguiente URI de redireccionamiento: `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox debe aprobar las aplicaciones con más de 50 usuarios.
->  &#x200B;>   Para obtener más información, busque “Aprobación de producción” en la guía para desarrolladores de Dropbox.
+>  >   Para obtener más información, busque “Aprobación de producción” en la guía para desarrolladores de Dropbox.
 
 ## Información de API de Dropbox
 
@@ -154,8 +149,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Módulos de activador](#trigger-modules)
-* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
-* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
+* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Otros módulos](#other-modules)
 
 ### Módulos de activador
@@ -277,7 +272,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>Mostrar solo los archivos descargables</td> 
-   <td> <p> Active esta opción para devolver solo los archivos descargables. Algunos tipos de archivos, como los documentos de Google, no se pueden descargar.</p> </td> 
+   <td> <p> Habilite esta opción para devolver solo los archivos descargables. Algunos tipos de archivos, como los documentos de Google, no se pueden descargar.</p> </td> 
   </tr> 
   <tr> 
    <td>Carpeta </td> 
@@ -402,7 +397,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Auto rename]</td> 
-   <td> <p> Active esta opción para cambiar el nombre de la nueva carpeta, si ya existe una carpeta con el mismo nombre en la ubicación de destino.</p> </td> 
+   <td> <p> Habilite esta opción para cambiar el nombre de la nueva carpeta, si ya existe una carpeta con el mismo nombre en la ubicación de destino.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -645,7 +640,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL Overwrite an existing file]</td> 
-   <td> <p> Active esta opción para reemplazar el archivo existente con el nuevo archivo. Si esta opción se deja deshabilitada, se cambiará el nombre del archivo cargado.</p> </td> 
+   <td> <p> Habilite esta opción para reemplazar el archivo existente con el nuevo archivo. Si esta opción se deja deshabilitada, se cambiará el nombre del archivo cargado.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2600'
-ht-degree: 92%
+source-wordcount: '2606'
+ht-degree: 91%
 
 ---
 
@@ -24,34 +24,29 @@ ht-degree: 92%
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
-   <p>O</p>
-   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -94,13 +89,13 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Paneles](#dashboards)
+* [Paneles de control](#dashboards)
 * [Informes](#reports)
 * [Conjunto de datos](#dataset)
 * [Aplicaciones](#apps)
 * [Otro](#other)
 
-### Paneles
+### Paneles de control
 
 * [Crear un tablero](#create-a-dashboard)
 * [Obtener un panel](#get-a-dashboard)
@@ -108,9 +103,9 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Mostrar mosaicos del panel](#list-dashboard-tiles)
 * [Paneles de lista](#list-dashboards)
 
-#### [!UICONTROL Crear un panel]
+#### [!UICONTROL Crear un panel de control]
 
-Este módulo de acción crea un nuevo panel.
+Este módulo de acción crea un nuevo panel de control.
 
 <table>
   <col/>
@@ -122,18 +117,18 @@ Este módulo de acción crea un nuevo panel.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name]</td>
-      <td>Introduzca o asigne un nombre para el panel.</td>
+      <td>Introduzca o asigne un nombre para el panel de control.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Group ID]  </td>
-      <td>Seleccione o asigne el ID del grupo propietario del nuevo panel.</td>
+      <td>Seleccione o asigne el ID del grupo propietario del nuevo panel de control.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Conseguir un panel]
+#### [!UICONTROL Conseguir un panel de control]
 
-Este módulo de acción recupera los metadatos de un panel especificado.
+Este módulo de acción recupera los metadatos de un panel de control especificado.
 
 <table>
   <col/>
@@ -146,25 +141,25 @@ Este módulo de acción recupera los metadatos de un panel especificado.
     <tr>
       <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
       <td>
-        <p>Seleccione o asigne la opción para elegir el panel para el que desea recuperar los metadatos.</p>
+        <p>Seleccione o asigne la opción para elegir el panel de control para el que desea recuperar los metadatos.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Dashboard ID]</td>
       <td>
-        <p>Introduzca o asigne el ID del panel para el que desea recuperar los metadatos.</p>
+        <p>Introduzca o asigne el ID del panel de control para el que desea recuperar los metadatos.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Group ID]  </td>
-      <td>Seleccione o asigne el ID del grupo propietario de los paneles de los que desea recuperar metadatos.</td>
+      <td>Seleccione o asigne el ID del grupo propietario de los paneles de control de los que desea recuperar metadatos.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Obtener un mosaico del panel]
+#### [!UICONTROL Obtener un mosaico del panel de control]
 
-Este módulo de acción recupera los metadatos de un mosaico de panel especificado.
+Este módulo de acción recupera los metadatos de un mosaico de panel de control especificado.
 
 <table>
   <col/>
@@ -177,13 +172,13 @@ Este módulo de acción recupera los metadatos de un mosaico de panel especifica
     <tr>
       <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
       <td>
-        <p>Seleccione o asigne la opción para elegir los detalles del panel que desea recuperar.</p>
+        <p>Seleccione o asigne la opción para elegir los detalles del panel de control que desea recuperar.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Dashboard ID]</td>
       <td>
-        <p>Introduzca o asigne el ID del panel cuyos detalles desea recuperar.</p>
+        <p>Introduzca o asigne el ID del panel de control cuyos detalles desea recuperar.</p>
       </td>
     </tr>
     <tr>
@@ -197,9 +192,9 @@ Este módulo de acción recupera los metadatos de un mosaico de panel especifica
   </tbody>
 </table>
 
-#### [!UICONTROL Lista de mosaicos del panel]
+#### [!UICONTROL Lista de mosaicos del panel de control]
 
-Este módulo de búsqueda recupera una lista de mosaicos del panel.
+Este módulo de búsqueda recupera una lista de mosaicos del panel de control.
 
 <table>
 <col/>
@@ -212,18 +207,18 @@ Este módulo de búsqueda recupera una lista de mosaicos del panel.
   <tr>
     <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
     <td>
-      <p>Seleccione o asigne la opción para elegir el panel cuyos mosaicos desee especificar.</p>
+      <p>Seleccione o asigne la opción para elegir el panel de control cuyos mosaicos desee especificar.</p>
     </td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Dashboard ID]</td>
     <td>
-      <p>Introduzca o asigne el ID del panel que contiene los mosaicos que desea especificar.</p>
+      <p>Introduzca o asigne el ID del panel de control que contiene los mosaicos que desea especificar.</p>
     </td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Group ID]  </td>
-    <td>Seleccione o asigne el ID del grupo propietario de los paneles que contienen los mosaicos que desea especificar.</td>
+    <td>Seleccione o asigne el ID del grupo propietario de los paneles de control que contienen los mosaicos que desea especificar.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Limit]  </td>
@@ -236,7 +231,7 @@ Este módulo de búsqueda recupera una lista de mosaicos del panel.
 
 #### [!UICONTROL Paneles de lista]
 
-Este módulo de búsqueda recupera una lista de paneles.
+Este módulo de búsqueda recupera una lista de paneles de control.
 
 <table>
   <col/>
@@ -249,7 +244,7 @@ Este módulo de búsqueda recupera una lista de paneles.
     <tr>
       <td role="rowheader">[!UICONTROL Group ID]  </td>
       <td>
-        <p>Seleccione o asigne el ID del grupo propietario de los paneles que desee enumerar.</p>
+        <p>Seleccione o asigne el ID del grupo propietario de los paneles de control que desee enumerar.</p>
       </td>
     </tr>
     <tr>
@@ -824,9 +819,9 @@ Este módulo de acción recupera los metadatos de una aplicación especificada.
   </tbody>
 </table>
 
-#### [!UICONTROL Obtener el panel de una aplicación]
+#### [!UICONTROL Obtener el panel de control de una aplicación]
 
-Este módulo de acción recupera los metadatos del panel de una aplicación especificada.
+Este módulo de acción recupera los metadatos del panel de control de una aplicación especificada.
 
 <table>
   <col/>
@@ -839,13 +834,13 @@ Este módulo de acción recupera los metadatos del panel de una aplicación espe
     <tr>
       <td role="rowheader">[!UICONTROL App ID]  </td>
       <td>
-        <p>Seleccione o asigne el ID de la aplicación que contiene el panel que desea recuperar.</p>
+        <p>Seleccione o asigne el ID de la aplicación que contiene el panel de control que desea recuperar.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Report ID]</td>
       <td>
-        <p>  Seleccione o asigne el ID del panel que desea recuperar.</p>
+        <p>  Seleccione o asigne el ID del panel de control que desea recuperar.</p>
       </td>
     </tr>
   </tbody>
@@ -899,9 +894,9 @@ Este módulo de búsqueda recupera una lista de todas las aplicaciones instalada
   </tbody>
 </table>
 
-#### [!UICONTROL Lista de paneles de la aplicación]
+#### [!UICONTROL Lista de paneles de control de la aplicación]
 
-Este módulo de búsqueda recupera una lista de paneles de una aplicación especificada.
+Este módulo de búsqueda recupera una lista de paneles de control de una aplicación especificada.
 
 <table>
   <col/>
@@ -913,7 +908,7 @@ Este módulo de búsqueda recupera una lista de paneles de una aplicación espec
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL App ID]</td>
-      <td>Seleccione o asigne el ID de la aplicación desde la que desea enumerar los paneles.</td>
+      <td>Seleccione o asigne el ID de la aplicación desde la que desea enumerar los paneles de control.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Limit]  </td>

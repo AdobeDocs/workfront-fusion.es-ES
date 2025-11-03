@@ -4,9 +4,9 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2275'
 ht-degree: 88%
 
 ---
@@ -22,48 +22,41 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
 
 ## Requisitos de acceso
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Plan de Adobe Workfront*</td>
-      <td>
-        <p>[!UICONTROL Pro] o superior</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Licencia de Adobe Workfront*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Licencia de Adobe Workfront Fusion**</td>
-      <td>
-   <p>Requisito de licencia actual: no se requiere licencia de Workfront Fusion.</p>
-   <p>O</p>
-   <p>Requisito de licencia heredado: [!UICONTROL Workfront Fusion para automatización e integración de trabajo] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Producto</td>
-      <td>
-   <p>Requisito actual del producto: si tiene el plan de Adobe Workfront de [!UICONTROL Select] o [!UICONTROL Prime], su organización debe adquirir Adobe Workfront Fusion y Adobe Workfront para utilizar la funcionalidad que se describe en este artículo. Workfront Fusion está incluido en el plan de Workfront de [!UICONTROL Ultimate].</p>
-   <p>O</p>
-   <p>Requisito de productos heredados: su organización debe adquirir Adobe Workfront Fusion así como Adobe Workfront para utilizar la funcionalidad descrita en este artículo.</p>
-   </td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
+   <td>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Requisitos previos
 
@@ -246,7 +239,7 @@ Este módulo de acción crea una actividad, una oferta o un público AB o XT.
         </li>
         <li>
           <b>[!UICONTROL Audience]</b>
-          <p>Para obtener información detallada sobre los campos, consulte <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1">Crear audiencia</a> en la documentación de la API de Adobe Target.</p>
+          <p>Para obtener información detallada sobre los campos, consulte <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1">Crear público</a> en la documentación de la API de Adobe Target.</p>
         </li>
         <li>
           <b>[!UICONTROL AB Activity]</b>
@@ -760,10 +753,10 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ta
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Target], consulte <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >&rbrace;Crear una conexión con [!DNL Adobe Target]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Target], consulte <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >}Crear una conexión con [!DNL Adobe Target]</a> en este artículo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
+      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
       <td>Escriba o asigne la dirección URL base de [!DNL Target].</td>
     </tr>
     <tr>
@@ -805,7 +798,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ta
 
 #### [!UICONTROL Eliminar un registro]
 
-Este módulo de acción elimina una sola actividad AB, actividad XT, oferta o audiencia.
+Este módulo de acción elimina una sola actividad AB, actividad XT, oferta o público.
 
 <table style="table-layout:auto"> 
 <col/>
@@ -828,7 +821,7 @@ Este módulo de acción elimina una sola actividad AB, actividad XT, oferta o au
 
 #### [!UICONTROL Leer un registro]
 
-Este módulo de acción recupera datos de una sola actividad, oferta, audiencia, propiedad o informe.
+Este módulo de acción recupera datos de una sola actividad, oferta, público, propiedad o informe.
 
 <table style="table-layout:auto"> 
 <col/>

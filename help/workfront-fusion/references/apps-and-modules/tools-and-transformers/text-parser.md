@@ -4,10 +4,10 @@ description: Puede utilizar la herramienta Text parser para analizar el texto y 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 81%
+source-wordcount: '1311'
+ht-degree: 80%
 
 ---
 
@@ -19,32 +19,22 @@ Puede utilizar la [!UICONTROL herramienta de análisis de texto] para analizar t
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
-   <td>
-   <p>No se requiere licencia de Workfront Fusion</p>
-   </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -52,9 +42,9 @@ Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
 
 Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## Información de API del analizador de texto
 
@@ -97,7 +87,7 @@ Recupera los elementos deseados del código del HTML.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
-   <td> <p>Active esta opción para asegurarse de que el módulo no detenga el escenario si no devuelve resultados.</p> </td> 
+   <td> <p>Habilite esta opción para asegurarse de que el módulo no detenga el escenario si no devuelve resultados.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Element type]</td> 
@@ -154,7 +144,7 @@ Analiza elementos de texto en función del patrón determinado.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
-   <td> <p>Active esta opción para convertir el texto incluido en las etiquetas de encabezado (como &lt;h2&gt; &lt;/h2&gt;) en texto en mayúsculas.</p> </td> 
+   <td> <p>Habilite esta opción para convertir el texto incluido en las etiquetas de encabezado (como &lt;h2&gt; &lt;/h2&gt;) en texto en mayúsculas.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -181,11 +171,11 @@ El análisis de las expresiones regulares excede el ámbito de este artículo. R
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
-   <td> <p>Active esta opción para recuperar todas las coincidencias del texto. Cada coincidencia se genera en un paquete independiente. Si esta opción está desactivada, el módulo recupera únicamente la primera entrada.</p> </td> 
+   <td> <p>Habilite esta opción para recuperar todas las coincidencias del texto. Cada coincidencia se genera en un paquete independiente. Si esta opción está desactivada, el módulo recupera únicamente la primera entrada.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Case sensitive]</td> 
-   <td> <p> Active esta opción para que este módulo distinga entre mayúsculas y minúsculas.</p> </td> 
+   <td> <p> Habilite esta opción para que este módulo distinga entre mayúsculas y minúsculas.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Multiline] </td> 
@@ -197,7 +187,7 @@ El análisis de las expresiones regulares excede el ámbito de este artículo. R
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
-   <td> <p>Active esta opción para asegurarse de que el módulo no detenga el escenario si no devuelve resultados.</p> </td> 
+   <td> <p>Habilite esta opción para asegurarse de que el módulo no detenga el escenario si no devuelve resultados.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Text] </td> 
@@ -224,11 +214,11 @@ Busca un valor o una expresión regular especificados en el texto introducido y 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
-   <td> <p>Active esta opción para recuperar todas las coincidencias del texto. Cada coincidencia se genera en un paquete independiente. Si esta opción está desactivada, el módulo recupera únicamente la primera entrada.</p> </td> 
+   <td> <p>Habilite esta opción para recuperar todas las coincidencias del texto. Cada coincidencia se genera en un paquete independiente. Si esta opción está desactivada, el módulo recupera únicamente la primera entrada.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Case sensitive]</td> 
-   <td> <p> Active esta opción para que este módulo distinga entre mayúsculas y minúsculas.</p> </td> 
+   <td> <p> Habilite esta opción para que este módulo distinga entre mayúsculas y minúsculas.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Multiline] </td> 

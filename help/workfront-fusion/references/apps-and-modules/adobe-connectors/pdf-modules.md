@@ -5,9 +5,9 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '4145'
+source-wordcount: '4151'
 ht-degree: 89%
 
 ---
@@ -33,34 +33,29 @@ Para obtener información sobre la API utilizada para PDF Services, consulte [Ad
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> <p>Nuevo: estándar</p><p>O</p><p>Actual: Trabajo o superior</p> </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licencia de Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Actual: No se requiere licencia de Workfront Fusion</p>
-   <p>O</p>
-   <p>Heredado: Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Seleccione o paquete de Prime Workfront: su organización debe adquirir Adobe Workfront Fusion.</li><li>Paquete de Ultimate Workfront: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -354,7 +349,7 @@ Esta herramienta convierte un archivo HTML a un archivo PDF.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include header and footer]</td> 
-   <td> <p>Active esta opción para crear encabezados y pies de página para el documento en PDF.</p> 
+   <td> <p>Habilite esta opción para crear encabezados y pies de página para el documento en PDF.</p> 
     <ul> 
      <li> <p>El encabezado incluye una fecha y el título del documento.</p> </li> 
      <li> <p>El pie de página incluye el nombre del archivo y un número de página.</p> </li> 
@@ -535,11 +530,11 @@ Este módulo de acción le permite extraer datos de un archivo de PDF. El módul
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Extract Bounding boxes?]</td> 
-   <td>Active esta opción para extraer datos sobre el cuadro delimitador del texto.</td> 
+   <td>Habilite esta opción para extraer datos sobre el cuadro delimitador del texto.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include styling information for output?]</td> 
-   <td>Active esta opción para añadir información de estilo al JSON de salida.</td> 
+   <td>Habilite esta opción para añadir información de estilo al JSON de salida.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -787,11 +782,11 @@ Este módulo de acción crea un PDF etiquetado para casos de uso de accesibilida
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Shift Headings]</td> 
-   <td> <p>Active esta opción para cambiar los encabezados del documento.</p> 
+   <td> <p>Habilite esta opción para cambiar los encabezados del documento.</p> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generar informe]</td> 
-   <td> <p>Active esta opción para generar un informe que enumere los problemas de accesibilidad en el PDF junto con su ubicación y proporcione sugerencias para solucionarlos.</p> </td> 
+   <td> <p>Habilite esta opción para generar un informe que enumere los problemas de accesibilidad en el PDF junto con su ubicación y proporcione sugerencias para solucionarlos.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -843,7 +838,7 @@ Esta herramienta asegura un documento PDF con una contraseña de usuario o de pr
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
-   <td> <p>Active esta opción para utilizar contraseñas para cifrar el documento PDF de entrada. Si activa esta opción, debe especificar e introducir un valor para una o ambas de las siguientes opciones: </p> 
+   <td> <p>Habilite esta opción para utilizar contraseñas para cifrar el documento PDF de entrada. Si habilita esta opción, debe especificar e introducir un valor para una o ambas de las siguientes opciones: </p> 
     <ul> 
      <li> <p>[!UICONTROL Contraseña de usuario]</p> </li> 
      <li> <p>[!UICONTROL Contraseña de propietario] </p> </li> 

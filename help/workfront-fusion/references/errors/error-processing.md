@@ -5,10 +5,10 @@ description: A veces, se puede producir un error durante la ejecución de un esc
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 33%
+source-wordcount: '1211'
+ht-degree: 29%
 
 ---
 
@@ -22,47 +22,30 @@ Adobe Workfront Fusion distingue entre varios tipos de error básicos. El tipo d
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
-Para utilizar la funcionalidad de este artículo debe tener el siguiente acceso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquiera</p> </td> 
+   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licencia de Adobe Workfront</td> 
-   <td> Nuevo: estándar<p>O</p><p>Actual: Trabajo o superior</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licencia de [!UICONTROL Adobe Workfront Fusion]</td> 
-   <td>
-   <p>Actual: no se requiere licencia de Workfront Fusion.</p>
-   <p>O</p>
-   <p>Heredado: cualquiera </p>
-   </td> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Nuevo:</p> <ul><li>Plan de Workfront de [!UICONTROL Select] o [!UICONTROL Prime]: su organización debe adquirir Adobe Workfront Fusion.</li><li>Plan de Workfront de [!UICONTROL Ultimate]: Workfront Fusion está incluido.</li></ul>
-   <p>O</p>
-   <p>Actual: Su organización debe comprar Adobe Workfront Fusion.</p>
+   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para saber qué plan, tipo de licencia o acceso tiene, póngase en contacto con el administrador de Workfront.
-
-Para obtener más información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Error de conexión
++++## Error de conexión 
 
 `ConnectionError`
 
@@ -104,7 +87,7 @@ Un escenario contiene el [!DNL Google Sheets] activador [!UICONTROL Watch Rows].
 
 Se genera un error de datos cuando un elemento está asignado incorrectamente y no pasa la validación realizada ni en el lado de Workfront Fusion ni en el lado del servicio de terceros.
 
-Si se produce este error, el escenario, hasta donde falló el módulo, se mueve a la carpeta ejecuciones incompletas, donde puede solucionar el problema. Sin embargo, el escenario no se detiene y continúa ejecutándose según su programación. Para detener la ejecución del escenario cuando aparezca el error Datos, active la opción Procesamiento secuencial en el panel Configuración de escenario.
+Si se produce este error, el escenario, hasta donde falló el módulo, se mueve a la carpeta ejecuciones incompletas, donde puede solucionar el problema. Sin embargo, el escenario no se detiene y continúa ejecutándose según su programación. Para detener la ejecución del escenario cuando aparezca el error Datos, habilite la opción Procesamiento secuencial en el panel Configuración de escenario.
 
 Si no ha habilitado la opción [!UICONTROL Permitir el almacenamiento de ejecuciones incompletas] en la configuración del escenario, la ejecución del escenario finaliza con el error y se realiza una reversión.
 
@@ -165,7 +148,7 @@ Para obtener más información, consulte [Número de errores consecutivos](/help
 >[!NOTE]
 >
 >Si un escenario comienza con un déclencheur instantáneo y encuentra este error, se omite la configuración de [!UICONTROL Número máximo de errores consecutivos] y el escenario se desactiva inmediatamente.
->&#x200B;>Para obtener más información, consulte [déclencheur instantáneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) en el artículo Información general sobre los módulos.
+>>Para obtener más información, consulte [déclencheur instantáneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) en el artículo Información general sobre los módulos.
 
 ## Error de incoherencia
 
