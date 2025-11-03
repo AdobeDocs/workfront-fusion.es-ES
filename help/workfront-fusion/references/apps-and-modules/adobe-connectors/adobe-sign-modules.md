@@ -123,7 +123,7 @@ Este módulo activador inicia un escenario cuando se crea o actualiza un acuerdo
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Introduzca los términos que desea buscar. El módulo devuelve registros que incluyen estos términos como valores de campo.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte “Cómo funciona la búsqueda de texto” en <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Búsqueda de Adobe Sign: cómo funciona</a>.</p> </td> 
+   <td> <p>Introduzca los términos que desea buscar. El módulo devuelve registros que incluyen estos términos como valores de campo.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte “Cómo funciona la búsqueda de texto” en <a href="https://helpx.adobe.com/es/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Búsqueda de Adobe Sign: cómo funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -972,7 +972,7 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
     <ul> 
      <li> <p><b>[!UICONTROL Find text]</b> </p> <p>Escriba el texto que desea buscar en los metadatos del acuerdo. Cada palabra es tratada como un elemento de texto independiente. </p> </li> 
      <li> <p><b>[!UICONTROL Find text in]</b> </p> <p>Seleccione los campos de metadatos en los que desea buscar texto. Si no selecciona nada, los módulos buscan todos los metadatos.</p> </li> 
-    </ul> <p>El módulo devuelve cualquier acuerdo que contenga alguno de los textos introducidos en cualquiera de los campos seleccionados. Ejemplo: si introducimos “campaña de primavera” y seleccionamos las opciones Título y Nota, devuelve cualquier acuerdo con las palabras “primavera” o “campaña” en Título o Nota.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte "Cómo funciona la búsqueda de texto" en <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Búsqueda: cómo funciona</a>.</p> </td> 
+    </ul> <p>El módulo devuelve cualquier acuerdo que contenga alguno de los textos introducidos en cualquiera de los campos seleccionados. Ejemplo: si introducimos “campaña de primavera” y seleccionamos las opciones Título y Nota, devuelve cualquier acuerdo con las palabras “primavera” o “campaña” en Título o Nota.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte "Cómo funciona la búsqueda de texto" en <a href="https://helpx.adobe.com/es/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Búsqueda: cómo funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created date]</td> 
