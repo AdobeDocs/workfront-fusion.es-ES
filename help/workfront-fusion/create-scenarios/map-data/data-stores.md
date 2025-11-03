@@ -4,9 +4,9 @@ description: Un almacén de datos, similar a una base de datos o tabla simple, p
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1324'
 ht-degree: 6%
 
 ---
@@ -81,7 +81,7 @@ Las instancias de Fusion en los paquetes Select o Prime reciben :-->
 
   Por ejemplo, una organización con 600 000 operaciones recibe 110 MB.
 
-Su organización puede tener hasta 50 almacenes de datos. El tamaño combinado de estos almacenes de datos no puede superar el tamaño total del almacén de datos de su organización.
+Cada equipo de su organización puede tener hasta 50 almacenes de datos. El tamaño combinado de estos almacenes de datos no puede superar el tamaño total del almacén de datos de su organización.
 
 ## Creación de un almacén de datos en Workfront Fusion
 
