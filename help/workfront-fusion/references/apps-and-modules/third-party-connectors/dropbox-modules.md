@@ -64,10 +64,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 >[!IMPORTANT]
 >
 >* Para utilizar el conector de Dropbox, primero debe crear una aplicación en Dropbox.
->  >   Para obtener más información, busque &quot;Crear una aplicación&quot; en la guía para desarrolladores de Dropbox.
+>  &#x200B;>   Para obtener más información, busque &quot;Crear una aplicación&quot; en la guía para desarrolladores de Dropbox.
 >* Al crear la aplicación, use el siguiente URI de redireccionamiento: `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox debe aprobar las aplicaciones con más de 50 usuarios.
->  >   Para obtener más información, busque “Aprobación de producción” en la guía para desarrolladores de Dropbox.
+>  &#x200B;>   Para obtener más información, busque “Aprobación de producción” en la guía para desarrolladores de Dropbox.
 
 ## Información de API de Dropbox
 
@@ -149,8 +149,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Módulos de activador](#trigger-modules)
-* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
-* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
+* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Otros módulos](#other-modules)
 
 ### Módulos de activador

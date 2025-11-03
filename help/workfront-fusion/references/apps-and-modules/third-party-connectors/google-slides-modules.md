@@ -192,7 +192,7 @@ Este módulo de acción crea una nueva presentación copiando una presentación 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> <p>Este campo aparece si está creando la presentación [!UICONTROL By Dropdown].</p> </td> 
   </tr> 
   <tr> 
@@ -213,7 +213,7 @@ Este módulo de acción crea una nueva presentación copiando una presentación 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -280,7 +280,7 @@ Este módulo de acción obtiene la última versión de una presentación especif
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -308,7 +308,7 @@ Este módulo recupera una lista de todas las presentaciones en la ubicación det
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -344,7 +344,7 @@ Este módulo de acción actualiza los datos del gráfico almacenados en una pres
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -384,7 +384,7 @@ Carga una imagen con los datos proporcionados.
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul>  </td> 
   </tr> 
   <tr> 
@@ -461,7 +461,7 @@ Este módulo permite hacer clic en todos los vínculos de una presentación o in
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> <p>Este campo aparece si está creando la presentación [!UICONTROL By Dropdown].</p> </td> 
   </tr> 
   <tr> 

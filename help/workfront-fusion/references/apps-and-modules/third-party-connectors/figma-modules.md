@@ -116,7 +116,7 @@ Para crear una conexión para los módulos Figma:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba el Secreto de cliente de Figma [!UICONTROL].</td>
+        <td>Escriba el Secreto de cliente de Figma .</td>
         </tr>
         <tr>
         <td role="rowheader">Ámbitos personalizados</td>

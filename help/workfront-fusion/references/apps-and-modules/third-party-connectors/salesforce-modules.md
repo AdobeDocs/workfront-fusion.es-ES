@@ -184,7 +184,7 @@ Este módulo activador inicia un escenario cuando se actualiza un campo en [!DNL
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Seleccione el tipo de registro que contiene el campo que desea que el módulo vea. Debe elegir un tipo de registro que tenga [!UICONTROL Field History] activado en la configuración de [!DNL Salesforce]. Para obtener más información, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Seguimiento del historial de campos</a> en la documentación de [!DNL Salesforce]. </p> </td> 
+   <td> <p>Seleccione el tipo de registro que contiene el campo que desea que el módulo vea. Debe elegir un tipo de registro que tenga [!UICONTROL Field History] activado en la configuración de [!DNL Salesforce]. Para obtener más información, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Seguimiento del historial de campos</a> en la documentación de [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -572,7 +572,7 @@ Este módulo de acción carga un solo archivo en Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL  Adobe Workfront Fusion]: instrucciones básicas</a></td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL &#x200B; Adobe Workfront Fusion]: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -612,7 +612,7 @@ Este módulo de acción recupera todos los registros que cumplen un criterio det
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL  Adobe Workfront Fusion]: instrucciones básicas</a></td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL &#x200B; Adobe Workfront Fusion]: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

@@ -2016,11 +2016,11 @@ Este módulo de acción actualiza una suscripción de correo electrónico en Hub
    <td>Para cada estado para el que desee actualizar la suscripción, haga clic en <b>Agregar elemento</b> e introduzca el ID del estado, y si la dirección de correo electrónico se suscribirá a ese estado.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Estado legal de la suscripción al portal de [!UICONTROL]</td> 
+   <td role="rowheader">Estado legal de la suscripción al portal de </td> 
    <td>Para registrar la base legal de esta suscripción para el RGPD, seleccione el estado legal de esta suscripción.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Explicación de la base jurídica de la suscripción al portal [!UICONTROL]</td> 
+   <td role="rowheader">Explicación de la base jurídica de la suscripción al portal </td> 
    <td>Para añadir una nota sobre la base legal de esta suscripción para el RGPD, introduzca o asigne el texto de la nota.</td> 
   </tr> 
  </tbody> 

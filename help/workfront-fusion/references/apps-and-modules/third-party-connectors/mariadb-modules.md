@@ -94,7 +94,7 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
       <td>El puerto predeterminado es 3306. Si utiliza un puerto no estándar, establezca este número en el puerto. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Base de datos ]</td> 
+      <td role="rowheader">[!UICONTROL Base de datos &#x200B;]</td> 
       <td>Introduzca el nombre de la base de datos con la que desea interactuar.</td> 
      </tr> 
      <tr> 

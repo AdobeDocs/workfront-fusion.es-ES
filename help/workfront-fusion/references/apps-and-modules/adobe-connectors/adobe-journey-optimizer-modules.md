@@ -455,7 +455,7 @@ Este módulo de acción añade o elimina artefactos de un paquete, o actualiza l
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe Journey Optimizer]}, vea <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Crear una conexión a [!DNL Adobe Journey Optimizer]</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe Journey Optimizer]&rbrace;, vea <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Crear una conexión a [!DNL Adobe Journey Optimizer]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select action]</td> 
