@@ -1,12 +1,12 @@
 ---
-title: Módulos Frame.io (Beta)
+title: Módulos Frame.io
 description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3555'
 ht-degree: 24%
 
 ---
@@ -112,7 +112,7 @@ Puede conectarse automáticamente con credenciales de usuario, crear manualmente
 
 Este método crea una conexión automáticamente si ha iniciado sesión en Frame.io o le conecta a la página de inicio de sesión de Frame.io para que pueda iniciar sesión.
 
-1. En cualquier módulo Frame.io de Beta, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
+1. En cualquier módulo Frame.io, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 1. Introduzca un nombre para la conexión. 
 1. Haga clic en **Continuar**.
 1. Si se le pide que inicie sesión en su cuenta de Frame.io, hágalo.
@@ -177,7 +177,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
 
 #### Configurar una conexión de autenticación de usuario
 
-1. En cualquier módulo Frame.io de Beta, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
+1. En cualquier módulo Frame.io, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 1. En el cuadro Crear una conexión, haga clic en **Mostrar configuración avanzada**.
 
 1. Rellene los campos siguientes:
@@ -252,7 +252,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
 
 #### Configuración de una conexión servidor a servidor
 
-1. En cualquier módulo Frame.io de Beta, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
+1. En cualquier módulo Frame.io, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 

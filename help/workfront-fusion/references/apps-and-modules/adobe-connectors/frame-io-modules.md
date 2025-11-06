@@ -4,9 +4,9 @@ description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2663'
 ht-degree: 63%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 63%
 >
 >Este artículo describe la versión heredada del conector Frame.io. Este conector se utiliza para conectarse a Frame.io versión 3.
 >
->Para obtener instrucciones sobre la nueva versión (beta) del conector Frame.io, consulte [Conector Frame.io de Beta](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+>Para obtener instrucciones sobre la nueva versión (beta) del conector Frame.io, consulte [Conector Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Los módulos de Adobe Workfront Fusion [!DNL Frame.io] le permiten supervisar, crear, actualizar, recuperar o eliminar recursos y comentarios en su cuenta de [!DNL Frame.io].
 
@@ -25,10 +25,10 @@ Workfront ofrece dos conectores Frame.io, basados en la versión de Frame.io a l
 
 | Conector | Versión de Frame.io |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (heredado) | V3 |
 
-Para obtener instrucciones sobre la nueva versión del conector Frame.io, consulte [Conector Frame.io de Beta](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+Para obtener instrucciones sobre la nueva versión del conector Frame.io, consulte [Conector Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Para ver un vídeo introductorio del conector Frame.io, consulte:
 
