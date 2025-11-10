@@ -3,10 +3,10 @@ title: Módulos Veeva Vault
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Veeva Vault, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 18%
+source-wordcount: '2325'
+ht-degree: 14%
 
 ---
 
@@ -118,18 +118,23 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Documento](#document)
+* [Objeto](#object)
+* [Otro](#other)
+
 ### Documento
 
 * [Crear un solo documento](#create-a-single-document)
 * [Crear varios documentos](#create-multiple-documents)
 * [Eliminar un solo documento](#delete-a-single-document)
+* [Descargar un archivo](#download-file)
 * [Exportar documentos](#export-documents)
 * [Obtener un solo documento](#get-a-single-document)
 * [Iniciar acción de usuario](#initiate-user-action)
 * [Enumerar documentos](#list-documents)
 * [Recuperar resultados de exportación del documento](#retrieve-document-export-results)
-* [Actualizar varios documentos](#update-multiple-documents)
 * [Actualizar un solo documento](#update-a-single-document)
+* [Actualizar varios documentos](#update-multiple-documents)
 
 #### Crear un solo documento
 
@@ -196,6 +201,41 @@ Este módulo elimina un solo documento, enlace o plantilla.
   <tr> 
    <td role="rowheader"><p>ID de documento/ID de cuaderno/nombre de plantilla</p> </td> 
    <td> <p>Seleccione los campos que desea eliminar.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Descargar archivo
+
+Este módulo descarga un documento, una versión de documento o una plantilla de Veeva Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Seleccione si desea descargar un documento o una plantilla.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo de descarga</p> </td> 
+   <td> <p>Seleccione si desea descargar un documento o una versión de documento.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ID de documento/nombre de plantilla</p> </td> 
+   <td> <p>Introduzca o asigne el ID del documento o el nombre de la plantilla que desea descargar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Extraer documento</p> </td> 
+   <td> <p>Si está descargando un documento, active esta opción para retirar el documento antes de descargarlo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Versión</p> </td> 
+   <td> <p>Si está descargando una versión de documento, seleccione la versión que desea descargar.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Este módulo actualiza un solo documento, enlace o plantilla.
 
 ### Objeto
 
+* [Crear un único registro de objeto](#create-a-single-object-record)
+* [Eliminar un único registro de objeto](#delete-a-single-object-record)
+* [Obtener un solo objeto](#get-a-single-object)
+* [Enumerar registros de objetos](#list-objects-records)
+* [Actualizar un único registro de objeto](#update-a-single-object-record)
 
+#### Crear un único registro de objeto
 
-#### Enumerar objetos
+Este módulo crea, copia o copia profunda un único registro de objeto.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Seleccione si desea crear o copiar un registro, o si desea copiar un registro en profundidad.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Modo de migración</td> 
+   <td>Si crea o copia un registro, habilite esta opción para crear o actualizar registros de objeto en un estado no inicial y con una validación mínima, crear registros inactivos y establecer campos estándar y administrados por el sistema como <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Sin déclencheur</td> 
+   <td>Si se establece en true y el modo de migración está habilitado, el módulo omite todos los Déclencheur de sistema, estándar, déclencheur de SDK personalizados y  de acción.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre de objeto</td> 
+   <td>Escriba o asigne el valor del campo name__v del objeto, como <code>product__v</code>, <code>country__v</code> o <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de registro</td> 
+   <td>Si va a realizar una copia profunda de un registro, seleccione el registro que desea copiar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campos de registro</td> 
+   <td>Si está realizando una copia profunda de un registro, seleccione los campos para los que desea proporcionar valores y, a continuación, proporcione esos valores.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Eliminar un único registro de objeto
+
+Este módulo elimina o elimina en cascada un único registro de objeto. Al eliminar un registro en cascada, se eliminan el registro y todos sus objetos secundarios.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Seleccione si desea eliminar un registro o eliminarlo en cascada.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre de objeto</td> 
+   <td>Seleccione el objeto que desea eliminar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de registro</td> 
+   <td>Seleccione el ID del registro que desea eliminar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID externo</td> 
+   <td>En lugar del ID de registro, puede utilizar este ID externo de documento definido por el usuario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Obtener un solo objeto
+
+Este módulo recupera metadatos configurados en un registro de objeto específico de su almacén.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre de objeto</td> 
+   <td>Seleccione el objeto para el que desea recuperar los metadatos.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de registro</td> 
+   <td>Seleccione el ID del registro cuyos metadatos desea recuperar.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Enumerar registros de objetos
 
 Este módulo recupera todos los objetos Vault en el Vault autenticado.
 
@@ -408,6 +545,55 @@ Este módulo recupera todos los objetos Vault en el Vault autenticado.
   <tr> 
    <td role="rowheader">Número máximo de resultados devueltos</td> 
    <td>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+Este módulo actualiza los campos de un registro de objeto existente.
+
+Este módulo crea, copia o copia profunda un único registro de objeto.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Seleccione si desea crear o copiar un registro, o si desea copiar un registro en profundidad.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Modo de migración</td> 
+   <td>Habilite esta opción para crear o actualizar registros de objeto en un estado no inicial y con una validación mínima, crear registros inactivos y establecer campos estándar y administrados por el sistema como <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Sin déclencheur</td> 
+   <td>Si el modo de migración está habilitado, puede habilitar esta opción para omitir todos los Déclencheur del sistema, estándar, personalizados, de SDK déclencheur y de acción.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nombre de objeto</td> 
+   <td>Escriba o asigne el valor del campo name__v del objeto, como <code>product__v</code>, <code>country__v</code> o <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de registro</td> 
+   <td>Seleccione el ID del registro que desea actualizar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Estado</td> 
+   <td>Especifique el estado del ciclo de vida del registro cuando <code>X-VaultAPI-MigrationMode</code> esté establecido en verdadero.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Etiqueta de estado</td> 
+   <td>Especifique el tipo de estado de ciclo de vida del registro cuando <code>X-VaultAPI-MigrationMode</code> se establezca en verdadero. Utilice el formato <code>base:object_lifecycle:</code> seguido del tipo de estado de objeto.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campos de registro</td> 
+   <td>Si está realizando una copia profunda de un registro, seleccione los campos para los que desea proporcionar valores y, a continuación, proporcione esos valores.</td> 
   </tr> 
  </tbody> 
 </table>
