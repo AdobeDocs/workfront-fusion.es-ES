@@ -3,17 +3,19 @@ title: Encadenar varios escenarios juntos
 description: Puede encadenar escenarios juntos, permitiendo que un escenario almacene en déclencheur otro y devolviendo la salida de datos por el segundo escenario al primero.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # Encadenar varios escenarios juntos
+
+>[!NOTE]
+>
+>Esta función se encuentra actualmente en Beta.
 
 Puede encadenar escenarios juntos, permitiendo que un escenario almacene en déclencheur otro y devolviendo la salida de datos por el segundo escenario al primero. Esto permite crear escenarios más modulares, donde no tiene que duplicar secciones de escenarios en varios escenarios.
 

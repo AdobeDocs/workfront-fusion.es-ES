@@ -3,17 +3,19 @@ title: Módulos de cadena
 description: Con estos módulos, puede encadenar escenarios juntos, realizando una llamada a la otra.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '625'
 ht-degree: 4%
 
 ---
 
 # Encadenar módulos
+
+>[!NOTE]
+>
+>Esta función se encuentra actualmente en Beta.
 
 Con los módulos Cadena, puede conectar un escenario a otro.
 
