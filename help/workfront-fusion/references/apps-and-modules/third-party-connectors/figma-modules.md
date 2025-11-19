@@ -4,10 +4,10 @@ description: Con los módulos Adobe Workfront Fusion Figma, puede recuperar list
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
 workflow-type: tm+mt
-source-wordcount: '2600'
-ht-degree: 16%
+source-wordcount: '2638'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
    <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -39,7 +39,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -51,7 +51,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -86,6 +86,11 @@ El conector Figma utiliza lo siguiente:
 
 ## Crear una conexión con Figma
 
+>[!IMPORTANT]
+>
+>* Figma cambió sus requisitos de autenticación en enero de 2025. El tipo de conexión `Figma` cumple los nuevos requisitos. El tipo de conexión `Figma (Legacy)` se ha desaprobado y se eliminará en un futuro próximo.
+>* Si está usando una redirección, URL, use `https://oauth.app.workfrontfusion.com/oauth/cb/figma3`.
+
 Para crear una conexión para los módulos Figma:
 
 1. En cualquier módulo Figma, haga clic en **[!UICONTROL Agregar]** junto al cuadro Conexión.
@@ -101,7 +106,7 @@ Para crear una conexión para los módulos Figma:
         <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p> Para nuevas conexiones, seleccione <code>Figma</code> sin la etiqueta Heredado. </p><p>Figma cambió sus requisitos de autenticación en enero de 2025. El tipo de conexión <code>Figma</code> cumple los nuevos requisitos. El tipo de conexión <code>Figma (Legacy)</code> se eliminará en el futuro.</p>
+          <p> Seleccione <code>Figma</code> sin la etiqueta Heredado. </p><p>Figma cambió sus requisitos de autenticación en enero de 2025. El tipo de conexión <code>Figma</code> cumple los nuevos requisitos. El tipo de conexión <code>Figma (Legacy)</code> se ha desaprobado y se eliminará en el futuro.</p>
         </td>
         </tr>
         <tr>
@@ -112,11 +117,11 @@ Para crear una conexión para los módulos Figma:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Escriba su [!UICONTROL Archivo] [!UICONTROL ID de cliente].</td>
+        <td>Escriba su [!UICONTROL Figma] [!UICONTROL ID de cliente].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba el Secreto de cliente de Figma .</td>
+        <td>Escriba el Secreto de cliente de Figma [!UICONTROL].</td>
         </tr>
         <tr>
         <td role="rowheader">Ámbitos personalizados</td>
@@ -137,7 +142,7 @@ Para crear una conexión para los módulos Figma:
 
 Al configurar módulos de [!DNL Figma], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Figma] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -211,7 +216,7 @@ Este módulo de búsqueda enumera todos los comentarios adjuntos a un solo archi
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td>
-      <td>Introduzca o asigne el número máximo de comentarios que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</td>
+      <td>Introduzca o asigne el número máximo de comentarios que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</td>
     </tr>
   </tbody>
 </table>
@@ -259,7 +264,7 @@ Este módulo de acción publica un comentario en un archivo Figma.
 
 * [Lista de archivos de proyecto](#list-project-files)
 
-* [Enumerar proyectos](#list-projects)
+* [Lista de proyectos](#list-projects)
 
 
 #### [!UICONTROL Obtener un archivo o imagen]
@@ -564,7 +569,7 @@ Este módulo de búsqueda devuelve una lista de todos los proyectos dentro del e
       <td>Escriba o asigne el Id. del proyecto para el que desea recuperar los archivos. El ID del equipo se puede encontrar en la dirección URL de la página del equipo en Figma</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Número máximo de proyectos devueltos]</td>
+      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
       <td>Introduzca o asigne el número máximo de registros que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</td>
     </tr>
   </tbody>
@@ -649,7 +654,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Method]</td>
-      <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td>
+      <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
