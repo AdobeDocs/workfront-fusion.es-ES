@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: 9c5a73e284026cea03296e9a536958f4630fd81c
+source-git-commit: 7eadd6f39db2fe7e0c7ec46e0e5b3fc998f528e9
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1943'
 ht-degree: 60%
 
 ---
@@ -176,6 +176,7 @@ ht-degree: 60%
          * [Añadir un usuario a un equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [Establecer opciones de notificación del equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [Ver el registro de actividades de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
+         * [Ver el panel de rendimiento de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performace-dashboard.md)
       * Administrar usuarios y equipos {#manage-users-and-teams}
          * [Administrar usuarios y equipos: índice de artículos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [Ver usuarios de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
@@ -293,7 +294,7 @@ ht-degree: 60%
          * [Coerción de tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funciones  {#functions}
-         * [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+         * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
