@@ -4,16 +4,18 @@ description: Puede ver un registro de actividades, como la creación o activaci�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 6%
+source-wordcount: '500'
+ht-degree: 10%
 
 ---
 
 # Visualización de registros de actividad de una organización
 
 Puede ver un registro de actividades, como la creación de un escenario o la invitación a un usuario, para su organización.
+
+Los registros de actividad muestran tres meses de datos. Se pueden exportar datos de más de tres meses.
 
 ## Requisitos de acceso
 
@@ -24,7 +26,7 @@ Puede ver un registro de actividades, como la creación de un escenario o la inv
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
    <td> <p>Flujo de trabajo de Adobe Workfront Ultimate y automatización e integración de Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -41,7 +43,7 @@ Puede ver un registro de actividades, como la creación de un escenario o la inv
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
