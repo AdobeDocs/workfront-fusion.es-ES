@@ -3,9 +3,9 @@ title: Módulos Slack
 description: En un escenario de  [!DNL Adobe Workfront Fusion] , es posible automatizar los flujos de trabajo que utilizan Slack, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 9c5a73e284026cea03296e9a536958f4630fd81c
+source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
 workflow-type: tm+mt
-source-wordcount: '4560'
+source-wordcount: '4580'
 ht-degree: 37%
 
 ---
@@ -64,7 +64,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 ## Requisitos previos
 
-Para usar módulos [!DNL Slack], debe tener una cuenta de [!DNL Slack].
+* Para usar módulos [!DNL Slack], debe tener una cuenta de [!DNL Slack].
+* Si está creando conexiones de OAuth@, debe añadir las siguientes direcciones URL a la lista de permitidos de su organización:
+   * token de bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+   * token de usuario:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Información de API de Slack
 
