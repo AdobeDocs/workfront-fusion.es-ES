@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
+source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '534'
 ht-degree: 9%
 
 ---
@@ -46,6 +46,10 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 +++
 
 ## Componentes del panel de rendimiento
+
+>[!NOTE]
+>
+>Las métricas se muestran por grupo de trabajo. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo para el que desea ver las métricas.
 
 En el panel de rendimiento de Fusion, puede ver las siguientes métricas.
 
