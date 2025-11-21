@@ -4,9 +4,9 @@ description: Actualmente, se admite archivos grandes para los conectores Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1048'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,8 @@ Actualmente, los siguientes conectores admiten archivos grandes.
    * Descargar revisión
 * Adobe Authenticator
    * Realizar una llamada de API personalizada
+* Adobe Photoshop
+   * Aplicar ediciones de PSD
 * SharePoint
    * Crear un archivo
    * Obtener un archivo

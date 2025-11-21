@@ -4,10 +4,10 @@ description: Con los módulos de Adobe Photoshop, puede iniciar un escenario de 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '5398'
-ht-degree: 83%
+source-wordcount: '5414'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
    <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -40,7 +40,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -52,7 +52,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -121,7 +121,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Si utiliza una conexión JWT, escriba su [!DNL Adobe] ID de cuenta técnica de . Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Si utiliza una conexión JWT, escriba su [!DNL Adobe] ID de cuenta técnica de [!UICONTROL]. Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
@@ -160,7 +160,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
 
 Al configurar módulos de [!DNL Adobe Photoshop], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Adobe Photoshop] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -186,6 +186,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 ### Aplicar ediciones de PSD
 
 Este módulo de acción aplica una variedad de ediciones a nivel de documento y capa.
+
+Este módulo admite archivos grandes. Para obtener más información sobre los archivos grandes, consulte [Trabajar con archivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 <table style="table-layout:auto"> 
   <col/>
@@ -1103,7 +1105,7 @@ Este módulo de acción realiza una llamada personalizada a la API de Photoshop.
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
