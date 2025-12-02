@@ -3,10 +3,10 @@ title: Módulos Veeva Vault
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Veeva Vault, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
+source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 14%
+source-wordcount: '2485'
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
    <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -38,7 +38,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -50,7 +50,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -64,7 +64,12 @@ Para utilizar los módulos Veeva Vault, debe tener una cuenta Veeva Vault.
 
 Puede crear una conexión a su cuenta de Veeva Vault directamente desde un módulo de Veeva Vault.
 
+Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la autenticación OAuth2.
+
+### Conectarse a Veeva Vault usando un nombre de usuario y una contraseña
+
 1. En cualquier módulo de Veeva Vault, haga clic en **Agregar** junto al campo Conexión.
+1. En el campo **Tipo de conexión**, seleccione `Veeva Username Password`.
 1. Cumplimente los campos siguientes.
 
    <table style="table-layout:auto"> 
@@ -75,18 +80,6 @@ Puede crear una conexión a su cuenta de Veeva Vault directamente desde un módu
        <td role="rowheader">Nombre de conexión</td> 
        <td> <p>Introduzca un nombre para la conexión. </p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Entorno</td>
-        <td>
-          <p>Seleccione si se está conectando a un entorno de producción o de no producción.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Tipo</td>
-        <td>
-          <p>Seleccione si desea conectarse a una cuenta de servicio o a una personal.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">Nombre de usuario</td>
         <td>
@@ -108,13 +101,65 @@ Puede crear una conexión a su cuenta de Veeva Vault directamente desde un módu
 
 1. Haga clic en **[!UICONTROL Continuar]** para crear la conexión y volver al módulo.
 
+### Conectarse a Veeva Vault mediante la autenticación OAuth2
+
+1. En cualquier módulo de Veeva Vault, haga clic en **Agregar** junto al campo Conexión.
+1. En el campo **Tipo de conexión**, seleccione `Veeva Oauth 2`.
+1. Cumplimente los campos siguientes.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Nombre de conexión</td> 
+       <td> <p>Introduzca un nombre para la conexión. </p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Id. de cliente</td>
+        <td>
+          <p>Introduzca el ID de cliente para la aplicación Veeva Vault que utilizará esta conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Secreto de cliente</td>
+        <td>
+          <p>Introduzca el Secreto del cliente para la aplicación Veeva Vault que utilizará esta conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Ámbito</td>
+        <td>
+          <p>Introduzca el ámbito de esta conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID de inquilino</td>
+        <td>
+          <p>Introduzca el ID de inquilino para esta conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID de perfil</td>
+        <td>
+          <p>Introduzca el ID de su perfil de OAuth2 / Copen ID Connect.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">DNS de Vault</td> 
+       <td>Introduzca su Veeva Vault DNS (nombre de dominio).</p><p>Para localizar el DNS de Veeva Vault, examine la URL que utiliza para acceder a Veeva Vault.</p>Por ejemplo, en la dirección URL <code>https://my-dns.veevavault.com</code>, el DNS es <code>my-dns</code>. No es necesario que introduzca la dirección URL completa.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Haga clic en **[!UICONTROL Continuar]** para crear la conexión y volver al módulo.
 
 
 ## Módulos Veeva Vault y sus campos
 
 Al configurar los módulos de Veeva Vault, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, pueden mostrarse campos adicionales de Veeva Vault, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -622,7 +667,7 @@ Este módulo de acción realiza una llamada personalizada a la API de Veeva Vaul
   </tr> 
   <tr> 
    <td role="rowheader">Método</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Encabezados</td> 
