@@ -4,10 +4,10 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 23%
+source-wordcount: '1232'
+ht-degree: 27%
 
 ---
 
@@ -44,7 +44,7 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
    <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -60,7 +60,7 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -83,6 +83,11 @@ Puede ver una lista de los webhooks en el área de Webhooks.
 1. Para ver el escenario donde se usa un webhook, haga clic en el botón **Escenario** de la columna Escenario para ese webhook.
 1. Para ver la conexión usada para este webhook, haga clic en el botón **Conexión** en la columna Conexión para ese webhook.
 1. Para ocultar columnas o mostrar columnas previamente ocultas, haga clic en el icono **Columnas** ![Icono de columnas](assets/glist-column.png) y marque o desmarque los nombres de columna.
+1. Para ver las suscripciones de eventos asociadas con un webhook de Workfront, marca la casilla junto al webhook y selecciona **Mostrar detalles** en la parte inferior de la página.
+
+   >[!NOTE]
+   >
+   > Los detalles de suscripción de evento solo están disponibles para los webhooks de Workfront creados en el nuevo conector de Workfront. Los detalles del webhook no están disponibles actualmente para otros conectores.
 
 
 ## Programar activadores instantáneos

@@ -4,10 +4,10 @@ description: El editor de escenarios permite crear y editar escenarios en una in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 25%
+source-wordcount: '623'
+ht-degree: 33%
 
 ---
 
@@ -26,7 +26,7 @@ El editor de escenarios permite crear y editar escenarios en una interfaz visual
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
    <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -42,7 +42,7 @@ El editor de escenarios permite crear y editar escenarios en una interfaz visual
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -71,15 +71,20 @@ Para obtener más información sobre esta tabla, consulte [Requisitos de acceso 
 
 ### Controles
 
+Es posible que tenga que hacer clic en el icono de tres puntos del área Controles para ver algunos de estos controles.
+
 | Acción | Detalles |
 |----------|----------|
-| Guarde. | Después de guardar el escenario, dispondrá de una nueva versión en el menú de tres puntos en caso de que necesite acceder a ella en el futuro. Las versiones de escenarios guardadas anteriormente solo están disponibles durante 60 días. |
-| Configuración de escenarios | El panel de configuración de escenario contiene la configuración avanzada del escenario. Para obtener más información acerca de la configuración disponible, vea [Configurar opciones de escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
-| Notas | Tome notas sobre el escenario. Otros usuarios pueden ver estas notas cuando se encuentren en el escenario. |
-| Alineación automática | Alinee automáticamente los módulos en su escenario. |
-| Explicar flujo | Vea una animación en la que los puntos móviles muestran cómo fluyen los datos por el escenario. |
-| Herramientas de desarrollo | Con la herramienta de desarrollo, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para refinar el escenario. Para obtener más información, vea [Depurar un escenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
-| Más | En el menú Más, puede importar o exportar modelos y restaurar el escenario a versiones anteriores. |
+| Guarde. <p>![Icono de guardar](assets/save-icon.png)</p> | Después de guardar el escenario, dispondrá de una nueva versión en el menú de tres puntos en caso de que necesite acceder a ella en el futuro. Las versiones de escenarios guardadas anteriormente solo están disponibles durante 60 días. |
+| Configuración de escenarios <p>![Icono de configuración de escenario](assets/scenario-settings-icon.png)</p> | El panel de configuración de escenario contiene la configuración avanzada del escenario. Para obtener más información acerca de la configuración disponible, vea [Configurar opciones de escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
+| Notas  <p>![Icono de notas](assets/notes-icon.png)</p> | Tome notas sobre el escenario. Otros usuarios pueden ver estas notas cuando se encuentren en el escenario. |
+| Alineación automática <p>![Icono de alineación automática](assets/auto-align-icon.png)</p> | Alinee automáticamente los módulos en su escenario. |
+| Buscar módulos ![Buscar módulos](assets/search-modules-icon.png)  </p> | Introduzca un término de búsqueda para localizar un módulo y, a continuación, haga clic en los resultados de búsqueda que se llevarán a ese módulo. Puede buscar por nombre de módulo, ID, tipo o aplicación. |
+| Explicar flujo  <p>![Explicar icono de flujo](assets/explain-flow-icon.png) </p> | Vea una animación en la que los puntos móviles muestran cómo fluyen los datos por el escenario. |
+| DevTool <p>![Icono de DevTool](assets/devtool-icon.png)</p> | Con DevTool, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada a la API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para refinar el escenario. Para obtener más información, vea [Depurar un escenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
+| Exportar modelo  <p>![Icono de exportar Blueprint](assets/export-blueprint-icon.png) </p> | Exporte un modelo del escenario actual. |
+| Importar modelo  <p>![Icono Importar modelo](assets/import-blueprint-icon.png) </p> | Importe un modelo de escenario exportado anteriormente. |
+| Versión anterior  <p>![Icono de la versión anterior](assets//previous-version-icon.png) </p> | Vea las versiones anteriores de este escenario. |
 
 ![panel de controles](assets/controls-editor-scenario.png)
 
