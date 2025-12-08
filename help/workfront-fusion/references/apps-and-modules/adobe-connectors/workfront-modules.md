@@ -499,7 +499,7 @@ Consulte una lista de tipos de objetos de Workfront para los que puede usar este
 >
 >   Para resolver los usuarios que se añadieron en un lote grande, puede añadir el lote de usuarios directamente a Adobe Admin Console.
 >
->   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
+>   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
 
 +++
 
@@ -1032,7 +1032,7 @@ Workfront acaba de lanzar una nueva versión de su servicio de suscripción a ev
 
 Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 
-Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
+Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
 
 <table style="table-layout:auto">
  <col> 
@@ -2360,7 +2360,7 @@ Le recomendamos que lo verifique bien para asegurarse de que esto funciona de la
 >
 >   Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 >
->   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción a eventos, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones a eventos (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+>   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción a eventos, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones a eventos (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es)].
 
 El módulo de Workfront [!UICONTROL Ver eventos] activa escenarios basados en un webhook que crea una suscripción a eventos en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 
