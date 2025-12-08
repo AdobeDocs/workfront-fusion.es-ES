@@ -4,10 +4,10 @@ description: 'Con los módulos  [!DNL Adobe Workfront Planning] , puede iniciar 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 38%
+source-wordcount: '1583'
+ht-degree: 47%
 
 ---
 
@@ -24,8 +24,8 @@ Con los módulos [!DNL Adobe Workfront Planning], puede almacenar en déclencheu
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -34,15 +34,17 @@ Con los módulos [!DNL Adobe Workfront Planning], puede almacenar en déclencheu
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
-   </td> 
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   </td>
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Requisitos previos
++++
+
+s## requisitos previos
 
 Debe tener lo siguiente para acceder a Workfront Planning:
 
@@ -59,7 +61,7 @@ El conector de Adobe Workfront Planning utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td>https://{{connection.host}}/maestro/api/{{common.maestroApiVersion}}/</td> 
   </tr>
   <tr> 
@@ -120,9 +122,9 @@ Puede crear una conexión con su cuenta de [!DNL Workfront Planning] directament
 
 ## Módulos de [!DNL Adobe Workfront Planning] y sus campos
 
-Al configurar los módulos de Workfront, Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden mostrarse campos de Workfront adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de Workfront, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos adicionales de Workfront, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
@@ -168,7 +170,7 @@ Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o eli
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>Puede establecer filtros para ver solo los registros que cumplan los criterios seleccionados.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND.</p> <p>Nota: Los filtros no se pueden editar en los webhooks de Workfront existentes. Para configurar diferentes filtros para las suscripciones a eventos de Workfront, elimine el webhook actual y cree uno nuevo.</p> <p>Para obtener más información sobre los filtros de eventos, consulte <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de suscripción de eventos en Workfront &gt; Módulos de [!UICONTROL Watch Events]</a> en el artículo Módulos de Workfront.</p> </td> 
+      <td> <p>Puede establecer filtros para ver solo los registros que cumplan los criterios seleccionados.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND.</p> <p>Nota: Los filtros no se pueden editar en los webhooks de Workfront existentes. Para configurar diferentes filtros para suscripciones a eventos de Workfront, elimine el webhook actual y cree uno nuevo.</p> <p>Para obtener más información sobre los filtros de eventos, consulte <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de suscripción de eventos en Workfront &gt; Módulos de [!UICONTROL Watch Events]</a> en el artículo Módulos de Workfront.</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objetos que ver]</td>
@@ -213,7 +215,7 @@ Este módulo de acción elimina un solo tipo de registro en Workfront Planning p
   </tbody>
 </table>
 
-#### Realizar una llamada de API personalizada
+#### Realizar una llamada API personalizada
 
 Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Workfront Planning].
 
@@ -237,7 +239,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Wo
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
