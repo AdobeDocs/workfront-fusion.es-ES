@@ -1,19 +1,19 @@
 ---
-title: Protecciones de rendimiento de Fusion
-description: La automatización del trabajo requiere un procesamiento rápido, por lo que Adobe Workfront Fusion está diseñado para ofrecer un alto rendimiento. Como los escenarios de larga duración pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con protecciones que preservan el rendimiento y limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros de escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estas protecciones e incorporarlas en sus prácticas de diseño.
+title: Mecanismos de protección de rendimiento Fusion
+description: La automatización del trabajo requiere un procesamiento rápido. Es por ello que Adobe Workfront Fusion se ha diseñado para ofrecer un alto rendimiento. Como los escenarios de larga ejecución pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con mecanismos de protección que preservan el rendimiento y que limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros del escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estos mecanismos de protección e incorporarlos en sus prácticas de diseño.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
-# Protecciones de rendimiento Fusion
+# Mecanismos de protección de rendimiento Fusion
 
-La automatización del trabajo requiere un procesamiento rápido, por lo que Adobe Workfront Fusion está diseñado para ofrecer un alto rendimiento. Como los escenarios de larga duración pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con protecciones que preservan el rendimiento y limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros de escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estas protecciones e incorporarlas en sus prácticas de diseño.
+La automatización del trabajo requiere un procesamiento rápido. Es por ello que Adobe Workfront Fusion se ha diseñado para ofrecer un alto rendimiento. Como los escenarios de larga ejecución pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con mecanismos de protección que preservan el rendimiento y que limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros del escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estos mecanismos de protección e incorporarlos en sus prácticas de diseño.
 
 ## Navegadores
 
@@ -23,15 +23,15 @@ La automatización del trabajo requiere un procesamiento rápido, por lo que Ado
 
 * El tiempo de espera de ejecución del escenario predeterminado es de **40 minutos**. Cuando la ejecución alcanza este tiempo de espera, Workfront Fusion interrumpe la ejecución del escenario después del siguiente ciclo u operación, según el escenario. Esto obliga al escenario a detenerse poco después de alcanzar el límite de 40 minutos
 
-  Encadenar escenarios no cuenta para el tiempo de espera de ejecución del escenario. Un escenario principal no acumula tiempo mientras espera a que se ejecute un escenario secundario.
+  Encadenar escenarios no cuenta para el tiempo de espera de ejecución del escenario. Un escenario principal no acumula tiempo mientras espera hasta que se ejecute un escenario secundario.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
 
-   * Al utilizar la aplicación de Workfront, asegúrese de seleccionar solo los campos necesarios para los casos de uso de creación o actualización.
+   * Cuando utilice la aplicación de Workfront, asegúrese de seleccionar solo los campos necesarios para los casos de uso de creación o actualización.
    * Cuando utilice otras aplicaciones, utilice módulos de API personalizados para interactuar con cualquier tipo de registro que tenga un gran número de campos.
 
-* Aunque no hay límite para el número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento de su sistema Workfront Fusion. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
+* Aunque no hay límite en cuanto al número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento del sistema Workfront Fusion. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
 
 ## Operaciones
 
@@ -44,11 +44,11 @@ La automatización del trabajo requiere un procesamiento rápido, por lo que Ado
 ## Archivos
 
 * La capacidad total de procesamiento de archivos de Fusion es de **1 GB**. El límite se basa en el coste total de la memoria. Cada operación contribuye a ese coste. Si se descarga y carga un solo archivo de 400 MB, el coste total de la capacidad del archivo sería de 800 MB.
-* Las organizaciones del plan Workfront Ultimate tienen acceso a un mayor procesamiento de archivos que supera los 1 GB. Sin embargo, hay otros factores que afectan a la transferencia de datos. El servicio al que se está conectando Fusion puede limitar el tamaño del archivo, lo que afectaría a cualquier archivo procesado por ese servicio. Además, los archivos grandes pueden afectar al tiempo de ejecución de la situación. Fusion procesará archivos hasta que se alcance el límite de ejecución de 40 minutos, momento en el que la ejecución fallará.
+* Las organizaciones del plan Workfront Ultimate tienen acceso a un mayor procesamiento de archivos que superan 1 GB. Sin embargo, hay otros factores que afectan a la transferencia de datos. El servicio al que se está conectando Fusion puede limitar el tamaño del archivo, lo que afectaría a cualquier archivo procesado por ese servicio. Además, los archivos grandes pueden afectar al tiempo de ejecución del escenario. Fusion procesará archivos hasta que se alcance el límite de ejecución de 40 minutos, momento en el que la ejecución fallará.
 * Si un archivo se descarga mediante un módulo que admite archivos grandes y, a continuación, se pasa a un módulo que no admite archivos grandes, dicho módulo no procesará correctamente el archivo. Los archivos grandes deben gestionarse exclusivamente con módulos compatibles en todo el flujo de trabajo.
-* Los módulos que no admiten archivos grandes pueden procesar archivos de hasta **200 MB** de tamaño.
+* Los módulos que no admiten archivos grandes pueden procesar archivos de hasta **200 MB** de tamaño.
 
-Para obtener más información, vea [Trabajar con archivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+Para obtener más información, consulte [Trabajo con archivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 ## Uso de memoria del servidor
 
@@ -60,7 +60,7 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 
 * El tamaño máximo predeterminado de una carga útil es de **5 MB**.
 * Los enlaces web están limitados a **100 solicitudes por segundo**. Cuando se alcanza este límite, Workfront Fusion envía un estado 429 ([!UICONTROL Demasiadas solicitudes]).
-* Workfront Fusion almacena las cargas útiles de los ganchos web durante 30 días. Acceder a una carga útil de webhook más de 30 días después de recibirla provoca el error “[!UICONTROL No se pudo leer el archivo desde el almacenamiento.]”
+* Workfront Fusion almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de webhook más de 30 días después de recibirla provoca el error “[!UICONTROL No se pudo leer el archivo desde el almacenamiento.]”
 * Los webhooks se desactivan automáticamente si se aplica cualquiera de las siguientes opciones:
 
    * El webhook no ha estado conectado a ningún escenario durante más de 5 días
@@ -72,36 +72,36 @@ Para obtener más información, vea [Trabajar con archivos grandes](/help/workfr
 ## Historial de ejecución
 
 * Los registros del historial de ejecución están limitados a un tamaño de **100 MB**. Si el historial de ejecución supera este tamaño, solo se mostrarán los primeros 100 MB.
-* Si un escenario tiene varias ejecuciones simultáneas, solo se muestran 5 ejecuciones en el área Ejecuciones de la página de detalles del escenario. Esto ocurre incluso cuando se están ejecutando más de 5 ejecuciones.
+* Si un escenario tiene varias ejecuciones simultáneas, solo se muestran cinco ejecuciones en el área Ejecuciones de la página de detalles del escenario. Esto ocurre incluso cuando se están ejecutando más de 5 ejecuciones.
 
 ## Ejecuciones incompletas
 
-* Las ejecuciones incompletas están limitadas a un tamaño total de **10 MB** por escenario. Si se alcanza el límite de 10 MB, no se almacenarán más ejecuciones incompletas para ese escenario.
-* Las ejecuciones incompletas están limitadas a un tamaño total de **500 MB** por equipo. Si se alcanza el límite de 500 MB, no se almacenarán más ejecuciones incompletas para ese equipo.
-* Workfront Fusion permite hasta 5 fallos por minuto.
+* Las ejecuciones incompletas están limitadas a un tamaño total de **10 MB** por escenario. Si se alcanza el límite de 10 MB, no se almacenarán más ejecuciones incompletas de ese escenario.
+* Las ejecuciones incompletas están limitadas a un tamaño total de **500 MB** por equipo. Si se alcanza el límite de 500 MB, no se almacenarán más ejecuciones incompletas para ese equipo.
+* Workfront Fusion permite hasta cinco fallos por minuto.
 
 ## Reintentos
 
 * Al utilizar el módulo Break y especificar la directiva de reintento, si un escenario falla de forma consecutiva 10 veces dentro de un periodo de tiempo de 2 minutos, el escenario se desactivará automáticamente.
 
-## Recursión
+## Recursividad
 
-La recursión se produce cuando un escenario déclencheur déclencheur una nueva ejecución de sí mismo, lo que provoca una nueva ejecución, y así sucesivamente en un bucle infinito.
+La recursividad se produce cuando un escenario activa una nueva ejecución de sí mismo, lo que activa una nueva ejecución, y así sucesivamente en un bucle infinito.
 
-Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea dos tareas. Las tareas recién creadas vuelven a almacenar en déclencheur el escenario, lo que crea cuatro tareas nuevas. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta, se duplica el número de tareas. El número de tareas aumenta exponencialmente.
+Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea dos tareas. Las tareas recién creadas vuelven a activar el escenario, lo que crea cuatro tareas nuevas. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta el escenario, se duplica el número de tareas. El número de tareas aumenta exponencialmente.
 
-La recursión puede causar problemas de rendimiento tanto para la organización propietaria del escenario recursivo como para otras organizaciones.
+La recursividad puede causar problemas de rendimiento tanto para la organización propietaria del escenario recursivo como para otras organizaciones.
 
-Tenga en cuenta lo siguiente con respecto a la recursión:
+Tenga en cuenta lo siguiente con respecto a la recursividad:
 
-* **Cuando un escenario está causando recursión, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
-* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo déclencheur.
+* **Cuando un escenario está produciendo recursividad, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
+* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo activen.
 
 ## TLS
 
-* Fusion admite actualmente TLS versión 1.2 de forma predeterminada.
-* Fusion puede utilizar TLS 1.3 para solicitudes HTTPS salientes si TLS 1.3 está habilitado para el servicio de destino.
-* Fusion admite TLS 1.2 y TLS 1.3 para solicitudes de HTTPS entrantes a los webhooks.
+* Fusion es compatible actualmente con TLS versión 1.2 de forma predeterminada.
+* Fusion puede utilizar TLS 1.3 para las peticiones HTTPS de salida si TLS 1.3 está habilitado para el servicio de destino.
+* Fusion es compatible con TLS 1.2 y TLS 1.3 para peticiones HTTPS de entrada a los webhooks.
 * Las organizaciones pueden solicitar que se habilite TLS versión 1.3 para su instancia de Fusion.
 
 >[!NOTE]

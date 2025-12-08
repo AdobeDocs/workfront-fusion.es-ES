@@ -6,19 +6,19 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
 source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4151'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Con Adobe Workfront Fusion [!DNL Adobe PDF Services], puede extraer datos de un archivo de PDF o generar un nuevo archivo de PDF a partir de los datos que proporcione. Además, puede convertir distintos tipos de archivo a PDF o de PDF a otros tipos de archivo. PDF Services también permite combinar, comprimir o leer metadatos de un archivo PDF, así como controlar la protección con contraseña del archivo.
+Con [!DNL Adobe PDF Services] de Adobe Workfront Fusion, puede extraer datos de un archivo PDF o generar un nuevo archivo PDF a partir de los datos que proporcione. Además, puede convertir distintos tipos de archivo a PDF o de PDF a otros tipos de archivo. PDF Services también permite combinar, comprimir o leer metadatos de un archivo PDF, así como controlar la protección con contraseña del archivo.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 Para obtener información sobre la API utilizada para PDF Services, consulte [Adobe Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
@@ -38,8 +38,8 @@ Para obtener información sobre la API utilizada para PDF Services, consulte [Ad
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -49,19 +49,19 @@ Para obtener información sobre la API utilizada para PDF Services, consulte [Ad
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más detalles sobre la información de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -69,11 +69,11 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 ## Requisitos previos
 
-Para crear una conexión de servidor a servidor OAuth, debe agregar la API de servicios de Adobe PDF a la consola de desarrolladores de Adobe. Al añadir la API, seleccione la opción OAuth de servidor a servidor.
+Para crear un OAuth de servidor a servidor, debe añadir la API de Adobe PDF Services a Adobe Developer Console. Al añadir la API, seleccione la opción OAuth de servidor a servidor.
 
-Para obtener instrucciones, consulte [Agregar API al proyecto mediante las credenciales de autenticación de usuario de OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) en la documentación para desarrolladores de Adobe.
+Para obtener instrucciones, consulte [Añadir API al proyecto mediante las credenciales de autenticación de usuario de OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) en la documentación de Adobe Developer.
 
-## Información de API de servicios Adobe PDF
+## Información de la API de Adobe PDF Services
 
 El conector de Adobe PDF Services utiliza lo siguiente:
 
@@ -82,7 +82,7 @@ El conector de Adobe PDF Services utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td>https://pdf-services-stage.adobe.io</td> 
   </tr>
   <tr> 
@@ -173,7 +173,7 @@ Para crear una conexión para los módulos de [!DNL Adobe PDF Services]:
 
 Al configurar [!DNL PDF Services], Workfront Fusion muestra los campos que se indican a continuación. Además, es posible que aparezcan otros campos en función de factores como el nivel de acceso a la aplicación o al servicio. Un título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -186,8 +186,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [[!UICONTROL Convertir PDF en imagen]](#convert-pdf-to-image)
 * [[!UICONTROL Extraer texto/tabla]](#extract-text--table)
 * [[!UICONTROL Generar documento]](#generate-document)
-* [[!UICONTROL Linealizar un archivo PDF]](#linearize-a-pdf-file)
-* [Realizar una llamada de API personalizada](#make-a-custom-api-call)
+* [[!UICONTROL Linearizar un archivo PDF]](#linearize-a-pdf-file)
+* [Realizar una llamada API personalizada](#make-a-custom-api-call)
 * [[!UICONTROL OCR para archivo PDF]](#ocr-for-pdf-file)
 * [[!UICONTROL Manipulación de páginas]](#page-manipulation)
 * [[!UICONTROL Etiquetado automático de accesibilidad de PDF]](#pdf-accessibility-auto-tag)
@@ -468,9 +468,9 @@ Esta herramienta convierte un archivo PDF en un documento. Puede seleccionar uno
 
 ### [!UICONTROL Convertir un PDF en una imagen]
 
-Esta herramienta convierte un PDF en una imagen en formato PNG o JPEG., que luego se muestra como una lista o se combina en un ZIP.
+Esta herramienta convierte un PDF en una imagen en formato PNG o JPEG, que a continuación se genera como una lista o se combina en un archivo ZIP. 
 
-Si se muestra como un ZIP, el PDF se convierte en una imagen por página y cada imagen termina con el número de página. A continuación, los archivos de imagen se combinan en un archivo ZIP.
+Si se genera como un ZIP, el PDF se convierte en una imagen por página y cada imagen termina con el número de página. A continuación, los archivos de imagen se combinan en un archivo ZIP.
 
 Por ejemplo, un archivo denominado &quot;TestFile&quot; con 8 páginas produciría 8 imágenes, denominadas &quot;TestFile_1&quot; hasta &quot;TestFile_8&quot;. La salida del módulo es un archivo ZIP que contiene las 8 imágenes.
 
@@ -497,8 +497,8 @@ Por ejemplo, un archivo denominado &quot;TestFile&quot; con 8 páginas producir�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tipo de salida]</td> 
-   <td> <p>Seleccione si desea que los archivos se muestren como una lista de archivos o como un archivo ZIP.</td> 
+   <td role="rowheader">[!UICONTROL Output type]</td> 
+   <td> <p>Seleccione si desea que los archivos se generen como una lista de archivos o como un archivo ZIP.</td> 
   </tr> 
   <tr> 
  </tbody> 
@@ -553,9 +553,9 @@ Para obtener más información sobre la funcionalidad [!UICONTROL [!DNL Adobe PD
 
 >[!NOTE]
 >
->Para ver un análisis de las plantillas de Microsoft Word, consulte [Módulos de plantillas de Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md).
+>Para obtener información sobre las plantillas de Microsoft Word, consulte [Módulos de plantillas de Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md).
 >
->No es necesario utilizar módulos de plantilla de Microsoft Word para utilizar una plantilla de Microsoft Word con el módulo de documento Generar de PDF Services.
+>No es necesario utilizar módulos de plantilla de Microsoft Word para utilizar una plantilla de Microsoft Word con el módulo Generar documento de PDF Services.
 
 
 Para usar el módulo [!UICONTROL Generar documento] con una plantilla de [!UICONTROL Microsoft Word], debe primero crearla. Para obtener instrucciones, busque “Crear una plantilla” en la documentación de [!DNL Microsoft Office].
@@ -572,7 +572,7 @@ Rellene los campos del módulo [!UICONTROL Generar documento] de la siguiente ma
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> <p>Este archivo de origen es la plantilla [!DNL Microsoft Word] que usa el módulo para generar el nuevo PDF.</p> <p>Se recomienda crear un proyecto en Workfront para las [!DNL Microsoft Word] plantillas que se usan en Workfront Fusion. A continuación, puede utilizar el módulo Workfront &gt; [!UICONTROL Descargar documento] para extraer la plantilla adecuada a su escenario.</p> </td> 
+   <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> <p>Este archivo de origen es la plantilla [!DNL Microsoft Word] que usa el módulo para generar el nuevo PDF.</p> <p>Se recomienda crear un proyecto en Workfront para las plantillas [!DNL Microsoft Word] que usa en Workfront Fusion. A continuación, puede utilizar el módulo de Workfront &gt; [!UICONTROL Download document] para extraer la plantilla adecuada a su escenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -646,7 +646,7 @@ Esta herramienta linealiza un documento PDF para crear un documento PDF optimiza
  </tbody> 
 </table>
 
-## Realizar una llamada de API personalizada
+## Realizar una llamada API personalizada
 
 Este módulo de acción envía una petición HTTP personalizada a la API de servicios de PDF.
 
@@ -664,7 +664,7 @@ Este módulo de acción envía una petición HTTP personalizada a la API de serv
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -705,7 +705,7 @@ Esta herramienta realiza el reconocimiento óptico de caracteres (OCR) en un arc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>Seleccione el idioma de este documento.<p>Para ver las opciones de idioma, consulte <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convertir documento a archivo PDF</a> en este artículo. </td> 
+   <td>Seleccione el idioma de este documento.<p>Para ver las opciones de idioma, consulte <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convertir un documento en un archivo PDF</a> en este artículo. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
@@ -785,7 +785,7 @@ Este módulo de acción crea un PDF etiquetado para casos de uso de accesibilida
    <td> <p>Habilite esta opción para cambiar los encabezados del documento.</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Generar informe]</td> 
+   <td role="rowheader">[!UICONTROL Generate Report]</td> 
    <td> <p>Habilite esta opción para generar un informe que enumere los problemas de accesibilidad en el PDF junto con su ubicación y proporcione sugerencias para solucionarlos.</p> </td> 
   </tr> 
  </tbody> 
@@ -818,7 +818,7 @@ Esta herramienta extrae información básica sobre el documento, como:
  </tbody> 
 </table>
 
-### [!UICONTROL Proteger un archivo de PDF]
+### [!UICONTROL Proteger un archivo PDF]
 
 Esta herramienta asegura un documento PDF con una contraseña de usuario o de propietario. También establece restricciones en determinadas funciones, como imprimir, editar y copiar en el documento PDF. Usted selecciona el tipo de contenido que desea cifrar y el algoritmo de cifrado.
 
@@ -840,8 +840,8 @@ Esta herramienta asegura un documento PDF con una contraseña de usuario o de pr
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>Habilite esta opción para utilizar contraseñas para cifrar el documento PDF de entrada. Si habilita esta opción, debe especificar e introducir un valor para una o ambas de las siguientes opciones: </p> 
     <ul> 
-     <li> <p>[!UICONTROL Contraseña de usuario]</p> </li> 
-     <li> <p>[!UICONTROL Contraseña de propietario] </p> </li> 
+     <li> <p>[!UICONTROL User Password]</p> </li> 
+     <li> <p>[!UICONTROL Owner Password] </p> </li> 
     </ul> <p>Cada contraseña puede tener hasta 128 caracteres de longitud.</p> </td> 
   </tr> 
   <tr> 
@@ -863,7 +863,7 @@ Esta herramienta asegura un documento PDF con una contraseña de usuario o de pr
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>Seleccione los permisos que desee incluir para permitir la impresión, edición o copia de contenido.</p> <p>La configuración de permisos sólo se utiliza si la [!UICONTROL Owner Password] está establecida en el campo [!UICONTROL Password Protection Type].</p> </td> 
+   <td> <p>Seleccione los permisos que desee incluir para permitir la impresión, edición o copia de contenido.</p> <p>La configuración de permisos solo se utiliza si [!UICONTROL Owner Password] está establecida en el campo [!UICONTROL Password Protection Type].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -917,7 +917,7 @@ Este módulo de acción divide un documento PDF en varios documentos más peque�
    <ul>
    <li><p><b>Intervalos de página</b></p><p>Para cada intervalo de páginas que desee dividir en un documento independiente, haga clic en <b>Añadir</b> e introduzca la página en la que desea comenzar y la página en la que desea finalizar.</p></li>
    <li><p><b>Recuento de páginas</b></p><p>Introduzca el número de páginas que desea incluir en los nuevos documentos.</p></li>
-   <li><p><b>Cuenta de archivo</b></p><p>Introduzca el número de archivos de tamaño uniforme en los que desea dividir el documento.</p></li>
+   <li><p><b>Recuento de archivos</b></p><p>Introduzca el número de archivos de tamaño uniforme en los que desea dividir el documento.</p></li>
    </ul>
    </td> 
   </tr> 

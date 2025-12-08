@@ -1,17 +1,17 @@
 ---
-title: Resumen de asignación
+title: Información general sobre la asignación
 description: La asignación es el proceso de asignar los resultados de un módulo, estructurados en elementos, a los campos de entrada de otro módulo.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
 source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 14%
+workflow-type: ht
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 
-# Resumen de asignación
+# Información general sobre la asignación
 
 La asignación es el proceso de asignar los resultados de un módulo a los campos de entrada de otro módulo.
 
@@ -19,7 +19,7 @@ La operación de un módulo produce cero, uno o más paquetes como salida. Un pa
 
 Puede asignar estos elementos a campos en módulos posteriores.
 
-Al hacer clic en un campo en el que puede insertar un valor generado desde un módulo anterior en un escenario, se muestra el panel Asignación. Aquí puede seleccionar el elemento que desea asignar. Una asignación puede incluir uno o más de los siguientes elementos:
+El panel de asignación se muestra al hacer clic en un campo en el que puede insertar un valor generado desde un módulo anterior en un escenario. Aquí puede seleccionar el elemento que desea asignar. Una asignación puede incluir uno o más de los siguientes elementos:
 
 * Un solo elemento
 * Varios elementos
@@ -46,53 +46,53 @@ Función con varios elementos y texto
 >[!ENDSHADEBOX]
 
 
-Para obtener instrucciones sobre la asignación, vea los artículos en [Asignar datos: índice de artículo](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
+Para obtener instrucciones sobre la asignación, consulte los artículos en [Asignar datos: índice de artículos](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
 
 >[!NOTE]
 >
->No se puede obtener acceso a las salidas de módulos ajustados entre [!UICONTROL Iterator] y [!UICONTROL Aggregator] más allá del módulo [!UICONTROL Aggregator].
+>No se puede acceder a las salidas de módulos agrupados entre un [!UICONTROL Iterador] y [!UICONTROL Agregador] más allá del módulo [!UICONTROL Agregador].
 
 ## El panel de asignación
 
 Cuando hace clic en un campo donde puede asignar datos, se abre el panel de asignación.
 
-La primera pestaña ![Mapa de otros módulos](assets/toolbar-icon-functions-you-map-from-other-modules.png) muestra los elementos que puede asignar desde otros módulos.
+La primera pestaña ![Asignar desde otros módulos](assets/toolbar-icon-functions-you-map-from-other-modules.png) muestra los elementos que puede asignar desde otros módulos.
 
-Las otras fichas incluyen funciones, operadores y palabras clave que puede utilizar para crear fórmulas. Se ordenan en diferentes pestañas según el tipo de datos que administran.
+Las otras pestañas incluyen funciones, operadores y palabras clave que puede utilizar para crear fórmulas. Se ordenan en diferentes pestañas según el tipo de datos que gestionan.
 
 ![Panel de asignación](assets/mapping-panel-blank.png)
 
 
-Para obtener más información sobre las fichas de funciones, vea [Descripción general de las funciones](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
+Para obtener más información sobre las pestañas de función, consulte [Información general sobre la función](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Para obtener más información sobre la asignación de elementos mediante funciones, vea [Asignar elementos mediante funciones](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Para obtener más información sobre la asignación de elementos usando funciones, consulte [Asignar elementos usando funciones](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Colecciones
 
-Los elementos pueden contener varios valores de varios tipos. Son elementos de tipo colección.
+Algunos elementos pueden contener múltiples valores de diversos tipos. Son elementos de tipo colección.
 
 Los paquetes de tipo colección muestran `(Collection)` junto a la etiqueta del paquete en la salida del módulo.
 
 ![Colección](assets/collection.png)
 
-En la mayoría de los casos, se asignan los elementos de la colección en lugar de asignar el elemento que representa la colección completa.
+En la mayoría de los casos, se asignan elementos de la colección en lugar de asignar el elemento que representa la colección completa.
 
 Para localizar el elemento de una colección en el panel de asignación, haga clic en la flecha situada junto a la colección.
 
 ![Lista desplegable de colecciones](assets/collection-dropdown.png)
 
-Para obtener más información sobre las colecciones, vea [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
+Para obtener más información sobre las colecciones, consulte [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
-Para obtener instrucciones sobre cómo asignar colecciones, vea [Asignar un elemento](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) en el artículo Asignar información de un módulo a otro.
+Para obtener instrucciones sobre cómo asignar colecciones, consulte [Asignar un elemento](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) en el artículo Asignar información de un módulo a otro.
 
 ## Matrices
 
-Los elementos pueden contener varios valores del mismo tipo. Son elementos de tipo matriz.
+Algunos elementos pueden contener varios elementos del mismo tipo. Son elementos de tipo matriz.
 
 Los paquetes de tipo matriz muestran `(Array)` junto a la etiqueta del paquete en la salida del módulo.
 
-En el panel de asignación, las matrices se muestran con corchetes. Puede identificar un elemento de tipo matriz por los corchetes al final de la etiqueta del elemento. Para localizar un elemento de matriz específico en el panel Asignación, haga clic en la flecha situada junto a la matriz.
+En el panel de asignación, las matrices se muestran con corchetes. Puede identificar un elemento de tipo matriz por los corchetes al final de la etiqueta del elemento. Para localizar un elemento de matriz específico en el panel de asignación, haga clic en la flecha situada junto a la matriz.
 
 ![Matriz](assets/array.png)
 
-Para obtener información e instrucciones sobre cómo asignar matrices y elementos de matriz, vea [Asignar matrices y elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
+Para obtener información e instrucciones sobre cómo asignar matrices y elementos de matriz, consulte [Asignar matrices y elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

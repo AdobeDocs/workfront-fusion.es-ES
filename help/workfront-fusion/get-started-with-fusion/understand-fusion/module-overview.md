@@ -1,22 +1,22 @@
 ---
-title: Resumen del módulo
-description: 'Adobe Workfront Fusion distingue cinco tipos de módulos: módulos de acción, módulos de búsqueda, módulos de déclencheur, agregadores e iteradores. Los agregadores e iteradores son para escenarios avanzados.'
+title: Información general del módulo
+description: 'Adobe Workfront Fusion distingue cinco tipos de módulos: módulos de acción, módulos de búsqueda, módulos de activador, agregadores e iteradores. Los agregadores e iteradores son para escenarios avanzados.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
 source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
-# Resumen del módulo
+# Información general del módulo
 
 Adobe Workfront Fusion distingue cinco tipos de módulos:
 
 * Módulos de acción
-* Buscar módulos
+* Módulos de búsqueda
 * Módulos de activador
 * Agregadores
 * Iteradores
@@ -25,18 +25,18 @@ Los agregadores e iteradores son para escenarios avanzados.
 
 ## Módulos de acción
 
-Los módulos de acción son el tipo más común de módulo. Un módulo de acción típico realiza una acción y devuelve un solo paquete, que luego pasa al siguiente módulo para su procesamiento.
+Los módulos de acción son el tipo más común de módulo. Un módulo de acción típico lleva a cabo una acción y devuelve un solo paquete, que luego pasa al siguiente módulo para su procesamiento.
 
-A diferencia de los módulos de déclencheur, los módulos de acción se pueden colocar al principio, en el centro o al final de un escenario.
+A diferencia de los módulos de activador, los de acción se pueden colocar al principio, al medio o al final de un escenario.
 
-Los escenarios pueden contener un número ilimitado de módulos de acción, aunque un gran número de módulos (150+) puede afectar al rendimiento.
+Los escenarios pueden contener un número ilimitado de módulos de acción, aunque un gran número de módulos (más de 150) puede afectar al rendimiento.
 
 >[!BEGINSHADEBOX]
 
 **Ejemplos:**
 
 * **Workfront > [!UICONTROL Cargar un archivo]** envía un archivo a Workfront y devuelve su identificador.
-* **[!UICONTROL Image] > [!UICONTROL Resize]** recibe una imagen, la cambia a las dimensiones especificadas y pasa la imagen cambiada a la siguiente acción.
+* **[!UICONTROL Imagen] > [!UICONTROL Cambiar tamaño]** recibe una imagen, la cambia a las dimensiones especificadas y pasa la imagen cambiada a la siguiente acción.
 
 >[!ENDSHADEBOX]
 
@@ -47,9 +47,9 @@ El tipo de acción tiene cuatro subtipos:
 * Actualizar
 * Eliminar
 
-El subtipo Update incluye las tres operaciones siguientes:
+El subtipo Actualizar incluye las tres operaciones siguientes:
 
-* **Borrar el contenido de un campo**. Esta operación tiene lugar cuando el contenido del campo se evalúa como la palabra clave `erase` (no debe confundirse con `empty`).
+* **Borrar el contenido de un campo**. Esta operación tiene lugar cuando el contenido del campo se evalúa como la palabra clave `erase` (no confundir con `empty`).
 
   ![Borrar palabra clave](assets/erase-content-of-field.png)
 
@@ -66,63 +66,63 @@ El subtipo Update incluye las tres operaciones siguientes:
 >
 >   ![Si está vacío](assets/formula-ifempty-name-erase.png)
 >
->* Actualmente no se admite dejar un campo sin cambiar cuando su contenido se evalúa como vacío.
+>* Actualmente, no es posible dejar un campo sin cambiar cuando su contenido se evalúa como vacío.
 
-## Buscar módulos
+## Módulos de búsqueda
 
-Los módulos de búsqueda devuelven cero, uno o más paquetes, que luego pasan al siguiente módulo para su procesamiento.
+Los módulos de búsqueda devuelven cero, uno o más paquetes que luego pasan al siguiente módulo para su procesamiento.
 
-Puede colocar Módulos de búsqueda al principio, al medio o al final de un escenario.
+Puede colocar módulos de búsqueda al principio, al medio o al final de un escenario.
 
-Los escenarios pueden contener un número ilimitado de módulos de búsqueda, aunque un gran número de módulos (150+) puede afectar al rendimiento.
+Los escenarios pueden contener un número ilimitado de módulos de búsqueda, aunque un gran número de módulos (más de 150) puede afectar al rendimiento.
 
 >[!BEGINSHADEBOX]
 
 **Ejemplo:**
 
-**Workfront > [!UICONTROL Leer registros relacionados]** lee registros que coinciden con la consulta de búsqueda especificada, en un objeto primario concreto.
+**Workfront > [!UICONTROL Leer registros relacionados]** lee los registros que coinciden con la consulta de búsqueda especificada en un objeto principal concreto.
 
 >[!ENDSHADEBOX]
 
 ## Módulos de activador
 
-Los déclencheur generan paquetes cuando se ha producido un cambio en un servicio determinado, como la creación o actualización de un registro.
+Los activadores generan paquetes cuando se ha producido un cambio en un servicio determinado, como la creación o actualización de un registro.
 
-Los déclencheur devuelven cero, uno o más paquetes, que luego pasan al siguiente módulo para su procesamiento.
+Los activadores puede devolver cero, uno o más paquetes que luego pasan al siguiente módulo para su procesamiento.
 
-Debido a que los Déclencheur hacen que los escenarios comiencen a ejecutarse, solo se pueden colocar al principio de un escenario.
+Debido a que los activadores hacen que los escenarios comiencen a ejecutarse, solo se pueden colocar al principio de un escenario.
 
 Cada escenario solo puede contener un activador.
 
-Workfront Fusion utiliza dos tipos de déclencheur: déclencheur de sondeo y déclencheur instantáneos.
+Workfront Fusion utiliza dos tipos de activadores: de sondeo e instantáneos.
 
-### Activador de sondeo
+### Activadores de sondeo
 
-Los déclencheur en encuestas encuestan con regularidad un servicio determinado aunque no haya habido cambios desde que se ejecutó el escenario anterior. Le recomendamos que programe un escenario que contenga un activador de sondeo para que se ejecute a intervalos regulares. Si hay un cambio que coincide con la configuración del déclencheur, el déclencheur devuelve paquetes que contienen información sobre el cambio. Si no hay ningún cambio que coincida con la configuración, el déclencheur no genera ningún paquete.
+Los activadores de sondeo sondean de manera regular un servicio determinado, aunque no haya habido cambios desde la ejecución anterior del escenario. Le recomendamos que programe un escenario que contenga un activador de sondeo para que se ejecute a intervalos regulares. Si hay un cambio que coincide con la configuración del activador, este devuelve paquetes que contienen información sobre el cambio. Si no se produce ningún cambio que coincida con la configuración, el activador no genera ningún paquete.
 
-Para obtener instrucciones sobre cómo programar un escenario, vea [Programar un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
+Para obtener más información sobre cómo programar un escenario, consulte [Programar un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
-Los déclencheur de sondeo le permiten seleccionar el primer paquete que debe mostrarse a través de un panel que se muestra automáticamente después de guardar un déclencheur o cambiar la configuración del déclencheur. Esta selección solo afecta a la primera ejecución del módulo. Una vez que el módulo se ha ejecutado una vez, las ejecuciones posteriores solo inspeccionan los cambios que se producen después de la ejecución más reciente.
+Los activadores de sondeo le permiten seleccionar el primer paquete a generar mediante un panel que se muestra automáticamente después de guardar un activador o cambiar su configuración. Esta selección solo afecta a la primera ejecución del módulo. Una vez que el módulo se ha ejecutado una vez, las ejecuciones posteriores solo inspeccionan los cambios que se producen después de la ejecución más reciente.
 
-Para obtener más información, consulte [Elegir dónde se inicia un módulo de déclencheur](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md).
+Para obtener más información, consulte [Elegir dónde se inicia un módulo de activador](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md).
 
 >[!BEGINSHADEBOX]
 
 **Ejemplos:**
 
-* **Workfront > [!UICONTROL Ver registros]** devuelve registros que se agregaron recientemente después de la última vez que se ejecutó el escenario.
+* **Worfront > [!UICONTROL Ver registros]** devuelve registros que se han añadido recientemente desde la última vez que se ejecutó el escenario.
 
-* **[!DNL Google Sheets]> [!UICONTROL Filas de observación]** devuelve nuevas filas agregadas después de la última vez que se ejecutó el escenario.
+* **[!DNL Google Sheets]> [!UICONTROL Ver filas]** devuelve las nuevas filas añadidas desde la última vez que se ejecutó el escenario.
 
 >[!ENDSHADEBOX]
 
 ### Activadores instantáneos
 
-Los déclencheur instantáneos permiten que un servicio notifique a Workfront Fusion un cambio inmediatamente después de que se produzca. Le recomendamos que programe un escenario que contenga un déclencheur instantáneo para que se ejecute de inmediato.
+Los activadores instantáneos permiten que un servicio notifique a Workfront Fusion un cambio inmediatamente después de que se produzca. Le recomendamos que programe un escenario que contenga un activador instantáneo para que se ejecute de inmediato. 
 
 Para obtener instrucciones, consulte [Programar un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
-Para obtener más información sobre cómo un déclencheur instantáneo gestiona los datos entrantes, consulte [déclencheur instantáneos (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
+Para obtener más información sobre cómo un activador instantáneo gestiona los datos entrantes, consulte [Activadores instantáneos (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 >[!BEGINSHADEBOX]
 
@@ -135,13 +135,13 @@ Para obtener más información sobre cómo un déclencheur instantáneo gestiona
 
 ## Agregadores
 
-Un módulo Aggregator acumula varios paquetes en uno solo.
+Un módulo agregador acumula varios paquetes en uno solo.
 
-Los acumuladores solo devuelven un paquete, que luego pasa al siguiente módulo para un procesamiento posterior.
+Cada agregador devuelve solo un paquete, que luego pasa al siguiente módulo para su posterior procesamiento.
 
 Puede colocar agregadores solo en medio de un escenario.
 
-Los escenarios pueden contener un número ilimitado de agregadores, aunque un gran número de módulos (150+) puede afectar al rendimiento.
+Los escenarios pueden contener un número ilimitado de agregadores, aunque un gran número de módulos (más de 150) puede afectar al rendimiento.
 
 >[!BEGINSHADEBOX]
 
@@ -153,7 +153,7 @@ Los escenarios pueden contener un número ilimitado de agregadores, aunque un gr
 
 >[!ENDSHADEBOX]
 
-Para obtener más información, consulte [Módulo de agregado](/help/workfront-fusion/references/modules/aggregator-module.md).
+Para obtener más información, consulte [Módulo agregador](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## Iteradores
 
@@ -163,7 +163,7 @@ Los iteradores devuelven uno o más paquetes, que luego pasan al siguiente módu
 
 Puede colocar iteradores solamente en medio de un escenario.
 
-Los escenarios pueden contener un número ilimitado de iteradores, aunque un gran número de módulos (150+) puede afectar al rendimiento.
+Los escenarios pueden contener un número ilimitado de iteradores, aunque un gran número de módulos (más de 150) puede afectar al rendimiento.
 
 >[!BEGINSHADEBOX]
 

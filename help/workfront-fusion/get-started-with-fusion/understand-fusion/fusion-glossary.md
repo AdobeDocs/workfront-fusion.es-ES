@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
 source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
-workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 28%
+workflow-type: ht
+source-wordcount: '924'
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Acción</p> </td> 
-   <td>Módulo que le permite realizar una acción, como leer o escribir datos desde o hacia una aplicación o servicio seleccionado.</td> 
+   <td>Un módulo que le permite realizar una acción, como leer o escribir datos desde o hacia una aplicación o servicio seleccionado.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Concentrador</p> </td> 
-   <td> <p>Un tipo de módulo que combina varios paquetes (varias colecciones de datos) en un solo paquete. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Módulo de agregado</a>.</p> </td> 
+   <td role="rowheader"> <p>Agregador</p> </td> 
+   <td> <p>Un tipo de módulo que combina varios paquetes (varias colecciones de datos) en uno solo.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Módulo de agregación</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API</td> 
@@ -34,15 +34,15 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader">Clave API</td> 
-   <td>Código único que identifica al usuario, desarrollador o programa que llama a la API de un software y que se utiliza para la autenticación. Como los módulos Fusion funcionan conectando API, a veces es necesario usar claves API. La aplicación que las requiere distribuye las claves de API. Por ejemplo, si necesita una clave de API para conectar Fusion a Adobe Lightroom, debe solicitarla a través de su cuenta de Adobe Lightroom.</td> 
+   <td>Código único que identifica al usuario, desarrollador o programa que llama a la API de un software y que se utiliza para la autenticación. Dado que los módulos de Fusion funcionan conectando las API, a veces son necesarias claves de API. La aplicación que las requiere distribuye las claves de API. Por ejemplo, si necesita una clave de API para conectar Fusion a Adobe Lightroom, debe solicitarla a través de su cuenta de Adobe Lightroom.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Aplicación o servicio</td> 
-   <td> <p>Una aplicación de software. Fusion puede conectarse a la mayoría de las aplicaciones, incluso si no tiene un conector dedicado para esa aplicación.</p> <p>Una aplicación también puede ser una función especial que manipule datos, como un iterador o un agregador. </p> <p>Un servicio es una fuente de datos que puede incluir una API web, una página web, distintos tipos de servidores (FTP, SMTP, IMAP), etc. </p>  </td> 
+   <td> <p>Una aplicación de software. Fusion puede conectarse a la mayoría de las aplicaciones, incluso si no tiene un conector dedicado para esa aplicación.</p> <p>Una aplicación también puede ser una función especial que manipule datos, como un iterador o un agregador. </p> <p>Un servicio es una fuente de datos que pueden incluir una API web, una página web, distintos tipos de servidores (FTP, SMTP, IMAP), etc. </p>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Paquete</p> </td> 
-   <td> <p>Un paquete es una unidad básica de datos que devuelven o reciben los módulos. Por ejemplo, un módulo de búsqueda que devuelva tres registros generará tres paquetes de datos, uno para cada registro. Un paquete consta de elementos.</p> </td> 
+   <td> <p>Un paquete es una unidad básica que los módulos devuelven o reciben. Por ejemplo, un módulo de búsqueda que devuelve tres registros generará tres paquetes de datos, uno para cada registro. Un paquete consta de elementos.</p> </td> 
   </tr> 
   <tr>
    <td role="rowheader"> <p>Conexión</p> </td> 
@@ -54,31 +54,31 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ciclo</p> </td> 
-   <td> <p>Un ciclo consta de dos fases de la ejecución del escenario: operación y confirmación. El escenario puede consistir en uno o más ciclos. Para obtener información más detallada, vea <a href="/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md" class="MCXref xref">Ejecución de escenarios, ciclos y fases</a>.</p> </td> 
+   <td> <p>Un ciclo consta de dos fases de ejecución del escenario: operación y confirmación. El escenario puede consistir en uno o más ciclos. Para obtener información más detallada, consulte <a href="/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md" class="MCXref xref">Ejecución de escenarios, ciclos y fases</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Almacén de datos</p> </td> 
-   <td> <p>Un almacén de datos almacena datos de escenarios o permite transferir datos entre escenarios individuales o ejecuciones de escenarios. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/data-stores.md" class="MCXref xref">Almacenes de datos</a>.</p> </td> 
+   <td> <p>Un almacén de datos almacena datos de escenarios o le permite transferir datos entre escenarios individuales o ejecuciones de escenarios.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/data-stores.md" class="MCXref xref">Almacenes de datos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filtro</p> </td> 
-   <td> <p> Se puede aplicar un filtro entre dos módulos, que le permite trabajar únicamente con paquetes que se ajusten a determinados criterios. Puede aplicar una serie de filtros diferentes. </p><p>Para obtener más información, vea <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Agregar un filtro a un escenario</a>.</p> </td> 
+   <td> <p> Se puede aplicar un filtro entre dos módulos, lo que le permite trabajar únicamente con paquetes que se ajusten a determinados criterios. Es posible aplicar una serie de filtros diferentes.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Añadir un filtro a un escenario</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Identificador </p> </td> 
-   <td> <p>Nombre que se utiliza para identificar paquetes de forma exclusiva. Una ID se utiliza generalmente para diferenciar un paquete que se va a actualizar o eliminar de un servicio determinado. Los ID se pueden asignar desde la salida de un módulo anterior.</p> </td> 
+   <td role="rowheader"> <p>ID </p> </td> 
+   <td> <p>Nombre que se utiliza para identificar paquetes de forma exclusiva. Un identificador se suele utilizar para diferenciar un paquete que se va a actualizar o eliminar de un servicio determinado. Los ID se pueden asignar desde la salida de un módulo anterior.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Elementos</p> </td> 
-   <td> <p>Parte de un paquete. Los paquetes pueden constar de varios elementos. Existen varios tipos diferentes de elementos: texto, número, booleano (sí/no), fecha, hora, búfer (datos binarios), colecciones, menú de selección, matriz y validación.</p><p> Para obtener más información, vea <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipos de datos de elementos</a>.</p> </td> 
+   <td> <p>Parte de un paquete. Los paquetes pueden constar de varios elementos. Existen varios tipos diferentes de elementos: texto, número, booleano (sí/no), fecha, hora, búfer (datos binarios), colecciones, menú de selección, matriz y validación.</p><p> Para obtener más información, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipos de datos de elementos</a>.</p> </td> 
   </tr>
   <tr> 
    <td role="rowheader"> <p>Iterador</p> </td> 
-   <td> <p>Tipo de módulo que le permite tomar un paquete de datos (una recopilación de datos) y dividirlo en paquetes separados. Estos paquetes se pueden procesar individualmente en módulos posteriores. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] módulo</a>.</p> </td> 
+   <td> <p>Un tipo de módulo que permite tomar un paquete de datos (una colección de datos) y dividirlo en paquetes separados. A continuación, estos paquetes se pueden procesar individualmente en módulos posteriores. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">Módulo [!UICONTROL Iterator]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Módulo</p> </td> 
-   <td> <p>Un solo paso dentro de un escenario que realiza una función, como crear un registro, dentro de la aplicación o servicio asociado.</p> <p>Cada aplicación o servicio tiene varios módulos que definen la forma en que responde a solicitudes.</p>  <p> <img src="assets/module.png"> </p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Resumen del módulo</a>.</p> </td> 
+   <td> <p>Un solo paso dentro de un escenario que realiza una función, como crear un registro, dentro de la aplicación o servicio asociado.</p> <p>Cada aplicación o servicio tiene varios módulos que definen la forma en que responde a solicitudes.</p>  <p> <img src="assets/module.png"> </p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Información general del módulo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Operación</p> </td> 
@@ -90,23 +90,23 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Enrutador</p> </td> 
-   <td>Un enrutador le permite duplicar datos o agregar nuevas rutas a un escenario, para volver a enrutar datos y administrar diferentes grupos de datos por separado.</p><p> Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/router-module.md" class="MCXref xref">[!UICONTROL Router] módulo</a>.</td> 
+   <td>Un enrutador le permite duplicar datos o añadir nuevas rutas a un escenario para volver a enrutar datos y gestionar diferentes grupos de datos por separado. </p><p> Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/router-module.md" class="MCXref xref">Módulo [!UICONTROL Router]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Escenario</p> </td> 
-   <td> <p>Serie creada por el usuario de pasos automatizados, cada uno representado y realizado por un módulo. El propósito de un escenario es mover y manipular datos.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> Para obtener más información, vea <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Información general sobre escenarios</a>.</p> </td> 
+   <td> <p>Serie creada por el usuario de pasos automatizados, cada uno representado y realizado por un módulo. El propósito de un escenario es mover y manipular datos.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> Para obtener más información, consulte <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Información general sobre los escenarios</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Segmento de escenario</p> </td> 
-   <td> <p> Un segmento de escenario es una sección de un escenario que consta de una serie de módulos que se conectan todos a la misma aplicación. Los segmentos de escenario suelen representar un flujo de trabajo corto en la aplicación.</p> </td> 
+   <td> <p> Un segmento de escenario es la sección de un escenario que consta de una serie de módulos que se conectan todos a la misma aplicación. Los segmentos de escenario suelen representar un flujo de trabajo corto en la aplicación.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Activador</p> </td> 
-   <td> <p>Un déclencheur es un tipo de módulo que inspecciona la existencia de datos nuevos y actualizados, e inicia el escenario cuando se aplican determinadas condiciones configuradas en el módulo. Los déclencheur se pueden configurar para que comiencen un escenario según una programación (sondeo) o siempre que se produzcan cambios en los datos (déclencheur instantáneo o gancho web).</p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Déclencheur</a> en el artículo Información general del módulo.</p> </td> 
+   <td> <p>Un activador es un tipo de módulo que supervisa los datos nuevos y actualizados, e inicia el escenario cuando se aplican determinadas condiciones configuradas en el módulo. Los activadores se pueden configurar para que se inicie un escenario según una programación (sondeo) o siempre que se produzcan cambios en los datos (activador instantáneo o webhook).</p> <p>Para obtener más información, consulte <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Activadores</a> en el artículo de información general sobre el módulo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 
-   <td> <p>Un tipo especial de déclencheur que le permite ejecutar un escenario inmediatamente después de que haya un nuevo paquete disponible. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">déclencheur instantáneos (webhooks)</a>.</p> </td> 
+   <td> <p>Un tipo especial de activador que permite ejecutar escenarios inmediatamente después de que haya un nuevo paquete disponible.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Activadores instantáneos (webhooks)</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
 source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2237'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Para ver un vídeo introductorio del conector de Marketo, consulte:
 
 * [Marketo](https://video.tv.adobe.com/v/3427026/){target=_blank}
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información sobre los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -32,8 +32,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -43,19 +43,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -65,7 +65,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 Para usar módulos [!DNL Marketo], debe tener una cuenta de [!DNL Marketo].
 
-## Información de API de Marketo
+## Información sobre la API de Marketo
 
 El conector de Marketo utiliza lo siguiente:
 
@@ -75,11 +75,11 @@ El conector de Marketo utiliza lo siguiente:
  <tbody> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> Versión 1 </td> 
+   <td> v1 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
-   <td>Versión 1.14.19</td> 
+   <td>v1.14.19</td> 
   </tr>
  </tbody> 
  </table>
@@ -88,7 +88,7 @@ El conector de Marketo utiliza lo siguiente:
 
 Puede crear una conexión con su cuenta de [!DNL Marketo] directamente desde cualquier módulo de [!DNL Marketo].
 
-1. En cualquier módulo de Marketo, haga clic en **Agregar** junto al campo Conexión.
+1. En cualquier módulo de Marketo, haga clic en **Añadir** situado junto al campo Conexión.
 1. Rellene los campos siguientes:
 
    <table style="table-layout:auto"> 
@@ -116,18 +116,18 @@ Puede crear una conexión con su cuenta de [!DNL Marketo] directamente desde cua
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Cuenta / Munchkin ID]</td>
+        <td role="rowheader">[!UICONTROL Account / Munchkin ID]</td>
         <td>
-          <p>Escriba su cuenta de [!DNL Marketo] o [!DNL Marketo] ID de [!UICONTROL Munchkin]. Esta es la única parte de la dirección URL base o extremo asignado a su cuenta que usa para acceder a [!DNL Marketo] a través de su API de [!UICONTROL REST]. Para obtener instrucciones sobre cómo encontrar esto, consulte [URL básica](https://developers.marketo.com/rest-api/base-url/) en la documentación de [!DNL Marketo].</p>
+          <p>Escriba su ID de cuenta de [!DNL Marketo] o de [!DNL Marketo] [!UICONTROL Munchkin].  Esta es la única parte de la dirección URL base o el punto final asignado a la cuenta que se usa para acceder a [!DNL Marketo] a través de su API [!UICONTROL REST].  Para obtener instrucciones sobre cómo encontrarlo, consulte [Base URL](https://developers.marketo.com/rest-api/base-url/) en la documentación de [!DNL Marketo].</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Introduzca su ID de cliente de Marketo. Para obtener instrucciones sobre cómo encontrar esto, consulte [Authentication](https://developers.marketo.com/rest-api/authentication/) en la documentación de [!DNL Marketo].</td>
+        <td>Escriba su ID de cliente de Marketo. Para obtener instrucciones sobre cómo encontrarlo, consulte [Authentication](https://developers.marketo.com/rest-api/authentication/) en la documentación de [!DNL Marketo].</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba el Secreto de cliente de Marketo. Para obtener instrucciones sobre cómo localizarlos, consulte [Authentication](https://developers.marketo.com/rest-api/authentication/) en la documentación de [!DNL Marketo].</td>
+        <td>Introduzca el secreto de cliente de Marketo. Para obtener instrucciones sobre cómo localizarlos, consulte [Authentication](https://developers.marketo.com/rest-api/authentication/) en la documentación de [!DNL Marketo].</td>
       </tr>
      </tbody>
     </table>
@@ -138,7 +138,7 @@ Puede crear una conexión con su cuenta de [!DNL Marketo] directamente desde cua
 
 Al configurar módulos de [!DNL Marketo], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Marketo] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -180,20 +180,20 @@ Este módulo de activador inicia un escenario cuando se crea o se actualiza un r
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Marketo] a Workfront Fusion, consulte <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Marketo] a Workfront Fusion</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Marketo] a Workfront Fusion, consulte <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Conexión de [!DNL Marketo] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
    <td> <p>Seleccione el tipo de registro que desea crear.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Activity]</strong> </p> <p>Seleccione el tipo de actividad que desea ver. </p> <p>El módulo solo ve las nuevas actividades.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>En el campo <b>Tipo de evento</b>, seleccione si desea buscar registros nuevos, registros actualizados, registros nuevos y actualizados o actualizaciones de campos específicas. Si selecciona ver actualizaciones de campos específicos, seleccione el campo que desea que el módulo vea.</p> </li> 
-     <li> <p><strong>[!UICONTROL Programa]</strong> </p> <p>En el campo <b>Tipo de evento</b>, seleccione si desea inspeccionar registros nuevos, registros actualizados o registros nuevos y actualizados.</p> </li> 
+     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>En el campo <b>Tipo de evento</b>, seleccione si desea ver nuevos registros, registros actualizados, registros nuevos y actualizados o actualizaciones de campos específicos. Si selecciona ver actualizaciones de campos específicos, seleccione el campo que desea que el módulo vea.</p> </li> 
+     <li> <p><strong>[!UICONTROL Programa]</strong> </p> <p>En el campo <b>Tipo de evento</b>, seleccione si desea ver registros nuevos, registros actualizados o registros nuevos y actualizados.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Seleccione los campos que desee incluir en el paquete de salida para este módulo.</p> </td> 
+   <td> <p>Seleccione los campos que desea incluir en el paquete de salida de este módulo. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -206,8 +206,8 @@ Este módulo de activador inicia un escenario cuando se crea o se actualiza un r
 
 * [[!UICONTROL Añadir posibles clientes a una lista]](#add-leads-to-a-list)
 * [[!UICONTROL Clonar un programa]](#clone-a-program)
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Llamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Creación de un registro]](#create-a-record)
+* [[!UICONTROL Llamada API personalizada]](#custom-api-call)
 * [[!UICONTROL Descargar un archivo]](#download-a-file)
 * [[!UICONTROL Leer un registro]](#read-a-record)
 * [[!UICONTROL Quitar posibles clientes de una lista]](#remove-leads-from-a-list)
@@ -217,7 +217,7 @@ Este módulo de activador inicia un escenario cuando se crea o se actualiza un r
 
 #### [!UICONTROL Añadir posibles clientes a una lista]
 
-Este módulo de acción agrega uno o más posibles clientes a una lista mediante el uso del ID de posible cliente. Puede añadir hasta 300 posibles clientes a la vez.
+Este módulo de acción añade uno o más posibles clientes a una lista mediante el uso del ID de posible cliente. Puede añadir hasta 300 posibles clientes a la vez.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -309,7 +309,7 @@ Este módulo de acción crea un nuevo registro en [!DNL Marketo]
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent Folder ID]</td> 
-   <td>Si va a crear una carpeta o un programa, escriba o asigne el identificador de la carpeta principal en la que desea crear el nuevo registro.</td> 
+   <td>Si está creando una carpeta o programa, introduzca o asigne el ID de la carpeta principal en la que desea crear el nuevo registro.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Costs]</td> 
@@ -340,7 +340,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -352,7 +352,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td> <p>Para cada campo que desee agregar a su llamada de API, haga clic en <b>Agregar elemento</b> e introduzca la clave y el valor del campo.</td> 
+   <td> <p>Para cada campo que desee añadir a la llamada API, haga clic en <b>Añadir elemento</b> e introduzca la clave y el valor opcional del campo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -412,7 +412,7 @@ Este módulo de acción lee información sobre un registro mediante su ID.
 
 #### [!UICONTROL Quitar posibles clientes de una lista]
 
-Este módulo de acción elimina uno o más posibles clientes de una lista mediante el uso del ID de posible cliente. Puede eliminar hasta 300 posibles clientes a la vez.
+Este módulo de acción elimina uno o más posibles clientes de una lista mediante el uso del ID de posible cliente. Puede eliminar hasta 300 posibles clientes al mismo tiempo.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -428,7 +428,7 @@ Este módulo de acción elimina uno o más posibles clientes de una lista median
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Lead IDs]</td> 
-   <td> <p>Para cada posible cliente que desee eliminar de la lista, haga clic en <b>[!UICONTROL Agregar elemento]</b> y, a continuación, escriba o asigne el identificador del posible cliente que desee eliminar. Puede añadir hasta 300 posibles clientes para que el módulo los quite de la lista. </p> <p>Haga clic en el botón de alternancia Asignar para asignar una colección existente de posibles clientes que desee eliminar de la lista.</p> </td> 
+   <td> <p>Para cada posible cliente que desee eliminar de la lista, haga clic en <b>[!UICONTROL Add item]</b> y, a continuación, introduzca o asigne el ID del posible cliente que desee eliminar. Puede añadir hasta 300 posibles clientes para que el módulo los quite de la lista. </p> <p>Haga clic en el botón de alternancia Asignar para asignar una colección existente de posibles clientes que desee eliminar de la lista.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -603,11 +603,11 @@ Este módulo de búsqueda recupera una lista de registros que coinciden con crit
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Field]</p> </td> 
-   <td> <p>Seleccione el campo por el que desea buscar.</p> </td> 
+   <td> <p>Seleccione el campo por el que desea realizar la búsqueda.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Valor / valores]</td> 
-   <td>Introduzca el valor del campo que desea buscar. Si el campo le permite buscar varios valores, para cada valor que desee buscar, haga clic en <b>[!UICONTROL Agregar elemento]</b> e introduzca el valor.</td> 
+   <td role="rowheader">[!UICONTROL Value / values]</td> 
+   <td>Introduzca el valor del campo que desea buscar. Si el campo le permite buscar varios valores, para cada valor que desee buscar, haga clic en <b>[!UICONTROL Add item]</b> e introduzca el valor.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Salida]</td> 
