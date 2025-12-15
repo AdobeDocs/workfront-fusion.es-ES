@@ -4,10 +4,10 @@ description: Siga este flujo de trabajo general para crear un escenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 23%
+source-wordcount: '816'
+ht-degree: 25%
 
 ---
 
@@ -18,12 +18,12 @@ Los escenarios están diseñados para satisfacer las necesidades de su organizac
 
 * [Cree y asigne un nombre al escenario](#create-and-name-the-scenario)
 * [Añadir y configurar el primer módulo](#configure-the-first-module)
-* [Creación de conexiones](#create-connections)
+* [Crear conexiones](#create-connections)
 * [Añadir y configurar módulos adicionales](#add-and-configure-additional-modules)
 * [Asignación de datos entre módulos](#map-data-between-modules)
 * [Configurar enrutamiento](#configure-routing)
-* [Configuración de la gestión de errores](#configure-error-handling)
-* [Configuración de escenarios](#onfigure-scenario-settings)
+* [Configurar la gestión de errores](#configure-error-handling)
+* [Establecer la configuración del escenario](#onfigure-scenario-settings)
 * [Prueba y revisión](#test-and-revise)
 * [Activar el escenario](#activate-the-scenario)
 * [Métodos abreviados del teclado para escenarios de Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
@@ -59,7 +59,7 @@ Para obtener instrucciones sobre cómo agregar el primer módulo a un escenario,
 
 Para obtener instrucciones sobre cómo configurar un módulo, consulte [Configurar un módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 
-## Creación de conexiones
+## Crear conexiones
 
 Al configurar un módulo, debe introducir o crear una conexión. El módulo utiliza esta conexión y los permisos que contiene para acceder a la fecha en la aplicación.
 
@@ -85,13 +85,13 @@ El enrutamiento permite que el escenario realice diferentes acciones en función
 
 Para obtener instrucciones, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
-## Configuración de la gestión de errores
+## Configurar la gestión de errores
 
 La administración de errores permite que el escenario se recupere de los errores. Puede seleccionar cómo desea que reaccione el escenario en diferentes situaciones de error.
 
 Para obtener instrucciones, consulte [Agregar administración de errores](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
 
-## Configuración de escenarios
+## Establecer la configuración del escenario
 
 Puede configurar las opciones para el escenario en su conjunto, como programar un escenario, tomar notas o determinar cómo se almacenan los datos.
 
@@ -166,6 +166,11 @@ Puede utilizar los siguientes métodos abreviados del teclado al crear o editar 
    <td role="rowheader">[!UICONTROL Pegar]</td> 
    <td>Ctrl + V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Buscar módulos]</td> 
+   <td>Ctrl + K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Pegue cURL en el escenario para crear el módulo HTTP</td> 

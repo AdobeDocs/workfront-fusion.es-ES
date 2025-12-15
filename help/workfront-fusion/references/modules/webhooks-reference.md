@@ -4,9 +4,9 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1272'
 ht-degree: 27%
 
 ---
@@ -45,7 +45,7 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -54,7 +54,7 @@ Para ver un vídeo introductorio a los webhooks en Workfront Fusion, consulte lo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -76,6 +76,9 @@ Puede ver una lista de los webhooks en el área de Webhooks.
 
 1. Para buscar un webhook específico, ingrese el término de búsqueda en el cuadro Buscar.
 1. Para copiar un gancho web, haga clic en el icono Copiar ![Copiar el icono del gancho web](assets/copy-webhook-icon.png) cerca de la dirección URL de la fila correspondiente.
+1. Para establecer la prioridad de un webhook, haga clic en el menú desplegable de la columna Prioridad y seleccione la nueva prioridad.
+
+   Los webhooks con mayor prioridad serán manejados primero, lo que puede ser beneficioso si un grupo de trabajadores tiene muchas automatizaciones compitiendo por recursos.
 1. Para deshabilitar o habilitar un webhook, deshabilite o habilite la opción en la columna Estado de la fila correspondiente a dicho webhook.
 1. Para ver si una cola de webhooks está llena, marque la columna Full Queue. El número de esta columna es el número de elementos que hay actualmente en la cola.
 1. Para ver las operaciones administradas por un webhook, haga clic en **Operaciones** en la columna Cola completa de ese webhook.
@@ -136,7 +139,7 @@ Se eliminará un webhook que no se haya asignado a ningún escenario durante má
 
 ### Cargas útiles de webhook
 
-Workfront Fusion almacena las cargas útiles de los ganchos web durante 30 días. Acceder a una carga útil de gancho web más de 30 días después de crearla provoca el error [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de gancho web más de 30 días después de crearla provoca el error [!UICONTROL `Failed to read file from storage.`]
 
 ### Gestión de errores
 
