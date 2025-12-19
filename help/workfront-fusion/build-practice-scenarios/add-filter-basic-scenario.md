@@ -7,10 +7,10 @@ description: Los filtros le permiten asegurarse de que su escenario progrese sol
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 78%
+source-wordcount: '609'
+ht-degree: 85%
 
 ---
 
@@ -35,8 +35,8 @@ Este ejemplo modifica el escenario creado en [Crear un escenario básico](/help/
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -45,13 +45,13 @@ Este ejemplo modifica el escenario creado en [Crear un escenario básico](/help/
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -103,7 +103,7 @@ Ahora debería tener seleccionados `ID`, `Name` y `Project`.
 
    >[!IMPORTANT]
    >
-   >Se recomienda guardar con frecuencia mientras se perfeccionan y prueban escenarios.
+   >Guarde con frecuencia mientras perfecciona y prueba un escenario. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
 
 ## Recursos
 
