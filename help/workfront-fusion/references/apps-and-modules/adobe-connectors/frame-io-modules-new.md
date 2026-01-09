@@ -4,29 +4,29 @@ description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
+source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
 workflow-type: tm+mt
-source-wordcount: '4399'
-ht-degree: 87%
+source-wordcount: '4539'
+ht-degree: 86%
 
 ---
 
-# [!DNL Frame.io] módulos V4
+# [!DNL Frame.io] módulos versión 4.0
 
 >[!IMPORTANT]
 >
->Este artículo describe la nueva versión del conector Frame.io. Este conector se utiliza para conectarse a Frame.io versión 4.
+>Este artículo describe la nueva versión del conector Frame.io. Este conector se utiliza para conectarse a Frame.io versión 4.0.
 >
 >Para obtener instrucciones sobre la versión heredada del conector Frame.io, consulte [Conector heredado Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
-Los módulos de Adobe Workfront Fusion [!DNL Frame.io] le permiten supervisar, crear, actualizar, recuperar o eliminar recursos y comentarios en la cuenta de [!DNL Frame.io].
+Los módulos [!DNL Frame.io] de Adobe Workfront Fusion le permiten supervisar, crear, actualizar, recuperar o eliminar recursos y comentarios en la cuenta de [!DNL Frame.io].
 
 Workfront ofrece dos conectores Frame.io, basados en la versión de Frame.io a la que se está conectando.
 
 | Conector | Versión de Frame.io |
 |---|---|
-| Frame.io | V4 |
-| Frame.io (heredado) | V3 |
+| Frame.io | Versión 4.0 |
+| Frame.io (heredado) | Versión 3.0 |
 
 Para obtener instrucciones sobre la versión heredada del conector Frame.io, consulte [Conector heredado Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
@@ -45,7 +45,7 @@ Para ver un vídeo introductorio del conector Frame.io, consulte:
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -61,7 +61,7 @@ Para ver un vídeo introductorio del conector Frame.io, consulte:
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -86,26 +86,26 @@ El conector Frame.io utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://api.frame.io/v4</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> v2 </td> 
+   <td> Versión 2.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
-   <td>v1.0.76</td> 
+   <td>Versión 1.0.76</td> 
   </tr>
  </tbody> 
  </table>
 
 ## Conectar [!DNL Frame.io] a [!UICONTROL Adobe Workfront Fusion]
 
-Puede conectarse automáticamente con las credenciales de usuario, crear manualmente una conexión de credenciales de usuario o crear una conexión servidor a servidor.
+Puede conectarse automáticamente con credenciales de usuario, crear manualmente una conexión de credenciales de usuario o crear una conexión servidor a servidor.
 
 * [Conectar automáticamente con las credenciales de usuario](#connect-automatically-with-user-credentials#)
-* [Crear manualmente una conexión de credenciales de usuario](#create-a-user-credentials-connection-manually)
+* [Crear manualmente una conexión con las credenciales de usuario](#create-a-user-credentials-connection-manually)
 * [Crear una conexión de servidor a servidor](#create-a-server-to-server-connection)
 
 ### Conectar automáticamente con las credenciales de usuario
@@ -116,15 +116,15 @@ Este método crea una conexión automáticamente si ha iniciado sesión en Frame
 1. Introduzca un nombre para la conexión. 
 1. Haga clic en **Continuar**.
 1. Si se le pide que inicie sesión en su cuenta de Frame.io, hágalo.
-1. Si forma parte de más de una organización Frame.io, seleccione la organización que desee utilizar para esta conexión.
+1. Si forma parte de más de una organización Frame.io, seleccione la que desee utilizar para esta conexión.
 
-La conexión está creada.
+Se crea la conexión.
 
-### Crear manualmente una conexión de credenciales de usuario
+### Crear manualmente una conexión con las credenciales de usuario
 
-Puede crear una conexión de credenciales de usuario iniciando sesión en Frame.io o proporcionando un ID de cliente o un Secreto de cliente.
+Puede crear una conexión de credenciales de usuario iniciando sesión en Frame.io o proporcionando un ID o un secreto de cliente.
 
-Para crear una conexión servidor a servidor, primero debe configurar una aplicación en Adobe Developer Console.
+Para crear una conexión de servidor a servidor, primero debe configurar una aplicación en Adobe Developer Console.
 
 * [Crear credenciales de usuario en Adobe Developer Console](#create-user-credentials-in-the-adobe-developer-console)
 * [Configurar una conexión de autenticación de usuario](#configure-a-user-authentication-connection)
@@ -140,7 +140,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
 
    Cree un nuevo proyecto en Adobe Developer Console. Para obtener instrucciones, consulte [Crear un proyecto vacío](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
 
-1. En la página Información general del proyecto o en la página Introducción a su nuevo proyecto, haga clic en **Agregar API**.
+1. En la página Información general del proyecto o en la página Introducción a tu nuevo proyecto, haga clic en **Añadir API**.
 1. En la página que se abre, busque y haga clic en la **API de Frame.io**.
 1. En la página Seleccionar tipo de autenticación, seleccione **Autenticación de usuario** y haga clic en **Siguiente**.
 1. En la página Añadir una credencial de autenticación de usuario, seleccione **Aplicación web de OAuth** y haga clic en **Siguiente**.
@@ -151,13 +151,13 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL URI de redirección predeterminado]</td>
+          <td role="rowheader">[!UICONTROL Default redirect URI]</td>
           <td>
             <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Patrón URI de redireccionamiento]</td>
+          <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
           <td>
             <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
           </td>
@@ -165,10 +165,10 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
        </tbody>
     </table>
 1. Haga clic en **Siguiente**.
-1. Haga clic en **guardar la API configurada**.
-1. En la página del producto, haga clic en la tarjeta de las credenciales que acaba de crear.
+1. Haga clic en **Guardar API configurada**.
+1. En la página de producto, haga clic en la tarjeta de las credenciales que acaba de crear.
 
-   Aquí puede encontrar su ID y Secreto de cliente.
+   Aquí puede encontrar su ID y su secreto de cliente.
 
 >[!NOTE]
 >
@@ -211,14 +211,14 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
        </tbody>
     </table>
 1. Si se le pide que inicie sesión en su cuenta de Frame.io, hágalo.
-1. Si forma parte de más de una organización Frame.io, seleccione la organización que desee utilizar para esta conexión.
+1. Si forma parte de más de una organización Frame.io, seleccione la que desee utilizar para esta conexión.
 
-La conexión está creada.
+Se crea la conexión.
 
 
 ### Crear una conexión de servidor a servidor
 
-Para crear una conexión servidor a servidor, primero debe configurar una aplicación en Adobe Developer Console.
+Para crear una conexión de servidor a servidor, primero debe configurar una aplicación en Adobe Developer Console.
 
 * [Creación de credenciales de servidor a servidor en Adobe Developer Console](#create-server-to-server-credentials-in-the-adobe-developer-console)
 * [Configuración de una conexión de servidor a servidor](#configure-a-server-to-server-connection)
@@ -234,16 +234,16 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
 
    Cree un nuevo proyecto en Adobe Developer Console. Para obtener instrucciones, consulte [Crear un proyecto vacío](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
 
-1. En la página Información general del proyecto o en la página Introducción a su nuevo proyecto, haga clic en **Agregar API**.
+1. En la página Información general del proyecto o en la página Introducción a tu nuevo proyecto, haga clic en **Añadir API**.
 1. En la página que se abre, busque y haga clic en la **API de Frame.io**.
 1. En la página Seleccionar tipo de autenticación, seleccione **Autenticación de servidor a servidor** y haga clic en **Siguiente**.
 1. Introduzca un nombre para las credenciales. Esto le permite identificar las credenciales más adelante en el área Credenciales de API de Adobe Admin Console.
 1. Haga clic en **Siguiente**.
 1. En la página Seleccionar perfiles de producto, seleccione el perfil de producto que incluye la cuenta de Frame.io a la que desea conectarse.
 1. Haga clic en **Guardar API configurada**.
-1. En la página del producto, haga clic en la tarjeta de las credenciales que acaba de crear.
+1. En la página de producto, haga clic en la tarjeta de las credenciales que acaba de crear.
 
-   Aquí puede encontrar su ID y Secreto de cliente.
+   Aquí puede encontrar su ID y su secreto de cliente.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p>Seleccionar <b>servidor IMS para servidor</b>.</p>
+            <p>Seleccione <b>de servidor a servidor IMS</b>.</p>
           </td>
         </tr>
         <tr>
@@ -293,7 +293,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
 
 Al configurar módulos de [!DNL Frame.io], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Frame.io] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -304,18 +304,18 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Recursos compartidos](#shares)
 * [Espacios de trabajo](#workspaces)
 * [Metadatos](#metadata)
-* [Otro](#other)
+* [Otros](#other)
 
 ### Recursos
 
 * [[!UICONTROL Crear un recurso]](#create-an-asset)
 * [[!UICONTROL Eliminar un recurso]](#delete-an-asset)
 * [[!UICONTROL Obtener un recurso]](#get-an-asset)
-* [[!UICONTROL Lista de recursos]](#list-assets)
+* [[!UICONTROL Enumerar recursos]](#list-assets)
 * [Ver recurso eliminado](#watch-asset-deleted)
 * [Ver nuevo recurso](#watch-new-asset)
 
-#### [!UICONTROL Crear un recurso]<!--different for v4-->
+#### [!UICONTROL Crear un recurso] <!--different for v4-->
 
 Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o proporcionar la dirección URL de un archivo remoto desde el que crear el recurso.
 
@@ -329,11 +329,11 @@ Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o p
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga el proyecto para el que desea crear un recurso.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contenga el proyecto para el que desea crear un recurso.</p> </td> 
+   <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
@@ -384,11 +384,11 @@ Este módulo de acción crea un nuevo recurso.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga el proyecto para el que desea crear un recurso.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contenga el proyecto para el que desea crear un recurso.</p> </td> 
+   <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
@@ -400,7 +400,7 @@ Este módulo de acción crea un nuevo recurso.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File Name] </td> 
-   <td> <p>Escriba el nombre del archivo que desea usar para este recurso.</p> </td> 
+   <td> <p>Escriba el nombre del archivo que desea utilizar para este recurso.</p> </td> 
   </tr>
     <tr> 
     <td role="rowheader">Tamaño del archivo </td> 
@@ -408,11 +408,11 @@ Este módulo de acción crea un nuevo recurso.
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
-   <td> <p>Si está creando un archivo, introduzca la URL del archivo que desea cargar.</p> </td> 
+   <td> <p>Si va a crear un archivo, introduzca la URL del archivo que desea cargar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Seleccione el tipo de medios para este recurso.</p> </td> 
+   <td> <p>Seleccione el tipo de medio para este recurso.</p> </td> 
   </tr> 
   </tbody> 
 </table>
@@ -431,7 +431,7 @@ Este módulo de acción elimina un recurso especificado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga el recurso que desea eliminar.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el recurso que desea eliminar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
@@ -454,7 +454,7 @@ Este módulo de acción recupera los detalles de un recurso.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga el recurso que desea recuperar.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el recurso que desea recuperar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
@@ -463,7 +463,7 @@ Este módulo de acción recupera los detalles de un recurso.
  </tbody> 
 </table>
 
-#### [!UICONTROL Lista de recursos]
+#### [!UICONTROL Enumerar recursos]
 
 Este módulo de búsqueda recupera todos los recursos de la carpeta en el proyecto especificado.
 
@@ -479,7 +479,7 @@ Este módulo de búsqueda recupera todos los recursos de la carpeta en el proyec
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga los recursos que desea enumerar.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene los recursos que desea enumerar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned assets] </td> 
@@ -492,7 +492,7 @@ Este módulo de búsqueda recupera todos los recursos de la carpeta en el proyec
 
 Este módulo de activador inicia un escenario cuando se elimina un recurso.
 
-Seleccione el webhook que desee utilizar para este módulo o haga clic en Agregar junto al campo Webhook e introduzca la siguiente información:
+Seleccione el webhook que desee utilizar para este módulo o haga clic en Añadir junto al campo Webhook e introduzca la siguiente información:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -519,7 +519,7 @@ Seleccione el webhook que desee utilizar para este módulo o haga clic en Agrega
 
 Este módulo de activador inicia un escenario cuando se crea un nuevo recurso.
 
-Seleccione el webhook que desee utilizar para este módulo o haga clic en Agregar junto al campo Webhook e introduzca la siguiente información:
+Seleccione el webhook que desee utilizar para este módulo o haga clic en Añadir junto al campo Webhook e introduzca la siguiente información:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -566,11 +566,11 @@ Este módulo de acción añade un nuevo comentario o respuesta al recurso.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga el recurso al que desea añadir un comentario.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el recurso al que desea añadir un comentario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID del espacio de trabajo que contenga el recurso al que desea añadir un comentario.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta del espacio de trabajo que contiene el recurso al que desea añadir un comentario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
@@ -578,7 +578,7 @@ Este módulo de acción añade un nuevo comentario o respuesta al recurso.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
-   <td> <p>Seleccione la ruta o el recurso al que desea añadir un comentario.</p> </td> 
+   <td> <p>Seleccione la ruta del recurso al que desea añadir un comentario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text]</td> 
@@ -609,7 +609,7 @@ Este módulo de acción elimina un comentario existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contenga el comentario que desea eliminar.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el comentario que desea eliminar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -690,7 +690,7 @@ Este módulo de acción edita un comentario existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contenga el proyecto que contiene el recurso en el que desea actualizar un comentario.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta que contiene el proyecto con el recurso cuyo comentario desea actualizar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -713,9 +713,9 @@ Este módulo de acción edita un comentario existente.
 
 #### Ver comentario actualizado
 
-Este módulo de activador inicia un escenario cuando se actualiza un comentario.
+Este módulo de activación inicia un escenario cuando se actualiza un comentario.
 
-Seleccione el webhook que desee utilizar para este módulo o haga clic en Agregar junto al campo Webhook e introduzca la siguiente información:
+Seleccione el webhook que desee utilizar para este módulo o haga clic en Añadir junto al campo Webhook e introduzca la siguiente información:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -733,16 +733,16 @@ Seleccione el webhook que desee utilizar para este módulo o haga clic en Agrega
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que desea ver para buscar comentarios actualizados.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta donde desea buscar comentarios actualizados.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Ver nuevo comentario
 
-Este módulo de activador inicia un escenario cuando se crea un comentario.
+Este módulo de activación inicia un escenario cuando se crea un comentario.
 
-Seleccione el webhook que desee utilizar para este módulo o haga clic en Agregar junto al campo Webhook e introduzca la siguiente información:
+Seleccione el webhook que desee utilizar para este módulo o haga clic en Añadir junto al campo Webhook e introduzca la siguiente información:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -760,7 +760,7 @@ Seleccione el webhook que desee utilizar para este módulo o haga clic en Agrega
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que desea ver para buscar nuevos comentarios.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta donde desea buscar nuevos comentarios.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -805,7 +805,7 @@ Este módulo de acción crea una nueva carpeta en Frame.io.
 ### Proyectos
 
 * [Crear un proyecto](#create-a-project)
-* [Invitar a usuarios al proyecto Frame.io](#invite-users-to-frameio-project)
+* [Invitar a usuarios al proyecto de Frame.io](#invite-users-to-frameio-project)
 * [Lista de proyectos](#list-projects)
 
 #### Crear un proyecto
@@ -822,7 +822,7 @@ Este módulo de acción crea un nuevo proyecto en Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta en la que desea crear un proyecto.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta donde desea crear un proyecto.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -835,7 +835,7 @@ Este módulo de acción crea un nuevo proyecto en Frame.io.
  </tbody> 
 </table>
 
-#### Invitar a usuarios al proyecto Frame.io
+#### Invitar a usuarios al proyecto de Frame.io
 
 Este módulo de acción invita a los usuarios al proyecto Frame.io especificado.
 
@@ -849,11 +849,11 @@ Este módulo de acción invita a los usuarios al proyecto Frame.io especificado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contiene el proyecto al que desea invitar a un usuario. </p> </td> 
+   <td> <p>Seleccione o asigne la cuenta que contiene el proyecto al que desea invitar a un usuario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Seleccione o asigne el espacio de trabajo que contenga el proyecto al que desea invitar a un usuario.</p> </td> 
+   <td> <p>Seleccione o asigne el espacio de trabajo que contiene el proyecto al que desea invitar a un usuario.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Identificador de proyecto </td> 
@@ -861,7 +861,7 @@ Este módulo de acción invita a los usuarios al proyecto Frame.io especificado.
   </tr> 
   </tr> 
    <tr> 
-   <td role="rowheader">Identificador del usuario </td> 
+   <td role="rowheader">Identificador de usuario </td> 
    <td> <p>Seleccione o asigne al usuario que desea invitar al proyecto.</p> </td> 
   </tr> 
  </tbody> 
@@ -881,7 +881,7 @@ Este módulo de búsqueda recupera todos los proyectos del equipo especificado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contenga el recurso del que desea recuperar los proyectos.</p> </td> 
+   <td> <p>Introduzca o asigne la cuenta que contiene el recurso del que desea recuperar los proyectos.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -890,7 +890,7 @@ Este módulo de búsqueda recupera todos los proyectos del equipo especificado.
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned projects] </td> 
    <td> <p>Introduzca o asigne el número máximo de proyectos
-   que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
+  que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -914,15 +914,15 @@ Estos módulos de acción añaden un recurso a un vínculo compartido en Frame.i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contiene el vínculo compartido al que desea añadir un recurso. </p> </td> 
+   <td> <p>Seleccione o asigne la cuenta que contiene el vínculo compartido al que desea añadir el recurso.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Share link ID] </td> 
-   <td> <p>Seleccione o asigne el vínculo compartido al que desea añadir un recurso.</p> </td> 
+   <td> <p>Seleccione o asigne el vínculo compartido al que quiere añadir un recurso.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Introduzca o asigne el ID del recurso que desea añadir al vínculo compartido.</p> </td> 
+   <td> <p>Introduzca o asigne el ID del recurso al que quiere añadir el vínculo compartido.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -965,7 +965,7 @@ Este módulo de acción crea un nuevo vínculo compartido en Frame.io.
   </tr> 
    <tr> 
    <td role="rowheader">Nombre </td> 
-   <td> <p>Introduzca o asigne la fecha de vencimiento para el vínculo compartido.</p> </td> 
+   <td> <p>Introduzca o asigne la fecha de caducidad para el vínculo compartido.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Nombre </td> 
@@ -982,7 +982,7 @@ Este módulo de acción crea un nuevo vínculo compartido en Frame.io.
 
 #### Crear un espacio de trabajo
 
-Este módulo de acción crea un nuevo espacio de trabajo en Frame.io.
+Este módulo de acción crea un nuevo espacio de trabajo en Frame.io
 
 <table style="table-layout:auto"> 
  <col> 
@@ -994,7 +994,7 @@ Este módulo de acción crea un nuevo espacio de trabajo en Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta en la que quiere crear un espacio de trabajo.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta en la que desea crear un espacio de trabajo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -1003,7 +1003,7 @@ Este módulo de acción crea un nuevo espacio de trabajo en Frame.io.
  </tbody> 
 </table>
 
-#### Enumerar espacios de trabajo
+#### Enumerar los espacios de trabajo
 
 Este módulo enumera todos los espacios de trabajo de una cuenta.
 
@@ -1017,12 +1017,12 @@ Este módulo enumera todos los espacios de trabajo de una cuenta.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contenga el recurso del que que desea recuperar los espacios de trabajo.</p> </td> 
+   <td> <p>Introduzca o asigne la cuenta que contiene el recurso del que desea recuperar los espacios de trabajo.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
    <td> <p>Introduzca o asigne el número máximo de espacios de trabajo
- que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
+   que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1187,7 +1187,7 @@ Este módulo actualiza los campos de metadatos de uno o varios archivos con los 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contenga el proyecto para el que desea crear un recurso.</p> </td> 
+   <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
@@ -1204,13 +1204,14 @@ Este módulo actualiza los campos de metadatos de uno o varios archivos con los 
  </tbody> 
 </table>
 
-### Otro
+### Otros
 
-* [Realizar una llamada de API personalizada](#make-a-custom-api-call)
+* [Realizar una llamada API personalizada](#make-a-custom-api-call)
+* [Ver eventos](#watch-events)
 * [Ver el valor de metadatos actualizado](#watch-metadata-value-updated)
 
 
-#### [!UICONTROL Realizar una llamada de API personalizada]
+#### [!UICONTROL Realizar una llamada API personalizada]
 
 Este módulo le permite realizar una llamada de API personalizada.
 
@@ -1220,7 +1221,7 @@ Este módulo le permite realizar una llamada de API personalizada.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Para las instrucciones sobre cómo crear una conexión con [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a Adobe Workfront Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a Adobe Workfront Fusion</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -1248,11 +1249,53 @@ Este módulo le permite realizar una llamada de API personalizada.
  </tbody> 
 </table>
 
+#### Ver eventos
+
+Este módulo de déclencheur instantáneo inicia un escenario cuando el evento seleccionado se produce en Frame.io.
+
+Puede utilizar un webhook existente o crear uno nuevo.
+
+Para crear un nuevo webhook, haga lo siguiente:
+
+1. Haga clic en **Añadir** junto al campo Webhook.
+1. Rellene la siguiente información:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+     <td role="rowheader">Nombre de webhook </td> 
+      <td> <p>Introduzca un nombre para el nuevo webhook.</p> </td> 
+     </tr> 
+     <tr> 
+       <td role="rowheader">[!UICONTROL Connection] </td> 
+       <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a Adobe Workfront Fusion</a> en este artículo.</td> 
+     </tr> 
+     <tr> 
+     <td role="rowheader">[!UICONTROL Account ID] </td> 
+      <td> <p>Seleccione o asigne la cuenta que contiene el espacio de trabajo donde desea ver los eventos.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+      <td> <p>Introduzca el ID del espacio de trabajo donde desea ver los eventos.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Eventos]</td> 
+      <td> <p>Seleccione los eventos en los que desea almacenar en déclencheur este módulo</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Haga clic en **Guardar** para guardar el webhook y volver al módulo.
+1. Haga clic en **Aceptar** en el módulo Ver eventos para guardar la configuración.
+
+
 #### Ver el valor de metadatos actualizado
 
-Este módulo de activador inicia un escenario cuando se actualiza un comentario.
+Este módulo de activación inicia un escenario cuando se actualiza un comentario.
 
-Seleccione el webhook que desee utilizar para este módulo o haga clic en Agregar junto al campo Webhook e introduzca la siguiente información:
+Seleccione el webhook que desee utilizar para este módulo o haga clic en Añadir junto al campo Webhook e introduzca la siguiente información:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1270,7 +1313,7 @@ Seleccione el webhook que desee utilizar para este módulo o haga clic en Agrega
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que desea ver para obtener valores de metadatos actualizados.</p> </td> 
+   <td> <p>Seleccione la cuenta o asigne el ID donde desea ver los valores de metadatos actualizados.</p> </td> 
   </tr> 
  </tbody> 
 </table>
