@@ -1,22 +1,22 @@
 ---
-title: Módulos Veeva Vault
+title: Módulos de Veeva Vault
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Veeva Vault, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 18%
+source-wordcount: '2539'
+ht-degree: 20%
 
 ---
 
-# Módulos Veeva Vault
+# Módulos de Veeva Vault
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Veeva Vault, así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información sobre los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,7 +28,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -44,7 +44,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -77,7 +77,7 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
      <col> 
      <tbody> 
       <tr> 
-       <td role="rowheader">Nombre de conexión</td> 
+       <td role="rowheader">Nombre de la conexión</td> 
        <td> <p>Introduzca un nombre para la conexión. </p> </td> 
       </tr> 
       <tr>
@@ -112,21 +112,17 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
      <col> 
      <tbody> 
       <tr> 
-       <td role="rowheader">Nombre de conexión</td> 
+       <td role="rowheader">Nombre de la conexión</td> 
        <td> <p>Introduzca un nombre para la conexión. </p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Id. de cliente</td>
-        <td>
-          <p>Introduzca el ID de cliente para la aplicación Veeva Vault que utilizará esta conexión.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Secreto de cliente</td>
-        <td>
-          <p>Introduzca el Secreto del cliente para la aplicación Veeva Vault que utilizará esta conexión.</p>
-        </td>
-      </tr>
+      <tr> 
+       <td role="rowheader">Proveedor del servidor de autorización</td> 
+       <td> <p>Seleccione el proveedor que desee utilizar para esta autenticación.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Host de ping</td> 
+       <td> <p>Si utiliza PingFederate, introduzca el host de ping.</p> </td> 
+      </tr> 
       <tr>
         <td role="rowheader">Ámbito</td>
         <td>
@@ -136,7 +132,19 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
       <tr>
         <td role="rowheader">ID de inquilino</td>
         <td>
-          <p>Introduzca el ID de inquilino para esta conexión.</p>
+          <p>Si usa el Id. de entrada de Azure AD/Microsoft para el proveedor del servidor de autorización, escriba el Id. de inquilino para esta conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID de cliente</td>
+        <td>
+          <p>Introduzca el ID de cliente para la aplicación Veeva Vault que utilizará esta conexión.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Secreto de cliente</td>
+        <td>
+          <p>Introduzca el Secreto del cliente para la aplicación Veeva Vault que utilizará esta conexión.</p>
         </td>
       </tr>
       <tr>
@@ -149,6 +157,12 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
        <td role="rowheader">DNS de Vault</td> 
        <td>Introduzca su Veeva Vault DNS (nombre de dominio).</p><p>Para localizar el DNS de Veeva Vault, examine la URL que utiliza para acceder a Veeva Vault.</p>Por ejemplo, en la dirección URL <code>https://my-dns.veevavault.com</code>, el DNS es <code>my-dns</code>. No es necesario que introduzca la dirección URL completa.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">El tiempo de caducidad de su sesión en minutos</td>
+        <td>
+          <p>Introduzca la hora de caducidad de la sesión, en minutos.</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
@@ -159,13 +173,13 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
 
 Al configurar los módulos de Veeva Vault, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, pueden mostrarse campos adicionales de Veeva Vault, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Documento](#document)
 * [Objeto](#object)
-* [Otro](#other)
+* [Otros](#other)
 
 ### Documento
 
@@ -643,13 +657,13 @@ Este módulo crea, copia o copia profunda un único registro de objeto.
  </tbody> 
 </table>
 
-### Otro
+### Otros
 
-* [Realizar una llamada de API personalizada](#make-a-custom-api-call)
+* [Realizar una llamada API personalizada](#make-a-custom-api-call)
 * [Realización de una consulta VQL](#make-a-vql-query)
 * [Leer registros](#read-logs)
 
-#### Realizar una llamada de API personalizada
+#### Realizar una llamada API personalizada
 
 Este módulo de acción realiza una llamada personalizada a la API de Veeva Vault.
 
@@ -728,11 +742,11 @@ Este módulo devuelve datos de las pistas de auditoría
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Fecha de inicio</p> </td> 
-   <td> <p>Introduzca o asigne la fecha de inicio de las auditorías que desee recuperar.</p><p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p>Introduzca o asigne la fecha de inicio de las auditorías que desee recuperar.</p><p>Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Fecha de finalización</p> </td> 
-   <td> <p>Introduzca o asigne la fecha de finalización de las auditorías que desee recuperar.</p><p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p>Introduzca o asigne la fecha de finalización de las auditorías que desee recuperar.</p><p>Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL de resultado </p> </td> 
