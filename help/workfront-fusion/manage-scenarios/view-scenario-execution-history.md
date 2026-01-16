@@ -1,17 +1,17 @@
 ---
-title: Visualización del historial de ejecución de un escenario
+title: 'Ver el historial de ejecuciones de un escenario '
 description: Puede mostrar información sobre los eventos o las ejecuciones de un escenario, o puede buscar datos específicos en todas las ejecuciones del escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 58%
+source-wordcount: '911'
+ht-degree: 65%
 
 ---
 
-# Visualización del historial de ejecución de un escenario
+# Ver el historial de ejecuciones de un escenario 
 
 Puede mostrar información sobre los eventos o las ejecuciones de un escenario, o puede buscar datos específicos en todas las ejecuciones del escenario.
 
@@ -32,8 +32,8 @@ Un evento de escenario es una modificación del escenario, como editarlo, activa
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -42,13 +42,13 @@ Un evento de escenario es una modificación del escenario, como editarlo, activa
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -58,6 +58,10 @@ Para obtener más información sobre esta tabla, consulte [Requisitos de acceso 
 ### Ver el historial de escenarios en la pestaña Historial
 
 La ficha [!UICONTROL Historial] muestra más detalles de los que están disponibles en la página [!UICONTROL Detalles del escenario]. También puede filtrar y ordenar las ejecuciones en la ficha [!UICONTROL Historial].
+
+>[!NOTE]
+>
+>Si ve el historial de un escenario mientras aún se está ejecutando, Fusion muestra una nota que le informa de que los datos aún se están procesando, y solo se muestra un historial parcial del escenario hasta que se complete el procesamiento.
 
 1. Haga clic en la ficha **[!UICONTROL Escenario]** en el panel izquierdo y, a continuación, haga clic en el escenario.
 
@@ -154,7 +158,7 @@ Se abre la ventana [!UICONTROL Buscar en el historial].
    >
    >* Las ejecuciones solo están disponibles durante los 30 días anteriores.
    >
-   >* Workfront Fusion almacena las cargas útiles de los ganchos web durante 30 días. Al acceder a una carga útil de webhook más de 30 días después de su creación se produce el error &quot;[!UICONTROL No se pudo leer el archivo desde el almacenamiento]&quot;.
+   >* Workfront Fusion almacena cargas útiles de webhooks durante 30 días. Al acceder a una carga útil de webhook más de 30 días después de su creación se produce el error &quot;[!UICONTROL No se pudo leer el archivo desde el almacenamiento]&quot;.
 
 
 1. (Opcional) Para limitar la búsqueda por estado, seleccione el estado que desee en la lista desplegable **[!UICONTROL Por estado]**.
