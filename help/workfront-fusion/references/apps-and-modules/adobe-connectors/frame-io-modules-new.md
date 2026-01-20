@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -317,7 +317,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 #### [!UICONTROL Crear un recurso] <!--different for v4-->
 
-Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o proporcionar la dirección URL de un archivo remoto desde el que crear el recurso.
+Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o proporcionar la dirección URL de un archivo remoto para crear el recurso a partir de él.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -332,7 +332,7 @@ Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o p
    <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
@@ -349,18 +349,18 @@ Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o p
   </tr> -->
     <tr> 
     <td role="rowheader">Tipo de carga </td> 
-    <td> <p>Seleccione si va a crear un recurso a partir de un archivo local o de una vida remota.</p> </td> 
+    <td> <p>Seleccione si va a crear un recurso a partir de un archivo local o remoto.</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">Tamaño del archivo </td> 
-    <td> <p>Si está cargando un archivo local, introduzca o asigne el tamaño del archivo en bytes.</p> </td> 
+    <td> <p>Si va a cargar un archivo local, introduzca o asigne el tamaño del archivo en bytes.</p> </td> 
    </tr>
   <tr> 
-   <td role="rowheader">[!UICONTROL Source URL] </td> 
-   <td> <p>Si crea el recurso a partir de un archivo remoto, introduzca la dirección URL del archivo que desea cargar.</p> </td> 
+   <td role="rowheader">[!UICONTROL URL de origen] </td> 
+   <td> <p>Si va a crear el recurso desde un archivo remoto, introduzca la URL del archivo que desea cargar.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Archivo de origen]</td> 
    <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre del archivo de origen.</p> </td> 
   </tr> 
 <!--  <tr> 
@@ -370,7 +370,7 @@ Este módulo de acción crea un nuevo recurso. Puede cargar un archivo local o p
   </tbody> 
 </table>
 
-#### [!UICONTROL Crear un recurso (heredado)] <!--different for v4-->
+#### [!UICONTROL Crear un recurso (heredado)] <!--different for v4-->
 
 Este módulo de acción crea un nuevo recurso.
 
@@ -387,7 +387,7 @@ Este módulo de acción crea un nuevo recurso.
    <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
@@ -407,7 +407,7 @@ Este módulo de acción crea un nuevo recurso.
     <td> <p>Introduzca o asigne el tamaño del archivo en bytes.</p> </td> 
    </tr>
   <tr> 
-   <td role="rowheader">[!UICONTROL Source URL] </td> 
+   <td role="rowheader">[!UICONTROL URL de origen] </td> 
    <td> <p>Si va a crear un archivo, introduzca la URL del archivo que desea cargar.</p> </td> 
   </tr> 
   <tr> 
@@ -569,7 +569,7 @@ Este módulo de acción añade un nuevo comentario o respuesta al recurso.
    <td> <p>Seleccione la cuenta o asigne el ID de la cuenta que contiene el recurso al que desea añadir un comentario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione la cuenta o asigne el ID de la cuenta del espacio de trabajo que contiene el recurso al que desea añadir un comentario.</p> </td> 
   </tr> 
   <tr> 
@@ -658,7 +658,7 @@ Este módulo de búsqueda recupera todos los comentarios del recurso especificad
    <td> <p>Seleccione o asigne la cuenta que contenga el recurso cuyos comentarios desea recuperar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione o asigne el espacio de trabajo que contiene el recurso cuyos comentarios desea recuperar.</p> </td> 
   </tr> 
   <tr> 
@@ -784,7 +784,7 @@ Este módulo de acción crea una nueva carpeta en Frame.io.
    <td> <p>Seleccione o asigne la cuenta en la que desea crear una carpeta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione o asigne el espacio de trabajo en el que desea crear una carpeta.</p> </td> 
   </tr> 
   <tr> 
@@ -825,7 +825,7 @@ Este módulo de acción crea un nuevo proyecto en Frame.io.
    <td> <p>Seleccione o asigne la cuenta donde desea crear un proyecto.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione o asigne el espacio de trabajo en el que desea crear un proyecto.</p> </td> 
   </tr> 
    <tr> 
@@ -852,7 +852,7 @@ Este módulo de acción invita a los usuarios al proyecto Frame.io especificado.
    <td> <p>Seleccione o asigne la cuenta que contiene el proyecto al que desea invitar a un usuario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione o asigne el espacio de trabajo que contiene el proyecto al que desea invitar a un usuario.</p> </td> 
   </tr> 
    <tr> 
@@ -884,7 +884,7 @@ Este módulo de búsqueda recupera todos los proyectos del equipo especificado.
    <td> <p>Introduzca o asigne la cuenta que contiene el recurso del que desea recuperar los proyectos.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione o asigne el espacio de trabajo que contiene el recurso del que desea recuperar los proyectos.</p> </td> 
   </tr> 
    <tr> 
@@ -944,7 +944,7 @@ Este módulo de acción crea un nuevo vínculo compartido en Frame.io.
    <td> <p>Seleccione o asigne la cuenta en la que desea crear un vínculo compartido.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione o asigne el espacio de trabajo en el que desea crear un vínculo compartido.</p> </td> 
   </tr> 
   <tr> 
@@ -1029,16 +1029,16 @@ Este módulo enumera todos los espacios de trabajo de una cuenta.
 
 ### Metadatos
 
-* [Crear un campo de nivel de cuenta](#create-an-account-level-field)
-* [Eliminar un campo de nivel de cuenta](#delete-an-account-level-field)
+* [Crear un campo en el nivel de cuenta](#create-an-account-level-field)
+* [Eliminar un campo en el nivel de cuenta](#delete-an-account-level-field)
 * [Obtener metadatos](#get-metadata)
-* [Enumerar campos de nivel de cuenta](#list-account-level-fields)
-* [Actualizar una definición de campo de nivel de cuenta](#update-an-account-level-field-definition)
-* [Actualización de metadatos en varios archivos](#update-metadata-across-multiple-files)
+* [Lista de campos en el nivel de cuenta](#list-account-level-fields)
+* [Actualizar una definición de campo en el nivel de cuenta](#update-an-account-level-field-definition)
+* [Actualizar metadatos en varios archivos](#update-metadata-across-multiple-files)
 
-#### Crear un campo de nivel de cuenta
+#### Crear un campo en el nivel de cuenta
 
-Este módulo de acción crea y configura un nuevo campo de metadatos de nivel de cuenta.
+Este módulo de acción crea y configura un nuevo campo de metadatos en el nivel de cuenta.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1050,7 +1050,7 @@ Este módulo de acción crea y configura un nuevo campo de metadatos de nivel de
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta donde desea crear los metadatos.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta en la que desea crear los metadatos.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Tipo de campo </td> 
@@ -1064,9 +1064,9 @@ Este módulo de acción crea y configura un nuevo campo de metadatos de nivel de
  </tbody> 
 </table>
 
-#### Eliminar un campo de nivel de cuenta
+#### Eliminar un campo en el nivel de cuenta
 
-Este módulo de acción elimina un único campo de metadatos de nivel de cuenta.
+Este módulo de acción elimina un único campo de metadatos en el nivel de cuenta.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1082,7 +1082,7 @@ Este módulo de acción elimina un único campo de metadatos de nivel de cuenta.
   </tr> 
    <tr> 
    <td role="rowheader">ID de definición de campo </td> 
-   <td> <p>Introduzca o asigne el ID del campo que desea eliminar. Puede encontrar ID de campo con el módulo Campos de nivel de cuenta de lista.</p> </td> 
+   <td> <p>Introduzca o asigne el ID del campo que desea eliminar. Puede encontrar los ID de campo con el módulo Lista de campos en el nivel de cuenta.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1101,11 +1101,11 @@ Este módulo de acción recupera los metadatos de un archivo en Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contiene el archivo cuyos metadatos desea recuperar.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta que contiene el archivo del que desea recuperar los metadatos.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID de archivo </td> 
-   <td> <p>Introduzca o asigne el ID del archivo para el que desea recuperar los metadatos.</p> </td> 
+   <td> <p>Introduzca o asigne el ID del archivo del que desea recuperar los metadatos.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Mostrar nulo </td> 
@@ -1114,9 +1114,9 @@ Este módulo de acción recupera los metadatos de un archivo en Frame.io.
  </tbody> 
 </table>
 
-#### Enumerar campos de nivel de cuenta
+#### Lista de campos en el nivel de cuenta
 
-Este módulo recupera una lista de campos de metadatos de nivel de cuenta para la cuenta especificada.
+Este módulo recupera una lista de campos de metadatos en el nivel de cuenta para la cuenta especificada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1128,7 +1128,7 @@ Este módulo recupera una lista de campos de metadatos de nivel de cuenta para l
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta desde la que desea enumerar los campos.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta de la que desea enumerar los campos.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -1137,7 +1137,7 @@ Este módulo recupera una lista de campos de metadatos de nivel de cuenta para l
  </tbody> 
 </table>
 
-#### Actualizar una definición de campo de nivel de cuenta
+#### Actualizar una definición de campo en el nivel de cuenta
 
 Este módulo actualiza la definición de un único campo de metadatos existente.
 
@@ -1151,11 +1151,11 @@ Este módulo actualiza la definición de un único campo de metadatos existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta donde desea crear los metadatos.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta en la que desea crear los metadatos.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID de definición de campo </td> 
-   <td> <p>Introduzca o asigne el ID del campo que desea actualizar. Puede encontrar ID de campo con el módulo Campos de nivel de cuenta de lista.</p> </td> 
+   <td> <p>Introduzca o asigne el ID del campo que desea actualizar. Puede encontrar los ID de campo con el módulo Lista de campos en el nivel de cuenta.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Tipo de campo </td> 
@@ -1169,7 +1169,7 @@ Este módulo actualiza la definición de un único campo de metadatos existente.
  </tbody> 
 </table>
 
-#### Actualización de metadatos en varios archivos
+#### Actualizar metadatos en varios archivos
 
 Este módulo actualiza los campos de metadatos de uno o varios archivos con los valores especificados.
 
@@ -1183,10 +1183,10 @@ Este módulo actualiza los campos de metadatos de uno o varios archivos con los 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Seleccione o asigne la cuenta que contiene los archivos cuyos metadatos desea actualizar.</p> </td> 
+   <td> <p>Seleccione o asigne la cuenta que contiene los archivos para los que desea actualizar los metadatos.</p> </td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo] </td> 
    <td> <p>Seleccione el espacio de trabajo o asigne el ID del espacio de trabajo que contiene el proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
@@ -1194,12 +1194,12 @@ Este módulo actualiza los campos de metadatos de uno o varios archivos con los 
    <td> <p>Seleccione el proyecto o asigne el ID del proyecto para el que desea crear un recurso.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Id. de archivo] </td> 
-   <td> <p>Para cada archivo para el que desee actualizar los metadatos, haga clic en <b>Agregar elemento</b> y escriba o asigne el identificador del archivo.</p> </td> 
+   <td role="rowheader">[!UICONTROL ID de archivo] </td> 
+   <td> <p>Para cada archivo para el que desee actualizar los metadatos, haga clic en <b>Añadir elemento</b> e introduzca o asigne el ID del archivo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values] </td> 
-   <td> <p>Para cada campo para el que desee actualizar los metadatos, haga clic en <b>Agregar elemento</b> y escriba o asigne el identificador de la definición del campo y el valor que desee colocar en ese campo. Todos los archivos especificados en el campo ID de archivo se actualizan con este valor de campo.</p> </td> 
+   <td> <p>Para cada campo para el que desee actualizar los metadatos, haga clic en <b>Añadir elemento</b> e introduzca o asigne el identificador de la definición del campo y el valor que desee colocar en ese campo. Todos los archivos especificados en el campo ID de archivo se actualizan con este valor de campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1251,21 +1251,21 @@ Este módulo le permite realizar una llamada de API personalizada.
 
 #### Ver eventos
 
-Este módulo de déclencheur instantáneo inicia un escenario cuando el evento seleccionado se produce en Frame.io.
+Este módulo de activación instantáneo inicia un escenario cuando se produce el evento seleccionado en Frame.io.
 
-Puede utilizar un webhook existente o crear uno nuevo.
+Puede seleccionar un webhook existente o crear uno nuevo.
 
 Para crear un nuevo webhook, haga lo siguiente:
 
 1. Haga clic en **Añadir** junto al campo Webhook.
-1. Rellene la siguiente información:
+1. Cumplimente la siguiente información:
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
-     <td role="rowheader">Nombre de webhook </td> 
+     <td role="rowheader">Nombre del webhook </td> 
       <td> <p>Introduzca un nombre para el nuevo webhook.</p> </td> 
      </tr> 
      <tr> 
@@ -1274,20 +1274,20 @@ Para crear un nuevo webhook, haga lo siguiente:
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL Account ID] </td> 
-      <td> <p>Seleccione o asigne la cuenta que contiene el espacio de trabajo donde desea ver los eventos.</p> </td> 
+      <td> <p>Seleccione o asigne la cuenta que contenga el espacio de trabajo en el que desea ver eventos.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-      <td> <p>Introduzca el ID del espacio de trabajo donde desea ver los eventos.</p> </td> 
+      <td role="rowheader">[!UICONTROL ID de espacio de trabajo]</td> 
+      <td> <p>Introduzca el identificador del espacio de trabajo donde desea ver eventos.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Eventos]</td> 
-      <td> <p>Seleccione los eventos en los que desea almacenar en déclencheur este módulo</p> </td> 
+      <td> <p>Seleccione los eventos que desee que activen este módulo.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Haga clic en **Guardar** para guardar el webhook y volver al módulo.
+1. Haga clic en **Guardar** para guardar el webhook y volver al módulo.
 1. Haga clic en **Aceptar** en el módulo Ver eventos para guardar la configuración.
 
 

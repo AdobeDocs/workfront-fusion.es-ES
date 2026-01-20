@@ -7,9 +7,9 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
 source-git-commit: b5c41aea9f259e309a769a66eaa627b0e1f136db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Fusion ofrece conectores para muchas aplicaciones de terceros.
 * [Módulos de traducción gestionada por SDL](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [Módulos de ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
 * [Módulos de Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
-* [Módulos Slack (heredados)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+* [Módulos de Slack (heredados)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Módulos de Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Módulos de Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
 * [Módulos de Veeva Vault](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
