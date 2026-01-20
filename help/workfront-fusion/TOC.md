@@ -5,7 +5,7 @@ user-guide-description: Utilice los documentos, tutoriales y recursos adicionale
 source-git-commit: e6c6e33135f5367c626f83405a0b1e5fbb8f028a
 workflow-type: tm+mt
 source-wordcount: '1986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 98%
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2025 {#fusion-releases-2025}
       * [Actividad de la versión de Workfront Fusion: semana del martes, 12 de enero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
-      * [Actividad en la versión de Workfront Fusion: semana del martes, 17 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-      * [Actividad de la versión de Workfront Fusion: semana del martes, 15 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-      * [Actividad de la versión de Workfront Fusion: semana del martes, 08 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-      * [Actividad de la versión de Workfront Fusion: semana del martes, 01 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
-      * [Actividad en la versión de Workfront Fusion: semana del martes, 10 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-      * [Actividad en la versión de Workfront Fusion: semana del martes, 03 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 17 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 15 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 8 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 1 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 10 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 3 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
       * [Actividad de la versión de Workfront Fusion: semana del 20 de octubre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
       * [Actividad de la versión de Workfront Fusion: semana del 27 de octubre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
       * [Actividad de la versión de Workfront Fusion: semana del 13 de octubre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
@@ -180,7 +180,7 @@ ht-degree: 98%
          * [Añadir un usuario a un equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [Establecer opciones de notificación del equipo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [Ver el registro de actividades de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-         * [Ver el panel de rendimiento de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
+         * [Ver el panel de control de rendimiento de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
       * Administrar usuarios y productos {#manage-users-and-teams}
          * [Administrar usuarios y equipos: índice de artículos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [Ver usuarios de una organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
@@ -249,7 +249,7 @@ ht-degree: 98%
    * [Actualizar un módulo a una nueva versión](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
    * [Administrar escenarios bloqueados](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
    * [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
-   * [Ver el historial de ejecuciones de un escenario &#x200B;](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+   * [Ver el historial de ejecuciones de un escenario ](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [Ver la ejecución de un escenario específico](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
    * [Ver el flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Ver la cola de un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
@@ -267,10 +267,10 @@ ht-degree: 98%
    * [Crear y administrar plantillas](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Crear nuevas plantillas](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Crear escenarios con plantillas](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
-   * [Ver, editar y eliminar plantillas &#x200B;](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
+   * [Ver, editar y eliminar plantillas ](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Publicar y compartir plantillas](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Plantillas de Adobe Workfront Fusion disponibles actualmente](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [Uso de plantillas para conectar Adobe Workfront Fusion y Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
+   * [Usar plantillas para conectar Adobe Workfront Fusion y Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Preguntas frecuentes sobre plantillas de Adobe Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referencias {#references}
    * [Referencias](/help/workfront-fusion/references/references-toc.md)
@@ -299,7 +299,7 @@ ht-degree: 98%
          * [Coerción de tipos](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funciones  {#functions}
-         * [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+         * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Tókenes para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
@@ -404,7 +404,7 @@ ht-degree: 98%
          * [Módulos de traducción gestionada por SDL](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [Módulos de ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
          * [Módulos de Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
-         * [Módulos Slack (heredados)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Módulos de Slack (heredados)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Módulos de Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Módulos de Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Módulos de Widen](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
