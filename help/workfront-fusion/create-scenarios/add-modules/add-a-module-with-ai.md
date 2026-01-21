@@ -61,7 +61,7 @@ Su organización debe cumplir los siguientes requisitos previos para utilizar es
 * Su organización debe haber participado en el programa Beta de Workfront AI Assistant.
 * Adobe debe tener un acuerdo firmado de Adobe Gen AI archivado para su organización.
 
-  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) de IA de Adobe Systems generación en el artículo Información general de AI Assistant en la documentación de Workfront.
+  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo](https://experienceleague.adobe.com/es/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) de IA de Adobe Systems generación en el artículo Información general de AI Assistant en la documentación de Workfront.
 
 ## Aplicaciones de módulo de IA admitidas actualmente
 
