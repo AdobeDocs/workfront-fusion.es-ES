@@ -1,17 +1,17 @@
 ---
-title: Generación de un segmento de escenario mediante IA
+title: Generar un segmento de escenario mediante IA
 description: Puede utilizar IA para escribir un mensaje de texto que describa lo que necesita que haga un segmento de su escenario. A continuación, Fusion genera uno o más módulos que realizan esas acciones y que puede utilizar en su escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: 2bec2607d55e4ba2ffd6ddcae6daa51071b204c4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 17%
+ht-degree: 31%
 
 ---
 
-# Generación de un segmento de escenario mediante IA
+# Generar un segmento de escenario mediante IA
 
 <!--DO NOT DELETE - linked through CSH-->
 
@@ -34,8 +34,8 @@ Al igual que con cualquier elemento generado a partir de IA, le recomendamos que
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -44,22 +44,24 @@ Al igual que con cualquier elemento generado a partir de IA, le recomendamos que
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Requisitos previos
++++
+
+## Requisitos previos
 
 Su organización debe cumplir los siguientes requisitos previos para utilizar esta funcionalidad:
 
 * Su organización debe haber participado en el programa Beta de Workfront AI Assistant.
 * Adobe debe tener un acuerdo firmado de Adobe Gen AI archivado para su organización.
 
-  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo de IA de Adobe Gen](https://experienceleague.adobe.com/es/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) en el artículo Información general del Asistente de IA en la documentación de Workfront.
+  Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) de IA de Adobe Systems generación en el artículo Información general de AI Assistant en la documentación de Workfront.
 
 ## Aplicaciones de módulo de IA admitidas actualmente
 
@@ -68,7 +70,7 @@ Fusion AI puede generar actualmente módulos que se conectan a las siguientes ap
 * Adobe Firefly
 * Azure OpenAI
 * Microsoft Graph
-* Planificación de Adobe Workfront
+* Adobe Workfront Planning
 * Adobe Analytics
 * Servicios Adobe PDF
 * Adobe Marketo
@@ -85,16 +87,16 @@ Fusion AI puede generar actualmente módulos que se conectan a las siguientes ap
 
 ## Generar módulos
 
-1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
-1. Seleccione el escenario en el que desea agregar un módulo.
-1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic en el **[!UICONTROL pestaña Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desee agregar un módulo.
+1. Haga clic en cualquier lugar del escenario para entrar en el editor del escenario.
 1. Haga clic en el icono **Asistente de IA** ![icono Asistente de IA](assets/ai-assistant-icon.png) cerca de la esquina superior derecha de la pantalla.
 1. Escriba un mensaje de texto en el panel Asistente de IA.
 
    Para obtener sugerencias sobre las solicitudes, consulte [Sugerencias para crear solicitudes para segmentos de escenario](#tips-for-creating-prompts-for-scenario-segments) en este artículo.
 
    El asistente de IA genera el módulo o conjunto de módulos.
-1. (Condicional) Si es necesario, agregue el token de API para la aplicación en los módulos.
+1. (Condicional) Si es necesario, agregue el token de API para el aplicación a los módulos.
 1. Compruebe los módulos para asegurarse de que están configurados para la aplicación y la acción adecuadas.
 1. (Condicional) Si la sección de escenario generado no está adjunta al escenario, arrástrela a su lugar.
 
@@ -117,8 +119,7 @@ Los mensajes de texto deben incluir la siguiente información como mínimo:
 
 * `Delete the records 'xyz-123', 'xyz-456', 'xyz-789' from Adobe Workfront Planning`
 Esto incluye la aplicación `Workfront Planning` y la acción `delete records`. Este mensaje crea tres módulos, uno para cada registro que se eliminará.
-* `Change campaign summary of the record 'xyz-123' from Adobe Workfront Planning`
-Esto incluye la aplicación `Workfront Planning` y la acción `change campaign summary`.
+* `Change campaign summary of the record 'xyz-123' from Adobe Workfront Planning`Esto incluye la aplicación `Workfront Planning` y la acción `change campaign summary`.
 * `Get all field details in the record type with ID 'test-record' from Adobe Workfront Planning`
 Esto incluye la aplicación `Workfront Planning` y la acción `get field details`.
 
