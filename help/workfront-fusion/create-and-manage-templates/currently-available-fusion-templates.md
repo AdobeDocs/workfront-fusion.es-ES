@@ -4,10 +4,10 @@ description: Las siguientes plantillas públicas están disponibles actualmente 
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 75%
+source-wordcount: '1660'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Para ver las plantillas disponibles, haga clic en el icono **Plantillas** ![Icon
 
 Estas plantillas automatizan los procesos y flujos de trabajo de Workfront.
 
-### [!BADGE Nuevo! &#x200B;]{type=Informative} Workfront: Ajustar Automáticamente La Escala De Tiempo Del Proyecto Cuando Las Tareas Se Completen Antes
+### Workfront: Ajustar Automáticamente La Cronología Del Proyecto Cuando Las Tareas Se Completan Antes
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Si a su equipo le cuesta mantener el impulso porque las escalas de tiempo de los
 
 Esta plantilla Fusion automatiza ese proceso. Cuando se finaliza una tarea antes de tiempo, todas las tareas dependientes (sucesoras) se vuelven a programar automáticamente para iniciarse antes, lo que ayuda a su equipo a moverse más rápido y a mantenerse ágil.
 
-### [!BADGE Nuevo! &#x200B;]{type=Informative} HTTP>CSV>WF: cree una lista de subdominios de evento por dominio y nivel y exporte a CSV
+### [!BADGE Nuevo! ]{type=Informative} HTTP>CSV>WF: cree una lista de subdominios de evento por dominio y nivel y exporte a CSV
 
 Descargue información de suscripción de evento, cree un archivo CSV y cargue el archivo en Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nuevo! &#x200B;]{type=Informative} Tableros de Workfront: eliminar las tarjetas archivadas de la columna designada (bajo demanda)
+### Tableros de Workfront: eliminar las tarjetas archivadas de la columna designada (bajo demanda)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Una vez al mes, revise las plantillas de proyecto utilizando su propia directiva
 
 Estas plantillas automatizan los flujos de trabajo que combinan Workfront con Workfront Proof.
 
-### [!BADGE Nuevo! &#x200B;]{type=Informative} Workfront > Workfront Proof: cambie la función del usuario de prueba a Solo lectura y bloquee Proof al cerrar el proyecto
+### Workfront > Workfront Proof: cambie la función del usuario de prueba a Solo lectura y bloquee Prueba al cerrar el proyecto
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ Esta plantilla le permite ver si hay un cambio en una carpeta de SharePoint.
 
 Estas plantillas admiten la integración de Workfront y Anaplan y esperan una configuración específica tanto en Anaplan como en Workfront. Para obtener información sobre estas plantillas y sus configuraciones necesarias, consulte los artículos correspondientes a las plantillas individuales.
 
-Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
+Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +192,34 @@ Para obtener más información sobre la integración de Workfront y Anaplan, con
 
 ### Flujos de trabajo de optimización de gasto
 
-* [Enviar actualizaciones de proyecto de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Enviar gastos de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Enviar actualizaciones de horas reales de Adobe Workfront a un [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Enviar actualizaciones de proyecto de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Enviar gastos de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Enviar actualizaciones de horas reales de Adobe Workfront a un [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Flujos de trabajo para vincular solicitudes de presupuesto
 
-* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Aplicar una [!DNL Anaplan] asignación de presupuesto a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Aplicar una [!DNL Anaplan] asignación de presupuesto a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Flujos de trabajo para vincular solicitudes de campaña
 
-* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Aplicar una [!DNL Anaplan] asignación de presupuesto a una solicitud de campaña o proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Aplicar una [!DNL Anaplan] asignación de presupuesto a una solicitud de campaña o proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Plantillas Jira
+
+Estas plantillas representan flujos de trabajo comunes entre Workfront y Jira.
+
+Para obtener información detallada sobre estas plantillas, consulte [Usar plantillas para conectar Adobe Workfront Fusion y Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md).
+
+* [Workfront a Jira: crear problema JIRA a partir de la asignación de tarea o problema de Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [JIRA a Workfront: JIRA a Workfront: Enviar actualizaciones sobre problemas y comentarios de vuelta a Workfront desde JIRA](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront a Jira: cambios en la tarea de Workfront a un problema con JIRA](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfront a Jira: cambios en el problema de Workfront a un problema de JIRA](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront a Jira: Crear comentarios en JIRA cuando se cree una nota nueva sobre una tarea o un problema de Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [De Workfront a Jira: Crear comentario en JIRA sobre una nota eliminada en una tarea o un problema de Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront a Jira: crear un comentario en JIRA cuando se cree un nuevo documento sobre una tarea o un problema de Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront a Jira: crear un comentario en JIRA sobre un documento eliminado en una tarea o un problema de Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->
