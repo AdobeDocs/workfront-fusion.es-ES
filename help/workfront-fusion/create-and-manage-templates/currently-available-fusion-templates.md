@@ -33,7 +33,7 @@ Si a su equipo le cuesta mantener el impulso porque las escalas de tiempo de los
 
 Esta plantilla Fusion automatiza ese proceso. Cuando se finaliza una tarea antes de tiempo, todas las tareas dependientes (sucesoras) se vuelven a programar automáticamente para iniciarse antes, lo que ayuda a su equipo a moverse más rápido y a mantenerse ágil.
 
-### [!BADGE Nuevo! ]{type=Informative} HTTP>CSV>WF: cree una lista de subdominios de evento por dominio y nivel y exporte a CSV
+### [!BADGE Nuevo! &#x200B;]{type=Informative} HTTP>CSV>WF: cree una lista de subdominios de evento por dominio y nivel y exporte a CSV
 
 Descargue información de suscripción de evento, cree un archivo CSV y cargue el archivo en Workfront.
 
