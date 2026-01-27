@@ -17,7 +17,7 @@ ht-degree: 100%
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2025 {#fusion-releases-2025}
       * [Actividad de la versión de Workfront Fusion: semana del martes, 19 de enero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
-      * [Actividad de la versión de Workfront Fusion: semana del martes, 12 de enero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 12 de enero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
       * [Actividad de la versión de Workfront Fusion: semana del 17 de noviembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
       * [Actividad de la versión de Workfront Fusion: semana del 15 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
       * [Actividad de la versión de Workfront Fusion: semana del 8 de diciembre de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
