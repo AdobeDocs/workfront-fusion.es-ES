@@ -1,18 +1,18 @@
 ---
-title: Ver el panel de rendimiento de una organización
+title: Ver el panel de control de rendimiento de una organización
 description: Los administradores de Fusion pueden ver un tablero que muestra las métricas de ejecución de una organización.
 author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 9%
+source-wordcount: '548'
+ht-degree: 11%
 
 ---
 
-# Ver el panel de rendimiento de una organización
+# Ver el panel de control de rendimiento de una organización
 
 El panel de control de rendimiento de Fusion le permite ver rápidamente qué escenarios se están ejecutando más, dónde se están produciendo los retrasos y con qué eficacia están funcionando los grupos de trabajo. Esto proporciona visibilidad en tiempo real de los volúmenes de ejecución, la profundidad de la cola, el uso del grupo y el rendimiento en el nivel de escenario.
 
@@ -41,7 +41,7 @@ El panel de control de rendimiento de Fusion le permite ver rápidamente qué es
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,6 +50,10 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 >[!NOTE]
 >
 >Las métricas se muestran por grupo de trabajo. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo para el que desea ver las métricas.
+
+>[!NOTE]
+>
+>Las organizaciones pueden solicitar aprovisionamiento para un grupo de trabajadores adicional (para un total de 2).
 
 En el panel de rendimiento de Fusion, puede ver las siguientes métricas.
 

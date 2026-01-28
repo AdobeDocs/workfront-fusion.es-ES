@@ -1,18 +1,18 @@
 ---
 content-type: reference
-title: Configuración de escenarios
+title: Establecer la configuración del escenario
 description: Puede configurar opciones específicas para escenarios en el panel Configuración de escenarios.
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 43%
+source-wordcount: '1293'
+ht-degree: 48%
 
 ---
 
-# Configuración de escenarios
+# Establecer la configuración del escenario
 
 Puede configurar opciones específicas para escenarios en el panel Configuración de escenarios.
 
@@ -25,8 +25,8 @@ Puede configurar opciones específicas para escenarios en el panel Configuració
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,13 +35,13 @@ Puede configurar opciones específicas para escenarios en el panel Configuració
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -186,3 +186,7 @@ Para obtener más información sobre los errores, consulte [Tipos de error](/hel
 >* Hay más de un grupo de trabajadores asociado a su organización.
 
 Esta configuración asigna el escenario a un grupo de trabajadores específico asociado a su organización, lo que le permite dedicar recursos a escenarios de alta prioridad.
+
+>[!NOTE]
+>
+>Las organizaciones pueden solicitar el aprovisionamiento de un grupo de trabajadores adicional (para un total de 2).
