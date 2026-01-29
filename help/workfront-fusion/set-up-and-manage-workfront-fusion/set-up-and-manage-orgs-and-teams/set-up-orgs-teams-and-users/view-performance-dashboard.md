@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '534'
 ht-degree: 11%
 
 ---
@@ -51,9 +51,13 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 >
 >Las métricas se muestran por grupo de trabajo. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo para el que desea ver las métricas.
 
+<!--
+
 >[!NOTE]
 >
->Las organizaciones pueden solicitar aprovisionamiento para un grupo de trabajadores adicional (para un total de 2).
+>Organizations can request provisioning for one additional worker pool (for a total of 2).
+
+-->
 
 En el panel de rendimiento de Fusion, puede ver las siguientes métricas.
 

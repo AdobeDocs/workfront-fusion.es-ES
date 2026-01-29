@@ -5,10 +5,10 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 48%
+source-wordcount: '1279'
+ht-degree: 49%
 
 ---
 
@@ -187,6 +187,10 @@ Para obtener más información sobre los errores, consulte [Tipos de error](/hel
 
 Esta configuración asigna el escenario a un grupo de trabajadores específico asociado a su organización, lo que le permite dedicar recursos a escenarios de alta prioridad.
 
+<!--
+
 >[!NOTE]
 >
->Las organizaciones pueden solicitar el aprovisionamiento de un grupo de trabajadores adicional (para un total de 2).
+>Organizations can request provisioning of one additional worker pool (for a total of 2).
+
+-->
