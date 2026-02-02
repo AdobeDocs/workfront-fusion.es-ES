@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 11%
+source-wordcount: '686'
+ht-degree: 9%
 
 ---
 
@@ -61,14 +61,22 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 En el panel de rendimiento de Fusion, puede ver las siguientes métricas.
 
-* Ejecuciones a la espera de ser procesadas
-Este gráfico muestra el número de ejecuciones en espera de procesarse en un momento determinado.
-* Utilización del grupo
+* **Ejecuciones esperando a procesarse**
+Este gráfico muestra el número de ejecuciones en espera de procesarse (también conocido como registro de ejecuciones pendientes) en un momento determinado.
+
+  Un número elevado de ejecuciones a la espera de procesarse puede afectar al rendimiento de la instancia de Fusion. Recibirá una notificación si el registro de ejecuciones pendientes alcanza las 5000. Se recomienda identificar los escenarios responsables y modificarlos o deshabilitarlos. Si el registro de ejecución pendiente persiste, el equipo de Fusion protegerá el rendimiento de su instancia de Fusion desactivando los escenarios responsables.
+* **Uso del grupo**
 Este gráfico muestra la utilización del grupo de trabajo a lo largo del tiempo. Si este gráfico muestra de forma rutinaria el uso del grupo de trabajo, puede que desee asignar algunos escenarios a otro grupo.
-* Ejecuciones por escenario
+
+  Si un grupo se acerca al 100% de utilización, es posible que otros recursos que utilicen el mismo grupo se retrasen o interrumpan. Si esto sucede, se recomienda reasignar un escenario de uso elevado a otro grupo de trabajadores o modificar los escenarios existentes para que consuman menos recursos.
+* **Ejecuciones por escenario**
 Este gráfico muestra las ejecuciones por escenario. Los diferentes colores representan diferentes escenarios. Cuando pasa el ratón por encima del gráfico, aparece una ventana que muestra qué color es cada escenario.
-* Duración de las ejecuciones
+
+  Puede utilizar este gráfico para identificar qué escenarios pueden estar causando un retraso en la ejecución o un alto uso del grupo de trabajo.
+* **Duración de las ejecuciones**
 Este gráfico muestra las ejecuciones por escenario. Los diferentes colores representan diferentes escenarios. Cuando pasa el ratón por encima del gráfico, aparece una ventana que muestra qué color es cada escenario.
+
+  Puede utilizar este gráfico para identificar escenarios que están tardando más de lo normal, incluidos aquellos afectados por problemas con una aplicación o servicio conectado.
 
 ## Ver el panel de rendimiento de Fusion
 
