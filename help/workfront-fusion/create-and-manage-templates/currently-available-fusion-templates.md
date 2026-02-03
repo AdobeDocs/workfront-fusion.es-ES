@@ -4,10 +4,10 @@ description: Las siguientes plantillas públicas están disponibles actualmente 
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+source-git-commit: 08c0e6d779cea5ebb2b6ebbdb1dfd7fd659b18b0
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 69%
+source-wordcount: '2278'
+ht-degree: 51%
 
 ---
 
@@ -33,15 +33,11 @@ Si a su equipo le cuesta mantener el impulso porque las escalas de tiempo de los
 
 Esta plantilla Fusion automatiza ese proceso. Cuando se finaliza una tarea antes de tiempo, todas las tareas dependientes (sucesoras) se vuelven a programar automáticamente para iniciarse antes, lo que ayuda a su equipo a moverse más rápido y a mantenerse ágil.
 
-### [!BADGE Nuevo! &#x200B;]{type=Informative} HTTP>CSV>WF: cree una lista de subdominios de evento por dominio y nivel y exporte a CSV
+### HTTP>CSV>WF: cree una lista de subdominios de evento por dominio y nivel y exporte a CSV
 
 Descargue información de suscripción de evento, cree un archivo CSV y cargue el archivo en Workfront.
 
-<!--New August 8, 2025-->
-
 ### Tableros de Workfront: eliminar las tarjetas archivadas de la columna designada (bajo demanda)
-
-<!--New March 12, 2025-->
 
 Eliminar tarjetas archivadas de una columna designada en un tablero designado bajo demanda.
 
@@ -113,6 +109,52 @@ Esta plantilla registra una línea de base de proyecto semanalmente todos los lu
 
 Una vez al mes, revise las plantillas de proyecto utilizando su propia directiva con esta plantilla fácil de administrar que notifica a los usuarios correspondientes sobre las plantillas que infringen la directiva.
 
+### Workfront: copie los cambios de formulario personalizados del problema/solicitud de origen a la resolución de proyectos o tareas
+
+Utilice esta plantilla para copiar cambios de formulario personalizados de problemas/solicitudes a sus proyectos o tareas de resolución.
+
+### Workfront: actualizar por lotes los datos de los campos personalizados de proyecto, tarea o problema
+
+Esta plantilla utiliza un CSV que se prepara y se proporciona en Workfront para actualizar los datos de los campos personalizados de un proyecto, una tarea o un problema. Consulte las notas de los módulos 1 y 2 para ver las consideraciones y limitaciones.
+
+### Workfront: cambie el estado del proyecto de Planificación a Actual si una tarea es igual a 100% completada
+
+Esta automatización actualiza el estado del proyecto de Planificación a Actual si una tarea equivale a 100% completada. Comienza con una búsqueda y se recomienda ejecutarla una vez al día para que los usuarios puedan actualizar los proyectos en un estado de Planning según sea necesario.
+
+### Workfront: buscar plantillas de proyecto no utilizadas en el tiempo de la política y notificar
+
+Una vez al mes, revise las plantillas de proyecto utilizando su propia directiva con esta plantilla fácil de administrar que notifica a los usuarios correspondientes sobre las plantillas que infringen la directiva.
+
+### Workfront: al agregar un nuevo documento, obtenga una URL con firma previa devuelta al propietario del documento
+
+Recupere una URL prefirmada para cada nuevo documento como actualización de usuario
+
+### Monitorización de suscripciones a eventos de Workfront (diario): establecer variables
+
+Esta plantilla de escenario se activa diariamente para realizar una comprobación de estado de la suscripción de evento en mi entorno de Workfront. Identificará cualquier suscripción de evento que se haya desactivado en las últimas 24 horas. Cuando se encuentra una suscripción de evento desactivado apta, el escenario genera un problema en una cola de solicitudes de Workfront que el cliente identifica durante la instalación del escenario. También pueden identificar las reglas de enrutamiento o un recurso de equipo/usuario que se va a asignar al problema. Para generar la notificación, nos basamos en un mensaje de correo electrónico interno sobre el nuevo problema que se enviará a los destinatarios. Este método debe generar un solo elemento de trabajo para cada desactivación.
+
+### Workfront - Serie de numeración secuencial
+
+#### Workfront - Serie de numeración secuencial: crear objeto, formulario y campo personalizados
+
+Esta plantilla crea un formulario y un campo personalizados para utilizarlos en las plantillas de Workfront - Series de numeración secuencial.
+
+#### Workfront - Serie de numeración secuencial: portafolios
+
+Esta plantilla numera sus portafolios secuencialmente. Se supone que ha creado un formulario y un campo personalizados con la plantilla Workfront - Secuential Numbering Series: Create Object Custom Form and Field, pero puede utilizar un formulario y un campo existentes.
+
+#### Workfront - Serie de numeración secuencial: programas
+
+Esta plantilla numera los programas secuencialmente. Se supone que ha creado un formulario y un campo personalizados con la plantilla Workfront - Secuential Numbering Series: Create Object Custom Form and Field, pero puede utilizar un formulario y un campo existentes.
+
+#### Workfront - Serie de numeración secuencial: proyectos
+
+Esta plantilla numera los proyectos secuencialmente. Se supone que ha creado un formulario y un campo personalizados con la plantilla Workfront - Secuential Numbering Series: Create Object Custom Form and Field, pero puede utilizar un formulario y un campo existentes.
+
+#### Workfront - Serie de numeración secuencial: problemas
+
+Esta plantilla enumera los problemas secuencialmente. Se supone que ha creado un formulario y un campo personalizados con la plantilla Workfront - Secuential Numbering Series: Create Object Custom Form and Field, pero puede utilizar un formulario y un campo existentes.
+
 ## Workfront: plantillas de Workfront Proof
 
 Estas plantillas automatizan los flujos de trabajo que combinan Workfront con Workfront Proof.
@@ -130,6 +172,14 @@ Cuando se toma una decisión sobre una revisión que se añade directamente a un
 ### Workfront Proof > Workfront: actualización y finalización de la tarea (si se ha aprobado) al tomar una decisión de la revisión
 
 Cuando las pruebas individuales están vinculadas a tareas individuales, este escenario cierra la tarea asociada cuando se toma una decisión de aprobación sobre la revisión. Si se aprueba, completa la tarea y actualiza el proyecto.
+
+### Workfront > Workfront Proof - Nueva prueba - Notificar si el aprobador de la prueba tiene tiempo libre durante el plazo
+
+Esta automatización observa las nuevas versiones de los documentos (dentro de un portafolio especificado) con una Prueba. Si un aprobador tiene tiempo libre personal en su perfil en la fecha límite, envía una notificación al propietario de la prueba y al propietario del proyecto.
+
+### Workfront > Workfront Proof: elimine (si es posible) el aprobador de revisión especificado y agregue uno nuevo
+
+Esta automatización encuentra las pruebas de un aprobador y añade uno nuevo. Si es posible, se elimina al aprobador original de la prueba. Se producen acciones adicionales si el aprobador original es el creador o propietario. Lea las notas del módulo 1 para obtener más información.
 
 ## HTTP: plantillas de Workfront
 
@@ -184,7 +234,7 @@ Esta plantilla le permite ver si hay un cambio en una carpeta de SharePoint.
 
 Estas plantillas admiten la integración de Workfront y Anaplan y esperan una configuración específica tanto en Anaplan como en Workfront. Para obtener información sobre estas plantillas y sus configuraciones necesarias, consulte los artículos correspondientes a las plantillas individuales.
 
-Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
+Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +242,19 @@ Para obtener más información sobre la integración de Workfront y Anaplan, con
 
 ### Flujos de trabajo de optimización de gasto
 
-* [Enviar actualizaciones de proyecto de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Enviar gastos de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Enviar actualizaciones de horas reales de Adobe Workfront a un [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Enviar actualizaciones de proyecto de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Enviar gastos de Adobe Workfront a [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Enviar actualizaciones de horas reales de Adobe Workfront a un [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Flujos de trabajo para vincular solicitudes de presupuesto
 
-* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Aplicar una [!DNL Anaplan] asignación de presupuesto a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Aplicar una [!DNL Anaplan] asignación de presupuesto a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Flujos de trabajo para vincular solicitudes de campaña
 
-* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Aplicar una [!DNL Anaplan] asignación de presupuesto a una solicitud de campaña o proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Crear un [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Aplicar una [!DNL Anaplan] asignación de presupuesto a una solicitud de campaña o proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Plantillas Jira
 
