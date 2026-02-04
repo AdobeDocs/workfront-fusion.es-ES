@@ -34,7 +34,7 @@ Algunas filas contienen información con las etiquetas &quot;Nuevo&quot; y &quot
    <td role="rowheader">Paquete de Adobe Workfront 
    <td> Los paquetes de Adobe Workfront hacen referencia al conjunto de funciones que su organización ha adquirido. La mayoría de las funcionalidades de Fusion están disponibles en todos los planes, pero hay algunas excepciones que solo están disponibles para las organizaciones con un paquete de Ultimate Workfront. 
    <ul><li>Para saber qué paquete de Adobe Workfront utiliza su organización, incluido si su organización se encuentra en el modelo de empaquetado nuevo o actual, póngase en contacto con su administrador de Workfront.</li>
-   <li>Para obtener instrucciones sobre cómo un administrador de Workfront puede localizar el paquete de Workfront de su organización, consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Ver el clúster de su organización y el plan de Workfront</a> en la documentación de Workfront.</li><li>Para obtener más información sobre los nuevos paquetes de Workfront, consulte <a href="https://business.adobe.com/products/workfront/pricing.html">Precios y empaquetado de Adobe Workfront</a>.</li></ul> </td> 
+   <li>Para obtener instrucciones sobre cómo un administrador de Workfront puede localizar el paquete de Workfront de su organización, consulte <a href="https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Ver el clúster de su organización y el plan de Workfront</a> en la documentación de Workfront.</li><li>Para obtener más información sobre los nuevos paquetes de Workfront, consulte <a href="https://business.adobe.com/es/products/workfront/pricing.html">Precios y empaquetado de Adobe Workfront</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront</td> 
@@ -43,9 +43,9 @@ Algunas filas contienen información con las etiquetas &quot;Nuevo&quot; y &quot
    <li>Para saber qué licencia se le ha asignado, póngase en contacto con el administrador de Workfront.</li>
    <li>Adobe Workfront está realizando una transición hacia un nuevo modelo de precios y empaquetado. Para obtener más información sobre las licencias, consulte:
    <ul>
-   <li>Nuevo: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Información general sobre nuevas licencias</a></li>
-   <li>Actual: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Resumen de licencias</a></li></ul></li>
-   <li>Si tiene el nivel de acceso correcto y aún no tiene acceso, pregunte al administrador de Workfront si ha establecido restricciones adicionales en su nivel de acceso. Para obtener información sobre cómo un administrador de Workfront puede modificar su nivel de acceso, consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Crear o modificar niveles de acceso personalizados</a>.
+   <li>Nuevo: <a href="https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Información general sobre nuevas licencias</a></li>
+   <li>Actual: <a href="https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Resumen de licencias</a></li></ul></li>
+   <li>Si tiene el nivel de acceso correcto y aún no tiene acceso, pregunte al administrador de Workfront si ha establecido restricciones adicionales en su nivel de acceso. Para obtener información sobre cómo un administrador de Workfront puede modificar su nivel de acceso, consulte <a href="https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Crear o modificar niveles de acceso personalizados</a>.
    </ul>
       </p> </td> 
   </tr> 
