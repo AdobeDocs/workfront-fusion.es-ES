@@ -22,7 +22,7 @@ ht-degree: 70%
 * [Actualizar un módulo a una nueva versión](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
 * [Administrar escenarios bloqueados](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
 * [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
-* [Ver el historial de ejecuciones de un escenario ](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+* [Ver el historial de ejecuciones de un escenario &#x200B;](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
 * [Ver la ejecución de un escenario específico](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
 * [Ver la cola del webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [Ver el flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
