@@ -4,7 +4,7 @@ description: Puede utilizar TLS mutuo en los módulos HTTP de Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
+source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 16%
@@ -79,7 +79,7 @@ Para obtener instrucciones sobre cómo cargar el certificado público de Adobe W
 
 Puede utilizar los siguientes vínculos para descargar los certificados públicos de Workfront Fusion. Para localizar su centro de datos, consulte [Identifique su centro de datos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) en el artículo Configuración de direcciones IP para Fusion en la lista de permitidos de su organización.
 
-### Certificados para 2025
+### Certificados para 2026
 
 >[!IMPORTANT]
 >
