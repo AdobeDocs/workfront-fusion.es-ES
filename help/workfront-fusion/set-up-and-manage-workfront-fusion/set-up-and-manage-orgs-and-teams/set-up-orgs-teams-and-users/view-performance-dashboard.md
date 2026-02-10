@@ -3,9 +3,8 @@ title: Ver el panel de control de rendimiento de una organización
 description: Los administradores de Fusion pueden ver un tablero que muestra las métricas de ejecución de una organización.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 9%
@@ -93,6 +92,3 @@ Este gráfico muestra las ejecuciones por escenario. Los diferentes colores repr
 1. Para cambiar el intervalo de tiempo del panel, haga clic en el campo Intervalo de tiempo en la esquina superior derecha del panel y, a continuación, seleccione un nuevo lapso de tiempo. El lapso de tiempo más largo disponible es de 24 horas, y el más corto es de 15 minutos.
 1. Para actualizar los gráficos, haga clic en el icono Actualizar situado cerca de la esquina superior derecha del panel.
 1. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo que desee ver.
-
-
-
