@@ -1,17 +1,17 @@
 ---
-title: Uso de archivos grandes
+title: Trabajo con archivos grandes
 description: Actualmente, se admite archivos grandes para los conectores Workfront y HTTP.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 3%
+source-wordcount: '1052'
+ht-degree: 8%
 
 ---
 
-# Uso de archivos grandes
+# Trabajo con archivos grandes
 
 >[!IMPORTANT]
 >
@@ -44,6 +44,7 @@ Actualmente, los siguientes conectores admiten archivos grandes.
    * Aplicar ediciones de PSD
 * SharePoint
    * Crear un archivo
+   * Creación de un archivo (heredado)
    * Obtener un archivo
 * Salesforce
    * Cargar archivo

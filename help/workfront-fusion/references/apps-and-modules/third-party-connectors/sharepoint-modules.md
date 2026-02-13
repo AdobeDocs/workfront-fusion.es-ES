@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '4130'
-ht-degree: 49%
+source-wordcount: '4276'
+ht-degree: 52%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 49%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Microsoft SharePoint Online, así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,8 +28,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -39,19 +39,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -70,7 +70,7 @@ El conector de SharePoint utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://graph.microsoft.com/v1.0</td> 
   </tr> 
   <tr> 
@@ -86,7 +86,7 @@ El conector de SharePoint utiliza lo siguiente:
 
 ## Conexión de Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la configuración avanzada](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la autorización de certificados](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -194,13 +194,13 @@ Puede utilizar la autorización de certificados para conectarse a SharePoint.
     </tbody> 
    </table>
 
-1. Haga clic en **Continue** para guardar la conexión y volver al módulo.
+1. Haga clic en **Continuar** para guardar la conexión y volver al módulo.
 
 ## Módulos SharePoint de Microsoft y sus campos
 
 Al configurar los módulos SharePoint Online de Microsoft, Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden mostrarse campos de Microsoft SharePoint Online adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -209,7 +209,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Lista](#list)
 * [Página (Beta)](#page-beta)
 * [Sitio](#site)
-* [Otro](#other)
+* [Otros](#other)
 
 ### Elemento de Drive
 
@@ -222,7 +222,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 #### Crear un archivo
 
-Este módulo devuelve los cambios realizados en SharePoint.
+Este módulo devuelve y crea un archivo en SharePoint. Este módulo tiene un mejor rendimiento que el módulo Crear un archivo (heredado).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -241,8 +241,38 @@ Este módulo devuelve los cambios realizados en SharePoint.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-      <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p>
+   <td role="rowheader">[!UICONTROL Archivo de origen] </td>
+      <td><p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p></td>
+  </tr>  </tbody> 
+</table>
+
+
+
+#### Creación de un archivo (heredado)
+
+Este módulo crea un archivo en SharePoint.
+
+Para obtener un mejor rendimiento, recomendamos usar el módulo [Crear un archivo](#create-a-file).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td> <p>Seleccione cómo desea identificar la ubicación de la carpeta en la que desea recuperar los cambios.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong>, <strong>[!UICONTROL Id. de unidad]</strong> y <strong>[!UICONTROL Id. de carpeta]</strong> de la ubicación donde desea crear el archivo.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Seleccione la ubicación en la que desea crear el archivo. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
+      <td><p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p></td>
   </tr>  </tbody> 
 </table>
 
@@ -910,7 +940,7 @@ Este módulo de acción busca los sitios según el parámetro que especifique.
  </tbody> 
 </table>
 
-### Otro
+### Otros
 
 * [Obtener cambios](#get-changes)
 * [Realizar una llamada de API](#make-an-api-call)
@@ -961,7 +991,7 @@ Este módulo le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
