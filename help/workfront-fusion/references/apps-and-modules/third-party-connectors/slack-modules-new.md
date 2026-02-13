@@ -1,12 +1,13 @@
 ---
-title: Módulos Slack
+title: Módulos de Slack
 description: En un escenario de  [!DNL Adobe Workfront Fusion] , es posible automatizar los flujos de trabajo que utilizan Slack, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
+exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '4580'
-ht-degree: 37%
+source-wordcount: '4581'
+ht-degree: 38%
 
 ---
 
@@ -20,9 +21,9 @@ ht-degree: 37%
 
 En un escenario de [!DNL Adobe Workfront Fusion], es posible automatizar los flujos de trabajo que utilizan [!DNL Slack], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -34,7 +35,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -50,7 +51,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -78,7 +79,7 @@ El conector de Slack utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td>{{ifempty(parameters.domain, 'https://slack.com/api/')}}</td> 
   </tr>
   <tr> 
@@ -90,9 +91,9 @@ El conector de Slack utiliza lo siguiente:
 
 ## Módulos de [!DNL Slack] y sus campos
 
-Al configurar módulos de [!DNL Slack], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse [!DNL Slack] campos adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar módulos de [!DNL Slack], [!DNL Workfront Fusion] muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Slack] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -107,7 +108,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Recordatorios](#reminders)
 * [Eventos](#events)
 * [Perfil](#profile)
-* [Otro](#other)
+* [Otros](#other)
 
 ### Mensajes
 
@@ -294,7 +295,7 @@ Este módulo de búsqueda devuelve mensajes que coinciden con una consulta de b�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>Introduzca la consulta con la que desea buscar. </p> <p>Para obtener información sobre cómo crear fórmulas desde el panel de asignación, vea <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Asignar elementos usando funciones en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Introduzca la consulta con la que desea buscar. </p> <p>Para obtener información sobre cómo crear fórmulas desde el panel de asignación, vea <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Asignar elementos usando funciones integradas en [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -581,7 +582,7 @@ Este módulo de acción crea o carga un archivo en [!DNL Slack]
    <td> <p>Para cada canal en el que desee cargar el archivo, haga clic en <b>[!UICONTROL Agregar elemento]</b> y, a continuación, seleccione el tipo de canal y el canal.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
    <td>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</td> 
   </tr> 
   <tr> 
@@ -1466,14 +1467,14 @@ Este módulo de acción actualiza el estado actual de un usuario.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expiración de estado]</td> 
-   <td>Introduzca o asigne la fecha y la hora en que desea que caduque el estado. Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerción de tipos</a>.</td> 
+   <td>Introduzca o asigne la fecha y la hora en que desea que caduque el estado. Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerción de tipos</a>.</td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
 
-### Otro
+### Otros
 
 +++ **[!UICONTROL Realizar una llamada de API]**
 
@@ -1489,7 +1490,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Escriba una ruta relativa a <code>https://slack.com/api/</code>. Ejemplo: <code>/users/identity</code>.</td> 
+   <td>Introduzca una ruta relativa a <code>https://slack.com/api/</code>. Ejemplo: <code>/users/identity</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
@@ -1505,7 +1506,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -1528,4 +1529,3 @@ La siguiente terminología puede resultar útil al configurar los módulos de [!
 * **Canal privado**: anteriormente, [!UICONTROL Grupo]
 * **Mensaje directo**: anteriormente, [!UICONTROL MI]
 * **Canal**: [!UICONTROL Conversación] en la documentación de la API, [!UICONTROL canal] en la aplicación [!DNL Slack].
-

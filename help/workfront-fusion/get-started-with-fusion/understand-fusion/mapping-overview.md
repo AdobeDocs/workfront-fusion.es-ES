@@ -4,10 +4,10 @@ description: La asignación es el proceso de asignar los resultados de un módul
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Las otras pestañas incluyen funciones, operadores y palabras clave que puede ut
 
 Para obtener más información sobre las pestañas de función, consulte [Información general sobre la función](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Para obtener más información sobre la asignación de elementos usando funciones, consulte [Asignar elementos usando funciones](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Para obtener más información sobre la asignación de elementos mediante funciones, vea [Asignar elementos mediante funciones integradas](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Colecciones
 

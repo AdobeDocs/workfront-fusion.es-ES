@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: b5c41aea9f259e309a769a66eaa627b0e1f136db
-workflow-type: ht
-source-wordcount: '480'
-ht-degree: 100%
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 99%
 
 ---
 
@@ -38,6 +38,7 @@ Estos conectores le permiten conectarse a cualquier aplicación o servicio web q
 
 Fusion ofrece conectores para muchos productos y servicios de Adobe.
 
+* [Módulo App Builder de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
 * [Módulos de Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
 * [Módulo de Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
 * [Módulos de Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)

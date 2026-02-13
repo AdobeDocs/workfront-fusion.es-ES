@@ -1,22 +1,23 @@
 ---
-title: Asignación de elementos mediante funciones
+title: Asignación de elementos mediante funciones integradas
 description: Al asignar elementos, puede utilizar funciones para crear fórmulas simples o complejas.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 38%
+source-wordcount: '711'
+ht-degree: 45%
 
 ---
 
-# Asignación de un elemento mediante funciones
+# Asignación de un elemento mediante funciones integradas
 
-Al asignar elementos, puede utilizar funciones para crear fórmulas simples o complejas. Las funciones disponibles son similares a las funciones de Excel y de algunos lenguajes de programación:
+Workfront Fusion incluye funciones integradas que le permiten crear fórmulas simples o complejas. Estas funciones abarcan una amplia variedad de casos de uso, incluidas las funciones para matrices, cadenas, números y datos de módulos anteriores.
 
-* Evalúan la lógica general, las matemáticas, el texto, las fechas y las matrices.
-* Permiten realizar lógica condicional y transformaciones de los valores de los elementos, como convertir un texto a mayúsculas, recortar texto, convertir una fecha a un formato diferente y mucho más.
+Además, puede crear funciones personalizadas que los escenarios pueden utilizar para transformar y manipular los datos.
+
+Para obtener información e instrucciones sobre las funciones personalizadas, vea [Asignar datos con funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Requisitos de acceso
 
@@ -27,8 +28,8 @@ Al asignar elementos, puede utilizar funciones para crear fórmulas simples o co
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -37,17 +38,24 @@ Al asignar elementos, puede utilizar funciones para crear fórmulas simples o co
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p><ul><li>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li><li>Debe tener una licencia de Adobe App Builder para utilizar funciones personalizadas.</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Inserción de funciones en campos
+## Asignación de datos mediante funciones integradas
+
+Al asignar elementos, puede utilizar funciones para crear fórmulas simples o complejas. Las funciones disponibles son similares a las funciones de Excel y de algunos lenguajes de programación:
+
+* Evalúan la lógica general, las matemáticas, el texto, las fechas y las matrices.
+* Permiten realizar lógica condicional y transformaciones de los valores de los elementos, como convertir un texto a mayúsculas, recortar texto, convertir una fecha a un formato diferente y mucho más.
+
+### Inserción de funciones en campos
 
 Para insertar una función en un campo:
 
@@ -86,7 +94,7 @@ En este ejemplo, la función de subcadena limita el nombre del proyecto a 50 car
 
 >[!ENDSHADEBOX]
 
-## Anidado de funciones
+### Anidado de funciones
 
 Puede anidar funciones entre sí.
 
@@ -112,7 +120,7 @@ Para anidar una función:
 1. Continúe configurando la función como desee.
 1. Continúe configurando el módulo o haga clic en **Aceptar**.
 
-## Usar funciones de [!DNL Google Sheets]
+### Usar funciones de [!DNL Google Sheets]
 
 Si Workfront Fusion no incluye una función que desee utilizar, pero la presenta [!DNL Google Sheets], puede utilizarla siguiendo estos pasos:
 

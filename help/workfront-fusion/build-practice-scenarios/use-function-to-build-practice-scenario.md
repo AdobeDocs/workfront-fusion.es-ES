@@ -7,10 +7,10 @@ description: Obtenga información sobre cómo añadir una función para actualiz
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 78%
+source-wordcount: '603'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Este ejemplo modifica el escenario creado en [Crear un escenario básico](/help/
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,4 +111,4 @@ Cuando este escenario convierte una solicitud en un proyecto, el nombre del proy
 
 ## Recursos
 
-* [Asignar elementos usando funciones](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Asignación de elementos mediante funciones integradas](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

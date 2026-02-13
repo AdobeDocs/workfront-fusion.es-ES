@@ -4,10 +4,10 @@ description: Al abrir Fusion, encontrará muchas opciones para realizar acciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,7 @@ Este artículo presenta estas áreas y proporciona vínculos para obtener más i
 | Claves <br> ![Icono de claves](assets/keys-icon.png) | Las claves públicas y privadas se utilizan para cifrar y descifrar datos. La clave pública se puede distribuir y cualquier persona que la tenga puede cifrar datos, pero solo la clave privada puede descifrarlos. Del mismo modo, un usuario con una clave privada podrá cifrar datos que cualquier persona que tenga la clave pública podrá descifrar. En el área Claves, puede ver y administrar las claves de su equipo. | [Claves](/help/workfront-fusion/references/modules/keys.md) |
 | Almacenes de datos <br> ![Icono de almacenes de datos](assets/data-store-icon.png) | Los almacenes de datos son pequeñas bases de datos que existen fuera de los escenarios. Los almacenes de datos permiten transferir datos entre escenarios o entre ejecuciones independientes de un escenario. En el área Almacenes de datos, puede ver y administrar los almacenes de datos que son propiedad de su equipo. | [Almacenes de datos](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Estructuras de datos <br> ![Icono de las estructuras de datos](assets/data-structure-icon.png) | Las estructuras de datos describen el formato de los datos que se transfieren a Fusion y se utilizan normalmente para serializar o analizar formatos como JSON, XML y CSV. En las estructuras de datos, puede ver y administrar las estructuras de datos que son propiedad de su equipo. | [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| Funciones <br> ![Icono de funciones](assets/functions-icon.png) | Las funciones personalizadas son funciones de JavaScript que se pueden agregar a escenarios para manipular y transformar datos. <br>Su organización debe tener una licencia para Adobe App Builder para crear y utilizar funciones personalizadas. | [Asignar datos mediante funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >
