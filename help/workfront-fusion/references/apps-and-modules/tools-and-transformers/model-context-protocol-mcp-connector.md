@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# Módulo MCP (Protocolo de contexto de modelo)
+# Módulo del agente MCP
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ El Protocolo de contexto de modelo (MCP) es una forma de conectar de forma segur
 Por ejemplo, puede configurar un servidor MCP para conectar un modelo de IA con Gmail. Cuando envíes el mensaje &quot;Dame mis últimos 5 correos electrónicos de Gmail&quot;, puede acceder a tu Gmail y devolver los correos electrónicos.
 
 El módulo Protocolo de contexto de modelo (MCP) permite procesar un mensaje de usuario mediante un modelo de idioma y servidores MCP.
+
+Para obtener más información sobre MCP en escenarios de Fusion, consulte [Agregar un mensaje de IA a su escenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Requisitos de acceso
 
@@ -48,21 +50,24 @@ El módulo Protocolo de contexto de modelo (MCP) permite procesar un mensaje de 
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
+## Requisitos previos
 
-
-
+* Debe tener configurado los servidores MCP a los que desea conectarse.
+* Debe tener una clave LLM para el LLM (Modelo de idioma grande) seleccionado.
 
 ## Módulo de protocolo de contexto del modelo y sus campos
-
-Al configurar el módulo MCP, Adobe Workfront Fusion muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 
 ### Mensaje de usuario de proceso
 
 Este módulo de acción procesa una solicitud utilizando el modelo de idioma y los servidores MCP especificados.
+
+>[!NOTE]
+>
+>Este módulo debe devolver un objeto. No devuelve resultados como cadenas o números.
 
 <table style="table-layout:auto"> 
  <col> 

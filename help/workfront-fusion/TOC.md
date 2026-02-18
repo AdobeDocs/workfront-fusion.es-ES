@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2046'
 ht-degree: 98%
 
 ---
@@ -210,6 +210,7 @@ ht-degree: 98%
       * [Añadir módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [Añadir un módulo a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [Configurar un módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+      * [Añada una solicitud de IA a su escenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [Generar un segmento de escenario mediante IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [Copiar módulos o escenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Crear escenarios con plantillas de Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
@@ -256,7 +257,7 @@ ht-degree: 98%
    * [Actualizar un módulo a una nueva versión](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
    * [Administrar escenarios bloqueados](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
    * [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
-   * [Ver el historial de ejecuciones de un escenario &#x200B;](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+   * [Ver el historial de ejecuciones de un escenario ](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [Ver la ejecución de un escenario específico](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
    * [Ver el flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Ver la cola de un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
@@ -275,7 +276,7 @@ ht-degree: 98%
    * [Crear y administrar plantillas](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Crear nuevas plantillas](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Crear escenarios con plantillas](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
-   * [Ver, editar y eliminar plantillas &#x200B;](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
+   * [Ver, editar y eliminar plantillas ](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Publicar y compartir plantillas](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Plantillas de Adobe Workfront Fusion disponibles actualmente](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Usar plantillas para conectar Adobe Workfront Fusion y Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
@@ -307,7 +308,7 @@ ht-degree: 98%
          * [Coerción de tipos](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funciones  {#functions}
-         * [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+         * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Tókenes para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
