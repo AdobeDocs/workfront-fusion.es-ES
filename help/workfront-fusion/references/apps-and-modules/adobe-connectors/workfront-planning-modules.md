@@ -4,9 +4,9 @@ description: 'Con los módulos  [!DNL Adobe Workfront Planning] , puede iniciar 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 54%
 
 ---
@@ -40,11 +40,11 @@ Con los módulos [!DNL Adobe Workfront Planning], puede almacenar en déclencheu
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-s## requisitos previos
+## Requisitos previos
 
 Debe tener lo siguiente para acceder a Workfront Planning:
 
@@ -332,7 +332,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Wo
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
