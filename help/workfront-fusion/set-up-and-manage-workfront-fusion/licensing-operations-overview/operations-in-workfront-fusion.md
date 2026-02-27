@@ -4,10 +4,10 @@ description: Una operación en Adobe Workfront Fusion es una tarea realizada por
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d630251ec01f5e11bad0305a2f49fb447bf1dd1e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 74%
+source-wordcount: '412'
+ht-degree: 64%
 
 ---
 
@@ -20,12 +20,17 @@ Una operación en Adobe Workfront Fusion es una tarea realizada por un módulo. 
 * En general, cualquier ejecución correcta de la etapa de acción se considera una operación.
 * El primer módulo de un escenario se ejecuta solo una vez y siempre se cuenta como una operación, aunque no devuelva un paquete.
 * El número de veces que se ejecuta el resto de los módulos depende del número de paquetes que deben procesar.  Una ejecución de un módulo para un paquete es una operación. Una excepción es el módulo del agregador, que se cuenta como una operación por cada conjunto de paquetes que se procesa.
+* Las operaciones pueden tener un valor diferente. Algunas serán operaciones más pequeñas y sencillas, y otras serán más complejas. Las operaciones se contabilizan en el total, independientemente de lo sencillas o complejas que puedan ser.
 * Las operaciones se cuentan en la fase [!UICONTROL Finalización] de la ejecución de un escenario.
 * Los siguientes **no** se cuentan como operaciones:
    * Cualquier paso del filtro.
    * Cualquier acción que falle o se detenga.
    * Cualquier ruta que no se ejecute porque no se cumplen las reglas de la ruta, como las rutas de reserva o deshabilitadas.
    * Cualquier acción que no se ejecute, ya sea porque un filtro no ha permitido el paso de datos o porque el escenario se ha detenido debido a un error.
+
+>[!NOTE]
+>
+>Si su organización intenta utilizar más operaciones de las que permite su paquete de Workfront Fusion, le recomendamos que considere la posibilidad de actualizar al paquete de Ultimate de automatización e integración.
 
 ## Límites de operación
 
@@ -44,6 +49,6 @@ Workfront Fusion envía una notificación cuando su organización alcanza los si
 
 Se pueden ver gráficos que muestran el número de operaciones realizadas. Estos gráficos están disponibles en las siguientes ubicaciones:
 
-* **Panel de organización**: operaciones utilizadas por toda la organización
+* **Panel de control de organización**: operaciones utilizadas por toda la organización
 * **Panel del equipo**: operaciones utilizadas por escenarios propiedad de este equipo
 * **Página de detalles del escenario**: operaciones utilizadas por este escenario
