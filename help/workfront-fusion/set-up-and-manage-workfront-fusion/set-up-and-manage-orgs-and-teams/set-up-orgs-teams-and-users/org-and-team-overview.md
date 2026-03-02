@@ -4,10 +4,10 @@ description: Las funciones de organización y equipos de Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '612'
+ht-degree: 3%
 
 ---
 
@@ -26,6 +26,18 @@ Para obtener instrucciones sobre cómo crear un equipo, consulte [Crear un equip
 Los usuarios de Workfront Fusion pertenecen a una organización.
 
 Los usuarios deben añadirse a una organización antes de que se añadan a un equipo.
+
+### Recursos de organización
+
+Los siguientes recursos afectan a toda la organización de Fusion y, por lo tanto, son propiedad y se gestionan a nivel de organización:
+
+* **Grupos de trabajo:**: un grupo de trabajo es una cantidad de recursos de procesamiento de Workfront Fusion dedicados a una organización específica.
+
+  Para obtener más información, vea [Grupos de trabajo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Operaciones**: Una operación en Adobe Workfront Fusion es una tarea realizada por un módulo.
+
+  Para obtener más información, consulte [Operaciones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
 
 ### Funciones de organización
 
