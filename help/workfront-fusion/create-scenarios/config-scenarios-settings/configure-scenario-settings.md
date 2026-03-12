@@ -5,7 +5,7 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 49%
@@ -183,7 +183,7 @@ Para obtener más información sobre los errores, consulte [Tipos de error](/hel
 >Esta configuración solo es visible si se cumplen las dos condiciones siguientes:
 >
 >* Es administrador o propietario de una organización
->* Hay más de un grupo de trabajadores asociado a su organización.
+>* Hay más de un grupo de trabajadores asociado a su organización
 
 Esta configuración asigna el escenario a un grupo de trabajadores específico asociado a su organización, lo que le permite dedicar recursos a escenarios de alta prioridad.
 
