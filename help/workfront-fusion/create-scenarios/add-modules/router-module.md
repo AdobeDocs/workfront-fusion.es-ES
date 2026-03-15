@@ -1,17 +1,17 @@
 ---
-title: Agregar un módulo Enrutador y configurar rutas
+title: Añadir un módulo de enrutador y configurar rutas
 description: El módulo Enrutador permite bifurcar el flujo en varias rutas y procesar los datos de cada una de forma diferente. Una vez que un módulo Enrutador recibe un paquete, lo reenvía a cada ruta conectada en el orden en que se hayan adjuntado las rutas al módulo Enrutador.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 10%
+source-wordcount: '891'
+ht-degree: 20%
 
 ---
 
-# Agregar un módulo Enrutador y configurar rutas
+# Añadir un módulo de enrutador y configurar rutas
 
 El módulo Enrutador le permite bifurcar el escenario en varias rutas y procesar los datos de cada ruta de forma diferente. Cuando un módulo Enrutador recibe un paquete, lo reenvía a cada ruta conectada en el orden en que se adjuntaron las rutas al módulo Enrutador.
 
@@ -27,8 +27,8 @@ Las rutas se procesan secuencialmente, no en paralelo. No se envía un paquete a
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -37,13 +37,13 @@ Las rutas se procesan secuencialmente, no en paralelo. No se envía un paquete a
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -54,8 +54,7 @@ Debe agregar un módulo Enrutador antes de configurar las rutas.
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar un enrutador.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
-1. En el editor de escenarios, haga clic en el controlador derecho del módulo después del cual desea agregar el enrutador.
-1. Seleccione **[!UICONTROL Control de flujo]** > **Enrutador** en la lista de módulos que se muestra.
+1. En el editor de escenarios, haga clic en el controlador derecho del módulo después del cual desea agregar el enrutador y, a continuación, seleccione **[!UICONTROL Control de flujo]** > **Enrutador** en la lista de módulos que se muestra.
 
    ![Conectar la ruta](assets/connect-the-router-350x108.png)
 
@@ -69,7 +68,11 @@ Debe agregar un módulo Enrutador antes de configurar las rutas.
 
    Puede agregar todas las rutas que desee.
 
-1. Para comprobar el orden de las rutas, haga clic en el icono de alineación automática ![Icono de alineación automática](assets/auto-align.png).
+1. Para verificar el orden de las rutas, compruebe la etiqueta de cada ruta. La Ruta 1 se ejecuta primero, luego la Ruta 2, etc.
+
+   O
+
+   Haga clic en el icono de alineación automática ![Icono de alineación automática](assets/auto-align.png).
 
    Las rutas se organizan en el orden en que se ejecutan. La ruta superior se ejecuta primero.
 
@@ -85,6 +88,8 @@ Puede colocar un filtro en una ruta después del módulo Enrutador para filtrar 
 
 Si los datos pasan el filtro de más de una ruta, los datos se gestionan mediante ambas rutas. La ruta superior gestiona primero los datos.
 
+Los enrutadores con filtros muestran el icono de filtro ![Icono de filtro](assets/fusion-scenario-filter-icon.png) en la etiqueta de ruta.
+
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar un filtro.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
@@ -93,7 +98,7 @@ Si los datos pasan el filtro de más de una ruta, los datos se gestionan mediant
 1. En el campo de etiqueta del panel que se muestra, agregue una etiqueta. Esta etiqueta se muestra en el escenario.
 1. Configure las condiciones de filtro.
 
-   Para obtener más información, vea [Agregar un filtro a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+   Para obtener más información, consulte [Añadir un filtro a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Haga clic en **[!UICONTROL Aceptar]** para guardar la configuración del filtro.
 
@@ -102,6 +107,8 @@ Si los datos pasan el filtro de más de una ruta, los datos se gestionan mediant
 ## Configuración de una ruta de reserva
 
 La ruta de reserva es la ruta que se ejecuta en cualquier paquete que no pase ningún filtro a otra ruta.
+
+Las rutas de reserva muestran &quot;Reserva&quot; en la etiqueta.
 
 Puede habilitar una ruta de reserva en el panel de filtros.
 
