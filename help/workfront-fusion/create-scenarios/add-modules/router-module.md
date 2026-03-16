@@ -4,10 +4,10 @@ description: El módulo Enrutador permite bifurcar el flujo en varias rutas y pr
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 20%
+source-wordcount: '984'
+ht-degree: 19%
 
 ---
 
@@ -80,6 +80,11 @@ Debe agregar un módulo Enrutador antes de configurar las rutas.
 
    ![Solicitar ruta](assets/order-routes.png)
 
+1. (Opcional) Para deshabilitar una ruta, haga clic con el botón secundario en los puntos que llevan del enrutador a esa ruta y seleccione **Deshabilitar ruta**.
+
+   Las rutas deshabilitadas muestran puntos grises que llevan del enrutador al primer módulo de la ruta y muestran el icono de ruta deshabilitada ![Icono de ruta deshabilitada](assets/disabled-route-icon.png) en la etiqueta.
+
+1. (Opcional y condicional) Para habilitar una ruta deshabilitada, haga clic en el icono de ruta deshabilitada ![Icono de ruta deshabilitada](assets/disabled-route-icon.png) en la etiqueta de la ruta.
 1. Continuar a [Agregar un filtro a una ruta](#add-a-filter-to-a-route).
 
 ## Adición de un filtro a una ruta
@@ -101,6 +106,7 @@ Los enrutadores con filtros muestran el icono de filtro ![Icono de filtro](asset
    Para obtener más información, consulte [Añadir un filtro a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Haga clic en **[!UICONTROL Aceptar]** para guardar la configuración del filtro.
+1. (Condicional) Si el nombre del filtro es demasiado largo para que quepa en la etiqueta, pase el ratón sobre la etiqueta para mostrar el nombre completo.
 
 1. Continuar a [Configurar una ruta de reserva](#configure-a-fallback-route).
 
