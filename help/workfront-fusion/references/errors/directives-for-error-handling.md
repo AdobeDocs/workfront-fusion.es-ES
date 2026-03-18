@@ -5,10 +5,10 @@ description: En este artículo se describen las directivas que puede utilizar pa
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 42%
+source-wordcount: '583'
+ht-degree: 40%
 
 ---
 
@@ -55,7 +55,7 @@ Las siguientes directivas de gestión de errores están disponibles en Workfront
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Reversión</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>La ejecución del escenario se detiene inmediatamente.</li><li>Se inicia una fase de Rollback en todos los módulos, en un intento de revertirlos todos a su estado inicial. </li><li>Los módulos posteriores no se procesan.</p></li><li> <p>En la mayoría de los casos, el escenario se desactiva después del número de errores consecutivos especificados en Configuración del escenario. Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Número de errores consecutivos</a>.</p> </li><li><p>El estado de ejecución del escenario se marca como "Error".</p></li></ul> <p><b>Nota</b>: Este es el comportamiento predeterminado si no hay ninguna ruta de controlador de error adjunta al módulo y la opción <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Permitir el almacenamiento de ejecuciones incompletas</a>Permitir el almacenamiento de ejecuciones incompletas en [!UICONTROL Configuración de escenario] no está activada.</p> </td> 
+   <td> <ul><li><p>La ejecución del escenario se detiene inmediatamente.</li><li>Se inicia una fase de Rollback en todos los módulos, en un intento de revertirlos todos a su estado inicial. </li><li>Los módulos posteriores no se procesan.</p></li><li> <p>En la mayoría de los casos, el escenario se desactiva después del número de errores consecutivos especificados en Configuración del escenario. Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Número de errores consecutivos</a>.</p> </li><li><p>El estado de ejecución del escenario se marca como "Error".</p></li></ul> <p><b>Nota</b>: Este es el comportamiento predeterminado si no hay ninguna ruta de controlador de error adjunta al módulo y la configuración del escenario <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Permitir el almacenamiento de ejecuciones incompletas</a> no está marcada.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Confirmar</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -63,11 +63,11 @@ Las siguientes directivas de gestión de errores están disponibles en Workfront
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Reanudar</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>Se especifica una salida sustitutiva que se suministra al módulo que encuentra un error.</p> </li><li><p>Se procesan los módulos posteriores.</p></li><li> <p>El estado de ejecución del escenario se marca como “éxito”.</p></li></ul> </td> 
+   <td> <ul><li><p>Se especifica una salida sustitutiva que se suministra al módulo que encuentra un error.</p> </li><li><p>Se procesan los módulos posteriores.</p></li>Si el controlador de error está en un enrutador, el escenario se ejecuta a través de las rutas según lo esperado.<li></li><li> <p>El estado de ejecución del escenario se marca como “éxito”.</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignorar</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>Se ignora el error.</li><li> Los módulos posteriores no se procesan.</p> </li><li><p>Si hay paquetes sin procesar, la ejecución del escenario continúa con normalidad.</p> </li><li><p>El estado de ejecución del escenario se marca como “éxito”.</p> </li></ul></td> 
+   <td><ul><li> <p>Se ignora el error.</li><li> Los módulos posteriores no se procesan.</p> </li><li><p>Si hay paquetes sin procesar, la ejecución del escenario continúa con normalidad.</p> </li><li>Si el controlador de error está en un enrutador, se omiten las rutas posteriores de ese enrutador.</li><li><p>El estado de ejecución del escenario se marca como “éxito”.</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Salto</p> <p> <img src="assets/break.png"> </p> </td> 
