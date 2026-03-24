@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: ffe03937d35b1a51bd363acbda863582ea967c5e
+source-git-commit: 3808ddc0525b11644060447f0a92ea1911aef7a3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1167'
 ht-degree: 100%
 
 ---
@@ -24,6 +24,7 @@ Adobe Workfront Fusion conecta sus aplicaciones y servicios web sin problemas pa
 
 ### Marzo de 2026
 
+* [Actividad de la versión de Workfront Fusion: semana del martes, 23 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
 * [Actividad de la versión de Workfront Fusion: semana del martes, 16 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
 * [Actividad de la versión de Workfront Fusion: semana del martes, 09 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
 * [Actividad de la versión de Workfront Fusion: semana del martes, 02 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
