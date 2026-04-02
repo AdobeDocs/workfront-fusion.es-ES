@@ -4,10 +4,10 @@ description: La automatización del trabajo requiere un procesamiento rápido. E
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
+source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 96%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -72,6 +72,7 @@ Para obtener más información, consulte [Trabajo con archivos grandes](/help/wo
 ## Historial de ejecución
 
 * Los registros del historial de ejecución están limitados a un tamaño de **100 MB**. Si el historial de ejecución supera este tamaño, solo se mostrarán los primeros 100 MB.
+* Si la entrada o salida de una operación única supera los 15 MB, no aparece en el historial de ejecución.
 * Si un escenario tiene varias ejecuciones simultáneas, solo se muestran cinco ejecuciones en el área Ejecuciones de la página de detalles del escenario. Esto ocurre incluso cuando se están ejecutando más de 5 ejecuciones.
 
 ## Ejecuciones incompletas
