@@ -4,10 +4,10 @@ description: Un almacén de datos, similar a una base de datos o tabla simple, p
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 6%
+source-wordcount: '1356'
+ht-degree: 11%
 
 ---
 
@@ -40,8 +40,8 @@ Para ver un vídeo introductorio a los almacenes de datos en Workfront Fusion, c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -50,13 +50,13 @@ Para ver un vídeo introductorio a los almacenes de datos en Workfront Fusion, c
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -131,7 +131,7 @@ Para poder utilizar un almacén de datos en un módulo, debe crear el almacén d
 
 ### Configuración de la estructura de datos
 
-1. Al crear o editar un almacén de datos, haga clic en **[!UICONTROL Agregar]**.
+1. Al crear o editar un almacén de datos, haga clic en **[!UICONTROL Agregar]** junto al campo Estructura de datos.
 1. En el cuadro **[!UICONTROL Agregar estructura de datos]** que aparece, configure los campos siguientes:
 
    <table style="table-layout:auto">
@@ -184,7 +184,7 @@ Puede editar las propiedades y el contenido de un almacén de datos existente en
 Las propiedades de un almacén de datos incluyen la estructura de datos que utiliza el almacén de datos, así como el tamaño de éste.
 
 1. Haga clic en **[!UICONTROL Almacenes de datos]** ![Icono del almacén de datos](assets/data-store-icon.png) en el panel de navegación izquierdo para abrir el área de [!UICONTROL Almacenes de datos].
-1. Haga clic en **[!UICONTROL Editar]** ![Editar almacén de datos](assets/data-store-edit.png) junto al almacén de datos que desee editar.
+1. Haga clic en la casilla de verificación situada junto al almacén de datos que desee editar y, a continuación, haga clic en **Editar** en el banner situado en la parte inferior de la pantalla.
 1. (Opcional) Si desea cambiar la estructura de datos utilizada por este almacén de datos a otra estructura de datos existente, selecciónela en la lista desplegable **[!UICONTROL Estructura de datos]**.
 
    O
@@ -197,10 +197,9 @@ Las propiedades de un almacén de datos incluyen la estructura de datos que util
 ### Editar el contenido de un almacén de datos
 
 1. Haga clic en el icono **[!UICONTROL Almacén de datos]** ![Icono del almacén de datos](assets/data-store-icon.png) en el panel de navegación izquierdo para abrir el área [!UICONTROL Almacén de datos].
-1. Haga clic en **[!UICONTROL Examinar]** junto al almacén de datos que desea editar.
-1. (Opcional) Reordene las columnas arrastrándolas a la ubicación deseada.
-1. (Opcional) [!UICONTROL Edite] una sola celda haciendo clic en el icono **[!UICONTROL Editar]** de esa celda y, a continuación, introduciendo el valor deseado.
+1. Haga clic en la casilla de verificación situada junto al almacén de datos que desee editar y, a continuación, haga clic en **Examinar** en el titular de la parte inferior de la pantalla.
 1. (Opcional) Agregue un nuevo elemento al almacén de datos haciendo clic en **[!UICONTROL Agregar]** y, a continuación, escribiendo la información del nuevo elemento.
+1. (Opcional) Para eliminar uno o más elementos del almacén de datos, haga clic en la casilla de verificación de ese elemento y, a continuación, haga clic en **Eliminar selección** o **Eliminar todo** en la esquina superior derecha de la pantalla.
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 ## Resolución de problemas
