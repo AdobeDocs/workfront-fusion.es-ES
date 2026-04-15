@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+source-git-commit: 6885e29b3b14d97bebcb046d86e204bd2fdfbace
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2104'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Actividad de la versión de Fusion {#fusion-release-activity}
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2026 {#fusion-releases-2026}
+      * [Actividad de la versión de Workfront Fusion: semana del martes, 13 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
       * [Actividad de la versión de Workfront Fusion: semana del 30 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Actividad de la versión de Workfront Fusion: semana del 23 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Actividad de la versión de Workfront Fusion: semana del 16 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
@@ -264,8 +265,9 @@ ht-degree: 97%
    * [Actualizar un módulo a una nueva versión](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
    * [Administrar escenarios bloqueados](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
    * [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
-   * [Ver el historial de ejecuciones de un escenario &#x200B;](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+   * [Ver el historial de ejecuciones de un escenario ](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [Ver la ejecución de un escenario específico](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
+   * [Ver y administrar relaciones de escenarios encadenados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [Ver el flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Ver la cola de un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Asistente de IA en Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
@@ -283,7 +285,7 @@ ht-degree: 97%
    * [Crear y administrar plantillas](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Crear nuevas plantillas](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Crear escenarios con plantillas](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
-   * [Ver, editar y eliminar plantillas &#x200B;](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
+   * [Ver, editar y eliminar plantillas ](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Publicar y compartir plantillas](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Plantillas de Adobe Workfront Fusion disponibles actualmente](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Usar plantillas para conectar Adobe Workfront Fusion y Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
@@ -315,7 +317,7 @@ ht-degree: 97%
          * [Coerción de tipos](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funciones  {#functions}
-         * [Funciones &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+         * [Funciones ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Tókenes para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)

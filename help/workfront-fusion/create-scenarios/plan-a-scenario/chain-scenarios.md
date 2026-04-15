@@ -4,10 +4,10 @@ description: Puede encadenar escenarios juntos, permitiendo que un escenario alm
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 0%
+source-wordcount: '1267'
+ht-degree: 12%
 
 ---
 
@@ -88,20 +88,22 @@ Tenga en cuenta las siguientes prácticas recomendadas al encadenar un escenario
 
 ### Evite la recursión al encadenar escenarios
 
-La recursión se produce cuando un escenario déclencheur déclencheur una nueva ejecución de sí mismo, lo que provoca una nueva ejecución, y así sucesivamente en un bucle infinito.
+La recursividad se produce cuando un escenario activa una nueva ejecución de sí mismo, lo que activa una nueva ejecución, y así sucesivamente en un bucle infinito.
 
-La recursión puede causar problemas de rendimiento tanto para la organización propietaria del escenario recursivo como para otras organizaciones.
+La recursividad puede causar problemas de rendimiento tanto para la organización propietaria del escenario recursivo como para otras organizaciones.
 
 Al encadenar escenarios, siga estas prácticas para evitar la recursión:
 
 * Asegúrese de que **los escenarios secundarios no puedan almacenar en déclencheur el escenario principal**. Por ejemplo, si se activa un escenario principal cuando se crea una solicitud, asegúrese de que los escenarios secundarios no creen solicitudes.
 * Asegúrese de que **los escenarios secundarios no se llamen entre sí**. Por ejemplo, si el escenario secundario A llama al escenario secundario B, asegúrese de que el escenario secundario B no llame al escenario secundario A.
-* Asegúrese de que **un escenario no se puede llamar a sí mismo**. Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea dos tareas. Las tareas recién creadas vuelven a almacenar en déclencheur el escenario, lo que crea cuatro tareas nuevas. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta, se duplica el número de tareas. El número de tareas aumenta exponencialmente.
+* Asegúrese de que **un escenario no se puede llamar a sí mismo**. Por ejemplo, se activa un escenario cuando se crea una tarea y ese escenario crea dos tareas. Las tareas recién creadas vuelven a activar el escenario, lo que crea cuatro tareas nuevas. Cada vez que se crea una tarea, se activa el escenario y, cada vez que se ejecuta el escenario, se duplica el número de tareas. El número de tareas aumenta exponencialmente.
 
 >[!IMPORTANT]
 >
->* **Cuando un escenario está causando recursión, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
->* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo déclencheur.
+>* **Cuando un escenario está produciendo recursividad, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
+>* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo activen.
+>* Puede ver un diagrama de las relaciones entre los escenarios principal y secundario.
+>   Para obtener instrucciones, vea [Ver relaciones de escenarios encadenados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Utilice la gestión de errores para garantizar una respuesta
 
