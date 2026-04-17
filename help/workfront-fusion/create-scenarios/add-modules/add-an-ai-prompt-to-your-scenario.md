@@ -3,9 +3,10 @@ title: Añadir un indicador de IA a su escenario
 description: Puede incluir una solicitud de IA en su escenario que se conecte a su
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # Añada una solicitud de IA a su escenario
 
 Puede incluir una petición de datos de IA en su escenario mediante el Protocolo de contexto de modelo (MCP) combinado con modelos de lenguaje de gran tamaño (LLM). Al configurarlos en el módulo del agente de MCP, puede utilizar la inteligencia artificial para configurar flujos de trabajo eficientes, seguros y flexibles.
-
->[!NOTE]
->
->Esta funcionalidad es independiente de la capacidad de agregar módulos a un escenario mediante IA.
->
->Para obtener información sobre cómo agregar módulos con IA, consulte [Generar un segmento de escenario con IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
 
 ## Descripción general del protocolo de contexto de modelo
 
