@@ -5,9 +5,8 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 9cafd129-3348-485c-87dd-db599b37bf08
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: semana del 21 de febrero de 2022
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 21 de febrero de 2022.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 21 de febrero de 2022.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
@@ -28,4 +27,4 @@ Ahora se puede utilizar Adobe Workfront Fusion para conectarse a la cuenta de Ad
 
 * Crear, actualizar y leer acuerdos u otros registros
 * Enumerar o buscar registros en la cuenta de Adobe Acrobat Sign
-* Realizar una llamada de API personalizada
+* Realizar una llamada API personalizada

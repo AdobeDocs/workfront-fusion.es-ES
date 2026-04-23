@@ -4,10 +4,10 @@ description: Los módulos  [!DNL Adobe Workfront Fusion Google Drive] le permite
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2102'
-ht-degree: 20%
+ht-degree: 27%
 
 ---
 
@@ -17,9 +17,9 @@ Los módulos de Adobe Workfront Fusion [!DNL Google Drive] le permiten supervisa
 
 En un escenario de Adobe Workfront Fusion, puede conectar su cuenta de [!DNL Google Drive] a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -30,8 +30,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -41,19 +41,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -68,7 +68,7 @@ El conector de Google Drive utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://www.googleapis.com/drive/v3</td> 
   </tr> 
   <tr> 
@@ -96,7 +96,7 @@ Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Google Drive]
 
 Al configurar módulos de [!DNL Google Drive], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Google Drive] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -567,7 +567,7 @@ Este módulo de acción actualiza los metadatos o el contenido de un archivo.
    <td>Seleccione si desea reemplazar el contenido del archivo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Archivo de origen]</td> 
    <td>Si va a reemplazar el contenido, seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</td> 
   </tr> 
   <tr> 
@@ -602,7 +602,7 @@ Sube un archivo a su [!DNL Google Drive].
    <td>Seleccione la carpeta en la que desea cargar un archivo. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Archivo de origen]</td> 
    <td>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</td> 
   </tr> 
   <tr> 
@@ -625,7 +625,8 @@ Existen varias razones por las que no se puede cargar o actualizar un archivo:
 * El archivo cargado es demasiado grande y supera el límite máximo de tamaño de archivo permitido para el plan [!DNL Google Drive], o bien ya ha superado el límite de almacenamiento de [!DNL Google Drive]. Puede actualizar su plan de almacenamiento o eliminar los archivos existentes del servicio [!DNL Google Drive].
 * La carpeta seleccionada en la que se iba a cargar el archivo ya no existe. En este caso, el escenario se detiene y debe seleccionar una carpeta de destino diferente en el módulo.
 
-<!-- Not present February 2025
+<!--
+Not present February 2025
 
 ## Search for files
 

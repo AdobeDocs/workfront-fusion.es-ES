@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 74%
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ Estas instrucciones se aplican tanto a los módulos de Jira Cloud como al servid
 
 Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información sobre los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -141,7 +141,7 @@ Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de AP
 
 Para autorizar una conexión entre Workfront Fusion y [!DNL Jira Server], necesita su clave de consumidor, clave privada y dirección URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
 
-* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configuración de la aplicación cliente como consumidor en  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crear una conexión con  [!DNL Jira] Server o Jira Data Center en Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
@@ -326,7 +326,7 @@ Este módulo de activación inicia un escenario cuando se añade, actualiza o el
 * [[!UICONTROL Delete a record]](#delete-a-record)
 * [[!UICONTROL Download an attachment]](#download-an-attachment)
 * [[!UICONTROL Leer un registro]](#read-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Actualización de un registro]](#update-a-record)
 
 #### [!UICONTROL Add issue to sprint]
 
@@ -384,7 +384,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Llamada de API personalizada]
+#### [!UICONTROL Llamada API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Jira Software]. Utilice este módulo para crear una automatización del flujo de datos que no puedan realizar los otros [!DNL Jira Software] módulos.
 
@@ -416,7 +416,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
@@ -519,7 +519,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Actualización de un registro]
 
 Este módulo de acción actualiza un registro existente, como un problema o un proyecto.
 
@@ -566,17 +566,17 @@ Al configurar este módulo, se muestran los campos siguientes.
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Esto se debe a una obsolescencia del lado de Jira.
+>Esto se debe a una obsolescencia por parte de Jira.
 >
->Si encuentra este error, puede reemplazar el módulo de búsqueda del conector Jira heredado con el módulo de búsqueda del conector nuevo. Tenga en cuenta que el nuevo conector le permite seleccionar la versión de API utilizada. Asegúrese de seleccionar V3 al crear la conexión.
+>Si encuentra este error, puede reemplazar el módulo de búsqueda del conector Jira heredado por el módulo de búsqueda del conector nuevo. Tenga en cuenta que el nuevo conector le permite seleccionar la versión de API utilizada. Asegúrese de seleccionar V3 al crear la conexión.
 >
 > ![Opción de versión de API en el nuevo conector Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->Tenga en cuenta que:
+>Tenga en cuenta lo siguiente:
 >
->* Solo se ve afectado el módulo Buscar. En este momento, otros puntos finales de API de Jira utilizados por el conector Fusion no se ven afectados por esta obsolescencia.
+>* Solo se ve afectado el módulo Buscar. En este momento, otros puntos de conexión de API de Jira utilizados por el conector Fusion no se ven afectados por esta obsolescencia.
 >
->* El despliegue geográfico puede causar incoherencias. Atlassian está implementando este cambio a nivel regional, lo que significa que algunas instancias de Jira Cloud pueden seguir admitiendo temporalmente extremos más antiguos. Esto puede generar un comportamiento incoherente entre entornos.
+>* El despliegue geográfico puede causar incoherencias. Atlassian está implementando este cambio a nivel regional, lo que significa que algunas instancias de Jira Cloud pueden seguir admitiendo temporalmente puntos de conexión más antiguos. Esto puede generar un comportamiento incoherente entre entornos.
 
 #### [!UICONTROL List records]
 
@@ -608,7 +608,8 @@ Al configurar este módulo, se muestran los campos siguientes.
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
    <td> <p>Introduzca o asigne el número máximo de registros que desea que el módulo recupere durante cada ciclo de ejecución de escenario.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 

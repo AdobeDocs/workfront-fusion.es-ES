@@ -4,7 +4,7 @@ description: Con los módulos  [!DNL Adobe Campaign] , puede iniciar un escenari
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: aa5b5f1fe805f43b6398e26bf1773d7540ef1634
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 82%
@@ -139,7 +139,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Acciones](#actions)
 * [Búsquedas](#searches)
 
-<!--### Triggers
+<!--
+### Triggers
 
 #### [!UICONTROL Watch records]
 
@@ -174,20 +175,21 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>-->
+</table>
+-->
 
 
 ### Acciones
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Creación de un registro]](#create-a-record)
 * [[!UICONTROL Eliminar un registro]](#delete-record)
 * [[!UICONTROL Realizar una llamada API personalizada]](#make-a-custom-api-call)
 * [[!UICONTROL Realizar una acción]](#perform-an-action)
 * [[!UICONTROL Leer un registro]](#read-a-record)
 * [[!UICONTROL Suscribirse o cancelar la suscripción]](#subscribe-or-unsubscribe)
-* [[!UICONTROL Actualizar un registro]](#update-record)
+* [[!UICONTROL Actualización de un registro]](#update-record)
 
-#### [!UICONTROL Crear un registro]
+#### [!UICONTROL Creación de un registro]
 
 Este módulo de acción crea un nuevo registro en [!DNL Adobe Campaign].
 
@@ -214,7 +216,7 @@ Este módulo de acción crea un nuevo registro en [!DNL Adobe Campaign].
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL Eliminación de registro]
 
 Este módulo de acción elimina un único registro de [!DNL Adobe Campaign].
 
@@ -237,7 +239,7 @@ Este módulo de acción elimina un único registro de [!DNL Adobe Campaign].
  </tbody> 
 </table>
 
-#### [!UICONTROL Realizar una llamada de API personalizada]
+#### [!UICONTROL Realizar una llamada API personalizada]
 
 Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Campaign]
 

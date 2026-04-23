@@ -4,10 +4,10 @@ description: Con los módulos de Adobe I/O Events, puede iniciar un escenario de
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 34%
+ht-degree: 50%
 
 ---
 
@@ -24,8 +24,8 @@ Con los módulos de Adobe I/O Events, puede iniciar un escenario de Adobe Workfr
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +35,19 @@ Con los módulos de Adobe I/O Events, puede iniciar un escenario de Adobe Workfr
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -68,7 +68,7 @@ El conector de Adobe I/O Events utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td>https://api.adobe.io/events</td> 
   </tr>
   <tr> 
@@ -82,7 +82,7 @@ El conector de Adobe I/O Events utiliza lo siguiente:
 
 Para crear una conexión para los módulos de Adobe I/O Events:
 
-1. Haga clic en Agregar junto al cuadro Conexión.
+1. Haga clic en Añadir junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
 
@@ -93,7 +93,7 @@ Para crear una conexión para los módulos de Adobe I/O Events:
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">Nombre de conexión</td>
+        <td role="rowheader">Nombre de la conexión</td>
         <td>
           <p>Introduzca un nombre para esta conexión.</p>
         </td>
@@ -115,7 +115,7 @@ Para crear una conexión para los módulos de Adobe I/O Events:
         <td>Para agregar ámbitos adicionales, haga clic en <b>Agregar elemento</b> e introduzca el ámbito.</td>
       </tr>
       <tr>
-        <td role="rowheader">Id. de cliente</td>
+        <td role="rowheader">ID de cliente</td>
         <td>Introduzca su ID de cliente de Adobe. Esto se puede encontrar en la sección de detalles de credenciales de Adobe Developer Console</td>
       </tr>
       <tr>
@@ -152,7 +152,7 @@ Para crear una conexión para los módulos de Adobe I/O Events:
 
 Al configurar módulos de [!DNL Adobe I/O Events], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Adobe I/O Events] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -170,7 +170,7 @@ Este módulo de acción utiliza un webhook para crear una descripción de evento
 
 Para crear un webhook:
 
-1. Haga clic en **Agregar** junto al campo Webhook.
+1. Haga clic en **Añadir** junto al campo Webhook.
 1. Rellene los campos siguientes:
 
    <table>
@@ -179,7 +179,7 @@ Para crear un webhook:
      <tbody>
        <tr>
          <td role="rowheader">[!UICONTROL Webhook name]</td>
-        <td>Escriba un nombre para este webhook.</td>
+        <td>Introduzca un nombre para este webhook.</td>
        </tr>
        <tr>
          <td role="rowheader">[!UICONTROL Connection]</td>
@@ -187,7 +187,7 @@ Para crear un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           Descripción del webhook de 
+           Descripción del webhook de [!UICONTROL]
          </td>
          <td>
            Escriba una descripción para este webhook.
@@ -217,7 +217,7 @@ Para crear un webhook:
 ### Acciones
 
 * [Obtención de ID de proveedor y evento](#get-provider-and-event-ids)
-* [Realizar una llamada de API personalizada](#make-a-custom-api-call)
+* [Realizar una llamada API personalizada](#make-a-custom-api-call)
 
 #### Obtención de ID de proveedor y evento
 
@@ -251,7 +251,7 @@ Este módulo de búsqueda obtiene los Adobe I/O Events ID del proveedor y los ev
    </table>
 
 
-#### Realizar una llamada de API personalizada
+#### Realizar una llamada API personalizada
 
 Este módulo de acción realiza una llamada de API personalizada a la API [!DNL Adobe I/O Events]
 
@@ -276,7 +276,7 @@ Este módulo de acción realiza una llamada de API personalizada a la API [!DNL 
         <p>[!UICONTROL Method]</p>
       </td>
       <td>
-  <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p>  
+  <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p>  
       </td>
     </tr>
     <tr>
@@ -295,7 +295,7 @@ Este módulo de acción realiza una llamada de API personalizada a la API [!DNL 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -339,13 +339,15 @@ Este módulo de búsqueda recupera todos los eventos para un registro desde un h
          <td>Introduzca o asigne una fecha. El módulo devuelve los eventos que se produjeron después de esta fecha.
          </td>
        </tr>
-<!--       <tr>
+<!--
+<tr>
          <td role="rowheader">
            [!UICONTROL Seek]
          </td>
          <td>
          </td>
-       </tr>-->
+       </tr>
+-->
        <tr>
          <td role="rowheader">
            [!UICONTROL Última versión]
@@ -368,7 +370,7 @@ Este módulo de déclencheur inicia un escenario cuando se produce un evento en 
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Seleccione el webhook que desee utilizar para este activador o añada uno nuevo. </p><p>Para añadir un nuevo webhook, <ol><li>Haga clic en <b>Agregar</b> junto al campo del gancho web.</li><li>Introduzca lo siguiente: <ul><li>El nombre del webhook</li><li>La conexión que desea utilizar para este webhook</li><li>Origen de los eventos que desea ver</li></ul></li><li>Haga clic en <b>Guardar</b> para guardar el webhook y volver al módulo. </td> 
+   <td><p>Seleccione el webhook que desee utilizar para este activador o añada uno nuevo. </p><p>Para añadir un nuevo webhook, <ol><li>Haga clic en <b>Agregar</b> junto al campo del gancho web.</li><li>Introduzca lo siguiente: <ul><li>El nombre del webhook</li><li>La conexión que desea utilizar para este webhook</li><li>Origen de los eventos que desea ver</li></ul></li><li>Haga clic en <b>Guardar</b> para guardar el webhook y volver al módulo. </td> 
    </tr> 
    </tbody> 
 </table>

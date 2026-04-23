@@ -3,10 +3,11 @@ title: Módulos de Adobe Substance
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan  [!DNL Adobe Substance], así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2e44c89d487100b3245b40f6927185a0ff12ef2f
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 27%
+ht-degree: 35%
 
 ---
 
@@ -16,7 +17,7 @@ En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de traba
 
 Si necesita instrucciones sobre cómo crear un escenario, vea los artículos en [Crear un escenario: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,7 +29,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -44,7 +45,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -68,7 +69,7 @@ Antes de poder usar el conector de [!DNL Adobe Substance], debe asegurarse de qu
 
 Al configurar módulos de [!DNL Adobe Substance], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Adobe Substance] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. Un asterisco junto al nombre del campo en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -94,7 +95,8 @@ Este módulo de acción genera contenido para un compuesto 3D que incluye el rec
    <td role="rowheader">Otros campos</td> 
    <td>Configure otros campos como desee. Para obtener detalles sobre los campos, consulte la <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">documentación de la API de Adobe Substance</a>.</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -105,7 +107,8 @@ Este módulo de acción genera contenido para un compuesto 3D que incluye el rec
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

@@ -3,14 +3,13 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Actividad en la versión de Workfront Fusion: semana del martes, 16 de noviembre de 2020'
+title: 'Actividad de la versión de Workfront Fusion: semana del martes, 16 de noviembre de 2020'
 description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 16 de noviembre de 2020.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 69e4a458-fd32-4dcd-be43-19a9467cf678
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 21%
@@ -56,7 +55,7 @@ Para ampliar las formas de utilizar el conector de Excel de Office 365, hemos a�
 * Actualizar una tabla o fila de hoja de cálculo
 * Eliminar una tabla o una fila de la hoja de cálculo
 * Recuperación de metadatos de una tabla
-* Realizar una llamada de API personalizada
+* Realizar una llamada API personalizada
 
 Los módulos disponibles anteriormente siguen presentes en la aplicación.
 

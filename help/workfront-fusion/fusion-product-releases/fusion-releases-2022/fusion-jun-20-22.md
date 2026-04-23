@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Actividad de la versión de Workfront Fusion: semana del martes, 20 de junio de 2022'
-description: Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 20 de junio de 2022.
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 20 de junio de 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: eb4b2371-f423-4efc-9e04-ca4be55767d2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: Semana del 20 de junio de 2022
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 20 de junio de 2022.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 20 de junio de 2022.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
@@ -39,4 +38,4 @@ Ahora puede utilizar Adobe Workfront Fusion para conectarse a su cuenta de Adobe
 
 * Mover registros de una carpeta a otra
 
-* Realizar una llamada de API personalizada
+* Realizar una llamada API personalizada

@@ -5,9 +5,8 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: a9ab2bbd-742f-407d-906e-75fc3d6c967e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: semana del 21 de marzo de 2022
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 21 de marzo de 2022.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 21 de marzo de 2022.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 

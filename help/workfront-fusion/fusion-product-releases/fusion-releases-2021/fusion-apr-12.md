@@ -3,8 +3,7 @@ title: 'Actividad de la versión de Workfront Fusion: &nbsp;Semana del 12 de abr
 description: 'Actividad de la versión de Workfront Fusion: &nbsp;Semana del 12 de abril de 2021'
 author: Luke
 draft: Probably
-hidefromtoc: true
-source-git-commit: 0e75b7e21b5d933d5845726dedf56042beec041e
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 100%
@@ -13,7 +12,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: Semana del 12 de abril de 2021
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 12 de abril de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 12 de abril de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 

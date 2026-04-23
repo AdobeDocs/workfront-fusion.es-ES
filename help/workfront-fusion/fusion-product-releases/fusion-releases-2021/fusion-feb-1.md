@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Actividad de la versión de Workfront Fusion: semana del martes, 01 de febrero de 2021'
-description: Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 1 de febrero de 2021.
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 01 de febrero de 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ce0c1c62-d012-4bc2-8d73-69893c1be8da
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: semana del 1 de febrero de 2021
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 1 de febrero de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 01 de febrero de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
@@ -45,4 +44,4 @@ Con los módulos de MariaDB, puede hacer lo siguiente:
 * Añadir o quitar posibles clientes de una lista
 * Programar una campaña
 * Copiar un programa
-* Realizar una llamada de API personalizada
+* Realizar una llamada API personalizada

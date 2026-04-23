@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede conectar su cuenta
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 61%
+ht-degree: 65%
 
 ---
 
@@ -24,8 +24,8 @@ En un escenario de Adobe Workfront Fusion, puede conectar su cuenta de correo el
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +35,19 @@ En un escenario de Adobe Workfront Fusion, puede conectar su cuenta de correo el
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -99,7 +99,7 @@ Al configurar los módulos [!UICONTROL Correo electrónico], Workfront Fusion mu
 
 Es posible que algunos de los campos de correo electrónico ya contengan datos porque se usaron en otro módulo del escenario. Consulte la documentación de ayuda sobre el correo electrónico si necesita más información al respecto.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -244,27 +244,28 @@ Este módulo de acción crea y agrega un nuevo borrador a una carpeta selecciona
    <td role="rowheader">[!UICONTROL Blind Copy Recipient]</td> 
    <td> <p> Para cada dirección de correo electrónico a la que desee enviar una copia de este correo electrónico sin que aparezca en el mismo, haga clic en <b>Agregar elemento</b> e introduzca la dirección de correo electrónico.</p> </td> 
   </tr> 
-  <!--<tr data-mc-conditions=""> 
+  <!--
+  <tr data-mc-conditions="">
    <td role="rowheader">[!UICONTROL From] </td> 
    <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
    <td> <p>Enter or map the email address that appears in the [!UICONTROL Sender] field in the email.</p> <p>Tip:  If you are unsure whether to use this field or the From field, we recommend choosing the From field.</p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code></p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Reply-To]</td> 
    <td> <p> If you want replies to this email sent to a different address than the "[!UICONTROL from]" address, enter the email address where you want replies to this email sent.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL In-Reply-To]</td> 
    <td> <p> If you are replying to a specific email, enter or map the ID of the email you are replying to.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL References] </td> 
    <td> <p>Enter the message IDs of all the replies in the thread.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Priority]</p> </td> 
    <td> <p>Select the priority of the email:</p> 
     <ul> 
@@ -272,15 +273,16 @@ Este módulo de acción crea y agrega un nuevo borrador a una carpeta selecciona
      <li>[!UICONTROL Normal]</li> 
      <li>[!UICONTROL Low]</li> 
     </ul> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Headers]</p> </td> 
    <td> <p>Add the headers:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>Add the key. For example, Sender, Date, To, and so on.</p> </li> 
      <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter the value for the key.</p> </li> 
     </ul> </td> 
-  </tr> -->
+   </tr>
+   -->
  </tbody> 
 </table>
 

@@ -4,7 +4,7 @@ description: Puede mostrar información sobre los eventos o las ejecuciones de u
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 65%
@@ -48,7 +48,7 @@ Un evento de escenario es una modificación del escenario, como editarlo, activa
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -122,7 +122,8 @@ Puede filtrar el historial de ejecuciones para ver solo las ejecuciones con los 
 
 El icono de filtro es de color naranja en las columnas con un filtro activo.
 
-<!-- don't see how to do this
+<!--
+don't see how to do this
 ## Sort the scenario execution history
 
 You can sort the scenario execution history.

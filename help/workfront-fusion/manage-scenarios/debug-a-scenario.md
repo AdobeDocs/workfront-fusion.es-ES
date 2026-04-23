@@ -1,17 +1,17 @@
 ---
-title: Depuración de un escenario
+title: Depurar un escenario
 description: Adobe Workfront Fusion Devtool le permite entender y solucionar problemas de escenarios. Devtool añade un panel adicional a las herramientas para desarrolladores de Chrome. Con este panel del depurador, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para perfeccionar el escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 71%
+ht-degree: 76%
 
 ---
 
-# Depuración de un escenario
+# Depurar un escenario
 
 Adobe Workfront Fusion DevTool le ayuda a comprender y solucionar problemas de escenarios. Con la herramienta de desarrollo, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para perfeccionar el escenario.
 
@@ -33,8 +33,8 @@ Para ver un vídeo introductorio y un tutorial de Fusion Devtool, consulte
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -43,13 +43,13 @@ Para ver un vídeo introductorio y un tutorial de Fusion Devtool, consulte
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,10 +111,12 @@ Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en
       <td role="rowheader"> <p>Borrar lista de solicitudes </p> </td> 
       <td> <p>Haga clic en el icono de la papelera situado en la esquina superior derecha del panel izquierdo de Devtool para borrar la lista de solicitudes registradas por Devtool de Workfront Fusion. </p> </td> 
      </tr> 
-     <!--<tr> 
+     <!--
+     <tr>
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
       <td> <p>Click the computer icon <img src="assets/console-computer-icon.png"> in the top-right corner of the Devtool's left panel.</p> <p>Logging in the console is enabled when the computer icon is green.</p> </td> 
-     </tr>-->
+     </tr>
+     -->
      <tr> 
       <td role="rowheader"> <p>Recuperar la solicitud en formato Raw JSON o cURL</p> </td> 
       <td> 

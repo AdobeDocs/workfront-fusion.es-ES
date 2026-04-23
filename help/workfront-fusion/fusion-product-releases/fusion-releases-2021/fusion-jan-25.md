@@ -3,14 +3,13 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Actividad de la versión de Workfront Fusion: Semana del martes, 25 de enero de 2021'
-description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 25 de enero de 2021.
+title: 'Actividad de la versión de Workfront Fusion: semana del martes, 25 de enero de 2021'
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 25 de enero de 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 50adc93e-2059-4014-b138-6840db06e87b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad en la versión de Workfront Fusion: semana del 25 de enero de 2021
 
-En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 25 de enero de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 25 de enero de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 

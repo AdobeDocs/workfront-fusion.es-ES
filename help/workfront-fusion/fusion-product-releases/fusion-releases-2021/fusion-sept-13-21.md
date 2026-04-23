@@ -5,9 +5,8 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: bc72bb8b-25d9-488f-a1f0-89d4f41a7e76
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: Semana del 13 de septiembre de 2021
 
-En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 23 de septiembre de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del viernes, 23 de septiembre de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
@@ -36,7 +35,7 @@ Anteriormente, el historial de ejecuciones solo se podía filtrar por la hora de
 También es posible ordenar el historial de ejecuciones de escenarios. Puede ordenar por los siguientes valores:
 
 * Hora de inicio de ejecución
-* Estado de la ejecución
+* Estado de ejecución
 * Duración de la ejecución
 * Número de operaciones
 * Cantidad de datos transferidos

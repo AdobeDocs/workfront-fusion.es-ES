@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Actividad de la versión de Workfront Fusion: semana del martes, 10 de mayo de 2021'
-description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 10 de mayo de 2021.
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 10 de mayo de 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 82aa7c95-da11-4d5d-8ccf-cddaefff7b36
-source-git-commit: 6e62836006dcca1acc2cc314c44dbb114cda0e08
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: semana del 10 de mayo de 2021
 
-En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 10 de mayo de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 10 de mayo de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 

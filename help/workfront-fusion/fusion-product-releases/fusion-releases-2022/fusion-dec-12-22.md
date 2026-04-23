@@ -4,9 +4,8 @@ description: 'Actividad de la versión de Workfront Fusion: semana del martes, 1
 author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: aa71be54-f956-438d-a84b-a6e80f6a1431
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 52%

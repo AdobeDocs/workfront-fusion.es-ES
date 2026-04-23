@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Actividad de la versión de Workfront Fusion: Semana del martes, 18 de enero de 2021'
+title: 'Actividad de la versión de Workfront Fusion: semana del martes, 18 de enero de 2021'
 description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 18 de enero de 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 9a76a3d1-66b9-4fcd-848e-3d762e4af0f9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 31%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: semana del martes, 18 de enero de 2021
+# Actividad en la versión de Workfront Fusion: semana del martes, 18 de enero de 2021
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 18 de enero de 2021.
 
@@ -29,7 +28,7 @@ Para obtener una lista de las correcciones de errores recientes en Workfront Fus
 
 Para facilitarle la depuración de sus escenarios, hemos creado una extensión Chrome Workfront Fusion 2.0 DevTool. Con esta extensión, puede comprobar las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API. DevTool también incluye herramientas que le permiten modificar su escenario sin tener que modificar módulos o filtros uno por uno.
 
-## Módulos y conector de Azure Active Directory ya disponibles
+## Ya están disponibles el conector y los módulos de Azure Active Directory
 
 Ahora puede utilizar Workfront Fusion para conectarse a sus aplicaciones de Azure Active Directory. Con los módulos de Azure Active Directory, puede:
 
@@ -39,9 +38,9 @@ Ahora puede utilizar Workfront Fusion para conectarse a sus aplicaciones de Azur
 * Buscar registros según los criterios especificados.
 * Realizar una llamada de API personalizada.
 
-## Ya están disponibles el conector y los módulos de Azure DevOps
+## Ya están disponibles el conector y los módulos DevOps de Azure
 
-Ahora puede utilizar Workfront Fusion para conectarse a sus aplicaciones de Azure DevOps. Con los módulos de Azure DevOps, puede:
+Ahora puede utilizar Workfront Fusion para conectarse a sus aplicaciones de Azure DevOps. Con los módulos DevOps de Azure, puede:
 
 * Almacenar en déclencheur un escenario cuando se agrega, actualiza o elimina un registro.
 * Crear o actualizar registros.

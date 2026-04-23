@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Actividad de la versión de Workfront Fusion: semana del martes, 27 de junio de 2022'
-description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 27 de junio de 2022.
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 27 de junio de 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 8d2e2662-139f-42e4-99d0-71abc95fcfcc
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: semana del 27 de junio de 2022
 
-En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 27 de junio de 2022.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 27 de junio de 2022.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 

@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2031'
-ht-degree: 26%
+ht-degree: 28%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 26%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Anaplan], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -29,7 +29,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -45,7 +45,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -73,13 +73,13 @@ El conector Anaplan utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td>https://api.anaplan.com/2/0/
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> v2 </td> 
+   <td> Versión 2.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -133,7 +133,8 @@ Para crear una conexión para los módulos de [!DNL Anaplan]:
 
 1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
-<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+<!--
+1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
 1. Select the connection type.
 
    <table style="table-layout:auto">
@@ -151,13 +152,14 @@ Para crear una conexión para los módulos de [!DNL Anaplan]:
     </tbody> 
    </table>
 
-1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+-->
 
 ## Módulos de [!DNL Anaplan] y sus campos
 
 Al configurar módulos de [!DNL Anaplan], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Anaplan] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -203,11 +205,11 @@ Este módulo de déclencheur inicia un escenario cuando se crea o actualiza un r
 * [[!UICONTROL Crear un elemento de lista]](#create-a-list-item)
 * [Eliminación de un registro](#delete-a-record)
 * [Exportación de datos](#export-data)
-* [Importar datos](#import-data)
+* [Importación de datos](#import-data)
 * [[!UICONTROL Realizar una llamada de API personalizada]](#make-a-custom-api-call)
 * [[!UICONTROL Leer un registro]](#read-a-record)
 * [[!UICONTROL Ejecutar una acción]](#run-an-action)
-* [[!UICONTROL Actualizar un registro]](#update-a-record)
+* [[!UICONTROL Actualización de un registro]](#update-a-record)
 * [[!UICONTROL Cargar un archivo]](#upload-a-file)
 
 #### [!UICONTROL Crear un elemento de lista]
@@ -220,7 +222,7 @@ Este módulo de acción añade un nuevo elemento a una lista de Anaplan.
         <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Anaplan], consulte <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Anaplan] a Workfront Fusion</a> en este artículo.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Workspace ID]</td>
+        <td>[!UICONTROL ID de espacio de trabajo]</td>
         <td>Seleccione o asigne el ID de la Workspace de Anaplan que contiene la lista donde desea agregar un elemento.</td>
     </tr>
     <tr>
@@ -266,7 +268,7 @@ Este módulo de acción elimina un registro existente.
    <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Anaplan], consulte <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Anaplan] a Workfront Fusion</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo]</td> 
    <td>Seleccione o asigne el ID de la Workspace de Anaplan que contiene el objeto que desea eliminar.</td> 
   </tr> 
   <tr> 
@@ -300,7 +302,7 @@ Este módulo de acción recupera datos de Anaplan mediante Export Definitions
    <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Anaplan], consulte <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Anaplan] a Workfront Fusion</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo]</td> 
    <td>Seleccione o asigne el ID de la Workspace de Anaplan que contiene los datos que desea exportar.</td> 
   </tr> 
   <tr> 
@@ -315,7 +317,7 @@ Este módulo de acción recupera datos de Anaplan mediante Export Definitions
  </tbody> 
 </table>
 
-#### Importar datos
+#### Importación de datos
 
 Este módulo de acción importa datos en Anaplan.
 
@@ -328,7 +330,7 @@ Este módulo de acción importa datos en Anaplan.
    <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Anaplan], consulte <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Anaplan] a Workfront Fusion</a> en este artículo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de espacio de trabajo]</td> 
    <td>Seleccione o asigne el ID de la Workspace de Anaplan donde desea importar los datos.</td> 
   </tr> 
   <tr> 
@@ -373,7 +375,7 @@ Este módulo le permite realizar una llamada de API personalizada a la API [!DNL
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -421,7 +423,7 @@ Este módulo de acción importa, exporta, elimina o procesa una acción.
         <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Anaplan], consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect Anaplan to Workfront Fusion]</a> en este artículo.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Workspace ID]</td>
+        <td role="rowheader">[!UICONTROL ID de espacio de trabajo]</td>
         <td>Seleccione o asigne el identificador de [!DNL Anaplan] Workspace donde desea realizar la acción</td>
       </tr>
       <tr >
@@ -471,7 +473,7 @@ Este módulo de acción importa, exporta, elimina o procesa una acción.
       </table>
 
 
-#### [!UICONTROL Actualizar un registro]
+#### [!UICONTROL Actualización de un registro]
 
 Este módulo de acción actualiza un único registro en [!UICONTROL Anaplan].
 
@@ -522,7 +524,7 @@ Este módulo de acción carga un archivo existente en Anaplan a ubicaciones adic
 <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Anaplan], consulte <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Anaplan] a Workfront Fusion</a> en este artículo.</td>
 </tr>
 <tr>
-<td role="rowheader">[!UICONTROL Workspace ID]</td>
+<td role="rowheader">[!UICONTROL ID de espacio de trabajo]</td>
 <td>Seleccione o asigne el identificador de [!DNL Anaplan] Workspace donde desea cargar un archivo.</td>
 </tr>
 <tr>

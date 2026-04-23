@@ -4,9 +4,8 @@ description: El módulo Protocolo de contexto de modelo (MCP) permite procesar u
 author: Becky
 feature: Workfront Fusion
 hide: true
-hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 18%

@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Actividad de la versión de Workfront Fusion: semana del 21 de septiembre de 2020'
-description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 21 de septiembre de 2020.
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 21 de septiembre de 2020.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ca6094d0-d531-4901-bece-6230a0e04cb4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad en la versión de Workfront Fusion: semana del 21 de septiembre de 2020
 
-En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 21 de septiembre de 2020.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 21 de septiembre de 2020.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 

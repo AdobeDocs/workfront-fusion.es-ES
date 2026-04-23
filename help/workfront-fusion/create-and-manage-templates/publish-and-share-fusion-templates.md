@@ -1,17 +1,17 @@
 ---
-title: Publicación y uso compartido de plantillas
+title: Publicar y compartir plantillas
 description: Al crear una plantilla, esta plantilla estará disponible para todos los integrantes del equipo. Si desea compartir la plantilla con alguien que no pertenezca a su equipo, primero debe publicarla.
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 51%
+ht-degree: 67%
 
 ---
 
-# Publicación y uso compartido de plantillas
+# Publicar y compartir plantillas
 
 Al crear una plantilla, esta plantilla estará disponible para todos los integrantes del equipo. Si desea compartir la plantilla con alguien que no pertenezca a su equipo, primero debe publicarla.
 
@@ -26,8 +26,8 @@ Para obtener información sobre cómo crear una plantilla, vea [Crear una planti
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -36,13 +36,13 @@ Para obtener información sobre cómo crear una plantilla, vea [Crear una planti
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -93,7 +93,8 @@ Están disponibles los siguientes estados:
 * **[!UICONTROL Publicada]**: esta plantilla solo es visible para el autor de la plantilla y su equipo. Puede enviar plantillas publicadas para su aprobación y copiar un vínculo para compartir.
 * **[!UICONTROL Aprobada]**: esta plantilla está visible para todos los usuarios de Workfront Fusion en la pestaña [!UICONTROL Plantillas públicas]. Para copiar un vínculo para compartir, haga clic en [!UICONTROL Opciones] en la esquina superior derecha de la pantalla.
 
-<!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
+<!--
+You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
 * **Eye icon**: The template is published, it is visible only for the team, and the approval request was not sent.
 * **Yellow checkmark icon**: The template is published, it is visible only for the team, and the approval request was sent.

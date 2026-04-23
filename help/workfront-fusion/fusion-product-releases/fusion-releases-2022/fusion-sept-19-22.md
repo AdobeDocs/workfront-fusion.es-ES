@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Actividad de la versión de Workfront Fusion: Semana del 19 de septiembre de 2022'
-description: Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 19 de septiembre de 2022.
+title: 'Actividad de la versión de Workfront Fusion: semana del martes, 19 de septiembre de 2022'
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 19 de septiembre de 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 614fc0e0-4bee-4886-b6dc-5a95f89e4027
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: Semana del 19 de septiembre de 2022
+# Actividad de la versión de Workfront Fusion: semana del martes, 19 de septiembre de 2022
 
 ## Están disponibles el conector y los módulos de Adobe Journey Optimizer
 

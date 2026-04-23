@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Actividad de la versión de Workfront Fusion: semana del 7 de diciembre de 2020'
-description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 7 de diciembre de 2020.
+description: En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 07 de diciembre de 2020.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ec68630c-e89f-465c-bb67-d9898e5b1c2b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: semana del 7 de diciembre de 2020
 
-En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 7 de diciembre de 2020.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 07 de diciembre de 2020.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
@@ -34,6 +33,6 @@ Ya está disponible un nuevo conector del servidor Jira para Workfront Fusion 2.
 * Enumerar o buscar registros
 * Descargar un archivo adjunto
 * Añadir un problema a un sprint
-* Realizar una llamada de API personalizada
+* Realizar una llamada API personalizada
 
 Anteriormente, los módulos Jira solo estaban disponibles para Jira Cloud.

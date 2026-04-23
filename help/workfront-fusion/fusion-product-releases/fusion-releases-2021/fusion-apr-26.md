@@ -5,9 +5,8 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 5a70ed9e-9f70-40fb-b289-0955b951bf7a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Actividad de la versión de Workfront Fusion: Semana del 26 de abril de 2021
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del 26 de abril de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 26 de abril de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
@@ -33,7 +32,7 @@ Con el conector de Microsoft OneDrive, puede:
 * Cargar, descargar y copiar archivos
 * Crear carpeta
 * Obtener archivos o vínculos compartidos para un archivo
-* Realizar una llamada de API personalizada
+* Realizar una llamada API personalizada
 
 
 ## Ya están disponibles el conector Split.io y los módulos

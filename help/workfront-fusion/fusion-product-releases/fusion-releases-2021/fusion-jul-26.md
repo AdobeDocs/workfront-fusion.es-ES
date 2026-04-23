@@ -5,18 +5,17 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: b19fcd56-39e2-4f2d-9e84-37441d61acf7
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 30%
+ht-degree: 27%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: semana del martes, 26 de julio de 2021
+# Actividad de la versión de Workfront Fusion: Semana del 26 de julio de 2021
 
-Esta página describe todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 26 de julio de 2021.
+En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 26 de julio de 2021.
 
 Para obtener una lista de todos los cambios recientes, consulte [Actividad de la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
