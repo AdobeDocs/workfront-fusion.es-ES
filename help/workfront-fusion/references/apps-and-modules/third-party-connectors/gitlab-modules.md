@@ -960,7 +960,7 @@ Para obtener información sobre los campos, consulte [Modificar una nota existen
 
 Modifica la nota existente de una solicitud de combinación.
 
-Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
+Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
 
 +++
 

@@ -64,13 +64,13 @@ Para utilizar módulos de [!DNL Gmail], debe disponer de una cuenta de [!DNL Gma
 * [Connect [!DNL Gmail] to Workfront Fusion using [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Connect [!DNL Gmail] to Workfront Fusion using [!DNL gmail.com] or [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Connect [!DNL Gmail] to Workfront Fusion using[!DNL  Google Workspace]
+### Connect [!DNL Gmail] to Workfront Fusion using[!DNL &#x200B; Google Workspace]
 
 For instructions about connecting your [!DNL Google Workspace] account to [!UICONTROL Workfront Fusion], see [Create a connection - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
 ### Connect [!DNL Gmail] to Workfront Fusion using [!DNL gmail.com] or [!DNL googlemail].com
 
-Si es usuario de [!DNL @gmail.com] o [!DNL @googlemail.com], debe crear un cliente de OAuth en [ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) para obtener un [!UICONTROL ID de cliente] y un [!UICONTROL Secreto de cliente].
+Si es usuario de [!DNL @gmail.com] o [!DNL @googlemail.com], debe crear un cliente de OAuth en [&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) para obtener un [!UICONTROL ID de cliente] y un [!UICONTROL Secreto de cliente].
 
 Para obtener instrucciones paso a paso sobre cómo crear el cliente OAuth y obtener un [!UICONTROL ID de cliente] y un [!UICONTROL Secreto de cliente], consulte [Conectar Adobe Workfront Fusion a los servicios de Google mediante un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
