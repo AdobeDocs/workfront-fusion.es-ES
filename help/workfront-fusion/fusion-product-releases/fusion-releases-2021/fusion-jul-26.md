@@ -1,19 +1,19 @@
 ---
-title: Actividad de la versión de Workfront Fusion:&nbsp;semana del martes, 26 de julio de 2021
-description: Actividad de la versión de Workfront Fusion:&nbsp;semana del martes, 26 de julio de 2021
+title: 'Actividad de la versión de Workfront Fusion: semana del 26 de julio de 2021'
+description: 'Actividad de la versión de Workfront Fusion: semana del 26 de julio de 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b19fcd56-39e2-4f2d-9e84-37441d61acf7
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 27%
+source-wordcount: '256'
+ht-degree: 29%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: Semana del 26 de julio de 2021
+# Actividad de la versión de Workfront Fusion: semana del 26 de julio de 2021
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 26 de julio de 2021.
 

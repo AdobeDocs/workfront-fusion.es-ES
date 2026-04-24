@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
@@ -133,7 +133,7 @@ Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de AP
    * **Tipo**
    * **[!UICONTROL URL de servicio]:** Esta es la URL base que usas para acceder a tu cuenta Jira. Ejemplo: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
-   * **[!UICONTROL API token]:**: se trata del token de API que ha creado en la sección [Crear un token de API [!DNL Jira]](#create-an-api-token-in-jira) de este artículo.
+   * **[!UICONTROL Token de API]:** Este es el token de API que creó en la sección [Crear un token de API en [!DNL Jira]](#create-an-api-token-in-jira) de este artículo.
 
 1. Haga clic en [!UICONTROL Continue] para crear la conexión y volver al módulo.
 
@@ -141,7 +141,7 @@ Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de AP
 
 Para autorizar una conexión entre Workfront Fusion y [!DNL Jira Server], necesita su clave de consumidor, clave privada y dirección URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
 
-* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configuración de la aplicación cliente como consumidor en  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crear una conexión con  [!DNL Jira] Server o Jira Data Center en Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 

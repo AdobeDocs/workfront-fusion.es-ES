@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: f142193b-d0c2-479f-a23b-f9d263b10433
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 95%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: semana del 24 de agosto de 2020
+# Actividad de la versión de Workfront Fusion: semana del martes, 24 de agosto de 2020
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 17 de agosto de 2020.
 

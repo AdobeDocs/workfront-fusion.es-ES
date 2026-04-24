@@ -4,7 +4,7 @@ description: Puede utilizar TLS mutuo en los módulos HTTP de Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 16%
@@ -93,9 +93,9 @@ Puede utilizar los siguientes vínculos para descargar los certificados público
 | Datacenter | Vínculo de descarga | Fechas válidas |
 | --- | --- | --- |
 | US AWS Datacenter | [Descargar certificado Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | Del 29 de enero de 2026 al 2 de marzo de 2027 |
-| US Azure Cluster | [Descargar certificado de Workfront Fusion US Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Del 21 de septiembre de 2025 al 23 de octubre de 2026 |
+| Clúster Azure de EE. UU. | [Descargar el certificado Azure 2026 de Workfront Fusion US](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Del 21 de septiembre de 2025 al 23 de octubre de 2026 |
 | Centro de datos AWS UE | [Descargar el certificado Workfront Fusion EU 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Del 29 de enero de 2026 al 2 de marzo de 2027 |
-| clúster de Azure de la UE | [Descargar certificado de Workfront Fusion EU Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Del 4 de febrero de 2026 al 8 de marzo de 2027 |
+| Clúster Azure de la UE | [Descargar el certificado Azure 2026 de Workfront Fusion EU](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Del 4 de febrero de 2026 al 8 de marzo de 2027 |
 
 ### Certificados para 2025
 
@@ -113,7 +113,7 @@ Puede utilizar los siguientes vínculos para descargar los certificados público
 | --- | --- | --- |
 | US Datacenter | [Descargar certificado Workfront Fusion US 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Del 3 de marzo de 2025 al 4 de abril de 2026 |
 | Centro de datos UE | [Descargar el certificado Workfront Fusion EU 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Del 3 de marzo de 2025 al 4 de abril de 2026 |
-| Azure Cluster | [Descargar certificado de Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | Del 24 de octubre de 2024 al 25 de noviembre de 2025 |
+| Clúster Azure | [Descargar certificado Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | Del 24 de octubre de 2024 al 25 de noviembre de 2025 |
 
 <!--
 

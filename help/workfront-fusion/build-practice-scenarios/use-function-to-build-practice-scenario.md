@@ -7,7 +7,7 @@ description: Obtenga información sobre cómo añadir una función para actualiz
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 77%
@@ -79,7 +79,7 @@ Cuando este escenario convierte una solicitud en un proyecto, el nombre del proy
 1. Haga clic en el campo **Nombre**.
 
    Se abrirá el panel de asignación.
-1. En el panel de asignación, haga clic en el icono **Funciones binarias y de texto**. ![Icono de funciones de texto](assets/toolbar-icon-text&binary-functions.png)
+1. En el panel de asignación, haga clic en el icono **Funciones binarias y de texto**. ![Icono de funciones de texto](assets/toolbar-icon-text-binary-functions.png)
 1. Seleccione la función **superior**.
 
    La función aparece en el campo Nombre, incluido el formato de la entrada que espera.

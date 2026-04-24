@@ -10,10 +10,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: cbb15db2-b605-4025-9c8b-abee5b40ddaa
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Para facilitar la búsqueda de objetos de Salesforce, hemos añadido otro módul
 
 Si prefiere introducir las consultas usted mismo, puede utilizar la funcionalidad existente anteriormente en el módulo Buscar con consulta.
 
-## Filtrado de suscripción a eventos disponible en Workfront > módulo Ver registros
+## Filtro de suscripción de eventos disponible en el módulo Workfront > Ver registros
 
 Para acompañar la nueva funcionalidad de filtrado de suscripción a eventos de Workfront, hemos actualizado Workfront > módulo Ver registros para habilitar el filtrado de eventos. Ahora, puede establecer un filtro cuando cree un webhook. Esto permite que el escenario se active únicamente cuando el evento cumpla determinados criterios, lo que reduce el número de ejecuciones que debe realizar el escenario.
 

@@ -1,19 +1,19 @@
 ---
-title: 'Actividad de la versión de Workfront Fusion: &nbsp;Semana del 18 de abril de 2022'
-description: 'Actividad de la versión de Workfront Fusion: &nbsp;Semana del 18 de abril de 2022'
+title: 'Actividad de la versión de Workfront Fusion: semana del 18 de abril de 2022'
+description: 'Actividad de la versión de Workfront Fusion: semana del 18 de abril de 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 61307bb2-ff4e-461f-b3ce-a3e26b39e95e
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '155'
 ht-degree: 100%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: Semana del 18 de abril de 2022
+# Actividad de la versión de Workfront Fusion: semana del 18 de abril de 2022
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 18 de abril de 2022.
 

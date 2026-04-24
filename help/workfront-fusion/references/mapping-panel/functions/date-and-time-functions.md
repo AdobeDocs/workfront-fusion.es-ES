@@ -4,7 +4,7 @@ description: Las siguientes funciones de fecha y hora están disponibles en el p
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1879'
 ht-degree: 90%
@@ -139,7 +139,7 @@ Esta función devuelve una nueva fecha con los segundos especificados en paráme
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -333,7 +333,7 @@ La función `formatDate` devuelve una representación de texto del valor Fecha e
 
 **Ejemplos:** El escenario y la zona horaria web se han establecido en `Europe/Prague` en estos ejemplos.
 
-![Ejemplo de función de fecha y hora](assets/date&time-functions-examples-350x61.png)
+![Ejemplo de función de fecha y hora](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Esta sección está adaptada para Workfront Fusion desde la página web [!DNL Ex
 
 Si necesita calcular una fecha correspondiente al enésimo día de la semana del mes (por ejemplo, primer martes, tercer viernes, etc.), puede utilizar la siguiente fórmula:
 
-![Calcular n.º día](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calcular n.º día](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}

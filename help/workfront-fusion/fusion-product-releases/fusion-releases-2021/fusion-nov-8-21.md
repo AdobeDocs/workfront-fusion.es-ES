@@ -1,14 +1,14 @@
 ---
-title: 'Actividad de la versión de Workfront Fusion: &nbsp;semana del 8 de noviembre de 2021'
-description: 'Actividad de la versión de Workfront Fusion: &nbsp;semana del 8 de noviembre de 2021'
+title: 'Actividad de la versión de Workfront Fusion: semana del 8 de noviembre de 2021'
+description: 'Actividad de la versión de Workfront Fusion: semana del 8 de noviembre de 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 98ee4e13-0862-4781-8d01-4ca8a169422c
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '135'
 ht-degree: 100%
 
 ---

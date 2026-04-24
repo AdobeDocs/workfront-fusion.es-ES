@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 9a76a3d1-66b9-4fcd-848e-3d762e4af0f9
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 31%
 
 ---
 
-# Actividad en la versión de Workfront Fusion: semana del martes, 18 de enero de 2021
+# Actividad de la versión de Workfront Fusion: semana del martes, 18 de enero de 2021
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 18 de enero de 2021.
 

@@ -1,19 +1,19 @@
 ---
-title: 'Actividad de la versión de Workfront Fusion: &nbsp;Semana del 26 de abril de 2021'
-description: 'Actividad de la versión de Workfront Fusion: &nbsp;Semana del 26 de abril de 2021'
+title: 'Actividad de la versión de Workfront Fusion: semana del martes, 26 de abril de 2021'
+description: 'Actividad de la versión de Workfront Fusion: semana del martes, 26 de abril de 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 5a70ed9e-9f70-40fb-b289-0955b951bf7a
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '203'
 ht-degree: 100%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: Semana del 26 de abril de 2021
+# Actividad de la versión de Workfront Fusion: semana del martes, 26 de abril de 2021
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 26 de abril de 2021.
 

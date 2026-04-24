@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
-source-wordcount: '4095'
-ht-degree: 94%
+source-wordcount: '4099'
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de traba
 >
 >Este artículo espera cierta familiaridad con la documentación de la API, y de la funcionalidad [!DNL GitLab] en general.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -34,8 +34,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -45,19 +45,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -95,7 +95,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 
 Al configurar módulos de [!DNL GitLab], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL GitLab] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -252,7 +252,7 @@ Este módulo de activador programado inicia un escenario cuando se añade un nue
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conexión de [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Resultados máximos</td> 
@@ -273,7 +273,7 @@ Este módulo de activador programado inicia un escenario cuando se añade una nu
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conexión de [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Resultados máximos</td> 
@@ -363,7 +363,7 @@ Este módulo de acción cancela una sola versión de un proyecto.
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL GitLab] a Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conexión de [!DNL GitLab] a Workfront Fusion</a> en este artículo.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -572,7 +572,7 @@ Para obtener información sobre los campos, consulte [Editar hito](https://docs.
 
 +++**[!UICONTROL Borrar una versión]**
 
-Este módulo de acción borra una versión de un proyecto (elimina los artefactos de trabajo y el registro de trabajos).
+Este módulo de acción borra una versión de un proyecto (elimina los artefactos de trabajo y el registro del trabajo).
 
 Para obtener información sobre los campos, consulte [Borrar un trabajo](https://docs.gitlab.com/ee/api/jobs.html#erase-a-job) en la documentación de [!DNL GitLab].
 
@@ -767,7 +767,7 @@ Para obtener información sobre los campos, consulte [Enumerar todas las notas d
 
 Este módulo obtiene una lista de todas las notas de un solo fragmento. Las notas de fragmento son comentarios que los usuarios pueden publicar en un fragmento.
 
-Para obtener información sobre los campos, consulte [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) en la documentación de [!DNL GitLab].
+Para obtener información sobre los campos, consulte [Enumerar todas las notas de fragmentos](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) en la documentación de [!DNL GitLab].
 
 +++
 
@@ -960,7 +960,7 @@ Para obtener información sobre los campos, consulte [Modificar una nota existen
 
 Modifica la nota existente de una solicitud de combinación.
 
-Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
+Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
 
 +++
 

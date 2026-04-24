@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 8d2e2662-139f-42e4-99d0-71abc95fcfcc
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 100%
 
 ---
 
-# Actividad de la versión de Workfront Fusion: semana del 27 de junio de 2022
+# Actividad de la versión de Workfront Fusion: semana del martes, 27 de junio de 2022
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 27 de junio de 2022.
 
