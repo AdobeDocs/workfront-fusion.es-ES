@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 50%
+source-wordcount: '483'
+ht-degree: 67%
 
 ---
 
@@ -26,8 +26,8 @@ Solo puede quitar un usuario de Adobe Workfront Fusion y dejar el acceso a cualq
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -36,7 +36,7 @@ Solo puede quitar un usuario de Adobe Workfront Fusion y dejar el acceso a cualq
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -48,7 +48,7 @@ Solo puede quitar un usuario de Adobe Workfront Fusion y dejar el acceso a cualq
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -69,13 +69,12 @@ Un usuario se desactiva de la [!DNL Adobe Admin Console] cuando se da una de las
 * El usuario se elimina de un perfil de producto y no se asigna a otro perfil de producto.
 * El usuario se elimina o desactiva en la organización que incluye Workfront Fusion.
 
-  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/es/enterprise/using/manage-users-individually.html?lang=es).
+  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/enterprise/using/manage-users-individually.html?lang=es).
 
 En Workfront Fusion, la desactivación afecta al usuario de una de las siguientes maneras:
 
 * Si el usuario está en una sola organización, se desactiva.
 * Si el usuario se encuentra en más de una organización, se eliminará de la organización en la que se modificó el usuario en el [!DNL Adobe Admin Console].
-* Tenga en cuenta lo siguiente al eliminar un usuario.
 
 ### Consideraciones al eliminar un usuario en Workfront Fusion
 

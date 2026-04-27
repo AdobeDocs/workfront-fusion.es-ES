@@ -1,30 +1,30 @@
 ---
 title: Flujo de trabajo para crear un escenario
-description: Siga este flujo de trabajo general para crear un escenario
+description: Follow this general workflow to create a scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 25%
+source-wordcount: '782'
+ht-degree: 22%
 
 ---
 
 # Flujo de trabajo para crear un escenario
 
-Los escenarios están diseñados para satisfacer las necesidades de su organización, con aplicaciones y módulos que se ocupan de sus casos de uso. Sin embargo, la creación de un escenario sigue el mismo flujo de trabajo básico, independientemente del caso de uso. Este artículo describe el proceso básico de creación de un escenario.
+Scenarios are built to meet the needs of your organization, with applications and modules that address your use cases. However, creating a scenario follows the same basic workflow regardless of use case. This article describes the basic process of creating a scenario.
 
 
-* [Cree y asigne un nombre al escenario](#create-and-name-the-scenario)
+* [Create and name the scenario](#create-and-name-the-scenario)
 * [Añadir y configurar el primer módulo](#configure-the-first-module)
 * [Crear conexiones](#create-connections)
-* [Añadir y configurar módulos adicionales](#add-and-configure-additional-modules)
-* [Asignación de datos entre módulos](#map-data-between-modules)
-* [Configurar enrutamiento](#configure-routing)
+* [Add and configure additional modules](#add-and-configure-additional-modules)
+* [Map data between modules](#map-data-between-modules)
+* [Configure routing](#configure-routing)
 * [Configurar la gestión de errores](#configure-error-handling)
 * [Establecer la configuración del escenario](#onfigure-scenario-settings)
-* [Prueba y revisión](#test-and-revise)
+* [Test and revise](#test-and-revise)
 * [Activar el escenario](#activate-the-scenario)
 * [Métodos abreviados del teclado para escenarios de Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
 
@@ -32,46 +32,46 @@ Métodos abreviados de teclado
 
 
 
-## Cree y asigne un nombre al escenario
+## Create and name the scenario
 
-1. Inicie sesión en su cuenta de Workfront Fusion.
-1. Haga clic en **[!UICONTROL Icono de escenarios]** ![escenarios](assets/scenarios-icon.png) en el panel izquierdo.
+1. Sign into your Workfront Fusion account.
+1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
 
    >[!NOTE]
    >
    >Si no ve el panel de navegación izquierdo o sus iconos, haga clic en el icono Menú ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Opcional) En el panel [!UICONTROL **Carpetas**], haga clic en el icono **[!UICONTROL Agregar carpeta]** ![Agregar icono de carpeta](assets/add-folder-icon.png) y, a continuación, escriba un nombre como &quot;Escenarios de práctica&quot; para la primera carpeta.
+1. (Optional)In the [!UICONTROL **Folders**] panel, click the **[!UICONTROL Add folder]** icon ![Add folder icon](assets/add-folder-icon.png), then type a name like &quot;Practice scenarios&quot; for your first folder.
 
-1. (Opcional) Abra la carpeta y haga clic en **[!UICONTROL Crear un nuevo escenario]** en la esquina superior derecha de la página.
+1. (Optional) Open the folder, then click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page.
 
 1. Seleccione el nombre del marcador de posición **[!UICONTROL Nuevo escenario]** en la esquina superior izquierda y, a continuación, escriba un nombre como “Práctica de escenario 1&quot;.
 
-   ![Nombrar el escenario](assets/name-the-scenario.png)
+   ![Name the scenario](assets/name-the-scenario.png)
 
 1. Continúe con el apartado siguiente [Conectar el primer módulo](#2-connect-the-first-module).
 
 ## Añadir y configurar el primer módulo
 
-El primer módulo del escenario es un módulo de déclencheur, que iniciará el escenario cuando se cumplan determinadas condiciones.
+The first module for your scenario is a trigger module, which will start the scenario when certain conditions are met.
 
-Para obtener instrucciones sobre cómo agregar el primer módulo a un escenario, vea [Agregar el primer módulo a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario) en el artículo Agregar un módulo a un escenario.
+For instructions on adding the first module to a scenario, see [Add the first module to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario) in the article Add a module to a scenario.
 
-Para obtener instrucciones sobre cómo configurar un módulo, consulte [Configurar un módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+For instructions on configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 
 ## Crear conexiones
 
-Al configurar un módulo, debe introducir o crear una conexión. El módulo utiliza esta conexión y los permisos que contiene para acceder a la fecha en la aplicación.
+When configuring a module, you must enter or create a connection. The module uses this connection and the permissions it contains to access date in the application.
 
-Para obtener instrucciones básicas sobre cómo crear una conexión, consulte [Crear una conexión: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+For basic instructions on how to create a connection, see [Create a connection - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-Para casos de uso específicos relacionados con Google, Microsoft o aplicaciones sin conectores específicos, consulte los demás artículos en [Conectar a aplicaciones: índice de artículos](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md).
+For specific use cases involving Google, Microsoft, or applications without dedicated connectors, see the other articles under [Connect to applications: article index](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md).
 
-## Añadir y configurar módulos adicionales
+## Add and configure additional modules
 
-Siga agregando y configurando módulos adicionales.
+Continue adding and configuring additional modules.
 
-Para obtener instrucciones sobre cómo agregar módulos, consulte los artículos que se enumeran en [Agregar módulos: índice de artículos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
+For instructions on the ways to add modules, see the articles listed under [Add modules: article index](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
 
 ## Asignación de datos entre módulos
 
@@ -115,7 +115,7 @@ La prueba del escenario permite determinar si el escenario funciona según lo pr
 
 ## Activar el escenario
 
-Este escenario de ejemplo no tiene un módulo de activador. Si este fuera un escenario que usaría para datos reales, empezaría con un módulo de activador y lo último que haría es activarlo. Después de activar un escenario, de forma predeterminada, se ejecuta cada 15 minutos. Puede cambiar esto definiendo cuándo y con qué frecuencia desea que se ejecute.
+Después de activar un escenario, de forma predeterminada, se ejecuta cada 15 minutos. Puede cambiar esto definiendo cuándo y con qué frecuencia desea que se ejecute.
 
 Para obtener más información sobre cómo activar escenarios, vea [Activar o desactivar un escenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 

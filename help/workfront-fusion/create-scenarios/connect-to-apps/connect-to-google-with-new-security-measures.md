@@ -1,19 +1,19 @@
 ---
-title: Conexión de Adobe Workfront Fusion a los servicios de Google con medidas de seguridad actualizadas
-description: Google ha introducido restricciones sobre cómo los usuarios pueden utilizar su API. En este artículo se describe cómo conectar Adobe Workfront Fusion a Google teniendo en cuenta estas medidas de seguridad de actualización.
+title: Conectar Adobe Workfront Fusion a Google Services con medidas de seguridad actualizadas
+description: Google has introduced restrictions on how users can use their API. This article describes how to connect Adobe Workfront Fusion to Google, accounting for these update security measures.
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 14%
+source-wordcount: '804'
+ht-degree: 29%
 
 ---
 
-# Conexión de Adobe Workfront Fusion a los servicios de Google con medidas de seguridad actualizadas
+# Conectar Adobe Workfront Fusion a Google Services con medidas de seguridad actualizadas
 
-Google ha introducido restricciones sobre cómo los usuarios pueden utilizar su API. En este artículo se describe cómo conectar Adobe Workfront Fusion a Google teniendo en cuenta estas medidas de seguridad de actualización.
+Google has introduced restrictions on how users can use their API. This article describes how to connect Adobe Workfront Fusion to Google, accounting for these update security measures.
 
 ## Requisitos de acceso
 
@@ -24,8 +24,8 @@ Google ha introducido restricciones sobre cómo los usuarios pueden utilizar su 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,83 +35,83 @@ Google ha introducido restricciones sobre cómo los usuarios pueden utilizar su 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Restricciones de Google Services
+## Google Services restrictions
 
-Google introdujo restricciones sobre cómo los usuarios pueden utilizar su API a partir del 1 de junio de 2020. Estas medidas de seguridad protegen a los usuarios de Google de la filtración o el uso indebido de sus datos personales en Google.
+Google introduced restrictions on how users can use their API as of June 1st, 2020. These security measures protect Google users from leakage or misuse of their personal data on Google.
 
-Estas restricciones están relacionadas con las aplicaciones de Gmail y Google Drive.
+These restrictions are related to the Gmail and Google Drive apps.
 
-Para obtener más información sobre estas restricciones, consulte &quot;Requisitos adicionales para ámbitos de API específicos&quot; en la [Directiva de datos de usuario de servicios de API de Google](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
+For more information about these restrictions, see &quot;Additional Requirements for Specific API Scopes&quot; in the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
 
-Para acceder a ámbitos restringidos, el servicio conectado (Adobe Workfront Fusion o cualquier otro servicio que acceda a los datos del usuario a través de la API) debe verificarse y debe tener una carta de evaluación para probar que el servicio es seguro y transparente sobre cómo utilizan los datos. Workfront Fusion cumple con todos los requisitos de Google para acceder a ámbitos restringidos. Sin embargo, la mayoría de los servicios conectados de terceros en Workfront Fusion no tienen la carta de evaluación y, por lo tanto, no cumplen los términos de Google. Por ello, no se permite a Workfront Fusion enviar datos a estos servicios.
+To access restricted scopes, the connected service (Adobe Workfront Fusion or any other service that accesses the user&#39;s data via the API) must be verified, and must have a Letter of Assessment to prove that the service is secure and transparent about how they use the data. Workfront Fusion complies with all of Google&#39;s requirements for access to restricted scopes. However, most of the third-party connected services in Workfront Fusion don&#39;t have the Letter of Assessment, and therefore don&#39;t comply with Google terms. Because of that, Workfront Fusion is not permitted to send data to these services.
 
-## Excepciones a las restricciones de los servicios de Google
+## Exceptions to Google Services restrictions
 
-Hay algunas excepciones que permiten enviar datos a un servicio de terceros no aprobado que no tiene la carta de evaluación sin violar ninguna de las nuevas restricciones. Difieren según Google Workspace con el cliente OAuth de Workfront Fusion, Google Workspace con otro cliente OAuth o @gmail.com y @googlemail.com.
+Hay algunas excepciones que permiten enviar datos a un servicio de terceros no aprobado que no tiene la carta de evaluación sin violar ninguna de las nuevas restricciones. They differ based on Google Workspace with the Workfront Fusion OAuth client, Google Workspace with another OAuth client, or @gmail.com and @googlemail.com.
 
-* [Google Workspace con el cliente OAuth de Workfront Fusion](#google-workspace-with-workfront-fusion-oauth-client)
-* [Google Workspace con otro cliente de OAuth](#google-workspace-with-another-oauth-client)
-* [@gmail.com y @googlemail.com](#gmailcom-and-googlemailcom)
+* [Google Workspace with Workfront Fusion OAuth client](#google-workspace-with-workfront-fusion-oauth-client)
+* [Google Workspace with another OAuth client](#google-workspace-with-another-oauth-client)
+* [@gmail.com and @googlemail.com](#gmailcom-and-googlemailcom)
 
-### Google Workspace con el cliente OAuth de Workfront Fusion
+### Google Workspace with Workfront Fusion OAuth client
 
-Workfront Fusion utiliza la excepción de instalación para todo el dominio. La instalación en todo el dominio es adecuada para los usuarios de Google Workspace y permite a los usuarios integrar servicios no aprobados sin ninguna limitación. Si es un usuario de Google Workspace, no tiene que realizar ningún paso adicional y puede conectarse directamente a servicios no aprobados.
+Workfront Fusion uses the Domain-wide Installation exception. Domain-wide Installation is suited for Google Workspace users, and allows users to integrate unapproved services without any limitations. Si es un usuario de Google Workspace, no tiene que realizar ningún paso adicional y puede conectarse directamente a servicios no aprobados.
 
-### Google Workspace con otro cliente de OAuth
+### Google Workspace with another OAuth client
 
-Los usuarios de Workspace de Google que prefieran utilizar su propio cliente de OAuth en lugar de utilizar el cliente de OAuth de Workfront Fusion pueden conectarse a los servicios de Google mediante el método de uso interno. Esta opción está destinada a usuarios avanzados. Para obtener instrucciones, consulte [Conectar Adobe Workfront Fusion a Google Services con un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Google Workspace users that prefer to use their own OAuth client instead of using the Workfront Fusion OAuth client can connect to Google Services through the Internal Use approach. Esta opción está destinada a usuarios avanzados. For instructions, see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-### @gmail.com y @googlemail.com {#gmailcom-and-googlemailcom}
+### @gmail.com and @googlemail.com {#gmailcom-and-googlemailcom}
 
-Los usuarios que acceden a los servicios de Google a través de @gmail.com o @googlemail.com pueden conectarse a los servicios de Google a través del método de uso personal. Esta opción está destinada a usuarios avanzados. Para obtener instrucciones, consulte [Conectar Adobe Workfront Fusion a Google Services con un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Users that access Google Services through @gmail.com or @googlemail.com can connect to Google Services through the Personal Use approach. Esta opción está destinada a usuarios avanzados. For instructions, see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 ## Preguntas frecuentes
 
-* [¿Qué aplicaciones de Adobe Workfront Fusion se ven afectadas?](#what-apps-in-adobe-workfront-fusion-are-affected)
-* [¿Tengo una cuenta de Google Workspace?](#do-i-have-a-g-suite-account)
-* [¿Qué debo hacer si soy usuario de @gmail.com o @googlemail.com?](#what-should-i-do-if-im-gmailcom-or-googlemailcom-user)
-* [¿Qué debo hacer si soy usuario de Google Workspace?](#what-should-i-do-if-im-a-g-suite-user)
+* [What apps in Adobe Workfront Fusion are affected?](#what-apps-in-adobe-workfront-fusion-are-affected)
+* [Do I have a Google Workspace account?](#do-i-have-a-g-suite-account)
+* [What should I do if I&#39;m a @gmail.com or @googlemail.com user?](#what-should-i-do-if-im-gmailcom-or-googlemailcom-user)
+* [What should I do if I&#39;m a Google Workspace user?](#what-should-i-do-if-im-a-g-suite-user)
 
-### ¿Qué aplicaciones de Adobe Workfront Fusion se ven afectadas? {#what-apps-in-adobe-workfront-fusion-are-affected}
+### What apps in Adobe Workfront Fusion are affected? {#what-apps-in-adobe-workfront-fusion-are-affected}
 
-Google Drive, Gmail y Correo electrónico (conectados a la cuenta de Gmail).
+Google Drive, Gmail, and Email (connected to Gmail account).
 
-### ¿Tengo una cuenta de Google Workspace? {#do-i-have-a-g-suite-account}
+### Do I have a Google Workspace account? {#do-i-have-a-g-suite-account}
 
-Si su dirección de correo electrónico termina con @gmail.com o @googlemail.com, su cuenta no es una cuenta de Google Workspace. Si su cuenta de Google termina con un dominio personalizado como @my-company.com, entonces es una cuenta de Google Workspace.
+If your email address ends with @gmail.com or @googlemail.com, your account is not a Google Workspace account. If your Google account ends with a custom domain such as @my-company.com, then it is a Google Workspace account.
 
-### ¿Qué debo hacer si soy usuario de @gmail.com o @googlemail.com? {#what-should-i-do-if-im-gmailcom-or-googlemailcom-user}
+### What should I do if I&#39;m @gmail.com or @googlemail.com user? {#what-should-i-do-if-im-gmailcom-or-googlemailcom-user}
 
-Estas nuevas restricciones solo se aplican si integra Google Drive o Gmail. Si desea conectarse a Google Drive o Gmail, puede
+These new restrictions only apply if you are integrating Google Drive or Gmail. If you want to connect to Google Drive or Gmail, you can
 
-* Cambiar a Google Workspace
+* Switch to Google Workspace.
 
   o
 
 * Cree un cliente de OAuth personalizado. Esta opción está destinada a usuarios avanzados.
 
-  Para obtener instrucciones, consulte [Conectar Adobe Workfront Fusion a Google Services con un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+  For instructions, see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-Si desea integrar cualquier otro servicio que no sea Google Drive o Gmail, estas restricciones no se aplican.
+If you want to integrate any other service than Google Drive or Gmail, these restrictions do not apply.
 
-### ¿Qué debo hacer si soy usuario de Google Workspace? {#what-should-i-do-if-im-a-g-suite-user}
+### What should I do if I&#39;m a Google Workspace user? {#what-should-i-do-if-im-a-g-suite-user}
 
 No se requiere ninguna acción.

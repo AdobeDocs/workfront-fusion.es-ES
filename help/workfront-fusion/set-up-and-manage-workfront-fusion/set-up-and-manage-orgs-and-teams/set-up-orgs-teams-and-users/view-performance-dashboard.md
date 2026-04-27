@@ -1,19 +1,19 @@
 ---
 title: Ver el panel de control de rendimiento de una organización
-description: Los administradores de Fusion pueden ver un tablero que muestra las métricas de ejecución de una organización.
+description: Fusion administrators can view a dashboard that shows execution metrics for an organization.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '694'
 ht-degree: 9%
 
 ---
 
 # Ver el panel de control de rendimiento de una organización
 
-El panel de control de rendimiento de Fusion le permite ver rápidamente qué escenarios se están ejecutando más, dónde se están produciendo los retrasos y con qué eficacia están funcionando los grupos de trabajo. Esto proporciona visibilidad en tiempo real de los volúmenes de ejecución, la profundidad de la cola, el uso del grupo y el rendimiento en el nivel de escenario.
+The Fusion Performance Dashboard allows you to quickly see which scenarios are running the most, where delays are occurring, and how effectively your worker pools are operating. This provides real-time visibility into execution volumes, queue depth, pool utilization, and scenario-level performance.
 
 ## Requisitos de acceso
 
@@ -25,7 +25,7 @@ El panel de control de rendimiento de Fusion le permite ver rápidamente qué es
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Flujo de trabajo de Adobe Workfront Ultimate y automatización e integración de Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
+   <td> <p>Adobe Workfront Workflow Ultimate and Adobe Workfront Automation and Integration Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -44,11 +44,11 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 +++
 
-## Componentes del panel de rendimiento
+## Performance dashboard components
 
 >[!NOTE]
 >
->Las métricas se muestran por grupo de trabajo. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo para el que desea ver las métricas.
+>Metrics are shown by worker pool. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view metrics for.
 
 <!--
 
@@ -58,37 +58,37 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 -->
 
-En el panel de rendimiento de Fusion, puede ver las siguientes métricas.
+In the Fusion performance dashboard, you can see the following metrics.
 
-* **Ejecuciones esperando a procesarse**
-Este gráfico muestra el número de ejecuciones en espera de procesarse (también conocido como registro de ejecuciones pendientes) en un momento determinado.
+* **Executions waiting to be processed**
+This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time.
 
-  Un número elevado de ejecuciones a la espera de procesarse puede afectar al rendimiento de la instancia de Fusion. Recibirá una notificación si el registro de ejecuciones pendientes alcanza las 5000. Se recomienda identificar los escenarios responsables y modificarlos o deshabilitarlos. Si el registro de ejecución pendiente persiste, el equipo de Fusion protegerá el rendimiento de su instancia de Fusion desactivando los escenarios responsables.
-* **Uso del grupo**
-Este gráfico muestra la utilización del grupo de trabajo a lo largo del tiempo. Si este gráfico muestra de forma rutinaria el uso del grupo de trabajo, puede que desee asignar algunos escenarios a otro grupo.
+  A high number of executions waiting to be processed may affect performance in your Fusion instance. You will receive a notification if your execution backlog reaches 5000 executions. We recommend identifying responsible scenarios and modifying or disabling them. If the high execution backlog persists, the Fusion team will protect the performance of your Fusion instance by disabling the responsible scenarios.
+* **Pool Utilization**
+This chart shows worker pool utilization over time. If this chart routinely shows worker pool utilization, you may want to assign some scenarios to another pool.
 
-  Si un grupo se acerca al 100% de utilización, es posible que otros recursos que utilicen el mismo grupo se retrasen o interrumpan. Si esto sucede, se recomienda reasignar un escenario de uso elevado a otro grupo de trabajadores o modificar los escenarios existentes para que consuman menos recursos.
-* **Ejecuciones por escenario**
-Este gráfico muestra las ejecuciones por escenario. Los diferentes colores representan diferentes escenarios. Cuando pasa el ratón por encima del gráfico, aparece una ventana que muestra qué color es cada escenario.
+  If a pool is nearing 100% utilization, other resources that use the same pool may be delayed or disrupted. If this occurs, we recommend reassigning a high-usage scenario to another worker pool, or modifying existing scenarios to be less resource intensive.
+* **Executions per scenario**
+This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
 
-  Puede utilizar este gráfico para identificar qué escenarios pueden estar causando un retraso en la ejecución o un alto uso del grupo de trabajo.
-* **Duración de las ejecuciones**
-Este gráfico muestra las ejecuciones por escenario. Los diferentes colores representan diferentes escenarios. Cuando pasa el ratón por encima del gráfico, aparece una ventana que muestra qué color es cada escenario.
+  You can use this chart to identify which scenarios may be causing an execution backlog or high worker pool utilization.
+* **Duration of executions**
+This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
 
-  Puede utilizar este gráfico para identificar escenarios que están tardando más de lo normal, incluidos aquellos afectados por problemas con una aplicación o servicio conectado.
+  You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
 
-## Ver el panel de rendimiento de Fusion
+## View the Fusion Performance Dashboard
 
-1. En Fusion, haga clic en Rendimiento en el panel de navegación izquierdo.
+1. In Fusion, click **Performance** in the left navigation.
 
-   Se abrirá el panel.
+   The Dashboard opens.
 
-1. Para ver los datos de un punto específico en el tiempo, pase el ratón sobre un panel y ajuste el cursor para que esté sobre el punto en el tiempo que desee ver.
+1. To view data for a specific point in time, hover over a dashboard and adjust your cursor to be over the point in time you want to view.
 
-   Aparece una línea sobre ese punto en el tiempo en todos los gráficos y en cada gráfico aparece una ventana que muestra los datos de ese tiempo.
-1. Para ver los datos de un escenario específico en el gráfico Ejecuciones por escenario o en el gráfico Duración de las ejecuciones, haga clic en una barra del color del escenario cuyos datos desee ver. Para volver a la vista que muestra todos los escenarios, haga clic de nuevo en el gráfico.
-1. Para ir a un escenario específico que se muestra en el gráfico Ejecuciones por escenario o en el gráfico Duración de las ejecuciones, haga clic con el botón derecho en una barra de color para el escenario y seleccione **Abrir escenario en nueva pestaña**.
-1. Para expandir un gráfico, haz clic en el icono **Expandir** ![Expandir icono](assets/expand-icon.png) en la esquina superior derecha del gráfico.
-1. Para cambiar el intervalo de tiempo del panel, haga clic en el campo Intervalo de tiempo en la esquina superior derecha del panel y, a continuación, seleccione un nuevo lapso de tiempo. El lapso de tiempo más largo disponible es de 24 horas, y el más corto es de 15 minutos.
-1. Para actualizar los gráficos, haga clic en el icono Actualizar situado cerca de la esquina superior derecha del panel.
-1. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo que desee ver.
+   A line appears over that point in time on all the graphs, and a window showing data for that time appears on each graph.
+1. To view data for a specific scenario in the Executions per scenario chart or the Duration of executions chart, click on a bar of the color for the scenario you want to view data for. To return to the view showing all scenarios, click on the graph again.
+1. To go to a specific scenario shown in the Executions per scenario chart or the Duration of executions chart, right click on a bar of the color for the scenario, and select **Open scenario in new tab**.
+1. To expand a chart, click the **Expand** icon ![Expand icon](assets/expand-icon.png) at the upper-right corner of that chart.
+1. To change the time range of the dashboard, the Time Range field in the upper-right corner of the dashboard, then select a new time frame. The longest available time frame is 24 hours, and the shortest is 15 minutes.
+1. To refresh the charts, click the Refresh icon near the upper-right corner of the dashboard.
+1. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view.

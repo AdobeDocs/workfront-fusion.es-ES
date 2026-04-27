@@ -4,10 +4,10 @@ description: Los equipos son grupos más pequeños dentro de la organización y 
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 12%
+ht-degree: 31%
 
 ---
 
@@ -30,8 +30,8 @@ Las organizaciones pueden tener tantos equipos como necesiten y los usuarios pue
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -40,7 +40,7 @@ Las organizaciones pueden tener tantos equipos como necesiten y los usuarios pue
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -53,7 +53,7 @@ Las organizaciones pueden tener tantos equipos como necesiten y los usuarios pue
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -63,7 +63,7 @@ Los propietarios y administradores de organizaciones pueden crear equipos. Los e
 
 Para crear un equipo:
 
-1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Descripción general de la organización]**
+1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Descripción general de la organización]**.
 1. Seleccione la ficha **[!UICONTROL Equipos]**.
 1. Haga clic en **[!UICONTROL Agregar nuevo equipo]**.
    ![Crear un equipo](assets/create-new-team-button.png)
@@ -73,7 +73,7 @@ Para crear un equipo:
 
 Puede editar el nombre de un equipo.
 
-1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Descripción general de la organización]**
+1. En el panel de navegación izquierdo, haga clic en **[!UICONTROL Descripción general de la organización]**.
 1. Seleccione la ficha **[!UICONTROL Equipos]**.
 1. Busque el equipo cuyo nombre desea editar y luego haga clic en **Editar** en la línea correspondiente a ese equipo.
 1. Escriba un nombre nuevo para el equipo y haga clic en **Guardar**.

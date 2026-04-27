@@ -4,10 +4,10 @@ description: Con los módulos de Adobe I/O Events, puede iniciar un escenario de
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 50%
+source-wordcount: '1099'
+ht-degree: 49%
 
 ---
 
@@ -162,8 +162,6 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Activadores
 
-<!--Becky start here-->
-
 #### Crear un registro de eventos
 
 Este módulo de acción utiliza un webhook para crear una descripción de evento. Puede configurar un webhook aquí. Si utiliza un webhook existente, los campos de este módulo son de solo lectura.
@@ -187,7 +185,7 @@ Para crear un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           Descripción del webhook de 
+           Descripción del webhook de [!UICONTROL]
          </td>
          <td>
            Escriba una descripción para este webhook.
@@ -261,7 +259,7 @@ Este módulo de acción realiza una llamada de API personalizada a la API [!DNL 
   <tbody>
     <tr>
      <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe I/O Events], consulte <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Crear una conexión con [!DNL Adobe I/O Events]</a> en este artículo.</td>
+        <td>Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe I/O Events], consulte <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Crear una conexión a [!DNL Adobe I/O Events]</a> en este artículo.</td>
     </tr>
     <tr>
       <td role="rowheader">
@@ -358,7 +356,6 @@ Este módulo de búsqueda recupera todos los eventos para un registro desde un h
        </tr>
      </tbody>
    </table>
-&lt;!—
 
 Ver eventos
 

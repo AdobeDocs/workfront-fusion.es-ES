@@ -1,17 +1,17 @@
 ---
-title: Asignación de información de un módulo a otro
+title: Asignar información de un módulo a otro
 description: La asignación es el proceso de asignar los resultados de un módulo, estructurados en elementos, a los campos de entrada de otro módulo.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 38%
+source-wordcount: '777'
+ht-degree: 51%
 
 ---
 
-# Asignación de información de un módulo a otro
+# Asignar información de un módulo a otro
 
 La asignación es el proceso de asignar los resultados de un módulo a los campos de entrada de otro módulo.
 
@@ -28,8 +28,8 @@ También puede crear una fórmula utilizando cualquier combinación de funciones
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -38,13 +38,13 @@ También puede crear una fórmula utilizando cualquier combinación de funciones
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -78,7 +78,7 @@ Para obtener más información, consulte [Configurar un módulo](/help/workfront
 
 ### Problema: Faltan elementos en el panel de asignación
 
-El panel de asignación muestra los elementos de salida de módulos anteriores. En ocasiones, es posible que falten algunos elementos en este panel. Puede ejecutar el módulo al que le falta salida en el editor de escenarios y, a continuación, el panel de asignación puede incluir esos elementos en módulos posteriores. El procedimiento exacto difiere según el tipo de módulo
+El panel de asignación muestra los elementos de salida de módulos anteriores. En ocasiones, es posible que falten algunos elementos en este panel. Puede ejecutar el módulo al que le falta salida en el editor de escenarios y, a continuación, el panel de asignación puede incluir esos elementos en módulos posteriores. El procedimiento exacto difiere según el tipo de módulo.
 
 * [Activador instantáneo](#instant-trigger)
 * [Activador de sondeo](#polling-trigger)

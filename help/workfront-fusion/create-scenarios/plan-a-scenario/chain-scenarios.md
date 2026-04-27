@@ -4,9 +4,9 @@ description: Puede encadenar escenarios juntos, permitiendo que un escenario alm
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 12%
 
 ---
@@ -60,7 +60,7 @@ Consideremos los siguientes ejemplos de casos de uso para encadenar escenarios:
 
 * **Control de errores**: Es común que las organizaciones tengan las mismas acciones de control de errores en varios escenarios, como una ruta de control de errores que envía un registro de errores a un almacén de datos y crea una notificación de demora. Puede crear un escenario secundario con estas acciones y encadenarlo en rutas de gestión de errores en varios escenarios.
 
-* **Ampliación del tiempo**: puede utilizar el encadenamiento para operaciones por lotes grandes con acciones de ejecución prolongada, como cuando desea exportar e importar archivos. Esta operación tarda algún tiempo si hay muchos archivos. Dado que los escenarios secundarios no cuentan con el tiempo de espera del escenario principal, puede superar el tiempo de ejecución al utilizar varios escenarios secundarios para exportar o importar los archivos.
+* **Ampliación del tiempo**: puede utilizar el encadenamiento para operaciones por lotes grandes con acciones de ejecución prolongada, como cuando exporta e importa archivos. Esta operación tarda algún tiempo si hay muchos archivos. Dado que los escenarios secundarios no cuentan con el tiempo de espera del escenario principal, puede superar el tiempo de ejecución al utilizar varios escenarios secundarios para exportar o importar los archivos.
 
 * **Reemplazar iteradores**: reemplazar iteradores con escenarios secundarios puede reducir el uso de memoria, como en operaciones complejas en una iteración que provocan un error de Memoria insuficiente. Puede crear un escenario independiente para la operación compleja y reemplazar el iterador con el módulo Invocar a un escenario secundario
 
