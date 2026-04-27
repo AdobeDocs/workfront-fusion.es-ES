@@ -8,11 +8,12 @@ description: En esta página se describen todas las mejoras realizadas en Adobe 
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: d9203aa7-f9c4-421c-ae0b-4481d05d5b6f
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 63%
+source-wordcount: '145'
+ht-degree: 67%
 
 ---
 
@@ -24,6 +25,6 @@ Para obtener una lista de todos los cambios recientes, consulte [Actividad de la
 
 Para obtener una lista de las correcciones de errores recientes en Workfront Fusion, consulte la página [Actualizaciones de mantenimiento de Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=es) y busque cualquier actualización etiquetada como Actualización de mantenimiento de Workfront Fusion.
 
-## Consulte la información de programación en el editor de escenarios
+## See schedule information in Scenario editor
 
-El icono Configuración de programación ahora muestra la configuración de programación actual de su escenario. Ahora, cuando esté en el editor de escenarios, podrá ver de un vistazo cuándo su escenario está configurado para ejecutarse. La funcionalidad del icono Configuración de programación no ha cambiado.
+The Schedule setting icon now shows your scenario&#39;s current schedule setting. Now, when you&#39;re in the scenario editor, you can see at a glance when your scenario is set to run. The functionality of the Schedule setting icon has not changed.

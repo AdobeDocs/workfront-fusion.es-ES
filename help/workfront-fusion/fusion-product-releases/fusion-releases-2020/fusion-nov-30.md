@@ -9,11 +9,12 @@ description: En esta página se describen todas las mejoras realizadas en Adobe 
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 76cc14b3-ffec-4d49-b471-f3eb9dd89658
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +28,7 @@ Para obtener una lista de las correcciones de errores recientes en Workfront Fus
 
 ## Límite de velocidad para los webhooks de Workfront Fusion 2.0.
 
-Hemos introducido una nueva protección del rendimiento para Workfront Fusion 2.0. Ahora, los webhooks tienen un límite de 100 solicitudes por segundo. Cuando se alcanza este límite, Workfront Fusion 2.0 envía un estado 429 (Demasiadas solicitudes).
+Hemos introducido una nueva protección de rendimiento para Workfront Fusion 2.0. Ahora, los webhooks tienen un límite de 100 solicitudes por segundo. Cuando se alcanza este límite, Workfront Fusion 2.0 envía un estado 429 (Demasiadas solicitudes).
 
 Anteriormente, las solicitudes de webhook no estaban limitadas.
 

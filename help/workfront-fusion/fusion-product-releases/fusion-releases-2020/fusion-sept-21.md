@@ -8,10 +8,11 @@ description: En esta página se describen todas las mejoras realizadas en Adobe 
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: ca6094d0-d531-4901-bece-6230a0e04cb4
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '267'
 ht-degree: 100%
 
 ---

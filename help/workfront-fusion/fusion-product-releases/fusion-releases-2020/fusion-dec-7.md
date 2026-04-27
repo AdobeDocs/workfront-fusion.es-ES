@@ -8,11 +8,12 @@ description: En esta página se describen todas las mejoras realizadas en Adobe 
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: ec68630c-e89f-465c-bb67-d9898e5b1c2b
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 100%
+source-wordcount: '182'
+ht-degree: 85%
 
 ---
 
@@ -26,7 +27,7 @@ Para obtener una lista de las correcciones de errores recientes en Workfront Fus
 
 ## Ya están disponibles el conector y los módulos del servidor Jira
 
-Ya está disponible un nuevo conector del servidor Jira para Workfront Fusion 2.0. El conector del servidor Jira ofrece la misma funcionalidad que el conector Jira Cloud actual. Con los módulos del servidor Jira, puede hacer lo siguiente:
+Ya está disponible un nuevo conector del servidor Jira para Workfront Fusion 2.0. El conector del servidor Jira ofrece la misma funcionalidad que el conector de nube Jira actual. Con los módulos del servidor Jira, puede hacer lo siguiente:
 
 * Activar un escenario cuando se añade, modifica o elimina un registro
 * Crear, leer, actualizar o eliminar un registro
