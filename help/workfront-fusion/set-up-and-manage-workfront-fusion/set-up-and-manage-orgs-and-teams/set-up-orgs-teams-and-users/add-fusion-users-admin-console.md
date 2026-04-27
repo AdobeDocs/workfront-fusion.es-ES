@@ -72,7 +72,7 @@ Before using the [!DNL Admin Console] for Workfront, you should receive a receiv
 
   O
 
-  Si ya tiene una cuenta de Adobe, vaya a la página de [[!DNL Adobe Admin Console] ](https://adminconsole.adobe.com).
+  Si ya tiene una cuenta de Adobe, vaya a la página de [[!DNL Adobe Admin Console] &#x200B;](https://adminconsole.adobe.com).
 
 
 ## Add a new user to the [!DNL Adobe Admin Console] and Workfront Fusion
