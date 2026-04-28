@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
+source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
 workflow-type: tm+mt
-source-wordcount: '3683'
-ht-degree: 15%
+source-wordcount: '4125'
+ht-degree: 14%
 
 ---
 
@@ -79,7 +79,7 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
      <tbody> 
       <tr> 
        <td role="rowheader">Nombre de la conexión</td> 
-       <td> <p>Introduzca un nombre para la conexión. </p> </td> 
+       <td> <p>Introduzca un nombre para la conexión.</p> </td> 
       </tr> 
       <tr>
         <td role="rowheader">Nombre de usuario</td>
@@ -114,7 +114,7 @@ Al crear una conexión, puede seleccionar si desea utilizar una contraseña o la
      <tbody> 
       <tr> 
        <td role="rowheader">Nombre de la conexión</td> 
-       <td> <p>Introduzca un nombre para la conexión. </p> </td> 
+       <td> <p>Introduzca un nombre para la conexión.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader">Proveedor del servidor de autorización</td> 
@@ -182,6 +182,9 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [Documento](#document)
 * [Objeto](#object)
+* [Extracción de varios archivos](#multi-file-extract)
+* [Carga de varios archivos](#multi-file-load)
+* [Ensayo de archivos](#file-staging)
 * [Otros](#other)
 
 ### Documento
@@ -581,7 +584,7 @@ Este módulo exporta los documentos especificados, incluidos los orígenes, las 
    <td> <p>Seleccione si desea eliminar un documento, un enlace o una plantilla.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p>Fuente</p> </td> 
+   <td role="rowheader"><p>Origen</p> </td> 
    <td> <p>Active esta opción para incluir archivos de origen en la exportación.</p></td> 
   </tr> 
   <tr> 
@@ -970,7 +973,7 @@ Este módulo crea, copia o copia profunda un único registro de objeto.
   </tr> 
   <tr> 
    <td role="rowheader">Sin déclencheur</td> 
-   <td>Si el modo de migración está habilitado, puede habilitar esta opción para omitir todos los Déclencheur del sistema, estándar, personalizados, de SDK déclencheur y de acción.</td> 
+   <td>Si el modo de migración está habilitado, puede habilitar esta opción para omitir todos los Déclencheur del sistema, estándar, personalizados, de SDK y de acción.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nombre de objeto</td> 
@@ -995,6 +998,148 @@ Este módulo crea, copia o copia profunda un único registro de objeto.
  </tbody> 
 </table>
 
+### Extracción de varios archivos
+
+* [Extraer varios archivos](#extract-multiple-files)
+* [Recuperar resultados de extracción](#retrieve-extract-results)
+
+#### Extraer varios archivos
+
+Este módulo de acción crea un trabajo de carga para extraer uno o más archivos de datos.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Conectar Veeva Vault a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archivos de datos</td> 
+   <td>Para cada archivo que desee extraer, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:
+   <ul>
+   <li>Tipo de objeto</li>
+   <li>Criterios de VQL (opcional): para filtrar el conjunto de datos para incluir solo archivos que cumplan criterios específicos, introduzca los criterios en Lenguaje de consulta de Vault (VQL).</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Recuperar resultados de extracción
+
+Este módulo de acción recupera los resultados de una solicitud de extracción especificada.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Conectar Veeva Vault a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID de trabajo</p> </td> 
+   <td> <p>Introduzca o asigne el trabajo para el que desea recuperar los resultados. Puede asignarlo desde el módulo Extraer archivos de datos.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Identificador de tarea</td> 
+   <td> <p>Introduzca o asigne la tarea para la que desea recuperar los resultados. Puede asignarlo desde el módulo Extraer archivos de datos.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Carga de varios archivos
+
+* [Cargar varios archivos](#load-multiple-files)
+* [Recuperar resultados de registro](#retrieve-log-results)
+
+#### Cargar varios archivos
+
+Este módulo crea un trabajo de carga y carga un conjunto de archivos de datos.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Conectar Veeva Vault a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archivo</td> 
+   <td>Introduzca o asigne la ruta de archivo al archivo CSV que utilizará este trabajo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Pedido</td> 
+   <td>Introduzca o asigne el orden de la lista de archivos.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Sin déclencheur</td> 
+   <td>Seleccione Sí para omitir los déclencheur de registro o documento.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Recuperar resultados de registro
+
+Este módulo de acción recupera un registro de los resultados del trabajo del cargador.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Conectar Veeva Vault a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID de trabajo</p> </td> 
+   <td> <p>Introduzca o asigne el trabajo para el que desea recuperar los resultados. Puede asignar esto desde el módulo Cargar archivos de datos.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Identificador de tarea</td> 
+   <td> <p>Introduzca o asigne la tarea para la que desea recuperar los resultados. Puede asignar esto desde el módulo Cargar archivos de datos.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo</td> 
+   <td> <p>Seleccione si desea recuperar trabajos correctos o fallidos.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Ensayo de archivos
+
+#### Lista de elementos en ruta
+
+Este módulo devuelve una lista de archivos y carpetas para la ruta de acceso especificada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Conectar Veeva Vault a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Elija su directorio de inicio</td> 
+   <td>Seleccione el directorio principal desde el que desea enumerar los elementos.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Pedido</td> 
+   <td>Introduzca o asigne el orden de la lista de archivos.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Sin déclencheur</td> 
+   <td>Seleccione Sí para omitir los déclencheur de registro o documento.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Otros
 
 * [Realizar una llamada API personalizada](#make-a-custom-api-call)
@@ -1015,7 +1160,7 @@ Este módulo de acción realiza una llamada personalizada a la API de Veeva Vaul
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Escriba una ruta relativa a <code>baseurl/api/v</code>.  Por ejemplo: <code>/objects/documents</code>. No incluya <code>baseurl/api/v/</code>, ya que ya está incluido.</td> 
+   <td>Escriba una ruta relativa a <code>baseurl/api/v</code>.  Por ejemplo, <code>/objects/documents</code> No incluya <code>baseurl/api/v/</code>, ya que ya está incluido.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Método</td> 
