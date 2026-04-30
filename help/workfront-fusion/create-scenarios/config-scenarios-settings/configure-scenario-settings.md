@@ -5,10 +5,10 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 49%
+source-wordcount: '1306'
+ht-degree: 48%
 
 ---
 
@@ -41,7 +41,7 @@ Puede configurar opciones específicas para escenarios en el panel Configuració
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -58,6 +58,10 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 1. Habilite o deshabilite la configuración de Escenario según sea necesario. Consulte [Opciones de configuración de escenarios](#scenario-settings-options) a continuación.
 
 ## Opciones de configuración de escenarios
+
+### Descripción
+
+Aquí puede escribir una descripción para el escenario, que aparecerá en la lista Escenarios. Las descripciones están limitadas a 240 caracteres.
 
 ### [!UICONTROL Procesamiento secuencial]
 

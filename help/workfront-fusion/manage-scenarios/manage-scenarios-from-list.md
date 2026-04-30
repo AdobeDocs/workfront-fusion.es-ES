@@ -4,10 +4,11 @@ title: Administrar escenarios desde el área de Escenarios
 description: Esta sección contiene artículos relacionados con la gestión de escenarios en Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 1. Para buscar un escenario específico, empiece a escribir en la barra de búsqueda. Los escenarios se filtran a medida que escribe.
 1. Para activar o desactivar un escenario, localícelo en la lista y, a continuación, cambie el conmutador en la columna **Estado** para ese escenario.
 1. Para ir directamente a la página de detalles de un escenario, localícelo en la lista y luego haga clic en **Abrir** en la fila correspondiente a ese escenario.
+1. Para agregar una descripción a un escenario, haga clic en la columna Descripción para ese escenario e introduzca una descripción.
+
+   Las descripciones pueden tener hasta 240 caracteres.
 1. Para clonar un escenario, haga clic en la casilla de verificación de la fila correspondiente y, a continuación, seleccione **Clone** en la barra de la parte inferior de la pantalla.
 
    Para obtener más información sobre los escenarios de clonación, vea [Copiar un escenario mediante clonación](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) en el artículo Copiar módulos o escenarios.
@@ -61,4 +65,3 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 1. Para asignar uno o más escenarios a un grupo de trabajo, haga clic en la casilla de verificación situada junto a cada escenario que desee asignar a un grupo y, a continuación, haga clic en **Asignar a grupo de trabajo** en la barra de la parte inferior de la pantalla. Seleccione el grupo de trabajo al que desee asignar los escenarios.
 1. Para eliminar un escenario, haga clic en la casilla que aparece junto al escenario que desea eliminar y, a continuación, haga clic en **Eliminar** en la barra de la parte inferior de la página.
 1. Para ocultar las columnas de la lista, haga clic en el icono **Columnas** ![Icono de Columnas](assets/glist-column.png) y marque o desmarque las casillas de verificación situadas junto a los nombres de las columnas.
-
