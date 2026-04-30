@@ -4,10 +4,10 @@ description: 'Con los módulos  [!DNL Adobe Workfront Planning] , puede iniciar 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 54%
+source-wordcount: '2106'
+ht-degree: 52%
 
 ---
 
@@ -40,7 +40,7 @@ Con los módulos [!DNL Adobe Workfront Planning], puede almacenar en déclencheu
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -215,6 +215,17 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o elimina un registro, tipo de registro o espacio de trabajo en Workfront Planning.
 
+>[!IMPORTANT]
+>
+>Puede editar este módulo más adelante, que editará el webhook.
+>
+>Tenga en cuenta lo siguiente al actualizar un webhook:
+>
+>* Las suscripciones a eventos de Workfront tratan el webhook editado como una suscripción nueva. El historial de suscripción de eventos no se conserva para la configuración de ganchos web anterior, ya que se considera una suscripción de evento independiente.
+>* Es posible que el cambio de la suscripción de evento antigua a la nueva no esté perfectamente sincronizado. Por lo tanto, es posible recibir un evento dos veces (si la nueva suscripción empieza a ejecutarse antes de que la anterior se detenga) o perderse un evento (si la antigua suscripción se detiene antes de que la nueva comience a ejecutarse).
+>
+>Para obtener más información sobre cómo editar los enlaces web, consulte [Editar enlaces web](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -300,7 +311,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Wo
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre la creación de una conexión a [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Crear una conexión a [!DNL Adobe Workfront Planning]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Crear una conexión con [!DNL Adobe Workfront Planning]</a> en este artículo.</td>
     </tr>
      <tr>
       <td role="rowheader">
