@@ -3,10 +3,11 @@ title: Ver relaciones de escenario encadenado
 description: Puede crear un mapa de las relaciones entre los escenarios principal y secundario.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 22%
+source-wordcount: '485'
+ht-degree: 21%
 
 ---
 
@@ -88,5 +89,6 @@ Para ver el mapa de relaciones de un escenario encadenado:
 
    * Si sólo está viendo una parte del mapa, esa parte es más oscura en el mapa simplificado.
    * El escenario actual está marcado en azul en el mapa simplificado.
+1. Para ver el historial de ejecución de la cadena, haga clic en la pestaña History cerca de la parte superior de la vista.
 
-
+   Puede hacer clic en un historial para ver los datos específicos que se pasan entre escenarios encadenados.
