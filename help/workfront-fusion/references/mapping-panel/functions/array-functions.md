@@ -4,10 +4,10 @@ description: Las siguientes funciones de matriz están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
+source-git-commit: 869927a3bc9849fa136078c8acb195f56aee0320
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 86%
+source-wordcount: '648'
+ht-degree: 80%
 
 ---
 
@@ -231,6 +231,30 @@ yourArray = [3,4,5,6,7]
 * `arrayDifference [myArray, yourArray, symmetric]`
 
   Devuelve `[1,2,6,7]`
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL arrayElement(array; index)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+
+Devuelve el elemento en el índice basado en 1 especificado en la matriz. Devuelve `null` si el índice está fuera de los límites o menos de 1.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `arrayElement(\[10; 20; 30]; 2)`
+
+  Devuelve 20
+* `arrayElement(\[10; 20; 30]; 1)`
+
+  Devuelve 10
+* `arrayElement(\[10; 20; 30]; 5)`
+
+  Devuelve nulo
 
 >[!ENDSHADEBOX]
 

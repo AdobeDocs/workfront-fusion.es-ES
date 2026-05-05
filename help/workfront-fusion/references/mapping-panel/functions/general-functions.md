@@ -4,10 +4,10 @@ description: Las siguientes funciones generales están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 6%
+source-wordcount: '471'
+ht-degree: 10%
 
 ---
 
@@ -19,8 +19,8 @@ Puede utilizar estas variables generales para identificar los detalles de una ej
 
 * `executionID`: el ID de esta ejecución de escenario
 * `triggerTimestamp`: hora a la que se activó esta ejecución
-* `scenarioID`: el identificador del escenario abierto actualmente
-* `operationsConsumed`: número de operaciones utilizadas en ese momento en el escenario.
+* `scenarioID`: ID del escenario abierto actualmente
+* `operationsConsumed`: número de operaciones que se utilizan en ese momento en el escenario.
 
 ## [!UICONTROL get (objeto o matriz; ruta de acceso)]
 
@@ -142,3 +142,102 @@ Devuelve una colección que incluye únicamente la contraseña y la dirección d
 ## mergeCollections(colección1; colección2)
 
 Combina dos colecciones combinando sus pares clave-valor. Si ambas colecciones contienen la misma clave, el valor de la segunda colección sobrescribe ese valor de la primera colección.
+
+### [!UICONTROL isBlank(valor)]
+
+Devuelve `true` si el valor es `null` o una cadena vacía; en caso contrario, devuelve `false`. A diferencia de `ifEmpty`, esta función no trata el número `0` o las cadenas de solo espacio en blanco como en blanco.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `isBlank("")     `
+
+  Devuelve verdadero
+* `isBlank(null)   `
+
+  Devuelve verdadero
+* `isBlank("Hello")`
+
+  Devuelve falso
+* `isBlank(0)      `
+
+  Devuelve falso
+* `isBlank(" ")    `
+
+  Devuelve falso
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL in(valor; valor1; valor2; ...)]
+
+Devuelve `true` si el valor equivale a uno de los valores proporcionados (igualdad estricta, sin coerción de tipos).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `in("B"; "A"; "B"; "C")`
+
+  Devuelve verdadero
+* `in("D"; "A"; "B"; "C")`
+
+  Devuelve falso
+* `in(2; 1; 2; 3)        `
+
+  Devuelve verdadero
+* `in("2"; 1; 2; 3)      `
+
+  Devuelve falso
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(valor; valor1; valor2; ...; expresión_verdadero; expresión_falso)]
+
+Devuelve `trueExpression` si el valor coincide con cualquiera de los valores de coincidencia proporcionados; en caso contrario, devuelve `falseExpression`. Requiere al menos 3 argumentos (valor, un valor de coincidencia y trueExpression + falseExpression).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+  Devuelve sí
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+  Devuelve el valor
+* `ifin("X"; "X"; "found"; "not found")`
+
+  Devoluciones encontradas
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(indexNumber; value1; value2; ...)]
+
+Devuelve el valor en la posición especificada por el número de índice (basado en 1). Devuelve `null` si el índice está fuera de los límites o es 0.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+  Devuelve Sun
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+  Devuelve LUN
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+  Devuelve el mar
+* `case(5; "a"; "b")           `
+
+  Devuelve nulo
+
+>[!NOTE]
+>
+>Se recomienda utilizar esto para obtener el nombre del día de una fecha:
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+

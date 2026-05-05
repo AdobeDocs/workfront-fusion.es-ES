@@ -4,10 +4,10 @@ description: Las siguientes funciones de fecha y hora están disponibles en el p
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 90%
+source-wordcount: '2253'
+ht-degree: 77%
 
 ---
 
@@ -23,7 +23,7 @@ Obtiene la hora actual en formato AAAA-MM-DD-hh:mm:ss.
 
 Obtiene la hora actual como una marca de tiempo Unix.
 
-## Funciones 
+## Funciones
 
 ### [!UICONTROL addSeconds (fecha; número)]
 
@@ -97,6 +97,25 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de dí
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL addWeekDays(date; number)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Añade el número de días de la semana a la fecha. Solo se añaden valores enteros (los valores fraccionarios se redondean hacia abajo).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
+
+Devuelve 2016-12-12T15:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)`
+Devuelve 2016-12-06T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL addMonths (fecha; número)]
 
 Devuelve una nueva fecha como resultado de añadir un número determinado de meses a una fecha. Para restar meses, introduzca un número negativo.
@@ -133,13 +152,294 @@ Devuelve una nueva fecha como resultado de añadir un número determinado de añ
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL dayOfMonth(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el día del mes de la fecha en forma de número entre 1 y 31.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+  Devuelve 28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+  Devuelve 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el día de la semana de la fecha en forma de número entre 1 (domingo) y 7 (sábado).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+  Devuelve 4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+  Devuelve 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el número total de días en el mes de la fecha determinada.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+  Devuelve 31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+  Devuelve 29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el número total de días de la semana entre la fecha y el final de la semana o el final del mes (lo que suceda primero).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+  Devuelve 3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+  Devuelve 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el número total de días del año de una fecha determinada (365 para un año normal, 366 para un año bisiesto).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+  Devuelve 366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+  Devuelve 365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(fecha1; fecha2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve la fecha más reciente (más reciente) de la lista.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+  Devuelve 2016-12-01T00:00:00.000Z
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+  Devuelve 2016-06-15T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(fecha1; fecha2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve la fecha más antigua de la lista.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+  Devuelve 2016-06-01T00:00:00.000Z
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+  Devuelve 2014-03-20T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL hora(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve la hora de la fecha en forma de número entre 0 y 23.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+  Devuelve 15
+* `hour("2016-12-08T00:00:00.000Z")`
+
+  Devuelve 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL minuto(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el minuto de la fecha en forma de número entre 0 y 59.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+  Devuelve 55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+  Devuelve 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL mes(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el mes de la fecha en forma de número entre 1 y 12.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+  Devuelve 12
+* `month("2016-01-08T15:55:57.536Z")`
+
+  Devuelve 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL second(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el segundo de la fecha en forma de número entre 0 y 59.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+  Devuelve 57
+* `second("2016-12-08T15:55:00.000Z")`
+
+  Devuelve 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2; date1)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el número de días de la semana entre dos fechas, teniendo en cuenta las marcas de tiempo de esos días. Por ejemplo, si la hora de inicio es 15:00, el día de inicio no se contará como un día completo.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+  Devuelve 2,5
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+  Devuelve 4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(fecha1; fecha2)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve la cantidad de minutos laborables programados entre dos fechas, según un horario estándar de lunes a viernes de 9:00 a 17:00.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+  Devuelve 480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+  Devuelve 960
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL year(date)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el año de la fecha en forma de número de 4 dígitos.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+  Devuelve 2016
+* `year("2000-01-01T00:00:00.000Z")`
+
+  Devuelve 2000
+
+>[!ENDSHADEBOX]
+
 ### [!UICONTROL setSecond (fecha; número)]
 
 Esta función devuelve una nueva fecha con los segundos especificados en parámetros.
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -465,6 +765,7 @@ Si necesita calcular una fecha correspondiente al enésimo día de la semana del
 
 ![Calcular n.º día](assets/date-time-functions-calc-nth-day-350x31.png)
 
+
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
 ```
@@ -523,6 +824,7 @@ Una posibilidad es utilizar la siguiente expresión:
 
 ![Calcular días entre fechas](assets/calculate-days-between-dates-350x68.png)
 
+
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
 ```
@@ -543,6 +845,7 @@ La fórmula siguiente muestra una forma de calcular el último día del mes ante
 
 ![Último día del mes anterior](assets/last-day-prev-month.png)
 
+
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
@@ -554,6 +857,7 @@ En algunos casos, debe calcular no solo el último día del mes, sino literalmen
 Esta fórmula muestra una forma de calcular el último milisegundo del mes anterior:
 
 ![Último milisegundo del mes anterior](assets/last-millisecond-prev-month-350x45.png)
+
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
