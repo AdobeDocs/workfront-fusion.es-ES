@@ -4,9 +4,9 @@ description: En un escenario de  [!DNL Adobe Workfront Fusion] , es posible auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 42b5b5729b68bf8cea9940fb261a15293db52be1
 workflow-type: tm+mt
-source-wordcount: '4581'
+source-wordcount: '4621'
 ht-degree: 38%
 
 ---
@@ -80,7 +80,7 @@ El conector de Slack utiliza lo siguiente:
  <tbody> 
   <tr> 
    <td role="rowheader">URL base</td> 
-   <td>{{ifempty(parameters.domain, 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -154,11 +154,11 @@ Este módulo de acción crea un nuevo mensaje.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
-   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
+   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
-   <td> <p>Active esta opción para permitir el análisis automático. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo [!UICONTROL Update a Message].</p> </td> 
+   <td> <p>Active esta opción para permitir el análisis automático. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo [!UICONTROL Update a Message].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Use markdown]</p> </td> 
@@ -330,13 +330,13 @@ Este módulo de acción le permite editar un mensaje existente.
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>Elija cómo desea seleccionar el mensaje que desea enviar</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo <strong>[!UICONTROL Channel ID or name]</strong>, escriba o asigne el ID de canal o del canal que contiene el mensaje y, a continuación, escriba la <strong>[!UICONTROL Time Stamp (Message ID)]</strong> del mensaje.</p> <p>Nota: el ID del canal se puede recuperar mediante el módulo [!UICONTROL List Channels].</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo <strong>[!UICONTROL Channel ID or name]</strong>, escriba o asigne el ID de canal o del canal que contiene el mensaje y, a continuación, escriba la <strong>[!UICONTROL Time Stamp (Message ID)]</strong> del mensaje. .</p> <p>Nota: el ID del canal se puede recuperar mediante el módulo [!UICONTROL List Channels].</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Seleccione el tipo de canal, seleccione el canal y, a continuación, seleccione el mensaje.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
-   <td> <p>Introduzca el nuevo contenido de texto del mensaje que desea actualizar.</p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
+   <td> <p>Introduzca el nuevo contenido de texto del mensaje que desea actualizar.</p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Blocks]</td> 
@@ -348,7 +348,7 @@ Este módulo de acción le permite editar un mensaje existente.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
-   <td> <p>Active esta opción para permitir el análisis automático. </p> <p> Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo Actualizar un mensaje.</p> </td> 
+   <td> <p>Active esta opción para permitir el análisis automático. </p> <p> Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo Actualizar un mensaje.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1476,9 +1476,9 @@ Este módulo de acción actualiza el estado actual de un usuario.
 
 ### Otros
 
-+++ **[!UICONTROL Realizar una llamada de API]**
++++ **[!UICONTROL Realización de una llamada de API]**
 
-Este módulo de acción le permite realizar una llamada autenticada personalizada a la API de [!DNL Slack]. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los otros módulos de [!DNL Slack].
+Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Slack]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Slack] módulos.
 
 <table style="table-layout:auto"> 
  <col> 

@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 585574f60758a27eb695f31c1193ed86ab700d38
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 67%
+source-wordcount: '2071'
+ht-degree: 68%
 
 ---
 
@@ -81,7 +81,7 @@ El conector de Slack utiliza lo siguiente:
  <tbody> 
   <tr> 
    <td role="rowheader">URL base</td> 
-   <td>{{ifempty(parameters.domain, 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -166,7 +166,7 @@ Este módulo de acción crea un nuevo mensaje.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
-   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
+   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
@@ -297,7 +297,7 @@ Este módulo de acción le permite editar un mensaje existente.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
-   <td> <p>Introduzca el nuevo contenido de texto del mensaje que desea actualizar.</p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
+   <td> <p>Introduzca el nuevo contenido de texto del mensaje que desea actualizar.</p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Como usuario]</td> 
@@ -313,7 +313,7 @@ Este módulo de acción le permite editar un mensaje existente.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
-   <td> <p>Active esta opción para permitir el análisis automático. </p> <p> Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo Actualizar un mensaje.</p> </td> 
+   <td> <p>Active esta opción para permitir el análisis automático. </p> <p> Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo Actualizar un mensaje.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -448,9 +448,9 @@ Este módulo de búsqueda devuelve una lista de usuarios en el canal seleccionad
 
 ### Otros
 
-#### [!UICONTROL Realizar una llamada de API]
+#### [!UICONTROL Realización de una llamada de API]
 
-Este módulo de acción le permite realizar una llamada autenticada personalizada a la API de [!DNL Slack]. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los otros módulos de [!DNL Slack].
+Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Slack]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Slack] módulos.
 
 <table style="table-layout:auto"> 
  <col> 
