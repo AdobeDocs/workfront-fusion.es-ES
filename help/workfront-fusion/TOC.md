@@ -2,9 +2,9 @@
 user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
-source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
+source-git-commit: 1752b97d5902c9f9b2ec3a8c0bd01f9dbab93d0a
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2397'
 ht-degree: 55%
 
 ---
@@ -16,14 +16,15 @@ ht-degree: 55%
 * Actividad de la versión de Fusion {#fusion-release-activity}
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2026 {#fusion-releases-2026}
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 27 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-27.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 13 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 30 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 23 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 16 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 9 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 2 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
-      * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 23 de febrero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
+      * [Actividad de la versión de Workfront Fusion: Semana del 4 de mayo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
+      * [Actividad de la versión de Workfront Fusion: Semana del 27 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-27.md)
+      * [Actividad de la versión de Workfront Fusion: Semana del 13 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 30 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 23 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
+      * [Actividad de la versión de Workfront Fusion: semana del 16 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
+      * [Actividad de la versión de Workfront Fusion: Semana del 9 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
+      * [Actividad de la versión de Workfront Fusion: Semana del 2 de marzo de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
+      * [Actividad de la versión de Workfront Fusion: Semana del 23 de febrero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
    * Versiones de Fusion: 2025 {#fusion-releases-2025}
       * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 16 de febrero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
       * {hide-from-toc}[Actividad de la versión de Workfront Fusion: semana del 9 de febrero de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
