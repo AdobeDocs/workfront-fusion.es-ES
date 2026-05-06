@@ -4,9 +4,9 @@ description: Las siguientes funciones generales están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 5709c9c0f8efd2c29ff7dbc0391a5b496a467c6a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 10%
 
 ---
@@ -20,6 +20,7 @@ Puede utilizar estas variables generales para identificar los detalles de una ej
 * `executionID`: el ID de esta ejecución de escenario
 * `triggerTimestamp`: hora a la que se activó esta ejecución
 * `scenarioID`: ID del escenario abierto actualmente
+* `scenarioName`: nombre del escenario que se está ejecutando
 * `operationsConsumed`: número de operaciones que se utilizan en ese momento en el escenario.
 
 ## [!UICONTROL get (objeto o matriz; ruta de acceso)]

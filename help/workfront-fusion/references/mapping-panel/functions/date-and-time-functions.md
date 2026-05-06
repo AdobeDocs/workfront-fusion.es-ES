@@ -4,10 +4,10 @@ description: Las siguientes funciones de fecha y hora están disponibles en el p
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 77%
+source-wordcount: '2375'
+ht-degree: 73%
 
 ---
 
@@ -294,6 +294,31 @@ Devuelve la fecha más antigua de la lista.
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el último momento del mes de la fecha determinada (el último milisegundo del último día) (23:59:59,999). Representa automáticamente el número de días del mes, incluidos los años bisiestos.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Devuelve 2016-06-30T23:59:59.999Z
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  Devuelve 2016-01-31T23:59:59.999Z
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  Devuelve 2016-02-29T23:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL hora(fecha)]
 
 [!BADGE Nuevo!]{type=Informative}
@@ -310,6 +335,35 @@ Devuelve la hora de la fecha en forma de número entre 0 y 23.
 * `hour("2016-12-08T00:00:00.000Z")`
 
   Devuelve 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve `true` si la fecha es un sábado o un domingo, y `false` para cualquier otro día. El resultado se determina en la zona horaria configurada del escenario.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  Devuelve verdadero (sábado)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  Devuelve verdadero (domingo)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  Devuelve falso (lunes)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  Devuelve falso (viernes)
 
 >[!ENDSHADEBOX]
 
@@ -370,6 +424,27 @@ Devuelve el segundo de la fecha en forma de número entre 0 y 59.
 * `second("2016-12-08T15:55:00.000Z")`
 
   Devuelve 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(fecha)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el primer momento del mes de la fecha determinada: medianoche del primer día (00:00:00,000). El resultado tiene en cuenta la zona horaria.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplos:**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Devuelve 2016-06-01T00:00:00.000Z
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  Devuelve 2024-02-01T00:00:00.000Z
 
 >[!ENDSHADEBOX]
 
@@ -439,7 +514,7 @@ Esta función devuelve una nueva fecha con los segundos especificados en paráme
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
