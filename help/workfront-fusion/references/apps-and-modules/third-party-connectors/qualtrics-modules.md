@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 80b441b7-c808-4c4f-b9ff-d614650dbb73
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: b4353a0746f4f427c70d0a213e5dde36ff869ab8
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 45%
+source-wordcount: '352'
+ht-degree: 88%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 45%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Qualtrics], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,8 +28,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -39,19 +39,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -70,8 +70,8 @@ El conector Qualtrics utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
-   <td> https://{{connection.dataCenterCode}}.qualtrics.com/API/v3 </td> 
+   <td role="rowheader">URL base</td> 
+   <td><pre><code>https://&#123;&#123;connection.dataCenterCode&#125;&#125;.qualtrics.com/API/v3</code></pre></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
@@ -100,7 +100,7 @@ Puede crear una conexión a su cuenta de [!DNL Qualtrics] directamente desde un 
       <td> <p>Introduzca un nombre para la nueva conexión.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Data Center ID] </td> 
+      <td role="rowheader">[!UICONTROL Data Center ID] </td> 
       <td>Use el formato <code>&lt;Data Center ID>.qualtrics.com</code>.</td> 
      </tr> 
      <tr> 

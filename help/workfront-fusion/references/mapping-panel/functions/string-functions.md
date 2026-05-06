@@ -4,10 +4,10 @@ description: Las siguientes funciones de cadena están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 98%
+source-wordcount: '778'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ Devuelve la longitud de la cadena de texto (número de caracteres) o del búfer 
 
 >[!BEGINSHADEBOX]
 
- **Ejemplo:**
+**Ejemplo:**
 
 `length( hello )`
 
@@ -148,7 +148,7 @@ Convierte todos los caracteres alfabéticos de una cadena de texto a mayúsculas
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo**
+**Ejemplo:**
 
 `upper( Hello )`
 
@@ -392,3 +392,144 @@ Transforma el texto en base64.
 Devuelve: d29ya2Zyb250==
 
 >[!ENDSHADEBOX]
+
+
+### [!UICONTROL concat(cadena1; separador; cadena2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Concatena cadenas con un separador entre cada una.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `concat("Hello"; " "; "World")`
+
+  Devuelve Hello World
+* `concat("a"; "-"; "b"; "c")`
+
+  Devuelve a-b-c
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL left(string; length)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el número de caracteres especificado del lado izquierdo de una cadena.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `left("Hello"; 3)`
+
+  Devuelve la ayuda
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL right(cadena; longitud)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el número de caracteres especificado del lado derecho de una cadena.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `right("Hello"; 3)`
+
+  Devuelve llo
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL removeAccents(string)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Quita los signos diacríticos (acentos) de los caracteres acentuados.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `removeAccents("Héllo wörld")`
+
+  Devuelve Hello world
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL replacePattern(string; pattern; replace)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Reemplaza todas las coincidencias de un patrón de expresión regular por una
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `replacePattern("foo123bar"; "\\d+"; "\_")`
+
+  Devuelve foo\_bar
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortAscString(string1; string2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve las cadenas proporcionadas en orden ascendente (alfabético).
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `sortAscString("banana"; "apple"; "cherry")`
+
+  Devuelve \[&quot;manzana&quot;, &quot;plátano&quot;, &quot;cereza&quot;]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortDescString(string1; string2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve las cadenas proporcionadas ordenadas en orden descendente (alfabético inverso).
+
+**Sintaxis:** `sortDescString(string1; string2; ...)`
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `sortDescString("banana"; "apple"; "cherry")`
+
+  Devuelve \[&quot;cereza&quot;, &quot;plátano&quot;, &quot;manzana&quot;]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL pascal(cadena)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Convierte una cadena en PascalCase al poner en mayúscula la primera letra de cada palabra y eliminar espacios.
+
+**Sintaxis:** `pascal(string)`
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `pascal("hello world")`
+
+  Devuelve HelloWorld
+* `pascal("foo bar baz")`
+
+  Devuelve FooBarBaz
+
+>[!ENDSHADEBOX]
+
+

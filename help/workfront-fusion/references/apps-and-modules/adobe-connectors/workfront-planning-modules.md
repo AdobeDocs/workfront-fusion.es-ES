@@ -4,9 +4,9 @@ description: 'Con los módulos  [!DNL Adobe Workfront Planning] , puede iniciar 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
+source-git-commit: 4a8c59b780cc47e71c4c57bb11c6585a124bad42
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2101'
 ht-degree: 52%
 
 ---
@@ -62,7 +62,7 @@ El conector de Adobe Workfront Planning utiliza lo siguiente:
  <tbody> 
   <tr> 
    <td role="rowheader">URL base</td> 
-   <td>https://{{connection.host}}/maestro/api/{{common.maestroApiVersion}}/</td> 
+   <td><pre><code>https://&#123;&#123;connection.host&#125;&#125;/maestro/api/&#123;&#123;common.maestroApiVersion&#125;&#125;/</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 

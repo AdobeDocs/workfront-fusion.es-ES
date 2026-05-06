@@ -5,10 +5,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 5967d83107337e6567c0bb3974ba4047ed520f11
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 45%
+source-wordcount: '1063'
+ht-degree: 63%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 45%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Workday], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -29,8 +29,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -40,19 +40,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -75,8 +75,8 @@ El conector de Workday utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
-   <td>https://{{connection.servicesUrl}}/api</td> 
+   <td role="rowheader">URL base</td> 
+   <td><pre><code>https://&#123;&#123;connection.servicesUrl&#125;&#125;/api</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -99,7 +99,7 @@ El conector de Workday utiliza lo siguiente:
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Introduzca un nombre para la conexión. </td>
+                <td>Introduzca un nombre para la conexión.</td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Workday host]</td>
@@ -135,7 +135,7 @@ El conector de Workday utiliza lo siguiente:
 
 Al configurar módulos de [!DNL Workday], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Workday] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -146,16 +146,16 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Acción
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Creación de un registro]](#create-a-record)
 
 * [[!UICONTROL Eliminar un registro]](#delete-a-record)
 
-* [[!UICONTROL Realizar una llamada de API personalizada]](#make-a-custom-api-call)
+* [[!UICONTROL Realizar una llamada API personalizada]](#make-a-custom-api-call)
 
-* [[!UICONTROL Actualizar un registro]](#update-a-record)
+* [[!UICONTROL Actualización de un registro]](#update-a-record)
 
 
-#### [!UICONTROL Crear un registro]
+#### [!UICONTROL Creación de un registro]
 
 Este módulo de acción crea un único registro en [!DNL Workday].
 
@@ -216,7 +216,7 @@ Este módulo de acción elimina un único registro de [!DNL Workday].
 </table>
 
 
-### [!UICONTROL Realizar una llamada de API personalizada]
+### [!UICONTROL Realizar una llamada API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Workday]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Workday] módulos.
 
@@ -234,11 +234,11 @@ El módulo devuelve el código de estado, junto con los encabezados y el cuerpo 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Escriba una ruta relativa a <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>.</td> 
+   <td>Introduzca una ruta relativa a <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -258,7 +258,7 @@ El módulo devuelve el código de estado, junto con los encabezados y el cuerpo 
  </tbody> 
 </table>
 
-#### [!UICONTROL Actualizar un registro]
+#### [!UICONTROL Actualización de un registro]
 
 Este módulo de acción actualiza un único registro en [!DNL Workday].
 

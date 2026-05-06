@@ -4,10 +4,10 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 88e75d6f385bec049a9f7a0cd613032119c249b0
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 78%
+source-wordcount: '3032'
+ht-degree: 82%
 
 ---
 
@@ -19,9 +19,9 @@ Para ver un vídeo introductorio del conector de Salesforce, consulte:
 
 * [Salesforce](https://video.tv.adobe.com/v/3427027/){target=_blank}
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 >[!NOTE]
 >
@@ -38,8 +38,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -49,19 +49,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -80,8 +80,8 @@ El conector de Salesforce utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
-   <td> {{connection.instanceUrl}}</td>
+   <td role="rowheader">URL base</td> 
+   <td><pre><code>&#123;&#123;connection.instanceUrl&#125;&#125;</code></pre></td>
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
@@ -289,7 +289,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 ### Acciones
 
 * [[!UICONTROL Crear un registro]](#create-a-record)
-* [[!UICONTROL Llamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Llamada API personalizada]](#custom-api-call)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Descargar archivo adjunto/documento]](#download-attachmentdocument)
 * [[!UICONTROL Leer un registro]](#read-a-record)
@@ -325,13 +325,13 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Llamada de API personalizada]
+#### [!UICONTROL Llamada API personalizada]
 
-Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Salesforce]. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los otros módulos de [!DNL Salesforce].
+Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Salesforce]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Salesforce] módulos.
 
 El módulo devuelve lo siguiente:
 
-* **[!UICONTROL Código de estado]** (número): esto indica si la solicitud HTTP se realizó correctamente o no. Se trata de códigos estándar que puede buscar en internet.
+* **[!UICONTROL Código de estado]** (número): indica si la petición HTTP se ha realizado correctamente o no. Se trata de códigos estándar que puede buscar en internet.
 * **[!UICONTROL Encabezados]** (objeto): contexto más detallado para el código de respuesta/estado que no está relacionado con el cuerpo de salida. No todos los encabezados que aparecen en un encabezado de respuesta son de respuesta, por lo que algunos podrían no resultarle útiles.
 
   Los encabezados de respuesta dependen de la petición HTTP elegida al configurar el módulo.
@@ -350,11 +350,11 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Escriba una ruta relativa a <code> &lt;Instance URL&gt;/services/data/v62.0/</code>.</p> <p>Para obtener la lista de puntos finales disponibles, consulte la <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Guía para desarrolladores de API de REST de Salesforce</a>.</p> </td> 
+   <td> <p>Introduzca una ruta relativa a <code> &lt;Instance URL&gt;/services/data/v62.0/</code>.</p> <p>Para obtener la lista de puntos finales disponibles, consulte la <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Guía para desarrolladores de API de REST de Salesforce</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -386,7 +386,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 * **Clave**: `q`
 
-* **Valor**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+* **Valor**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
 
 Las coincidencias de la búsqueda se encuentran en la salida del módulo en **[!UICONTROL Paquete] > [!UICONTROL Cuerpo] > [!UICONTROL registros]**.
 
@@ -420,7 +420,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>Escriba o asigne el identificador único [!DNL Salesforce] del registro que desea que elimine el módulo.</p> <p>Para obtener el identificador, abra el objeto [!DNL Salesforce] en el explorador y copie el texto al final de la dirección URL después de la última barra diagonal (/). Por ejemplo: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
+   <td> <p>Escriba o asigne el identificador único [!DNL Salesforce] del registro que desea que elimine el módulo.</p> <p>Para obtener el identificador, abra el objeto de [!DNL Salesforce] en el explorador y copie el texto al final de la dirección URL después de la última barra diagonal (/). Por ejemplo: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -454,7 +454,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr>
     <td> <p>[!UICONTROL ID] / </p> <p>[!UICONTROL Attachment ID] / </p> <p>[!UICONTROL ContentDocument ID]</p> </td>
-    <td> <p>Escriba o asigne el identificador único de [!DNL Salesforce] del registro que desea que descargue el módulo.</p> <p>Para obtener el identificador, abra el objeto de [!DNL Salesforce] en el explorador y copie el texto al final de la dirección URL después de la última barra diagonal (/). Por ejemplo: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
+    <td> <p>Escriba o asigne el identificador único de [!DNL Salesforce] del registro que desea que descargue el módulo.</p> <p>Para obtener el identificador, abra el objeto [!DNL Salesforce] en el explorador y copie el texto al final de la dirección URL después de la última barra diagonal (/). Por ejemplo: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -575,7 +575,7 @@ Este módulo de acción carga un solo archivo en Salesforce.
    <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL &#x200B; Adobe Workfront Fusion]: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
    <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </td> 
   </tr> 
   <tr> 

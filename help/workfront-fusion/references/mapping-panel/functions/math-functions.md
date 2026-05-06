@@ -4,16 +4,16 @@ description: Las siguientes funciones matemáticas están disponibles en el pane
 author: Becky
 feature: Workfront Fusion
 exl-id: 3d08b09d-b395-4226-b7e3-d5650c428a59
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 97%
+source-wordcount: '404'
+ht-degree: 62%
 
 ---
 
 # Funciones matemáticas
 
-## [!UICONTROL average ([array of values]) average(value1; [value2], ...)]
+## [!UICONTROL average ([matriz de valores]) average(value1; [value2], ...)]
 
 Devuelve el valor promedio de los valores numéricos en una matriz específica o el valor promedio de los valores numéricos introducidos individualmente.
 
@@ -57,11 +57,11 @@ Devuelve el valor entero más alto que sea menor o igual que un número especifi
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL max ([array of values]), max(value1;value2; ...)]
+## [!UICONTROL max ([matriz de valores]), max(value1;value2; ...)]
 
 Devuelve el número mayor de una matriz especificada o el número mayor entre los números introducidos individualmente.
 
-## [!UICONTROL min ([array of values]), min(value1; value2; ...)]
+## [!UICONTROL min ([matriz de valores]), min(value1; value2; ...)]
 
 Devuelve el número menor dentro de una matriz especificada o el número menor entre los números introducidos individualmente.
 
@@ -71,7 +71,7 @@ Redondea al valor numérico entero más cercano
 
 >[!BEGINSHADEBOX]
 
-**Ejemplos**
+**Ejemplos:**
 
 * `round(` `1.2` `)`
 
@@ -91,7 +91,7 @@ Redondea al valor numérico entero más cercano
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sum ([array of values]), sum(value1; value2; ...)]
+## [!UICONTROL sum ([matriz de valores]), sum(value1; value2; ...)]
 
 Devuelve la suma de los valores en una matriz especificada o la suma de los números introducidos individualmente.
 
@@ -112,3 +112,201 @@ Devuelve un número en el formato solicitado. De forma predeterminada, el punto 
 Devuelve 123 456 789 000
 
 >[!ENDSHADEBOX]
+
+### [!UICONTROL abs(número)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el valor absoluto de un número.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `abs(-3.14)`
+
+  Devuelve 3.14
+* `abs(3.14)`
+
+  Devuelve 3.14
+
+
+### [!UICONTROL div(número1; número2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Divide todos los números en el orden proporcionado.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `div(10; 2)`
+
+  Devuelve 5
+* `div(100; 5; 4)`
+
+  Devuelve 5
+
+
+### [!UICONTROL ln(número)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el logaritmo natural del número.
+
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `ln(1)`
+
+  Devuelve 0
+* `ln(2.718281828)`
+
+  Devuelve 1
+
+
+### [!UICONTROL log(número1; número2)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve el logaritmo de `number2` en la base `number1`.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `log(10; 100)`
+
+  Devuelve 2
+* `log(2; 8)`
+
+  Devuelve 3
+
+
+### [!UICONTROL número(cadena)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Convierte una cadena en un número.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `number("3.14")`
+
+  Devuelve 3.14
+* `number("42")`
+
+  Devuelve 42
+
+
+### [!UICONTROL power(number; power)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve un número elevado a la potencia especificada.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `power(2; 3)`
+
+  Devuelve 8
+* `power(4; 0.5)`
+
+  Devuelve 2
+
+
+### [!UICONTROL prod(número1; número2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Multiplica todos los números proporcionados juntos.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `prod(2; 3; 4)`
+
+  Devuelve 24
+* `prod(5; 5)`
+
+  Devuelve 25
+
+
+### [!UICONTROL sortAscNum(número1; número2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve los números proporcionados ordenados en orden ascendente.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `sortAscNum(3; 1; 2)`
+
+  Devuelve \[1, 2, 3]
+* `sortAscNum(5; 3; 4)`
+
+  Devuelve \[3, 4, 5]
+
+
+### [!UICONTROL sortDescNum(número1; número2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve los números proporcionados ordenados en orden descendente.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `sortDescNum(3; 1; 2)`
+
+  Devuelve \[3, 2, 1]
+* `sortDescNum(5; 3; 4)`
+
+  Devuelve \[5, 4, 3]
+
+
+### [!UICONTROL sqrt(número)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Devuelve la raíz cuadrada de un número.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `sqrt(9)`
+
+  Devuelve 3
+* `sqrt(4)`
+
+  Devuelve 2
+
+
+### [!UICONTROL sub(número1; número2; ...)]
+
+[!BADGE Nuevo!]{type=Informative}
+
+Resta todos los números en el orden proporcionado.
+
+>[!BEGINSHADEBOX]
+
+**Ejemplo:**
+
+* `sub(10; 3; 2)`
+
+  Devuelve 5
+* `sub(20; 5)`
+
+  Devuelve 15
