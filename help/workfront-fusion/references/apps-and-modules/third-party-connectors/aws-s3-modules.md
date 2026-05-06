@@ -167,7 +167,7 @@ Este módulo de acción descarga un archivo desde un bloque.
 
 Este módulo de acción realiza una llamada personalizada a la API de AWS S3.
 
-Para obtener una explicación sobre la API de [!DNL Amazon S3], consulte Introducción a la API REST de [[!DNL Amazon S3] ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
+Para obtener una explicación sobre la API de [!DNL Amazon S3], consulte Introducción a la API REST de [[!DNL Amazon S3] &#x200B;](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
 <table style="table-layout:auto">
  <col> 
