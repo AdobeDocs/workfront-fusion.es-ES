@@ -4,7 +4,7 @@ description: Las siguientes funciones de cadena están disponibles en el panel d
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 469bd8cfff897ab956e75ca61ae9608114d0d2c6
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 78%
@@ -404,10 +404,10 @@ Concatena cadenas con un separador entre cada una.
 
 **Ejemplo:**
 
-* `concat("Hello"; " "; "World")`
+* `concat(; Hello ; World)`
 
   Devuelve Hello World
-* `concat("a"; "-"; "b"; "c")`
+* `concat(-; a ; b; c)`
 
   Devuelve a-b-c
 
