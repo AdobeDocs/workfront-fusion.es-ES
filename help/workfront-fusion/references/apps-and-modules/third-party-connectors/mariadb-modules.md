@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
 TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 657
@@ -97,7 +99,7 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
       <td>El puerto predeterminado es 3306. Si utiliza un puerto no estándar, establezca este número en el puerto. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Base de datos ]</td> 
+      <td role="rowheader">[!UICONTROL Base de datos &#x200B;]</td> 
       <td>Introduzca el nombre de la base de datos con la que desea interactuar.</td> 
      </tr> 
      <tr> 

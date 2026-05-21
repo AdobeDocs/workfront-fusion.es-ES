@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
 TQID: https://experienceleague.adobe.com/jo9dNX5czLlg7Wi4iFBR6FlOM-fmM-i3zoEhh5sgsqc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 607
@@ -75,7 +77,7 @@ Antes de usar [!DNL Admin Console] para Workfront, debería recibir un mensaje d
 
   O
 
-  Si ya tiene una cuenta de Adobe, vaya a la página de [[!DNL Adobe Admin Console] ](https://adminconsole.adobe.com).
+  Si ya tiene una cuenta de Adobe, vaya a la página de [[!DNL Adobe Admin Console] &#x200B;](https://adminconsole.adobe.com).
 
 
 ## Agregar un nuevo usuario a [!DNL Adobe Admin Console] y a Workfront Fusion

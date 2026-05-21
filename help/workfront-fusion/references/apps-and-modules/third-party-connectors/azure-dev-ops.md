@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
 TQID: https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1897
@@ -189,7 +192,7 @@ El módulo genera el ID de objeto para el elemento de trabajo recién creado o l
        <li> <p><strong>[!UICONTROL Descripción]</strong>: escriba o asigne una descripción para el nuevo proyecto. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: seleccione si desea que el proyecto sea público o privado. Para poder interactuar con un proyecto privado, los usuarios deben haber iniciado sesión en su organización y se les debe haber concedido acceso al proyecto. Los proyectos públicos son visibles para los usuarios que no han iniciado sesión en su organización.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>: seleccione si desea que el proyecto use [!DNL Git] o [!UICONTROL Team Foundation Version Control (TFCV)] para el control de versiones.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>: seleccione el proceso de trabajo que desee utilizar para el proyecto. Las opciones son [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] y [!UICONTROL Agile].</p> <p>Para obtener más información sobre [!DNL Azure DevOps] procesos, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Procesos predeterminados y plantillas de proceso</a> en la documentación de [!DNL Azure DevOps].</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>: seleccione el proceso de trabajo que desee utilizar para el proyecto. Las opciones son [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] y [!UICONTROL Agile].</p> <p>Para obtener más información sobre [!DNL Azure DevOps] procesos, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">Procesos predeterminados y plantillas de proceso</a> en la documentación de [!DNL Azure DevOps].</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Rellene los campos siguientes:</p> 
       <ul> 

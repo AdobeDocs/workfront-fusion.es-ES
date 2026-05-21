@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
 TQID: https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 959
@@ -123,7 +127,7 @@ Puede crear una conexión con su cuenta de [!DNL Datadog] directamente desde un 
       <td> <p>Seleccione el dominio al que desea conectarse (EE. UU. o UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Ubicación de la clave API [!UICONTROL] </td> 
+      <td role="rowheader">Ubicación de la clave API  </td> 
       <td> <p>Seleccione si desea incluir la clave de API en el encabezado o en la cadena de consulta.</p> </td> 
      </tr> 
      <tr> 

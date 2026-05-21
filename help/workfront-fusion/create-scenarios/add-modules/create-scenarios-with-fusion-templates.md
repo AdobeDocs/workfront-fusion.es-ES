@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
 TQID: https://experienceleague.adobe.com/b6P6739Vad2S9ZkYJr24KVCv5FE99Cz6ZGAwkcF-yYE
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 415
@@ -54,7 +55,7 @@ Las plantillas públicas están disponibles sin requisitos previos.
 
 ## Creación de un escenario a partir de una plantilla
 
-1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas![&#128279;](assets/templates-icon.png) de la ficha Plantillas** en el panel de navegación izquierdo.
 1. Haga clic en la ficha que contiene la plantilla que desea usar (**Plantillas públicas** o **Plantillas de equipo**).
 1. Busque una plantilla específica utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en la plantilla que desee utilizar para crear un escenario.

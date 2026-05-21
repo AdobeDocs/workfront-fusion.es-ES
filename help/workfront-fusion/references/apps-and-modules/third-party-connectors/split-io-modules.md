@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
 TQID: https://experienceleague.adobe.com/K-dqwsk18sW-l7LlvWqE2kReKWA9I-yQSJXbAzyjRjU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1941
@@ -115,7 +117,7 @@ Puede crear una conexión con su cuenta de [!DNL Split.io] directamente desde un
         </td>
       </tr>
       <tr> 
-       <td role="rowheader">Clave de API [!UICONTROL]</td> 
+       <td role="rowheader">Clave de API </td> 
        <td>Escriba su clave de API de [!DNL Split.io].<p>Para obtener más información sobre las claves de API de [!DNL Split.io], consulte <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">claves de API</a> en la documentación de [!DNL Split.io].</p></td> 
       </tr> 
      </tbody> 
