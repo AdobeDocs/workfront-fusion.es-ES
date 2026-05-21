@@ -4,9 +4,11 @@ description: Cuando se producen errores durante la ejecución de un escenario, s
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: d7072a2dca50bf47f20d1f25dba4d3fb819d3ddc
+TQID: https://experienceleague.adobe.com/3Ro1DMD2tIXSZuXo77JEw2EtlVpoS-D6CNGyR9QcFXg
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: 1156
 ht-degree: 21%
 
 ---

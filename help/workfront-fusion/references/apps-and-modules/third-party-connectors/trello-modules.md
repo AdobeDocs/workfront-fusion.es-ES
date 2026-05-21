@@ -1,13 +1,16 @@
 ---
-title: Módulos Trello
+title: Módulos de Trello
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Trello, así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/OIQOEivCkKstdfGnDsqlkNLHqU0nk81BaWTL1wJu-GI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '5386'
-ht-degree: 69%
+source-wordcount: 5401
+ht-degree: 72%
 
 ---
 
@@ -15,9 +18,9 @@ ht-degree: 69%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!UICONTROL Trello], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,8 +31,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -39,19 +42,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -70,12 +73,12 @@ El conector Trello utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://api.trello.com/1</td>
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> Versión 1 </td> 
+   <td> v1 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -92,7 +95,7 @@ Para obtener instrucciones sobre cómo conectar su cuenta de [!UICONTROL Trello]
 
 Al configurar los módulos [!UICONTROL Trello], Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos [!UICONTROL Trello] adicionales, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -133,7 +136,7 @@ Este módulo de acción cierra (archiva) o vuelve a abrir (desarchiva) un tabler
 
 +++ **[!UICONTROL Asignar un miembro a un tablero]**
 
-Este módulo de acción asigna un miembro al tablero que especifique. 
+Este módulo de acción asigna un miembro al tablero que especifique.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -250,7 +253,7 @@ Este módulo de acción crea un tablero nuevo con la configuración seleccionada
    <td> <p>Seleccione entre dos modos de caducidad de la tarjeta. </p> 
     <ul> 
      <li><strong>[!UICONTROL modo pirata]</strong>: Las cartas se rasgarán, se pondrán amarillas y se agrietarán como un viejo mapa pirata a medida que envejezcan.</li> 
-     <li><strong>[!UICONTROL Modo normal &#x200B;]</strong>: Las tarjetas se vuelven cada vez más transparentes a medida que envejecen. </li> 
+     <li><strong>[!UICONTROL Modo normal ]</strong>: Las tarjetas se vuelven cada vez más transparentes a medida que envejecen. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -265,95 +268,95 @@ Este módulo de acción edita la configuración de un tablero existente.
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Connection] </td> 
->   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!UICONTROL Trello] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
->   <td> <p>Introduzca o asigne el ID [!UICONTROL Trello] único del tablero que desea que cree el módulo. Puede recuperar el ID de tablero con otro módulo, como el módulo Tableros de observación</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL New name]</td> 
->   <td> <p> Introduzca o asigne un nombre nuevo para el tablero.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL New description]</td> 
->   <td> <p> Introduzca o asigne una nueva descripción de tablero.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
->   <td> <p>Introduzca o asigne el ID [!UICONTROL Trello] único del tablero que desea que edite el módulo.  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Subscribe] </td> 
->   <td> <p>Seleccione una opción para especificar si el usuario propietario de la conexión utilizada por este módulo está suscrito al tablero.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
->   <td> <p>Los tableros tienen diferentes reglas de votación y comentarios para cada nivel de permiso. Por ejemplo: si el tablero es [!UICONTROL Private] y establece las reglas de votación y comentarios como [!UICONTROL All], recibirá un error. </p> <p>Votar y comentar está limitado a los siguientes grupos para cada nivel de permiso:</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Privado]</strong>: 
->      Miembros, miembros y observadores</li> 
->     <li><strong>[!UICONTROL Para la organización]</strong>: 
->      Miembros, Miembros y Observadores, Miembros de la Organización</li> 
->     <li><strong>[!UICONTROL Público]</strong>: 
->      Miembros, Miembros y Observadores, Miembros de la Organización, Todos</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
->   <td> <p>Seleccione una opción para especificar quién puede votar en este tablero. Consulte el campo [!UICONTROL Permission level] para ver las limitaciones de voto en los niveles de permiso.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
->   <td> <p>Seleccione una opción para especificar quién puede realizar comentarios en las tarjetas de este tablero. Consulte el campo [!UICONTROL Permission level] para comentar las limitaciones de los niveles de permiso.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Invitations] </td> 
->   <td> <p>Seleccione quién puede invitar a personas a este tablero.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Self-join]</td> 
->   <td> <p> Seleccione si los integrantes del equipo pueden unirse al tablero ellos mismos o si tienen que ser invitados.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Card covers]</td> 
->   <td> <p> Seleccione si las cubiertas de tarjeta deben mostrarse en este tablero.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Background] </td> 
->   <td> <p>Seleccione el color del fondo o el fondo personalizado.</p> <p>Nota: los fondos personalizados solo están disponibles para suscriptores de [!UICONTROL Trello Gold and Business Class].</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Background ID]</td> 
->   <td> <p> Si ha seleccionado utilizar un fondo personalizado en el campo [!UICONTROL Fondo], introduzca o asigne el ID del fondo que desea utilizar.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
->   <td> <p>Seleccione entre dos modos de caducidad de la tarjeta. </p> 
->    <ul> 
->     <li><strong>[!UICONTROL modo pirata]</strong>: Las cartas se rasgarán, se pondrán amarillas y se agrietarán como un viejo mapa pirata a medida que envejezcan.</li> 
->     <li><strong>[!UICONTROL Modo normal]</strong>: Las tarjetas se vuelven cada vez más transparentes a medida que envejecen. </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
->   <td> <p> Seleccione si la fuente del calendario está habilitada o no.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
->   <td> <p> Asigne un nombre a la etiqueta de color que desee.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Archive] </td> 
->   <td> <p>Seleccione una opción para indicar si desea archivar (cerrar) el tablero. </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!UICONTROL Trello] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
+   <td> <p>Introduzca o asigne el ID [!UICONTROL Trello] único del tablero que desea que cree el módulo. Puede recuperar el ID de tablero con otro módulo, como el módulo Tableros de observación</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New name]</td> 
+   <td> <p> Introduzca o asigne un nombre nuevo para el tablero.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New description]</td> 
+   <td> <p> Introduzca o asigne una nueva descripción de tablero.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
+   <td> <p>Introduzca o asigne el ID [!UICONTROL Trello] único del tablero que desea que edite el módulo.  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+   <td> <p>Seleccione una opción para especificar si el usuario propietario de la conexión utilizada por este módulo está suscrito al tablero.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
+   <td> <p>Los tableros tienen diferentes reglas de votación y comentarios para cada nivel de permiso. Por ejemplo: si el tablero es [!UICONTROL Private] y establece las reglas de votación y comentarios como [!UICONTROL All], recibirá un error. </p> <p>Votar y comentar está limitado a los siguientes grupos para cada nivel de permiso:</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Privado]</strong>: 
+      Miembros, miembros y observadores</li> 
+     <li><strong>[!UICONTROL Para la organización]</strong>: 
+      Miembros, Miembros y Observadores, Miembros de la Organización</li> 
+     <li><strong>[!UICONTROL Público]</strong>: 
+      Miembros, Miembros y Observadores, Miembros de la Organización, Todos</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>Seleccione una opción para especificar quién puede votar en este tablero. Consulte el campo [!UICONTROL Permission level] para ver las limitaciones de voto en los niveles de permiso.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+   <td> <p>Seleccione una opción para especificar quién puede realizar comentarios en las tarjetas de este tablero. Consulte el campo [!UICONTROL Permission level] para comentar las limitaciones de los niveles de permiso.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Invitations] </td> 
+   <td> <p>Seleccione quién puede invitar a personas a este tablero.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Self-join]</td> 
+   <td> <p> Seleccione si los integrantes del equipo pueden unirse al tablero ellos mismos o si tienen que ser invitados.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card covers]</td> 
+   <td> <p> Seleccione si las cubiertas de tarjeta deben mostrarse en este tablero.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background] </td> 
+   <td> <p>Seleccione el color del fondo o el fondo personalizado.</p> <p>Nota: los fondos personalizados solo están disponibles para suscriptores de [!UICONTROL Trello Gold and Business Class].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> Si ha seleccionado utilizar un fondo personalizado en el campo [!UICONTROL Fondo], introduzca o asigne el ID del fondo que desea utilizar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
+   <td> <p>Seleccione entre dos modos de caducidad de la tarjeta. </p> 
+    <ul> 
+     <li><strong>[!UICONTROL modo pirata]</strong>: Las cartas se rasgarán, se pondrán amarillas y se agrietarán como un viejo mapa pirata a medida que envejezcan.</li> 
+     <li><strong>[!UICONTROL Modo normal]</strong>: Las tarjetas se vuelven cada vez más transparentes a medida que envejecen. </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
+   <td> <p> Seleccione si la fuente del calendario está habilitada o no.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
+   <td> <p> Asigne un nombre a la etiqueta de color que desee.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive] </td> 
+   <td> <p>Seleccione una opción para indicar si desea archivar (cerrar) el tablero. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -462,7 +465,7 @@ Este módulo de activador inicia un escenario cuando se añade un nuevo tablero.
 
 +++ **[!UICONTROL Create a List]**
 
-Este módulo de acción crea una lista en un tablero que se especifique. 
+Este módulo de acción crea una lista en un tablero que se especifique.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -686,7 +689,7 @@ Este módulo de acción crea una tarjeta en una lista seleccionada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> Escriba una fecha de límite para la tarjeta. Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p> Escriba una fecha de límite para la tarjeta. Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -697,7 +700,7 @@ Este módulo de acción crea una tarjeta en una lista seleccionada.
    <td> <p>Introduzca o asigne la dirección URL del archivo que desee añadir como datos adjuntos a la tarjeta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Archivo de origen]</p> </td> 
    <td> <p>Escriba o asigne información para un archivo que desee agregar como datos adjuntos a la tarjeta. Seleccione un archivo de un módulo anterior o asigne el nombre y los datos del archivo</p> 
      <p>Nota: Hay un límite de carga de archivos de 10 MB por archivo adjunto. Sin embargo, los miembros de [!UICONTROL Business Class] y [!UICONTROL Trello Gold] tienen un límite de carga de archivos de 250 MB por archivo adjunto.</p> 
      </li> 
@@ -758,7 +761,7 @@ Este módulo de acción edita una tarjeta existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> Escriba una fecha de límite para la tarjeta. Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p> Escriba una fecha de límite para la tarjeta. Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -1099,7 +1102,7 @@ Este módulo de acción añade una etiqueta a la tarjeta seleccionada.
    <td> <p> Seleccione cómo desea introducir el ID de la tarjeta en la que desea añadir una lista de comprobación.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>En el campo <strong>[!UICONTROL Card ID]</strong>, escriba o asigne el ID de la tarjeta donde quiera añadir una lista de comprobación. En el campo <strong>[!UICONTROL Label ID]</strong>, introduzca o asigne el ID de la etiqueta que quiera añadir.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleccione el tablero que contiene la tarjeta en la que desea añadir una lista de verificación, luego la lista que contiene la tarjeta y, a continuación, la tarjeta. </p> <p>Seleccione la etiqueta que quiera mover a la carpeta raíz.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleccione el tablero que contiene la tarjeta en la que desea añadir una lista de verificación, luego la lista que contiene la tarjeta y, a continuación, la tarjeta. </p> <p>Seleccione la etiqueta que desea añadir a la tarjeta.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1162,11 +1165,11 @@ Este módulo de acción añade un comentario a una tarjeta seleccionada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since] </td> 
-   <td> <p>Establezca la fecha de inicio del periodo en el que se creó el comentario. Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p>Establezca la fecha de inicio del periodo en el que se creó el comentario. Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
-   <td> <p>Establezca la fecha de finalización del periodo en el que se creó el comentario. Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
+   <td> <p>Establezca la fecha de finalización del periodo en el que se creó el comentario. Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1198,7 +1201,7 @@ Este módulo de déclencheur inicia un escenario cuando se agrega un comentario.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Introduzca o asigne el número máximo de comentarios que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de comentarios que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

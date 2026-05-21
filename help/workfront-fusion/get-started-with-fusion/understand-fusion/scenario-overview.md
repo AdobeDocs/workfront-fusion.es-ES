@@ -4,9 +4,11 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
-workflow-type: ht
-source-wordcount: '704'
+TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 705
 ht-degree: 100%
 
 ---
@@ -84,7 +86,7 @@ En este ejemplo, el escenario se activa cuando un campo especificado cambia en u
 >
 >Si su organización utiliza el modelo de licencias heredado, su organización debe tener una licencia de Workfront Fusion para la automatización e integración de trabajo para conectarse a otras aplicaciones.
 
-Workfront Fusion puede conectarse a otras aplicaciones y servicios web. Puede acceder, importar, manipular o exportar datos de otras aplicaciones, integrándolos con Workfront o entre sí. 
+Workfront Fusion puede conectarse a otras aplicaciones y servicios web. Puede acceder, importar, manipular o exportar datos de otras aplicaciones, integrándolos con Workfront o entre sí.
 
 Muchas aplicaciones tienen conectores de Workfront Fusion dedicados. Si no hay ningún conector dedicado para la aplicación a la que desee acceder, puede usar los módulos HTTP o SOAP de Workfront Fusion para conectarse a la aplicación a través de su API.
 

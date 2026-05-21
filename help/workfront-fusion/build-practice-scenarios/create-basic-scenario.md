@@ -7,10 +7,13 @@ description: Aprenda a crear un escenario de automatización sencillo con Adobe 
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 66%
+source-wordcount: 1426
+ht-degree: 67%
 
 ---
 
@@ -162,7 +165,7 @@ En este caso, una prueba que se realice correctamente buscaría la solicitud y l
 
    >[!IMPORTANT]
    >
-   >Guarde con frecuencia mientras perfecciona y prueba un escenario. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
+   >Se recomienda guardar con frecuencia mientras se perfeccionan y prueban escenarios. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
 
 >[!TIP]
 >

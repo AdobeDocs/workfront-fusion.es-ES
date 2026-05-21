@@ -4,9 +4,12 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: 4690
 ht-degree: 98%
 
 ---
@@ -74,7 +77,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name]</td> 
-      <td> <p>Introduzca un nombre para la conexión. </p> </td> 
+      <td> <p>Introduzca un nombre para la conexión.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL [!DNL GitLab] URL]</td> 
@@ -781,7 +784,7 @@ Este módulo de búsqueda devuelve una lista de compilaciones para un compromiso
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -960,7 +963,7 @@ Para obtener información sobre los campos, consulte [Modificar una nota existen
 
 Modifica la nota existente de una solicitud de combinación.
 
-Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
+Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
 
 +++
 
@@ -1014,7 +1017,7 @@ Este módulo de acción reintenta una sola compilación en un compromiso.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
+   <td>Para crear una nueva conexión, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> en este artículo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 

@@ -7,9 +7,14 @@ description: Utilice estas plantillas para automatizar los flujos de trabajo ent
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aadid: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4171'
+source-wordcount: 4277
 ht-degree: 5%
 
 ---
@@ -47,7 +52,7 @@ Adobe Workfront Fusion ofrece plantillas que pueden automatizar flujos de trabaj
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -60,7 +65,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
   Para obtener información e instrucciones, consulte [Configuración de cuenta técnica](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) en la documentación de Adobe.
 * Debe aplicar permisos de administrador del sistema a la cuenta técnica en el área Perfiles de producto de Adobe Admin Console.
 
-  Para obtener información e instrucciones, consulte [Crear administradores de sistemas en Workfront con Adobe Admin Console](https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Para obtener información e instrucciones, consulte [Crear administradores de sistemas en Workfront con Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -155,13 +160,13 @@ Para utilizar estos módulos, se debe crear lo siguiente en Workfront:
 
 1. En Workfront, cree un usuario de integración del sistema. Este usuario solo lo utiliza Workfront Fusion y no representa a un usuario humano. Las tareas asignadas a este usuario almacenarán en déclencheur el escenario que sincroniza Workfront con Jira.
 
-   Para obtener instrucciones, consulte [Agregar usuarios](https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) en la documentación de Workfront.
+   Para obtener instrucciones, consulte [Agregar usuarios](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) en la documentación de Workfront.
 
 #### Creación de un formulario personalizado en Workfront
 
 1. En Workfront, empiece a crear un formulario personalizado.
 
-   Para obtener instrucciones, consulte [Crear un formulario personalizado](https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) en la documentación de Workfront.
+   Para obtener instrucciones, consulte [Crear un formulario personalizado](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) en la documentación de Workfront.
 1. Asigne un nombre al formulario &quot;**Campos JIRA**&quot;.
 1. Incluya los siguientes campos en el formulario personalizado:
 
@@ -178,7 +183,7 @@ Para utilizar estos módulos, se debe crear lo siguiente en Workfront:
 >
 >Se recomienda restringir este formulario de las ediciones realizadas por otros usuarios. Puede hacerlo asegurándose de que los usuarios agregados al formulario personalizado solo tengan acceso de visualización.
 >
->Para obtener instrucciones, consulte [Compartir un formulario personalizado](https://experienceleague.adobe.com/es/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) en la documentación de Workfront.
+>Para obtener instrucciones, consulte [Compartir un formulario personalizado](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) en la documentación de Workfront.
 
 ### Configuración de conexiones en Workfront Fusion
 
@@ -233,7 +238,7 @@ Si se asigna una tarea de Workfront, el problema en Jira es una Tarea. Si se asi
 
 #### Configuración del módulo de déclencheur
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en **Workfront to Jira: crear problema JIRA a partir de la asignación de tarea o problema de Workfront**.
 
@@ -292,7 +297,7 @@ Este escenario crea una tarea o un problema de Workfront cuando se crea un probl
 
 +++**Amplíe para ver las instrucciones para configurar Scenario 2: JIRA en Workfront: envíe actualizaciones sobre problemas y comentarios de vuelta a Workfront desde Jira**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en **Parte 2: JIRA a Workfront: envía actualizaciones sobre problemas y comentarios de vuelta a Workfront desde la plantilla Jira**.
 
@@ -333,7 +338,7 @@ Este escenario crea una tarea o un problema de Workfront cuando se crea un probl
 
 +++**Amplíe para ver las instrucciones para configurar el escenario 3: cambios de WF a Jira (tareas)**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en la plantilla **Parte 3: Workfront to Jira: Changes to Workfront task to JIRA issue**.
 
@@ -375,7 +380,7 @@ Este escenario envía actualizaciones de problemas de Workfront a problemas de J
 
 +++**Expanda para ver las instrucciones para configurar el escenario 4: Workfront a Jira: cambios en el problema de Workfront a problema de JIRA**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en la plantilla **Escenario 4: cambios de WF a Jira (problemas)**.
 
@@ -415,7 +420,7 @@ Este escenario envía actualizaciones de problemas de Workfront a problemas de J
 
 +++**Amplíe para ver las instrucciones para configurar el Escenario 5: de Workfront a Jira: crear un comentario en JIRA cuando se cree una nota nueva sobre una tarea o un problema de Workfront**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en **Escenario 5: WF a Jira Nuevas notas (tareas y problemas)** plantilla.
 
@@ -452,7 +457,7 @@ Este escenario envía actualizaciones de problemas de Workfront a problemas de J
 
 +++**Amplíe para ver las instrucciones para configurar el Escenario 6: de Workfront a Jira: crear comentario en JIRA sobre una nota eliminada en una tarea o un problema de Workfront**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en **Escenario 6: WF-to-Jira Quitar notas (Tareas y problemas)** plantilla.
 
@@ -489,7 +494,7 @@ Este escenario envía actualizaciones de problemas de Workfront a problemas de J
 
 +++**Amplíe para ver las instrucciones para configurar el Escenario 7: de Workfront a Jira: crear un comentario en JIRA cuando se cree un nuevo documento sobre una tarea o un problema de Workfront**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en **Escenario 7: WF a Jira Nuevos archivos adjuntos (tareas y problemas)** plantilla.
 
@@ -525,7 +530,7 @@ Este escenario envía actualizaciones de problemas de Workfront a problemas de J
 
 +++**Expanda para ver las instrucciones para configurar el Escenario 8: de Workfront a Jira: crear un comentario en JIRA en un documento eliminado en una tarea o un problema de Workfront**
 
-1. Haga clic en el **icono de plantillas** de la ficha ![Plantillas](assets/templates-icon.png) en el panel de navegación izquierdo.
+1. Haga clic en el **icono de plantillas](assets/templates-icon.png) de la ficha ![Plantillas** en el panel de navegación izquierdo.
 1. Busque la plantilla utilizando la barra de búsqueda cerca de la esquina superior izquierda de la pantalla. Puede buscar por nombre de plantilla o aplicaciones incluidas.
 1. Haga clic en **Escenario 8: WF-to-Jira Quitar archivos adjuntos (tareas y problemas)** plantilla.
 

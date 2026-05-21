@@ -1,12 +1,15 @@
 ---
-title: Módulos Figma
+title: Módulos de Figma
 description: Con los módulos Adobe Workfront Fusion Figma, puede recuperar listas de comentarios, archivos, versiones de archivos o proyectos. También puede publicar un comentario o hacer una llamada a la API de Figma.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
+TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: 2643
 ht-degree: 22%
 
 ---
@@ -17,7 +20,7 @@ Con los módulos de Adobe Workfront Fusion [!DNL Figma], puede recuperar listas 
 
 Si necesita instrucciones sobre cómo crear un escenario, vea los artículos en [Crear un escenario: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -29,7 +32,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -45,7 +48,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -70,12 +73,12 @@ El conector Figma utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://api.figma.com/v1</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> Versión 1 </td> 
+   <td> v1 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -121,7 +124,7 @@ Para crear una conexión para los módulos Figma:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Escriba el Secreto de cliente de Figma .</td>
+        <td>Escriba el Secreto de cliente de Figma [!UICONTROL].</td>
         </tr>
         <tr>
         <td role="rowheader">Ámbitos personalizados</td>
@@ -142,7 +145,7 @@ Para crear una conexión para los módulos Figma:
 
 Al configurar módulos de [!DNL Figma], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Figma] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -152,7 +155,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [Componentes y estilos](#components-and-styles)
 
-* [Otro](#other)
+* [Otros](#other)
 
 
 ### Comentarios
@@ -340,7 +343,7 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
       <td role="rowheader">[!UICONTROL Profundidad]</td>
       <td>
         <p>Introduzca o asigne un entero que represente la profundidad en el árbol de documentos para la que desea devolver resultados. </p>
-        <div class="example"><span class="autonumber"><span><b>Ejemplo:</b></span></span>
+        <div class="example"><span class="autonumber"><span><b>Ejemplo: </b></span></span>
           <ul>
             <li>
               <p>Para devolver solo las páginas, escriba <code>1</code>.</p>
@@ -393,7 +396,7 @@ Este módulo de acción recupera un solo archivo o imagen de una biblioteca Figm
       <td role="rowheader">[!UICONTROL Profundidad]</td>
       <td>
         <p>Introduzca o asigne un entero que represente la profundidad en el árbol de documentos para la que desea devolver resultados. </p>
-        <div class="example"><span class="autonumber"><span><b>Ejemplo:</b></span></span>
+        <div class="example"><span class="autonumber"><span><b>Ejemplo: </b></span></span>
           <ul>
             <li>
               <p>Para devolver solo las páginas, escriba <code>1</code>.</p>
@@ -626,7 +629,7 @@ Este módulo de acción recupera un solo estilo o componente, o un conjunto de e
 </table>
 
 
-### Otro
+### Otros
 
 * [Realizar una llamada de API](#make-an-api-call)
 
@@ -648,7 +651,7 @@ Este módulo de acción le permite realizar una llamada autenticada personalizad
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>Escriba una ruta relativa a <code>https://api.figma.com/v1/</code>.</p>
+        <p>Introduzca una ruta relativa a <code>https://api.figma.com/v1/</code>.</p>
         <p>Por ejemplo: <code>[!DNL files/7179110/comments]</code></p>
       </td>
     </tr>
@@ -708,7 +711,7 @@ Este módulo de déclencheur inicia un escenario cuando se produce uno de los si
             <p>Haga clic en <b>[!UICONTROL Agregar]</b> junto al campo [!UICONTROL Webhook].</p>
           </li>
           <li>
-            <p>Introduzca un nombre para el webhook. </p>
+            <p>Introduzca un nombre para el webhook.</p>
           </li>
           <li>
             <p>Seleccione la conexión que desea utilizar para este webhook. Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Figma] a [!UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a [!UICONTROL Adobe Workfront Fusion]: instrucciones básicas.</a></p>

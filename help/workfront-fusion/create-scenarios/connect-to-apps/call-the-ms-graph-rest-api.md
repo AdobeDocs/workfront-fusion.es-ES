@@ -1,17 +1,21 @@
 ---
-title: Llamar a la API de REST de MS Graph
+title: Llamar a la API REST de MS Graph
 description: Llame a la API de REST de MS Graph a través de Adobe Workfront Fusion HTTP &> Cree un módulo de solicitud OAuth 2.0
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/EhrbH3ohTVdBxnrbfVI8Uwqq7j8BfCrdWvEn7Y0pe4A
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 18%
+source-wordcount: 719
+ht-degree: 36%
 
 ---
 
-# Llamar a la API de REST de MS Graph
+# Llamar a la API REST de MS Graph
 
 Se accede a muchos servicios web de Microsoft a través de la API de Microsoft Graph. Puede crear una conexión a la API de Microsoft Graph con el módulo de solicitud Workfront Fusion HTTP > Crear una OAuth 2.0.
 
@@ -24,8 +28,8 @@ Se accede a muchos servicios web de Microsoft a través de la API de Microsoft G
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +39,19 @@ Se accede a muchos servicios web de Microsoft a través de la API de Microsoft G
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -125,8 +129,8 @@ Después de registrar Workfront Fusion como se describe en [Registrar Workfront 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">Nombre de conexión</td> 
-      <td>Introduzca un nombre para la conexión. </td> 
+      <td role="rowheader">Nombre de la conexión</td> 
+      <td>Introduzca un nombre para la conexión.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p role="rowheader">Entorno</p> </td> 
@@ -157,7 +161,7 @@ Después de registrar Workfront Fusion como se describe en [Registrar Workfront 
       <td>Seleccione <code>SPACE</code>. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Id. de cliente</td> 
+      <td role="rowheader">ID de cliente</td> 
       <td>Introduzca el ID de aplicación del paso 2 en <a href="#register-workfront-fusion-in-the-microsoft-application-registration-portal" class="MCXref xref">Registre Workfront Fusion en el portal de registro de aplicaciones de Microsoft</a>.</td> 
      </tr> 
      <tr> 

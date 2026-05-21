@@ -4,9 +4,14 @@ description: Puede utilizar el conector Adobe Workfront Fusion para automatizar 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
+TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7298'
+source-wordcount: 7298
 ht-degree: 98%
 
 ---
@@ -485,7 +490,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-Consulte una lista de tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consulte una lista de los tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -512,7 +517,7 @@ Consulte una lista de tipos de objetos de Workfront para los que puede usar este
 >
 >   Para resolver los usuarios que se añadieron en un lote grande, puede añadir el lote de usuarios directamente a Adobe Admin Console.
 >
->   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
+>   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
 
 +++
 
@@ -665,7 +670,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-Consulte una lista de tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos disponibles en Workfront en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consulte una lista de los tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -1047,7 +1052,7 @@ Workfront acaba de lanzar una nueva versión de su servicio de suscripción a ev
 
 Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 
-Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2379,7 +2384,7 @@ Le recomendamos que lo verifique bien para asegurarse de que esto funciona de la
 >
 >   Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 >
->   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción a eventos, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones a eventos (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es)].
+>   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción a eventos, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones a eventos (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 El módulo de Workfront [!UICONTROL Ver eventos] activa escenarios basados en un webhook que crea una suscripción a eventos en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 

@@ -4,9 +4,11 @@ description: El editor de escenarios permite crear y editar escenarios en una in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 70d715dad3122683b1cf4411c118868c745ca7ff
+TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: 629
 ht-degree: 40%
 
 ---

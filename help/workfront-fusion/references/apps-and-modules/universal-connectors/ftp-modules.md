@@ -4,10 +4,13 @@ description: Los módulos FTP permiten supervisar los cambios realizados en un a
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 77%
+source-wordcount: 1404
+ht-degree: 84%
 
 ---
 
@@ -24,8 +27,8 @@ Los módulos FTP permiten supervisar los cambios realizados en un archivo de una
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +38,19 @@ Los módulos FTP permiten supervisar los cambios realizados en un archivo de una
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -168,7 +171,7 @@ Este módulo de acción cambia la configuración de permisos de un archivo o car
    <tbody>
          <tr>
             <td>[!UICONTROL Connection]</td>
-            <td>Para obtener instrucciones sobre el establecimiento de una conexión en la cuenta de FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] en un módulo FTP</a> en este artículo.</td>
+            <td>Para obtener instrucciones sobre cómo establecer una conexión con la cuenta de FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] en un módulo FTP</a> en este artículo.</td>
          </tr>
          <tr>
             <td>[!UICONTROL Change permission settings of]</td>
@@ -351,10 +354,10 @@ Carga un archivo en el servidor FTP.
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
-   <td> <p>Seleccione la carpeta FTP en la que desea copiar el archivo. </p> </td> 
+   <td> <p>Seleccione la carpeta FTP en la que desea copiar el archivo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file] </td> 
+   <td>[!UICONTROL Archivo de origen] </td> 
    <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </td> 
   </tr> 
   <tr> 

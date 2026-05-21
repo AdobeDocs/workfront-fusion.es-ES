@@ -4,10 +4,13 @@ description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/aqE-HRALPymeQ8S3v6W1DGXOKmWIBCCWETigPp232jA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4539'
-ht-degree: 100%
+source-wordcount: 4588
+ht-degree: 99%
 
 ---
 
@@ -113,7 +116,7 @@ Puede conectarse automáticamente con credenciales de usuario, crear manualmente
 Este método crea una conexión automáticamente si ha iniciado sesión en Frame.io, o le conecta a la página de inicio de sesión de Frame.io para que pueda iniciar sesión.
 
 1. En cualquier módulo de Frame.io, haga clic en **[!UICONTROL Añadir]** junto al cuadro Conexión.
-1. Introduzca un nombre para la conexión. 
+1. Introduzca un nombre para la conexión.
 1. Haga clic en **Continuar**.
 1. Si se le pide que inicie sesión en su cuenta de Frame.io, hágalo.
 1. Si forma parte de más de una organización Frame.io, seleccione la que desee utilizar para esta conexión.
@@ -206,7 +209,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret].  Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo crear credenciales, consulte <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Crear credenciales de usuario en Adobe Developer Console</a> en este artículo.</p>
+          <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo crear credenciales, consulte <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Crear credenciales de usuario en Adobe Developer Console</a> en este artículo.</p>
         </tr>
        </tbody>
     </table>
@@ -280,7 +283,7 @@ Si todavía no tiene credenciales de servidor a servidor en un proyecto de Adobe
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret].  Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo crear credenciales, consulte <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Crear credenciales de servidor a servidor en Adobe Developer Console</a> en este artículo.</p>
+          <td>Introduzca su [!DNL Adobe] [!UICONTROL Client Secret]. Esto se puede encontrar en la sección [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].<p>Para obtener instrucciones sobre cómo crear credenciales, consulte <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Crear credenciales de servidor a servidor en Adobe Developer Console</a> en este artículo.</p>
         </tr>
        </tbody>
     </table>
@@ -894,7 +897,7 @@ Este módulo de búsqueda recupera todos los proyectos del equipo especificado.
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned projects] </td> 
    <td> <p>Introduzca o asigne el número máximo de proyectos
-  que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
+   desea que el módulo se devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1026,7 +1029,7 @@ Este módulo enumera todos los espacios de trabajo de una cuenta.
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
    <td> <p>Introduzca o asigne el número máximo de espacios de trabajo
-   que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
+   desea que el módulo se devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

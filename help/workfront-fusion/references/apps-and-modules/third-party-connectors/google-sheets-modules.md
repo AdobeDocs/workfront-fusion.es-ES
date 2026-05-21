@@ -1,13 +1,17 @@
 ---
-title: Módulos de Google Sheets
+title: Módulos de Hojas de cálculo de Google
 description: Para usar  [!DNL Google Sheets] con Adobe Workfront Fusion, necesita la extensión [!UICONTROL Workfront Fusion Google Sheets] (opcional, pero necesaria para los déclencheur instantáneos).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/jotAS2NHIZV4NNM0tvhGFlTnT-owWSKo8zo7cV4J7dM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 65%
+source-wordcount: 4067
+ht-degree: 67%
 
 ---
 
@@ -26,8 +30,8 @@ Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Sheet
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -37,19 +41,19 @@ Para obtener instrucciones sobre la conexión de la cuenta de [!DNL Google Sheet
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -68,7 +72,7 @@ El conector de Google Sheets utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://sheets.googleapis.com/v4</td> 
   </tr> 
   <tr> 
@@ -86,7 +90,7 @@ El conector de Google Sheets utiliza lo siguiente:
 
 Al configurar módulos de [!DNL Google Forms], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Google Sheets] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -140,7 +144,7 @@ El módulo solo recupera las filas nuevas que no se hayan rellenado anteriorment
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Date and time render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33,625. Esto trata correctamente el año 1900 como un año no bisiesto.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p></li><ul> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33.625. Esto trata correctamente el año 1900 como un año no bisiesto.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p></li><ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -169,7 +173,7 @@ Este módulo añade una fila a una hoja.
 
 Al configurar módulos de [!DNL Google Sheets], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Google Sheets] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -213,7 +217,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
    <td>[!UICONTROL Value input option]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Los valores se analizan como si el usuario los hubiera escrito en la IU. Los números se mantienen, pero las cadenas se pueden convertir en números, fechas u otros formatos siguiendo las mismas reglas que se aplican al escribir texto en una celda a través de la IU de [!DNL Google Sheets].</p> </li> 
+     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Los valores se analizan como si el usuario los hubiera escrito en la IU. Los números siguen siendo números, pero las cadenas se pueden convertir en números, fechas u otros formatos siguiendo las mismas reglas que se aplican al escribir texto en una celda a través de la interfaz de usuario de [!DNL Google Sheets].</p> </li> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Los valores que introduce el usuario no se analizan y se almacenan tal y como se introdujeron. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -431,7 +435,7 @@ Recupera un valor de una celda seleccionada.
   </tr> 
   <tr> 
    <td>[!DNL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!DNL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33,625. Esto trata correctamente el año 1900 como un año no bisiesto.</p></li><li> <p style="font-weight: bold;">[!DNL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p> </li><ul></td> 
+   <td> <ul><li><p style="font-weight: bold;">[!DNL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33.625. Esto trata correctamente el año 1900 como un año no bisiesto.</p></li><li> <p style="font-weight: bold;">[!DNL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p> </li><ul></td> 
   </tr> 
  </tbody> 
 </table>
@@ -450,11 +454,11 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td>Escriba una ruta relativa a <code>https://sheets.googleapis.com/v4/</code>.</td> 
+   <td>Introduzca una ruta relativa a <code>https://sheets.googleapis.com/v4/</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -504,7 +508,7 @@ Este módulo de acción le permite realizar una llamada de API personalizada.
    <td>[!UICONTROL Value input option]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Los valores se analizan como si el usuario los hubiera escrito en la IU. Los números se mantienen, pero las cadenas se pueden convertir en números, fechas u otros formatos siguiendo las mismas reglas que se aplican al escribir texto en una celda a través de la IU de [!DNL Google Sheets].</p> </li> 
+     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Los valores se analizan como si el usuario los hubiera escrito en la IU. Los números siguen siendo números, pero las cadenas se pueden convertir en números, fechas u otros formatos siguiendo las mismas reglas que se aplican al escribir texto en una celda a través de la interfaz de usuario de [!DNL Google Sheets].</p> </li> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Los valores que introduce el usuario no se analizan y se almacenan tal y como se introdujeron. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -555,7 +559,7 @@ Este módulo permite cambiar el contenido de la celda en una fila seleccionada.
    <td>[!UICONTROL Value input option]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Los valores se analizan como si el usuario los hubiera escrito en la IU. Los números se mantienen, pero las cadenas se pueden convertir en números, fechas u otros formatos siguiendo las mismas reglas que se aplican al escribir texto en una celda a través de la IU de [!DNL Google Sheets].</p> </li> 
+     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Los valores se analizan como si el usuario los hubiera escrito en la IU. Los números siguen siendo números, pero las cadenas se pueden convertir en números, fechas u otros formatos siguiendo las mismas reglas que se aplican al escribir texto en una celda a través de la interfaz de usuario de [!DNL Google Sheets].</p> </li> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Los valores que introduce el usuario no se analizan y se almacenan tal y como se introdujeron. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -605,7 +609,7 @@ Este módulo permite cambiar el contenido de la celda en una fila seleccionada.
   </tr> 
   <tr> 
    <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33,625. Esto trata correctamente el año 1900 como un año no bisiesto.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p></li><ul> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33.625. Esto trata correctamente el año 1900 como un año no bisiesto.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -675,7 +679,7 @@ Busca filas utilizando las opciones de filtro.
   </tr> 
   <tr> 
    <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33,625. Esto trata correctamente el año 1900 como un año no bisiesto.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p></li><ul> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Los campos de fecha, hora, fecha y hora y duración se presentan como valores dobles en formato de "número de serie", tal como lo populariza Lotus 1-2-3. La parte del número entero del valor (a la izquierda del decimal) cuenta los días transcurridos desde el 30 de diciembre de 1899. La parte fraccionaria (a la derecha del decimal) cuenta la hora como una fracción del día. Por ejemplo, el 1 de enero de 1900 al mediodía sería 2,5, 2 porque son 2 días después del 30 de diciembre de 1899 y 0,5 porque el mediodía es medio día. El 1 de febrero de 1900 a las 3 de la tarde sería 33.625. Esto trata correctamente el año 1900 como un año no bisiesto.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Los campos de fecha, hora, fecha y hora se presentan como cadenas en un formato numérico determinado (que depende de la configuración regional de la hoja de cálculo).</p></li><ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned rows]</td> 
@@ -745,7 +749,7 @@ Aquí, &quot;E&quot; es la columna y &quot;es nulo&quot; es la condición. Puede
 1. En la ventana [!UICONTROL Dibujo], haga clic en el icono **[!UICONTROL Cuadro de texto]** ![Cuadro de texto](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) cerca de la parte superior de la ventana.
 1. Diseñe un botón y haga clic en el botón **[!UICONTROL Guardar y cerrar]** en la esquina superior derecha:
 1. El botón se coloca en la hoja de cálculo. Haga clic en los tres puntos verticales de la esquina superior derecha del botón:
-1. Elija **[!UICONTROL Asignar script...]** en el menú.
+1. Elija **[!UICONTROL Asignar script..].** en el menú.
 1. Escriba el nombre del script (función), por ejemplo `runScenario` y haga clic en **[!UICONTROL Aceptar]**:
 1. Elija **[!UICONTROL Herramientas]** > **[!UICONTROL Editor de scripts]** en la barra de menús principal.
 

@@ -4,10 +4,12 @@ description: La sección  [!DNL Adobe Workfront Fusion Tools] incluye varios mó
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 85%
+source-wordcount: 2290
+ht-degree: 89%
 
 ---
 
@@ -26,8 +28,8 @@ Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicacione
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -36,13 +38,13 @@ Los módulos de [!UICONTROL Tools] están disponibles en la lista de aplicacione
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -87,7 +89,7 @@ Puede usar este módulo, por ejemplo, para contactos o cualquier otra lista prog
 
 Este módulo recupera valores creados anteriormente por el módulo [!UICONTROL Establecer variable] o [!UICONTROL Establecer múltiples variables].
 
-Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Obtener múltiples variables]. El único requisito es que el módulo [!UICONTROL Herramientas] > [!UICONTROL Establecer variable] o [!UICONTROL Herramientas] > [!UICONTROL Establecer múltiples variables] se ejecute antes que el módulo [!UICONTROL Herramientas] > [!UICONTROL Obtener múltiples variables].  Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a la ubicación del módulo [!UICONTROL Obtener múltiples variables]. El único requisito es que el módulo [!UICONTROL Herramientas] > [!UICONTROL Establecer variable] o [!UICONTROL Herramientas] > [!UICONTROL Establecer múltiples variables] se ejecute antes que el módulo [!UICONTROL Herramientas] > [!UICONTROL Obtener múltiples variables]. Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
@@ -110,7 +112,7 @@ Este módulo puede leer variables que se establecieron en cualquier parte del es
 
 Este módulo recupera un valor creado anteriormente por el módulo [!UICONTROL Establecer variable] o [!UICONTROL Establecer múltiples variables].
 
-Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a donde se encuentra el módulo [!UICONTROL Obtener variable]. El único requisito es que el módulo [!UICONTROL Herramientas] > [!UICONTROL Establecer variable] o [!UICONTROL Herramientas] > [!UICONTROL Establecer múltiples variables] se ejecute antes que el módulo [!UICONTROL Herramientas] > [!UICONTROL Obtener variable].  Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo puede leer variables que se establecieron en cualquier parte del escenario, incluso si la variable se estableció en una ruta diferente a donde se encuentra el módulo [!UICONTROL Obtener variable]. El único requisito es que el módulo [!UICONTROL Herramientas] > [!UICONTROL Establecer variable] o [!UICONTROL Herramientas] > [!UICONTROL Establecer múltiples variables] se ejecute antes que el módulo [!UICONTROL Herramientas] > [!UICONTROL Obtener variable]. Para obtener más información sobre el orden en que se ejecutan los módulos, vea [Agregar un módulo de enrutador y configurar rutas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 

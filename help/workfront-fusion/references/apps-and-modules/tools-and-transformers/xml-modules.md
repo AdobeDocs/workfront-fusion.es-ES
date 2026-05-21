@@ -1,13 +1,16 @@
 ---
 title: XML
-description: La aplicación XML permite analizar un texto con formato XML mediante el módulo XML &gt; Parse XML y convertirlo en un paquete para que los datos estén disponibles para otros módulos. También puede convertir un paquete en texto con formato XML mediante el módulo XML &gt; Create XML
+description: La aplicación XML permite analizar un texto con formato XML mediante el módulo XML &get; Parse XML y convertirlo en un paquete para que los datos estén disponibles para otros módulos. También puede convertir un paquete en texto con formato XML mediante el módulo XML &get; Create XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 90%
+source-wordcount: 1433
+ht-degree: 86%
 
 ---
 
@@ -40,7 +43,7 @@ La aplicación [!UICONTROL XML] permite analizar un texto con formato XML median
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -109,7 +112,7 @@ Un caso de uso típico es transformar datos de una hoja de cálculo de [!DNL Goo
    Un campo correspondiente al atributo de la matriz raíz aparece como un campo asignable en la configuración del módulo JSON.
 1. Haga clic en el botón **[!UICONTROL Asignar]** que está al lado del campo y asígnele el elemento `Array[]` de la salida del [!UICONTROL Agregador de matrices]:
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar la configuración del módulo XML.
-1. Abra la configuración del módulo [!UICONTROL Agregador de matrices]. Cambie la **[!UICONTROL estructura de destino]** del campo personalizado a un campo del módulo XML correspondiente al elemento XML principal. Asigne elementos del módulo de [!DNL Google Sheets] a los campos apropiados.
+1. Abra la configuración del módulo [!UICONTROL Agregador de matrices]. Cambie la **[!UICONTROL estructura de destino]** de Personalizado a un campo de módulo XML correspondiente al elemento XML principal.Asigne elementos del módulo [!DNL Google Sheets] a los campos correspondientes.
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar la configuración del módulo Agregador de matrices.
 1. Ejecute el escenario.
 
@@ -185,7 +188,7 @@ El módulo [!UICONTROL XML] > [!UICONTROL Analizar XML] analiza un texto con for
 
 Para descargar un archivo XML desde una dirección URL y analizar su contenido:
 
-1. Cree un nuevo escenario. 
+1. Cree un nuevo escenario.
 1. Agregar el módulo [!UICONTROL HTTP] > [!UICONTROL Obtener un archivo]
 1. Abra la configuración del módulo y configúrelo de la siguiente manera:
 

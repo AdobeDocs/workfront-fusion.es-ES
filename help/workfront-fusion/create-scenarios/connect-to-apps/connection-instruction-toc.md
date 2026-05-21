@@ -1,17 +1,20 @@
 ---
-title: Creación de conexiones
+title: Crear conexiones
 description: Una conexión debe cumplir los requisitos establecidos por la API de la aplicación o del servicio web al que se conecta. Por este motivo, las instrucciones para configurar una conexión varían en función de la aplicación o el servicio web. Este artículo puede ayudarle a identificar y localizar las instrucciones para conectar Adobe Workfront Fusion a la aplicación o al servicio web que haya elegido.
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/qjxlwSzWy6FmnASQrhjVKe8A4VyBpw0aBHkNwgQpo3A
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 36%
+source-wordcount: 563
+ht-degree: 56%
 
 ---
 
-# Creación de conexiones
+# Crear conexiones
 
 Una conexión debe cumplir los requisitos establecidos por la API de la aplicación o del servicio web al que se conecta. Por este motivo, las instrucciones para configurar una conexión varían en función de la aplicación o el servicio web. Este artículo puede ayudarle a identificar y localizar las instrucciones para conectar Adobe Workfront Fusion a la aplicación o al servicio web que haya elegido.
 
@@ -24,8 +27,8 @@ Una conexión debe cumplir los requisitos establecidos por la API de la aplicaci
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -41,13 +44,13 @@ Una conexión debe cumplir los requisitos establecidos por la API de la aplicaci
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -87,8 +90,8 @@ El proceso de conexión a las aplicaciones de [!DNL Google] puede diferir según
 
 Para obtener más información, consulte lo siguiente:
 
-* [Conexión de Adobe Workfront Fusion a Google Services con un cliente de OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
-* [Conexión de Adobe Workfront Fusion a los servicios de Google con medidas de seguridad actualizadas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)
+* [Conectar Adobe Workfront Fusion a Google Services mediante un cliente de OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
+* [Conectar Adobe Workfront Fusion a Google Services con medidas de seguridad actualizadas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)
 
 ## Otras aplicaciones que requieren configuración adicional
 

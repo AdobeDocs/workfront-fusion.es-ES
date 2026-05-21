@@ -2,9 +2,11 @@
 title: Adobe Workfront Fusion
 description: Le damos la bienvenida a la página de inicio y a la documentación técnica de Adobe Workfront Fusion. Utilice los siguientes vínculos, artículos de ayuda y recursos adicionales para aprender a implementar y utilizar Adobe Workfront Fusion de forma eficiente en su organización.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: ht
-source-wordcount: '306'
+TQID: https://experienceleague.adobe.com/IwGzn2TeOw9r-d2u9zdE7OKr5Q7AV5zoet1f9RHKP8o
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 347
 ht-degree: 100%
 
 ---

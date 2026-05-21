@@ -4,10 +4,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/TpqnvObLgYeYWDIMW8ufHLTculqL9wgLrWhrgHakGyc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 35%
+source-wordcount: 859
+ht-degree: 34%
 
 ---
 

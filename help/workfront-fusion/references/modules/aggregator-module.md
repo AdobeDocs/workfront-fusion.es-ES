@@ -4,10 +4,13 @@ description: Un módulo agregador es un tipo de módulo diseñado para combinar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 36%
+source-wordcount: 810
+ht-degree: 35%
 
 ---
 
@@ -44,7 +47,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 +++
 
-## Información general sobre el módulo [!UICONTROL Agregador]
+## Resumen del módulo [!UICONTROL Aggregator]
 
 Cuando se ejecuta un módulo [!UICONTROL Agregador], hace lo siguiente:
 
@@ -108,7 +111,7 @@ El siguiente escenario muestra cómo:
 
 * El tercer módulo es el agregador. Agrega los paquetes generados por el módulo [!UICONTROL Correo electrónico] >[!UICONTROL Archivos adjuntos iterativos]. [!UICONTROL Archivo] >[!UICONTROL Crear un agregador de archivos] acumula todos los paquetes que recibe y genera un solo paquete que contiene el archivo ZIP.
 
-* El último módulo carga el archivo ZIP resultante en [!DNL Dropbox].  [!DNL Dropbox] > [!UICONTROL Cargar un archivo] obtiene el archivo ZIP del módulo [!UICONTROL Archivo] > [!UICONTROL Crear un archivo] y lo sube a [!DNL Dropbox].
+* El último módulo carga el archivo ZIP resultante en [!DNL Dropbox]. [!DNL Dropbox] > [!UICONTROL Cargar un archivo] obtiene el archivo ZIP del módulo [!UICONTROL Archivo] > [!UICONTROL Crear un archivo] y lo carga en [!DNL Dropbox].
 
 
 

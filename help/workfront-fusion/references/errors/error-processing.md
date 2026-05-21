@@ -5,9 +5,13 @@ description: A veces, se puede producir un error durante la ejecución de un esc
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aad
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: 1214
 ht-degree: 35%
 
 ---
@@ -77,7 +81,7 @@ El aumento de los intervalos de tiempo ayuda a evitar que los escenarios ejecuta
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo**
+**Ejemplo:**
 
 Un escenario contiene el [!DNL Google Sheets] activador [!UICONTROL Watch Rows]. [!DNL Google Sheets] no está disponible durante 30 minutos debido al mantenimiento cuando Workfront Fusion inicia el escenario, por lo que no puede recuperar nuevas filas. El escenario se detiene y vuelve a intentarlo en 10 minutos. Debido a que [!DNL Google Sheets] sigue sin estar disponible, Workfront Fusion sigue sin poder obtener información sobre las filas nuevas. La siguiente ejecución del escenario está programada en 1 hora. [!DNL Google Sheets] vuelve a estar disponible en este momento y el escenario se ejecuta correctamente.
 

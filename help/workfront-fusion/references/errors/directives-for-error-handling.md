@@ -5,9 +5,12 @@ description: En este artículo se describen las directivas que puede utilizar pa
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
+TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: 584
 ht-degree: 40%
 
 ---
@@ -67,11 +70,11 @@ Las siguientes directivas de gestión de errores están disponibles en Workfront
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignorar</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>Se ignora el error.</li><li> Los módulos posteriores no se procesan.</p> </li><li><p>Si hay paquetes sin procesar, la ejecución del escenario continúa con normalidad.</p> </li><li>Si el controlador de error está en un enrutador, se omiten las rutas posteriores de ese enrutador.</li><li><p>El estado de ejecución del escenario se marca como “éxito”.</p> </li></ul></td> 
+   <td><ul><li> <p>Se ignora el error.</li><li> Los módulos posteriores no se procesan.</p> </li><li><p>Si hay paquetes sin procesar, la ejecución del escenario continúa normalmente.</p> </li><li>Si el controlador de error está en un enrutador, se omiten las rutas posteriores de ese enrutador.</li><li><p>El estado de ejecución del escenario se marca como “éxito”.</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Salto</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>El estado de la ejecución del escenario se almacena en la cola de ejecuciones incompletas, donde el error se puede resolver manualmente. Para obtener más información, vea <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Ver y resolver ejecuciones incompletas</a>.</p> <p>Sin embargo, hay algunas excepciones. Para obtener más información, vea <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Permitir el almacenamiento de ejecuciones incompletas</a> en el artículo Configurar opciones de escenario</a>.</p></li><li> <p>Los módulos posteriores no se procesan.</p></li><li> <p>Si hay paquetes sin procesar, la ejecución del escenario continúa con normalidad.</p> </li><li><p>El estado de ejecución del escenario se marca como “advertencia” cuando la opción [!UICONTROL Automatically complete execution] está deshabilitada.</p></li></ul> <p>Para obtener más información, consulte la sección <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> en este artículo</p> </td> 
+   <td><ul><li> <p>El estado de la ejecución del escenario se almacena en la cola de ejecuciones incompletas, donde el error se puede resolver manualmente. Para obtener más información, vea <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Ver y resolver ejecuciones incompletas</a>.</p> <p>Sin embargo, hay algunas excepciones. Para obtener más información, vea <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Permitir el almacenamiento de ejecuciones incompletas</a> en el artículo Configurar opciones de escenario</a>.</p></li><li> <p>Los módulos posteriores no se procesan.</p></li><li> <p>Si hay paquetes sin procesar, la ejecución del escenario continúa normalmente.</p> </li><li><p>El estado de ejecución del escenario se marca como “advertencia” cuando la opción [!UICONTROL Automatically complete execution] está deshabilitada.</p></li></ul> <p>Para obtener más información, consulte la sección <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> en este artículo</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Reintentar</p> <p> <img src="assets/retry.png"> </p> </td> 

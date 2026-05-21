@@ -1,13 +1,16 @@
 ---
-title: Módulos Bynder
+title: Módulos de Bynder
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan  [!DNL Bynder], así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 69%
+source-wordcount: 1863
+ht-degree: 79%
 
 ---
 
@@ -15,9 +18,9 @@ ht-degree: 69%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Bynder], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,8 +31,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -39,19 +42,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -114,14 +117,14 @@ Para obtener instrucciones para crear una aplicación en [!DNL Bynder], consulte
 >
 >   * clúster de EE. UU.: `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
 >   * Clúster de la UE: `https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
->   * clúster de Azure: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Clúster de Azure: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bynder utiliza el tipo de concesión de código de autorización o token de actualización. Este es el único tipo de concesión que utiliza el conector Fusion Bynder.
 
 ## Módulos de [!DNL Bynder] y sus campos
 
 Al configurar módulos de [!DNL Bynder], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Bynder] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -133,7 +136,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [[!UICONTROL Añadir una etiqueta a los recursos]](#add-a-tag-to-assets)
 * [[!UICONTROL Añadir recursos a una colección]](#add-assets-to-a-collection)
-* [[!UICONTROL Llamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Llamada API personalizada]](#custom-api-call)
 * [[!UICONTROL Descargar recurso]](#download-asset)
 * [[!UICONTROL Leer metadatos de recursos]](#read-asset-metadata)
 * [[!UICONTROL Quitar una etiqueta] de los recursos](#remove-a-tag-from-assets)
@@ -187,7 +190,7 @@ Este módulo de acción añade uno o más recursos a una colección.
  </tbody> 
 </table>
 
-#### [!UICONTROL Llamada de API personalizada]
+#### [!UICONTROL Llamada API personalizada]
 
 Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Bynder]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Bynder] módulos.
 
@@ -205,11 +208,11 @@ El módulo devuelve un código de estado, junto con los encabezados y el cuerpo 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Escriba una ruta relativa a <code>https://{your-bynder-domain}/api/{api-version}/</code>.</td> 
+   <td>Introduzca una ruta relativa a <code>https://{your-bynder-domain}/api/{api-version}/</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -369,7 +372,7 @@ Este módulo de acción carga un solo recurso.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
    <td>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</td> 
   </tr> 
   <tr> 
@@ -398,7 +401,7 @@ Este módulo de búsqueda recupera todos los elementos de un tipo específico.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>Seleccione el tipo de registro que desea enumerar. </p> 
+   <td> <p>Seleccione el tipo de registro que desea enumerar.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Read all collections]</strong> </p> </li> 
      <li> <p><strong>[!UICONTROL Read information about all tags]</strong> </p> </li> 

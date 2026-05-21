@@ -5,9 +5,11 @@ description: Puede configurar opciones específicas para escenarios en el panel 
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
+TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: 1306
 ht-degree: 48%
 
 ---

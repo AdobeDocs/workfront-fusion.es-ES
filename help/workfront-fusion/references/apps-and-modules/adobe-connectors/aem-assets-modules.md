@@ -4,9 +4,13 @@ description: Con el conector de Adobe Experience Manager Assets para Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: ht
-source-wordcount: '3734'
+TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 3823
 ht-degree: 100%
 
 ---
@@ -53,7 +57,7 @@ Para ver una introducción de vídeo sobre el conector de Adobe Experience Manag
 
 Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [Licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -62,10 +66,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 * Debe tener una cuenta de Adobe Experience Manager Assets para utilizar estos módulos.
 * Debe configurar el flujo de servidor a servidor en Adobe Developer Console.
 
-  Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tókenes de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#the-server-to-server-flow).
+  Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tókenes de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * La cuenta técnica de Adobe Experience Manager debe tener permisos de escritura.
 
-  Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
+  Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
 
 ## Información sobre la API de Adobe Experience Manager Assets
 
@@ -113,11 +117,11 @@ Para crear una conexión para los módulos de Adobe Experience Manager Assets:
 >
 >* La información de estos campos se genera como parte del flujo de configuración de servidor a servidor en Adobe Developer Console. Puede encontrar estos valores en el archivo JSON de credenciales de servicio generado como parte de esa configuración.
 >
->   Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tókenes de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#the-server-to-server-flow).
+>   Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tókenes de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* La cuenta técnica de Adobe Experience Manager debe tener permisos de escritura.
 >
->   Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
+>   Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -276,7 +280,7 @@ Este módulo de acción crea una URL con firma previa temporal para cargar o des
   </tr> 
   <tr> 
    <td role="rowheader">Recurso</td> 
-   <td>Sseleccione la ruta al recurso. </td> 
+   <td>Sseleccione la ruta al recurso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">UDID</td> 
@@ -553,7 +557,7 @@ Este módulo de acción actualiza un registro existente.
    <td role="rowheader">Tipo de registro</td> 
    <td> <p>Seleccione si desea eliminar los metadatos del recurso o una representación del recurso.</p> 
     <ul> 
-     <li> <p>Metadatos del recurso </p> 
+     <li> <p>Metadatos del recurso</p> 
       <ul> 
        <li> <p>Seleccione el recurso cuyos metadatos desea actualizar.</p> </li> 
        <li> <p>Introduzca el nuevo título del recurso.</p> </li> 
@@ -756,7 +760,7 @@ Este módulo de acción carga un nuevo recurso mediante la importación de archi
   </tr> 
   <tr> 
    <td role="rowheader">Descripción</td> 
-   <td> <p>Introduzca o asigne una descripción para el recurso. </p> </td> 
+   <td> <p>Introduzca o asigne una descripción para el recurso.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Asunto</td> 

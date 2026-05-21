@@ -4,9 +4,12 @@ description: Adobe Workfront Fusion Devtool le permite entender y solucionar pro
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/7NXYVXxbQvgKnqvRUNV-ySBApe9kl-Kn57sSKCh4NLE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: 1487
 ht-degree: 76%
 
 ---
@@ -49,7 +52,7 @@ Para ver un vídeo introductorio y un tutorial de Fusion Devtool, consulte
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -267,7 +270,7 @@ Copia el nombre del módulo seleccionado en el portapapeles.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Module] </td> 
-   <td> <p>Seleccione el módulo del que desea copiar el nombre. </p> </td> 
+   <td> <p>Seleccione el módulo del que desea copiar el nombre.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -293,11 +296,11 @@ Busca las variables especificadas en el escenario y las reemplaza por una variab
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Variable to Find]</td> 
-   <td> <p> Busque la píldora de variables que desee reemplazar desde el módulo de variables en su escenario y cópiela en este campo ([!UICONTROL Variable to Find]). En el campo, aparece entre corchetes dobles. Ejemplo: <code>&#123;&#123;5.value&#125;&#125;</code></p> </td> 
+   <td> <p> Busque la píldora de variables que desee reemplazar desde el módulo de variables en su escenario y cópiela en este campo ([!UICONTROL Variable to Find]). En el campo, aparece entre corchetes dobles. Ejemplo: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace With]</p> </td> 
-   <td> <p>Busque la píldora de variables con la que desea reemplazar la variable desde el módulo de variables en su escenario y cópiela en este campo ([!UICONTROL Variable to Find]). En el campo, aparece entre corchetes dobles. Ejemplo: <code>&#123;&#123;5.value&#125;&#125;</code></p> </td> 
+   <td> <p>Busque la píldora de variables con la que desea reemplazar la variable desde el módulo de variables en su escenario y cópiela en este campo ([!UICONTROL Variable to Find]). En el campo, aparece entre corchetes dobles. Ejemplo: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Module]</p> </td> 

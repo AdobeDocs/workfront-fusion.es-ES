@@ -4,9 +4,12 @@ description: Los módulos S3 de  [!DNL Adobe Workfront Fusion AWS]  le permiten 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: 8d78f1b0e9ba020c6d63ac8f5b1f21500d1ada35
+TQID: https://experienceleague.adobe.com/FDkre6osF2kT7Kz-5VGradQLa7GPSJ6MHPH9-FgM-ag
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: 1562
 ht-degree: 80%
 
 ---
@@ -167,7 +170,7 @@ Este módulo de acción descarga un archivo desde un bloque.
 
 Este módulo de acción realiza una llamada personalizada a la API de AWS S3.
 
-Para obtener una explicación sobre la API de [!DNL Amazon S3], consulte Introducción a la API REST de [[!DNL Amazon S3] &#x200B;](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
+Para obtener una explicación sobre la API de [!DNL Amazon S3], consulte Introducción a la API REST de [[!DNL Amazon S3] ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
 <table style="table-layout:auto">
  <col> 

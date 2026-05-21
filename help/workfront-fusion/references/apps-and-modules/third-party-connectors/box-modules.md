@@ -4,10 +4,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 36%
+source-wordcount: 1556
+ht-degree: 38%
 
 ---
 
@@ -149,7 +152,7 @@ Este módulo de activación se inicia cuando se añade un archivo nuevo o se act
   </tr> 
   <tr> 
    <td role="rowheader">Ver</td> 
-   <td> <p>Seleccione el tipo de archivos que desee ver. </p> 
+   <td> <p>Seleccione el tipo de archivos que desee ver.</p> 
     <ul> 
      <li> <p><strong>Solo archivos nuevos</strong> </p> <p>El escenario se iniciará cuando se añada un nuevo archivo.</p> </li> 
      <li> <p><strong>Nuevos archivos y todos los cambios</strong> </p> <p>El escenario se inicia cuando se añade un archivo o cuando se modifica el contenido o un atributo de archivo (como el nombre).</p> </li> 

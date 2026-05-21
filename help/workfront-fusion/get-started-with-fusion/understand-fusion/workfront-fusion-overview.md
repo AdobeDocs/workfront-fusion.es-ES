@@ -4,9 +4,11 @@ description: La función de Adobe Workfront Fusion es automatizar sus procesos p
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: ht
-source-wordcount: '369'
+TQID: https://experienceleague.adobe.com/EJVhcQRdvOE03JREhQc-ZIz3oac4XT-QQIRxpfX2AVg
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 386
 ht-degree: 100%
 
 ---

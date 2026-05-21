@@ -4,10 +4,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/bFoOLIFIX2ml2K2I2FVSJuNCPwlhfm6sa1RXaVzUoO0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 68%
+source-wordcount: 1154
+ht-degree: 84%
 
 ---
 
@@ -15,9 +18,9 @@ ht-degree: 68%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Microsoft OneDrive for Business], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,8 +31,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -39,19 +42,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -75,7 +78,7 @@ Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Microsoft One
 
 Al configurar módulos de [!DNL Microsoft OneDrive for Business], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Microsoft OneDrive for Business] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -100,7 +103,7 @@ Este módulo de activación se activa cuando se añade o actualiza un nuevo arch
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p> [!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
    <td> <p>Seleccione la unidad que desea ver.</p> </td> 
   </tr> 
   <tr> 
@@ -131,7 +134,7 @@ Este módulo de activación se activa cuando se añade una nueva carpeta a la ca
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p> [!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
    <td> <p>Seleccione la unidad que desea ver.</p> </td> 
   </tr> 
   <tr> 
@@ -200,7 +203,7 @@ Este módulo de acción mueve el archivo especificado a la papelera de reciclaje
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> [!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad desde la que desea eliminar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -222,7 +225,7 @@ Este módulo de acción mueve el archivo especificado a la papelera de reciclaje
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> [!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad desde la que desea eliminar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -246,7 +249,7 @@ Este módulo de acción recupera el archivo mediante el ID proporcionado.
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> [!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad desde la que desea recuperar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -270,7 +273,7 @@ Este módulo recupera un vínculo que puede compartir para dar acceso al archivo
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> [!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad en la que desea cargar un archivo.</p> </td> 
   </tr> 
   <tr> 
@@ -302,7 +305,7 @@ Este módulo de acción carga un archivo binario o de texto en una carpeta espec
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Crear una conexión: instrucciones básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> [!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad en la que desea cargar un archivo.</p> </td> 
   </tr> 
   <tr> 

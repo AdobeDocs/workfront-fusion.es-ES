@@ -4,9 +4,13 @@ description: En el siguiente glosario se explican algunos términos comunes de A
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-source-git-commit: c89536b6d3e6ca5f7e5048b8487a2d86bda3b213
+TQID: https://experienceleague.adobe.com/3qVkZnMHsCJX8htr8-BheNyOiQM8WReuRzEYCA70pGw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: 926
 ht-degree: 98%
 
 ---
@@ -26,7 +30,7 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Agregador</p> </td> 
-   <td> <p>Un tipo de módulo que combina varios paquetes (varias colecciones de datos) en uno solo.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Módulo de agregación</a>.</p> </td> 
+   <td> <p>Un tipo de módulo que combina varios paquetes (varias colecciones de datos) en uno solo. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Módulo de agregación</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API</td> 
@@ -58,11 +62,11 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Almacén de datos</p> </td> 
-   <td> <p>Un almacén de datos almacena datos de escenarios o le permite transferir datos entre escenarios individuales o ejecuciones de escenarios.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/data-stores.md" class="MCXref xref">Almacenes de datos</a>.</p> </td> 
+   <td> <p>Un almacén de datos almacena datos de escenarios o le permite transferir datos entre escenarios individuales o ejecuciones de escenarios. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/data-stores.md" class="MCXref xref">Almacenes de datos</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filtro</p> </td> 
-   <td> <p> Se puede aplicar un filtro entre dos módulos, lo que le permite trabajar únicamente con paquetes que se ajusten a determinados criterios. Es posible aplicar una serie de filtros diferentes.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Añadir un filtro a un escenario</a>.</p> </td> 
+   <td> <p> Se puede aplicar un filtro entre dos módulos, lo que le permite trabajar únicamente con paquetes que se ajusten a determinados criterios. Es posible aplicar una serie de filtros diferentes. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Añadir un filtro a un escenario</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID </p> </td> 
@@ -90,7 +94,7 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Enrutador</p> </td> 
-   <td>Un enrutador le permite duplicar datos o añadir nuevas rutas a un escenario para volver a enrutar datos y gestionar diferentes grupos de datos por separado. </p><p> Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/router-module.md" class="MCXref xref">Módulo [!UICONTROL Router]</a>.</td> 
+   <td>Un enrutador le permite duplicar datos o añadir nuevas rutas a un escenario para volver a enrutar datos y gestionar diferentes grupos de datos por separado.</p><p> Para obtener más información, consulte <a href="/help/workfront-fusion/create-scenarios/add-modules/router-module.md" class="MCXref xref">Módulo [!UICONTROL Router]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Escenario</p> </td> 
@@ -106,7 +110,7 @@ En el siguiente glosario se explican algunos términos comunes de Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 
-   <td> <p>Un tipo especial de activador que permite ejecutar escenarios inmediatamente después de que haya un nuevo paquete disponible.  </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Activadores instantáneos (webhooks)</a>.</p> </td> 
+   <td> <p>Un tipo especial de activador que permite ejecutar escenarios inmediatamente después de que haya un nuevo paquete disponible. </p><p>Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Activadores instantáneos (webhooks)</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

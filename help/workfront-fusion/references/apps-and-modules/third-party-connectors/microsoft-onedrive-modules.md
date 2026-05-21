@@ -4,10 +4,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/YscMl6qY47zJvwOieRmWg5rW-RaMnQ69R-b0tjB-FA4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4165'
-ht-degree: 93%
+source-wordcount: 4185
+ht-degree: 97%
 
 ---
 
@@ -15,9 +18,9 @@ ht-degree: 93%
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL OneDrive], así como conectarlo a varias aplicaciones y servicios de terceros.
 
-Para obtener instrucciones sobre cómo crear un escenario, vea los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -28,8 +31,8 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -39,19 +42,19 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -72,12 +75,12 @@ El conector OneDrive utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://graph.microsoft.com/v1.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Versión de API</td> 
-   <td> Versión 1 </td> 
+   <td> v1 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -101,12 +104,12 @@ Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL OneDrive] a [
 
 Al configurar módulos de [!DNL OneDrive], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL OneDrive] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Archivo/Carpeta](#filefolder)
-* [Otro](#other)
+* [Otros](#other)
 
 ### Archivo/Carpeta
 
@@ -146,7 +149,7 @@ Este módulo de acción copia un archivo en la ubicación de la nueva carpeta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación que contiene el archivo que desea copiar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -159,7 +162,7 @@ Este módulo de acción copia un archivo en la ubicación de la nueva carpeta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene el archivo que desea copiar. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -188,7 +191,7 @@ Este módulo de acción copia un archivo en la ubicación de la nueva carpeta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene la carpeta en la que desea copiar el archivo. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> <p>Si deja esto en blanco, el archivo o la carpeta solo se podrán copiar dentro de la misma [!UICONTROL OneDrive].</p> <p>Puede copiar archivos y carpetas de [!UICONTROL My Drive] a una [!UICONTROL Site's Drive] o una [!UICONTROL Group's Drive]. </p> <p>Solo puede copiar archivos de una unidad de [!UICONTROL Site's Drive] en la misma unidad del mismo sitio.</p> <p>Puede copiar archivos de una unidad de [!UICONTROL Group's Drive] solo en la misma unidad del mismo grupo.</p> </td> 
   </tr> 
   <tr> 
@@ -228,7 +231,7 @@ Este módulo de acción crea una nueva carpeta en la unidad especificada.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad donde desea crear una carpeta. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -271,7 +274,7 @@ Este módulo de acción elimina el archivo o la carpeta seleccionados.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación en la que desea buscar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -284,7 +287,7 @@ Este módulo de acción elimina el archivo o la carpeta seleccionados.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene el archivo o la carpeta que desea eliminar. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -323,7 +326,7 @@ Este módulo de acción descarga el archivo especificado.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación que desea que contenga el archivo que va a descargar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -336,7 +339,7 @@ Este módulo de acción descarga el archivo especificado.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene el archivo que desea descargar. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -424,7 +427,7 @@ Este módulo de acción obtiene los metadatos de un archivo especificado.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene el archivo que desea obtener. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -472,7 +475,7 @@ Este módulo de acción devuelve un vínculo compartido para el archivo especifi
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene el archivo para el que desea recuperar un vínculo compartido. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -528,7 +531,7 @@ Este módulo de acción mueve un archivo o carpeta a una nueva ubicación de car
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene el archivo o la carpeta que desea mover. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
@@ -561,7 +564,7 @@ Este módulo de acción mueve un archivo o carpeta a una nueva ubicación de car
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione o asigne la unidad que contiene la carpeta a la que desea mover el archivo o carpeta. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> <p>Si deja este campo en blanco, el archivo o carpeta solamente se podrán mover dentro del mismo [!DNL OneDrive].</p> <p>Pueden moverse archivos y carpetas de [!UICONTROL My Drive] a [!UICONTROL Site's Drive] o a [!UICONTROL Group's Drive]. </p> <p>Solo pueden moverse archivos de [!UICONTROL Site's Drive] a la misma unidad del mismo sitio.</p> <p>Solo se pueden mover archivos de [!UICONTROL Group's Drive] a la misma unidad del mismo grupo.</p> </td> 
   </tr> 
   <tr> 
@@ -584,7 +587,7 @@ Este módulo de búsqueda devuelve archivos y carpetas en función de los criter
    <td>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL OneDrive] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación en la que desea buscar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -638,11 +641,11 @@ Este módulo de acción carga un archivo en la carpeta especificada.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> [!UICONTROL Drive ID]</td> 
+   <td role="rowheader">[!UICONTROL Drive ID]</td> 
    <td> <p>Seleccione la unidad que contiene la carpeta donde desea cargar un archivo. Este campo no está disponible si seleccionó [!UICONTROL No] en el campo [!UICONTROL Enable to Enter a Drive ID].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
    <td> <p>Seleccione un archivo de origen de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </td> 
   </tr> 
   <tr> 
@@ -703,9 +706,9 @@ Este módulo de activación inicia un escenario cuando se crea o actualiza un ar
 
 
 
-### Otro
+### Otros
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Realización de una llamada de API]
 
 Este módulo realiza una llamada de API personalizada.
 
@@ -723,7 +726,7 @@ Este módulo realiza una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -735,7 +738,7 @@ Este módulo realiza una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

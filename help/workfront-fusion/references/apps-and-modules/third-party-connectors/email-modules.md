@@ -1,19 +1,22 @@
 ---
 title: Módulos de correo electrónico
-description: En un escenario de Adobe Workfront Fusion, puede conectar su cuenta de correo electrónico a varias aplicaciones y servicios de terceros. Esto le permite descargar correos electrónicos a través de IMAP, enviar correos electrónicos a través de SMTP, crear nuevos borradores, mover y copiar correos electrónicos de una carpeta a otra, marcar correos electrónicos como leídos o no leídos y eliminar correos electrónicos.
+description: En el caso de Adobe Workfront Fusion, puede conectar su cuenta de correo electrónico a varias aplicaciones y servicios de terceros.Esto le permite descargar correos electrónicos a través de IMAP, enviar correos electrónicos a través de SMTP, crear nuevos borradores, mover y copiar correos electrónicos de una carpeta a otra, marcar correos electrónicos como leídos o no leídos y eliminar correos electrónicos.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: 2507
 ht-degree: 65%
 
 ---
 
 # Módulos de correo electrónico
 
-En un escenario de Adobe Workfront Fusion, puede conectar su cuenta de correo electrónico a varias aplicaciones y servicios de terceros. Esto le permite descargar correos electrónicos a través de IMAP, enviar correos electrónicos a través de SMTP, crear nuevos borradores, mover y copiar correos electrónicos de una carpeta a otra, marcar correos electrónicos como leídos o no leídos y eliminar correos electrónicos.
+En el caso de Adobe Workfront Fusion, puede conectar su cuenta de correo electrónico a varias aplicaciones y servicios de terceros.Esto le permite descargar correos electrónicos a través de IMAP, enviar correos electrónicos a través de SMTP, crear nuevos borradores, mover y copiar correos electrónicos de una carpeta a otra, marcar correos electrónicos como leídos o no leídos y eliminar correos electrónicos.
 
 ## Requisitos de acceso
 
@@ -66,7 +69,7 @@ Puede crear una conexión a su cuenta de [!DNL Google] directamente desde un mó
 
 1. En cualquier módulo de correo electrónico, haga clic en **[!UICONTROL Add]** junto al campo [!UICONTROL Connection].
 1. Seleccione **[!DNL Google]** como el tipo de conexión.
-1. Introduzca un nombre para la conexión. 
+1. Introduzca un nombre para la conexión.
 1. (Opcional) Escriba su [!UICONTROL [!DNL Google] Client ID] y [!UICONTROL Client Secret].
 1. Haga clic en **[!UICONTROL Continue]** para crear la conexión y volver al módulo.
 
@@ -542,7 +545,7 @@ Envía un nuevo correo electrónico.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Introduzca o asigne la dirección de correo electrónico (y el nombre si es necesario) que aparece en el campo [!UICONTROL From] del correo electrónico. </p> <p>Importante: Utilice la sintaxis correcta, <code>name@email.com</code> o <code>"Name" name@email.com</code>.</p> <p>Nota: Normalmente, Workfront Fusion utiliza la dirección de correo electrónico introducida al crear la conexión como dirección del remitente. Si introduce cualquier otra dirección de correo electrónico, puede producirse un error al enviar un mensaje, ya que es posible que su cuenta no tenga permiso para enviar correos electrónicos desde una dirección diferente a la suya. Por ejemplo: <code>test@mail.com</code> o "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Introduzca o asigne la dirección de correo electrónico (y el nombre si es necesario) que aparece en el campo [!UICONTROL From] del correo electrónico. </p> <p>Importante: Utilice la sintaxis correcta, <code>name@email.com</code> o <code>"Name" name@email.com</code>.</p> <p>Nota: Normalmente, Workfront Fusion utiliza la dirección de correo electrónico introducida al crear la conexión como dirección del remitente. Si introduce cualquier otra dirección de correo electrónico, puede producirse un error al enviar un mensaje, ya que es posible que su cuenta no tenga permiso para enviar correos electrónicos desde una dirección diferente a la suya. E.g. <code>test@mail.com</code> o "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

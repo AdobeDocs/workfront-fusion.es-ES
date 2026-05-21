@@ -4,9 +4,11 @@ description: Al asignar elementos, puede utilizar funciones para crear fórmulas
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
+TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: 717
 ht-degree: 44%
 
 ---

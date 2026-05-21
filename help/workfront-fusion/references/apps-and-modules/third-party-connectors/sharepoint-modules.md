@@ -4,9 +4,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4309
 ht-degree: 52%
 
 ---
@@ -86,7 +90,7 @@ El conector de SharePoint utiliza lo siguiente:
 
 ## Conexión de Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la configuración avanzada](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la autorización de certificados](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -112,7 +116,7 @@ Para incluir credenciales en la conexión, habilite la opción Mostrar configura
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Introduzca un nombre para la conexión. </td> 
+      <td>Introduzca un nombre para la conexión.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
@@ -155,7 +159,7 @@ Puede utilizar la autorización de certificados para conectarse a SharePoint.
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Introduzca un nombre para la conexión. </td> 
+      <td>Introduzca un nombre para la conexión.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
@@ -339,7 +343,7 @@ Este módulo recuperó detalles sobre la carpeta especificada
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Especificar sitio, unidad y archivo                ID]</td> 
+   <td role="rowheader">[!UICONTROL Escribir id. de sitio, unidad y archivo]</td> 
    <td> <p>Seleccione cómo identificar la ubicación del archivo que desea obtener.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong>, <strong>[!UICONTROL Id. de lista]</strong> y <strong>[!UICONTROL Ruta de carpeta]</strong> para la carpeta que desea recuperar.</p> </li> 
@@ -362,7 +366,7 @@ Este módulo de acción actualiza los metadatos de una carpeta o un archivo
    <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Microsoft SharePoint Online a Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Microsoft SharePoint Online a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Especificar sitio, unidad y archivo                ID]</td> 
+   <td role="rowheader">[!UICONTROL Escribir id. de sitio, unidad y archivo]</td> 
    <td> <p>Seleccione cómo identificar la ubicación del archivo que desea obtener.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Escriba o asigne el <strong>[!UICONTROL Id. de sitio]</strong>, <strong>[!UICONTROL Id. de lista]</strong> y <strong>[!UICONTROL Id. de carpeta o elemento]</strong> para la carpeta o archivo que desea recuperar.</p> </li> 
@@ -973,7 +977,7 @@ Este módulo recupera las adiciones, actualizaciones y eliminaciones realizadas 
  </tbody> 
 </table>
 
-#### [!UICONTROL Realizar una llamada API]
+#### [!UICONTROL Realizar una llamada de API]
 
 Este módulo le permite realizar una llamada de API personalizada.
 

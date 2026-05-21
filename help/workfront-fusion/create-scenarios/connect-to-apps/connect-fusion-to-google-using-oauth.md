@@ -1,17 +1,21 @@
 ---
-title: Conexión de Adobe Workfront Fusion a Google Services con un cliente de OAuth personalizado
+title: Conectar Adobe Workfront Fusion a Google Services mediante un cliente de OAuth personalizado
 description: Puede utilizar Adobe Workfront Fusion para conectarse a los servicios de Google mediante un cliente de OAuth personalizado. Este procedimiento requiere una cuenta de Google existente.
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/Y-cRr-lDvYKc83iwzPoB2Rs9gKD9LCZQFfiBgefal7I
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 27%
+source-wordcount: 1022
+ht-degree: 42%
 
 ---
 
-# Conexión de Adobe Workfront Fusion a Google Services con un cliente de OAuth personalizado
+# Conectar Adobe Workfront Fusion a Google Services mediante un cliente de OAuth personalizado
 
 Puede utilizar Adobe Workfront Fusion para conectarse a los servicios de Google mediante un cliente de OAuth personalizado. Este procedimiento requiere una cuenta de Google existente.
 
@@ -24,8 +28,8 @@ Puede utilizar Adobe Workfront Fusion para conectarse a los servicios de Google 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +39,19 @@ Puede utilizar Adobe Workfront Fusion para conectarse a los servicios de Google 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -188,7 +192,7 @@ Para crear un proyecto en Google Cloud Platform:
 
    Se muestran el ID de cliente y el Secreto de cliente.
 
-1. Copie el ID de cliente y el Secreto del cliente a una ubicación segura. Los utilizará para establecer una conexión en Workfront Fusion.
+1. Copie el ID de cliente y el secreto de cliente en una ubicación segura. Los utilizará para establecer una conexión en Workfront Fusion.
 1. Continuar a [Conectarse a Google en Workfront Fusion](#connect-to-google-in-workfront-fusion).
 
 ### Conexión a Google en Workfront Fusion

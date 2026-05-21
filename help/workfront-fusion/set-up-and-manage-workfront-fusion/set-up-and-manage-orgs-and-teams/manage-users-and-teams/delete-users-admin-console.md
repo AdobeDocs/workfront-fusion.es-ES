@@ -6,9 +6,11 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+TQID: https://experienceleague.adobe.com/ouJ-qNCBSqKotZOJ7lGeOm2sAv6gqTPpUv8CpfaSg7M
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: 483
 ht-degree: 67%
 
 ---
@@ -69,7 +71,7 @@ Un usuario se desactiva de la [!DNL Adobe Admin Console] cuando se da una de las
 * El usuario se elimina de un perfil de producto y no se asigna a otro perfil de producto.
 * El usuario se elimina o desactiva en la organización que incluye Workfront Fusion.
 
-  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/es/enterprise/using/manage-users-individually.html?lang=es).
+  Para obtener instrucciones, consulte la sección &quot;Eliminar usuarios&quot; en [Administrar usuarios individualmente](https://helpx.adobe.com/enterprise/using/manage-users-individually.html?lang=es).
 
 En Workfront Fusion, la desactivación afecta al usuario de una de las siguientes maneras:
 

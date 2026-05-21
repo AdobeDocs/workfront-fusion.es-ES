@@ -4,9 +4,11 @@ description: Al abrir Fusion, encontrará muchas opciones para realizar acciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: 775
 ht-degree: 94%
 
 ---

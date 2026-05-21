@@ -4,10 +4,13 @@ description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 82%
+source-wordcount: 2666
+ht-degree: 83%
 
 ---
 
@@ -116,7 +119,7 @@ Para conectar su cuenta de [!DNL Frame.io] a Workfront Fusion mediante un token 
 1. Haga clic en **[!UICONTROL Nuevo]**.
 1. Introduzca el nombre del token, seleccione los ámbitos que desee usar y haga clic en **[!UICONTROL Crear]**.
 1. Copie el token proporcionado.
-1. Vaya a Workfront Fusion y abra el diálogo [!DNL Frame.io]Crear una conexión **[!UICONTROL del módulo]**.
+1. Vaya a Workfront Fusion y abra el diálogo **[!UICONTROL Crear una conexión]** del módulo [!DNL Frame.io].
 1. En el campo **[!UICONTROL Tipo de conexión]**, seleccione **[!DNL Frame.io]**.
 1. Escriba el token que copió en el paso 5 en el campo **[!UICONTROL Su clave de API [!DNL Frame.io]]**
 1. Haga clic en **[!UICONTROL Continuar]** para establecer la conexión y volver al módulo.
@@ -130,7 +133,7 @@ Puede crear una conexión a [!DNL Frame.io] mediante OAuth 2.0 PKCE con un ID de
 
 #### Conectarse a [!DNL Frame.io] mediante OAuth 2.0 PKCE (sin ID de cliente)
 
-1. Vaya a Workfront Fusion y abra el diálogo [!DNL Frame.io]Crear una conexión **[!UICONTROL del módulo]**.
+1. Vaya a Workfront Fusion y abra el diálogo **[!UICONTROL Crear una conexión]** del módulo [!DNL Frame.io].
 1. En el campo **[!UICONTROL Tipo de conexión]**, seleccione **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
 1. Escriba un nombre para la nueva conexión en el campo **[!UICONTROL Nombre de conexión]**.
 1. Haga clic en **[!UICONTROL Continuar]** para establecer la conexión y volver al módulo.
@@ -153,7 +156,7 @@ Puede crear una conexión a [!DNL Frame.io] mediante OAuth 2.0 PKCE con un ID de
 
 
 1. Copie el `client_id` proporcionado.
-1. Vaya a Workfront Fusion y abra el diálogo [!DNL Frame.io]Crear una conexión **[!UICONTROL del módulo]**.
+1. Vaya a Workfront Fusion y abra el diálogo **[!UICONTROL Crear una conexión]** del módulo [!DNL Frame.io].
 1. En el campo **[!UICONTROL Tipo de conexión]**, seleccione **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
 1. Escriba un nombre para la nueva conexión en el campo **[!UICONTROL Nombre de conexión]**.
 1. Haga clic en **[!UICONTROL Mostrar ajustes avanzados]**.
@@ -735,14 +738,14 @@ Este módulo de búsqueda recupera todos los proyectos del equipo especificado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Introduzca o asigne el número máximo de proyectos que desea que devuelva el módulo durante cada ciclo de ejecución de escenario.</p> </td> 
+   <td> <p>Introduzca o asigne el número máximo de proyectos que desea que el módulo devuelva durante cada ciclo de ejecución de escenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Otros
 
-#### [!UICONTROL Realizar una llamada de API]
+#### [!UICONTROL Realización de una llamada de API]
 
 Este módulo le permite realizar una llamada de API personalizada.
 

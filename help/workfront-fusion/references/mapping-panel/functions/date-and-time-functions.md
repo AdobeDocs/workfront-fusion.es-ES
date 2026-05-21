@@ -4,9 +4,12 @@ description: Las siguientes funciones de fecha y hora están disponibles en el p
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
+TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: 2375
 ht-degree: 73%
 
 ---
@@ -514,7 +517,7 @@ Esta función devuelve una nueva fecha con los segundos especificados en paráme
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 

@@ -4,10 +4,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 91%
+source-wordcount: 2368
+ht-degree: 94%
 
 ---
 
@@ -18,7 +21,7 @@ En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de traba
 
 Si necesita instrucciones sobre cómo crear un escenario, vea los artículos en [Crear un escenario: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información acerca de los módulos, vea los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -30,7 +33,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
  <tbody> 
   <tr> 
    <td role="rowheader">Paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -46,7 +49,7 @@ Para obtener información acerca de los módulos, vea los artículos en [Módulo
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -181,7 +184,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Target]:
 
 Al configurar módulos de [!DNL Adobe Target], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Adobe Target] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro en](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -192,18 +195,18 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ### Acciones
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Creación de un registro]](#create-a-record)
 
-* [[!UICONTROL Realizar una llamada de API personalizada]](#make-a-custom-api-call)
+* [[!UICONTROL Realizar una llamada API personalizada]](#make-a-custom-api-call)
 
 * [[!UICONTROL Eliminar un registro]](#delete-a-record)
 
 * [[!UICONTROL Leer un registro]](#read-a-record)
 
-* [[!UICONTROL Actualizar un registro]](#update-a-record)
+* [[!UICONTROL Actualización de un registro]](#update-a-record)
 
 
-#### [!UICONTROL Crear un registro]
+#### [!UICONTROL Creación de un registro]
 
 Este módulo de acción crea una actividad, una oferta o un público AB o XT.
 
@@ -496,7 +499,7 @@ Este módulo de acción crea una actividad, una oferta o un público AB o XT.
             </p>
           </li>
           <li>
-            <p>Seleccione o asigne la oferta asociada a la opción. </p>
+            <p>Seleccione o asigne la oferta asociada a la opción.</p>
           </li>
         </ul>
       </td>
@@ -743,7 +746,7 @@ Este módulo de acción crea una actividad, una oferta o un público AB o XT.
 
 -->
 
-#### [!UICONTROL Realizar una llamada de API personalizada]
+#### [!UICONTROL Realizar una llamada API personalizada]
 
 Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Target].
 
@@ -753,10 +756,10 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ta
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Target], consulte <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >&rbrace;Crear una conexión con [!DNL Adobe Target]</a> en este artículo.</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Target], consulte <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Crear una conexión con [!DNL Adobe Target]</a> en este artículo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
+      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
       <td>Escriba o asigne la dirección URL base de [!DNL Target].</td>
     </tr>
     <tr>
@@ -789,7 +792,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ta
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -842,7 +845,7 @@ Este módulo de acción recupera datos de una sola actividad, oferta, público, 
 </tbody>
 </table>
 
-#### [!UICONTROL Leer un registro]
+#### [!UICONTROL Actualización de un registro]
 
 Este módulo de acción actualiza un registro en Target.
 
@@ -900,14 +903,14 @@ Este módulo de búsqueda recupera una lista de los registros del tipo seleccion
       <td role="rowheader">[!UICONTROL Starts At]</td>
       <td>
         <p>Introduzca la fecha más antigua cuyos registros desea recuperar. </p>
-        <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p>
+        <p>Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ends At]</td>
       <td>
         <p>Introduzca la fecha más reciente cuyos registros desea recuperar. </p>
-        <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p>
+        <p>Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p>
       </td>
     </tr>
   </tbody>

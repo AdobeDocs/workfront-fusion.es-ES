@@ -4,14 +4,16 @@ description: Este artículo incluye información sobre el acceso y los permisos 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 84%
+source-wordcount: 286
+ht-degree: 78%
 
 ---
 
-# Funciones de organización y equipo
+# Funciones de la organización y del equipo
 
 Este artículo describe el acceso y la funcionalidad disponibles para las diferentes funciones de equipo y organización en Workfront Fusion.
 

@@ -4,9 +4,11 @@ description: En algunos casos, solo debe trabajar con paquetes que cumplan crite
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
+TQID: https://experienceleague.adobe.com/YMoeIdlzd7omGJoEFHUPTYl3eKayIp0LfbqkohVEXjs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: 528
 ht-degree: 19%
 
 ---
@@ -79,16 +81,16 @@ Debe agregar ambos módulos a un escenario para poder agregar un filtro entre el
 
 ## Copiar un filtro
 
-You can copy an existing filter and paste it elsewhere in the scenario.
+Puede copiar un filtro existente y pegarlo en cualquier otra parte del escenario.
 
-1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
-1. Select the scenario where you want to add a filter.
-1. Click anywhere on the scenario to enter the Scenario editor.
-1. Right-click on the connecting dots between modules where the filter is located.
-1. Select **Copy filter**.
-1. Right-click on the connecting dots between modules where you want to paste the filter.
-1. Select **Paste** filter
-1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules](#add-a-filter-between-two-modules) in this article.
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desea agregar un filtro.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic con el botón derecho en los puntos de conexión entre los módulos donde se encuentra el filtro.
+1. Seleccione **Copiar filtro**.
+1. Haga clic con el botón derecho en los puntos de conexión entre los módulos en los que desea pegar el filtro.
+1. Seleccionar el filtro **Pegar**
+1. (Opcional) Para ajustar el filtro, haga clic en el icono o etiqueta del filtro e introduzca los valores como se describe en [Agregue un filtro entre dos módulos](#add-a-filter-between-two-modules) en este artículo.
 
 
 
