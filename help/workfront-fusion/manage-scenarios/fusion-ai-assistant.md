@@ -51,7 +51,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Adobe debe tener registrado un acuerdo de Adobe Gen AI.
 
-Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo de IA de Adobe Gen](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) en el artículo Información general del Asistente de IA en la documentación de Workfront.
+Para obtener más información sobre la firma del acuerdo, consulte [Firmar el acuerdo de IA de Adobe Gen](https://experienceleague.adobe.com/es/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) en el artículo Información general del Asistente de IA en la documentación de Workfront.
 
 ## Obtener información del asistente de IA
 
