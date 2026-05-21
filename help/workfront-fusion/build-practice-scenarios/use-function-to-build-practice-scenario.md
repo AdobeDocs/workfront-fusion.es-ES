@@ -7,10 +7,15 @@ description: Obtenga información sobre cómo añadir una función para actualiz
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/F0kYjSMVgit8t-gPAR4U7O-1v8Qxy7UxSRK6uYxKItg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 77%
+source-wordcount: 607
+ht-degree: 79%
 
 ---
 
@@ -20,7 +25,7 @@ La actualización de un elemento de trabajo de Workfront es un caso de uso comú
 
 Fusion incluye muchos tipos de funciones que le permiten transformar y realizar lógica condicional en sus datos. Para obtener más información acerca del uso de funciones, vea [Descripción general de funciones](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Este ejemplo modifica el escenario creado en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+En este ejemplo se modifica el escenario que se creó en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 
 ## Requisitos de acceso
 
@@ -47,13 +52,13 @@ Este ejemplo modifica el escenario creado en [Crear un escenario básico](/help/
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
 ## Requisitos previos
 
-Debe crear el escenario descrito en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir este procedimiento.
+Es necesaria la creación del escenario descrito en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir con este procedimiento.
 
 ## Utilizar una función para actualizar un proyecto
 
@@ -100,14 +105,14 @@ Cuando este escenario convierte una solicitud en un proyecto, el nombre del proy
 
 1. Pruebe el escenario haciendo clic en **Ejecutar una vez** en la esquina inferior izquierda de la pantalla.
 1. Examine el resultado para asegurarse de que el escenario se ejecutó según lo esperado.
-1. Cuando esté seguro de que el escenario funciona según lo esperado, haga clic en el conmutador **Programando** en la parte inferior izquierda de la pantalla para **activarlo**.
+1. Cuando esté seguro de que el escenario funciona según lo esperado, haga clic en el conmutador **Programando** de la parte inferior izquierda de la pantalla para **Activar**.
 
    Esto activará el escenario. Los escenarios activos se ejecutan según la programación establecida en el módulo del activador.
 1. En Workfront Fusion, haga clic en **[!UICONTROL Guardar]** cerca de la esquina inferior izquierda para guardar su progreso en el escenario.
 
    >[!IMPORTANT]
    >
-   >Guarde con frecuencia mientras perfecciona y prueba un escenario. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
+   >Se recomienda guardar con frecuencia mientras se perfeccionan y prueban escenarios. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
 
 ## Recursos
 

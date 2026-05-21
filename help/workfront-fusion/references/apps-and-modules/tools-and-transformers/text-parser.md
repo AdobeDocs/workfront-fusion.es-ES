@@ -4,10 +4,16 @@ description: Puede utilizar la herramienta Text parser para analizar el texto y 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 86%
+source-wordcount: 1324
+ht-degree: 83%
 
 ---
 
@@ -40,7 +46,7 @@ Puede utilizar la [!UICONTROL herramienta de análisis de texto] para analizar t
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -183,7 +189,7 @@ El análisis de las expresiones regulares excede el ámbito de este artículo. R
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>Habilite esta opción para asegurarse de que el punto (.) coincida con los caracteres de línea nueva (<code>\n</code>).</td> 
+   <td>Active esta opción para asegurarse de que el punto (.) coincide con los caracteres de línea nueva (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -226,7 +232,7 @@ Busca un valor o una expresión regular especificados en el texto introducido y 
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>Habilite esta opción para asegurarse de que el punto (.) coincida con los caracteres de línea nueva (<code>\n</code>).</td> 
+   <td>Active esta opción para asegurarse de que el punto (.) coincide con los caracteres de línea nueva (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Text] </td> 
@@ -263,7 +269,7 @@ La razón es que la “i” muestra solo el número de coincidencias por coincid
 
 ![Coincidencia](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
-Para poder obtener los valores de coincidencia necesarios para añadir corchetes a la parte que desea analizar (por ejemplo, para extraer de “filename.docx” solo “docx”), los corchetes deben aplicarse en \, de acuerdo con la expresión regex que se utiliza en este escenario de caso.(.+)
+Para poder obtener los valores de coincidencia necesarios para agregar corchetes a la parte que desea analizar (por ejemplo, para extraer de &quot;filename.docx&quot; - &quot;docx&quot; únicamente), los corchetes deben aplicarse en \.(.+) según la expresión regex que se utilice en este escenario de caso
 
 Esto captura el DOCX, lo coloca en un grupo y deja el “.” fuera.
 

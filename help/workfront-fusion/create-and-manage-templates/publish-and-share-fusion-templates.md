@@ -4,9 +4,12 @@ description: Al crear una plantilla, esta plantilla estará disponible para todo
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/dT1gtKfUvcYgtSEAoxelc8kyCjP99SSlDH5QrU8gB1o
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: 485
 ht-degree: 67%
 
 ---
@@ -42,7 +45,7 @@ Para obtener información sobre cómo crear una plantilla, vea [Crear una planti
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -80,7 +83,7 @@ Después de publicar una plantilla, puede compartirla.
    >[!NOTE]
    >
    >* Una vez aprobada la plantilla, se vuelve pública. [!UICONTROL Las plantillas públicas] están visibles en la pestaña [!UICONTROL Plantillas públicas] para todos los usuarios de Workfront Fusion, independientemente de la organización o el equipo.
-   >* No se notifica al administrador acerca de la recepción de la plantilla para que la revise por correo electrónico.  Si la aprobación es urgente, póngase en contacto directamente con el administrador.
+   >* No se notifica al administrador acerca de la recepción de la plantilla para que la revise por correo electrónico. Si la aprobación es urgente, póngase en contacto directamente con el administrador.
 
 
 ## Estados de plantilla

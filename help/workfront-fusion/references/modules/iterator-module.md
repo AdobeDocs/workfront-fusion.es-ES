@@ -4,9 +4,14 @@ description: Un módulo de iterador es un tipo especial de módulo que convierte
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/FYIH3-R283fCXOmTCvpoGaQb5V05dWU-EHIjYf3IhyM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: 616
 ht-degree: 32%
 
 ---
@@ -44,7 +49,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 +++
 
-## Configuración del módulo [!UICONTROL del iterador]
+## Configuración del módulo [!UICONTROL Iterator]
 
 El módulo Iterator general tiene un solo campo, [!UICONTROL Matriz]. Este campo contiene la matriz que se va a convertir o dividir en paquetes independientes.
 
@@ -58,7 +63,7 @@ Para obtener más información, consulte [Configurar un módulo](/help/workfront
 
 >[!BEGINSHADEBOX]
 
-**Ejemplos**
+**Ejemplos:**
 
 * El siguiente escenario muestra cómo recuperar correos electrónicos con archivos adjuntos y guardarlos como archivos únicos en una carpeta [!DNL Dropbox] seleccionada.
 

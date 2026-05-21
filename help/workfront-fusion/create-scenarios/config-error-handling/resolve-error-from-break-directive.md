@@ -1,17 +1,20 @@
 ---
-title: Resolver errores gestionados por la directiva Break
+title: Resolver errores gestionados por la directiva de interrupción
 description: A veces, resulta útil volver a ejecutar un módulo que falla si existe la posibilidad de que el motivo del error se resuelva rápidamente.
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 51%
+source-wordcount: 516
+ht-degree: 67%
 
 ---
 
-# Resolver errores gestionados por la directiva Break
+# Resolver errores gestionados por la directiva de interrupción
 
 Cuando la directiva Break gestiona un error, se crea un registro en la carpeta de ejecuciones incompletas. Este registro almacena el estado de la ejecución del escenario, junto con los datos de los módulos anteriores. El registro hace referencia al módulo en el que se originó el error y contiene información sobre los datos recibidos por el módulo como entrada. Para cada paquete de datos que causa el error, se crea un registro independiente.
 
@@ -26,8 +29,8 @@ Para obtener más información, vea [Ver y resolver ejecuciones incompletas](/he
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -36,13 +39,13 @@ Para obtener más información, vea [Ver y resolver ejecuciones incompletas](/he
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

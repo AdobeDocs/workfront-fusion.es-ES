@@ -4,10 +4,18 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/oe0aoid5lPYljLtCBKV7GKd8KGNKh-LGQYD2d83-9eo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2031'
-ht-degree: 28%
+source-wordcount: 2040
+ht-degree: 29%
 
 ---
 
@@ -279,7 +287,7 @@ Este módulo de acción elimina un registro existente.
    <td role="rowheader">Tipo de registro</td> 
    <td> <p>Seleccione el tipo de objeto que desea eliminar.</p> 
     <ul> 
-     <li> <p><b>Acción</b> </p> <p>Seleccione o asigne la acción que desea eliminar.</p> </li> 
+     <li> <p><b>Accion</b> </p> <p>Seleccione o asigne la acción que desea eliminar.</p> </li> 
      <li> <p><b>Elemento de lista</b> </p> <p>Seleccione la lista de la que desea eliminar un elemento y, a continuación, introduzca o asigne el ID o el código del elemento que desea eliminar</p>  </li> 
      <li> <p><b>[!UICONTROL File]</b> </p> <p>Seleccione o asigne el archivo que desea eliminar.</p> </li> 
     </ul> </td> 
@@ -487,7 +495,7 @@ Este módulo de acción actualiza un único registro en [!UICONTROL Anaplan].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
-   <td> <p>Seleccione el tipo de registro que desea actualizar. </p> 
+   <td> <p>Seleccione el tipo de registro que desea actualizar.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Elemento de lista]</b> </p> <p>Para ver los campos, consulte <a href="#create-a-list-item" class="MCXref xref">Crear un elemento de lista</a> en este artículo.</p> </li> 
      <li> <p><b>[!UICONTROL Module datos de celda]</b> </p> <p>Al actualizar los datos de la celda, también se actualizan todos los cálculos descendentes que utilizan esos datos.</p> <p>Rellene los campos siguientes:</p> 

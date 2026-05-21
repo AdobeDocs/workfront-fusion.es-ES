@@ -6,10 +6,13 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 8e2779c3-dd54-44f8-9b38-5b308fc26bed
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+TQID: https://experienceleague.adobe.com/2w6eHErImAgTHz9ZOX2ruiigVlHYyuQ1V1-SCmElImY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 37%
+source-wordcount: 67
+ht-degree: 64%
 
 ---
 
@@ -21,4 +24,4 @@ Esta sección contiene los siguientes artículos:
 * [Adición de un módulo de activador a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
 * [Usar una función para actualizar un proyecto en un escenario básico](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
 * [Añadir un filtro a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
-* [Agregar un webhook a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
+* [Añadir un webhook a un escenario básico](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)

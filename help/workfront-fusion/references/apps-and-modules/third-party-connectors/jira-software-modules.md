@@ -4,10 +4,15 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+TQID: https://experienceleague.adobe.com/MFz4BA1p4lfDWSft169C3GEMRY9vtO2TrkUcg35LPYE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2466'
-ht-degree: 78%
+source-wordcount: 2482
+ht-degree: 79%
 
 ---
 
@@ -87,8 +92,8 @@ El conector Jira utiliza lo siguiente:
   </tr> 
   <tr> 
    <td role="rowheader">apiVersionAgile</td> 
-   <td> 1,0 </td> 
-   <td> 1,0</td> 
+   <td> 1.0 </td> 
+   <td> 1.0</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
@@ -133,7 +138,7 @@ Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de AP
    * **Tipo**
    * **[!UICONTROL URL de servicio]:** Esta es la URL base que usas para acceder a tu cuenta Jira. Ejemplo: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
-   * **[!UICONTROL Token de API]:** Este es el token de API que creó en la sección [Crear un token de API en [!DNL Jira]](#create-an-api-token-in-jira) de este artículo.
+   * **[!UICONTROL API token]:**: se trata del token de API que ha creado en la sección [Crear un token de API [!DNL Jira]](#create-an-api-token-in-jira) de este artículo.
 
 1. Haga clic en [!UICONTROL Continue] para crear la conexión y volver al módulo.
 
@@ -250,7 +255,7 @@ Para adquirir una clave privada para la conexión de [!DNL Workfront Fusion Jira
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td> <p>Introduzca un nombre para la conexión. </p> </td> 
+      <td> <p>Introduzca un nombre para la conexión.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
@@ -304,7 +309,7 @@ Este módulo de activación inicia un escenario cuando se añade, actualiza o el
    <td> <p>Seleccione el webhook que desee utilizar para buscar registros. </p> <p>Para añadir un nuevo webhook:</p> 
     <ol> 
      <li value="1">Haga clic en <strong>[!UICONTROL Add]</strong></li> 
-     <li value="2">Introduzca un nombre para el webhook. </li> 
+     <li value="2">Introduzca un nombre para el webhook.</li> 
      <li value="3"> <p>Seleccione la conexión que desea utilizar para su webhook. </p> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conexión de [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </li> 
      <li value="4"> <p>Seleccione el tipo de registro que desea que vea el software:</p> 
       <ul> 
@@ -396,7 +401,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conexión de [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -481,7 +486,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 #### [!UICONTROL Leer un registro]
 
-Este módulo de acción lee datos de un único registro de [!DNL Jira Software].
+Este módulo de acción lee datos de un único registro en [!DNL Jira Software].
 
 Especifique el identificador del registro.
 
@@ -514,7 +519,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>Introduzca o asigne el ID único de [!DNL Jira Software] del registro que desea que lea el módulo.</p> </td> 
+   <td> <p>Escriba o asigne el ID de [!DNL Jira Software] único del registro que desea que lea el módulo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,7 +562,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 ### Búsquedas
 
-* [[!UICONTROL List records]](#list-records)
+* [[!UICONTROL Enumerar registros]](#list-records)
 * [[!UICONTROL Search for records]](#search-for-records)
 
 >[!IMPORTANT]

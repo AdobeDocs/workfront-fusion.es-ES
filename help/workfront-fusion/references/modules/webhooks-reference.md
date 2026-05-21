@@ -4,9 +4,12 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
+TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: 1272
 ht-degree: 27%
 
 ---

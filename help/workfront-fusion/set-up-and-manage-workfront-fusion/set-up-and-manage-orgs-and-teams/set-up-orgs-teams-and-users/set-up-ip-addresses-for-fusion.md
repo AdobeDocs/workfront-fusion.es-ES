@@ -1,17 +1,22 @@
 ---
-title: Configuración de direcciones IP para Fusion en la lista de permitidos de su organización
+title: Configurar direcciones IP para Fusion en la lista de permitidos de su organización
 description: Fusion utiliza direcciones IP y dominios específicos para la comunicación web. Deben añadirse a la lista de permitidos de su organización para poder utilizar Workfront en su organización.
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 31%
+source-wordcount: 569
+ht-degree: 37%
 
 ---
 
-# Configuración de direcciones IP para Fusion en la lista de permitidos de su organización
+# Configurar direcciones IP para Fusion en la lista de permitidos de su organización
 
 Dado que Adobe Workfront Fusion se comunica con la red de su organización, el cortafuegos de esta debe configurarse para permitir dicha comunicación. Los cortafuegos son medidas de seguridad muy efectivas que funcionan al separar la red de una organización de internet. Garantizan que solo los datos seleccionados y el tráfico de red puedan entrar o salir de la red de la organización. El cortafuegos permite o bloquea los datos en función del sitio que envía o recibe los datos. Como administrador de Fusion, debe asegurarse de que los datos enviados a o desde Fusion puedan pasar a través del cortafuegos de su organización.
 

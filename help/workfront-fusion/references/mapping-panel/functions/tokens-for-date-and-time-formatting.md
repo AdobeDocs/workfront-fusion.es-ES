@@ -1,17 +1,20 @@
 ---
-title: Tokens para el formato de fecha y hora
+title: Tókenes para el formato de fecha y hora
 description: Los siguientes tókenes para el formato de fecha y hora están disponibles en el panel  [!DNL Adobe Workfront Fusion mapping] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 91%
+source-wordcount: 253
+ht-degree: 100%
 
 ---
 
-# Tokens para el formato de fecha y hora
+# Tókenes para el formato de fecha y hora
 
 ## Tókenes de año, mes y día
 
@@ -269,7 +272,7 @@ ht-degree: 91%
   <tr> 
    <td><code>mm</code> </td> 
    <td><code>00 01 ... 58 59</code> </td> 
-   <td> <p>[!UICONTROL Minutes with] cero inicial</p> </td> 
+   <td> <p>[!UICONTROL Minutes with] cero a la izquierda</p> </td> 
   </tr> 
   <tr> 
    <td><code>s</code> </td> 

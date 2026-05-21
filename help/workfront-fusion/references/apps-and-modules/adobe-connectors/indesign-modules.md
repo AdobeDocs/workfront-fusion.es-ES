@@ -7,13 +7,20 @@ navigation-topic: apps-and-their-modules
 title: Módulos de Adobe InDesign
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Adobe InDesign, así como conectarlos a varias aplicaciones y servicios de terceros.
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 20%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
-
 
 # Módulos Adobe InDesign
 
@@ -284,7 +291,7 @@ Este módulo de acción envía una solicitud de ejecución para un script person
 
 * [Obtener detalles del script personalizado](#get-custom-script-details)
 * [Obtener etiquetas de combinación de datos](#get-data-merge-tags)
-* [Obtener información del documento](#get-document-information)
+* [Obtener información de documentos](#get-document-information)
 * [Enumerar scripts personalizados](#list-custom-scripts)
 
 #### Obtener detalles del script personalizado
@@ -340,7 +347,7 @@ Este módulo recupera las etiquetas de combinación de datos de un documento.
   </tbody>
 </table>
 
-#### Obtener información del documento
+#### Obtener información de documentos
 
 Este módulo recupera información completa sobre documentos INDD/IDML y devuelve datos en función de los tipos de información habilitados especificados en la solicitud.
 
@@ -411,7 +418,7 @@ Este módulo realiza una llamada de API personalizada a la API de Adobe InDesign
         <p>Ruta</p>
       </td>
       <td>
-        <p>Escriba una ruta relativa a <code>https://indesign.adobe.io/v3</code>.</p><p> Ejemplo: <code>/create-rendition</code></p>
+        <p>Introduzca una ruta relativa a <code>https://indesign.adobe.io/v3</code>.</p><p> Ejemplo: <code>/create-rendition</code></p>
       </td>
     </tr>
     <tr>
@@ -438,7 +445,7 @@ Este módulo realiza una llamada de API personalizada a la API de Adobe InDesign
     </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

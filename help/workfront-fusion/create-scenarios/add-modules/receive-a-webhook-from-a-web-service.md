@@ -4,10 +4,13 @@ description: Si un servicio web no tiene actualmente un conector específico en 
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+TQID: https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 15%
+source-wordcount: 354
+ht-degree: 37%
 
 ---
 
@@ -24,8 +27,8 @@ Si un servicio web no tiene actualmente un conector específico en Workfront Fus
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -34,13 +37,13 @@ Si un servicio web no tiene actualmente un conector específico en Workfront Fus
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,7 +53,7 @@ Para obtener más información sobre esta tabla, consulte [Requisitos de acceso 
 1. Seleccione el escenario en el que desea agregar un webhook.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Agregue el módulo **Webhooks > Webhook personalizado** para comenzar su escenario.
-1. Haga clic en **Agregar** junto al campo Webhook.
+1. Haga clic en **Añadir** junto al campo Webhook.
 1. Escriba un **nombre de webhook** en el cuadro que se muestra
 1. (Opcional) configure el webhook.
 

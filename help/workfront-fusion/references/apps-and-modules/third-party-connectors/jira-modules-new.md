@@ -4,10 +4,15 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
+TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 31%
+source-wordcount: 2399
+ht-degree: 36%
 
 ---
 
@@ -23,7 +28,7 @@ El conector Jira se puede utilizar tanto para Jira Cloud como para Jira Data Ser
 
 Para obtener instrucciones sobre cómo crear un escenario, consulte los artículos en [Crear escenarios: índice de artículos](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Para obtener información sobre los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
+Para obtener información acerca de los módulos, consulte los artículos en [Módulos: índice de artículos](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisitos de acceso
 
@@ -108,7 +113,7 @@ Para crear una conexión OAuth2 con Jira, debe crear una aplicación en Jira ant
 
    | Centro de datos Fusion | URL de devolución de llamada |
    |---|---|
-   | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | EE. UU. | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
    | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
    | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
@@ -274,7 +279,7 @@ Es posible que necesite la siguiente información al configurar su PAT
 
   | Centro de datos Fusion | Dirección URL de redireccionamiento |
   |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | EE. UU. | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
   | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
 
@@ -314,7 +319,7 @@ Este módulo de activación inicia un escenario cuando se añade, actualiza o el
    <td> <p>Seleccione el webhook que desee utilizar para buscar registros o cree uno nuevo. </p> <p>Para crear un nuevo webhook, haga lo siguiente:</p> 
     <ol> 
      <li>Haga clic en <strong>Agregar</strong></li> 
-     <li>Introduzca un nombre para el webhook. </li> 
+     <li>Introduzca un nombre para el webhook.</li> 
      <li> Seleccione la conexión que desea utilizar para su webhook. <p>Para obtener instrucciones sobre cómo conectar tu cuenta de Jira a Workfront Fusion, consulta <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar Jira a Workfront Fusion</a> en este artículo.</p> </li> 
      <li> <p>Seleccione el tipo de registro que desea que vea el software:</p> 
       <ul> 
@@ -572,17 +577,17 @@ Este módulo de acción actualiza un registro existente, como un problema o un p
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Esto se debe a una obsolescencia del lado de Jira.
+>Esto se debe a una obsolescencia por parte de Jira.
 >
->Si encuentra este error, puede reemplazar el módulo de búsqueda del conector Jira heredado con el módulo de búsqueda del conector nuevo. Tenga en cuenta que el nuevo conector le permite seleccionar la versión de API utilizada. Asegúrese de seleccionar V3 al crear la conexión.
+>Si encuentra este error, puede reemplazar el módulo de búsqueda del conector Jira heredado por el módulo de búsqueda del conector nuevo. Tenga en cuenta que el nuevo conector le permite seleccionar la versión de API utilizada. Asegúrese de seleccionar V3 al crear la conexión.
 >
 > ![Opción de versión de API en el nuevo conector Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->Tenga en cuenta que:
+>Tenga en cuenta lo siguiente:
 >
->* Solo se ve afectado el módulo Buscar. En este momento, otros puntos finales de API de Jira utilizados por el conector Fusion no se ven afectados por esta obsolescencia.
+>* Solo se ve afectado el módulo Buscar. En este momento, otros puntos de conexión de API de Jira utilizados por el conector Fusion no se ven afectados por esta obsolescencia.
 >
->* El despliegue geográfico puede causar incoherencias. Atlassian está implementando este cambio a nivel regional, lo que significa que algunas instancias de Jira Cloud pueden seguir admitiendo temporalmente extremos más antiguos. Esto puede generar un comportamiento incoherente entre entornos.
+>* El despliegue geográfico puede causar incoherencias. Atlassian está implementando este cambio a nivel regional, lo que significa que algunas instancias de Jira Cloud pueden seguir admitiendo temporalmente puntos de conexión más antiguos. Esto puede generar un comportamiento incoherente entre entornos.
 
 #### Búsqueda de registros
 

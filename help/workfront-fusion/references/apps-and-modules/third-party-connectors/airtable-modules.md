@@ -4,9 +4,14 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 805e3e0d194d0f73caa1455ea1dadf1d799bdc7a
+TQID: https://experienceleague.adobe.com/Jm9c42LodUUcCVvGbXnQwS2lICMNY40y83Ju2SSmzHo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: 1961
 ht-degree: 93%
 
 ---
@@ -90,7 +95,7 @@ El conector Airtable utiliza lo siguiente:
 -->
 1. Abra Workfront Fusion y el cuadro de diálogo **Crear una conexión** del módulo deseado.
 1. Seleccione si utiliza un token de acceso personal o una autorización de OAuth 2.
-1. Introduzca un nombre para la conexión. 
+1. Introduzca un nombre para la conexión.
 1. (Condicional) Si utiliza un token de acceso personal, haga clic en Mostrar configuración avanzada e introduzca su token de acceso personal.
 1. (Condicional) Si utiliza OAuth 2, haga clic en Mostrar configuración avanzada e introduzca su ID de cliente de Airtable y Secreto de cliente.
 1. Haga clic en el botón **Continuar** para crear la conexión y volver al módulo.
@@ -487,7 +492,7 @@ Ahora, cada vez que se envía el formulario, se activa el módulo Ver respuestas
 
 #### Llamada de API personalizada
 
-Este módulo de acción le permite realizar una llamada autenticada personalizada a la API de [!DNL Airtable]. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los otros módulos de [!DNL Airtable].
+Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Airtable]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Airtable] módulos.
 
 La acción se basa en el tipo de entidad (tipo de objeto de Allocadia) especificado.
 
@@ -503,7 +508,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Introduzca una ruta relativa a <code>https://api.airtable.com/</code>. Ejemplo: <code>v0/{base}/{table}</code> </td> 
+   <td>Escriba una ruta relativa a <code>https://api.airtable.com/</code>. Ejemplo: <code>v0/{base}/{table}</code> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Método</td> 

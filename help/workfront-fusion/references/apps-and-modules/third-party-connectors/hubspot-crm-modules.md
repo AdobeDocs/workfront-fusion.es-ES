@@ -4,9 +4,15 @@ description: Los módulos CRM de Adobe Workfront Fusion HubSpot le permiten supe
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7314'
+source-wordcount: 7326
 ht-degree: 34%
 
 ---
@@ -386,7 +392,7 @@ Este módulo de acción actualiza un contacto, una compañía o un acuerdo.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Seleccione el tipo de registro que desea actualizar. </td> 
+   <td>Seleccione el tipo de registro que desea actualizar.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search Type]</td> 
@@ -1331,7 +1337,7 @@ Mueve un archivo a otra carpeta.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
-   <td>Introduzca un nombre para el archivo que ha movido. </td> 
+   <td>Introduzca un nombre para el archivo que ha movido.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -2129,7 +2135,7 @@ Le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar. Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, ponga las comillas fuera de la instrucción condicional.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2138,7 +2144,7 @@ Le permite realizar una llamada de API personalizada.
 >
 >**Ejemplo:** la siguiente llamada de API devuelve todos los contactos de su cuenta de [!DNL HubSpot]:
 >
->**URL**: `/contacts/v1/lists/all/contacts/all`
+>**URL**: `/contacts/v1/lists/all/contacts/all`
 >
 >**Método**: `GET`
 >

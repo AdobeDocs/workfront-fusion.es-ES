@@ -1,17 +1,20 @@
 ---
-title: Preguntas frecuentes sobre planificación de escenarios
+title: Preguntas frecuentes sobre la planificación de escenarios
 description: La información de este artículo puede ser útil cuando empiece a crear escenarios en Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 33%
+source-wordcount: 554
+ht-degree: 37%
 
 ---
 
-# Preguntas frecuentes sobre planificación de escenarios
+# Preguntas frecuentes sobre la planificación de escenarios
 
 La información de este artículo puede ser útil cuando empiece a crear escenarios en Workfront Fusion.
 
@@ -21,7 +24,7 @@ La información de este artículo puede ser útil cuando empiece a crear escenar
 
 Un escenario define una secuencia de pasos que Adobe Workfront Fusion ejecutará. Para cada escenario, se especifica la fuente de datos, qué datos utilizar y cómo se procesarán los datos. Fusion le permite crear escenarios simples o complejos, capaces de satisfacer los casos de uso de su organización.
 
-Para obtener más información sobre los escenarios, vea [Información general sobre escenarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
+Para obtener más información sobre los escenarios, consulte la [Información general de los escenarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
 
 ## ¿Cuántos módulos puedo utilizar en un escenario?
 

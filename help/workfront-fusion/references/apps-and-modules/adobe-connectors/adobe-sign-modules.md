@@ -4,10 +4,18 @@ description: Con los módulos  [!DNL Adobe Acrobat Sign] puede iniciar un escena
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '6763'
-ht-degree: 93%
+source-wordcount: 6796
+ht-degree: 95%
 
 ---
 
@@ -24,8 +32,8 @@ Con los módulos [!DNL Adobe Acrobat Sign], puede iniciar un escenario de Adobe 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +43,19 @@ Con los módulos [!DNL Adobe Acrobat Sign], puede iniciar un escenario de Adobe 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -87,7 +95,7 @@ Los acuerdos de [!DNL Adobe Sign] necesitan un campo con el que trabajar. Hay al
 
 Al configurar módulos de [!DNL Adobe Acrobat Sign], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Adobe Acrobat Sign] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -214,7 +222,7 @@ Este módulo de activador inicia un escenario cuando se produce un evento que se
 * [Upload document](#upload-document)
 -->
 
-+++ **[!UICONTROL Crear un registro]**
++++ **[!UICONTROL Creación de un registro]**
 
 Este módulo de acción crea un nuevo registro del tipo seleccionado.
 
@@ -263,7 +271,7 @@ Este módulo de acción crea un nuevo registro del tipo seleccionado.
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Especifique quién debe tener acceso al documento de la biblioteca.</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>Seleccione si el documento está en estado de creación o activo.</p> </li> 
      <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Para cada tipo de plantilla de biblioteca que desee utilizar, haga clic en <b>[!UICONTROL Add item]</b> y seleccione el tipo de plantilla.</p> </li> 
-     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Introduzca la última fecha en la que se produjo un evento en el documento de la biblioteca.</p> <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Introduzca la última fecha en la que se produjo un evento en el documento de la biblioteca.</p> <p>Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerción de tipos</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>Seleccione el estado del documento de la biblioteca.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -531,12 +539,12 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
      <li> <p><b>[!UICONTROL Views]</b> </p> <p>Introduzca los campos siguientes</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Seleccione el nombre de la vista que desea crear.</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar automáticamente la sesión del usuario en la dirección URL devuelta.</p> </li> 
-       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente en la dirección URL devuelta.</p> </li> 
+       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se deja vacío, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Introduzca el idioma en el que desea crear la vista. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
        <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que la sección de carga de archivos se edite añadiendo o quitando archivos. Este no es un mecanismo de control de acceso. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que los enlaces de los documentos de la biblioteca estén visibles. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que los vínculos de documentos de biblioteca estén visibles. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
        <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezca el botón de carga de archivos locales. El valor predeterminado es [!UICONTROL Yes].</p> </li> 
        <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que aparezcan los enlaces para adjuntar documentos desde orígenes web. El valor predeterminado es Sí.</p> </li> 
        <li> <p><b>[!UICONTROL Is preview selected]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para establecer la página de composición en modo de creación.</p> </li> 
@@ -556,7 +564,7 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>Introduzca un nombre para la plantilla de biblioteca. Este nombre se utiliza en correos electrónicos y sitios web.</p> </li> 
      <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente en la dirección URL devuelta.</p> </li> 
-     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
+     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se deja vacío, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
      <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Introduzca el idioma en el que desea crear la vista. </p> </li> 
      <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
      <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea configurar la vista de [!UICONTROL Send] y, a continuación, rellene los campos siguientes.</p> 
@@ -587,14 +595,14 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Seleccione el nombre de la vista del formulario web solicitado</p> </li> 
        <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para iniciar sesión automáticamente con el usuario. Seleccione <b>[!UICONTROL No]</b> para requerir credenciales. El valor predeterminado es [!UICONTROL No].</p> </li> 
-       <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se dejan vacías, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Introduzca o asigne una lista separada por comas de direcciones URL de dominio principal donde las direcciones URL devueltas se pueden incorporar en Iframes. Si se deja vacío, las páginas de [!DNL Adobe Acrobat Sign] no se podrán ver en el iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Introduzca el idioma en el que desea crear la vista. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> para mostrar la página incrustada sin un encabezado o pie de página de navegación.</p> </li> 
        <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>Si desea configurar una vista de firma personalizada, seleccione <b>[!UICONTROL Yes]</b> y cumplimente los campos siguientes:</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Introduzca la dirección de correo electrónico de la persona que recibe el formulario web recién creado</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Escriba un comentario que describa cómo el que llama a la API estableció la identidad del firmante. Esta información aparece en la pista de auditoría de [!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Introduzca una fecha de caducidad para la personalización de este formulario web. </p> <p>Para obtener una lista de los formatos de fecha y hora admitidos, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerción de tipos</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Introduzca una fecha de caducidad para la personalización de este formulario web. </p> <p>Para obtener una lista de los formatos de fecha y hora compatibles, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerción de tipos</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Seleccione <b>[!UICONTROL Yes]</b> si desea que el firmante deseado pueda firmar el formulario más de una vez.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -606,7 +614,7 @@ Este módulo de acción crea registros vinculados a un módulo seleccionado.
 
 +++
 
-+++ **[!UICONTROL Llamada de API personalizada]**
++++ **[!UICONTROL Llamada API personalizada]**
 Este módulo le permite realizar una llamada de API personalizada.
 
 <table style="table-layout:auto"> 
@@ -623,7 +631,7 @@ Este módulo le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -635,7 +643,7 @@ Este módulo le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -764,7 +772,7 @@ Lea información adicional relacionada con un único registro.
 
 +++
 
-+++ **[!UICONTROL Actualizar un registro]**
++++ **[!UICONTROL Actualización de un registro]**
 
 Este módulo de acción actualiza un único registro en [!DNL Adobe Acrobat Sign].
 
@@ -801,14 +809,14 @@ Este módulo de acción actualiza un único registro en [!DNL Adobe Acrobat Sign
    <td> <p>Introduzca información en campos específicos basados en el tipo de registro y campos relacionados.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Agreement]</b> </p> <p>Como práctica recomendada, si prevé realizar cambios sustanciales en un acuerdo, le recomendamos que cree un nuevo acuerdo en lugar de actualizar el existente.</p> </li> 
-     <li> <p><b>[!UICONTROL Library document]</b> </p> <p> Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
+     <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Status]</b> </p> <p>Seleccione el nuevo estado del documento de biblioteca.</p> </li> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Introduzca o asigne el nombre de plantilla de la biblioteca</p> </li> 
        <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Especifique quién debe tener acceso al documento de la biblioteca.</p> </li> 
        <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Para cada tipo de plantilla de biblioteca que desee utilizar, haga clic en <b>[!UICONTROL Add item]</b> y seleccione el tipo de plantilla.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL User]</b> </p> <p> Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
+     <li> <p><b>[!UICONTROL User]</b> </p> <p>Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL First name]</b> </p> <p>Introduzca el nombre del usuario.</p> </li> 
        <li> <p><b>[!UICONTROL Last name]</b> </p> <p>Introduzca el apellido del usuario</p> </li> 
@@ -862,13 +870,13 @@ Este módulo de acción actualiza los registros relacionados con un objeto espec
    <td> <p>Introduzca información en campos específicos basados en el tipo de registro y campos relacionados.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Agreement]</b> </p> <p>Como práctica recomendada, si prevé realizar cambios sustanciales en un acuerdo, le recomendamos que cree un nuevo acuerdo en lugar de actualizar el existente.</p> </li> 
-     <li> <p><b>[!UICONTROL Library document]</b> </p> <p> Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
+     <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL State]</b> </p> <p>Seleccione el nuevo estado del documento de biblioteca.</p> </li> 
        <li> <p><b>[!UICONTROL Note]</b> </p> <p>Escriba o asigne el texto de la nota.</p> </li> 
        <li> <p><b>[!UICONTROL Visibility]</b> </p> <p>Seleccione si el documento de biblioteca se muestra o se guía.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL User]</b> </p> <p> Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
+     <li> <p><b>[!UICONTROL User]</b> </p> <p>Seleccione los campos que desea actualizar y rellene los campos seleccionados:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Group info list]</b> </p> <p>Rellene los campos siguientes</p> 
         <ul> 

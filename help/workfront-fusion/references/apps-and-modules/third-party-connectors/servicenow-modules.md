@@ -4,9 +4,14 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 3e39d284014c76a1cc300a075e61c25964c49995
+TQID: https://experienceleague.adobe.com/cIq5yfUbJsb3v8DbVjWv7hCP6kOkTbGmGouBirjETpo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: 1643
 ht-degree: 84%
 
 ---
@@ -229,7 +234,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> Escriba una ruta relativa a <code>https://&ltinstance_url&gt/api/</code>. </td> 
+   <td> Introduzca una ruta relativa a <code>https://&ltinstance_url&gt/api/</code>. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 

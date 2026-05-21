@@ -4,10 +4,13 @@ description: Este artículo describe los eventos que se producen mientras se eje
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 22%
+source-wordcount: 482
+ht-degree: 23%
 
 ---
 

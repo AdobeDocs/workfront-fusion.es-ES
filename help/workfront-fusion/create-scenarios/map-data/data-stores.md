@@ -4,9 +4,15 @@ description: Un almacén de datos, similar a una base de datos o tabla simple, p
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: 1366
 ht-degree: 11%
 
 ---
@@ -56,7 +62,7 @@ Para ver un vídeo introductorio a los almacenes de datos en Workfront Fusion, c
  </tbody> 
 </table>
 
-Para obtener más información sobre el contenido de esta tabla, consulte los [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -212,7 +218,7 @@ Las propiedades de un almacén de datos incluyen la estructura de datos que util
 
 Actualmente no hay ninguna herramienta que pueda automatizar la restauración de los datos perdidos.
 
-#### Solución
+#### Solución alternativa
 
 1. Examine todos los registros de ejecución de escenarios en los que se insertaron elementos en el almacén de datos.
 
@@ -227,7 +233,7 @@ Actualmente no hay ninguna herramienta que pueda automatizar la restauración de
 
 Se produce un error de [!UICONTROL espacio insuficiente] porque ya se ha asignado el almacenamiento del almacén de datos asignado a los almacenes de datos creados anteriormente.
 
-#### Solución
+#### Solución alternativa
 
 1. Edite cualquiera de los almacenes de datos existentes para utilizar menos espacio. Esto libera espacio para el nuevo almacén de datos.
 
@@ -241,7 +247,7 @@ Se produce un error de [!UICONTROL espacio insuficiente] porque ya se ha asignad
 
 Se produce el error [!UICONTROL Se alcanzó el número máximo de almacenes] porque su organización ha utilizado todos los almacenes de datos disponibles.
 
-#### Solución
+#### Solución alternativa
 
 Para reducir el número de almacenes de datos existentes, considere la posibilidad de realizar una de las siguientes acciones:
 

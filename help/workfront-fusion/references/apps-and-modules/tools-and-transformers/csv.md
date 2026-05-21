@@ -4,10 +4,15 @@ description: Los módulos CSV de Adobe Workfront Fusion le permiten crear archiv
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 48%
+source-wordcount: 941
+ht-degree: 56%
 
 ---
 
@@ -26,8 +31,8 @@ Como se trata de un transformador, estos módulos no requieren una conexión.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -36,13 +41,13 @@ Como se trata de un transformador, estos módulos no requieren una conexión.
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -130,7 +135,7 @@ El módulo [!DNL Create CSV] simple ofrece una lista de casillas de verificació
 
 Debido a que el elemento <code>Nombre completo</code> es de tipo texto simple, se exporta según lo esperado. El elemento <code>Correos electrónicos</code>, que es de un tipo complejo Array of Collections, se exporta como [objeto Object], que es la forma en que Collections y Arrays se transforman en texto de forma predeterminada.
 
-Para obtener más información, vea [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
+Para obtener más información, consulte [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
 
 Para exportar el contenido de <code>correo electrónico </code>elemento de la primera colección de <code>correos electrónicos[]</code> en su lugar, debe usar el módulo [!UICONTROL Crear CSV (avanzado)]. Este módulo le permite definir columnas individuales del archivo CSV y asignarles elementos, incluidos los anidados.

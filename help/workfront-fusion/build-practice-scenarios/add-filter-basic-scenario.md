@@ -7,10 +7,15 @@ description: Los filtros le permiten asegurarse de que su escenario progrese sol
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 85%
+source-wordcount: 617
+ht-degree: 87%
 
 ---
 
@@ -57,7 +62,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Requisitos previos
 
-Debe crear el escenario descrito en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir este procedimiento.
+Es necesaria la creación del escenario descrito en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir con este procedimiento.
 
 ## Añadir un filtro
 
@@ -92,18 +97,18 @@ Ahora debería tener seleccionados `ID`, `Name` y `Project`.
 ### Prueba y activación
 
 1. Vaya al entorno de Workfront al que se está conectando Fusion y añada un problema al proyecto que especificó en el filtro. Añadir otro problema a un proyecto diferente.
-1. Haga clic en **[!UICONTROL Ejecutar una vez]** en la esquina inferior izquierda del editor de escenarios.
+1. Haga clic en **[!UICONTROL Ejecutar una vez]**, en la esquina inferior izquierda del editor de escenarios.
 1. Examine el resultado para asegurarse de que el escenario se ejecutó según lo esperado.
 
    Ambos problemas deben aparecer en el resultado del primer módulo, pero solo el problema del proyecto especificado debe aparecer como entrada en el segundo módulo.
-1. Cuando esté seguro de que el escenario funciona según lo esperado, haga clic en el conmutador **Programando** en la parte inferior izquierda de la pantalla para **activarlo**.
+1. Cuando esté seguro de que el escenario funciona según lo esperado, haga clic en el conmutador **Programando** de la parte inferior izquierda de la pantalla para **Activar**.
 
    Esto activará el escenario.
 1. En Workfront Fusion, haga clic en **[!UICONTROL Guardar]** cerca de la esquina inferior izquierda para guardar su progreso en el escenario.
 
    >[!IMPORTANT]
    >
-   >Guarde con frecuencia mientras perfecciona y prueba un escenario. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
+   >Se recomienda guardar con frecuencia mientras se perfeccionan y prueban escenarios. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
 
 ## Recursos
 

@@ -4,9 +4,14 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
+TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: 2053
 ht-degree: 80%
 
 ---
@@ -157,7 +162,7 @@ Este módulo de acción crea un nuevo evento.
    <td> <p>Seleccione la confidencialidad de este evento.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Personal]”. </p> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Personal]”.</p> </li> 
      <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Private]”. Las reglas de la bandeja de entrada del destinatario no reenvían ni redirigen este evento.</p> </li> 
      <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Confidential]”. </p> </li> 
     </ul> </td> 
@@ -340,7 +345,7 @@ Este módulo de acción actualiza un evento existente.
    <td> <p>Seleccione la confidencialidad de este evento.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Personal]”. </p> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Personal]”.</p> </li> 
      <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Private]”. Las reglas de la bandeja de entrada del destinatario no reenvían ni redirigen este evento.</p> </li> 
      <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>El destinatario ve el mensaje “[!UICONTROL Please treat this as Confidential]”. </p> </li> 
     </ul> </td> 
@@ -378,7 +383,7 @@ Este módulo de acción actualiza un evento existente.
    <td> <p>Añada asistentes al evento.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Escriba el nombre del asistente.</p> </li> 
-     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Introduzca la dirección de correo electrónico del asistente. </p> </li> 
+     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Introduzca la dirección de correo electrónico del asistente.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -547,7 +552,7 @@ Este módulo de acción edita un calendario existente.
 
 ### Otros
 
-#### [!UICONTROL Realizar una llamada de API]
+#### [!UICONTROL Realización de una llamada de API]
 
 Este módulo le permite realizar una llamada de API personalizada.
 

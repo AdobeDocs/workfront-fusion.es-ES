@@ -4,10 +4,16 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/w1Mx5-fbOF8JlvmgHd0P-ARF20jBLM0Bm3BnZZy6YsY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 62%
+source-wordcount: 2975
+ht-degree: 67%
 
 ---
 
@@ -24,8 +30,8 @@ En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de traba
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">paquete de Adobe Workfront</td> 
-   <td> <p>Cualquier paquete de flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licencias de Adobe Workfront</td> 
@@ -35,19 +41,19 @@ En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de traba
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
    <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
-   <p>Basado en conectores (heredado): Workfront Fusion para la automatización e integración del trabajo </p>
+   <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Producto</td> 
    <td>
-   <p>Si su organización tiene un paquete Select o Prime Workfront que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obtener más información sobre esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obtener información sobre las licencias de Adobe Workfront Fusion, consulte [licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -66,7 +72,7 @@ El conector de correo electrónico de Microsoft Office 365 utiliza lo siguiente:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Dirección URL base</td> 
+   <td role="rowheader">URL base</td> 
    <td> https://graph.microsoft.com/v1.0</td> 
   </tr> 
   <tr> 
@@ -94,14 +100,14 @@ Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Office 365 Em
 
 Al configurar módulos de [!DNL Microsoft Office 365 Email], Workfront Fusion muestra los campos que se indican a continuación. Junto a estos, pueden aparecer campos de [!DNL Microsoft Office 365 Email] adicionales, en función de factores como el nivel de acceso del que disponga en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
-Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Mensaje](#message)
 * [Borrador de mensaje](#draft-message)
 * [Archivos adjuntos](#attachment)
-* [Otro](#other)
+* [Otros](#other)
 
 ### Mensaje
 
@@ -144,7 +150,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -375,7 +381,7 @@ Este módulo de acción crea un nuevo mensaje de correo electrónico como borrad
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -477,7 +483,7 @@ Este módulo de acción actualiza un mensaje existente.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -573,7 +579,7 @@ Este módulo recupera una lista de archivos adjuntos que pertenecen al mensaje e
  </tbody> 
 </table>
 
-### Otro
+### Otros
 
 * [[!UICONTROL Add an Attachment]](#add-an-attachment)
 * [Creación y envío de un mensaje](#create-and-send-a-message)
@@ -600,7 +606,7 @@ Este módulo añade un archivo adjunto grande a un mensaje.
    <td> <p> Seleccione o asigne el ID del mensaje al que desea añadir un archivo adjunto.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
    <td> <p>Seleccione un archivo de un módulo anterior o asigne el nombre y los datos del archivo de origen.</p> </td> 
   </tr> 
  </tbody> 
@@ -635,7 +641,7 @@ Este módulo de acción crea y envía un mensaje de correo electrónico.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p> [!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
    <td> <p>Para cada destinatario al que desee enviar el correo electrónico, haga clic en <b>Agregar elemento</b> e introduzca lo siguiente:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Introduzca la dirección de correo electrónico del contacto.</p> </li> 
@@ -700,7 +706,7 @@ Este módulo le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, vea <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitud HTTP</a>.</p> </td> 
+   td&gt; <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -712,7 +718,7 @@ Este módulo le permite realizar una llamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice instrucciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la instrucción condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

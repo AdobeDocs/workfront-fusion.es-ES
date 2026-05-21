@@ -4,9 +4,12 @@ description: La automatización del trabajo requiere un procesamiento rápido. E
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
+TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: 1101
 ht-degree: 94%
 
 ---

@@ -5,20 +5,23 @@ description: Este artículo explica cómo se ejecuta un escenario y cómo fluyen
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 0%
+source-wordcount: 770
+ht-degree: 1%
 
 ---
 
-# Flujo de ejecución de escenario
+# Flujo de ejecución del escenario
 
 Este artículo explica cómo se ejecuta un escenario y cómo fluyen los datos a través de él, y cómo ver los datos procesados por cada módulo.
 
 Para ver cómo fluyen los datos en un escenario activo, vea [Ver flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
-## Flujo de ejecución de escenario
+## Flujo de ejecución del escenario
 
 Una vez que un escenario se configura correctamente y se activa, se ejecuta según su programación definida.
 

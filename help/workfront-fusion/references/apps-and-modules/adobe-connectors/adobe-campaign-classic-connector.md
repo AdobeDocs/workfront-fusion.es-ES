@@ -1,19 +1,25 @@
 ---
 title: Módulos de Adobe Campaign v7/v8
-description: With the [!DNL Adobe Campaign] modules, you can start an Adobe Workfront Fusion scenario based on events in your [!DNL Adobe Campaign] account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
+description: Con los módulos  [!DNL Adobe Campaign] , puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de su cuenta de  [!DNL Adobe Campaign] y crear, leer o actualizar acuerdos y otros registros, buscar registros con los criterios que haya establecido y cargar documentos.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
+TQID: https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: 1450
 ht-degree: 83%
 
 ---
 
 # Módulos de [!DNL Adobe Campaign]
 
-With the [!DNL Adobe Campaign] modules, you can start an Adobe Workfront Fusion scenario based on events in your [!DNL Adobe Campaign v7/v8] account, create, read, or update records, search for records using criteria you set, and perform custom API calls.
+Con los módulos [!DNL Adobe Campaign], puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de su cuenta de [!DNL Adobe Campaign v7/v8], crear, leer o actualizar registros, buscar registros con los criterios que haya establecido y realizar llamadas de API personalizadas.
 
 ## Requisitos de acceso
 
@@ -58,11 +64,11 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 Debe añadir las direcciones IP de Fusion a [!DNL Adobe Campaign].
 
 * Para obtener instrucciones sobre cómo añadir direcciones IP a la lista de permitidos de Campaign, consulte [Adición de direcciones IP a la lista de permitidos](https://experienceleague.adobe.com/es/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) en la documentación de Adobe Campaign.
-* For a list of IP addresses to add to the allowlist, see [Configure IP Addresses for Fusion in your organization&#39;s allowlist](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
+* Para obtener una lista de direcciones IP que agregar a la lista de permitidos, consulte [Configuración de direcciones IP para Fusion en la lista de permitidos de su organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
-## Adobe Campaign API information
+## Información de API de Adobe Campaign
 
-The Adobe Campaign connector uses the following:
+El conector de Adobe Campaign utiliza lo siguiente:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -70,12 +76,12 @@ The Adobe Campaign connector uses the following:
  <tbody> 
   <tr> 
    <td role="rowheader">Etiqueta de API</td> 
-   <td>v1.7.22</td> 
+   <td>Versión 1.7.22</td> 
   </tr>
  </tbody> 
  </table>
 
-## Connect [!DNL Adobe Campaign] to Adobe Workfront Fusion
+## Conectar [!DNL Adobe Campaign] a Adobe Workfront Fusion
 
 >[!IMPORTANT]
 >
@@ -203,7 +209,7 @@ Este módulo de acción crea un nuevo registro en [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to create, or select **Custom Resource** and enter the resource details.</td> 
+   <td>Seleccione el tipo de registro [!DNL Adobe Campaign] que desea crear o seleccione **Recurso personalizado** e introduzca los detalles del recurso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -230,7 +236,7 @@ Este módulo de acción elimina un único registro de [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of resource that you want to delete, or select **Custom Resource** and enter the resource details.</td> 
+   <td>Seleccione el tipo de recurso que desea eliminar o seleccione **Recurso personalizado** e introduzca los detalles del recurso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -249,7 +255,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ca
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Para obtener instrucciones sobre cómo crear una conexión a [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión a [!DNL Adobe Campaign]</a> en este artículo.</td> 
+   <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Campaign], consulte <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Crear una conexión con [!DNL Adobe Campaign]</a> en este artículo.</td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
@@ -268,7 +274,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Ca
       <td>
         <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p>
         <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion adds the [!UICONTROL x-security] token header automatically.</p>
+        <p>Workfront Fusion agrega automáticamente el encabezado de token de [!UICONTROL x-security].</p>
       </td>
     </tr>
     <tr>
@@ -294,7 +300,7 @@ Para obtener información sobre acciones y campos específicos, consulte [[!DNL 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of resource that you want to perform an action on, or select **Custom Resource** and enter the resource details.</td> 
+   <td>Seleccione el tipo de recurso en el que desea realizar una acción o seleccione **Recurso personalizado** e introduzca los detalles del recurso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -325,7 +331,7 @@ Este módulo de acción lee un registro de [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to read, or select **Custom Resource** and enter the resource details.</td> 
+   <td>Seleccione el tipo de registro [!DNL Adobe Campaign] que desea leer o seleccione **Recurso personalizado** e introduzca los detalles del recurso.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -384,7 +390,7 @@ Este módulo de acción actualiza un único registro en [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to update, or select **Custom Resource** and enter the resource details.</td> 
+   <td>Seleccione el tipo de registro [!DNL Adobe Campaign] que desea actualizar o seleccione **Recurso personalizado** e introduzca los detalles del recurso.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -417,11 +423,11 @@ Este módulo de búsqueda devuelve registros basados en los criterios especifica
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to return, or select **Custom Resource** and enter the resource details.</td> 
+   <td>Seleccione el tipo de registro [!DNL Adobe Campaign] que desea devolver o seleccione **Recurso personalizado** e introduzca los detalles del recurso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
-   <td>Enter the fields and values that you want the search to use. Fields depend on the resource selected.</td> 
+   <td>Introduzca los campos y valores que desea que utilice la búsqueda. Los campos dependen del recurso seleccionado.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 

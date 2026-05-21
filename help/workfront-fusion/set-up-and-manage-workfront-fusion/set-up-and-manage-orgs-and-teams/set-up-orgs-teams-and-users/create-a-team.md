@@ -4,9 +4,12 @@ description: Los equipos son grupos más pequeños dentro de la organización y 
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
+TQID: https://experienceleague.adobe.com/-7x51V-z5F-LIK2eALXr66tPkSI5fJ4iLyXH28aR9CY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: 358
 ht-degree: 31%
 
 ---

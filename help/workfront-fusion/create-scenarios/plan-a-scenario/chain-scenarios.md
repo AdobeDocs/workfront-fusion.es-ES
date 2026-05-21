@@ -4,9 +4,12 @@ description: Puede encadenar escenarios juntos, permitiendo que un escenario alm
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
+TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: 1266
 ht-degree: 12%
 
 ---

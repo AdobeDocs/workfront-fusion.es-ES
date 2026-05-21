@@ -4,10 +4,15 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 84%
+source-wordcount: 3117
+ht-degree: 83%
 
 ---
 
@@ -87,7 +92,7 @@ Puede crear una conexión con su cuenta de [!DNL Workfront Proof] directamente d
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Introduzca un nombre para la conexión. </td>
+                <td>Introduzca un nombre para la conexión.</td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Environment]</td>
@@ -340,7 +345,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Notify recipients about this proof]</td> 
-   <td>Seleccione una opción para indicar si desea que los destinatarios sean notificados cuando se cree la prueba.&gt;</td> 
+   <td>Seleccione una opción para indicar si desea que se notifique a los destinatarios cuando se cree la prueba.&gt;</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof name]</td> 
@@ -393,7 +398,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 #### [!UICONTROL Llamada API personalizada]
 
-Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Workfront Proof]. De este modo, puede crear una automatización del flujo de datos que no puedan realizar los otros [!DNL Workfront Proof] módulos.
+Este módulo de acción le permite realizar una llamada autenticada personalizada a la API [!DNL Workfront Proof]. De este modo, puede crear una automatización del flujo de datos imposibles de realizar por los otros [!DNL Workfront Proof] módulos.
 
 El módulo devuelve el código de estado, los encabezados y el cuerpo. Puede asignar esta información en módulos subsiguientes en el escenario.
 
@@ -433,7 +438,7 @@ Este módulo de acción descarga el archivo de origen de una prueba concreta que
 
 Especifique el ID de la prueba.
 
-El módulo devuelve el contenido del archivo fuente utilizado para crear la prueba. Puede asignar esta información en módulos subsiguientes en el escenario.
+El módulo devuelve el contenido del archivo de origen utilizado para crear la prueba.Puede asignar esta información en módulos subsiguientes en el escenario.
 
 Debe tener permisos suficientes para obtener acceso al registro de [!DNL Workfront Proof] a fin de recuperar esta información.
 
@@ -484,7 +489,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td>Escriba o asigne el identificador único [!DNL Workfront Proof] del registro que desea que lea el módulo.</td> 
+   <td>Introduzca o asigne el identificador único de [!DNL Workfront Proof] del registro que desea que lea el módulo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -671,7 +676,7 @@ Este módulo de búsqueda enumera todas las plantillas de flujo de trabajo dispo
 
 Este módulo de búsqueda busca registros en un objeto de [!DNL Workfront Proof] que coincidan con la consulta de búsqueda especificada.
 
-El módulo devuelve el ID de la prueba si está buscando una prueba. También devuelve los ID de usuario, los correos electrónicos, los nombres, las posiciones y los alias de correo electrónico de los destinatarios, si está buscando destinatarios. Puede asignar esta información en módulos subsiguientes en el escenario.
+El módulo devuelve el ID de la prueba si está buscando una prueba. También devuelve los ID de usuario, los correos electrónicos, los nombres, las posiciones y los alias de correo electrónico de los destinatarios si están buscando destinatarios.Puede asignar esta información en módulos subsiguientes en el escenario.
 
 Debe tener permisos suficientes para obtener acceso al registro de [!DNL Workfront Proof] a fin de recuperar esta información.
 
