@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
-ht-degree: 27%
+source-wordcount: 1300
+ht-degree: 26%
 
 ---
 
@@ -82,6 +81,10 @@ Puede ver una lista de los webhooks en el área de Webhooks.
 1. Para establecer la prioridad de un webhook, haga clic en el menú desplegable de la columna Prioridad y seleccione la nueva prioridad.
 
    Los webhooks con mayor prioridad serán manejados primero, lo que puede ser beneficioso si un grupo de trabajadores tiene muchas automatizaciones compitiendo por recursos.
+
+   >[!NOTE]
+   >
+   >Solo los usuarios con el rol [!UICONTROL Administrador de equipo] o con el rol de [!UICONTROL Administrador] o [!UICONTROL Propietario] de la organización pueden cambiar la prioridad de un webhook. Para otros usuarios, la lista desplegable Prioridad está desactivada.
 1. Para deshabilitar o habilitar un webhook, deshabilite o habilite la opción en la columna Estado de la fila correspondiente a dicho webhook.
 1. Para ver si una cola de webhooks está llena, marque la columna Full Queue. El número de esta columna es el número de elementos que hay actualmente en la cola.
 1. Para ver las operaciones administradas por un webhook, haga clic en **Operaciones** en la columna Cola completa de ese webhook.
