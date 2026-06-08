@@ -4,14 +4,22 @@ description: Puede crear un mapa de las relaciones entre los escenarios principa
 author: Becky
 feature: Workfront Fusion
 exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
-source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 21%
+source-wordcount: '557'
+ht-degree: 18%
 
 ---
 
 # Ver y administrar relaciones de escenarios encadenados
+
+>[!IMPORTANT]
+>
+>Esta función se encuentra en Beta y no se recomienda para flujos de trabajo de producción esenciales. Como función de Beta, el comportamiento puede cambiar y es posible que los casos extremos no se gestionen completamente.
+>
+>Para integraciones estables, considere la posibilidad de activar un segundo escenario a través de un gancho web utilizando un módulo de solicitud HTTP: este patrón utiliza primitivas totalmente compatibles y proporciona a cada escenario un control de ejecución independiente.
+>
+>Si decide usar escenarios encadenados, revise [Encadenar varios escenarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) para obtener instrucciones de diseño.
 
 Puede crear un mapa de las relaciones entre los escenarios principal y secundario. También puede utilizar el mapa para saltar a diferentes escenarios de la cadena.
 

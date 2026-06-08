@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # Módulos de cadena
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Esta función se encuentra actualmente en Beta.
+>Esta función se encuentra en Beta y no se recomienda para flujos de trabajo de producción esenciales. Como función de Beta, el comportamiento puede cambiar y es posible que los casos extremos no se gestionen completamente.
+>
+>Para integraciones estables, considere la posibilidad de activar un segundo escenario a través de un gancho web utilizando un módulo de solicitud HTTP: este patrón utiliza primitivas totalmente compatibles y proporciona a cada escenario un control de ejecución independiente.
+>
+>Si decide usar escenarios encadenados, revise [Encadenar varios escenarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) para obtener instrucciones de diseño.
 
 Con los módulos Cadena, puede conectar un escenario a otro.
 
@@ -84,6 +87,16 @@ Para configurar el módulo principal Recibir datos de:
 
 Este módulo se encuentra en el escenario principal. Los campos reflejan la estructura de datos establecida en el módulo Recibir datos del principal en el escenario secundario.
 
+>[!IMPORTANT]
+>
+> Revise lo siguiente antes de configurar este módulo en un escenario de producción:
+>
+> * **No habilitar el último Déclencheur de confirmación (CTL)** en este escenario cuando se deshabilite Fire and Olvidar. CTL volverá a intentar el escenario cuando suspenda la espera de una respuesta secundaria, lo que crea un bucle de reintento ilimitado.
+> * **Tenga cuidado al colocar este módulo dentro de un iterador.** La distribución de un escenario secundario para cada elemento en un iterador grande crea una carga de plataforma significativa. Considere la posibilidad de integrar la lógica del escenario secundario o precalcular búsquedas compartidas fuera del iterador.
+> * **Despedir y olvidar** significa que el padre no tiene visibilidad sobre si el hijo se ejecutó o tuvo éxito. Utilícelo únicamente cuando los errores secundarios se supervisen de forma independiente.
+>
+> Para obtener instrucciones de diseño completas, vea [Encadenar varios escenarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+
 >[!NOTE]
 >
 >* Puede seleccionar un escenario secundario existente o crear uno nuevo mediante este módulo.
@@ -112,7 +125,11 @@ Para configurar el módulo Llamar a un escenario secundario
 
 Se encuentra en el escenario secundario y envía los datos de la estructura seleccionada al escenario principal. Puede asignar estos datos en módulos posteriores en el escenario principal.
 
-Si el escenario secundario tiene varias rutas, se recomienda agregar este módulo a una ruta que siempre se ejecute después de cualquier otra ruta.
+>[!IMPORTANT]
+>
+> Si el escenario secundario tiene varias rutas, **debe** asegurarse de que se pueda obtener acceso a la respuesta de retorno al módulo principal desde cada ruta de ejecución. Si el módulo de respuesta de retorno se encuentra en una ruta que se omite o no se ejecuta, el escenario principal esperará indefinidamente una respuesta que nunca llegue.
+>
+> Agregue la respuesta Devolver al módulo principal después del enrutador, en una ruta que siempre se ejecute independientemente del resultado del enrutador, o agregue el control de errores para garantizar que siempre se devuelva una respuesta aunque se produzca un error.
 
 Para configurar el módulo Agregar Respondedor:
 

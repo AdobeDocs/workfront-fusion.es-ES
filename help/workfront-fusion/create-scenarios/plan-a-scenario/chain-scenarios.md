@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 12%
+source-wordcount: 1705
+ht-degree: 9%
 
 ---
 
 # Encadenar varios escenarios juntos
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Esta función se encuentra actualmente en Beta.
+>Esta función se encuentra en Beta y no se recomienda para flujos de trabajo de producción esenciales. Como función de Beta, el comportamiento puede cambiar y es posible que los casos extremos no se gestionen completamente.
+>
+>Para integraciones estables, considere la posibilidad de activar un segundo escenario a través de un gancho web utilizando un módulo de solicitud HTTP: este patrón utiliza primitivas totalmente compatibles y proporciona a cada escenario un control de ejecución independiente.
+>
+>Si decide utilizar escenarios encadenados, revise atentamente las instrucciones de diseño y las restricciones de este artículo, especialmente la sección [Prácticas recomendadas](#best-practices).
 
 Puede encadenar escenarios juntos, permitiendo que un escenario almacene en déclencheur otro y devolviendo la salida de datos por el segundo escenario al primero. Esto permite crear escenarios más modulares, donde no tiene que duplicar secciones de escenarios en varios escenarios.
 
@@ -63,7 +66,9 @@ Consideremos los siguientes ejemplos de casos de uso para encadenar escenarios:
 
 * **Control de errores**: Es común que las organizaciones tengan las mismas acciones de control de errores en varios escenarios, como una ruta de control de errores que envía un registro de errores a un almacén de datos y crea una notificación de demora. Puede crear un escenario secundario con estas acciones y encadenarlo en rutas de gestión de errores en varios escenarios.
 
-* **Ampliación del tiempo**: puede utilizar el encadenamiento para operaciones por lotes grandes con acciones de ejecución prolongada, como cuando exporta e importa archivos. Esta operación tarda algún tiempo si hay muchos archivos. Dado que los escenarios secundarios no cuentan con el tiempo de espera del escenario principal, puede superar el tiempo de ejecución al utilizar varios escenarios secundarios para exportar o importar los archivos.
+* **Tiempo de ampliación**: puede usar el encadenamiento para operaciones por lotes grandes en las que el tiempo total de procesamiento excedería el límite de ejecución de 40 minutos de un solo escenario. Sin embargo, trate este patrón con precaución: un escenario principal que se encadena a varios escenarios secundarios de larga duración no tiene un límite de tiempo de espera general. Si se bloquea cualquier escenario secundario o se produce un problema de plataforma, el padre espera indefinidamente sin mostrar un error.
+
+  Antes de utilizar el encadenamiento para ampliar el tiempo de ejecución, considere si el tamaño del lote puede reducirse, si la frecuencia puede aumentar o si el diseño puede reestructurarse para evitar largas cadenas secuenciales. Consulte [Prácticas recomendadas](#best-practices) a continuación.
 
 * **Reemplazar iteradores**: reemplazar iteradores con escenarios secundarios puede reducir el uso de memoria, como en operaciones complejas en una iteración que provocan un error de Memoria insuficiente. Puede crear un escenario independiente para la operación compleja y reemplazar el iterador con el módulo Invocar a un escenario secundario
 
@@ -106,8 +111,44 @@ Al encadenar escenarios, siga estas prácticas para evitar la recursión:
 >* **Cuando un escenario está produciendo recursividad, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
 >* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo activen.
 >* Puede ver un diagrama de las relaciones entre los escenarios principal y secundario.
->   Para obtener instrucciones, vea [Ver relaciones de escenarios encadenados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
+>   Para obtener instrucciones, consulte [Ver relaciones de escenarios encadenados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Utilice la gestión de errores para garantizar una respuesta
 
 Dado que el escenario principal está esperando una respuesta del escenario secundario antes de poder continuar, debe asegurarse de que el escenario secundario esté creado para proporcionar una respuesta aunque encuentre un error.
+
+### No utilice la configuración &quot;Comprometer último Déclencheur (CTL)&quot;
+
+No se recomienda utilizar la configuración de escenario &quot;Confirmar último Déclencheur (CTL)&quot; con escenarios encadenados. Si necesita volver a intentar el comportamiento en un escenario que utiliza el encadenamiento, impleméntelo explícitamente utilizando una ruta de control de errores con un recuento máximo de reintentos definido.
+
+### Limitar profundidad de anidación
+
+Limite las redes de escenarios encadenados a dos niveles de profundidad (principal → secundario). Los escenarios anidados a tres o más niveles de profundidad (padre → hijo → nieto) aumentan significativamente la complejidad, reducen la observabilidad y dificultan el diagnóstico de errores sin soporte técnico.
+
+Si su diseño requiere un anidado más profundo, documente el mapa de cadena completo y asegúrese de que la monitorización esté implementada antes de implementarla en producción.
+
+### Use Fuego y Olvídese con cuidado
+
+Cuando **Activar y olvidar** está habilitado en el módulo Llamar a un escenario secundario, el escenario principal envía el escenario secundario y continúa inmediatamente sin esperar una respuesta. El padre no tiene visibilidad de si el escenario secundario se ejecutó, tuvo éxito o falló.
+
+Usar Fuego y Olvidar solo cuando:
+
+* El escenario secundario realiza registros, notificaciones o escrituras de auditoría que no afectan a la lógica del escenario principal
+* Dispone de supervisión independiente para detectar errores secundarios silenciosos
+
+No utilice Fuego y Olvidar cuando:
+
+* El escenario secundario realiza escrituras de las que depende el principal
+* Debe saber si el escenario secundario se realizó correctamente antes de que el principal continúe
+* El flujo de trabajo es transaccional o requiere garantías de procesamiento de exactamente una vez
+
+### Evite llamar a escenarios secundarios dentro de iteradores de gran volumen
+
+Al colocar un módulo de escenario Llamar a un escenario secundario dentro de un BasicFeeder u otro iterador, se distribuye un escenario secundario para cada elemento procesado. Al contar un número elevado de artículos (cientos o más por ejecución), esto crea una carga de envío significativa y aumenta la exposición a los problemas de fiabilidad de la plataforma.
+
+Antes de usar este patrón:
+
+* Considere si la lógica del escenario secundario se puede integrar directamente en el escenario principal como módulos
+* Precalcule las búsquedas que devuelvan el mismo valor para cada iteración fuera del iterador, en lugar de enviar una llamada en cadena por elemento
+* Confirme el recuento máximo realista de elementos y revíselo al administrador antes de implementarlo en la producción
+
