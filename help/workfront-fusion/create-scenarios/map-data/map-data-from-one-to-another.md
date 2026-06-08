@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 777
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -125,7 +125,7 @@ Puede elegir ejecutar:
 Para ejecutar el módulo único:
 
 1. Haga clic con el botón secundario en el módulo y, a continuación, haga clic en **[!UICONTROL Run this module only]** en el menú que se muestra.
-1. Proporcione valores de muestra para los elementos de entrada y haga clic en **[!UICONTROL Aceptar]** .
+1. Proporcione valores de muestra para los elementos de entrada y haga clic en **[!UICONTROL Aceptar]**.
 1. Cuando el módulo termine de ejecutarse, haga clic en la burbuja situada encima del módulo para explorar su salida completa.
 
    El panel de asignación para módulos posteriores ahora contiene todos los elementos en la salida del módulo.

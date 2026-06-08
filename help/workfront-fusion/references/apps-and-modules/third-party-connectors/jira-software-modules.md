@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 2482
+source-wordcount: 2481
 ht-degree: 79%
 
 ---
@@ -401,7 +401,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conexión de [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Jira Software] a Workfront Fusion, consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] a Workfront Fusion</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -519,7 +519,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>Escriba o asigne el ID de [!DNL Jira Software] único del registro que desea que lea el módulo.</p> </td> 
+   <td> <p>Introduzca o asigne el ID único de [!DNL Jira Software] del registro que desea que lea el módulo.</p> </td> 
   </tr> 
  </tbody> 
 </table>

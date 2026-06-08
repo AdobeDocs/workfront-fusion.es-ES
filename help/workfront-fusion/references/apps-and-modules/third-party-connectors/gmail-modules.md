@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 1871
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -160,7 +160,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 * [[!UICONTROL Mark an email as unread]](#mark-an-email-as-unread)
 * [[!UICONTROL Move an email]](#move-an-email)
 * [[!UICONTROL Modify email labels]](#modify-email-labels)
-* [[!UICONTROL Enviar un correo electrónico]](#send-an-email)
+* [[!UICONTROL Send an email]](#send-an-email)
   <!--* [Delete labels](#delete-labels)-->
   <!--* [Set labels](#set-labels)-->
 
@@ -170,7 +170,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 Este módulo de acción copia un correo electrónico o un borrador de correo electrónico a la carpeta que especifique.
 
-Usted especifica la carpeta, la carpeta de destino y el ID del correo electrónico.
+Especifique la carpeta, la carpeta de destino y el ID del correo electrónico.
 
 El módulo devuelve el ID del correo electrónico y cualquier campo asociado, junto con cualquier campo personalizado y valor al que acceda la conexión. Puede asignar esta información en módulos subsiguientes en el escenario.
 
@@ -370,7 +370,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 
 Este módulo de acción mueve un correo electrónico o un borrador de correo electrónico a la carpeta que especifique.
 
-Usted especifica la carpeta, la carpeta de destino y el ID del correo electrónico.
+Especifique la carpeta, la carpeta de destino y el ID del correo electrónico.
 
 El módulo devuelve el ID del correo electrónico y cualquier campo asociado, junto con cualquier campo personalizado y valor al que acceda la conexión. Puede asignar esta información en módulos subsiguientes en el escenario.
 

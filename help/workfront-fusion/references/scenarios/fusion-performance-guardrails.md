@@ -7,10 +7,10 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1101
-ht-degree: 94%
+source-wordcount: 1351
+ht-degree: 77%
 
 ---
 
@@ -27,6 +27,12 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
 * El tiempo de espera de ejecución del escenario predeterminado es de **40 minutos**. Cuando la ejecución alcanza este tiempo de espera, Workfront Fusion interrumpe la ejecución del escenario después del siguiente ciclo u operación, según el escenario. Esto obliga al escenario a detenerse poco después de alcanzar el límite de 40 minutos
 
   Encadenar escenarios no cuenta para el tiempo de espera de ejecución del escenario. Un escenario principal no acumula tiempo mientras espera hasta que se ejecute un escenario secundario.
+
+  >[!IMPORTANT]
+  >
+  > Mientras que el encadenamiento permite que los flujos de trabajo se ejecuten más de 40 minutos, esto debe tratarse como una señal de riesgo de diseño, no como una solución alternativa. Los escenarios principales que abarcan varios escenarios secundarios de larga duración no tienen un límite de tiempo de espera general. Si un escenario secundario se bloquea o encuentra un problema de plataforma, el principal espera indefinidamente sin errores ni recuperación automática.
+  >
+  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
@@ -35,6 +41,14 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
    * Cuando utilice otras aplicaciones, utilice módulos de API personalizados para interactuar con cualquier tipo de registro que tenga un gran número de campos.
 
 * Aunque no hay límite en cuanto al número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento del sistema Workfront Fusion. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
+
+## Escenarios encadenados
+
+* La funcionalidad de encadenamiento de escenarios se encuentra en Beta y no se recomienda para flujos de trabajo esenciales. Como función de Beta, el comportamiento puede cambiar y es posible que los casos extremos no se gestionen completamente.
+
+  Para integraciones estables, considere la posibilidad de activar un segundo escenario a través de un gancho web mediante un módulo de solicitud HTTP. Este patrón utiliza primitivas totalmente compatibles y proporciona a cada escenario un control de ejecución independiente.
+
+  Si decide utilizar escenarios encadenados, revise las directrices de diseño y las restricciones del artículo [Encadenar varios escenarios juntos](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
 ## Operaciones
 
@@ -77,6 +91,8 @@ Para obtener más información, consulte [Trabajo con archivos grandes](/help/wo
 * Los registros del historial de ejecución están limitados a un tamaño de **100 MB**. Si el historial de ejecución supera este tamaño, solo se mostrarán los primeros 100 MB.
 * Si la entrada o salida de una operación única supera los 15 MB, no aparece en el historial de ejecución.
 * Si un escenario tiene varias ejecuciones simultáneas, solo se muestran cinco ejecuciones en el área Ejecuciones de la página de detalles del escenario. Esto ocurre incluso cuando se están ejecutando más de 5 ejecuciones.
+* Si un escenario forma parte de una red encadenada, el historial de ejecución se mantiene por separado para cada escenario de la cadena. No hay una vista de seguimiento unificada entre los escenarios principal y secundario. Para investigar una ejecución encadenada, abra el historial de ejecución de cada escenario individualmente.
+* Si la entrada o salida de una operación única supera los 15 MB, no aparece en el historial de ejecución. Este límite se aplica a los datos pasados entre los escenarios principal y secundario a través de módulos de cadena.
 
 ## Ejecuciones incompletas
 
