@@ -32,7 +32,7 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
   >
   > Mientras que el encadenamiento permite que los flujos de trabajo se ejecuten más de 40 minutos, esto debe tratarse como una señal de riesgo de diseño, no como una solución alternativa. Los escenarios principales que abarcan varios escenarios secundarios de larga duración no tienen un límite de tiempo de espera general. Si un escenario secundario se bloquea o encuentra un problema de plataforma, el principal espera indefinidamente sin errores ni recuperación automática.
   >
-  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
+  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.

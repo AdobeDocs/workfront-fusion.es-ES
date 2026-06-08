@@ -96,7 +96,7 @@ Este módulo se encuentra en el escenario principal. Los campos reflejan la estr
 > * **Tenga cuidado al colocar este módulo dentro de un iterador.** La distribución de un escenario secundario para cada elemento en un iterador grande crea una carga de plataforma significativa. Considere la posibilidad de integrar la lógica del escenario secundario o precalcular búsquedas compartidas fuera del iterador.
 > * **Despedir y olvidar** significa que el padre no tiene visibilidad sobre si el hijo se ejecutó o tuvo éxito. Utilícelo únicamente cuando los errores secundarios se supervisen de forma independiente.
 >
-> Para obtener instrucciones de diseño completas, vea [Encadenar varios escenarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Para obtener instrucciones de diseño completas, vea [Encadenar varios escenarios](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >
