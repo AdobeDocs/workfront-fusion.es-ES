@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 50a1b6a8f8e3ad09c8734e901f8f0dab36f79e2e
 workflow-type: tm+mt
-source-wordcount: 902
-ht-degree: 15%
+source-wordcount: 899
+ht-degree: 16%
 
 ---
 
@@ -93,12 +92,27 @@ Puede utilizar los siguientes vínculos para descargar los certificados público
 >
 >* Son certificados mTLS no comodín.
 
+Descargue el siguiente archivo zip, descomprímalo y use el archivo PEM para su centro de datos.
+
+[Descargar certificados de Workfront Fusion 2026](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+
 | Datacenter | Vínculo de descarga | Fechas válidas |
 | --- | --- | --- |
-| US AWS Datacenter | [Descargar certificado Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | Del 29 de enero de 2026 al 2 de marzo de 2027 |
-| Clúster Azure de EE. UU. | [Descargar el certificado Azure 2026 de Workfront Fusion US](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Del 21 de septiembre de 2025 al 23 de octubre de 2026 |
-| Centro de datos AWS UE | [Descargar el certificado Workfront Fusion EU 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Del 29 de enero de 2026 al 2 de marzo de 2027 |
-| Clúster Azure de la UE | [Descargar el certificado Azure 2026 de Workfront Fusion EU](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Del 4 de febrero de 2026 al 8 de marzo de 2027 |
+| US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | Del 29 de enero de 2026 al 2 de marzo de 2027 |
+| Clúster Azure de EE. UU. | `fusion-prod-az-mtls-certificate.pem` | Del 21 de septiembre de 2025 al 23 de octubre de 2026 |
+| Centro de datos AWS UE | `fusion-prod-eu-mtls-certificate-2026.pem` | Del 29 de enero de 2026 al 2 de marzo de 2027 |
+| Clúster Azure de la UE | `fusion-prod-eu-az-mtls-certificate-2026.pem` | Del 4 de febrero de 2026 al 8 de marzo de 2027 |
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US AWS Datacenter | [Download Workfront Fusion US Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| US Azure Cluster | [Download Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | September 21, 2025 to October 23, 2026 |
+| EU AWS Datacenter | [Download Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| EU Azure Cluster | [Download Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
+
+-->
 
 ### Certificados para 2025
 
@@ -112,11 +126,26 @@ Puede utilizar los siguientes vínculos para descargar los certificados público
 >
 >* Son certificados mTLS no comodín.
 
-| Datacenter | Vínculo de descarga | Fechas válidas |
+Descargue el siguiente archivo zip, descomprímalo y use el archivo PEM para su centro de datos.
+
+[Descargar certificados de Workfront Fusion 2025](assets/2025-certs/fusion-prod-mtls-certificate-2025.zip)
+
+| Datacenter | Archivo | Fechas válidas |
 | --- | --- | --- |
-| US Datacenter | [Descargar certificado Workfront Fusion US 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Del 3 de marzo de 2025 al 4 de abril de 2026 |
-| Centro de datos UE | [Descargar el certificado Workfront Fusion EU 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Del 3 de marzo de 2025 al 4 de abril de 2026 |
-| Clúster Azure | [Descargar certificado Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | Del 24 de octubre de 2024 al 25 de noviembre de 2025 |
+| US Datacenter | `fusion-prod-us-mtls-certificate.pem` | Del 3 de marzo de 2025 al 4 de abril de 2026 |
+| Centro de datos UE | `fusion-prod-eu-mtls-certificate.pem` | Del 3 de marzo de 2025 al 4 de abril de 2026 |
+| Clúster Azure | `fusion-prod-az-mtls-certificate.pem` | Del 24 de octubre de 2024 al 25 de noviembre de 2025 |
+
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
+
+-->
 
 <!--
 
@@ -152,3 +181,4 @@ Para habilitar TLS mutuo en un módulo de solicitud [!UICONTROL HTTP]:
 
 1. Habilitar **[!UICONTROL Mostrar configuración avanzada]** cerca de la parte inferior del módulo.
 1. Habilitar **[!UICONTROL Usar TLS mutuo]**.
+
