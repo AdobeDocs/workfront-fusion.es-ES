@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +18,7 @@ Puede recuperar una ejecución de escenario específica para procesar los datos 
 
 Por ejemplo, si actualiza un escenario para agregar una acción como crear un problema, puede volver a activar una ejecución que se produjo antes de la actualización. El escenario actualizado se ejecutará con el evento de activación del escenario original, pero incluirá la acción actualizada. En este ejemplo, el escenario crea un problema como parte de la nueva ejecución.
 
-La recuperación está disponible para escenarios que tienen déclencheur de gancho web y para escenarios secundarios.
+La recuperación está disponible para escenarios que tienen déclencheur de gancho web y para escenarios encadenados.
 
 Al volver a activar un escenario que utiliza un gancho web, el evento original del gancho web se puede utilizar de nuevo, por lo que no tiene que volver a crear el evento para volver a activar el escenario.
 
