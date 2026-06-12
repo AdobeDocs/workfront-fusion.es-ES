@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -32,7 +31,7 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
   >
   > Mientras que el encadenamiento permite que los flujos de trabajo se ejecuten más de 40 minutos, esto debe tratarse como una señal de riesgo de diseño, no como una solución alternativa. Los escenarios principales que abarcan varios escenarios secundarios de larga duración no tienen un límite de tiempo de espera general. Si un escenario secundario se bloquea o encuentra un problema de plataforma, el principal espera indefinidamente sin errores ni recuperación automática.
   >
-  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
+  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
@@ -41,6 +40,7 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
    * Cuando utilice otras aplicaciones, utilice módulos de API personalizados para interactuar con cualquier tipo de registro que tenga un gran número de campos.
 
 * Aunque no hay límite en cuanto al número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento del sistema Workfront Fusion. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
+* Los nombres de escenario no pueden tener más de 120 caracteres.
 
 ## Escenarios encadenados
 
