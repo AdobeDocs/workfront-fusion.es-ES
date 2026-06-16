@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 52%
+source-wordcount: 2236
+ht-degree: 49%
 
 ---
 
@@ -277,6 +274,8 @@ Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o eli
       </tr>
   </tbody>
 </table>
+
+Para ver un ejemplo de uso de lógica avanzada en este módulo, vea [Ejemplo de lógica avanzada en el módulo de eventos de inspección](#example-of-advanced-logic-in-the-watch-events-module).
 
 ### Acciones
 
@@ -571,3 +570,40 @@ La siguiente expresión JSONata crea un resultado legible en lenguaje natural de
 
 Para obtener información sobre el uso de módulos JSONata, consulte [módulos JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
 
+## Ejemplo de lógica avanzada en el módulo Ver eventos
+
+Este es un ejemplo del formato que adopta la lógica avanzada al utilizar el módulo Workfront Planning > Ver eventos.
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+Tenga en cuenta lo siguiente al utilizar la lógica avanzada en el módulo Ver evento:
+
+* La primera entrada `"fieldvalue":` es el identificador de tipo de registro de planificación extraído de la dirección URL. En este ejemplo, el identificador del tipo de registro de planificación es `Rt68c886502d4b5554ee80896b`.
+* Los datos de Planning se devuelven dentro de una matriz denominada `data `, que aparece en este ejemplo como `"fieldName": "data"`.
+* Los nombres de los campos de planificación se devuelven como identificadores que comienzan por `F`.
+* Dado que este ejemplo está evaluando con un conector de filtro `OR`, tiene dos entradas para el mismo campo (`F68c886502d4b5554eec808975`).  Las dos opciones desplegables con las que filtra el módulo son `"planning"` y `"active"`.
