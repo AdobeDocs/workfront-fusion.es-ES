@@ -10,7 +10,7 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 8b031ed2093d4844f05c52db9fc79ce9e7e4b85c
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 16%
@@ -140,7 +140,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Eliminación de una decisión en una fase](#delete-a-decision-on-a-stage)
 * [Eliminación de una fase](#delete-a-stage)
 * [Eliminación de una plantilla](#delete-a-template)
-* [# Eliminar una aprobación](#delete-an-approval)
+* [Eliminar una aprobación](#delete-an-approval)
 * [Eliminar decisiones](#delete-decisions)
 * [Eliminar participantes](#delete-participants)
 * [Bloquear un escenario](#lock-a-stage)
