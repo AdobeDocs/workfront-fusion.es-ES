@@ -4,13 +4,10 @@ description: Con los módulos Contenido y aprobaciones de Adobe Workfront, puede
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 8b031ed2093d4844f05c52db9fc79ce9e7e4b85c
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 16%
@@ -21,7 +18,7 @@ ht-degree: 16%
 
 Con los módulos Adobe Workfront Unified Review and Approvals, puede obtener detalles de aprobación, tomar una decisión sobre un recurso, agregar o eliminar participantes de aprobación, agregar o actualizar etapas de aprobación, bloquear o desbloquear etapas y hacer llamadas de API personalizadas.
 
-Para obtener información acerca de la revisión unificada y las aprobaciones de Workfront, consulte [Revisión unificada y descripción general de la aprobación](https://experienceleague.adobe.com/es/docs/workfront/using/review-and-approve-work/document-approvals-overview) en la documentación de Workfront.
+Para obtener información acerca de la revisión unificada y las aprobaciones de Workfront, consulte [Revisión unificada y descripción general de la aprobación](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) en la documentación de Workfront.
 
 ## Requisitos de acceso
 
@@ -140,7 +137,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Eliminación de una decisión en una fase](#delete-a-decision-on-a-stage)
 * [Eliminación de una fase](#delete-a-stage)
 * [Eliminación de una plantilla](#delete-a-template)
-* [# Eliminar una aprobación](#delete-an-approval)
+* [Eliminar una aprobación](#delete-an-approval)
 * [Eliminar decisiones](#delete-decisions)
 * [Eliminar participantes](#delete-participants)
 * [Bloquear un escenario](#lock-a-stage)
