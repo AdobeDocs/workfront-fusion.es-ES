@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 2236
+source-wordcount: 2237
 ht-degree: 49%
 
 ---
@@ -204,7 +204,7 @@ Puede crear una conexión a su cuenta de Workfront Planning directamente desde u
 
 ## Módulos de [!DNL Adobe Workfront Planning] y sus campos
 
-Al configurar los módulos de Workfront, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos adicionales de Workfront, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
+Al configurar los módulos de Workfront Planning, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos adicionales de Workfront, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
 Si ve el botón Asignar encima de un campo o función, puede utilizarlo para establecer variables y funciones para ese campo. Para obtener más información, consulte [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -390,7 +390,7 @@ Este módulo de acción recupera una lista de registros en función de los crite
       <td role="rowheader">
         <p>[!UICONTROL Record Fields]</p>
       </td>
-      <td>Para cada campo que desee utilizar en la búsqueda, busque ese campo, seleccione el operador e introduzca o asigne el valor que desee buscar. Los campos están disponibles en función del tipo de registro seleccionado.</td> 
+      <td>Para cada campo que desee utilizar en la búsqueda, localice ese campo, seleccione el operador e introduzca o asigne el valor que desee buscar. Los campos están disponibles en función del tipo de registro seleccionado.</td> 
       </tr>
      <tr>
       <td role="rowheader">
