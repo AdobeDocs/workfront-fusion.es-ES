@@ -9,16 +9,13 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
 TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 18401e01219383f86e1553e16b21057497d24cc0
 workflow-type: tm+mt
-source-wordcount: 1702
-ht-degree: 22%
+source-wordcount: 2240
+ht-degree: 17%
 
 ---
 
@@ -418,7 +415,7 @@ Este módulo realiza una llamada de API personalizada a la API de Adobe InDesign
         <p>Ruta</p>
       </td>
       <td>
-        <p>Introduzca una ruta relativa a <code>https://indesign.adobe.io/v3</code>.</p><p> Ejemplo: <code>/create-rendition</code></p>
+        <p>Escriba una ruta relativa a <code>https://indesign.adobe.io/v3</code>.</p><p> Ejemplo: <code>/create-rendition</code></p>
       </td>
     </tr>
     <tr>
@@ -452,3 +449,121 @@ Este módulo realiza una llamada de API personalizada a la API de Adobe InDesign
   </tr> 
   </tbody>
 </table>
+
+### Sin categoría
+
+#### Convertir PDF a InDesign
+
+Este módulo convierte el documento de PDF al formato InDesign editable (INDD o IDML). La salida es un archivo ZIP (nombre predeterminado &quot;output.zip&quot;) que contiene subcarpetas con el nombre de cada PDF de entrada, con el documento convertido y los recursos asociados. Si la opción Insertar vínculos es falsa, los recursos se proporcionan en una carpeta independiente dentro del ZIP. Si el valor es True, todos los vínculos se incrustan en el archivo InDesign.
+
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexión</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Crear una conexión con Adobe InDesign</a> en este artículo.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Recursos de entrada</td>
+      <td>Para cada recurso que desee convertir, haga clic en <b>Agregar elemento</b>, escriba la dirección URL del recurso y asigne un nombre de archivo local. Se hará referencia al nombre de archivo más adelante en el módulo.</td>
+    </tr>
+  <tr> 
+   <td>Documentos de destino</td> 
+   <td>Para cada documento que desee convertir, haga clic en <b>Agregar elemento</b> e introduzca el nombre de archivo asignado del campo Recursos de entrada.</td> 
+  </tr> 
+  <tr> 
+   <td>Formato de salida</td> 
+   <td>Seleccione si desea convertir los archivos a archivos INDD o IDML.</td> 
+  </tr> 
+  <tr> 
+   <td>Incrustar vínculos</td> 
+   <td>Seleccione Sí si desea que todos los vínculos de imágenes y recursos estén incrustados directamente en el archivo INDD o IDML. Seleccione No para colocar estos recursos en una carpeta independiente en el archivo ZIP.</td> 
+  </tr> 
+  <tr> 
+   <td>Nombre del archivo ZIP de salida</td> 
+   <td>Introduzca o asigne un nombre al archivo ZIP de salida.</td> 
+  </tr> 
+  <tr> 
+   <td>Salidas</td> 
+   <td>Para cada archivo que desee generar, seleccione el tipo de almacenamiento e introduzca los detalles de almacenamiento.</td> 
+  </tr> 
+  <tr> 
+   <td>Número máximo de resultados devueltos</td> 
+   <td>Introduzca el número máximo de resultados que desea que devuelva el módulo para cada ciclo de ejecución.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Enviar un script personalizado
+
+Este módulo envía paquetes de scripts personalizados para su registro y devuelve una URL para publicar solicitudes de ejecución para el script registrado.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexión</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Crear una conexión con Adobe InDesign</a> en este artículo.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Paquete de script</td>
+      <td>Asigne el archivo de origen desde un módulo anterior, como un módulo Descargar un documento. Debe ser un archivo ZIP.</td>
+    </tr>
+  <tr> 
+   <td>Nombre del archivo</td> 
+   <td>Introduzca o asigne el nombre del archivo cargado que contiene el paquete de secuencias de comandos.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Actualizar versión de aplicación de script personalizada
+
+Este módulo actualiza la configuración de la versión de la aplicación de InDesign para un script personalizado registrado. Esto le permite especificar estrategias de versión, incluido el uso de la versión más reciente, la corrección de una versión principal o la corrección de una versión principal y secundaria específica.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexión</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Crear una conexión con Adobe InDesign</a> en este artículo.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Nombre del script</td>
+      <td>Introduzca o asigne el nombre del script personalizado que desea actualizar. Este es el valor <code>capability</code> devuelto cuando se registró el script.</td>
+    </tr>
+  <tr> 
+   <td>Estrategia de versión de aplicación</td> 
+   <td>Seleccione la estrategia de versión de la aplicación que desee utilizar.
+   <ul>
+   <li><b>Utilice siempre la versión más reciente</b></li>
+   <li><b>Anclar a una versión principal</b><p>Introduzca o asigne el número de la versión principal a la que desea aplicar esto.</p></li>
+   <li><b>Anclar a una versión principal y secundaria</b><p>Introduzca la versión principal y secundaria a la que desea aplicar esto.</p></li>
+   </ul></td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Obtener versiones actuales de la aplicación
+
+Este módulo recupera información sobre todas las versiones de la aplicación de InDesign disponibles, incluida la versión principal, la versión secundaria y el estado de cada versión de la aplicación registrada.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexión</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Crear una conexión con Adobe InDesign</a> en este artículo.</td>
+      </tr>
+  <tr> 
+   <td>Número máximo de resultados devueltos</td> 
+   <td>Introduzca el número máximo de resultados que desea que devuelva el módulo para cada ciclo de ejecución.</td> 
+  </tr> 
+  </tbody>
+</table>
+
