@@ -3,10 +3,11 @@ title: Módulo App Builder de Adobe
 description: El conector App Builder de Adobe le permite utilizar funciones personalizadas en sus escenarios.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
@@ -45,15 +46,32 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 +++
 
-## Módulo App Builder de Adobe
+## Módulos de Adobe App Builder
 
-El único módulo de Adobe App Builder disponible actualmente es Ejecutar una acción, que le permite utilizar una función de JavaScript personalizada previamente configurada.
+### Ejecutar un bloque de código personalizado
+
+Este módulo le permite ejecutar un bloque de código. El bloque de código se configura al configurar el módulo y se ejecuta cuando el módulo se ejecuta durante la ejecución de un escenario.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Seleccione la conexión que contiene la función personalizada que desea ejecutar. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Bloque de código]</td> 
+   <td>Escriba el bloque de código que desea que ejecute el módulo.<p>Para dar formato al código para facilitar la lectura, haga clic en el icono <b>Formato del código</b>.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Ejecutar una función personalizada
+
+Este módulo le permite utilizar una función personalizada de JavaScript previamente configurada y almacenada en el área Funciones.
 
 Para obtener instrucciones sobre cómo configurar una función personalizada, vea [Asignar datos mediante funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
-
-### Ejecutar una acción
-
-Este módulo ejecuta una función personalizada previamente configurada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -73,5 +91,3 @@ Este módulo ejecuta una función personalizada previamente configurada.
   </tr> 
    </tbody> 
 </table>
-
-

@@ -3,10 +3,11 @@ title: Asignación de datos mediante funciones personalizadas
 description: Al asignar elementos, puede utilizar funciones para crear fórmulas simples o complejas.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 109ea8a6b3c37918110dc930a19ac85ef3e6d764
+exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
+source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 16%
 
 ---
 
@@ -53,9 +54,19 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Configuración de una función personalizada
 
-Las funciones personalizadas se configuran en el área Funciones de Workfront Fusion. Una vez configurada una función, puede agregarla a un escenario mediante el conector de App Builder de Adobe.
+Puede crear una función personalizada en el área Funciones que se puede utilizar en varios escenarios o puede configurar funciones personalizadas en escenarios individuales.
 
-### Inicialice el entorno de tiempo de ejecución
+* [Crear una función personalizada para utilizarla en varios escenarios](#create-a-custom-function-to-use-in-multiple-scenarios)
+* [Creación de una función personalizada dentro de un escenario](#create-a-custom-function-within-a-scenario)
+
+### Crear una función personalizada para utilizarla en varios escenarios
+
+Las funciones personalizadas que se pueden utilizar en varios escenarios se configuran en el área Funciones de Workfront Fusion. Una vez configurada una función, puede agregarla a un escenario mediante el conector de App Builder de Adobe.
+
+* [Inicialice el entorno de tiempo de ejecución](#initialize-your-runtime-environment)
+* [Cree una función personalizada en el área Funciones](#create-a-custom-function-in-the-functions-area)
+
+#### Inicialice el entorno de tiempo de ejecución
 
 Para poder crear funciones personalizadas, debe inicializar el entorno de tiempo de ejecución. Esto solo debe hacerse si su equipo no tiene funciones personalizadas.
 
@@ -72,7 +83,7 @@ Para poder crear funciones personalizadas, debe inicializar el entorno de tiempo
 
    Después de un tiempo, aparece una lista Funciones, con dos funciones de ejemplo.
 
-### Creación de una función personalizada
+#### Cree una función personalizada en el área Funciones
 
 Una vez configurado el entorno de tiempo de ejecución, puede empezar a crear funciones personalizadas.
 
@@ -96,9 +107,14 @@ Una vez configurado el entorno de tiempo de ejecución, puede empezar a crear fu
    Puede anular los parámetros predeterminados al agregar la función a un escenario.
 1. Haga clic en **Guardar**
 
+### Creación de una función personalizada dentro de un escenario
+
+Para crear una función personalizada dentro de un escenario, usa el módulo **Ejecutar un bloque de código personalizado** en el conector App Builder de Adobe.
+
+Para obtener instrucciones, consulte [módulo App Builder de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
 ## Agregar una función personalizada a un escenario
 
 Para añadir una función personalizada a un escenario, utilice el conector App Builder de Adobe.
 
 Para obtener instrucciones, consulte [módulo App Builder de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
-
