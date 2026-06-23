@@ -4,10 +4,10 @@ description: El conector App Builder de Adobe le permite utilizar funciones pers
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
+source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 26%
+source-wordcount: '289'
+ht-degree: 32%
 
 ---
 
@@ -48,9 +48,11 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Módulos de Adobe App Builder
 
-### Ejecutar un bloque de código personalizado
+<!--
 
-Este módulo le permite ejecutar un bloque de código. El bloque de código se configura al configurar el módulo y se ejecuta cuando el módulo se ejecuta durante la ejecución de un escenario.
+### Run a custom code block
+
+This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -58,16 +60,18 @@ Este módulo le permite ejecutar un bloque de código. El bloque de código se c
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Seleccione la conexión que contiene la función personalizada que desea ejecutar. </td> 
+   <td>Select the connection that contains the custom function that you want to run. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Bloque de código]</td> 
-   <td>Escriba el bloque de código que desea que ejecute el módulo.<p>Para dar formato al código para facilitar la lectura, haga clic en el icono <b>Formato del código</b>.</td> 
+   <td role="rowheader">[!UICONTROL Code block]</td> 
+   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
   </tr> 
    </tbody> 
 </table>
 
-### Ejecutar una función personalizada
+-->
+
+### Ejecutar una función personalizada o un bloque de código
 
 Este módulo le permite utilizar una función personalizada de JavaScript previamente configurada y almacenada en el área Funciones.
 
