@@ -4,10 +4,10 @@ description: Al asignar elementos, puede utilizar funciones para crear fórmulas
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
+source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 16%
+source-wordcount: '665'
+ht-degree: 15%
 
 ---
 
@@ -18,6 +18,10 @@ Puede crear funciones personalizadas en el área Funciones de Fusion. A continua
 Dado que las funciones personalizadas funcionan a través de Adobe App Builder, su organización debe tener una licencia de Adobe App Builder para utilizarlas.
 
 Las funciones personalizadas, como la mayoría de los elementos de escenarios, son propiedad de los equipos.
+
+Las funciones son funciones simples de JavaScript. Para incluir variables o dependencias en la lógica de función, utilice paquetes.
+
+Para obtener información sobre los paquetes, consulte [Usar paquetes de funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 Workfront Fusion también incluye funciones integradas que le permiten crear fórmulas simples o complejas. Estas funciones abarcan una amplia variedad de casos de uso, incluidas las funciones para matrices, cadenas, números y datos de módulos anteriores.
 
