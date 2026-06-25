@@ -4,10 +4,10 @@ description: El conector App Builder de Adobe le permite utilizar funciones pers
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
+source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 32%
+source-wordcount: '409'
+ht-degree: 23%
 
 ---
 
@@ -70,6 +70,56 @@ This module allows you to run a code block. You configure the code block when yo
 </table>
 
 -->
+
+### Ejecutar una función personalizada desde el paquete
+
+Este módulo ejecuta una función desde un paquete.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Seleccione la conexión que contiene la función personalizada que desea ejecutar. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paquete]</td> 
+   <td>Seleccione el paquete que incluye la función que desea ejecutar en el escenario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Seleccione la función que desea ejecutar en el escenario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Usar variable del paquete
+
+Este módulo incorpora una variable configurada en un paquete a su escenario.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Seleccione la conexión que contiene la función personalizada que desea ejecutar. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paquete]</td> 
+   <td>Seleccione el paquete que incluye la variable que desea incluir en el escenario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Seleccione la variable que desee incluir en el escenario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
 
 ### Ejecutar una función personalizada o un bloque de código
 
