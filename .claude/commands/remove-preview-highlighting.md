@@ -130,4 +130,4 @@ Si la estructura es ambigua (sin paralelo claro), **stop** y mostrar ambos candi
 
 ## Referencias
 
-- Hacer coincidir **[estilo de documentación de Workfront](https://experienceleague.adobe.com/?lang=es)** y convenciones de repositorios (reglas de compromiso/PR si el usuario se compromete).
+- Hacer coincidir **[estilo de documentación de Workfront](https://experienceleague.adobe.com/es?lang=es)** y convenciones de repositorios (reglas de compromiso/PR si el usuario se compromete).
