@@ -73,7 +73,7 @@ Reglas:
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Cuerpo**: Descripción de la función y después vínculo a la documentación de ayuda
+&#x200B;5. **Cuerpo**: Descripción de la función y después vínculo a la documentación de ayuda
 
 #### Páginas de información general
 
@@ -90,10 +90,10 @@ Reglas:
 * [Document enhancements](#document-enhancements)
 ```
 
-5. **H3 por área de producto** con tabla de características de HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 por área de producto** con tabla de características de HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Dentro de cada tabla, **las características más recientes primero**, la fila más reciente aparece en la parte superior de la tabla (después de la fila de encabezado)
 
-6. **Secciones finales** (H2): Notas de la versión para otras áreas, Actualizaciones del visor de revisión de escritorio, Anuncios, Versión de API, Actualizaciones de mantenimiento, Actualizaciones de formación
+&#x200B;6. **Secciones finales** (H2): Notas de la versión para otras áreas, Actualizaciones del visor de revisión de escritorio, Anuncios, Versión de API, Actualizaciones de mantenimiento, Actualizaciones de formación
 
 ### Paso 3: Validación de vínculos
 

@@ -118,7 +118,7 @@ Si la estructura es ambigua (sin paralelo claro), **stop** y mostrar ambos candi
 - No ejecute este flujo de trabajo en rutas de acceso en **`product-announcements`** (notas de la versión y relacionadas); el inventario debe excluirlas.
 - No realice el inventario ni edite las rutas enumeradas en **[Rutas excluidas](#excluded-paths)** a menos que el usuario pida explícitamente que se incluya una.
 - **No** quite o edite automáticamente los bloques **comentados** (`<!-- … -->`); siga las **secciones comentadas** anteriores.
-- No quite la opción &quot;Vista previa&quot; cuando se trate de **not** acerca de este patrón de disponibilidad de características (p. ej. [Vista previa del entorno de espacio aislado](·) como **nombre de producto** en un contexto no relacionado), juzgue y pregunte si no está seguro.
+- No quite la opción &quot;Vista previa&quot; cuando se trate de **not** acerca de este patrón de disponibilidad de características (p. ej. [Vista previa del entorno de espacio aislado] (·) como **nombre de producto** en un contexto no relacionado), juzgue y pregunte si no está seguro.
 - No cambie `author:` ni el frontmatter no relacionado a menos que el usuario se lo pida.
 - No omita el paso **mostrar → aprobar**.
 

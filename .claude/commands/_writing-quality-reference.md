@@ -9,7 +9,7 @@ ht-degree: 3%
 
 Reglas detalladas para la aptitud de `writing-quality`. El archivo SKILL.md cubre las reglas más comunes; este archivo proporciona la referencia completa para la puntuación, terminología, ejemplos de uso de mayúsculas y formato de procedimiento.
 
----
+&#x200B;---
 
 ## Puntuación
 
@@ -85,7 +85,7 @@ Use con moderación. Considere reestructurar la sentencia en su lugar.
 - Se utiliza para combinaciones: interruptor de encendido / apagado
 - Se utiliza para direcciones y fracciones de Internet
 
----
+&#x200B;---
 
 ## Ejemplos de uso de mayúsculas
 
@@ -117,7 +117,7 @@ Use con moderación. Considere reestructurar la sentencia en su lugar.
 - Seguir mayúsculas de la IU
 - Si el botón está en mayúsculas en la interfaz de usuario, escríbalo en mayúsculas
 
----
+&#x200B;---
 
 ## Terminología
 
@@ -147,7 +147,7 @@ Estas son palabras diferentes con diferentes significados: use la correcta para 
 
 Utilice siempre la extensión de archivo, no las siglas: &quot;Cargar un archivo .pdf&quot; (no &quot;Cargar un PDF&quot;).
 
----
+&#x200B;---
 
 ## Formato del procedimiento
 
@@ -210,7 +210,7 @@ Documente primero la forma más directa:
 - Espacios entre corchetes
 - No utilizar para menú principal: utilizar el fragmento de menú principal
 
----
+&#x200B;---
 
 ## Referencia en negrita y cursiva
 
@@ -230,7 +230,7 @@ Documente primero la forma más directa:
 - Texto que el usuario debe escribir: &quot;Escriba *my.workfront.com* en el cuadro Dirección URL&quot;
 - Nunca para enfatizar — reestructura la oración en su lugar
 
----
+&#x200B;---
 
 ## Notas, sugerencias y advertencias: orientación detallada
 
@@ -258,15 +258,15 @@ Documente primero la forma más directa:
 - Combinar notas relacionadas en una con una lista con viñetas
 - No use notas para anunciar nuevas características, rediseñe el texto del artículo
 
----
+&#x200B;---
 
 ## Patrones de referencia cruzada
 
 | Situación | Patrón |
 |-----------|---------|
-| Después de proporcionar información | &quot;Para obtener más información, consulte [Nombre del artículo](link).&quot; |
-| Sin información previa | &quot;Para obtener más información, consulte [Nombre del artículo](link).&quot; |
-| A una sección de otro artículo | &quot;Para obtener más información, consulte [Sección] en [Nombre del artículo](link).&quot; |
+| Después de proporcionar información | &quot;Para obtener más información, consulte [Nombre del artículo] (link).&quot; |
+| Sin información previa | &quot;Para obtener más información, consulte [Nombre del artículo] (link).&quot; |
+| A una sección de otro artículo | &quot;Para obtener más información, consulte [Sección] en [Nombre del artículo] (link).&quot; |
 | A una sección del mismo artículo | &quot;Para obtener más información, consulte [Sección] en este artículo.&quot; |
 
 Ubicación:
@@ -274,7 +274,7 @@ Ubicación:
 - En pasos del procedimiento: nueva línea después del paso
 - Varias referencias: lista con viñetas
 
----
+&#x200B;---
 
 ## Características de calidad DQTI
 
@@ -302,7 +302,7 @@ Ubicación:
 | Recuperabilidad | ¿Puede un lector escanear encabezados y comprender el contenido? ¿Se proporcionan vínculos? |
 | Eficacia visual | ¿Listas para más de 3 elementos? ¿Tablas para comparaciones? ¿No hay párrafos de pared de texto? |
 
----
+&#x200B;---
 
 ## Correcciones comunes
 
