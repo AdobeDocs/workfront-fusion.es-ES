@@ -7,9 +7,9 @@ exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 61b8118bed095b526e179c8fae798ece4e11d065
 workflow-type: tm+mt
-source-wordcount: 717
+source-wordcount: 731
 ht-degree: 44%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 44%
 
 Workfront Fusion incluye funciones integradas que le permiten crear fórmulas simples o complejas. Estas funciones abarcan una amplia variedad de casos de uso, incluidas las funciones para matrices, cadenas, números y datos de módulos anteriores.
 
-Además, puede crear funciones personalizadas que los escenarios pueden utilizar para transformar y manipular los datos.
+Además, puede crear funciones y paquetes personalizados que los escenarios pueden utilizar para transformar y manipular los datos.
 
 Para obtener información e instrucciones sobre las funciones personalizadas, vea [Asignar datos con funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
+
+Para obtener información e instrucciones sobre los paquetes de funciones, consulte [Usar paquetes de funciones personalizados](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 ## Requisitos de acceso
 
