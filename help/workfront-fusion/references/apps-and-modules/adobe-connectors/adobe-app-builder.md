@@ -4,10 +4,10 @@ description: El conector App Builder de Adobe le permite utilizar funciones pers
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
+source-git-commit: 54a188eda2ac9f535d16e0e865cbf27c48a1ee74
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 23%
+source-wordcount: '506'
+ht-degree: 19%
 
 ---
 
@@ -48,11 +48,9 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Módulos de Adobe App Builder
 
-<!--
+### Ejecutar un bloque de código personalizado
 
-### Run a custom code block
-
-This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
+Este módulo le permite ejecutar un bloque de código. El bloque de código se configura al configurar el módulo y se ejecuta cuando el módulo se ejecuta durante la ejecución de un escenario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -60,22 +58,20 @@ This module allows you to run a code block. You configure the code block when yo
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Select the connection that contains the custom function that you want to run. </td> 
+   <td>Seleccione la conexión que contiene la función personalizada que desea ejecutar. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Code block]</td> 
-   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
+   <td role="rowheader">[!UICONTROL Bloque de código]</td> 
+   <td>Escriba el bloque de código que desea que ejecute el módulo.<p>Para dar formato al código para facilitar la lectura, haga clic en el icono <b>Formato del código</b>.</td> 
   </tr> 
    </tbody> 
 </table>
-
--->
 
 ### Ejecutar una función personalizada desde el paquete
 
 Este módulo ejecuta una función desde un paquete.
 
-<!--For information on packages, see []().-->
+Para obtener información sobre los paquetes, consulte [Usar paquetes de funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -100,7 +96,7 @@ Este módulo ejecuta una función desde un paquete.
 
 Este módulo incorpora una variable configurada en un paquete a su escenario.
 
-<!--For information on packages, see []().-->
+Para obtener información sobre los paquetes, consulte [Usar paquetes de funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
