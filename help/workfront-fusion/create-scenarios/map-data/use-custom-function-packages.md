@@ -3,9 +3,9 @@ title: Usar paquetes de funciones personalizadas
 description: Al asignar elementos, puede utilizar funciones para crear fórmulas simples o complejas.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+source-git-commit: 4ec81401b5a76edd620b9779414ee578966b4315
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '2042'
 ht-degree: 6%
 
 ---
@@ -127,17 +127,26 @@ Si se queda sin espacio, le recomendamos que elimine las dependencias, variables
 Para volver a la lista de paquetes, seleccione la flecha hacia atrás junto al nombre del paquete.
 
 <!--Create toc here-->
+* [Funciones](#functions)
+* [Variables](#variables)
+* [Dependencias](#dependencies)
+* [Historia](#history)
 
 ### Funciones
 
 El área **Funciones** muestra una lista de funciones en el paquete, incluido el nombre de la función, su estado, su tamaño y cuántas entradas espera.
 
-Para filtrar la lista de funciones:
+* [Ver y administrar la lista Funciones](#view-and-manage-the-functions-list)
+* [Cree o edite una función en el área Paquetes](#create-or-edit-a-function-in-the-packages-area)
+* [Realizar cambios en una función activa](#make-changes-to-a-live-function)
+* [Eliminación de una función](#delete-a-function)
+
+#### Ver y administrar la lista Funciones
+
+Para filtrar la lista Funciones:
 
 1. Filtre por estado haciendo clic en **Todos**, **Borradores** o **Publicados**.
 1. Utilice la barra de búsqueda para buscar funciones específicas.
-
-#### Estado de función
 
 Una función puede tener el estado de borrador o publicada.
 
@@ -191,6 +200,9 @@ El uso de borradores le permite realizar cambios con seguridad. Puede refinar un
    >[!NOTE]
    >
    >Al publicar una función, se borra el historial de versiones. La versión publicada se convierte en el punto de partida actual y las versiones de borrador anteriores ya no se conservan.
+
+* [Definir entradas](#define-inputs)
+* [Prueba de una función](#test-a-function)
 
 ##### Definir entradas
 
@@ -256,11 +268,14 @@ Después de publicar una función, el botón **Publicar** se convierte en un men
 >
 >Al eliminar una función, esta se elimina por completo, junto con su historial. Cualquier escenario o función que lo utilice dejará de funcionar.
 
-## Variables
+### Variables
 
 Las variables son valores reutilizables que las funciones pueden utilizar, como una dirección URL base, un ID de cuenta o una clave de API. Almacenarlas como variables significa que establece un valor una vez y lo actualiza en un lugar, en lugar de actualizarlo en muchas funciones.
 
-### Crear o editar una variable
+* [Crear o editar una variable](#create-or-edit-a-variable)
+* [Eliminar una variable](#delete-a-variable)
+
+#### Crear o editar una variable
 
 1. Haga clic en la ficha **Paquetes** ![Icono de paquetes](assets/packages-icon.png) en el panel de navegación izquierdo.
 1. En la ficha **Variables**, seleccione **Nueva variable**.
@@ -283,7 +298,7 @@ Las variables son valores reutilizables que las funciones pueden utilizar, como 
 
 1. Seleccione **Crear variable** o **Guardar cambios**.
 
-### Eliminar una variable
+#### Eliminar una variable
 
 1. Haga clic en la ficha **Paquetes** ![Icono de paquetes](assets/packages-icon.png) en el panel de navegación izquierdo.
 1. En la ficha **Variables**, haga clic en el icono **Eliminar** que aparece junto a la variable que desea eliminar.
@@ -292,18 +307,21 @@ Las variables son valores reutilizables que las funciones pueden utilizar, como 
 >
 >Las funciones que utilizan una variable eliminada dejarán de funcionar.
 
-## Dependencias
+### Dependencias
 
 Algunas funciones requieren bibliotecas adicionales para realizar su trabajo. En la ficha **Dependencias** se agregan y administran esas bibliotecas.
 
-### Añadir bibliotecas
+* [Añadir bibliotecas](#add-libraries)
+* [Eliminación de una biblioteca](#remove-a-library)
+
+#### Añadir bibliotecas
 
 1. Haga clic en la ficha **Paquetes** ![Icono de paquetes](assets/packages-icon.png) en el panel de navegación izquierdo.
 1. En la ficha **Dependencias**, escriba uno o varios nombres de biblioteca separados por comas. Puede solicitar una versión específica agregándola después del nombre (por ejemplo, `axios, lodash@4.17.21`).
 
 1. Haga clic en **Instalar**.
 
-### Eliminación de una biblioteca
+#### Eliminación de una biblioteca
 
 1. Haga clic en la ficha **Paquetes** ![Icono de paquetes](assets/packages-icon.png) en el panel de navegación izquierdo.
 1. En la ficha **Dependencias**, haga clic en el icono **Eliminar** situado junto a la biblioteca que desee eliminar.
@@ -312,7 +330,7 @@ Algunas funciones requieren bibliotecas adicionales para realizar su trabajo. En
 >
 >Las funciones que dependen de una biblioteca eliminada pueden dejar de funcionar.
 
-## Historia
+### Historia
 
 Cada vez que se guarda un borrador de una función, Fusion guarda una copia. La pestaña **History** le permite ver y restaurar versiones anteriores.
 

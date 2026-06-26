@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 18%
+source-wordcount: 713
+ht-degree: 16%
 
 ---
 
@@ -73,14 +72,14 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Comparar versiones de escenarios
 
-palo de golf
+&#x200B;
 La funcionalidad Ver cambios muestra las diferencias entre las dos versiones de escenario, una al lado de la otra, para que pueda ver exactamente qué ha cambiado antes de decidir restaurar una anterior.
 
 1. Haga clic en **[!UICONTROL Icono de escenarios]** ![escenarios](assets/scenarios-icon.png) en el panel izquierdo y, a continuación, haga clic en el escenario para abrirlo.
 1. Haga clic en el icono [!UICONTROL Más] ![Más iconos](assets/more-icon.png) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Versiones anteriores]**.
 
    Se muestra una lista de versiones anteriores.
-palo de golf
+&#x200B;
 1. Haga clic en **Ver cambios** para la versión de escenario que desee ver.
 1. Se abre la vista **Revisar cambios** y compara esa versión con su escenario actual.
 
@@ -102,7 +101,7 @@ palo de golf
 
 ### Examinar cambios
 
-palo de golf
+
 Cada cambio se muestra en el lado al que pertenece y se colorea según lo que haría la restauración
 hacer:
 
@@ -110,9 +109,7 @@ hacer:
 * Verde (derecha): este cambio se realiza en la versión de la derecha y se añadiría si se restaura la versión.
 
 Si se ha cambiado algo, en lugar de eliminarlo o añadirlo, el valor aparece en rojo a la izquierda y en verde a la derecha.
-palo de golf
 Los cambios se agrupan en secciones:
-palo de golf
 
 * **Escenario**: nombre, descripción y tipo.
 * **Configuración de escenario**: Opciones de programación y procesamiento.
@@ -121,9 +118,5 @@ palo de golf
 * **Rutas de enrutador**: Rutas y su contenido.
 * **Controladores de errores**: ramas de control de errores.
 * **Grupos huérfanos**: módulos desconectados en el lienzo.
-palo de golf
 Si las dos versiones son idénticas, la vista muestra el mensaje/ **No se encontraron diferencias**.
-palo de golf
-
-
 
