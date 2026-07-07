@@ -4,7 +4,7 @@ description: Al asignar elementos, puede utilizar funciones para crear fórmulas
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
+source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 15%
@@ -122,3 +122,4 @@ Para obtener instrucciones, consulte [módulo App Builder de Adobe](/help/workfr
 Para añadir una función personalizada a un escenario, utilice el conector App Builder de Adobe.
 
 Para obtener instrucciones, consulte [módulo App Builder de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
