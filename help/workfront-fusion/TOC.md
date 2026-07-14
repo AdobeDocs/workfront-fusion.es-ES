@@ -3,9 +3,9 @@ user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
 nudge: true
-source-git-commit: deca1405b732f257cb2dff989d151976a33501a4
+source-git-commit: 2ccd7424274daa53305259e66d66a50f0733659b
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2483'
 ht-degree: 53%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 53%
 * Actividad de la versión de Fusion {#fusion-release-activity}
    * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versiones de Fusion: 2026 {#fusion-releases-2026}
+      * [Actividad de la versión de Workfront Fusion: Semana del 13 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
       * [Actividad de la versión de Workfront Fusion: Semana del 22 de junio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-22.md)
       * [Actividad de la versión de Workfront Fusion: Semana del 15 de junio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
       * [Actividad de la versión de Workfront Fusion: Semana del 1 de junio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
@@ -190,7 +191,7 @@ ht-degree: 53%
       * [Información general sobre licencias y operaciones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licencias de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [Operaciones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [Grupos de trabajo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+      * [Grupos de trabajo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Configurar y administrar organizaciones y equipos {#set-up-and-manage-orgs-and-teams}
       * [Configurar y administrar organizaciones y equipos: índice de artículos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * Configurar organizaciones y equipos {#set-up-orgs-teams-and-users}
