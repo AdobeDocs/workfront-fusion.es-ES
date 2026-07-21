@@ -3,9 +3,9 @@ user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
 nudge: true
-source-git-commit: 5ed478882eb442ccb7c7a3983aa9187cc80e7ab5
+source-git-commit: dd2b97992f0754107a23102990d86a6913c75395
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2499'
 ht-degree: 53%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 53%
 * Actividad de la versión de Fusion {#fusion-release-activity}
   * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versiones de Fusion: 2026 {#fusion-releases-2026}
+    * [Actividad de la versión de Workfront Fusion: Semana del 20 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 13 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 22 de junio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-22.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 15 de junio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
@@ -369,6 +370,7 @@ ht-degree: 53%
       * [Módulos de bibliotecas de Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Módulos de Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Módulos de Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+      * [Módulos de Adobe Express](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
       * [Módulos de audio y vídeo de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
       * [Módulos de Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
       * [Módulos de Adobe Firefly Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)

@@ -14,9 +14,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: bac55a7b765e7ce2068478a00b915033e4165b01
+source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
 workflow-type: tm+mt
-source-wordcount: 1531
+source-wordcount: 1540
 ht-degree: 88%
 
 ---
@@ -29,6 +29,7 @@ Adobe Workfront Fusion conecta sus aplicaciones y servicios web sin problemas pa
 
 ### Julio de 2026
 
+* [Actividad de la versión de Workfront Fusion: Semana del 20 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
 * [Actividad de la versión de Workfront Fusion: semana del 13 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
 
 
