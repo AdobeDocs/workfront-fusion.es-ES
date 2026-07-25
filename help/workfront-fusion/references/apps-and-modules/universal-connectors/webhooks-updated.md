@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
+source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
 workflow-type: tm+mt
-source-wordcount: 1909
-ht-degree: 71%
+source-wordcount: 2418
+ht-degree: 59%
 
 ---
 
@@ -68,10 +68,11 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 >
 >Para llamar a un webhook de terceros (un webhook saliente), utilice uno de los módulos HTTP. Para obtener más información, consulte [Módulos HTTP](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-Para utilizar un webhook para conectar una aplicación a Workfront Fusion, puede configurar el webhook para que se autentique mediante un certificado de cliente (mTLS) o una autenticación básica.
+Para utilizar un webhook para conectar una aplicación a Workfront Fusion, puede configurar el webhook para que se autentique con un certificado de cliente (mTLS), autenticación básica o Adobe Identity Management System (IMS).
 
 * [Usar un webhook con un certificado de cliente (mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
 * [Usar un webhook con autenticación básica](#use-a-webhook-with-basic-authentication)
+* [Uso de un webhook con Adobe Identity Management System (IMS)](#use-a-webhook-with-adobe-identity-management-system-ims)
 
 ### Usar un webhook con un certificado de cliente (mTLS)
 
@@ -84,6 +85,13 @@ Para obtener más información sobre mTLS, consulte [Información general sobre 
 1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
 1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
 1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
+1. (Opcional) En el campo **[!UICONTROL Restricciones de origen]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+
+   Este campo acepta los siguientes patrones:
+
+   * Nombre de host exacto: `app.example.com`
+   * Subdominio comodín: `*.example.com`
+   * Clasificado según el esquema: ` https://app.example.com` o `https://*.example.com`
 1. Si desea validar los datos entrantes, en el campo **Estructura de datos**, seleccione o agregue la estructura de datos que desee utilizar.
 
    Para obtener información sobre las estructuras de datos, vea [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
@@ -118,11 +126,50 @@ La autenticación básica utiliza un nombre de usuario y una contraseña para au
 1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
 1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
 1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
+1. (Opcional) En el campo **[!UICONTROL Restricciones de origen]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+
+   Este campo acepta los siguientes patrones:
+
+   * Nombre de host exacto: `app.example.com`
+   * Subdominio comodín: `*.example.com`
+   * Clasificado según el esquema: ` https://app.example.com` o `https://*.example.com`
 1. Si desea validar los datos entrantes, en el campo **Estructura de datos**, seleccione o agregue la estructura de datos que desee utilizar.
 
    Para obtener información sobre las estructuras de datos, vea [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 1. En el campo **Tipo de autorización**, seleccione **[!UICONTROL Autenticación básica]**.
 1. En el campo **Credentials**, escriba las credenciales que se usarán para la autorización. Para escribir las credenciales, haga clic en **Agregar** e introduzca el nombre de usuario y la contraseña para la autenticación básica.
+1. Habilite otras opciones según desee.
+1. Haga clic en **[!UICONTROL Guardar]**
+
+Después de crear un webhook, aparece una dirección URL única. Esta es la dirección a la que el webhook envía los datos. Workfront Fusion valida los datos enviados a esta dirección y los transmite para su procesamiento en el escenario.
+
+>[!NOTE]
+>
+>Después de crear un gancho web, puede utilizarlo en más de un escenario a la vez.
+
+### Uso de un webhook con Adobe Identity Management System (IMS)
+
+La autenticación de Adobe Identity Management System (IMS) utiliza las credenciales de Adobe IMS de su organización para autenticarse en el servicio al que se está conectando.
+
+1. Agregue el módulo de déclencheur instantáneo **[!UICONTROL Webhooks]** > **[!UICONTROL Webhook personalizado]** a su escenario.
+
+1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
+1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
+1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
+1. (Opcional) En el campo **[!UICONTROL Restricciones de origen]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+
+   Este campo acepta los siguientes patrones:
+
+   * Nombre de host exacto: `app.example.com`
+   * Subdominio comodín: `*.example.com`
+   * Clasificado según el esquema: ` https://app.example.com` o `https://*.example.com`
+1. Si desea validar los datos entrantes, en el campo **Estructura de datos**, seleccione o agregue la estructura de datos que desee utilizar.
+
+   Para obtener información sobre las estructuras de datos, vea [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. En el campo **Tipo de autorización**, seleccione **Adobe IMS (token de portador en el encabezado de autorización)**.
+1. (Opcional) En el campo **Clientes permitidos**, introduzca una lista separada por comas de los ID de cliente permitidos para llamar a este webhook. Deje esta configuración vacía para aceptar cualquier cliente cuyo token esté firmado correctamente por el emisor y la audiencia de confianza.
+1. (Opcional) En el campo **Usuarios permitidos**, introduzca una lista separada por comas de los ID de usuario que pueden llamar a este webhook. Deje esta configuración vacía para permitir cualquier usuario.
+1. (Opcional) En el campo **Ámbitos requeridos**, escriba una lista de ámbitos separados por comas que deben estar presentes en la notificación `scope` del token. Déjelo vacío para omitir la comprobación de ámbito.
 1. Habilite otras opciones según desee.
 1. Haga clic en **[!UICONTROL Guardar]**
 
@@ -186,6 +233,10 @@ También puede enviar los datos de ejemplo a través del módulo [!UICONTROL HTT
 1. Haga clic en **[!UICONTROL Aceptar]** para guardar la estructura de datos.
 
    Los elementos del webhook ahora están disponibles en el panel de asignación para su uso con módulos posteriores en el escenario.
+
+## Orígenes permitidos/CORS
+
+Al crear o editar un webhook personalizado en Fusion, el campo Orígenes permitidos le permite restringir qué orígenes de navegador (sitios web) pueden llamar al extremo del webhook directamente desde JavaScript del lado del cliente, como fetch/XHR. Se trata de un control CORS (Intercambio de recursos de origen cruzado), que es un límite independiente de las restricciones IP y del tipo de autorización (autenticación básica/certificado de cliente/Adobe IMS).
 
 ## La cola de ganchos web
 
