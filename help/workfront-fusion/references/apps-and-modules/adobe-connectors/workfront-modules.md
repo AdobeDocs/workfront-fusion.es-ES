@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -496,7 +490,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-Consulte una lista de los tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consulte una lista de tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -523,7 +517,7 @@ Consulte una lista de los tipos de objetos de Workfront para los que puede usar 
 >
 >   Para resolver los usuarios que se añadieron en un lote grande, puede añadir el lote de usuarios directamente a Adobe Admin Console.
 >
->   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
+>   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
 
 +++
 
@@ -676,7 +670,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  </tbody> 
 </table>
 
-Consulte una lista de los tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consulte una lista de tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos disponibles en Workfront en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -790,6 +784,10 @@ Al configurar este módulo, se muestran los campos siguientes.
 Consulte una lista de tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 #### Varias opciones de acción
+
+* [Tarea](#task)
+* [Problema](#issue)
+* [Proyecto](#project)
 
 ##### Tarea
 
@@ -1058,7 +1056,7 @@ Workfront acaba de lanzar una nueva versión de su servicio de suscripción a ev
 
 Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 
-Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1374,7 +1372,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 >[!IMPORTANT]
 >
 >Este módulo se ha reemplazado por el módulo Buscar registros. Se recomienda utilizar ese módulo en nuevos escenarios.
->Los escenarios existentes que utilicen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
+>Los escenarios existentes que usen este módulo seguirán funcionando según lo esperado. Este módulo se eliminará del selector de módulos en mayo de 2025.
 
 Este módulo de búsqueda busca registros en un objeto en Workfront que coincidan con la consulta de búsqueda especificada.
 
@@ -1674,7 +1672,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Aprobación de la prueba</td> 
+   <td>Aprobación de revisión</td> 
    <td> </td> 
    <td> </td> 
    <td>✓</td> 
@@ -2382,6 +2380,13 @@ Le recomendamos que lo verifique bien para asegurarse de que esto funciona de la
 
 ## Filtros de suscripción a eventos en los módulos de Workfront > [!UICONTROL Ver eventos]
 
+Los filtros en las suscripciones de evento le permiten asegurarse de que los escenarios se ejecutan solo cuando se cumplen ciertos parámetros.
+
+* [Prácticas recomendadas del filtro de suscripción de eventos](#event-subscription-filter-best-practices)
+* [Uso de filtros avanzados](#using-advanced-filters)
+
+### Prácticas recomendadas del filtro de suscripción de eventos
+
 >[!NOTE]
 >
 >* Recomendamos encarecidamente usar filtros de suscripción de eventos en sus módulos Ver eventos de .
@@ -2390,7 +2395,7 @@ Le recomendamos que lo verifique bien para asegurarse de que esto funciona de la
 >
 >   Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 >
->   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción a eventos, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización de la versión 2.0 de las suscripciones a eventos (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es)].
+>   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 El módulo de Workfront [!UICONTROL Ver eventos] activa escenarios basados en un webhook que crea una suscripción a eventos en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 
@@ -2408,13 +2413,13 @@ Los siguientes operadores están disponibles en el filtro Workfront > Ver evento
 * Menor o igual que
 * Contiene
 * Existe
-   * Este operador no requiere un valor y el campo de valor está ausente.
+  * Este operador no requiere un valor y el campo de valor está ausente.
 * No existe
-   * Este operador no requiere un valor y el campo de valor está ausente.
+  * Este operador no requiere un valor y el campo de valor está ausente.
 * Cambiado
-   * Este operador no requiere un valor y el campo de valor está ausente.
-   * Este operador ignora el campo Estado.
-   * Cuando use `Changed`, seleccione **Solo eventos actualizados** en el campo **Origen del registro**.
+  * Este operador no requiere un valor y el campo de valor está ausente.
+  * Este operador ignora el campo Estado.
+  * Cuando use `Changed`, seleccione **Solo eventos actualizados** en el campo **Origen del registro**.
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2429,7 @@ Los siguientes operadores están disponibles en el filtro Workfront > Ver evento
 >
 >**Ejemplo:** considere un escenario que procese nuevos problemas asignados a una usuaria específica, Ana.
 >
->### Filtrado de eventos mediante un filtro de suscripción de eventos (recomendado)
+>#### Filtrado de eventos mediante un filtro de suscripción de eventos (recomendado)
 >
 >Mediante el filtro de eventos, puede configurar el webhook para que active el escenario cuando se asigne un problema a Ana cuando se cree el problema. Ana tiene el userID b378489d8f7cd3cee0539260720a84b7.
 >
@@ -2432,7 +2437,7 @@ Los siguientes operadores están disponibles en el filtro Workfront > Ver evento
 >
 >Si se crean 100 problemas en un día, pero solo dos de ellos se asignan a Ana, el escenario se ejecutaría dos veces.
 >
->### Filtrar eventos dentro del escenario (no recomendado)
+>#### Filtrar eventos dentro del escenario (no recomendado)
 >
 >Para filtrar eventos de modo que solo se procesen los problemas asignados a Ana, puede crear un filtro después del módulo [!UICONTROL Ver eventos].
 >
@@ -2445,3 +2450,26 @@ Para obtener más información sobre las suscripciones a eventos de Workfront, c
 Para obtener más información sobre los webhooks, consulte [Activadores instantáneos (webhooks) en Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 Para obtener más información sobre los filtros de los escenarios, consulte [Añadir un filtro a un escenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+### Uso de filtros avanzados
+
+El módulo Workfront > Ver eventos ofrece dos tipos de filtros.
+
+* **Simple**: este filtro proporciona una interfaz que le permite seleccionar campos, operadores y valores, junto con los operadores AND y OR para crear un filtro.
+* **Avanzado**: este filtro le permite cargar el archivo JSON que representa su filtro.
+
+#### Filtros simples y avanzados
+
+La principal diferencia entre los dos tipos es el estado del filtro.
+
+* **Simple**: Al configurar un filtro simple, selecciona si desea filtrar por el estado antiguo o el nuevo de un campo. Es decir, usted decide si desea activar el escenario cuando el campo cambie **de** un valor determinado o si desea activarlo cuando cambie **a** un valor determinado. El uso de AND y OR permite incluir varios campos y valores, pero deben compartir el mismo estado. No puede utilizar el estado antiguo para algunos campos y el nuevo estado para otros.
+* **Avanzado**: Puede configurar el JSON en un filtro avanzado para especificar valores para los estados antiguo y nuevo en el mismo filtro. Por ejemplo, puede especificar que desea almacenar en déclencheur un escenario cuando un proyecto pase de un estado de Planning a un estado Actual. Esto excluiría los proyectos que pasan de Planning a Inactivo o que pasan de En espera a Actual.
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+

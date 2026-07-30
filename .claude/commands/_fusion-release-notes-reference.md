@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 Ejemplos trabajados para la aptitud `fusion-release-notes`, basados en páginas recientes reales en
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
-&#x200B;---
+---
 
 ## Ejemplo 1: Semana directa con varias funciones
 
@@ -31,7 +31,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/es/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## Create custom JavaScript packages to use in scenarios
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
-&#x200B;---
+---
 
 ## Ejemplo 2: Semana con una llamada de acción obligatoria/obsolescencia
 
@@ -71,7 +71,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/es/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## Log in to Fusion through Adobe IMS
 
@@ -96,7 +96,29 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
-&#x200B;---
+---
+
+## Ejemplo 3: Nuevo lanzamiento del conector
+
+Basado en `fusion-2026-7-27.md`.
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+Para un lanzamiento de conector como este, siempre pregunte (por el paso 1 de la aptitud) si el usuario desea que se configure un redireccionamiento para él.
+
+---
 
 ## Patrón de actualización de la página de información general (`fusion-release-activity.md`)
 
@@ -129,7 +151,7 @@ Comenzar un nuevo año (solo por ejemplo: hágalo cuando se publique la primera 
 +++
 ```
 
-&#x200B;---
+---
 
 ## Patrón de actualización de TOC.md
 
@@ -144,7 +166,22 @@ Agregando la semana del 20 de julio de 2026 como la entrada más reciente:
         ...
 ```
 
-&#x200B;---
+---
+
+## Redirige la referencia del repositorio (para el paso 7)
+
+El repositorio `redirects` del mismo nivel (`Adobe-Enterprise-Docs/redirects`) contiene redirecciones 1:1 en archivos CSV en `redirects/`, una por entorno: `redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`.
+
+Reglas de fila (del archivo README de ese repositorio):
+
+- `source` debe comenzar con `/en` (las variaciones de idioma se crean automáticamente) y no contener espacios.
+- `destination` puede ser una ruta de acceso relativa que comience por `/en` o una dirección URL completa que comience por `https` y no debe contener espacios.
+- No hay ningún par duplicado `source` ni `source`/`destination` duplicado.
+- Una redirección no debe provocar un bucle de redirección.
+
+Después de agregar una fila, todavía debe generarse una PR en el repositorio `redirects` y combinarse antes de que se active (~5 minutos después de la combinación para redirecciones 1:1). Esta aptitud solo suma la fila después de que el usuario la confirme; no aumenta el PR.
+
+---
 
 ## Incoherencias conocidas en las páginas existentes (solo como referencia; no las copie en páginas nuevas)
 
