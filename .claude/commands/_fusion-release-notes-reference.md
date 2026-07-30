@@ -10,7 +10,7 @@ ht-degree: 0%
 Ejemplos trabajados para la aptitud `fusion-release-notes`, basados en páginas recientes reales en
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## Ejemplo 1: Semana directa con varias funciones
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## Ejemplo 2: Semana con una llamada de acción obligatoria/obsolescencia
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## Ejemplo 3: Nuevo lanzamiento del conector
 
@@ -118,7 +118,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 Para un lanzamiento de conector como este, siempre pregunte (por el paso 1 de la aptitud) si el usuario desea que se configure un redireccionamiento para él.
 
----
+&#x200B;---
 
 ## Patrón de actualización de la página de información general (`fusion-release-activity.md`)
 
@@ -151,7 +151,7 @@ Comenzar un nuevo año (solo por ejemplo: hágalo cuando se publique la primera 
 +++
 ```
 
----
+&#x200B;---
 
 ## Patrón de actualización de TOC.md
 
@@ -166,7 +166,7 @@ Agregando la semana del 20 de julio de 2026 como la entrada más reciente:
         ...
 ```
 
----
+&#x200B;---
 
 ## Redirige la referencia del repositorio (para el paso 7)
 
@@ -181,7 +181,7 @@ Reglas de fila (del archivo README de ese repositorio):
 
 Después de agregar una fila, todavía debe generarse una PR en el repositorio `redirects` y combinarse antes de que se active (~5 minutos después de la combinación para redirecciones 1:1). Esta aptitud solo suma la fila después de que el usuario la confirme; no aumenta el PR.
 
----
+&#x200B;---
 
 ## Incoherencias conocidas en las páginas existentes (solo como referencia; no las copie en páginas nuevas)
 
