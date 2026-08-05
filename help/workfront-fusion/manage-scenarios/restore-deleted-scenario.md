@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -55,7 +54,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Restaurar un escenario eliminado
 
-1. En el panel de navegación izquierdo, haga clic en Información general del equipo.
+1. En el menú de navegación de la izquierda, haga clic en Org Overview.
 1. Haga clic en la ficha **Papelera de reciclaje** cerca de la parte superior de la ventana.
 1. (Opcional) Filtre la lista de escenarios eliminados escribiendo un término de búsqueda en la barra **Buscar**, seleccionando un intervalo de fechas en el campo **Eliminado entre** o seleccionando un equipo específico en la lista desplegable **Equipo**.
 1. Seleccione uno o más escenarios que desee restaurar y luego haga clic en **Restaurar** en la barra de la parte inferior de la pantalla.
