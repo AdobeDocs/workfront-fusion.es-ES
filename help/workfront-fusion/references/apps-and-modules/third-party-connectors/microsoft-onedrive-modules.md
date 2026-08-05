@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
 TQID: https://experienceleague.adobe.com/YscMl6qY47zJvwOieRmWg5rW-RaMnQ69R-b0tjB-FA4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4185
+source-wordcount: 4187
 ht-degree: 97%
 
 ---
@@ -44,7 +41,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -152,7 +149,7 @@ Este módulo de acción copia un archivo en la ubicación de la nueva carpeta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación que contiene el archivo que desea copiar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -277,7 +274,7 @@ Este módulo de acción elimina el archivo o la carpeta seleccionados.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación en la que desea buscar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -329,7 +326,7 @@ Este módulo de acción descarga el archivo especificado.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación que desea que contenga el archivo que va a descargar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -465,7 +462,7 @@ Este módulo de acción devuelve un vínculo compartido para el archivo especifi
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación para la que desea recuperar un vínculo compartido:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -521,7 +518,7 @@ Este módulo de acción mueve un archivo o carpeta a una nueva ubicación de car
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación que contiene el archivo o la carpeta que desea mover:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 
@@ -590,7 +587,7 @@ Este módulo de búsqueda devuelve archivos y carpetas en función de los criter
    <td>Para obtener instrucciones sobre la conexión de la cuenta de [!DNL OneDrive] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión a Adobe Workfront Fusion: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
+   <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
    <td> <p>Seleccione la ubicación en la que desea buscar:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL My Drive]</b> </p> <p>Seleccione esta opción si desea permitir que el módulo introduzca un ID de unidad.</p> 

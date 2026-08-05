@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
 TQID: https://experienceleague.adobe.com/y1H-y57MvK4LScn9Z6sUYuua3kr3iqyY-ElYkmCgxrI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 985
-ht-degree: 15%
+source-wordcount: 987
+ht-degree: 14%
 
 ---
 
@@ -44,7 +41,7 @@ Este artículo explica cómo conectar casi cualquier servicio web a Workfront Fu
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conectores (heredado): para conectarse a aplicaciones fuera de la familia de productos de Workfront, debe tener Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 

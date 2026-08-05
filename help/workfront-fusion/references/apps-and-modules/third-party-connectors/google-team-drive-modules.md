@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
 TQID: https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1382
+source-wordcount: 1384
 ht-degree: 78%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 78%
 
 Los módulos de Adobe Workfront Fusion [!DNL Google Team Drive] le permiten supervisar, cargar, actualizar, copiar, eliminar o recuperar archivos y crear carpetas en su [!DNL Google Shared Drive].
 
-Para usar [!DNL Google Team Drive] con Adobe Workfront Fusion, es necesario tener una cuenta de [!DNL Google Workspace]. Si no dispone de una, puede crear una cuenta de [!DNL Google Workspace] en el sitio de registro de [[!DNL Google Workspace] &#x200B;](https://workspace.google.com/business/signup/welcome).
+Para usar [!DNL Google Team Drive] con Adobe Workfront Fusion, es necesario tener una cuenta de [!DNL Google Workspace]. Si no dispone de una, puede crear una cuenta de [!DNL Google Workspace] en el sitio de registro de [[!DNL Google Workspace] ](https://workspace.google.com/business/signup/welcome).
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Google Team Drive], así como conectarlo a varias aplicaciones y servicios de terceros.
 
@@ -47,7 +45,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -112,7 +110,7 @@ Devuelve detalles del archivo cuando se añade o modifica un nuevo archivo en la
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Sheets] files to format] </td> 
-   <td> <p>Seleccione el formato al que desea convertir los archivos de [!DNL Google Sheets] detectados.</p> </td> 
+   <td> <p>Seleccione el formato al que desea convertir los archivos de [!DNL Google Sheets] que ha visto.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Slides] files to format] </td> 

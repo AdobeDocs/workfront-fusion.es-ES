@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
 TQID: https://experienceleague.adobe.com/7wmBBiCK-UBhGs4HvQWu2JbUgBu-5SfVI9yLNCp-2mE
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 575
-ht-degree: 48%
+source-wordcount: 577
+ht-degree: 47%
 
 ---
 
@@ -45,7 +44,7 @@ Muchos conectores de Adobe Workfront Fusion no requieren una configuración pers
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conectores (heredado): para conectarse a aplicaciones fuera de la familia de productos de Workfront, debe tener Workfront Fusion para la automatización e integración del trabajo </p>
    </td> 
   </tr> 

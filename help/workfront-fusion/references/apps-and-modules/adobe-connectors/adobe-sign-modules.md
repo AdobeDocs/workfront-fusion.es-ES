@@ -5,16 +5,11 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
 TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 6796
+source-wordcount: 6798
 ht-degree: 95%
 
 ---
@@ -42,7 +37,7 @@ Con los módulos [!DNL Adobe Acrobat Sign], puede iniciar un escenario de Adobe 
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -131,7 +126,7 @@ Este módulo activador inicia un escenario cuando se crea o actualiza un acuerdo
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Find text]</td> 
-   <td> <p>Introduzca los términos que desea buscar. El módulo devuelve registros que incluyen estos términos como valores de campo.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte “Cómo funciona la búsqueda de texto” en <a href="https://helpx.adobe.com/es/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Búsqueda de Adobe Sign: cómo funciona</a>.</p> </td> 
+   <td> <p>Introduzca los términos que desea buscar. El módulo devuelve registros que incluyen estos términos como valores de campo.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte “Cómo funciona la búsqueda de texto” en <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Búsqueda de Adobe Sign: cómo funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -980,7 +975,7 @@ Este módulo de búsqueda busca los acuerdos basándose en los criterios proporc
     <ul> 
      <li> <p><b>[!UICONTROL Find text]</b> </p> <p>Escriba el texto que desea buscar en los metadatos del acuerdo. Cada palabra es tratada como un elemento de texto independiente. </p> </li> 
      <li> <p><b>[!UICONTROL Find text in]</b> </p> <p>Seleccione los campos de metadatos en los que desea buscar texto. Si no selecciona nada, los módulos buscan todos los metadatos.</p> </li> 
-    </ul> <p>El módulo devuelve cualquier acuerdo que contenga alguno de los textos introducidos en cualquiera de los campos seleccionados. Ejemplo: si introducimos “campaña de primavera” y seleccionamos las opciones Título y Nota, devuelve cualquier acuerdo con las palabras “primavera” o “campaña” en Título o Nota.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte "Cómo funciona la búsqueda de texto" en <a href="https://helpx.adobe.com/es/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Búsqueda: cómo funciona</a>.</p> </td> 
+    </ul> <p>El módulo devuelve cualquier acuerdo que contenga alguno de los textos introducidos en cualquiera de los campos seleccionados. Ejemplo: si introducimos “campaña de primavera” y seleccionamos las opciones Título y Nota, devuelve cualquier acuerdo con las palabras “primavera” o “campaña” en Título o Nota.</p> <p>Para obtener más información sobre la búsqueda de campos en [!DNL Adobe Acrobat Sign], consulte "Cómo funciona la búsqueda de texto" en <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Búsqueda: cómo funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created date]</td> 

@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1417
+source-wordcount: 1419
 ht-degree: 86%
 
 ---
@@ -47,7 +45,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -115,7 +113,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [[!UICONTROL Cargar un elemento]](#upload-an-element)
 
-* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
+* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
 * [[!UICONTROL Ver elementos actualizados]](#watch-updated-elements)
 
@@ -355,7 +353,7 @@ Este módulo realiza una llamada de API personalizada a la API de [!DNL Adobe Cr
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>Introduzca una ruta relativa a <code>https://cc-libraries.adobe.io/api</code>.</p>
+        <p>Escriba una ruta relativa a <code>https://cc-libraries.adobe.io/api</code>.</p>
     <p>Por ejemplo, <code>/v1/libraries</code>.</p>
       </td>
     </tr>

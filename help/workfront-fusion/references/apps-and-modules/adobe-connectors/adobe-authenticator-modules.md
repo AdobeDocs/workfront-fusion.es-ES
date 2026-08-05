@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
 TQID: https://experienceleague.adobe.com/8yRmtq6RJPuw97tGe5lreoyUd85pd1BVvIFaZjmeof4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1513
-ht-degree: 74%
+source-wordcount: 1515
+ht-degree: 73%
 
 ---
 
@@ -46,7 +42,7 @@ Para ver una lista de las API de Adobe disponibles, consulte [API de Adobe](http
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -71,10 +67,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 * Debe tener acceso a Adobe Developer Console.
 * Debe tener un proyecto en Adobe Developer Console que incluya la API a la que desea que se conecte el módulo. Puede:
 
-   * Crear un nuevo proyecto con la API.
+  * Crear un nuevo proyecto con la API.
 
-     O
-   * Añadir la API a un proyecto existente.
+    O
+  * Añadir la API a un proyecto existente.
 
   Para obtener información sobre cómo crear o añadir una API a un proyecto en Adobe Developer Console, consulte [Crear un proyecto](https://developer.adobe.com/dep/guides/dev-console/create-project/) en la documentación de Adobe.
 

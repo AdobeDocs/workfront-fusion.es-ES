@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
 TQID: https://experienceleague.adobe.com/w1Mx5-fbOF8JlvmgHd0P-ARF20jBLM0Bm3BnZZy6YsY
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2975
-ht-degree: 67%
+source-wordcount: 2979
+ht-degree: 66%
 
 ---
 
@@ -40,7 +37,7 @@ En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de traba
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -286,7 +283,7 @@ Este módulo de búsqueda busca mensajes en función de criterios específicos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Introduzca la consulta de búsqueda. Para obtener información sobre cómo escribir una consulta de búsqueda, consulte el artículo de soporte técnico de [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Buscar correo y personas en [!DNL Outlook.com]</a>.</td> 
+   <td>Introduzca la consulta de búsqueda. Para obtener información sobre cómo escribir una consulta de búsqueda, consulte el artículo de soporte técnico de [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Buscar correo y personas en [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
@@ -332,7 +329,7 @@ Este módulo de déclencheur inicia un escenario cuando se envía o recibe un nu
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Introduzca la consulta de búsqueda. El módulo devuelve mensajes que coinciden con esta consulta. Para obtener información sobre cómo redactar una consulta de búsqueda, consulte el artículo de asistencia técnica [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Buscar correo y personas en [!DNL Outlook.com]</a>.</td> 
+   <td>Introduzca la consulta de búsqueda. El módulo devuelve mensajes que coinciden con esta consulta. Para obtener información sobre cómo redactar una consulta de búsqueda, consulte el artículo de asistencia técnica [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Buscar correo y personas en [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 

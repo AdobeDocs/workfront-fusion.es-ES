@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
 TQID: https://experienceleague.adobe.com/zDpEDcxpSywImqPRr6QMH-MvFVv9KDF-bsesRzjG8J0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2071
-ht-degree: 68%
+source-wordcount: 2073
+ht-degree: 67%
 
 ---
 
@@ -53,7 +51,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -171,7 +169,7 @@ Este módulo de acción crea un nuevo mensaje.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
-   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> </td> 
+   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
@@ -314,11 +312,11 @@ Este módulo de acción le permite editar un mensaje existente.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
-   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> </td> 
+   <td> <p>Habilite esta opción para permitir que los nombres y canales utilicen el formato <code>@username</code> o <code>#channel</code>. </p> <p>Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
-   <td> <p>Active esta opción para permitir el análisis automático. </p> <p> Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicaciones</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo Actualizar un mensaje.</p> </td> 
+   <td> <p>Active esta opción para permitir el análisis automático. </p> <p> Para obtener más información, consulte <a href="https://api.slack.com/docs/formatting">Formato de texto para superficies de aplicación</a> en la documentación de [!DNL Slack].</p> <p>Nota: si ha utilizado las opciones [!UICONTROL Link names] o [!UICONTROL Parse message text] en el mensaje original, debe especificarlas también al ejecutar el módulo Actualizar un mensaje.</p> </td> 
   </tr> 
  </tbody> 
 </table>

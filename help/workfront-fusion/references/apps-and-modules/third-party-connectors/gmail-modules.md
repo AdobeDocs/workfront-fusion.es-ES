@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
 TQID: https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1871
-ht-degree: 85%
+source-wordcount: 1876
+ht-degree: 84%
 
 ---
 
@@ -43,7 +40,7 @@ Para obtener instrucciones sobre cómo crear un escenario, consulte los artícul
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -71,13 +68,13 @@ Para usar módulos [!DNL Gmail], debe tener una cuenta de [!DNL Gmail].
 * [Conectar [!DNL Gmail] a Workfront Fusion mediante [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Conectar [!DNL Gmail] a Workfront Fusion mediante [!DNL gmail.com] o [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Conectar [!DNL Gmail] a Workfront Fusion mediante [!DNL &#x200B; Google Workspace]
+### Conectar [!DNL Gmail] a Workfront Fusion mediante [!DNL  Google Workspace]
 
 Para obtener instrucciones sobre cómo conectar tu cuenta de [!DNL Google Workspace] a [!UICONTROL Workfront Fusion], consulta [Crear una conexión: instrucciones básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
 ### Conectar [!DNL Gmail] a Workfront Fusion mediante [!DNL gmail.com] o [!DNL googlemail].com
 
-Si es usuario de [!DNL @gmail.com] o [!DNL @googlemail.com], debe crear un cliente de OAuth en [&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) para obtener un [!UICONTROL ID de cliente] y un [!UICONTROL Secreto de cliente].
+Si es usuario de [!DNL @gmail.com] o [!DNL @googlemail.com], debe crear un cliente de OAuth en [ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) para obtener un [!UICONTROL ID de cliente] y un [!UICONTROL Secreto de cliente].
 
 Para obtener instrucciones paso a paso sobre cómo crear el cliente OAuth y obtener un [!UICONTROL ID de cliente] y un [!UICONTROL Secreto de cliente], consulte [Conectar Adobe Workfront Fusion a los servicios de Google mediante un cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
@@ -160,7 +157,7 @@ Al configurar este módulo, se muestran los campos siguientes.
 * [[!UICONTROL Mark an email as unread]](#mark-an-email-as-unread)
 * [[!UICONTROL Move an email]](#move-an-email)
 * [[!UICONTROL Modify email labels]](#modify-email-labels)
-* [[!UICONTROL Send an email]](#send-an-email)
+* [[!UICONTROL Enviar un correo electrónico]](#send-an-email)
   <!--* [Delete labels](#delete-labels)-->
   <!--* [Set labels](#set-labels)-->
 

@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
 TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4690
+source-wordcount: 4692
 ht-degree: 98%
 
 ---
@@ -49,7 +47,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -965,7 +963,7 @@ Para obtener información sobre los campos, consulte [Modificar una nota existen
 
 Modifica la nota existente de una solicitud de combinación.
 
-Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
+Para obtener información sobre los campos, consulte [Modificar nota existente de solicitud de combinación ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note) en la documentación de [!DNL GitLab].
 
 +++
 

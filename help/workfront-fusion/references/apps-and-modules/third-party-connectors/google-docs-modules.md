@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
 TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4106
-ht-degree: 84%
+source-wordcount: 4108
+ht-degree: 83%
 
 ---
 
@@ -47,7 +44,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -540,7 +537,7 @@ Este módulo de acción reemplazará una imagen existente. Se mantendrá la rela
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Seleccione la carpeta en la que se encuentra el documento del que desea reemplazar una imagen y, a continuación, seleccione el documento.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Seleccione la carpeta en la que se encuentra el documento del que desea reemplazar una imagen y, a continuación, seleccione el documento.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible solo para usuarios de [!DNL Google Workspace])</p> <p>Seleccione si desea [!UICONTROL Use Domain Admin Access]. Al seleccionar [!UICONTROL Yes], se emite la solicitud como administrador de dominio y se devuelven todas las unidades compartidas en las que el solicitante es administrador.</p> <p>Seleccione la unidad compartida en la que se encuentra el documento del que desea reemplazar una imagen y, a continuación, selecciónelo.</p> <p>Nota: Si seleccionó la opción [!DNL Google Docs] en este campo y no se trata de un usuario de [!DNL Google Workspace], se devolverá el error <code>[400] Invalid Value</code>.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible solo para usuarios de [!DNL Google Workspace])</p> <p>Seleccione si desea [!UICONTROL Use Domain Admin Access]. Al seleccionar [!UICONTROL Yes], se emite la solicitud como administrador de dominio y se devuelven todas las unidades compartidas en las que el solicitante es administrador.</p> <p>Seleccione la unidad compartida en la que se encuentra el documento del que desea reemplazar una imagen y, a continuación, selecciónelo.</p> <p>Nota: Si seleccionó la opción [!DNL Google Docs] en este campo y no se trata de un usuario de [!DNL Google Workspace], se devolverá el error <code>[400] Invalid Value</code>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
 TQID: https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3721
+source-wordcount: 3723
 ht-degree: 98%
 
 ---
@@ -45,7 +42,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -1037,7 +1034,7 @@ Este módulo de acción activa un mensaje unitario para los destinatarios especi
    <li><p><b>Dirección de correo electrónico</b></p></li>
    <li><p><b>Número de teléfono móvil</b></p></li>
    <li><p><b>Nombre</b></p></li>
-   <li><p><b>Apellidos</b></p></li>
+   <li><p><b>Apellido</b></p></li>
    <li><p><b>Producto</b></p>Introduzca o asigne el producto asociado a este mensaje. Se utiliza para la sustitución dinámica de variables en el contenido del mensaje.</li>
    </ul></td> 
   </tr> 

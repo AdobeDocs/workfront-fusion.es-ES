@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 66%
+source-wordcount: 7501
+ht-degree: 64%
 
 ---
 
@@ -55,7 +53,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -165,7 +163,7 @@ Para crear una conexión para los módulos de [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Si utiliza una conexión JWT, escriba su [!DNL Adobe] ID de cuenta técnica de . Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Si utiliza una conexión JWT, escriba su [!DNL Adobe] ID de cuenta técnica de [!UICONTROL]. Esto se puede encontrar en la sección de detalles de [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
@@ -681,7 +679,7 @@ Este módulo de acción identifica el asunto principal de la imagen y elimina el
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 Este módulo de acción aplica una variedad de ediciones a nivel de documento y capa.
 
@@ -868,7 +866,7 @@ El color automático de este módulo de acción corrige la imagen especificada.
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 Este módulo de acción convierte un archivo en JPEG, PNG, PSD o TIFF.
 
@@ -1005,7 +1003,7 @@ Este módulo de acción devuelve un archivo PNG con una máscara aplicada alrede
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 Este módulo de acción crea un nuevo PSD con capas opcionales y genera representaciones o las guarda como un PSD.
 
@@ -1732,12 +1730,12 @@ Este módulo de acción realiza una llamada personalizada a la API de Photoshop.
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 Este módulo de acción sustituye un objeto inteligente en una capa de PSD y genera nuevas representaciones.
 
@@ -1871,7 +1869,7 @@ Este módulo utiliza la versión heredada de los objetos inteligentes.
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 Esta acción cambia el tamaño de una imagen con la misma relación de aspecto.
 
@@ -1946,7 +1944,7 @@ Esta acción cambia el tamaño de una imagen con la misma relación de aspecto.
 >[!NOTE]
 >
 >Este módulo ha quedado obsoleto y dejará de funcionar a partir del 30 de julio de 2026.
->Actualice este módulo a [Cree o edite un módulo compuesto](#create-or-edit-a-composite).
+>Actualice este módulo al módulo [Crear o editar un módulo compuesto](#create-or-edit-a-composite).
 
 Este módulo de acción añade una marca de agua a la imagen seleccionada.
 
