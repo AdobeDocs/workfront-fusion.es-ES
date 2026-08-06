@@ -3,10 +3,10 @@ title: Módulos de Adobe Express
 description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan Adobe Express.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: eab04db9a38020ed973f98d7f8f290ccd183251c
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 19%
+source-wordcount: '1374'
+ht-degree: 18%
 
 ---
 
@@ -37,7 +37,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

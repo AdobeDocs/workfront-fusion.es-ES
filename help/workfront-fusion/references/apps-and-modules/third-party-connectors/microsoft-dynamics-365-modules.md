@@ -12,9 +12,9 @@ feature_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1884
+source-wordcount: 1886
 ht-degree: 90%
 
 ---
@@ -52,7 +52,7 @@ Para obtener información acerca de los módulos, consulte los artículos en [M�
   <tr> 
    <td role="rowheader">Licencia de Adobe Workfront Fusion</td> 
    <td>
-   <p>Basado en operaciones: no se requiere licencia de Workfront Fusion</p>
+   <p>Basado en operaciones: disponible para organizaciones con licencias basadas en operaciones</p>
    <p>Basado en conector (heredado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -280,7 +280,7 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>Escriba o asigne el identificador único [!DNL Microsoft Dynamics 365] del registro que desea que elimine el módulo.</p> </td> 
+   <td> <p>Introduzca o asigne el identificador único de [!DNL Microsoft Dynamics 365] del registro que desea que elimine el módulo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -301,7 +301,7 @@ Al configurar este módulo, se muestran los campos siguientes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Microsoft Dynamics 365] a Workfront Fusion, consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conexión de [!DNL Microsoft Dynamics 365] a Workfront Fusion</a> en este artículo. </p> </td> 
+  <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Microsoft Dynamics 365] a Workfront Fusion, consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] a Workfront Fusion</a> en este artículo. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
