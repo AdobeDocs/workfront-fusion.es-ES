@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
 source-wordcount: 2392
 ht-degree: 73%
@@ -519,7 +517,7 @@ Esta función devuelve una nueva fecha con los segundos especificados en paráme
 
 Especifique un número del 0 al 59. Si el número está fuera de ese intervalo, la función devuelve un segundo desde el minuto anterior (para un número negativo) o un minuto posterior (para un número positivo).
 
-Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL &#x200B; addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
+Si necesita especificar un número fuera del intervalo, le recomendamos que utilice [!UICONTROL  addSeconds], tal como se ha descrito anteriormente en la sección [addSeconds (fecha; número)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -954,3 +952,4 @@ Sin embargo, es preferible utilizar el intervalo de semiapertura en su lugar (el
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+
