@@ -6,18 +6,15 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # Módulo del agente MCP
-
-<!--SET UP REDIRECTS-->
 
 El Protocolo de contexto de modelo (MCP) es una forma de conectar de forma segura los modelos de lenguaje de IA con otras aplicaciones. Los servidores MCP se configuran para permitir que el modelo de IA acceda a la aplicación. A continuación, puede enviar una solicitud al modelo de IA y devolver información de la aplicación.
 
@@ -83,7 +80,7 @@ Este módulo de acción procesa una solicitud utilizando el modelo de idioma y l
        <li><b>LLM</b>: seleccione el modelo de idioma grande con el que está asociada esta clave.</li>
        <li><b>Clave</b>: escriba o asigne la clave de API para el modelo seleccionado.</li>
        <li><b>Modelo</b>: seleccione el modelo LLM que utilizará la clave.</li>
-       <li><b>Máximo de tokens</b>: escriba o asigne el número máximo de tokens que el LLM puede generar en su respuesta.<p>Un símbolo suele ser igual a cuatro caracteres, o 0,75 de una palabra en inglés. "Hello world" sería igual a dos tokens y "Authentication" sería igual a uno o dos tokens.</li>
+       <li><b>Número máximo de tokens</b>: escriba o asigne el número máximo de tokens que LLM puede generar en su respuesta.<p>Un símbolo suele ser igual a cuatro caracteres, o 0,75 de una palabra en inglés. "Hello world" sería igual a dos tokens y "Authentication" sería igual a uno o dos tokens.</li>
       </ul>
     </td> 
   </tr> 
