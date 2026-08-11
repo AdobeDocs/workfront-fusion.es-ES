@@ -7,14 +7,12 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
 TQID: https://experienceleague.adobe.com/fz3CilAsruX0-J7Sm7Z21e7zGRBKdoqxREbC8I9YkNo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
-source-wordcount: 517
-ht-degree: 93%
+source-wordcount: 511
+ht-degree: 94%
 
 ---
 
@@ -153,7 +151,6 @@ Estos módulos le permiten realizar acciones en los datos, pero no requieren que
 * [Módulos léxicos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Módulo de matemáticas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
-* [Módulo del agente MCP (protocolo de contexto de modelo)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [Módulos del analizador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Módulos de herramientas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
