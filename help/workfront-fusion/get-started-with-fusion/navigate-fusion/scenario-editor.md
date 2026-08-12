@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 40%
+source-wordcount: 659
+ht-degree: 36%
 
 ---
 
@@ -80,7 +79,7 @@ Es posible que tenga que hacer clic en el icono de tres puntos del área Control
 
 | Acción | Detalles |
 | ---------- | ---------- |
-| Guarde. <p>![Icono de guardar](assets/save-icon.png)</p> | Después de guardar el escenario, dispondrá de una nueva versión en el menú de tres puntos en caso de que necesite acceder a ella en el futuro. Las versiones de escenarios guardadas anteriormente solo están disponibles durante 60 días. |
+| Guarde. <p>![Icono de guardar](assets/save-icon.png)</p> | <p>Después de guardar el escenario, dispondrá de una nueva versión en el menú de tres puntos en caso de que necesite acceder a ella en el futuro. Las versiones de escenarios guardadas anteriormente están disponibles durante 60 días después de crearse la siguiente versión de escenario. </p><p>Para conservar el historial de versiones de los escenarios más allá de los 60 días para fines de auditoría, se recomienda guardar y archivar un modelo del escenario en otra ubicación.</p> |
 | Configuración de escenarios <p>![Icono de configuración de escenario](assets/scenario-settings-icon.png)</p> | El panel de configuración de escenario contiene la configuración avanzada del escenario. Para obtener más información acerca de la configuración disponible, vea [Configurar opciones de escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notas  <p>![Icono de notas](assets/notes-icon.png)</p> | Tome notas sobre el escenario. Otros usuarios pueden ver estas notas cuando se encuentren en el escenario. |
 | Alineación automática <p>![Icono de alineación automática](assets/auto-align-icon.png)</p> | Alinee automáticamente los módulos en su escenario. |
