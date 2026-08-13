@@ -7,10 +7,10 @@ exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 713
-ht-degree: 16%
+source-wordcount: 754
+ht-degree: 15%
 
 ---
 
@@ -19,6 +19,11 @@ ht-degree: 16%
 Adobe Workfront Fusion guarda una versión de su escenario cada vez que cambia.
 
 Puede ver, restaurar, cambiar el nombre o descargar modelos para versiones anteriores de un escenario.
+
+>[!NOTE]
+>
+>Las versiones de escenarios guardadas anteriormente están disponibles durante 60 días después de crearse la siguiente versión de escenario.
+>Para conservar el historial de versiones de los escenarios más allá de ese lapso de tiempo para fines de auditoría, se recomienda guardar y archivar un modelo del escenario en otra ubicación.
 
 ## Requisitos de acceso
 
@@ -80,7 +85,7 @@ La funcionalidad Ver cambios muestra las diferencias entre las dos versiones de 
 1. Haga clic en el icono [!UICONTROL Más] ![Más iconos](assets/more-icon.png) en la parte inferior de la pantalla y, a continuación, haga clic en **[!UICONTROL Versiones anteriores]**.
 
    Se muestra una lista de versiones anteriores.
-&#x200B;
+   &#x200B;
 1. Haga clic en **Ver cambios** para la versión de escenario que desee ver.
 1. Se abre la vista **Revisar cambios** y compara esa versión con su escenario actual.
 
@@ -102,7 +107,7 @@ La funcionalidad Ver cambios muestra las diferencias entre las dos versiones de 
 
 ### Examinar cambios
 
-
+&#x200B;
 Cada cambio se muestra en el lado al que pertenece y se colorea según lo que haría la restauración
 hacer:
 
@@ -110,7 +115,9 @@ hacer:
 * Verde (derecha): este cambio se realiza en la versión de la derecha y se añadiría si se restaura la versión.
 
 Si se ha cambiado algo, en lugar de eliminarlo o añadirlo, el valor aparece en rojo a la izquierda y en verde a la derecha.
+&#x200B;
 Los cambios se agrupan en secciones:
+&#x200B;
 
 * **Escenario**: nombre, descripción y tipo.
 * **Configuración de escenario**: Opciones de programación y procesamiento.
@@ -119,5 +126,7 @@ Los cambios se agrupan en secciones:
 * **Rutas de enrutador**: Rutas y su contenido.
 * **Controladores de errores**: ramas de control de errores.
 * **Grupos huérfanos**: módulos desconectados en el lienzo.
+&#x200B;
 Si las dos versiones son idénticas, la vista muestra el mensaje/ **No se encontraron diferencias**.
+&#x200B;
 
