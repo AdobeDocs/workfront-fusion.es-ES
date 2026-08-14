@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
+source-wordcount: 6097
 ht-degree: 37%
 
 ---
@@ -206,7 +203,8 @@ Puede crear una conexión a su cuenta de Workfront Planning directamente desde u
 
 >[!IMPORTANT]
 >
->Los módulos de esta sección pertenecen al conector Workfront Planning V2.Para ver los módulos del conector Workfront Planning V1, consulte [[!DNL Adobe Workfront Planning] Módulos de la versión 1 y sus campos](#adobe-workfront-planning-version-1-modules-and-their-fields).
+>Los módulos de esta sección pertenecen al conector Workfront Planning V2.
+>Para ver los módulos del conector Workfront Planning V1, consulte [[!DNL Adobe Workfront Planning] Módulos de la versión 1 y sus campos](#adobe-workfront-planning-version-1-modules-and-their-fields).
 
 Al configurar los módulos de Workfront Planning, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos adicionales de Workfront, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
@@ -1467,6 +1465,11 @@ Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o eli
 >
 >Para obtener más información sobre cómo editar los enlaces web, consulte [Editar enlaces web](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
+>[!NOTE]
+>
+>A partir del 23 de agosto de 2026, Fusion habilitará la seguridad basada en authToken de forma predeterminada para todos los módulos de Workfront Planning > Ver evento, incluidos los existentes.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1534,8 @@ Para ver un ejemplo de uso de lógica avanzada en este módulo, vea [Ejemplo de 
 
 >[!IMPORTANT]
 >
->Los módulos de esta sección pertenecen al conector Workfront Planning V1.Para ver los módulos del conector Workfront Planning V2, consulte [[!DNL Adobe Workfront Planning] Módulos de la versión 2 y sus campos](#adobe-workfront-planning-version-2-modules-and-their-fields).
+>Los módulos de esta sección pertenecen al conector Workfront Planning V1.
+>Para ver los módulos del conector Workfront Planning V2, consulte [[!DNL Adobe Workfront Planning] Módulos de la versión 2 y sus campos](#adobe-workfront-planning-version-2-modules-and-their-fields).
 
 Al configurar los módulos de Workfront Planning, Workfront Fusion muestra los campos que se indican a continuación. Junto con estos, podrían mostrarse campos adicionales de Workfront, según factores como el nivel de acceso en la aplicación o el servicio. El título en negrita en un módulo indica un campo obligatorio.
 
