@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 37%
+source-wordcount: 6620
+ht-degree: 35%
 
 ---
 
@@ -642,17 +639,61 @@ Este módulo actualiza un tipo de registro.
 
 ### Registros (V2)
 
-* [Crear un registro](#create-a-record-v2)
+* [Creación de un registro (V2)](#create-a-record-v2)
+* [Creación de un registro (heredado)](#create-a-record-legacy)
 * [Eliminación de un registro](#delete-a-record-v2)
 * [Obtener un registro](#get-a-record-v2)
 * [Obtener registros por tipo de registro](#get-records-by-record-type-v2)
 * [Mover registros](#move-records-v2)
-* [Búsqueda de registros](#search-records-v2)
-* [Actualizar un registro](#update-a-record-v2)
+* [Buscar registros (V2)](#search-records-v2)
+* [Buscar registros (heredados)](#search-records-legacy)
+* [Actualización de un registro (V2)](#update-a-record-v2)
+* [Actualización de un registro (heredado)](#update-a-record-legacy)
 
 #### Creación de un registro (V2)
 
+Esta acción crea un único registro en Workfront Planning. Esta versión del módulo le permite seleccionar los campos para los que desea proporcionar valores, lo que crea una carga útil más pequeña y eficaz al crear el registro.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Crear una conexión con [!DNL Adobe Workfront Planning]</a> en este artículo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Seleccione el espacio de trabajo en el que desea crear un registro.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Seleccione el tipo de registro que desea crear.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Seleccionar campos para asignar</p>
+      </td>
+      <td>Seleccione los campos para los que desea proporcionar valores al crear el módulo.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Otros campos</p>
+      </td>
+      <td>Introduzca los valores que desea que tenga el nuevo registro. Estos campos se basan en el tipo de registro y en los campos seleccionados, y son exclusivos de su organización de Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Creación de un registro (heredado)
+
 Esta acción crea un único registro en Workfront Planning.
+
+Se recomienda utilizar el nuevo módulo Crear un registro, que permite seleccionar los campos para los que desea proporcionar valores. Al seleccionar campos, se crea una carga útil más pequeña y eficaz al crear el registro.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +840,48 @@ Este módulo reordena uno o más registros dentro de un tipo de registro especif
 
 #### Buscar registros (V2)
 
+Devolver registros según los criterios especificados.Esta versión del módulo le permite seleccionar los campos para los que desea proporcionar valores, lo que crea una carga útil más pequeña y eficaz al buscar en los registros.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Crear una conexión con [!DNL Adobe Workfront Planning]</a> en este artículo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Seleccione el espacio de trabajo que contiene los registros que desea recuperar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Seleccione el tipo de registro que contiene los registros que desea recuperar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Seleccionar campos para asignar</p>
+      </td>
+      <td>Seleccione los campos para los que desea actualizar valores.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>Para cada campo por el que desee filtrar, introduzca el operador y el valor para ese campo. Estos campos se basan en el tipo de registro y en los campos seleccionados, y son exclusivos de su organización de Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Buscar registros (heredados)
+
 Devolver registros según los criterios especificados
+
+Se recomienda utilizar el nuevo módulo Update a record, que permite seleccionar los campos para los que desea proporcionar valores. Al seleccionar campos, se crea una carga útil más pequeña y eficaz al actualizar el registro.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +914,56 @@ Devolver registros según los criterios especificados
 
 #### Actualización de un registro (V2)
 
+Este módulo actualiza el registro especificado. Esta versión del módulo le permite seleccionar los campos para los que desea proporcionar valores, lo que crea una carga útil más pequeña y eficaz al actualizar el registro.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Crear una conexión con [!DNL Adobe Workfront Planning]</a> en este artículo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Seleccione el espacio de trabajo que contiene el registro que desea actualizar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID de tipo de registro]</p>
+      </td>
+      <td>Seleccione el tipo de registro que desee actualizar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record ID]</p>
+      </td>
+      <td>Introduzca o asigne el ID del registro que desea actualizar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Seleccionar campos para asignar</p>
+      </td>
+      <td>Seleccione los campos para los que desea actualizar valores.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>Introduzca valores para otros campos. Los campos disponibles dependen del registro y los campos seleccionados.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### Actualización de un registro (heredado)
+
 Este módulo actualiza el registro especificado.
 
+Se recomienda utilizar el nuevo módulo Update a record, que permite seleccionar los campos para los que desea proporcionar valores. Al seleccionar campos, se crea una carga útil más pequeña y eficaz al actualizar el registro.
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1000,6 @@ Este módulo actualiza el registro especificado.
     </tr>
   </tbody>
 </table>
-
 
 ### Campos (V2)
 
