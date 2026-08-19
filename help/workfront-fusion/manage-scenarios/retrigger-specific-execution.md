@@ -3,12 +3,11 @@ title: Recuperación de la ejecución de un escenario específico
 description: Puede recuperar una ejecución de escenario específica para procesar los datos mediante un modelo de escenario actualizado o para ver su flujo de datos.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 561
+ht-degree: 17%
 
 ---
 
@@ -58,6 +57,10 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 +++
 
 ## Recuperación de una ejecución
+
+>[!NOTE]
+>
+>Solo se conservan hasta 256 KB de datos en el historial de ejecución. Como resultado, no se pueden recuperar las ejecuciones con datos de entrada superiores a 256 KB. Cualquier intento de recuperar una ejecución de este tipo falla con un mensaje de error.
 
 Puede recuperar la ejecución de un escenario desde el Diagrama del escenario, el área Historial del escenario o la página de ejecución del escenario específico.
 
