@@ -3,10 +3,10 @@ user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
 nudge: true
-source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
+source-git-commit: a482c81a3813d1f3a2e37e5f123907f98b216655
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 52%
+source-wordcount: '2586'
+ht-degree: 51%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 52%
 * Actividad de la versión de Fusion {#fusion-release-activity}
   * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versiones de Fusion: 2026 {#fusion-releases-2026}
+    * [Actividad de la versión de Workfront Fusion: Semana del 17 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 10 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 27 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 20 de julio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
@@ -214,6 +215,17 @@ ht-degree: 52%
       * [Visualización o edición de las funciones de usuario](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
       * [Ver y administrar equipos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
       * [Eliminar usuarios en Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
+  * Configuración de extensiones personalizadas {#configure-custom-extensions}
+    * [Extensiones de IU personalizadas: índice de artículos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
+    * [Información general de extensibilidad de IU](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md)
+    * [Configurar las herramientas y la cuenta de extensión de IU](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
+    * [Creación de un proyecto para la extensibilidad de IU](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md)
+    * [Creación de la IU de extensión personalizada](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)
+    * [La referencia de contexto de Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)
+    * [Publicación de la extensión personalizada](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md)
+    * [Solución de problemas de extensiones personalizadas](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)
+    * [Tutorial de demostración sobre la creación de una extensión personalizada en Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-09-demo-walkthrough.md)
+    * [Llamada a las API de Workfront y Fusion desde la extensión](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md)
   * Administrar plantillas {#manage-templates-admin}
     * [Administración de plantillas](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
     * [Aprobar o desaprobar plantillas](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
@@ -467,7 +479,7 @@ ht-degree: 52%
       * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [Módulo de matemáticas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * {hide-from-toc}[Módulo del agente MCP (protocolo de contexto de modelo)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * [Módulo del agente MCP (protocolo de contexto de modelo)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [Módulos del analizador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [Módulos de herramientas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [Módulos XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
