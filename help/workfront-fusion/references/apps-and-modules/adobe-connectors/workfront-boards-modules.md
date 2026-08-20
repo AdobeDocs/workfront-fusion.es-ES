@@ -5,13 +5,10 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
 TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
 ht-degree: 20%
@@ -108,7 +105,7 @@ Para crear una conexión de Workfront Boards:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Seleccione si le importa conectarse a una cuenta de servicio o a una cuenta personal.</td>
+          <td>Seleccione si desea conectarse a una cuenta de servicio o a una personal.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>

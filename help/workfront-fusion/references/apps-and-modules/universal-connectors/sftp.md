@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
 TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2240
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -80,7 +78,7 @@ Para conectar su cuenta SFTP a Workfront Fusion, debe crear una conexión que es
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Type]</td>
-    <td>Seleccione si le importa conectarse a una cuenta de servicio o a una cuenta personal.</td>
+    <td>Seleccione si desea conectarse a una cuenta de servicio o a una personal.</td>
   </tr>
   <tr>
    <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 

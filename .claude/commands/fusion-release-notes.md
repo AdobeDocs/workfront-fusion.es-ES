@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: 'Cree una nueva página de notas de la versión semanales de Workfront Fusion y conéctela a la página de información general de la actividad de la versión y a la tabla de contenido. Utilícelo cuando el usuario desee escribir, añadir o redactar una nueva nota de versión de Fusion o una página de versión semanal, o solicite documentar las nuevas funciones de Fusion para una versión. No utilice para las notas de la versión de Workfront (Quicksilver) en anuncios/versiones de productos: utilice el formateador de notas de la versión para esas notas.'
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Pida al usuario (si no se ha proporcionado ya) la lista de funciones/cambios en 
 - Una descripción sencilla de lo que ha cambiado y por qué importa
 - Los artículos de ayuda a los que se vincula (compruebe que la ruta existe; no lo adivine)
 - Si requiere una acción de usuario/administrador o está en desuso (necesita una llamada de `>[!IMPORTANT]`)
+- **Ya sea que se trate de un nuevo inicio de conector** (un conector/aplicación completamente nuevo está disponible, no solo módulos nuevos agregados a un conector existente). En caso afirmativo, este déclencheur es **Paso 7**; no omita preguntar acerca de una redirección simplemente porque la nota de la versión en sí ya se ha completado.
 
 ## Paso 2: Determinar el nombre y la fecha del archivo
 
@@ -68,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/es/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -97,7 +98,6 @@ Notas:
   
   {Regular description paragraph(s).}
   ```
-
 - Cada característica debe finalizar con &quot;Para obtener más información, vea [...]&quot; vínculo al artículo de ayuda correspondiente. Compruebe que el destino del vínculo existe en el repositorio.
 
 ## Paso 4: Añadir la página al índice de información general
@@ -112,7 +112,6 @@ Editar `help/workfront-fusion/fusion-product-releases/fusion-release-activity.md
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Si esta es la primera versión de un nuevo año, agregue un nuevo encabezado `## Fusion releases in {YYYY}` sobre el encabezado del año anterior y ajuste la sección del año *anterior* en un bloque contraíble de `+++ **Click to open**` / `+++` si no lo está ya (solo el año actual permanece expandido).
 
 ## Paso 5: Agregar la página al índice
@@ -125,7 +124,6 @@ Editar `help/workfront-fusion/TOC.md`:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Si el encabezado del año actual aún no existe, agregue `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` por encima del encabezado del año anterior.
 - **No** agregue el prefijo `{hide-from-toc}` a las nuevas entradas, que solo se usa para las entradas antiguas cuando ya no se pueden navegar (consulte Incoherencias conocidas más abajo).
 
@@ -134,7 +132,23 @@ Editar `help/workfront-fusion/TOC.md`:
 - Varias entradas del índice de principios de 2026 están anidadas por error en el encabezado `Fusion releases - 2025`, aunque las páginas en sí son versiones de 2026. Al agregar una nueva entrada, siempre verifique que aparezca en el encabezado que coincida con **su propio año**, no donde se encuentre la entrada anterior.
 - Algunos títulos/H1s de páginas anteriores omiten la coma anterior al año (`July 13 2026` en lugar de `July 13, 2026`). Utilice siempre la coma en las páginas nuevas.
 
-## Paso 6: Lista de comprobación final
+## Paso 7: Se inicia un nuevo conector — Pregunte por una redirección (no omita)
+
+**Este paso se aplica siempre que el Paso 1 identificó un nuevo inicio de conector.** Es fácil tener en cuenta la nota de versión &quot;listo&quot; después del paso 5 y olvidar esto: trate una nueva función de conector como incompleta hasta que este paso se haya abordado de una manera u otra.
+
+Pregunte al usuario: *&quot;¿Desea configurar una redirección para el nuevo artículo del conector?&quot;*
+
+- Si **no**, anótelo y continúe, no hay nada más que hacer.
+- Si **sí**, recopilar:
+  - La **ruta de origen** (debe comenzar con `/en`, sin espacios)
+  - El **destino**: una ruta relativa que empieza por `/en` o una dirección URL `https` completa (sin espacios)
+- Agregue la fila al repositorio del mismo nivel `Adobe-Enterprise-Docs/redirects`, en `redirects/`, a un archivo por entorno (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Reglas de fila (del archivo README de ese repositorio):
+  - No hay ningún par duplicado `source` ni `source`/`destination` duplicado.
+  - El redireccionamiento no debe provocar un bucle de redireccionamiento.
+- **Esta aptitud solo agrega la fila CSV después de que el usuario la confirme.** El aumento del PR en el repositorio `redirects` es un paso independiente que esta aptitud no realiza: indique al usuario que aún debe abrir y combinar una PR allí antes de que se active la redirección (~5 minutos después de la combinación para redirecciones 1:1).
+
+## Paso 8: Lista de comprobación final
 
 - [ ] Archivo creado en la ruta correcta sin ceros a la izquierda en la fecha
 - [ ] usa `hidefromtoc: true`, no se ha inventado `exl-id`/`TQID`
@@ -144,6 +158,7 @@ Editar `help/workfront-fusion/TOC.md`:
 - [ ] Se agregó una nueva página como la entrada más reciente en `fusion-release-activity.md`, bajo el año/mes correcto
 - [ ] Se agregó una nueva página como la entrada más reciente en `TOC.md`, bajo el encabezado de año correcto
 - [ ] encabezados de año/mes nuevos creados si es necesario, con el año anterior contraído en `fusion-release-activity.md`
+- [ ] **Si alguna característica era un nuevo inicio del conector: se le preguntó acerca de una redirección (Paso 7), y se configuró una o se rechazó explícitamente**
 
 ## Recursos adicionales
 
