@@ -135,7 +135,7 @@ Este módulo de acción procesa un mensaje en inglés sin formato en el servidor
   </tr>  </tbody> 
 </table>
 
-Para obtener una lista de las herramientas que puede seleccionar para los campos Herramientas de solo lectura y Herramientas de escritura/eliminación, consulte [Herramientas del servidor MCP de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) en la documentación de Workfront.
+Para obtener una lista de las herramientas que puede seleccionar para los campos Herramientas de solo lectura y Herramientas de escritura/eliminación, consulte [Herramientas del servidor MCP de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) en la documentación de Workfront.
 
 El módulo devuelve la siguiente información, que puede asignar en módulos posteriores en el escenario:
 
