@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +27,12 @@ Cuando se utilizan escenarios encadenados, la recuperación también se puede ap
 Para obtener más información sobre los webhooks, consulte [Activadores instantáneos (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Para obtener más información sobre cómo encadenar escenarios, vea [Encadenar varios escenarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Solo se conservan hasta 256 KB de datos en el historial de ejecución. Como resultado, no se pueden recuperar las ejecuciones con datos de entrada superiores a 256 KB. Cualquier intento de recuperar una ejecución de este tipo falla con un mensaje de error.
 
 ## Requisitos de acceso
 
@@ -58,6 +64,10 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 +++
 
 ## Recuperación de una ejecución
+
+>[!NOTE]
+>
+>Solo se conservan hasta 256 KB de datos en el historial de ejecución. Como resultado, no se pueden recuperar las ejecuciones con datos de entrada superiores a 256 KB. Cualquier intento de recuperar una ejecución de este tipo falla con un mensaje de error.
 
 Puede recuperar la ejecución de un escenario desde el Diagrama del escenario, el área Historial del escenario o la página de ejecución del escenario específico.
 
