@@ -3,7 +3,8 @@ title: Módulos MCP de Adobe Workfront
 description: Con el módulo MCP de Adobe Workfront, puede enviar un mensaje en inglés sin formato al servidor MCP de Adobe Workfront y permitir que un modelo de IA realice la solicitud.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 841
