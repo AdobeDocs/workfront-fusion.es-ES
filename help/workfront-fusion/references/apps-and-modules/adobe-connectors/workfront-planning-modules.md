@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
+source-wordcount: 6660
 ht-degree: 35%
 
 ---
@@ -1600,11 +1597,6 @@ Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o eli
 >
 >Para obtener más información sobre cómo editar los enlaces web, consulte [Editar enlaces web](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
->[!NOTE]
->
->A partir del 23 de agosto de 2026, Fusion habilitará la seguridad basada en authToken de forma predeterminada para todos los módulos de Workfront Planning > Ver evento, incluidos los existentes.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1646,13 @@ Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o eli
         <p>[!UICONTROL Excluir actualizaciones realizadas por esta conexión]</p>
       </td>
       <td>Habilite esta opción para evitar que el escenario se active cuando la conexión utilizada por este módulo realice un cambio. Esto evita que se active otra instancia del escenario si este realiza una acción de activación.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Habilitar los vínculos seguros]</td>
+      <td>
+       <p>Elija si desea habilitar la seguridad basada en authToken para este webhook.</p><p>
+       <b>NOTA</b>: A partir del 23 de agosto de 2026, Fusion habilita la seguridad basada en authToken de forma predeterminada para todos los módulos de Workfront Planning &gt; Ver evento, incluidos los existentes. Si un webhook específico se rompe o necesita deshabilitarlo por motivos de compatibilidad, puede desactivar la opción Habilitar enlaces seguros.</p>
+      </td>
     </tr>
   </tbody>
 </table>
