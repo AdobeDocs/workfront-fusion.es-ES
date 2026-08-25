@@ -3,7 +3,8 @@ title: Movimiento de módulos a una cadena
 description: Puede seleccionar un grupo de módulos en un escenario y moverlos a un nuevo escenario encadenado, sin volver a crear manualmente asignaciones o estructuras de datos.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513
