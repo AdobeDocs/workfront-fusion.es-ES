@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
+source-wordcount: 1744
 ht-degree: 9%
 
 ---
@@ -33,6 +32,8 @@ Cuando un escenario principal está esperando que un escenario secundario devuel
 Para obtener más información sobre las protecciones de rendimiento de Fusion, incluidos los tiempos de espera, consulte [protecciones de rendimiento de Fusion](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Para obtener instrucciones sobre la configuración de módulos de cadena, consulte [Módulos de cadena](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
+
+Para obtener instrucciones sobre cómo seleccionar módulos existentes en un escenario y moverlos a un nuevo escenario secundario, consulte [Mover módulos a una cadena](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Escenarios principales y secundarios
 
@@ -112,7 +113,7 @@ Al encadenar escenarios, siga estas prácticas para evitar la recursión:
 >* **Cuando un escenario está produciendo recursividad, el equipo de ingeniería de Fusion lo desactiva para evitar nuevos problemas de rendimiento.**
 >* Dado que la recursividad es el resultado del diseño de escenarios, debe diseñarlos de manera que se garantice que el escenario no incluya acciones que lo activen.
 >* Puede ver un diagrama de las relaciones entre los escenarios principal y secundario.
->   Para obtener instrucciones, consulte [Ver relaciones de escenarios encadenados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
+>   Para obtener instrucciones, vea [Ver relaciones de escenarios encadenados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Utilice la gestión de errores para garantizar una respuesta
 
