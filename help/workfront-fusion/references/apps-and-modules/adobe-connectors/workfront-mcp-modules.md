@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
+source-wordcount: 884
 ht-degree: 18%
 
 ---
@@ -21,6 +21,10 @@ Por ejemplo, puede introducir el mensaje &quot;Buscar todos mis proyectos activo
 Puede restringir qué acciones de Workfront puede realizar la IA, de modo que incluso un escenario desatendido pueda garantizar que no se realice ninguna acción destructiva inesperada.
 
 De forma predeterminada, este módulo utiliza IA administrada por Adobe, que usa el modelo `claude-sonnet-5`. Puede configurar el módulo para que utilice un LLM diferente, usando una clave y otras credenciales que proporcione.
+
+>[!NOTE]
+>
+>El uso de IA administrada por Adobe está limitado a 25 $ por organización y mes.
 
 Para obtener más información sobre MCP en escenarios de Fusion, consulte [Agregar un mensaje de IA a su escenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
