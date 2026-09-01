@@ -3,7 +3,8 @@ title: Descargar archivos de almacenamiento
 description: Puede descargar la versión más reciente de un archivo en Almacenamiento o descargar una versión anterior específica.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 211

@@ -3,7 +3,8 @@ title: Resumen de almacenamiento
 description: Storage es una página de Workfront Fusion que proporciona a los equipos acceso directo a sus repositorios de Adobe Enterprise Storage Management (ESM), lo que permite a los usuarios examinar carpetas, cargar y descargar archivos, ver el historial de versiones y crear escenarios de automatización.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279
