@@ -1,5 +1,5 @@
 ---
-title: Ver el panel de control de rendimiento de una organización
+title: Ver el panel de información de una organización
 description: Los administradores de Fusion pueden ver un tablero que muestra las métricas de ejecución de una organización.
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 9%
+ht-degree: 7%
 
 ---
 
-# Ver el panel de control de rendimiento de una organización
+# Ver el panel de información de una organización
 
-El panel de control de rendimiento de Fusion le permite ver rápidamente qué escenarios se están ejecutando más, dónde se están produciendo los retrasos y con qué eficacia están funcionando los grupos de trabajo. Esto proporciona visibilidad en tiempo real de los volúmenes de ejecución, la profundidad de la cola, el uso del grupo y el rendimiento en el nivel de escenario.
+El panel de datos de Fusion Insights le permite ver rápidamente qué escenarios se están ejecutando más, dónde se están produciendo los retrasos y con qué eficacia están funcionando los grupos de trabajo. Esto proporciona visibilidad en tiempo real de los volúmenes de ejecución, la profundidad de la cola, el uso del grupo y el rendimiento en el nivel de escenario.
 
 ## Requisitos de acceso
 
@@ -47,7 +47,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 +++
 
-## Componentes del panel de rendimiento
+## Componentes del panel de perspectivas
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 -->
 
-En el panel de rendimiento de Fusion, puede ver las siguientes métricas.
+En el panel de Fusion Insights, puede ver las siguientes métricas.
 
 * **Ejecuciones esperando a procesarse**
 Este gráfico muestra el número de ejecuciones en espera de procesarse (también conocido como registro de ejecuciones pendientes) en un momento determinado.
@@ -80,9 +80,9 @@ Este gráfico muestra las ejecuciones por escenario. Los diferentes colores repr
 
   Puede utilizar este gráfico para identificar escenarios que están tardando más de lo normal, incluidos aquellos afectados por problemas con una aplicación o servicio conectado.
 
-## Ver el panel de rendimiento de Fusion
+## Ver el panel de información de Fusion
 
-1. En Fusion, haga clic en **Rendimiento** en el panel de navegación izquierdo.
+1. En Fusion, haga clic en **Información** en el panel de navegación izquierdo.
 
    Se abrirá el panel.
 
