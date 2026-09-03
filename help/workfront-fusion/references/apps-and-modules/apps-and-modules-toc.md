@@ -11,9 +11,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 57887f779ac8dcae346056764d39d116a300cbf3
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: 518
 ht-degree: 93%
 
 ---
@@ -73,6 +73,7 @@ Fusion ofrece conectores para muchos productos y servicios de Adobe.
 * [Módulos de Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
 * [Módulos de revisión y aprobaciones unificados de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
 * [Módulos de Workfront Boards](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+* [Módulos de Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
 * [Módulos de Workfront Proof](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
 
 ## Conectores para aplicaciones de terceros
