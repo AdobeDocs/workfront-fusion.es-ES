@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 35%
 
 ---
@@ -408,6 +405,7 @@ Este módulo de acción actualiza un nuevo espacio de trabajo en Planning.
 * [Obtener tipos de registros globales](#get-global-record-types-v2)
 * [Obtener un tipo de registro](#get-a-record-type-v2)
 * [Obtener tipos de registros](#get-record-types-v2)
+* [Configuración del tipo de registro refundido](#recast-record-type-configuration-v2)
 * [Actualización de un tipo de registro](#update-a-record-type-v2)
 
 #### Creación de un tipo de registro (V2)
@@ -553,6 +551,27 @@ Este módulo recupera una lista de tipos de registros disponibles en un espacio 
         <p>[!UICONTROL Número máximo de tipos de registro devueltos]</p>
       </td>
       <td>Introduzca o asigne el número máximo de tipos de registro que devolverá el módulo durante un ciclo de ejecución.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Configuración del tipo de registro de refundición (V2)
+
+Este módulo recupera todos los tipos de registros del espacio de trabajo, agrupados por su sección, junto con los campos de cada tipo de registro y las opciones de selección de cada campo. El resultado se estructura como sección > tipo de registro > campos.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obtener instrucciones sobre cómo crear una conexión con [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Crear una conexión con [!DNL Adobe Workfront Planning]</a> en este artículo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID de espacio de trabajo]</p>
+      </td>
+      <td>Introduzca o asigne el ID del espacio de trabajo para el que desea recuperar la configuración del tipo de registro.</td> 
     </tr>
   </tbody>
 </table>
