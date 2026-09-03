@@ -3,9 +3,8 @@ title: Módulos de Workfront Fusion
 description: Con el conector de Workfront Fusion, puede administrar su propia organización de Fusion desde un escenario, incluidos registros, enlaces, escenarios y conexiones.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 1665553df806ba49ee9b52199fdcc587a5bb6337
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 05cd734c1bc65f58d60c2668f91e065342290341
 workflow-type: tm+mt
 source-wordcount: 1374
 ht-degree: 25%
@@ -416,4 +415,6 @@ Este módulo devuelve el ID de región y organización de cada organización de 
   </tr> 
  </tbody> 
 </table>
+
+
 
