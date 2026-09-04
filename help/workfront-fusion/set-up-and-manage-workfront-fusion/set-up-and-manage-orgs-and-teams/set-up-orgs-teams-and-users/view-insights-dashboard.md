@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 6%
 
 ---
@@ -63,6 +62,9 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 En el panel de Fusion Insights, puede ver las siguientes métricas.
 
+* **Registros de ejecuciones con errores**
+Esta tabla enumera todas las ejecuciones de escenarios de advertencia o fallidas de su organización, para que pueda encontrar y solucionar problemas de ejecuciones sin salir del panel.
+
 * **Ejecuciones esperando a procesarse**
 Este gráfico muestra el número de ejecuciones en espera de procesarse (también conocido como registro de ejecuciones pendientes) en un momento determinado.
 
@@ -79,8 +81,6 @@ Este gráfico muestra las ejecuciones por escenario. Los diferentes colores repr
 Este gráfico muestra las ejecuciones por escenario. Los diferentes colores representan diferentes escenarios. Cuando pasa el ratón por encima del gráfico, aparece una ventana que muestra qué color es cada escenario.
 
   Puede utilizar este gráfico para identificar escenarios que están tardando más de lo normal, incluidos aquellos afectados por problemas con una aplicación o servicio conectado.
-* **Registro de ejecución**
-Esta tabla enumera todas las ejecuciones de escenarios de advertencia o fallidas de su organización, para que pueda encontrar y solucionar problemas de ejecuciones sin salir del panel.
 
 ## Ver el panel de información de Fusion
 
@@ -116,6 +116,6 @@ Utilice el Registro de ejecución para buscar ejecuciones de escenarios que han 
 1. Haga clic en una ejecución para ver más detalles sobre su error.
 1. Para reactivar uno o más escenarios que se desactivaron automáticamente después de errores repetidos, seleccione las ejecuciones y haga clic en **Activar**.
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   Antes de reactivar un escenario, investigue la causa de los errores, como credenciales caducadas o un problema con el conector, para que el escenario no vuelva a fallar inmediatamente.
+   >[!NOTE]
+   >
+   >Antes de reactivar un escenario, investigue la causa de los errores, como credenciales caducadas o un problema con el conector, para que el escenario no vuelva a fallar inmediatamente.
