@@ -7,10 +7,10 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 7%
+source-wordcount: 849
+ht-degree: 6%
 
 ---
 
@@ -63,6 +63,9 @@ Para obtener más información sobre el contenido de esta tabla, consulte los [R
 
 En el panel de Fusion Insights, puede ver las siguientes métricas.
 
+* **Registros de ejecuciones con errores**
+Esta tabla enumera todas las ejecuciones de escenarios de advertencia o fallidas de su organización, para que pueda encontrar y solucionar problemas de ejecuciones sin salir del panel.
+
 * **Ejecuciones esperando a procesarse**
 Este gráfico muestra el número de ejecuciones en espera de procesarse (también conocido como registro de ejecuciones pendientes) en un momento determinado.
 
@@ -95,3 +98,25 @@ Este gráfico muestra las ejecuciones por escenario. Los diferentes colores repr
 1. Para cambiar el intervalo de tiempo del panel, haga clic en el campo Intervalo de tiempo en la esquina superior derecha del panel y, a continuación, seleccione un nuevo lapso de tiempo. El lapso de tiempo más largo disponible es de 24 horas, y el más corto es de 15 minutos.
 1. Para actualizar los gráficos, haga clic en el icono Actualizar situado cerca de la esquina superior derecha del panel.
 1. Para ver un grupo de trabajo diferente, haga clic en el campo Grupo situado cerca de la esquina superior izquierda del panel y, a continuación, seleccione el grupo que desee ver.
+
+## Filtrar y triplicar ejecuciones en el registro de ejecución
+
+Utilice el Registro de ejecución para buscar ejecuciones de escenarios que han fallado o devuelto una advertencia en toda la organización y reactivar cualquier escenario que se haya desactivado automáticamente después de errores repetidos.
+
+1. En el Registro de ejecución, filtre las ejecuciones mediante cualquiera de las siguientes opciones:
+
+   * [!UICONTROL Equipo]
+   * [!UICONTROL Escenario]
+   * [!UICONTROL Tipo de ejecución]
+   * [!UICONTROL Intervalo de fecha]
+   * [!UICONTROL Estado de desactivación]
+   * [!UICONTROL Mensaje de error]
+
+   Para la mayoría de los filtros, puede elegir hacer coincidir solo los valores seleccionados, o todo excepto ellos.
+
+1. Haga clic en una ejecución para ver más detalles sobre su error.
+1. Para reactivar uno o más escenarios que se desactivaron automáticamente después de errores repetidos, seleccione las ejecuciones y haga clic en **Activar**.
+
+   >[!NOTE]
+   >
+   >Antes de reactivar un escenario, investigue la causa de los errores, como credenciales caducadas o un problema con el conector, para que el escenario no vuelva a fallar inmediatamente.
