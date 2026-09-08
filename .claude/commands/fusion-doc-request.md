@@ -25,11 +25,11 @@ Las conexiones de Slack en este entorno son irregulares (tokens caducados, desco
 
 La plantilla de solicitud tiene estos campos: extraer cada uno:
 
-* **Título de característica**
-* **Descripción**
-* **Puntos que se agregarán a la documentación** *(a veces presentes: secciones o detalles específicos que el solicitante desea cubrir; trátelos como necesarios, no como opcionales, si se proporcionan)*
-* **Fecha de lanzamiento prevista**
-* **Necesita anuncio** *(Sí/No - solo informativo; consulte la nota anterior. No actúe en este campo.)*
+&#x200B;* **Título de característica**
+&#x200B;* **Descripción**
+&#x200B;* **Puntos que se agregarán a la documentación** *(a veces presentes: secciones o detalles específicos que el solicitante desea cubrir; trátelos como necesarios, no como opcionales, si se proporcionan)*
+&#x200B;* **Fecha de lanzamiento prevista**
+&#x200B;* **Necesita anuncio** *(Sí/No - solo informativo; consulte la nota anterior. No actúe en este campo.)*
 
 Si la solicitud se vincula a una página wiki de Confluence con la especificación completa, búsquela (`get_wiki_content`) antes de escribir la documentación. No confíe solo en el resumen de Slack para obtener detalles técnicos (nombres de campos exactos, pasos, etiquetas de interfaz de usuario): extraiga estos de la especificación de wiki cuando esté vinculado.
 
@@ -47,9 +47,9 @@ Si el árbol de trabajo no está limpio (cambios no confirmados del trabajo no r
 
 Encuentre los artículos existentes relevantes en este repositorio (grep para nombres de módulos relacionados, etiquetas de interfaz de usuario o nombres de configuración; no adivine el archivo). Actualícelas para reflejar el cambio, según la estructura, el nivel de encabezado y el estilo de casa existentes de ese artículo.
 
-* No invente detalles técnicos (nombres de campo exactos, ámbitos de permisos, pasos de configuración) que no estén en la solicitud de Slack o en la especificación de wiki vinculada. Si algo no está confirmado, márquelo en línea como un comentario de HTML (por ejemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) en lugar de adivinar, nunca como una llamada visible. No se debe representar en la página publicada.
-* Si esto requiere un archivo de artículo completamente nuevo (no solo una edición en uno existente), siga las convenciones permanentes de este repositorio: no se fabrica `exl-id`/`TQID` en frontmatter y convierta el archivo a CRLF/no-BOM después de crearlo (la herramienta `Write` toma el valor predeterminado de LF).
-* Escribir una nueva página en &quot;el índice&quot; significa AMBOS, no solo uno: una página se puede vincular desde un subíndice y seguir siendo invisible para los lectores:
+&#x200B;* No invente detalles técnicos (nombres de campo exactos, ámbitos de permisos, pasos de configuración) que no estén en la solicitud de Slack o en la especificación de wiki vinculada. Si algo no está confirmado, márquelo en línea como un comentario de HTML (por ejemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) en lugar de adivinar, nunca como una llamada visible. No se debe representar en la página publicada.
+&#x200B;* Si esto requiere un archivo de artículo completamente nuevo (no solo una edición en uno existente), siga las convenciones permanentes de este repositorio: no se fabrica `exl-id`/`TQID` en frontmatter y convierta el archivo a CRLF/no-BOM después de crearlo (la herramienta `Write` toma el valor predeterminado de LF).
+&#x200B;* Escribir una nueva página en &quot;el índice&quot; significa AMBOS, no solo uno: una página se puede vincular desde un subíndice y seguir siendo invisible para los lectores:
   - El archivo de navegación principal para el área de producto (p. ej. `help/workfront-fusion/TOC.md`): esto es lo que realmente impulsa el árbol de navegación publicado.
   - Cualquier subíndice o página de aterrizaje de contenido que también vincule a artículos de este tipo (por ejemplo, `apps-and-modules-toc.md` para una nueva página de módulos de conector).
     Compruebe ambos explícitamente y confirme que la nueva entrada se encuentra en la misma lista, en el mismo nivel de anidación, como los artículos hermanos más cercanos en cada archivo; no suponga que agregarla a una cubre a la otra.
@@ -93,17 +93,17 @@ Antes de crear la llamada, llame a `read_workflow_docs` con `workfront://tools/c
 
 Informe claramente:
 
-* La rama que ha creado.
-* Qué archivo(s) de documentación ha cambiado y qué ha añadido.
-* El nombre y la dirección URL de la tarea.
-* Los valores de campo exactos que haya establecido, incluidos los campos de fecha de vista previa.
-* Cualquier cosa en la que no estuviera completamente seguro, por ejemplo, que Slack no estuviera disponible y trabajara solo con texto pegado, que el artículo del documento de destino fuera ambiguo o que un detalle técnico no estuviera en el material de origen y se marcara en lugar de adivinar.
+&#x200B;* La rama que ha creado.
+&#x200B;* Qué archivo(s) de documentación ha cambiado y qué ha añadido.
+&#x200B;* El nombre y la dirección URL de la tarea.
+&#x200B;* Los valores de campo exactos que haya establecido, incluidos los campos de fecha de vista previa.
+&#x200B;* Cualquier cosa en la que no estuviera completamente seguro, por ejemplo, que Slack no estuviera disponible y trabajara solo con texto pegado, que el artículo del documento de destino fuera ambiguo o que un detalle técnico no estuviera en el material de origen y se marcara en lugar de adivinar.
 
 ## Valores conocidos (de ejecuciones anteriores)
 
 Confirme que estos aún se resuelven en lugar de suponer que son permanentes:
 
-* El proyecto &quot;Tareas de documentación del producto - para problemas de desarrollo que requieren mensajería&quot; se asigna al ID `5e69583f00236b9f767c3e3944100ee4`
-* La tarea principal &quot;Becky - Tareas del canal Fusion-Documentation&quot; se asigna al ID `6a9b065100003a7554832780c2015e93` (en el mismo proyecto): se resuelve con `insights_find_id_by_name` (entidad `task`) en lugar de codificarse, en caso de que cambie alguna vez
-* El formulario personalizado de documentación del producto (`categoryID`) es `5d7275b9000514604bd969d418725843`
-* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+&#x200B;* El proyecto &quot;Tareas de documentación del producto - para problemas de desarrollo que requieren mensajería&quot; se asigna al ID `5e69583f00236b9f767c3e3944100ee4`
+&#x200B;* La tarea principal &quot;Becky - Tareas del canal Fusion-Documentation&quot; se asigna al ID `6a9b065100003a7554832780c2015e93` (en el mismo proyecto): se resuelve con `insights_find_id_by_name` (entidad `task`) en lugar de codificarse, en caso de que cambie alguna vez
+&#x200B;* El formulario personalizado de documentación del producto (`categoryID`) es `5d7275b9000514604bd969d418725843`
+&#x200B;* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
