@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestionar una solicitud de documentación de Fusion desde la plantilla de Slack
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este es un flujo de trabajo diferente de la aptitud `fusion-release-notes`. Esta
 
 ## Paso 1: Obtener los detalles de la solicitud
 
-Si se le proporciona un vínculo de Slack, analice `channel_id` y `message_ts` fuera de la dirección URL y recupere el subproceso (`slack_get_thread_replies` o `slack_read_thread`, según la herramienta MCP de Slack que esté conectada (pruebe ambos si falla uno). Mantenga el enlace permanente/URL del hilo - es necesario en el paso 3.
+Si se le proporciona un vínculo de Slack, analice `channel_id` y `message_ts` fuera de la dirección URL y recupere el subproceso (`slack_get_thread_replies` o `slack_read_thread`, según la herramienta MCP de Slack que esté conectada (pruebe ambos si falla uno). Mantenga el enlace permanente/URL del hilo - es necesario en el paso 4.
 
 Las conexiones de Slack en este entorno son irregulares (tokens caducados, desconexiones a mitad de la sesión). Si falla una recuperación:
 - Vuelva a intentarlo una vez.
@@ -33,9 +33,17 @@ La plantilla de solicitud tiene estos campos: extraer cada uno:
 
 Si la solicitud se vincula a una página wiki de Confluence con la especificación completa, búsquela (`get_wiki_content`) antes de escribir la documentación. No confíe solo en el resumen de Slack para obtener detalles técnicos (nombres de campos exactos, pasos, etiquetas de interfaz de usuario): extraiga estos de la especificación de wiki cuando esté vinculado.
 
-Si la solicitud, en su lugar, se vincula a una fuente secundaria que no es de confluencia (por ejemplo, una publicación de la comunidad de Experience League, un artículo de asistencia técnica o un resumen generado por IA), en lugar de una especificación autoritativa, puede utilizarla para completar los detalles técnicos que falta en el texto de Slack, pero puede tratarla como de menor confianza que la propia solicitud de Slack. Cuando entre en conflicto con el texto de Slack o lo agregue (un nombre diferente para el mismo botón o campo, un detalle no mencionado en Slack), no elija uno sin avisar: escriba el documento utilizando la redacción de la solicitud de Slack como fuente principal y marque la discrepancia en línea con un comentario de HTML (por ejemplo, `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) según las directrices del paso 2.
+Si la solicitud, en su lugar, se vincula a una fuente secundaria que no es de confluencia (por ejemplo, una publicación de la comunidad de Experience League, un artículo de asistencia técnica o un resumen generado por IA), en lugar de una especificación autoritativa, puede utilizarla para completar los detalles técnicos que falta en el texto de Slack, pero puede tratarla como de menor confianza que la propia solicitud de Slack. Cuando entre en conflicto con el texto de Slack o lo agregue (un nombre diferente para el mismo botón o campo, un detalle no mencionado en Slack), no elija uno sin avisar: escriba el documento utilizando la redacción de la solicitud de Slack como fuente principal y marque la discrepancia en línea con un comentario de HTML (por ejemplo, `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) según las directrices del paso 3.
 
-## Paso 2: Actualizar la documentación
+## Paso 2: Crear una rama para la solicitud
+
+Antes de tocar cualquier archivo, cree una nueva rama de Git para esta solicitud y desprotéjala. Rama de la rama predeterminada actual (`main`), no de la rama que esté desprotegida.
+
+Asigne un nombre a la rama `becky-{short-kebab-case-description}`, derivada del **Título de característica**; la primera palabra debe ser `becky`, que coincida con la convención de ramas existente de este repositorio (por ejemplo, `becky-webhook-update`, `becky-storage-beta-sos`). Sea breve: unas pocas palabras, no el título completo textualmente.
+
+Si el árbol de trabajo no está limpio (cambios no confirmados del trabajo no relacionado), detenga e informe al usuario en lugar de ramificarlo.
+
+## Paso 3: Actualizar la documentación
 
 Encuentre los artículos existentes relevantes en este repositorio (grep para nombres de módulos relacionados, etiquetas de interfaz de usuario o nombres de configuración; no adivine el archivo). Actualícelas para reflejar el cambio, según la estructura, el nivel de encabezado y el estilo de casa existentes de ese artículo.
 
@@ -46,7 +54,7 @@ Encuentre los artículos existentes relevantes en este repositorio (grep para no
   - Cualquier subíndice o página de aterrizaje de contenido que también vincule a artículos de este tipo (por ejemplo, `apps-and-modules-toc.md` para una nueva página de módulos de conector).
     Compruebe ambos explícitamente y confirme que la nueva entrada se encuentra en la misma lista, en el mismo nivel de anidación, como los artículos hermanos más cercanos en cada archivo; no suponga que agregarla a una cubre a la otra.
 
-## Paso 3: Crear la tarea de Workfront
+## Paso 4: Crear la tarea de Workfront
 
 Proyecto: **Tareas de documentación del producto - para problemas de desarrollo que requieren mensajes**. Resuelva su ID con `insights_find_id_by_name` (entidad `project`) en lugar de codificarlo, en caso de que cambie alguna vez. Consulte Valores conocidos a continuación para ver el último ID resuelto.
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Antes de crear la llamada, llame a `read_workflow_docs` con `workfront://tools/create-any-object`. Esta llamada establece campos personalizados y un valor de enumeración (`DE:Preview Date Known`), que lo requiere según las reglas del servidor MCP.
 
-## Paso 4: volver a confirmar con el usuario
+## Paso 5: Confirmar de nuevo al usuario
 
 Informe claramente:
 
+&#x200B;* La rama que ha creado.
 &#x200B;* Qué archivo(s) de documentación ha cambiado y qué ha añadido.
 &#x200B;* El nombre y la dirección URL de la tarea.
 &#x200B;* Los valores de campo exactos que haya establecido, incluidos los campos de fecha de vista previa.
