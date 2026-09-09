@@ -3,9 +3,9 @@ user-guide-title: Documentación de Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilice los documentos, tutoriales y recursos adicionales para obtener información sobre cómo implementar y utilizar Adobe Workfront de forma eficaz en su organización.
 nudge: true
-source-git-commit: b2d2634c72b044898b656852e57ef36a8b5f2fe9
+source-git-commit: 3df43d17c2e6ecd9625e67f4aa75eea8c8b4eecc
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2664'
 ht-degree: 49%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 49%
 * Actividad de la versión de Fusion {#fusion-release-activity}
   * [Actividad en la versión de Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versiones de Fusion: 2026 {#fusion-releases-2026}
+    * [Actividad de la versión de Workfront Fusion: Semana del 7 de septiembre de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 31 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-31.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 24 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-24.md)
     * [Actividad de la versión de Workfront Fusion: Semana del 17 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
@@ -362,8 +363,8 @@ ht-degree: 49%
       * [Funciones](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
       * [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
       * [Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
-      * [Tókenes para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
-      * [Tókenes para el análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
+      * [Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
+      * [Tokens para el análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
       * [Funciones de cadena](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
       * [Funciones matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
       * [Variables matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
@@ -417,7 +418,7 @@ ht-degree: 49%
       * [Módulos de administración de usuarios de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Módulos MCP de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
       * [Módulos de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Módulos de Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+      * [Módulos de Planificación de Workfront de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Módulos de revisión y aprobaciones unificados de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Módulos de Workfront Boards](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Módulos de Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
