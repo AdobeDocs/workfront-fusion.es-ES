@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 49e408630449952f67d3530f03b7a8755e0e6f6a
 workflow-type: tm+mt
-source-wordcount: 2420
-ht-degree: 58%
+source-wordcount: 3236
+ht-degree: 49%
 
 ---
 
@@ -68,13 +68,24 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 >
 >Para llamar a un webhook de terceros (un webhook saliente), utilice uno de los módulos HTTP. Para obtener más información, consulte [Módulos HTTP](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-Para utilizar un webhook para conectar una aplicación a Workfront Fusion, puede configurar el webhook para que se autentique con un certificado de cliente (mTLS), autenticación básica o Adobe Identity Management System (IMS).
+Para utilizar un webhook para conectar una aplicación a Workfront Fusion, puede configurar el webhook para que se autentique con un certificado de cliente (mTLS), autenticación básica, Adobe Identity Management System (IMS), una clave de API o una firma HMAC.
+
+>[!NOTE]
+>
+>**La autenticación de clave API es ahora el tipo de autorización predeterminado** para los nuevos webhooks. Anteriormente, no se preseleccionaba ninguna autorización. Aún puede cambiar el tipo de Autorización de un webhook a cualquier otro tipo, o seleccionar el valor vacío para la falta de autorización.
+
+* [Configuración de un webhook](#configure-a-webhook)
+* [Configuración de la estructura de datos del webhook](#configure-the-webhook-s-data-structure)
+
+### Configuración de un webhook
 
 * [Usar un webhook con un certificado de cliente (mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
 * [Usar un webhook con autenticación básica](#use-a-webhook-with-basic-authentication)
 * [Uso de un webhook con Adobe Identity Management System (IMS)](#use-a-webhook-with-adobe-identity-management-system-ims)
+* [Uso de un webhook con autenticación de clave de API](#use-a-webhook-with-api-key-authentication)
+* [Usar un webhook con autenticación de firma HMAC](#use-a-webhook-with-hmac-signature-authentication)
 
-### Usar un webhook con un certificado de cliente (mTLS)
+#### Usar un webhook con un certificado de cliente (mTLS)
 
 Con mTLS, se proporciona un certificado de cliente y una clave privada. Fusion utiliza el certificado y la clave para autenticarse en el servicio de destino al llamar al webhook. Esta autenticación bidireccional permite que su webhook sea más seguro que la autenticación básica.
 
@@ -85,7 +96,7 @@ Para obtener más información sobre mTLS, consulte [Información general sobre 
 1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
 1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
 1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
-1. (Opcional) En el campo **[!UICONTROL Restricciones de origen]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+1. (Opcional) En el campo **[!UICONTROL Orígenes permitidos]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
 
    Este campo acepta los siguientes patrones:
 
@@ -117,7 +128,7 @@ Después de crear un webhook, aparece una dirección URL única. Esta es la dire
 >
 >Después de crear un gancho web, puede utilizarlo en más de un escenario a la vez.
 
-### Usar un webhook con autenticación básica
+#### Usar un webhook con autenticación básica
 
 La autenticación básica utiliza un nombre de usuario y una contraseña para autenticarse en el servicio al que se está conectando.
 
@@ -126,7 +137,7 @@ La autenticación básica utiliza un nombre de usuario y una contraseña para au
 1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
 1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
 1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
-1. (Opcional) En el campo **[!UICONTROL Restricciones de origen]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+1. (Opcional) En el campo **[!UICONTROL Orígenes permitidos]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
 
    Este campo acepta los siguientes patrones:
 
@@ -147,7 +158,7 @@ Después de crear un webhook, aparece una dirección URL única. Esta es la dire
 >
 >Después de crear un gancho web, puede utilizarlo en más de un escenario a la vez.
 
-### Uso de un webhook con Adobe Identity Management System (IMS)
+#### Uso de un webhook con Adobe Identity Management System (IMS)
 
 La autenticación de Adobe Identity Management System (IMS) utiliza las credenciales de Adobe IMS de su organización para autenticarse en el servicio al que se está conectando.
 
@@ -156,7 +167,7 @@ La autenticación de Adobe Identity Management System (IMS) utiliza las credenci
 1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
 1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
 1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
-1. (Opcional) En el campo **[!UICONTROL Restricciones de origen]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+1. (Opcional) En el campo **[!UICONTROL Orígenes permitidos]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
 
    Este campo acepta los siguientes patrones:
 
@@ -170,6 +181,80 @@ La autenticación de Adobe Identity Management System (IMS) utiliza las credenci
 1. (Opcional) En el campo **Clientes permitidos**, introduzca una lista separada por comas de los ID de cliente permitidos para llamar a este webhook. Deje esta configuración vacía para aceptar cualquier cliente cuyo token esté firmado correctamente por el emisor y la audiencia de confianza.
 1. (Opcional) En el campo **Usuarios permitidos**, introduzca una lista separada por comas de los ID de usuario que pueden llamar a este webhook. Deje esta configuración vacía para permitir cualquier usuario.
 1. (Opcional) En el campo **Ámbitos requeridos**, escriba una lista de ámbitos separados por comas que deben estar presentes en la notificación `scope` del token. Déjelo vacío para omitir la comprobación de ámbito.
+1. Habilite otras opciones según desee.
+1. Haga clic en **[!UICONTROL Guardar]**
+
+Después de crear un webhook, aparece una dirección URL única. Esta es la dirección a la que el webhook envía los datos. Workfront Fusion valida los datos enviados a esta dirección y los transmite para su procesamiento en el escenario.
+
+>[!NOTE]
+>
+>Después de crear un gancho web, puede utilizarlo en más de un escenario a la vez.
+
+#### Uso de un webhook con autenticación de clave de API
+
+La autenticación de clave de API protege un extremo de gancho web con una sola clave, enviada como encabezado de solicitud o como parámetro de consulta. Este es el tipo de autorización predeterminado para los nuevos webhooks.
+
+1. Agregue el módulo de déclencheur instantáneo **[!UICONTROL Webhooks]** > **[!UICONTROL Webhook personalizado]** a su escenario.
+
+1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
+1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
+1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
+1. (Opcional) En el campo **[!UICONTROL Orígenes permitidos]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+
+   Este campo acepta los siguientes patrones:
+
+   * Nombre de host exacto: `app.example.com`
+   * Subdominio comodín: `*.example.com`
+   * Clasificado según el esquema: ` https://app.example.com` o `https://*.example.com`
+1. Si desea validar los datos entrantes, en el campo **Estructura de datos**, seleccione o agregue la estructura de datos que desee utilizar.
+
+   Para obtener información sobre las estructuras de datos, vea [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. En el campo **Tipo de autorización**, seleccione **[!UICONTROL autenticación de clave de API]** si aún no está seleccionada.
+1. En el campo **Clave**, seleccione la clave de API que se utilizará para la autorización o agregue una nueva haciendo clic en **Agregar** e introduciendo nuevas credenciales:
+   1. Escriba un nombre para la nueva clave de credenciales.
+   1. En el campo **Clave**, escriba el valor de clave con el que desea autenticarse. Utilice el icono en forma de ojo situado junto al campo para mostrarlo u ocultarlo mientras escribe.
+   1. En el campo **Colocación de clave API**, seleccione si la clave se envía en el encabezado o como parámetro de consulta.
+   1. En el campo **Nombre del parámetro de clave de API**, escriba el nombre del encabezado o del parámetro de consulta bajo el que se envía la clave, por ejemplo `X-API-Key`.
+   1. Haga clic en **Crear una clave**.
+   1. En el panel de ganchos web, en el campo **Credenciales**, seleccione la nueva clave.
+1. Habilite otras opciones según desee.
+1. Haga clic en **[!UICONTROL Guardar]**
+
+Después de crear un webhook, aparece una dirección URL única. Esta es la dirección a la que el webhook envía los datos. Workfront Fusion valida los datos enviados a esta dirección y los transmite para su procesamiento en el escenario.
+
+>[!NOTE]
+>
+>Después de crear un gancho web, puede utilizarlo en más de un escenario a la vez.
+
+#### Usar un webhook con autenticación de firma HMAC
+
+La autenticación de firma HMAC valida que las solicitudes entrantes se firmaron con un secreto de firma compartido, lo que protege contra las llamadas manipuladas y suplantadas sin enviar el secreto en sí en cada solicitud.
+
+1. Agregue el módulo de déclencheur instantáneo **[!UICONTROL Webhooks]** > **[!UICONTROL Webhook personalizado]** a su escenario.
+
+1. Haga clic en **[!UICONTROL Añadir]** junto al campo Webhook e introduzca un nombre para el nuevo webhook.
+1. (Opcional) Haga clic en **[!UICONTROL Ajustes avanzados]**.
+1. En el campo **[!UICONTROL Restricciones de IP]**, escriba una lista separada por comas de las direcciones IP desde las que el módulo puede aceptar datos.
+1. (Opcional) En el campo **[!UICONTROL Orígenes permitidos]**, para cada origen que desee permitir que llame a este webhook, haga clic en **Agregar elemento** e introduzca el patrón de origen. Si desea permitir cualquier origen, deje este campo en blanco.
+
+   Este campo acepta los siguientes patrones:
+
+   * Nombre de host exacto: `app.example.com`
+   * Subdominio comodín: `*.example.com`
+   * Clasificado según el esquema: ` https://app.example.com` o `https://*.example.com`
+1. Si desea validar los datos entrantes, en el campo **Estructura de datos**, seleccione o agregue la estructura de datos que desee utilizar.
+
+   Para obtener información sobre las estructuras de datos, vea [Estructuras de datos](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. En el campo **Tipo de autorización**, seleccione **[!UICONTROL Firma HMAC]**.
+1. En el campo **key**, seleccione la firma que se usará para la autorización o agregue una nueva firma haciendo clic en **Agregar** e introduciendo nuevas credenciales.
+   1. Escriba un nombre para la nueva clave de credenciales.
+   1. En el campo **Secreto de firma**, escriba el secreto compartido que desee usar. Utilice el icono en forma de ojo situado junto al campo para mostrarlo u ocultarlo mientras escribe.
+   1. En el campo **Algoritmo**, seleccione el algoritmo hash que desee utilizar, por ejemplo SHA-256.
+   1. En el campo **Encabezado de firma**, escriba el nombre del encabezado desde el que se lee la firma, por ejemplo `x-fusion-signature-256`.
+   1. En el campo **Codificación de firma**, seleccione la codificación del valor de firma, por ejemplo, Hexadecimal.
+   1. (Opcional) En el campo **Prefijo de firma**, escriba un prefijo si se espera que el valor de firma tenga un prefijo, por ejemplo `sha256=`.
+   1. Haga clic en **Crear una clave**.
+   1. En el panel de ganchos web, en el campo **Credenciales**, seleccione la nueva clave.
 1. Habilite otras opciones según desee.
 1. Haga clic en **[!UICONTROL Guardar]**
 
