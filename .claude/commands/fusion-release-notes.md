@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 'Cree una nueva página de notas de la versión semanales de Workfront Fusion y conéctela a la página de información general de la actividad de la versión y a la tabla de contenido. Utilícelo cuando el usuario desee escribir, añadir o redactar una nueva nota de versión de Fusion o una página de versión semanal, o solicite documentar las nuevas funciones de Fusion para una versión. No utilice para las notas de la versión de Workfront (Quicksilver) en anuncios/versiones de productos: utilice el formateador de notas de la versión para esas notas.'
-source-git-commit: fcdbfd246808c5cc7a81c4f01990a077ca189112
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/es/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -98,7 +98,6 @@ Notas:
   
   {Regular description paragraph(s).}
   ```
-
 - Cada característica debe finalizar con &quot;Para obtener más información, vea [...]&quot; vínculo al artículo de ayuda correspondiente. Compruebe que el destino del vínculo existe en el repositorio.
 
 ## Paso 4: Añadir la página al índice de información general
@@ -113,7 +112,6 @@ Editar `help/workfront-fusion/fusion-product-releases/fusion-release-activity.md
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Si esta es la primera versión de un nuevo año, agregue un nuevo encabezado `## Fusion releases in {YYYY}` sobre el encabezado del año anterior y ajuste la sección del año *anterior* en un bloque contraíble de `+++ **Click to open**` / `+++` si no lo está ya (solo el año actual permanece expandido).
 
 ## Paso 5: Agregar la página al índice
@@ -126,7 +124,6 @@ Editar `help/workfront-fusion/TOC.md`:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Si el encabezado del año actual aún no existe, agregue `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` por encima del encabezado del año anterior.
 - **No** agregue el prefijo `{hide-from-toc}` a las nuevas entradas, que solo se usa para las entradas antiguas cuando ya no se pueden navegar (consulte Incoherencias conocidas más abajo).
 
@@ -145,10 +142,11 @@ Pregunte al usuario: *&quot;¿Desea configurar una redirección para el nuevo ar
 - Si **sí**, recopilar:
   - La **ruta de origen** (debe comenzar con `/en`, sin espacios)
   - El **destino**: una ruta relativa que empieza por `/en` o una dirección URL `https` completa (sin espacios)
-- Agregue la fila al repositorio `Adobe-Enterprise-Docs/redirects` del mismo nivel, bajo `redirects/redirects-prod.csv` **solamente**. Nunca lo agregue a `redirects-dev.csv` o `redirects-stage.csv` — prod es el único entorno que esta habilidad nunca toca.
+- Agregue la fila al repositorio `Adobe-Enterprise-Docs/redirects` del mismo nivel, a `redirects/redirects-prod.csv` **y no a ningún otro archivo**. Nunca lo agregue a `redirects-dev.csv`, `redirects-stage.csv` ni a ningún otro archivo de ese repositorio: prod es el único entorno que esta aptitud nunca toca, y la rama solo debe contener ese cambio de archivo.
 - Reglas de fila (del archivo README de ese repositorio):
   - No hay ningún par duplicado `source` ni `source`/`destination` duplicado.
   - El redireccionamiento no debe provocar un bucle de redireccionamiento.
+- Realice el cambio en una nueva rama del repositorio `redirects`, denominada `workfront-{month}-{day}-{year}-{topic}` (en minúsculas, p. ej. `workfront-sep-10-2026-aem-mcp-redirect`) — nunca se comprometa directamente con `main` allí.
 - **Esta aptitud solo agrega la fila CSV después de que el usuario la confirme.** El aumento del PR en el repositorio `redirects` es un paso independiente que esta aptitud no realiza: indique al usuario que aún debe abrir y combinar una PR allí antes de que se active la redirección (~5 minutos después de la combinación para redirecciones 1:1).
 
 ## Paso 8: Lista de comprobación final
