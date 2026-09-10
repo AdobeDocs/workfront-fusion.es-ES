@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 'Cree una nueva página de notas de la versión semanales de Workfront Fusion y conéctela a la página de información general de la actividad de la versión y a la tabla de contenido. Utilícelo cuando el usuario desee escribir, añadir o redactar una nueva nota de versión de Fusion o una página de versión semanal, o solicite documentar las nuevas funciones de Fusion para una versión. No utilice para las notas de la versión de Workfront (Quicksilver) en anuncios/versiones de productos: utilice el formateador de notas de la versión para esas notas.'
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ Pregunte al usuario: *&quot;¿Desea configurar una redirección para el nuevo ar
 - Si **sí**, recopilar:
   - La **ruta de origen** (debe comenzar con `/en`, sin espacios)
   - El **destino**: una ruta relativa que empieza por `/en` o una dirección URL `https` completa (sin espacios)
-- Agregue la fila al repositorio del mismo nivel `Adobe-Enterprise-Docs/redirects`, en `redirects/`, a un archivo por entorno (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Agregue la fila al repositorio `Adobe-Enterprise-Docs/redirects` del mismo nivel, a `redirects/redirects-prod.csv` **y no a ningún otro archivo**. Nunca lo agregue a `redirects-dev.csv`, `redirects-stage.csv` ni a ningún otro archivo de ese repositorio: prod es el único entorno que esta aptitud nunca toca, y la rama solo debe contener ese cambio de archivo.
 - Reglas de fila (del archivo README de ese repositorio):
   - No hay ningún par duplicado `source` ni `source`/`destination` duplicado.
   - El redireccionamiento no debe provocar un bucle de redireccionamiento.
+- Realice el cambio en una nueva rama del repositorio `redirects`, denominada `workfront-{month}-{day}-{year}-{topic}` (en minúsculas, p. ej. `workfront-sep-10-2026-aem-mcp-redirect`) — nunca se comprometa directamente con `main` allí.
 - **Esta aptitud solo agrega la fila CSV después de que el usuario la confirme.** El aumento del PR en el repositorio `redirects` es un paso independiente que esta aptitud no realiza: indique al usuario que aún debe abrir y combinar una PR allí antes de que se active la redirección (~5 minutos después de la combinación para redirecciones 1:1).
 
 ## Paso 8: Lista de comprobación final
