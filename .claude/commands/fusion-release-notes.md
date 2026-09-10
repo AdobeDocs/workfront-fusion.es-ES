@@ -98,6 +98,7 @@ Notas:
   
   {Regular description paragraph(s).}
   ```
+
 - Cada característica debe finalizar con &quot;Para obtener más información, vea [...]&quot; vínculo al artículo de ayuda correspondiente. Compruebe que el destino del vínculo existe en el repositorio.
 
 ## Paso 4: Añadir la página al índice de información general
@@ -112,6 +113,7 @@ Editar `help/workfront-fusion/fusion-product-releases/fusion-release-activity.md
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Si esta es la primera versión de un nuevo año, agregue un nuevo encabezado `## Fusion releases in {YYYY}` sobre el encabezado del año anterior y ajuste la sección del año *anterior* en un bloque contraíble de `+++ **Click to open**` / `+++` si no lo está ya (solo el año actual permanece expandido).
 
 ## Paso 5: Agregar la página al índice
@@ -124,6 +126,7 @@ Editar `help/workfront-fusion/TOC.md`:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Si el encabezado del año actual aún no existe, agregue `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` por encima del encabezado del año anterior.
 - **No** agregue el prefijo `{hide-from-toc}` a las nuevas entradas, que solo se usa para las entradas antiguas cuando ya no se pueden navegar (consulte Incoherencias conocidas más abajo).
 
