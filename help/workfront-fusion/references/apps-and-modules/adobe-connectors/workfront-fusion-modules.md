@@ -3,12 +3,11 @@ title: Módulos de Workfront Fusion
 description: Con el conector de Workfront Fusion, puede administrar su propia organización de Fusion desde un escenario, incluidos registros, enlaces, escenarios y conexiones.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 25%
+source-wordcount: 1430
+ht-degree: 24%
 
 ---
 
@@ -276,6 +275,9 @@ Actualiza un registro especificado.
 
 ### Exportar
 
+* [Exportar registros de actividad](#export-activity-logs)
+* [Exportar escenarios](#export-scenarios)
+
 #### Exportar registros de actividad
 
 Este módulo exporta los registros de actividad.
@@ -311,6 +313,25 @@ Este módulo exporta los registros de actividad.
   <tr> 
    <td role="rowheader">Dirección</td> 
    <td>Seleccione si desea ordenar los resultados en orden ascendente o descendente.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Exportar escenarios
+
+Este módulo exporta los modelos de Fusion para uno o más escenarios.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar Workfront Fusion a Workfront Fusion, consulte <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Conectar Workfront Fusion a Workfront Fusion</a> en este artículo.</p> </td> 
+  <tr> 
+   <td role="rowheader">ID de escenario</td> 
+   <td>Para cada escenario que desee exportar, haga clic en <b>Agregar elemento</b> e introduzca el identificador de escenario.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
