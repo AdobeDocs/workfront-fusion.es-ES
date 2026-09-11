@@ -1,5 +1,5 @@
 ---
-title: Módulos de Adobe Workfront Planning
+title: Módulos de Planificación de Workfront de Adobe
 description: 'Con los módulos  [!DNL Adobe Workfront Planning] , puede iniciar un escenario de Adobe Workfront Fusion basado en los eventos de su cuenta de Workfront Planning, crear, leer o actualizar acuerdos y otros registros, buscar registros con los criterios que haya establecido y cargar documentos. [!DNL Adobe] '
 author: Becky
 feature: Workfront Fusion
@@ -11,15 +11,15 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 35%
 
 ---
 
 
-# Módulos de Adobe Workfront Planning
+# Módulos de Planificación de Workfront de Adobe
 
 Con los módulos [!DNL Adobe Workfront Planning], puede almacenar en déclencheur un escenario cuando se produzcan eventos en Workfront Planning. También puede crear, leer, actualizar y eliminar registros, o realizar una llamada de API personalizada a su cuenta de [!DNL Adobe Workfront Planning].
 
@@ -1677,6 +1677,12 @@ Este módulo de déclencheur inicia un escenario cuando se crea, actualiza o eli
       <td>
        <p>Elija si desea habilitar la seguridad basada en authToken para este webhook.</p><p>
        <b>NOTA</b>: A partir del 23 de agosto de 2026, Fusion habilita la seguridad basada en authToken de forma predeterminada para todos los módulos de Workfront Planning &gt; Ver evento, incluidos los existentes. Si un webhook específico se rompe o necesita deshabilitarlo por motivos de compatibilidad, puede desactivar la opción Habilitar enlaces seguros.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Custom token]</td>
+      <td>
+       <p>(Opcional) Si [!UICONTROL Habilitar enlaces seguros] está establecido en [!UICONTROL Sí], puede introducir su propio valor de token para proteger el webhook. Si deja este campo en blanco, Fusion genera automáticamente un token.</p>
       </td>
     </tr>
   </tbody>

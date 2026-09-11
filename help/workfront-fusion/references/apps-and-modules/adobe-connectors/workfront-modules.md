@@ -15,9 +15,9 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 7687
+source-wordcount: 7725
 ht-degree: 93%
 
 ---
@@ -284,6 +284,12 @@ El módulo devuelve cualquier campo estándar asociado con el registro, junto co
       <td>
        <p>Elija si desea habilitar la seguridad basada en authToken para este webhook.</p><p>
        <b>NOTA</b>: A partir del 23 de agosto de 2026, Fusion habilitará la seguridad basada en authToken de forma predeterminada para todos los módulos de Workfront &gt; Ver evento, incluidos los existentes. Si un webhook específico se rompe o necesita deshabilitarlo por motivos de compatibilidad, puede desactivar la opción Habilitar enlaces seguros.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Custom token]</td> 
+      <td>
+       <p>(Opcional) Si [!UICONTROL Habilitar enlaces seguros] está establecido en [!UICONTROL Sí], puede introducir su propio valor de token para proteger el webhook. Si deja este campo en blanco, Fusion genera automáticamente un token.</p>
        </td> 
      </tr> 
     </tbody> 

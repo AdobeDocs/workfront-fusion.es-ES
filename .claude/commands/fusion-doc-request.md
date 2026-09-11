@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestionar una solicitud de documentación de Fusion desde la plantilla de Slack
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Campos de tarea:
 | `description` | el **texto completo del mensaje de Slack** (todos los campos de la plantilla de solicitud, no una paráfrasis), seguido de un vínculo a la conversación de Slack |
 | `DE:Release notes` | Para ver una nota de la versión con formato, consulte el formato siguiente |
 | `DE:Preview Date Known` | `Yes`, de forma predeterminada |
-| `DE:Preview Date` | **Fecha de lanzamiento prevista** de la solicitud de forma predeterminada |
+| `DE:Preview Date` | la fecha citada en el mensaje original de Slack (la **fecha prevista de lanzamiento** de la solicitud), de forma predeterminada |
+| `taskConstraint` + `constraintDate` | Establezca `taskConstraint` en `MFO` (debe finalizar el) con `constraintDate` = la fecha citada en el mensaje original de Slack (la **fecha de lanzamiento esperada** de la solicitud), por lo que la fecha planificada de finalización de la tarea coincide con ella también. |
 | Producto/Área | seleccione `Fusion` (un campo de enumeración en el formulario Documentación del producto; confirme el nombre de campo exacto con `insights_search_fields` si alguna vez no está claro) |
 
-Establecer los campos de fecha de vista previa como parte de esta misma llamada de creación: no los deje para más tarde ni espere a que se los soliciten. Si el usuario indica una fecha diferente más tarde o indica que la fecha aún no se conoce, actualice en consecuencia, pero de forma predeterminada rellenarla cada vez.
+Establezca los campos de fecha de vista previa y la fecha planificada de finalización como parte de esta misma llamada de creación: no los deje para más tarde o espere a que se le pregunte. Si el usuario indica una fecha diferente más tarde o indica que la fecha aún no se conoce, actualice en consecuencia, pero de forma predeterminada rellenarla cada vez.
+
+Las nuevas tareas tienen de forma predeterminada una restricción Lo antes posible con una duración 0, en la que `plannedStartDate`/`plannedCompletionDate` se derivan del programador y se descarta silenciosamente una escritura directa en (sin errores, la fecha simplemente no cambia). Configurar `taskConstraint: "MFO"` con `constraintDate` es la manera confiable de fijar la fecha planificada de finalización en la fecha citada en el mensaje de Slack. Lea `workfront://knowledge/task/update` antes de escribir esto: es un campo de fecha/horario según las reglas del servidor MCP.
 
 Formato de nota de versión para el campo `DE:Release notes`. Comience siempre con `***FUSION***` en su propia línea, luego una línea en blanco y el título: esto marca la nota como perteneciente a Fusion (a diferencia de Core Workfront) de un vistazo:
 
