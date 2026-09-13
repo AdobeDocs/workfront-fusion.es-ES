@@ -4,15 +4,12 @@ description: Con los módulos Contenido y aprobaciones de Adobe Workfront, puede
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
+source-wordcount: 3631
 ht-degree: 16%
 
 ---
@@ -21,7 +18,7 @@ ht-degree: 16%
 
 Con los módulos Adobe Workfront Unified Review and Approvals, puede obtener detalles de aprobación, tomar una decisión sobre un recurso, agregar o eliminar participantes de aprobación, agregar o actualizar etapas de aprobación, bloquear o desbloquear etapas y hacer llamadas de API personalizadas.
 
-Para obtener información acerca de la revisión unificada y las aprobaciones de Workfront, consulte [Revisión unificada y descripción general de la aprobación](https://experienceleague.adobe.com/es/docs/workfront/using/review-and-approve-work/document-approvals-overview) en la documentación de Workfront.
+Para obtener información acerca de la revisión unificada y las aprobaciones de Workfront, consulte [Revisión unificada y descripción general de la aprobación](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) en la documentación de Workfront.
 
 ## Requisitos de acceso
 
@@ -135,7 +132,6 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 * [Adición o actualización de participantes](#add-or-update-participants)
 * [Eliminar plantillas por lotes](#bulk-delete-templates)
 * [Creación de una plantilla](#create-a-template)
-* [Creación de una aprobación](#create-an-approval)
 * [Creación de fases](#create-stages)
 * [Eliminación de una decisión en una fase](#delete-a-decision-on-a-stage)
 * [Eliminación de una fase](#delete-a-stage)
@@ -237,35 +233,6 @@ Este módulo de acción crea una plantilla de aprobación
     <tr>
       <td role="rowheader"><p>Compartido con</p></td>
       <td>Para cada usuario con el que desee compartir la plantilla, haga clic en <b>Agregar elemento</b>, el identificador de usuario y el nivel de acceso deseado.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Creación de una aprobación
-
-Este módulo de acción crea una aprobación para un documento en el almacenamiento en la nube de Adobe, incluidos los datos de fase o una plantilla.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Conexión</td>
-      <td>Para obtener instrucciones sobre cómo crear una conexión a Adobe Workfront Unified Review and Approvals, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectarse a Adobe Workfront Unified Review and Approvals</a> en este artículo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Identificador del documento</p></td>
-      <td>Introduzca o asigne el ID del recurso para el que desea crear una aprobación.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Fases</p>
-      </td>
-      <td>Para cada fase que desee agregar, haga clic en <b>Agregar elemento</b> e introduzca los datos de la fase.<p>Para obtener detalles específicos, consulte <a href="#stages-fields" class="MCXref xref" >Campos de etapas</a> en este artículo. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Identificador de plantilla</p></td>
-      <td>Introduzca o asigne el ID de la plantilla que desea utilizar para esta aprobación.</td> 
       </tr>
   </tbody>
 </table>
