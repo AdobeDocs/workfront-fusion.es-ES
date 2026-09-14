@@ -7,13 +7,12 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
+    internal-label: Workfront
+source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
 workflow-type: tm+mt
-source-wordcount: 1360
-ht-degree: 76%
-
+source-wordcount: '1445'
+ht-degree: 72%
 ---
-
 # Mecanismos de protección de rendimiento Fusion
 
 La automatización del trabajo requiere un procesamiento rápido. Es por ello que Adobe Workfront Fusion se ha diseñado para ofrecer un alto rendimiento. Como los escenarios de larga ejecución pueden ralentizar el ritmo de su trabajo, hemos diseñado Workfront Fusion con mecanismos de protección que preservan el rendimiento y que limitan el tiempo de ejecución, el tamaño de los datos y otros parámetros del escenario. Los diseñadores de Workfront Fusion deben tener en cuenta estos mecanismos de protección e incorporarlos en sus prácticas de diseño.
@@ -37,8 +36,8 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
 
-   * Cuando utilice la aplicación de Workfront, asegúrese de seleccionar solo los campos necesarios para los casos de uso de creación o actualización.
-   * Cuando utilice otras aplicaciones, utilice módulos de API personalizados para interactuar con cualquier tipo de registro que tenga un gran número de campos.
+  * Cuando utilice la aplicación de Workfront, asegúrese de seleccionar solo los campos necesarios para los casos de uso de creación o actualización.
+  * Cuando utilice otras aplicaciones, utilice módulos de API personalizados para interactuar con cualquier tipo de registro que tenga un gran número de campos.
 
 * Aunque no hay límite en cuanto al número de módulos en un escenario, los escenarios con más de 150 módulos afectan negativamente al rendimiento del sistema Workfront Fusion. Por este motivo, no se recomienda crear escenarios con más de 150 módulos.
 * Los nombres de escenario no pueden tener más de 120 caracteres.
@@ -79,10 +78,14 @@ Para obtener más información, consulte [Trabajo con archivos grandes](/help/wo
 * El tamaño máximo predeterminado de una carga útil es de **5 MB**.
 * Los enlaces web están limitados a **100 solicitudes por segundo**. Cuando se alcanza este límite, Workfront Fusion envía un estado 429 ([!UICONTROL Demasiadas solicitudes]).
 * Workfront Fusion almacena cargas útiles de webhooks durante 30 días. Acceder a una carga útil de webhook más de 30 días después de recibirla provoca el error “[!UICONTROL No se pudo leer el archivo desde el almacenamiento.]”
+* La cola de un gancho web puede contener **100.000** eventos en cola. La cola se llena cuando un escenario que usa el webhook está desactivado, o está configurado para ejecutarse en una programación en lugar de instantáneamente. Cuando la cola alcanza los 100 000 eventos, los nuevos eventos se rechazan con el error &quot;La cola está llena&quot; y un código de estado 400.
+
+  En el caso de los eventos de Workfront y Planning, si la cola permanece llena durante un periodo prolongado, la suscripción de evento se desactiva y, a continuación, se bloquea y Workfront Fusion deja de recibir eventos para esa suscripción.
+
 * Los webhooks se desactivan automáticamente si se aplica cualquiera de las siguientes opciones:
 
-   * El webhook no ha estado conectado a ningún escenario durante más de 5 días
-   * El webhook solo se utiliza en escenarios inactivos, que han estado inactivos durante más de 30 días.
+  * El webhook no ha estado conectado a ningún escenario durante más de 5 días
+  * El webhook solo se utiliza en escenarios inactivos, que han estado inactivos durante más de 30 días.
 
 * Los webhooks desactivados se borran y no se registran automáticamente si no están conectados a ningún escenario y han permanecido en estado desactivado durante más de 30 días.
 * El tiempo de espera para la respuesta de un webhook es de 5 minutos.
