@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Gestionar una solicitud de documentación de Fusion desde la plantilla de Slack
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Gestionar una solicitud de documentación de Fusion desde #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Solicitud de documentación de Fusion
 
@@ -25,11 +23,11 @@ Las conexiones de Slack en este entorno son irregulares (tokens caducados, desco
 
 La plantilla de solicitud tiene estos campos: extraer cada uno:
 
-&#x200B;* **Título de característica**
-&#x200B;* **Descripción**
-&#x200B;* **Puntos que se agregarán a la documentación** *(a veces presentes: secciones o detalles específicos que el solicitante desea cubrir; trátelos como necesarios, no como opcionales, si se proporcionan)*
-&#x200B;* **Fecha de lanzamiento prevista**
-&#x200B;* **Necesita anuncio** *(Sí/No - solo informativo; consulte la nota anterior. No actúe en este campo.)*
+* **Título de característica**
+* **Descripción**
+* **Puntos que se agregarán a la documentación** *(a veces presentes: secciones o detalles específicos que el solicitante desea cubrir; trátelos como necesarios, no como opcionales, si se proporcionan)*
+* **Fecha de lanzamiento prevista**
+* **Necesita anuncio** *(Sí/No - solo informativo; consulte la nota anterior. No actúe en este campo.)*
 
 Si la solicitud se vincula a una página wiki de Confluence con la especificación completa, búsquela (`get_wiki_content`) antes de escribir la documentación. No confíe solo en el resumen de Slack para obtener detalles técnicos (nombres de campos exactos, pasos, etiquetas de interfaz de usuario): extraiga estos de la especificación de wiki cuando esté vinculado.
 
@@ -43,16 +41,19 @@ Asigne un nombre a la rama `becky-{short-kebab-case-description}`, derivada del 
 
 Si el árbol de trabajo no está limpio (cambios no confirmados del trabajo no relacionado), detenga e informe al usuario en lugar de ramificarlo.
 
+Esta aptitud crea y se compromete con la rama, pero no la inserta ni abre una solicitud de extracción: déjela al usuario a menos que se lo pida por separado.
+
 ## Paso 3: Actualizar la documentación
 
 Encuentre los artículos existentes relevantes en este repositorio (grep para nombres de módulos relacionados, etiquetas de interfaz de usuario o nombres de configuración; no adivine el archivo). Actualícelas para reflejar el cambio, según la estructura, el nivel de encabezado y el estilo de casa existentes de ese artículo.
 
-&#x200B;* No invente detalles técnicos (nombres de campo exactos, ámbitos de permisos, pasos de configuración) que no estén en la solicitud de Slack o en la especificación de wiki vinculada. Si algo no está confirmado, márquelo en línea como un comentario de HTML (por ejemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) en lugar de adivinar, nunca como una llamada visible. No se debe representar en la página publicada.
-&#x200B;* Si esto requiere un archivo de artículo completamente nuevo (no solo una edición en uno existente), siga las convenciones permanentes de este repositorio: no se fabrica `exl-id`/`TQID` en frontmatter y convierta el archivo a CRLF/no-BOM después de crearlo (la herramienta `Write` toma el valor predeterminado de LF).
-&#x200B;* Escribir una nueva página en &quot;el índice&quot; significa AMBOS, no solo uno: una página se puede vincular desde un subíndice y seguir siendo invisible para los lectores:
+* No invente detalles técnicos (nombres de campo exactos, ámbitos de permisos, pasos de configuración) que no estén en la solicitud de Slack o en la especificación de wiki vinculada. Si algo no está confirmado, márquelo en línea como un comentario de HTML (por ejemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) en lugar de adivinar, nunca como una llamada visible. No se debe representar en la página publicada.
+* Si esto requiere un archivo de artículo completamente nuevo (no solo una edición en uno existente), siga las convenciones permanentes de este repositorio: no se fabrica `exl-id`/`TQID` en frontmatter y convierta el archivo a CRLF/no-BOM después de crearlo (la herramienta `Write` toma el valor predeterminado de LF).
+* Escribir una nueva página en &quot;el índice&quot; significa AMBOS, no solo uno: una página se puede vincular desde un subíndice y seguir siendo invisible para los lectores:
   - El archivo de navegación principal para el área de producto (p. ej. `help/workfront-fusion/TOC.md`): esto es lo que realmente impulsa el árbol de navegación publicado.
   - Cualquier subíndice o página de aterrizaje de contenido que también vincule a artículos de este tipo (por ejemplo, `apps-and-modules-toc.md` para una nueva página de módulos de conector).
     Compruebe ambos explícitamente y confirme que la nueva entrada se encuentra en la misma lista, en el mismo nivel de anidación, como los artículos hermanos más cercanos en cada archivo; no suponga que agregarla a una cubre a la otra.
+* Deje los cambios de documento sin confirmar en la rama. No ejecute `git commit` (o `git add`) como parte de esta aptitud; el usuario se compromete cuando esté listo, después de revisar los cambios. Confirme solo si el usuario le pide explícitamente que lo haga.
 
 ## Paso 4: Crear la tarea de Workfront
 
@@ -78,6 +79,11 @@ Establezca los campos de fecha de vista previa y la fecha planificada de finaliz
 
 Las nuevas tareas tienen de forma predeterminada una restricción Lo antes posible con una duración 0, en la que `plannedStartDate`/`plannedCompletionDate` se derivan del programador y se descarta silenciosamente una escritura directa en (sin errores, la fecha simplemente no cambia). Configurar `taskConstraint: "MFO"` con `constraintDate` es la manera confiable de fijar la fecha planificada de finalización en la fecha citada en el mensaje de Slack. Lea `workfront://knowledge/task/update` antes de escribir esto: es un campo de fecha/horario según las reglas del servidor MCP.
 
+El campo `description` tiene un límite estricto de 4000 caracteres. Si el texto completo del mensaje de Slack no cabe:
+
+1. Cree primero la tarea con un breve `description` en su lugar: Título de función, Fecha de lanzamiento prevista, Necesita anuncio, un resumen en una línea de la solicitud, una nota que indique que el texto completo de la solicitud se publica como el primer comentario de la tarea y el vínculo del subproceso de Slack.
+1. A continuación, publique el texto completo y literal del mensaje de Slack (todos los campos de plantilla, no una paráfrasis) como un comentario en la tarea recién creada, a través de `comment-stream_create_comment` (`objectCode` `task`, `objectID` el ID de la nueva tarea): esta herramienta no tiene un límite de longitud comparable. Incluya `content` (texto sin formato) y `contentHTML` (estructurados con encabezados/listas, no solo etiquetas `<p>` vacías).
+
 Formato de nota de versión para el campo `DE:Release notes`. Comience siempre con `***FUSION***` en su propia línea, luego una línea en blanco y el título: esto marca la nota como perteneciente a Fusion (a diferencia de Core Workfront) de un vistazo:
 
 ```markdown
@@ -96,17 +102,18 @@ Antes de crear la llamada, llame a `read_workflow_docs` con `workfront://tools/c
 
 Informe claramente:
 
-&#x200B;* La rama que ha creado.
-&#x200B;* Qué archivo(s) de documentación ha cambiado y qué ha añadido.
-&#x200B;* El nombre y la dirección URL de la tarea.
-&#x200B;* Los valores de campo exactos que haya establecido, incluidos los campos de fecha de vista previa.
-&#x200B;* Cualquier cosa en la que no estuviera completamente seguro, por ejemplo, que Slack no estuviera disponible y trabajara solo con texto pegado, que el artículo del documento de destino fuera ambiguo o que un detalle técnico no estuviera en el material de origen y se marcara en lugar de adivinar.
+* La rama que ha creado (confirmada localmente, no insertada y sin solicitud de extracción abierta, por el paso 2).
+* Qué archivo(s) de documentación ha cambiado y qué ha añadido.
+* Que los cambios no están confirmados en la rama, a la espera de la revisión del usuario.
+* El nombre y la dirección URL de la tarea.
+* Los valores de campo exactos que haya establecido, incluidos los campos de fecha de vista previa.
+* Cualquier cosa en la que no estuviera completamente seguro, por ejemplo, que Slack no estuviera disponible y trabajara solo con texto pegado, que el artículo del documento de destino fuera ambiguo o que un detalle técnico no estuviera en el material de origen y se marcara en lugar de adivinar.
 
 ## Valores conocidos (de ejecuciones anteriores)
 
 Confirme que estos aún se resuelven en lugar de suponer que son permanentes:
 
-&#x200B;* El proyecto &quot;Tareas de documentación del producto - para problemas de desarrollo que requieren mensajería&quot; se asigna al ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* La tarea principal &quot;Becky - Tareas del canal Fusion-Documentation&quot; se asigna al ID `6a9b065100003a7554832780c2015e93` (en el mismo proyecto): se resuelve con `insights_find_id_by_name` (entidad `task`) en lugar de codificarse, en caso de que cambie alguna vez
-&#x200B;* El formulario personalizado de documentación del producto (`categoryID`) es `5d7275b9000514604bd969d418725843`
-&#x200B;* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* El proyecto &quot;Tareas de documentación del producto - para problemas de desarrollo que requieren mensajería&quot; se asigna al ID `5e69583f00236b9f767c3e3944100ee4`
+* La tarea principal &quot;Becky - Tareas del canal Fusion-Documentation&quot; se asigna al ID `6a9b065100003a7554832780c2015e93` (en el mismo proyecto): se resuelve con `insights_find_id_by_name` (entidad `task`) en lugar de codificarse, en caso de que cambie alguna vez
+* El formulario personalizado de documentación del producto (`categoryID`) es `5d7275b9000514604bd969d418725843`
+* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
