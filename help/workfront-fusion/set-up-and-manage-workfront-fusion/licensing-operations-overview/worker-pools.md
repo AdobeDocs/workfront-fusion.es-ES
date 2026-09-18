@@ -3,13 +3,12 @@ title: Grupos de trabajo
 description: Un grupo de trabajo es una cantidad de recursos de procesamiento de Workfront Fusion dedicados a una o más organizaciones específicas. Todas las operaciones y el procesamiento de Fusion se realizan en el contexto del grupo de trabajadores asignado de una organización.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: bb94083eb9f58dc3ae9f94a59288da43317b567b
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+source-git-commit: b95974d19c3dcb2fea0d6323c2b747665216a2e7
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # Grupos de trabajo
 
 Un grupo de trabajo es una cantidad de recursos de procesamiento de Workfront Fusion dedicados a una organización específica. Todas las operaciones y el procesamiento de Fusion se realizan en el contexto del grupo de trabajadores asignado de una organización.
