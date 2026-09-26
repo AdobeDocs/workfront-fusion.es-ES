@@ -9,18 +9,25 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: f142193b-d0c2-479f-a23b-f9d263b10433
-TQID: https://experienceleague.adobe.com/JXg2i7fr885Fwj3JrgXZHB-uDIWTeoVs3TEesAyPAwo
+TQID: 'https://experienceleague.adobe.com/JXg2i7fr885Fwj3JrgXZHB-uDIWTeoVs3TEesAyPAwo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 303
+source-wordcount: '303'
 ht-degree: 95%
-
 ---
-
 # Actividad de la versión de Workfront Fusion: semana del martes, 24 de agosto de 2020
 
 En esta página se describen todas las mejoras realizadas en Adobe Workfront Fusion durante la semana del martes, 17 de agosto de 2020.
@@ -45,4 +52,4 @@ Anteriormente, la carga directa en una carpeta no estaba disponible.
 
 ## Módulos y CRM de Hubspot ya disponibles
 
-Ahora puede utilizar Workfront Fusion para conectarse a su cuenta de CRM de Hubspot. Con los módulos de CRM de HubSpot, puede supervisar los elementos de su cuenta de CRM de Hubspot, así como realizar acciones como buscar, crear o eliminar esos elementos.
+Ahora puede utilizar Workfront Fusion para conectarse a su cuenta de CRM de Hubspot. Con los módulos de CRM de HubSpot, puede monitorizar los elementos de su cuenta de CRM de Hubspot, así como realizar acciones como buscar, crear o eliminar esos elementos.

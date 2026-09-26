@@ -4,16 +4,18 @@ description: Puede mostrar información sobre los eventos o las ejecuciones de u
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+TQID: 'https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 63%
-
 ---
-
 # Ver el historial de ejecuciones de un escenario
 
 Puede mostrar información sobre los eventos o las ejecuciones de un escenario, o puede buscar datos específicos en todas las ejecuciones del escenario.
@@ -144,7 +146,7 @@ You can sort the scenario execution history.
    O
 
    Escriba **Ctrl+Mayús+F** (Windows) o **Cmd+Mayús+F** (Mac)
-Se abre la ventana [!UICONTROL Buscar en el historial].
+   Se abre la ventana [!UICONTROL Buscar en el historial].
 
 1. (Opcional) Para buscar ejecuciones que contengan texto específico, escriba el texto en la barra de búsqueda de la ventana **[!UICONTROL Buscar en el historial]**.
 

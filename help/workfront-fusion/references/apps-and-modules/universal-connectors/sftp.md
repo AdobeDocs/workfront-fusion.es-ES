@@ -1,21 +1,24 @@
 ---
 title: Módulos SFTP
-description: Los módulos [!DNL Adobe Workfront Fusion SFTP]  permiten supervisar los cambios de archivo en una carpeta o subcarpeta seleccionada, subir nuevos archivos a la carpeta deseada, modificar o eliminar archivos existentes que ya están en una carpeta o cambiar los permisos de archivo.
+description: Los módulos de [!DNL Adobe Workfront Fusion SFTP] le permiten supervisar los cambios de archivo en una carpeta o subcarpeta seleccionada, cargar nuevos archivos en la carpeta deseada, modificar o eliminar archivos existentes que ya están en una carpeta o cambiar los permisos de archivo.
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+TQID: 'https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2240
-ht-degree: 70%
-
+source-wordcount: '2241'
+ht-degree: 68%
 ---
-
 # Módulos SFTP
 
 Los módulos Adobe Workfront Fusion SFTP le permiten supervisar los cambios de archivo en una carpeta o subcarpeta seleccionada, cargar nuevos archivos en la carpeta deseada, modificar o eliminar los archivos existentes que ya están en una carpeta o cambiar los permisos de archivo.
@@ -255,7 +258,7 @@ Este módulo de acción crea una nueva carpeta en la ubicación especificada.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Establezca los permisos de carpeta deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+   <td> <p>Establezca los permisos de carpeta deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -463,7 +466,7 @@ Le permite cambiar los permisos del archivo.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Establezca los permisos de archivo deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+   <td> <p>Establezca los permisos de archivo deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -490,7 +493,7 @@ Este módulo le permite subir un archivo en el servidor SFTP.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Establezca los permisos deseados para el archivo o la carpeta. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+   <td> <p>Establezca los permisos deseados para el archivo o la carpeta. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tamaño del búfer (B)]</p> </td> 

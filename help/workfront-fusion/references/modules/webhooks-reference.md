@@ -4,16 +4,18 @@ description: Muchos servicios proporcionan webhooks para entregar notificaciones
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+TQID: 'https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1300
+source-wordcount: '1311'
 ht-degree: 26%
-
 ---
-
 # Déclencheur instantáneos (webhooks)
 
 Muchos servicios proporcionan enlaces web para enviar notificaciones instantáneas cada vez que se produce un determinado cambio (evento) en el servicio. Para procesar estos eventos, le recomendamos que utilice déclencheur instantáneas. Los déclencheur instantáneos muestran la etiqueta `Instant` en la lista de módulos de un conector determinado.

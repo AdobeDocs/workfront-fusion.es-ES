@@ -1,22 +1,25 @@
 ---
 title: Módulos de MariaDB
-description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan  [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
+TQID: 'https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 659
+source-wordcount: '659'
 ht-degree: 66%
-
 ---
-
 # Módulos de [!DNL MariaDB]
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL MariaDB], así como conectarlo a varias aplicaciones y servicios de terceros.
@@ -99,7 +102,7 @@ Puede crear una conexión con su cuenta de [!DNL MariaDB] directamente desde un 
       <td>El puerto predeterminado es 3306. Si utiliza un puerto no estándar, establezca este número en el puerto. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Base de datos &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL Base de datos ]</td> 
       <td>Introduzca el nombre de la base de datos con la que desea interactuar.</td> 
      </tr> 
      <tr> 

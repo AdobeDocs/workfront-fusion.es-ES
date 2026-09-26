@@ -4,31 +4,33 @@ description: Este artículo describe los eventos que se producen mientras se eje
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 23%
-
 ---
-
 # Ejecución de escenarios, ciclos y fases
 
 Cada ejecución de escenario comienza con la fase de inicialización, continúa con al menos un ciclo compuesto por las fases de operación y compromiso/reversión, y finaliza con la fase de finalización
 
 * Inicialización
 * Ciclo núm. 1
-   * Operación (lectura o escritura)
-   * Confirmar o revertir
+  * Operación (lectura o escritura)
+  * Confirmar o revertir
 * Ciclo núm. 2
-   * Operación (lectura o escritura)
-   * Confirmar o revertir
+  * Operación (lectura o escritura)
+  * Confirmar o revertir
 * ...
 * #n de ciclo
-   * Operación (lectura o escritura)
-   * Confirmar o revertir
+  * Operación (lectura o escritura)
+  * Confirmar o revertir
 * Finalización
 
 En una escala menor, cada módulo también sigue estas fases. La información sobre las fases del módulo se encuentra en la información del paquete procesado, en la burbuja numerada situada en la parte superior derecha de cada módulo después de que se haya ejecutado el escenario. Para obtener más información sobre cómo buscar información de paquetes procesados, consulte [Información sobre paquetes procesados](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles) en el artículo Flujo de ejecución de escenario.

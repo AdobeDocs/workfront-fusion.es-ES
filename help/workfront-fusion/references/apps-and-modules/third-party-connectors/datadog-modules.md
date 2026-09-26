@@ -4,21 +4,25 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-TQID: https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw
+TQID: 'https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 961
+source-wordcount: '961'
 ht-degree: 83%
-
 ---
-
 # Módulos de [!DNL Datadog]
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Datadog], así como conectarlo a varias aplicaciones y servicios de terceros.
@@ -127,7 +131,7 @@ Puede crear una conexión con su cuenta de [!DNL Datadog] directamente desde un 
       <td> <p>Seleccione el dominio al que desea conectarse (EE. UU. o UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Ubicación de la clave API  </td> 
+      <td role="rowheader">Ubicación de la clave API [!UICONTROL] </td> 
       <td> <p>Seleccione si desea incluir la clave de API en el encabezado o en la cadena de consulta.</p> </td> 
      </tr> 
      <tr> 

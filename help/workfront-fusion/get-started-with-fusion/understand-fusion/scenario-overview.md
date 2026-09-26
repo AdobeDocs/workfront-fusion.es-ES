@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Información general sobre los escenarios
 
 La función de Adobe Workfront Fusion es automatizar sus procesos para que los usuarios no tengan que dedicar tanto tiempo a tareas rutinarias. Funciona vinculando acciones dentro de las aplicaciones y servicios y entre ellos para crear un escenario que transfiera y transforme los datos automáticamente. El escenario que crea ve los datos de una aplicación o servicio y los procesa para proporcionar el resultado deseado.
@@ -51,7 +53,7 @@ El activador va seguido de una serie de **módulos**. Un módulo representa un s
 
 ### Ruta
 
-Un escenario se puede dividir en **rutas**. Una ruta es una sección del escenario que puede utilizarse o no para un conjunto determinado de datos. Las rutas se configuran mediante un módulo de enrutador y filtros.
+Un escenario se puede dividir en **rutas**. Una ruta es una sección del escenario que puede utilizarse o no para un paquete determinado de datos. Las rutas se configuran mediante un módulo de enrutador y filtros.
 
 ![Ruta](assets/scenario-route.png)
 
@@ -111,5 +113,5 @@ Para obtener una lista de conectores dedicados, consulte [Aplicaciones de Fusion
 * Para ver un glosario de los términos utilizados en Workfront Fusion, consulte [Glosario de Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
 * Para empezar a crear un escenario práctico, consulte [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 * Para obtener información sobre la creación y administración de escenarios, consulte los artículos que se enumeran en:
-   * [Crear escenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [Administrar escenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [Crear escenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [Administrar escenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

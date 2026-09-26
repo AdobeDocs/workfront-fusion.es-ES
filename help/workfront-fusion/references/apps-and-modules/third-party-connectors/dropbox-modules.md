@@ -4,19 +4,28 @@ description: En un escenario de Adobe Workfront Fusion, puede automatizar los fl
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+TQID: 'https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3311
+source-wordcount: '3311'
 ht-degree: 74%
-
 ---
-
 # Módulos de [!DNL Dropbox]
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!UICONTROL Dropbox] o [!DNL Dropbox Business], así como conectarlos a varias aplicaciones y servicios de terceros.Esto le permite automatizar actividades como la supervisión, la búsqueda, la recuperación, la inclusión, la creación y edición de archivos y carpetas en su [!UICONTROL Dropbox].
@@ -155,8 +164,8 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Módulos de activador](#trigger-modules)
-* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
-* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Módulos para obtener archivos y carpetas de  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
+* [Módulos para crear y editar archivos y carpetas de  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Otros módulos](#other-modules)
 
 ### Módulos de activador
@@ -179,7 +188,7 @@ Este módulo de tipo Activador devuelve los detalles del archivo cuando se modif
   </tr> 
   <tr> 
    <td>[!UICONTROL Watch also subfolders]</td> 
-   <td> <p> Habilite esta opción para supervisar también las subcarpetas de la carpeta seleccionada en busca de archivos modificados.</p> </td> 
+   <td> <p> Habilite esta opción para monitorizar también las subcarpetas de la carpeta seleccionada en busca de archivos modificados.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit] </td> 

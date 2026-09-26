@@ -4,16 +4,18 @@ description: Si un servicio web no tiene actualmente un conector específico en 
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-TQID: https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI
+TQID: 'https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 354
+source-wordcount: '354'
 ht-degree: 37%
-
 ---
-
 # Configuración de un webhook para un servicio web sin conector
 
 Si un servicio web no tiene actualmente un conector específico en Workfront Fusion, pero admite la entrega de webhooks, puede añadir el servicio a un escenario utilizando el módulo de webhook personalizado como déclencheur instantáneo. Este proceso se denomina recepción de un webhook y requiere cierta configuración en el lado de la aplicación a la que se está conectando.

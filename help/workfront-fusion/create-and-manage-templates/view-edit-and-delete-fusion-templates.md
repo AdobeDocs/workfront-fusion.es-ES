@@ -7,18 +7,20 @@ description: Adobe Workfront Fusion requiere una licencia Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-TQID: https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U
+TQID: 'https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 880
+source-wordcount: '880'
 ht-degree: 31%
-
 ---
-
 # Ver, editar y eliminar plantillas
 
 La función de plantillas de Workfront Fusion le permite crear y utilizar plantillas existentes como punto de partida para sus escenarios de Workfront Fusion. Las plantillas representan casos de uso comunes que puede configurar y modificar para satisfacer las necesidades de su organización y los casos de uso específicos.

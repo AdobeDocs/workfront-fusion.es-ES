@@ -1,21 +1,24 @@
 ---
 title: Módulos de software Jira
-description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan  [!DNL Jira] Software, así como conectarlo a varias aplicaciones y servicios de terceros.
+description: En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan el software [!DNL Jira], así como conectarlo a varias aplicaciones y servicios de terceros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-TQID: https://experienceleague.adobe.com/MFz4BA1p4lfDWSft169C3GEMRY9vtO2TrkUcg35LPYE
+TQID: 'https://experienceleague.adobe.com/MFz4BA1p4lfDWSft169C3GEMRY9vtO2TrkUcg35LPYE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2484
+source-wordcount: '2485'
 ht-degree: 79%
-
 ---
-
 # Módulos de [!DNL Jira Software]
 
 >[!NOTE]
@@ -146,7 +149,7 @@ Para conectar [!DNL Jira Software] a Workfront Fusion, debe crear un token de AP
 
 Para autorizar una conexión entre Workfront Fusion y [!DNL Jira Server], necesita su clave de consumidor, clave privada y dirección URL del servicio. Es posible que deba comunicarse con el administrador de [!DNL Jira] para obtener esta información.
 
-* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Generación de claves públicas y privadas para su conexión a  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configuración de la aplicación cliente como consumidor en  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crear una conexión con  [!DNL Jira] Server o Jira Data Center en Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 

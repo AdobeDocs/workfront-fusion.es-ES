@@ -4,21 +4,30 @@ description: Con el conector de Adobe Experience Manager Assets para Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
+TQID: 'https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3825
+source-wordcount: '3825'
 ht-degree: 99%
-
 ---
-
 # Módulos de Adobe Experience Manager Assets
 
 Con el conector de Adobe Experience Manager Assets para Adobe Workfront Fusion, puede crear, cargar y actualizar recursos, así como copiar o mover carpetas y recursos.
@@ -70,10 +79,10 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
 * Debe tener una cuenta de Adobe Experience Manager Assets para utilizar estos módulos.
 * Debe configurar el flujo de servidor a servidor en Adobe Developer Console.
 
-  Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tókenes de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#the-server-to-server-flow).
+  Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tokens de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * La cuenta técnica de Adobe Experience Manager debe tener permisos de escritura.
 
-  Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
+  Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
 
 ## Información sobre la API de Adobe Experience Manager Assets
 
@@ -121,11 +130,11 @@ Para crear una conexión para los módulos de Adobe Experience Manager Assets:
 >
 >* La información de estos campos se genera como parte del flujo de configuración de servidor a servidor en Adobe Developer Console. Puede encontrar estos valores en el archivo JSON de credenciales de servicio generado como parte de esa configuración.
 >
->   Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tókenes de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#the-server-to-server-flow).
+>   Para obtener instrucciones sobre cómo configurar el flujo de servidor a servidor en Adobe Developer Console, consulte [Generación de tokens de acceso para las API del lado del servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* La cuenta técnica de Adobe Experience Manager debe tener permisos de escritura.
 >
->   Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
+>   Para obtener instrucciones sobre cómo añadir permisos de escritura a su cuenta técnica de Adobe Experience Manager, consulte [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) en la documentación de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 

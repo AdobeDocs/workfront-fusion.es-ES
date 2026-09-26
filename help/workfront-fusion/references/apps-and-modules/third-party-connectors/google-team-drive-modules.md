@@ -1,26 +1,29 @@
 ---
 title: Módulos de Google Team Drive
-description: Los módulos de  [!DNL Adobe Workfront Fusion Google Team Drive]  le permiten supervisar, cargar, actualizar, copiar, eliminar o recuperar archivos y crear carpetas en su Drive de  [!DNL Google Shared] .
+description: Los módulos de [!DNL Adobe Workfront Fusion Google Team Drive] le permiten supervisar, cargar, actualizar, copiar, eliminar o recuperar archivos y crear carpetas en su unidad [!DNL Google Shared].
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-TQID: https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk
+TQID: 'https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1384
-ht-degree: 78%
-
+source-wordcount: '1386'
+ht-degree: 76%
 ---
-
 # Módulos de [!DNL Google Team Drive]
 
 Los módulos de Adobe Workfront Fusion [!DNL Google Team Drive] le permiten supervisar, cargar, actualizar, copiar, eliminar o recuperar archivos y crear carpetas en su [!DNL Google Shared Drive].
 
-Para usar [!DNL Google Team Drive] con Adobe Workfront Fusion, es necesario tener una cuenta de [!DNL Google Workspace]. Si no dispone de una, puede crear una cuenta de [!DNL Google Workspace] en el sitio de registro de [[!DNL Google Workspace] &#x200B;](https://workspace.google.com/business/signup/welcome).
+Para usar [!DNL Google Team Drive] con Adobe Workfront Fusion, es necesario tener una cuenta de [!DNL Google Workspace]. Si no dispone de una, puede crear una cuenta de [!DNL Google Workspace] en el sitio de registro de [[!DNL Google Workspace] ](https://workspace.google.com/business/signup/welcome).
 
 En un escenario de Adobe Workfront Fusion, puede automatizar los flujos de trabajo que utilizan [!DNL Google Team Drive], así como conectarlo a varias aplicaciones y servicios de terceros.
 
@@ -124,7 +127,7 @@ Devuelve detalles del archivo cuando se añade o modifica un nuevo archivo en la
   </tr> 
   <tr> 
    <td>[!UICONTROL Watch]</td> 
-   <td> <p> Seleccione si desea supervisar la carpeta en busca de archivos nuevos y modificados o solo en busca de archivos nuevos.</p> </td> 
+   <td> <p> Seleccione si desea monitorizar la carpeta en busca de archivos nuevos y modificados o solo en busca de archivos nuevos.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 

@@ -4,16 +4,18 @@ description: Con estos módulos, puede encadenar escenarios juntos, realizando u
 author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
+TQID: 'https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 913
+source-wordcount: '913'
 ht-degree: 10%
-
 ---
-
 # Módulos de cadena
 
 >[!IMPORTANT]
@@ -100,7 +102,7 @@ Este módulo se encuentra en el escenario principal. Los campos reflejan la estr
 > * **Tenga cuidado al colocar este módulo dentro de un iterador.** La distribución de un escenario secundario para cada elemento en un iterador grande crea una carga de plataforma significativa. Considere la posibilidad de integrar la lógica del escenario secundario o precalcular búsquedas compartidas fuera del iterador.
 > * **Despedir y olvidar** significa que el padre no tiene visibilidad sobre si el hijo se ejecutó o tuvo éxito. Utilícelo únicamente cuando los errores secundarios se supervisen de forma independiente.
 >
-> Para obtener instrucciones de diseño completas, vea [Encadenar varios escenarios](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Para obtener instrucciones de diseño completas, vea [Encadenar varios escenarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >

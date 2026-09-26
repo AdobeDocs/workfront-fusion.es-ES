@@ -4,18 +4,21 @@ description: El módulo Adobe Workfront Fusion HTTP > Crear una solicitud es un 
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-TQID: https://experienceleague.adobe.com/-SRXhwpwmvCKhZVVqiUf8Pvh5h0hN8H5CyazYxNLCXw
+TQID: 'https://experienceleague.adobe.com/-SRXhwpwmvCKhZVVqiUf8Pvh5h0hN8H5CyazYxNLCXw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: '991'
 ht-degree: 74%
-
 ---
-
 # [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud] módulo
 
 Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL Crear un módulo de solicitud] es un módulo universal que le permite configurar una solicitud HTTP y enviarla a un servidor. La respuesta HTTP recibida se incluye entonces en el paquete de salida.
@@ -103,7 +106,7 @@ Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud]
        <p>Ejemplo del formato de petición HTTP resultante:</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP multiparte que se utiliza para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] es una solicitud HTTP multiparte que se utiliza para enviar archivos y datos. Normalmente se utiliza para cargar archivos en el servidor.</p> <p>Añada campos para enviarlos en la solicitud. Cada campo debe contener un par clave-valor.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Introduzca la clave y el valor que se enviarán dentro del cuerpo de la solicitud.</p> </li> 
        <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Introduzca la clave y especifique el archivo de origen que desea enviar en el cuerpo de la solicitud.</p> <p>Asigne el archivo que desea cargar desde el módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Obtener un archivo] o [!UICONTROL Google Drive] &gt; Descargar un archivo), o introduzca el nombre de archivo y los datos de archivo manualmente.</p> </li> 

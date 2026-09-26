@@ -4,11 +4,14 @@ description: La automatización del trabajo requiere un procesamiento rápido. E
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 72%
@@ -31,7 +34,7 @@ La automatización del trabajo requiere un procesamiento rápido. Es por ello qu
   >
   > Mientras que el encadenamiento permite que los flujos de trabajo se ejecuten más de 40 minutos, esto debe tratarse como una señal de riesgo de diseño, no como una solución alternativa. Los escenarios principales que abarcan varios escenarios secundarios de larga duración no tienen un límite de tiempo de espera general. Si un escenario secundario se bloquea o encuentra un problema de plataforma, el principal espera indefinidamente sin errores ni recuperación automática.
   >
-  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
+  > Si el diseño del escenario requiere el encadenamiento para evitar el límite de 40 minutos, revise la arquitectura antes de implementarla en producción. Consulte [Encadenar varios escenarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obtener instrucciones de diseño.
 * El tamaño máximo de un modelo de escenario es de **5 MB**, pero se recomienda mantener el tamaño de escenario por debajo de **3 MB**.
 
   Los módulos de aplicaciones que crean o actualizan datos con una gran cantidad de campos pueden causar modelos muy grandes.
