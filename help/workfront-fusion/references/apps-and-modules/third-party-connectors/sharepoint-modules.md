@@ -98,7 +98,7 @@ El conector de SharePoint utiliza lo siguiente:
 
 ## Conexión de Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la configuración avanzada](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la autorización de certificados](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Conectar Microsoft SharePoint Online a Workfront Fusion mediante una entidad de servicio](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -1133,7 +1133,7 @@ Este módulo de activación instantáneo inicia un escenario cuando se agrega, a
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
--->
+  -->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Seleccione un webhook existente o haga clic en Agregar e introduzca la conexión para crear un nuevo webhook.</p> 

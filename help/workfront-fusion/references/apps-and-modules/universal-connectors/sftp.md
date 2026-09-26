@@ -258,7 +258,7 @@ Este módulo de acción crea una nueva carpeta en la ubicación especificada.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Establezca los permisos de carpeta deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+   <td> <p>Establezca los permisos de carpeta deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -466,7 +466,7 @@ Le permite cambiar los permisos del archivo.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Establezca los permisos de archivo deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+   <td> <p>Establezca los permisos de archivo deseados. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ Este módulo le permite subir un archivo en el servidor SFTP.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Establezca los permisos deseados para el archivo o la carpeta. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
+   <td> <p>Establezca los permisos deseados para el archivo o la carpeta. Utilice parámetros chmod. Por ejemplo, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Estos permisos deben coincidir con el patrón <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obtener más información sobre chmod, consulte la <a href="https://ss64.com/bash/chmod.html">documentación de chmod</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tamaño del búfer (B)]</p> </td> 

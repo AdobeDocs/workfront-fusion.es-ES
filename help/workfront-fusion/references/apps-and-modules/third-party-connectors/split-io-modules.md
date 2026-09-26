@@ -120,7 +120,7 @@ Puede crear una conexión con su cuenta de [!DNL Split.io] directamente desde un
         </td>
       </tr>
       <tr> 
-       <td role="rowheader">Clave de API [!UICONTROL]</td> 
+       <td role="rowheader">Clave de API </td> 
        <td>Escriba su clave de API de [!DNL Split.io].<p>Para obtener más información sobre las claves de API de [!DNL Split.io], consulte <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">claves de API</a> en la documentación de [!DNL Split.io].</p></td> 
       </tr> 
      </tbody> 

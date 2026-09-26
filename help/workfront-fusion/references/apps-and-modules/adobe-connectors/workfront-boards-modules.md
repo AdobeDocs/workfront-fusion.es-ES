@@ -607,7 +607,7 @@ Este módulo de acción realiza una llamada personalizada a la API de Workfront 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de Graphql incrustado de JSON </p> <p>Ejemplo:</p><p>En este ejemplo se actualiza un nombre de columna. Puede incluir <code>boardId</code> y <code>columnId</code> como GUID codificados o asignados desde un módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de Graphql incrustado de JSON </p> <p>Ejemplo:</p><p>En este ejemplo se actualiza un nombre de columna. Puede incluir <code>boardId</code> y <code>columnId</code> como GUID codificados o asignados desde un módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }&#x200B;}"<br>}</pre><p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
