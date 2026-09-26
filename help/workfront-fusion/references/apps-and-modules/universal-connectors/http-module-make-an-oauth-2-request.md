@@ -4,20 +4,23 @@ description: Para realizar una solicitud HTTP(S) de Adobe Workfront Fusion a ser
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-TQID: https://experienceleague.adobe.com/ylQwzctWz1sE03eGhHWxjf48mKxHiuZVy-HN07Mtmh0
+TQID: 'https://experienceleague.adobe.com/ylQwzctWz1sE03eGhHWxjf48mKxHiuZVy-HN07Mtmh0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2373
+source-wordcount: '2373'
 ht-degree: 74%
-
 ---
-
 # Módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0]
 
 >[!NOTE]
@@ -127,7 +130,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
-      <td> <p>Seleccione el flujo para obtener tókenes.</p> 
+      <td> <p>Seleccione el flujo para obtener tokens.</p> 
        <ul> 
         <li><strong>[!UICONTROL Authorization Code]</strong>: introduzca el <code>[!UICONTROL Authorize URI]</code> y el <code>[!UICONTROL Token URI]</code> de la documentación de la API del servicio.</li> 
         <li><strong>[!UICONTROL Implicit]</strong>: introduzca el <code>[!UICONTROL Authorize URI]</code> de la documentación de la API del servicio.</li> 
@@ -294,7 +297,7 @@ El siguiente ejemplo muestra cómo se usa el módulo de solicitud [!UICONTROL HT
 
 ## Configuración del módulo de solicitud Make a OAuth 2.0
 
-Después de establecer una conexión OAuth 2.0, siga configurando el módulo como desee. Todos los tókenes de autorización se incluyen automáticamente en esta solicitud y en cualquier otra que utilice la misma conexión.
+Después de establecer una conexión OAuth 2.0, siga configurando el módulo como desee. Todos los tokens de autorización se incluyen automáticamente en esta solicitud y en cualquier otra que utilice la misma conexión.
 
 Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0], Workfront Fusion muestra los campos que se indican a continuación. El título en negrita en un módulo indica un campo obligatorio.
 

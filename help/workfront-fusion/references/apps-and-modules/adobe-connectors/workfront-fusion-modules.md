@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1430
+source-wordcount: '1430'
 ht-degree: 24%
-
 ---
-
 # Módulos de Workfront Fusion
 
 Con el conector de Workfront Fusion, puede administrar su propia organización de Fusion desde un escenario concreto. A diferencia de otros conectores, que conectan Fusion a una aplicación o servicio de terceros, este conector permite que un escenario llame a la propia API de Fusion, de forma similar a como el conector de Adobe Workfront permite que un escenario administre Workfront.
@@ -268,7 +270,7 @@ Actualiza un registro especificado.
    <td> Introduzca o asigne un nombre nuevo para el registro.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID</td> 
+   <td role="rowheader">Identidad</td> 
    <td> Introduzca o asigne el ID del registro que desea actualizar. </td> 
   </tr> 
  </tbody> 

@@ -4,16 +4,18 @@ description: Cuando configure una llamada de API en un módulo, debe seleccionar
 author: Becky
 feature: Workfront Fusion
 exl-id: 481131c9-356a-4c62-a653-d6bba9be5be8
-TQID: https://experienceleague.adobe.com/Z11y3dk6PtoN11Gja8S2ZyJlTJZNZfXfcPPrNJWvbRk
+TQID: 'https://experienceleague.adobe.com/Z11y3dk6PtoN11Gja8S2ZyJlTJZNZfXfcPPrNJWvbRk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 303
+source-wordcount: '303'
 ht-degree: 55%
-
 ---
-
 # Métodos de petición HTTP
 
 Cuando configure una llamada de API en un módulo, debe seleccionar el método de solicitud HTTP. Este artículo describe los métodos disponibles y por qué seleccionaría cada uno de ellos.

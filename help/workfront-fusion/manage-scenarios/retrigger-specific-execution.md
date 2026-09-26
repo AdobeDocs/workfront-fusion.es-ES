@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: '599'
 ht-degree: 16%
-
 ---
-
 # Recuperación de la ejecución de un escenario específico
 
 Puede recuperar una ejecución de escenario específica para procesar los datos mediante un modelo de escenario actualizado o para ver su flujo de datos. Cuando se vuelve a iniciar una ejecución, el escenario se ejecuta utilizando los datos de esa ejecución.

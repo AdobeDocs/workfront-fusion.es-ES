@@ -4,18 +4,20 @@ description: Al asignar elementos, puede utilizar funciones para crear fórmulas
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-TQID: https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4
+TQID: 'https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '296'
 ht-degree: 59%
-
 ---
-
 # Información general sobre la función
 
 Workfront Fusion incluye funciones integradas que le permiten crear fórmulas simples o complejas. Estas funciones abarcan una amplia variedad de casos de uso, incluidas las funciones para matrices, cadenas, números y datos de módulos anteriores.
@@ -39,7 +41,7 @@ El panel de asignación incluye las siguientes pestañas. Cada pestaña incluye 
 | **Funciones generales**<br>![&#x200B; Funciones generales](assets/toolbar-icon-general-function.png) | [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
 | **Funciones matemáticas**<br>![&#x200B; Funciones matemáticas](assets/toolbar-icon-math-functions.png) | [Funciones matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
 | **Funciones de texto y binarias**<br>![&#x200B; Funciones de cadena](assets/toolbar-icon-text-binary-functions.png) | [Funciones de cadena](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
-| **Fecha y hora** <br> ![Funciones de fecha y hora](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Funciones de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tókenes para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tókenes para el análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
+| **Fecha y hora** <br> ![Funciones de fecha y hora](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Función de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens para el análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funciones para trabajar con matrices**<br> ![Funciones de matriz](assets/toolbar-icon-functions-for-arrays.png) | [Funciones de matriz](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
 ![Barra de herramientas de funciones](assets/functions-toolbar-350x189.png)

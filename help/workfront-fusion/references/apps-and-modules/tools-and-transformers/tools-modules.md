@@ -1,19 +1,21 @@
 ---
 title: Herramientas
-description: La sección  [!DNL Adobe Workfront Fusion Tools] incluye varios módulos útiles que pueden mejorar su escenario.
+description: La sección [!DNL Adobe Workfront Fusion Tools] incluye varios módulos útiles que pueden mejorar su escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+TQID: 'https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2290
+source-wordcount: '2290'
 ht-degree: 89%
-
 ---
-
 # [!UICONTROL Herramientas]
 
 La sección [!DNL Adobe Workfront Fusion Tools] incluye varios módulos útiles que pueden mejorar su escenario.
@@ -71,7 +73,7 @@ Puede usar este módulo, por ejemplo, para contactos o cualquier otra lista prog
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Bundle]</td> 
+   <td role="rowheader">[!UICONTROL Paquete]</td> 
    <td> <p>Cree paquetes personalizados añadiendo elementos de matriz. Para cada elemento que desee agregar al paquete, haga clic en <b>Agregar elemento</b> e introduzca el nombre y el valor del elemento.</p> </td> 
   </tr> 
  </tbody> 

@@ -1,21 +1,24 @@
 ---
 title: Módulos Frame.io (heredados)
-description: La cuenta de  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
+description: Los módulos [!DNL Adobe Workfront Fusion Frame].io le permiten supervisar, crear, actualizar, recuperar o eliminar recursos y comentarios en su cuenta de [!DNL Frame.io].
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+TQID: 'https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2668
+source-wordcount: '2685'
 ht-degree: 82%
-
 ---
-
 # [!DNL Frame.io] módulos heredados
 
 >[!IMPORTANT]
@@ -24,7 +27,7 @@ ht-degree: 82%
 >
 >Para obtener instrucciones sobre la nueva versión (beta) del conector Frame.io, consulte [Conector Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
-Los módulos [!DNL Frame.io] de Adobe Workfront Fusion le permiten supervisar, crear, actualizar, recuperar o eliminar recursos y comentarios en la cuenta de [!DNL Frame.io].
+Los módulos [!DNL Frame.io] de Adobe Workfront Fusion le permiten monitorizar, crear, actualizar, recuperar o eliminar recursos y comentarios en la cuenta de [!DNL Frame.io].
 
 Workfront ofrece dos conectores Frame.io, basados en la versión de Frame.io a la que se está conectando.
 
@@ -117,7 +120,7 @@ Puede conectarse a [!DNL Frame.io] mediante un token de API o mediante OAuth 2.0
 Para conectar su cuenta de [!DNL Frame.io] a Workfront Fusion mediante un token de API, debe crear el token de API en su cuenta de [!DNL Frame.io] e insertarlo en el cuadro de diálogo de Workfront Fusion [!DNL Frame.io] [!UICONTROL Crear una conexión].
 
 1. Inicie sesión en la cuenta de [!DNL Frame.io].
-1. Vaya a la página **[!UICONTROL Tókenes]** del desarrollador de [!DNL Frame.io].
+1. Vaya a la página **[!UICONTROL Tokens]** del desarrollador de [!DNL Frame.io].
 1. Haga clic en **[!UICONTROL Nuevo]**.
 1. Introduzca el nombre del token, seleccione los ámbitos que desee usar y haga clic en **[!UICONTROL Crear]**.
 1. Copie el token proporcionado.

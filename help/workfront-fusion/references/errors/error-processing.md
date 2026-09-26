@@ -5,20 +5,23 @@ description: A veces, se puede producir un error durante la ejecución de un esc
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+TQID: 'https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1214
+source-wordcount: '1227'
 ht-degree: 35%
-
 ---
-
 # Tipos de error
 
 A veces, se puede producir un error durante la ejecución de un escenario. Esto suele ocurrir si un servicio no está disponible debido a un error al conectarse al servicio o si falla una validación.
@@ -63,10 +66,10 @@ Los errores de conexión son uno de los errores más comunes. Por lo general, se
 * Si el error se produce en el primer módulo, la ejecución del escenario termina con un mensaje de advertencia. A continuación, Workfront Fusion intenta repetidamente volver a ejecutar el escenario en intervalos de tiempo crecientes. Si todos los intentos fallan, Workfront Fusion desactiva el escenario.
 * Si el error de conexión se produce en otro módulo distinto del primero, los pasos siguientes dependen de la opción Permitir almacenamiento de ejecuciones incompletas en la configuración avanzada del escenario:
 
-   * Si esta opción está habilitada, la ejecución del escenario se mueve a la carpeta [!UICONTROL Ejecuciones incompletas], donde Workfront Fusion intenta repetidamente volver a ejecutar el escenario en intervalos de tiempo cada vez mayores. Si todos los intentos fallan, la ejecución permanecerá en la carpeta de ejecuciones incompletas a la espera de la resolución manual por parte del usuario.
+  * Si esta opción está habilitada, la ejecución del escenario se mueve a la carpeta [!UICONTROL Ejecuciones incompletas], donde Workfront Fusion intenta repetidamente volver a ejecutar el escenario en intervalos de tiempo cada vez mayores. Si todos los intentos fallan, la ejecución permanecerá en la carpeta de ejecuciones incompletas a la espera de la resolución manual por parte del usuario.
 
-     Para obtener más información sobre las ejecuciones incompletas, vea [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
-   * Si esta opción está desactivada, la ejecución del escenario finaliza con un error seguido de una fase de reversión. A continuación, Workfront Fusion intenta repetidamente volver a ejecutar el escenario en intervalos de tiempo crecientes. Si todos los intentos fallan, Workfront Fusion desactiva el escenario.
+    Para obtener más información sobre las ejecuciones incompletas, vea [Ver y resolver ejecuciones incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
+  * Si esta opción está desactivada, la ejecución del escenario finaliza con un error seguido de una fase de reversión. A continuación, Workfront Fusion intenta repetidamente volver a ejecutar el escenario en intervalos de tiempo crecientes. Si todos los intentos fallan, Workfront Fusion desactiva el escenario.
 
   Para obtener más información sobre la opción de configuración Permitir el almacenamiento de ejecuciones incompletas, consulte [Permitir el almacenamiento de ejecuciones incompletas](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) en el artículo Configurar opciones de escenario.
 
@@ -84,7 +87,7 @@ El aumento de los intervalos de tiempo ayuda a evitar que los escenarios ejecuta
 
 >[!BEGINSHADEBOX]
 
-**Ejemplo:**
+**Ejemplo**
 
 Un escenario contiene el [!DNL Google Sheets] activador [!UICONTROL Watch Rows]. [!DNL Google Sheets] no está disponible durante 30 minutos debido al mantenimiento cuando Workfront Fusion inicia el escenario, por lo que no puede recuperar nuevas filas. El escenario se detiene y vuelve a intentarlo en 10 minutos. Debido a que [!DNL Google Sheets] sigue sin estar disponible, Workfront Fusion sigue sin poder obtener información sobre las filas nuevas. La siguiente ejecución del escenario está programada en 1 hora. [!DNL Google Sheets] vuelve a estar disponible en este momento y el escenario se ejecuta correctamente.
 

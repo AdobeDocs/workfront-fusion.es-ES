@@ -4,16 +4,18 @@ description: Actualmente, se admite archivos grandes para los conectores Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-TQID: https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc
+TQID: 'https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1075'
 ht-degree: 8%
-
 ---
-
 # Trabajo con archivos grandes
 
 >[!IMPORTANT]
@@ -34,26 +36,26 @@ Actualmente, los siguientes conectores admiten archivos grandes.
 >* Los módulos que no admiten archivos grandes pueden procesar archivos de hasta 200 MB de tamaño.
 
 * Workfront
-   * Cargar documento
-   * Descargar documento
+  * Cargar documento
+  * Descargar documento
 * Adobe Experience Manager Assets
-   * Cargar documento
+  * Cargar documento
 * Revisión de Workfront
-   * Cargar archivo
-   * Descargar revisión
+  * Cargar archivo
+  * Descargar revisión
 * Adobe Authenticator
-   * Realizar una llamada de API personalizada
+  * Realizar una llamada de API personalizada
 * Adobe Photoshop
-   * Aplicar ediciones de PSD
+  * Aplicar ediciones de PSD
 * SharePoint
-   * Crear un archivo
-   * Creación de un archivo (heredado)
-   * Obtener un archivo
+  * Crear un archivo
+  * Creación de un archivo (heredado)
+  * Obtener un archivo
 * Salesforce
-   * Cargar archivo
+  * Cargar archivo
 * AWS S3
-   * Cargar archivo
-   * Obtener archivo
+  * Cargar archivo
+  * Obtener archivo
 * HTTP
 
 En futuras versiones se admitirán otros conectores.

@@ -1,22 +1,24 @@
 ---
-title: Tókenes para el análisis de fecha y hora
-description: Los siguientes tókenes para el análisis de fecha y hora están disponibles en el  [!DNL Adobe Workfront Fusion mapping] panel.
+title: Tokens para el análisis de fecha y hora
+description: Los siguientes tokens para el análisis de fecha y hora están disponibles en el panel [!DNL Adobe Workfront Fusion mapping].
 author: Becky
 feature: Workfront Fusion
 exl-id: d3242af3-89e8-45ae-81a1-3b4dadf824fd
-TQID: https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI
+TQID: 'https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 164
-ht-degree: 100%
-
+source-wordcount: '165'
+ht-degree: 92%
 ---
+# Tokens para el análisis de fecha y hora
 
-# Tókenes para el análisis de fecha y hora
-
-## Tókenes de año, mes y día
+## Tokens de año, mes y día
 
 <table style="table-layout:auto"> 
  <col> 
@@ -88,7 +90,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## Tókenes de semana, año, semana y día de la semana
+## Tokens de semana, año, semana y día de la semana
 
 <table style="table-layout:auto"> 
  <col> 
@@ -130,7 +132,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## Tókenes de hora, minuto, segundo, milisegundo y desplazamiento
+## Tokens de hora, minuto, segundo, milisegundo y desplazamiento
 
 <table style="table-layout:auto"> 
  <col> 

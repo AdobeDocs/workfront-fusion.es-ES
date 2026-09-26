@@ -4,16 +4,18 @@ description: El llavero de Adobe Workfront Fusion le ayudará a administrar clav
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-TQID: https://experienceleague.adobe.com/EV5p7TwCCWVwujv8x2r5MxTc1sZMEhTJey8Xodp5HTA
+TQID: 'https://experienceleague.adobe.com/EV5p7TwCCWVwujv8x2r5MxTc1sZMEhTJey8Xodp5HTA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: '324'
 ht-degree: 53%
-
 ---
-
 # Claves
 
 Las claves públicas y privadas se utilizan para cifrar y descifrar datos. La clave pública se puede distribuir y cualquier persona que la tenga puede cifrar datos, pero solo la clave privada puede descifrarlos. Del mismo modo, un usuario con una clave privada podrá cifrar datos que cualquier persona que tenga la clave pública podrá descifrar. En el área Claves, puede ver y administrar las claves de su equipo.

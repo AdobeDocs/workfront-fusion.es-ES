@@ -4,16 +4,18 @@ description: Una operación en Adobe Workfront Fusion es una tarea realizada por
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+TQID: 'https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 64%
-
 ---
-
 # Operaciones
 
 Una operación en Adobe Workfront Fusion es una tarea realizada por un módulo. Para fines de seguimiento, cualquier acción correcta realizada por un módulo es una operación.
@@ -26,10 +28,10 @@ Una operación en Adobe Workfront Fusion es una tarea realizada por un módulo. 
 * Las operaciones pueden tener un valor diferente. Algunas serán operaciones más pequeñas y sencillas, y otras serán más complejas. Las operaciones se contabilizan en el total, independientemente de lo sencillas o complejas que puedan ser.
 * Las operaciones se cuentan en la fase [!UICONTROL Finalización] de la ejecución de un escenario.
 * Los siguientes **no** se cuentan como operaciones:
-   * Cualquier paso del filtro.
-   * Cualquier acción que falle o se detenga.
-   * Cualquier ruta que no se ejecute porque no se cumplen las reglas de la ruta, como las rutas de reserva o deshabilitadas.
-   * Cualquier acción que no se ejecute, ya sea porque un filtro no ha permitido el paso de datos o porque el escenario se ha detenido debido a un error.
+  * Cualquier paso del filtro.
+  * Cualquier acción que falle o se detenga.
+  * Cualquier ruta que no se ejecute porque no se cumplen las reglas de la ruta, como las rutas de reserva o deshabilitadas.
+  * Cualquier acción que no se ejecute, ya sea porque un filtro no ha permitido el paso de datos o porque el escenario se ha detenido debido a un error.
 
 >[!NOTE]
 >

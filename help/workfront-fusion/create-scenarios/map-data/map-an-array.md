@@ -4,18 +4,21 @@ description: Puede asignar una matriz o elementos de matriz individuales a un ca
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 33%
-
 ---
-
 # Asignar una matriz o elemento de matriz
 
 Una matriz es un elemento de paquete que puede contener lo siguiente:
@@ -141,28 +144,28 @@ La fórmula se puede explicar de la siguiente manera:
 
 * `map`
 
-   1. El primer parámetro de la función `map()` es todo el elemento de matriz.
-   1. El segundo parámetro es el nombre sin procesar del elemento de valor. Para obtener el nombre sin procesar, pase el puntero por encima del elemento del panel de [!UICONTROL asignación]:
+  1. El primer parámetro de la función `map()` es todo el elemento de matriz.
+  1. El segundo parámetro es el nombre sin procesar del elemento de valor. Para obtener el nombre sin procesar, pase el puntero por encima del elemento del panel de [!UICONTROL asignación]:
 
-      ![Obtener nombre sin procesar](assets/obtain-raw-name-350x124.png)
+     ![Obtener nombre sin procesar](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >Todos los parámetros distinguen entre mayúsculas y minúsculas. Aunque en este ejemplo concreto la etiqueta del elemento difiere de su nombre sin procesar solo en mayúsculas, es necesario utilizar el nombre sin procesar.
+     >[!NOTE]
+     >
+     >Todos los parámetros distinguen entre mayúsculas y minúsculas. Aunque en este ejemplo concreto la etiqueta del elemento difiere de su nombre sin procesar solo en mayúsculas, es necesario utilizar el nombre sin procesar.
 
-   1. El tercer parámetro es el nombre sin procesar del elemento clave:
+  1. El tercer parámetro es el nombre sin procesar del elemento clave:
 
-      ![Tercer parámetro](assets/3rd-parameter-350x166.png)
+     ![Tercer parámetro](assets/3rd-parameter-350x166.png)
 
-   1. El cuarto parámetro es el valor de clave dado.
+  1. El cuarto parámetro es el valor de clave dado.
 
   Dado que la función `map()` devuelve una matriz (ya que podría haber más elementos con el valor de la clave especificada), es necesario aplicar la función `get()` para obtener su primer elemento:
 
 * `get`
 
-   1. El primer parámetro de la función `get()` es el resultado de la función `map()`.
+  1. El primer parámetro de la función `get()` es el resultado de la función `map()`.
 
-   1. El segundo parámetro es el índice del elemento. En este ejemplo, el índice es `1`.
+  1. El segundo parámetro es el índice del elemento. En este ejemplo, el índice es `1`.
 
 Este ejemplo genera el siguiente resultado:
 
