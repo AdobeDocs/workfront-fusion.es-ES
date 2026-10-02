@@ -243,6 +243,6 @@ Puede utilizar indicadores como los siguientes:
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/es/docs/marketo-developer/marketo/mcp-server
 
   -->
