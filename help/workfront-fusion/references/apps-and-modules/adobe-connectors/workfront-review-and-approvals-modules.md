@@ -15,16 +15,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
 workflow-type: tm+mt
-source-wordcount: '5202'
-ht-degree: 12%
+source-wordcount: '5905'
+ht-degree: 16%
 ---
 # Módulos de revisión y aprobaciones unificados de Adobe Workfront
 
 Con los módulos Adobe Workfront Unified Review and Approvals, puede obtener detalles de aprobación, tomar una decisión sobre un recurso, agregar o eliminar participantes de aprobación, agregar o actualizar etapas de aprobación, bloquear o desbloquear etapas y hacer llamadas de API personalizadas.
 
-Para obtener información acerca de la revisión unificada y las aprobaciones de Workfront, consulte [Revisión unificada y descripción general de la aprobación](https://experienceleague.adobe.com/es/docs/workfront/using/review-and-approve-work/document-approvals-overview) en la documentación de Workfront.
+Para obtener información acerca de la revisión unificada y las aprobaciones de Workfront, consulte [Revisión unificada y descripción general de la aprobación](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) en la documentación de Workfront.
 
 ## Requisitos de acceso
 
@@ -131,6 +131,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 * [Acciones](#actions)
 * [Búsquedas](#searches)
+* [Activadores](#triggers)
 * [Otros](#other)
 
 ### Acciones
@@ -1353,6 +1354,89 @@ Este módulo de búsqueda busca aprobaciones agrupadas utilizando una vista con 
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### Activadores
+
+* [Ver eventos de aprobación](#watch-approval-events)
+
+#### Ver eventos de aprobación
+
+Este módulo de déclencheur ejecuta un escenario en tiempo real cuando se producen eventos relacionados con la aprobación en Adobe Workfront Unified Review and Approvals.
+
+El módulo devuelve cualquier campo estándar asociado con el evento de aprobación, junto con cualquier campo y valor personalizados a los que acceda la conexión. Puede asignar esta información en módulos subsiguientes en el escenario.
+
+Para configurar el webhook para el módulo Ver eventos de aprobación:
+
+1. Haga clic en **[!UICONTROL Añadir]** a la derecha del cuadro **Webhook**.
+
+1. Configure el webhook en el cuadro **[!UICONTROL Añadir un hook]** que se muestra.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook name]</td> 
+      <td>Introducir un nombre para el webhook</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Connection]</td> 
+      <td> <p>Para obtener instrucciones sobre cómo conectar la aplicación de Workfront a Workfront Fusion, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Conectarse a las revisiones y aprobaciones unificadas de Adobe Workfront</a> en este artículo.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Type]</td> 
+      <td>Seleccione el tipo de registro de aprobación que desea que vea el módulo.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Tipo de configuración]</td> 
+      <td>Seleccione si desea utilizar un filtro simple o avanzado.<p>Para obtener información sobre los filtros simples o avanzados, consulte <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Uso de filtros avanzados</a> en el artículo Módulos de Workfront.</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Events filter payload]</td> 
+      <td>Si utiliza filtros avanzados, introduzca el JSON que describe el filtro.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter Connector]</td> 
+      <td>Si utiliza filtros avanzados, seleccione el conector que desee utilizar para el filtro.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL State]</td> 
+      <td>Si utiliza un filtro simple, seleccione si desea ver el estado antiguo o el nuevo.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Active un escenario cuando el registro cambia <b>a </b> un valor determinado.</p><p>Por ejemplo, si el estado se establece en [!UICONTROL New State] y el filtro se establece en [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], el webhook activa un escenario cuando el [!UICONTROL Status] cambia a [!UICONTROL In Progress], independientemente del estado anterior.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Activa un escenario cuando el registro cambia <b>de </b> un valor determinado.</p><p>Por ejemplo, si el estado se establece en [!UICONTROL Old State] y el filtro se establece en [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], el webhook activa un escenario cuando un [!UICONTROL Status] que está actualmente [!UICONTROL In Progress] cambia a otro estado.</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL Filtros de eventos]</p> </td> 
+      <td> <p>Si utiliza un filtro simple, defina los filtros.</p> <p>Para cada filtro, introduzca el campo que desea que evalúe el filtro, el operador y el valor que desea que permita el filtro. Puede utilizar más de un filtro añadiendo reglas AND.</p> <p><b>Nota</b>: No puede editar filtros en los webhooks de Workfront existentes. Para configurar diferentes filtros para suscripciones a eventos de Workfront, elimine el webhook actual y cree uno nuevo.</p> <p>Para obtener más información sobre los filtros de eventos, consulte <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de suscripción de eventos en Workfront &gt; Módulos de [!UICONTROL Watch Events]</a> en el artículo Módulos de Workfront.</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>Excluir eventos realizados por esta conexión</td> 
+      <td>Si utiliza un filtro simple, habilite esta opción para excluir los eventos creados o actualizados con el mismo conector que utiliza este módulo de déclencheur. Así pueden evitarse situaciones en las que un escenario podría activarse a sí mismo y provocar su repetición en un bucle interminable. Esta opción puede no estar disponible para todos los tipos de eventos de aprobación.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Origin]</td> 
+      <td>
+       <p>Elija si desea que el escenario compruebe [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records] o [!DNL Deleted Records Only].</p>
+       <p><b>Nota</b>: Si elige [!UICONTROL New and Updated Records], la creación del webhook creará dos suscripciones a eventos (para la misma dirección de webhook).</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Habilitar los vínculos seguros]</td> 
+      <td>
+       <p>Elija si desea habilitar la seguridad basada en authToken para este webhook.</p><p>
+       <b>NOTA</b>: A partir del 23 de agosto de 2026, Fusion habilitará la seguridad basada en authToken de forma predeterminada para todos los módulos de Workfront &gt; Ver evento, incluidos los existentes. Si un webhook específico se rompe o necesita deshabilitarlo por motivos de compatibilidad, puede desactivar la opción Habilitar enlaces seguros.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Custom token]</td> 
+      <td>
+       <p>(Opcional) Si [!UICONTROL Habilitar enlaces seguros] está establecido en [!UICONTROL Sí], puede introducir su propio valor de token para proteger el webhook. Si deja este campo en blanco, Fusion genera automáticamente un token.</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+Una vez creado el webhook, podrá ver la dirección del punto final al que se envían los eventos.
+
+Para obtener más información, consulte la sección [Ejemplos de cargas útiles de eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#ejemplos-de-cargas-%C3%BAtiles-de-eventos) en el artículo API de suscripción a eventos en la documentación de Workfront.
 
 ### Otros
 
