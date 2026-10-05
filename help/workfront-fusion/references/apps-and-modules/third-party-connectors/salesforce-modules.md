@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 08224dc1e04d56e422cb177c65efadf5db71b136
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3078'
 ht-degree: 81%
 ---
 # Módulos de [!DNL Salesforce]
@@ -116,6 +116,13 @@ Para obtener más información sobre las posibilidades de búsqueda, consulte la
 
 Para crear una conexión para los módulos de [!DNL Salesforce], puede autenticarse con OAuth 2 o PKCE.
 
+>[!NOTE]
+>
+>Si se autentica con PKCE, debe tener los siguientes ámbitos habilitados en Salesforce.
+>
+>* Acceso completo: `full`
+>* Realizar solicitudes en cualquier momento: `refresh_token`, `offline_access`
+
 1. En cualquier módulo de [!DNL Salesforce], haga clic en **[!UICONTROL Añadir]** junto al cuadro Conexión.
 
 1. Rellene los campos siguientes:
@@ -198,7 +205,7 @@ Este módulo activador inicia un escenario cuando se actualiza un campo en [!DNL
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Seleccione el tipo de registro que contiene el campo que desea que el módulo vea. Debe elegir un tipo de registro que tenga [!UICONTROL Field History] activado en la configuración de [!DNL Salesforce]. Para obtener más información, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Seguimiento del historial de campos</a> en la documentación de [!DNL Salesforce]. </p> </td> 
+   <td> <p>Seleccione el tipo de registro que contiene el campo que desea que el módulo vea. Debe elegir un tipo de registro que tenga [!UICONTROL Field History] activado en la configuración de [!DNL Salesforce]. Para obtener más información, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Seguimiento del historial de campos</a> en la documentación de [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -586,7 +593,7 @@ Este módulo de acción carga un solo archivo en Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL &#x200B; Adobe Workfront Fusion]: instrucciones básicas</a></td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL  Adobe Workfront Fusion]: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Archivo de origen]</td> 
@@ -626,7 +633,7 @@ Este módulo de acción recupera todos los registros que cumplen un criterio det
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL &#x200B; Adobe Workfront Fusion]: instrucciones básicas</a></td> 
+   <td>Para obtener instrucciones sobre cómo conectar su cuenta de [!DNL Salesforce] a Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Crear una conexión con[!DNL  Adobe Workfront Fusion]: instrucciones básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
