@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 9e08c421a53c7ca499715fa8e32be6c10fbde1d9
+source-git-commit: 50583b23190de0fee568f020722482d8e9aed76b
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 91%
+source-wordcount: '534'
+ht-degree: 90%
 ---
 # Referencias de las aplicaciones de Fusion y sus módulos: índice de artículos
 
@@ -32,6 +32,7 @@ ht-degree: 91%
 Estos conectores le permiten conectarse a cualquier aplicación o servicio web que tenga una API pública.
 
 * [Módulo HTTP > [!UICONTROL Realizar una solicitud]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud JWT] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
 * [Módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud de autorización básica]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [Módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [Módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud de autorización de certificado de cliente]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
