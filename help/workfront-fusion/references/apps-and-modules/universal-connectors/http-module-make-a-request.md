@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 74%
+source-wordcount: '1194'
+ht-degree: 61%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud] módulo
 
@@ -128,6 +128,14 @@ Al configurar el módulo [!UICONTROL HTTP] > [!UICONTROL Realizar una solicitud]
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
    <td> <p>Especifique el tiempo de espera de la solicitud en segundos (1-300). El valor predeterminado es de 40 segundos.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Recuento de reintentos]</td> 
+   <td> <p>Especifique el número de veces que se reintentará la solicitud en caso de errores de conexión (ETIMEDOUT, ECONNRESET, EPROTO). El valor predeterminado es 3. Establezca el valor en 0 para deshabilitar los reintentos.</p> <p>Esta configuración solo tiene efecto cuando [!UICONTROL Evaluar todos los estados como errores] está habilitado.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Códigos de estado de reintento adicionales]</td> 
+   <td> <p>Especifique códigos de estado HTTP adicionales que deban tratarse como reintentables cuando [!UICONTROL Evaluar todos los estados como errores] esté habilitado. De forma predeterminada, solo se pueden volver a intentar los códigos 408, 429 y 5xx.</p> <p>Cuando agrega un código de estado a este campo, se convierte en un error de conexión reintentable y déclencheur los reintentos según la configuración de [!UICONTROL Recuento de reintentos]. Los códigos de estado que no aparecen aquí mantienen su comportamiento predeterminado. Los códigos que no se pueden volver a intentar, como 404 o 422, se pueden volver a intentar agregándolos aquí.</p> <p><b>Ejemplo:</b> Si habilita [!UICONTROL Evaluar todos los estados como errores], establece [!UICONTROL Recuento de reintentos] en 4 y agrega 422 a este campo, una respuesta HTTP 422 se tratará como reintentable y se volverá a intentar como otros errores de tipo conexión.</p> <p><b>Nota:</b> La configuración de [!UICONTROL Timeout] controla cuánto tiempo puede esperar cada intento. No define una pausa entre reintentos. Esta configuración solo tiene efecto cuando [!UICONTROL Evaluar todos los estados como errores] está habilitado.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
