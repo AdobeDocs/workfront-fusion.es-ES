@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5815'
 ht-degree: 39%
 ---
 # Módulos de Microsoft SharePoint Online
@@ -98,7 +98,7 @@ El conector de SharePoint utiliza lo siguiente:
 
 ## Conexión de Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar Microsoft SharePoint Online a Workfront Fusion con una cuenta de  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la configuración avanzada](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conexión de Microsoft SharePoint Online a Workfront Fusion mediante la autorización de certificados](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Conectar Microsoft SharePoint Online a Workfront Fusion mediante una entidad de servicio](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -262,10 +262,6 @@ Continuar a [Crear el registro de la aplicación en Microsoft Entra ID](#create-
 1. Continúe con [Conceder permisos de API](#grant-api-permissions).
 
 #### Conceder permisos de API (entidad de seguridad de servicio)
-
->[!IMPORTANT]
->
->COMPRUEBE LO SIGUIENTE: a diferencia de los DevOps de Azure, Microsoft Graph admite permisos de aplicación directamente en este paso. Confirme los permisos exactos que necesita el módulo Realizar una llamada de API (por ejemplo, un ámbito de permisos de Sites) antes de publicar esta sección y actualice los pasos a continuación en consecuencia.
 
 1. En el registro de tu aplicación, ve a **[!UICONTROL Permisos de API]**.
 1. Seleccione **[!UICONTROL Agregar un permiso]** y, a continuación, seleccione **[!UICONTROL Microsoft Graph]**.
@@ -1327,7 +1323,7 @@ Este módulo de activación instantáneo inicia un escenario cuando se agrega, a
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Seleccione un webhook existente o haga clic en Agregar e introduzca la conexión para crear un nuevo webhook.</p> 
