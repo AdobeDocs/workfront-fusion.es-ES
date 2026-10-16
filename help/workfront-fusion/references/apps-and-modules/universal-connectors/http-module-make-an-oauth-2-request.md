@@ -16,7 +16,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 3cd582ee1b763897cbbaba7f2c040897e3581742
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 74%
@@ -95,7 +95,7 @@ Para obtener información sobre las licencias de Adobe Workfront Fusion, consult
    1. Al crear un cliente, introduzca la dirección URL correspondiente en el campo `[!UICONTROL Redirect URL]` o `[!UICONTROL Callback URL]`:
 
       | América/APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
-      |---|---|
+      | --- | --- |
       | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
    1. Después de crear el cliente, el servicio dado muestra 2 claves: `[!UICONTROL Client ID]` y `[!UICONTROL Client Secret]`. Algunos servicios llaman a estos `[!UICONTROL App Key]` y `[!UICONTROL App Secret]`. Guarde la clave y el secreto en una ubicación segura, para que pueda proporcionarlos al crear la conexión en Workfront Fusion.
@@ -323,7 +323,7 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 

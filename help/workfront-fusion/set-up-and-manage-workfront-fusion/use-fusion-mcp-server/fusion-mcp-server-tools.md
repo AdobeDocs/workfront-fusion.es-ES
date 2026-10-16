@@ -1,9 +1,9 @@
 ---
 title: Herramientas del servidor MCP de Adobe Workfront Fusion
 description: Lista de referencia de las herramientas que expone el servidor de Adobe Workfront Fusion MCP a las plataformas agénticas de IA y a los colaboradores.
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ La organización activa se aplica a todas las demás herramientas de la sesión 
 | --- | --- | --- | --- |
 | Enumeración de organizaciones | `fusion_orgs_list` | Leer | Enumera las organizaciones de Fusion a las que puede acceder, con ID, región (zona) y etiqueta. |
 | Establecer organización activa | `fusion_orgs_set` | Session | Cambia la organización activa para la sesión actual. No cambia ningún dato de Fusion. |
+| Obtener organización actual | `fusion_organizations_get` | Leer | Devuelve la organización actual. |
+| Enumeración de organizaciones | `fusion_organizations_list` | Leer | Enumera todas las organizaciones que puede ver. |
+
+## Equipos
+
+| Herramienta | Nombre | Acción | Descripción |
+| --- | --- | --- | --- |
+| Enumerar equipos | `fusion_teams_list` | Leer | Enumera los equipos de la organización que puede ver. |
+| Obtener equipo | `fusion_teams_get` | Leer | Devuelve un solo equipo de una organización. |
+| Eliminar equipo | `fusion_teams_delete` | Escritura | Elimina un equipo. Esto también detiene sus escenarios y elimina sus permisos. No se puede deshacer a través de la API y requiere confirmación. |
+
+## Usuarios
+
+| Herramienta | Nombre | Acción | Descripción |
+| --- | --- | --- | --- |
+| Obtener regiones de Fusion | `fusion_users_get_regions` | Leer | Devuelve las regiones y organizaciones de Fusion a las que puede acceder. Utilícelo para buscar ID de organización válidos. |
+| Obtener usuario actual | `fusion_users_get_me` | Leer | Devuelve el perfil con las funciones de organización y de equipo. |
+| Enumerar usuarios | `fusion_users_list` | Leer | Muestra los usuarios de la organización. |
+| Obtener usuario | `fusion_users_get` | Leer | Devuelve un solo usuario de una organización. |
 
 ## Herramientas de escenario
 
@@ -40,6 +59,7 @@ La organización activa se aplica a todas las demás herramientas de la sesión 
 | --- | --- | --- | --- |
 | Enumerar escenarios | `fusion_scenarios_list` | Leer | Muestra los escenarios de la organización. |
 | Obtener escenario | `fusion_scenarios_get` | Leer | Devuelve un escenario, incluido su modelo completo. |
+| Obtener vínculo del escenario | `fusion_scenarios_get_link` | Leer | Devuelve el vínculo de la interfaz de usuario de Fusion para abrir un escenario en el explorador. |
 | Obtener dependencias del escenario | `fusion_scenarios_getDependencies` | Leer | Devuelve las conexiones, claves, almacenes de datos, estructuras de datos y enlaces web a los que hace referencia el modelo del escenario. |
 | Buscar escenarios dependientes | `fusion_scenarios_dependents` | Leer | Busca escenarios que hagan referencia a un gancho web, almacén de datos, estructura de datos, conexión, clave o escenario determinados. Útil para el análisis de impacto antes de cambiar o eliminar un recurso. |
 | Validar modelo | `fusion_scenarios_validate_blueprint` | Leer | Valida estructuralmente un modelo con un equipo (referencias de módulo, conexiones, campos obligatorios) sin guardar nada. |
@@ -63,6 +83,7 @@ Ejemplos de peticiones de datos:
 | --- | --- | --- | --- |
 | Enumerar versiones de escenarios | `fusion_scenario_versions_list` | Leer | Enumera las versiones guardadas de un escenario. Filtrar por `version`, `createdAt`, `comment`. |
 | Obtener versión del escenario | `fusion_scenario_versions_get` | Leer | Devuelve el modelo y los metadatos de una versión específica. |
+| Crear versión del escenario | `fusion_scenario_versions_create` | Escritura | Publica un modelo como una nueva versión de escenario, que se convierte en el modelo activo. Las versiones anteriores se conservan y la publicación de un modelo idéntico no hace nada. |
 
 Ejemplos de peticiones de datos:
 
@@ -109,8 +130,10 @@ Estas herramientas solo devuelven metadatos. No devuelven credenciales, tokens o
 | --- | --- | --- | --- |
 | Buscar conexiones | `fusion_connections_search` | Leer | Muestra las conexiones. Filtrar por `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
 | Obtener conexión | `fusion_connections_get` | Leer | Devuelve los detalles de una sola conexión. |
+| Eliminar conexión | `fusion_connections_delete` | Escritura | Elimina una conexión. Falla si un webhook sigue dependiendo de él. Los escenarios que lo utilizan se desasocian en lugar de bloquear la eliminación. |
 | Claves de búsqueda | `fusion_keys_search` | Leer | Claves de lista. Filtrar por `name`, `typeName`, `teamId`. |
 | Obtener clave | `fusion_keys_get` | Leer | Devuelve los detalles de una sola clave. |
+| Eliminar clave | `fusion_keys_delete` | Escritura | Elimina una clave. Los escenarios que lo utilizan no bloquean la eliminación. |
 
 Ejemplos de peticiones de datos:
 
@@ -124,6 +147,9 @@ Ejemplos de peticiones de datos:
 | --- | --- | --- | --- |
 | Enumerar webhooks | `fusion_hooks_list` | Leer | Muestra los ganchos web (ganchos). Filtrar por `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached` y más. |
 | Obtener webhook | `fusion_hooks_get` | Leer | Devuelve la configuración de un webhook, los enlaces de propietario y las referencias externas. |
+| Obtener dependencias de webhook | `fusion_hooks_dependencies` | Leer | Enumera la conexión, la estructura de datos y la clave a la que hace referencia un webhook. Ejecútelo antes de clonar. |
+| Clonar webhook | `fusion_hooks_clone` | Escritura | Copia un webhook con una nueva URL, opcionalmente a otro equipo. Puede reemplazar su conexión, estructura de datos o clave. |
+| Eliminar webhook | `fusion_hooks_delete` | Escritura | Elimina un webhook y sus eventos en cola. Solo el creador del webhook puede eliminarlo. |
 | Buscar webhooks dependientes | `fusion_hooks_dependents` | Leer | Busca los enlaces web que hacen referencia a una conexión determinada. |
 
 ### Cola de webhook
@@ -133,7 +159,7 @@ Ejemplos de peticiones de datos:
 | Obtener estadísticas de cola | `fusion_queue_stats` | Leer | Devuelve el número de eventos en cola, el límite de cola y si el webhook está habilitado. |
 | Enumerar cola | `fusion_queue_list` | Leer | Enumera los eventos de gancho web recibidos que esperan procesarse. |
 | Obtener elemento de cola | `fusion_queue_get` | Leer | Devuelve un solo evento en cola, incluida su carga útil descodificada. |
-| Eliminar elementos en cola | `fusion_queue_delete` | Escritura | Elimina eventos en cola específicos (hasta 50) o borra la cola, excluyendo opcionalmente algunos eventos. Los eventos que se están procesando actualmente no se pueden eliminar. |
+| Eliminar elementos en cola | `fusion_hook_queue_delete` | Escritura | Elimina los eventos de gancho web en cola por ID (hasta 50) o todos ellos con exclusiones opcionales. El nombre de la herramienta conectada es `fusion_hook_queue_delete` y no coincide con el nombre de la herramienta `fusion_queue_delete` anterior. |
 
 Ejemplos de peticiones de datos:
 
@@ -146,10 +172,14 @@ Ejemplos de peticiones de datos:
 | --- | --- | --- | --- |
 | Enumerar almacenes de datos | `fusion_datastores_list` | Leer | Enumera los almacenes de datos con el recuento, el tamaño y el tamaño máximo de los registros. |
 | Obtener almacén de datos | `fusion_datastores_get` | Leer | Devuelve los metadatos y el uso de un almacén de datos, la estructura de datos vinculada y la configuración de validación estricta. |
+| Eliminar almacén de datos | `fusion_datastores_delete` | Escritura | Elimina un almacén de datos y todos sus registros. Falla si un escenario lo sigue utilizando. |
 | Enumerar registros de almacén de datos | `fusion_data_list` | Leer | Lee registros (clave + datos JSON) de un almacén de datos, con paginación de desplazamiento. |
+| Eliminar registros del almacén de datos | `fusion_data_stores_data_delete` | Escritura | Elimina varios registros por clave o todos los registros con exclusiones opcionales. |
+| Eliminar registro del almacén de datos | `fusion_data_stores_data_key_delete` | Escritura | Elimina un registro por clave. Tiene éxito aunque la clave no exista. |
 | Buscar almacenes de datos dependientes | `fusion_datastores_dependents` | Leer | Busca almacenes de datos que utilizan una estructura de datos determinada. |
 | Buscar estructuras de datos | `fusion_data_structures_search` | Leer | Enumera estructuras de datos. Filtrar por `name`, `strict`, `teamId`. |
 | Obtener estructura de datos | `fusion_data_structures_get` | Leer | Devuelve una estructura de datos, incluida su especificación de campo completo. |
+| Eliminar estructura de datos | `fusion_data_structures_delete` | Escritura | Elimina una estructura de datos. Se produce un error si un almacén de datos sigue utilizándolo. |
 
 Ejemplos de peticiones de datos:
 
@@ -167,6 +197,12 @@ Ejemplos de peticiones de datos:
 
 * _¿Quién eliminó escenarios en los últimos 7 días?_
 * _Exportar todos los cambios de conexión de este trimestre a Excel._
+
+## Comentarios
+
+| Herramienta | Nombre | Acción | Descripción |
+| --- | --- | --- | --- |
+| Enviar comentarios | `fusion_feedback_submit` | Escritura | Envía sus comentarios (errores, resultados incorrectos, solicitud de funciones, elogios, etc.) al equipo de Fusion. |
 
 ## Compañero
 
