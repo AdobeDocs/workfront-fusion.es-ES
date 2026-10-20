@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 49%
+source-wordcount: '3193'
+ht-degree: 48%
 ---
 # Webhooks
 
@@ -325,10 +325,6 @@ Al crear o editar un webhook personalizado en Fusion, el campo Orígenes permiti
 ## La cola de ganchos web
 
 Si un webhook recibe datos y no hay un escenario activo que los espere, los datos se almacenan en la cola. Una vez activado el escenario, se procesan secuencialmente todos los paquetes que esperan en la cola.
-
->[!IMPORTANT]
->
->Las colas de webhook se comparten entre escenarios que utilizan el mismo webhook. Si uno de los escenarios está desactivado, todos los datos entrantes se retienen en la cola.
 
 ## Formatos de datos entrantes admitidos
 
