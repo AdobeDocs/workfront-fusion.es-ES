@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 11%
+source-wordcount: '750'
+ht-degree: 7%
 ---
 # Funciones generales
 
@@ -22,11 +22,39 @@ ht-degree: 11%
 
 Puede utilizar estas variables generales para identificar los detalles de una ejecución:
 
-* `executionID`: el ID de esta ejecución de escenario
-* `triggerTimestamp`: hora a la que se activó esta ejecución
-* `scenarioID`: ID del escenario abierto actualmente
+* `executionId`: el ID de esta ejecución de escenario
+* `scenarioId`: ID del escenario abierto actualmente
 * `scenarioName`: nombre del escenario que se está ejecutando
+* `scenarioUrl`: un vínculo al escenario actual en la interfaz de usuario de Fusion
+* `executionUrl`: un vínculo a la ejecución del escenario actual en la interfaz de usuario de Fusion
+* `scenarioApiUrl`: la URL de la API de Fusion para el escenario actual
+* `executionApiUrl`: URL de la API de Fusion para los detalles de la ejecución actual
+* `teamId`: el ID del equipo de Fusion que posee el escenario actual
+* `organizationId`: el ID de la organización de Fusion asociada con la ejecución actual. No es un ID de organización de IMS de Adobe.
+* `triggerTimestamp`: hora a la que se activó esta ejecución
 * `operationsConsumed`: número de operaciones que se utilizan en ese momento en el escenario.
+
+Los nombres de variables distinguen entre mayúsculas y minúsculas. Por ejemplo, use `scenarioUrl`, no `scenarioURL`.
+
+Puede utilizar estas variables en campos asignados sin crear direcciones URL ni codificar los ID de equipo y organización. Por ejemplo, puede incluir lo siguiente en un campo de texto asignado en una notificación:
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+Tenga en cuenta lo siguiente cuando utilice estas variables:
+
+* Los valores se resuelven cuando se ejecuta el escenario. El panel Asignación enumera las variables, pero no previsualiza sus valores.
+* `scenarioUrl` y `executionUrl` enlazan al escenario y a la ejecución en la interfaz de usuario de Fusion. `scenarioApiUrl` y `executionApiUrl` son direcciones URL de extremo de API, no vínculos a páginas de Fusion.
+* Las variables de URL de la API devuelven solo texto. No realizan una solicitud ni proporcionan credenciales de autenticación. La autenticación y los permisos normales de API siguen aplicándose.
+* Los vínculos no conceden acceso adicional. Se aplican permisos de fusión normales.
+* `executionUrl` no se genera para ejecuciones que no se han guardado en el historial de ejecución, como las ejecuciones de zonas protegidas o las ejecuciones con la sincronización del historial desactivada. Un vínculo generado no garantiza que los detalles de ejecución estén disponibles en el momento en que se utiliza.
+* `scenarioUrl` no se puede generar para una plantilla o un escenario sin guardar.
+* Si no se puede generar una dirección URL, la variable no tiene valor.
 
 ## [!UICONTROL get (objeto o matriz; ruta de acceso)]
 
