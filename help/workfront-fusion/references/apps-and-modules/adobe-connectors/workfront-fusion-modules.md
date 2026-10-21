@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 24%
+source-wordcount: '1550'
+ht-degree: 22%
 ---
 # Módulos de Workfront Fusion
 
@@ -127,12 +127,12 @@ Este módulo realiza una copia del registro especificado.
    <td> Seleccione el tipo de registro que desea clonar. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de escenario</td> 
-   <td> Introduzca o asigne el ID del escenario que desea clonar. </td> 
+   <td role="rowheader">ID de escenario/ID de vínculo/ID de estructura de datos</td> 
+   <td> Introduzca o asigne el ID del elemento que desea clonar. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nombre</td> 
-   <td> Introduzca o asigne un nombre para el nuevo escenario.</td> 
+   <td> Introduzca o asigne un nombre para el nuevo escenario, vínculo o estructura de datos.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ Este módulo devuelve una lista paginada de registros utilizando la paginación 
   <tr> 
    <td role="rowheader">Tipo de registro</td> 
    <td>Seleccione el tipo de registro del que desea obtener una lista.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campos</td> 
+   <td>Seleccione los campos que desee incluir en los resultados.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Propiedad</td> 
@@ -380,9 +384,36 @@ Este módulo obtiene las dependencias del registro.
    <td> Seleccione el tipo de registro para el que desea recuperar las dependencias. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de escenario</td> 
+   <td role="rowheader">ID de escenario/ID de vínculo</td> 
    <td> Introduzca o asigne el ID del registro para el que desea recuperar las dependencias. </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Obtener dependientes de registro
+
+Este módulo identifica lo que depende de un recurso determinado. Utilice este módulo antes de eliminar un recurso para comprobar si algo depende de ese recurso y si puede verse afectado por su eliminación.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar Workfront Fusion a Workfront Fusion, consulte <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Conectar Workfront Fusion a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo de registro</td> 
+   <td>Seleccione el tipo de registro en el que desea buscar dependientes.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo</td> 
+   <td>Seleccione el tipo de dependientes que desea comprobar.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Identidad</td> 
+   <td>Introduzca o asigne el ID del registro para el que desea devolver dependientes.</td> 
   </tr> 
  </tbody> 
 </table>
