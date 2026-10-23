@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: b800142d824927e5765eed50a831731e6b5d9925
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 36%
@@ -98,7 +98,7 @@ Es posible que tenga que hacer clic en el icono de tres puntos del área Control
 ![panel de herramientas](assets/tools-scenario-editor.png)
 
 | Acción | Detalles |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Control de flujo | Configure las opciones para controlar el modo en que los datos fluyen por él. Para obtener más información, [vea el vínculo necesario]. |
 | Herramientas | La sección de herramientas contiene varios módulos útiles que pueden mejorar los escenarios. Para obtener más información, [vea el vínculo necesario]. |
 | Analizador de texto | Utilice la herramienta Analizador de texto para analizar el texto y utilizarlo en otros módulos de escenarios. El analizador de texto no requiere una conexión. Para obtener más información, [vea el vínculo necesario]. |
