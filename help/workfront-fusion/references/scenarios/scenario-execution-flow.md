@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '821'
 ht-degree: 1%
 ---
 # Flujo de ejecución del escenario
 
 Este artículo explica cómo se ejecuta un escenario y cómo fluyen los datos a través de él, y cómo ver los datos procesados por cada módulo.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 Para ver cómo fluyen los datos en un escenario activo, vea [Ver flujo de datos en un escenario en ejecución](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
@@ -43,7 +47,7 @@ El primer paso del escenario, realizado por el primer módulo, es inspeccionar l
 
 Si el primer módulo devuelve un paquete, este pasará por el resto del escenario. En este ejemplo, el paquete iría al segundo módulo, que convierte la solicitud en un proyecto.
 
-![Flujo de ejecución del escenario de Workfront](assets/example-execution-flow-wf-only.png)
+![Flujo de ejecución del escenario de Workfront](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -57,7 +61,7 @@ El primer paso del escenario, realizado por el primer módulo, es inspeccionar l
 
 Si se devuelve un paquete, este pasa por el resto del escenario. En este ejemplo, el resto del escenario consiste en el segundo módulo, que carga el paquete en la carpeta [!DNL Dropbox].
 
-![Flujo de ejecución del escenario de integración](assets/example-execution-flow-wf-dropbox.png)
+![Flujo de ejecución del escenario de integración](assets/new-example-execution-flow-wf-dropbox.png)
 
 Si el primer módulo devuelve varios paquetes, el primer paquete se cargará en [!DNL Dropbox] antes de que se cargue el segundo paquete. Luego se carga el segundo paquete, luego el tercero, etc.
 
@@ -78,7 +82,7 @@ Para cada módulo, el paquete pasa por un proceso de 4 pasos antes de pasar al s
 
 Una vez finalizada la ejecución de un escenario, cada módulo muestra un icono con el número de operaciones realizadas. Puede hacer clic en este icono para mostrar la información detallada sobre los paquetes procesados para cada paso del proceso. Puede ver qué configuración de módulo se utilizó y qué paquetes devolvió cada módulo.
 
-![Paquetes procesados](assets/Info-processed-bundles.png)
+![Paquetes procesados](assets/new-Info-processed-bundles.png)
 
 En este ejemplo, el módulo recibió información de entrada como:
 

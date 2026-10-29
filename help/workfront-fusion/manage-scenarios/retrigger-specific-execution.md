@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Puede recuperar la ejecución de un escenario desde el Diagrama del escenario, e
 1. Busque la ejecución que desea volver a activar en la lista Ejecuciones del lado derecho de la página.
 1. Haga clic en **Recuperador** para ese escenario.
 
-![Recuperador del diagrama](assets/retrigger-from-diagram.png)
+![Recuperador del diagrama](assets/new-retrigger-from-diagram.png)
 
 ### Recuperación de una ejecución desde el historial del escenario
 
@@ -95,7 +95,7 @@ Puede recuperar la ejecución de un escenario desde el Diagrama del escenario, e
 1. Busque la ejecución que desea volver a activar. Puede utilizar la búsqueda de texto completo para localizarla si es necesario.
 1. Haga clic en **Recuperador** para ese escenario.
 
-![Recuperador del historial](assets/retrigger-from-history.png)
+![Recuperador del historial](assets/new-retrigger-from-history.png)
 
 ### Recuperar un escenario desde la página de ejecución del escenario
 
@@ -108,7 +108,7 @@ Puede recuperar la ejecución de un escenario desde el Diagrama del escenario, e
 1. En la página de ejecución, haga clic en **Recuperador**.
 
 
-![Recuperador de la ejecución](assets/retrigger-from-execution.png)
+![Recuperador de la ejecución](assets/new-retrigger-from-execution.png)
 
 
 

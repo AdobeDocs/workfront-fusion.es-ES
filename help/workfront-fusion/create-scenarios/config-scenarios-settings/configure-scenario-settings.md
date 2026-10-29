@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 46%
+source-wordcount: '1757'
+ht-degree: 37%
 ---
 # Establecer la configuración del escenario
 
 Puede configurar opciones específicas para escenarios en el panel Configuración de escenarios.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Requisitos de acceso
 
@@ -51,6 +55,23 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 +++
 
 ## Abrir la configuración del escenario
+
+* [Abra la configuración de escenario en la nueva experiencia (recomendado)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Abra la configuración de escenario en la experiencia clásica](#open-the-scenario-settings-in-the-classic-experience)
+
+### Abra la configuración de escenario en la nueva experiencia (recomendado)
+
+1. Haga clic en **Escenarios** en el panel izquierdo.
+1. Busque el escenario que desee y haga clic en el nombre.
+1. Haga clic en cualquier lugar del escenario para ingresar al editor de escenarios.
+1. Haga clic en el icono **Configuración de escenario** ![Icono de configuración de escenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) en el área Controles.
+
+   Es posible que tenga que hacer clic primero en el icono de tres puntos del área Controles para verlo.
+
+   En el panel [!UICONTROL Configuración de escenario] que se muestra, puede configurar varias opciones avanzadas para el escenario.
+1. Habilite o deshabilite la configuración de Escenario según sea necesario. Consulte [Opciones de configuración de escenarios](#scenario-settings-options) a continuación.
+
+### Abra la configuración de escenario en la experiencia clásica
 
 1. Haga clic en **Escenarios** en el panel izquierdo.
 1. Busque el escenario que desee y haga clic en el nombre.
@@ -150,13 +171,13 @@ La configuración de más ciclos puede resultar útil cuando desea evitar la int
 
 **Ejemplos:** Workfront > [!UICONTROL Observar registro] observa nuevos problemas que se producen y Workfront >[!UICONTROL Convertir objeto] convierte la nueva solicitud en un proyecto y le asigna la plantilla adecuada.
 
-![Configuración de escenario](assets/scenario-settings-ex-1-350x157.png)
+![Configuración de escenario](assets/new-scenario-settings-ex-1.png)
 
 La configuración [!UICONTROL más ciclos] solo se aplica cuando se programa la ejecución del escenario. Al usar el botón [!UICONTROL Ejecutar una vez], se tiene en cuenta la configuración del ciclo.
 
 #### El número máximo de ciclos se establece en 1 (predeterminado)
 
-![Número máximo de ciclos](assets/max-number-cycles-1-350x201.png)
+![Número máximo de ciclos](assets/new-max-number-cycles.png)
 
 El número máximo de ciclos en el módulo Workfront > Ver registros está establecido en `10`.
 Si se envían 100 solicitudes a Workfront y el campo Número máximo de ciclos se establece en 10, entonces se dejan 90 archivos sin procesar después de ejecutar un escenario. Los siguientes 10 archivos se procesan en la posterior ejecución de escenario programada.
@@ -169,9 +190,7 @@ Si se añaden 100 archivos a la carpeta Dropbox y la opción Número máximo de 
 
 Todos los archivos se procesan en un escenario de ejecución.
 
-Puede ver los ciclos ya ejecutados en los detalles del escenario:
-
-![Detalle del escenario](assets/scenario-detail-350x207.png)
+Puede ver los ciclos ya ejecutados en el área Historial de la página Detalles del escenario.
 
 Para obtener más información acerca de esta página, vea [Detalles del escenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
@@ -192,6 +211,34 @@ Para obtener más información sobre los errores, consulte [Tipos de error](/hel
 Para establecer una anulación a nivel de escenario para un tipo de notificación, marque o desmarque la casilla junto al tipo de notificación.
 
 Para obtener información sobre la configuración de notificaciones, incluidas las invalidaciones en el nivel de escenario, consulte [Establecer opciones de notificación](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
+### Registros de depuración temporales
+
+>[!NOTE]
+>
+>* Los registros de depuración temporales solo están disponibles en el nuevo diseñador de escenarios y únicamente si la característica está habilitada para su organización.
+>* Para cambiar la configuración se requiere permiso para editar el escenario.
+
+Los detalles de solicitud y respuesta no se conservan para cada ejecución programada o desencadenada, ya que ocupan mucho espacio de almacenamiento. Correr una vez siempre los mantiene.
+
+Para recopilar detalles de solicitud y respuesta para las ejecuciones regulares del escenario, elija cuánto tiempo desea recopilarlos:
+
+* Durante la siguiente 1 hora
+* Para el día siguiente
+* Para la siguiente ejecución
+* Para las siguientes 10 ejecuciones
+
+El cambio se aplica de inmediato. No es necesario que guarde el escenario.
+
+Mientras que los registros de depuración temporales están activados, la configuración muestra cuándo permanecen activados hasta que se producen o cuántas ejecuciones quedan. Para dejar de recopilar los detalles de la solicitud y la respuesta antes de entonces, haz clic en **Desactivar**.
+
+Los registros de depuración se desactivan automáticamente cuando se agota el tiempo o el número de ejecuciones. Cada ejecución cuenta, incluidas las ejecuciones programadas que no encuentran datos nuevos.
+
+>[!NOTE]
+>
+>Los registros de depuración temporales solo están disponibles en la nueva experiencia y solo si la función está habilitada para su organización. Para cambiar esta configuración, debe tener permiso para editar el escenario.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### Grupo de trabajo
 

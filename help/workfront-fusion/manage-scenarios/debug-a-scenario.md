@@ -1,6 +1,6 @@
 ---
 title: Depurar un escenario
-description: Adobe Workfront Fusion Devtool le permite entender y solucionar problemas de escenarios. Devtool añade un panel adicional a las herramientas para desarrolladores de Chrome. Con este panel del depurador, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada de API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para perfeccionar el escenario.
+description: Adobe Workfront Fusion Devtool le permite entender y solucionar problemas de escenarios. Devtool añade un panel adicional a las herramientas para desarrolladores de Chrome. Con este panel del depurador, puede comprobar todas las ejecuciones manuales de su escenario, revisar todas las operaciones realizadas y ver los detalles de cada llamada API realizada. Puede ver qué módulo, operación o respuesta única causó el error y utilizar ese conocimiento para perfeccionar el escenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 76%
+source-wordcount: '1962'
+ht-degree: 59%
 ---
 # Depurar un escenario
 
@@ -28,6 +28,26 @@ Adobe Workfront Fusion DevTool le ayuda a comprender y solucionar problemas de e
 >[!NOTE]
 >
 >El inicio de sesión en el panel del depurador estará limitado o no estará disponible en escenarios confidenciales, ejecuciones automáticas y operaciones satisfactorias.
+
+>[!NOTE]
+>
+>En la nueva experiencia, varias herramientas de DevTool están integradas en el editor de escenarios, por lo que puede utilizarlas sin abrir DevTool:
+>
+>| Herramienta | Dónde encontrarlo en la nueva experiencia |
+>| ---------- | ---------- |
+>| Obtener metadatos de aplicación | Haga clic con el botón derecho en un módulo y seleccione **Metadatos de la aplicación**. |
+>| Copiar asignación | Haga clic con el botón derecho en el módulo de origen, seleccione **Copiar asignación** y péguelo en un módulo compatible. |
+>| Copiar filtro | Haga clic con el botón derecho en el vínculo filtrado, seleccione **Copiar filtro** y péguelo en otro vínculo. |
+>| Copiar nombre de módulo | Haga clic con el botón derecho en un módulo y seleccione **Copiar nombre de módulo** o **Pegar nombre de módulo**. |
+>| Intercambiar conexión | Abra Buscar y reemplazar y utilice la ficha **Conexión**. |
+>| Intercambiar variable | Abra Buscar y reemplazar y, a continuación, utilice la ficha **Variable**. |
+>| Reasignar origen | Abra Buscar y reemplazar y, a continuación, utilice la ficha **Source**. |
+>
+>Estas herramientas también están disponibles en la ficha **Herramientas** de DevTool, junto con Enfocar un módulo, Buscar módulos por asignación y Base 64. También puede utilizar las funciones `base64()` y conversión binaria en asignaciones.
+>
+>También puede ver los detalles de solicitud y respuesta directamente desde [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) y el historial de ejecución en el editor de escenarios. Para obtener más información acerca de Buscar y reemplazar, vea [Buscar y reemplazar variables, orígenes y conexiones en un escenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+<!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
 Para ver un vídeo introductorio y un tutorial de Fusion Devtool, consulte
 
@@ -67,6 +87,26 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Si utiliza Fusion en el Unified Shell de Adobe o ha actualizado a la nueva experiencia de Fusion, puede acceder a Devtool desde el editor de escenarios.
 
+### Acceda a la herramienta Desarrollo en la nueva experiencia
+
+1. Vaya al editor de escenarios correspondiente al escenario que desea depurar.
+
+   Para localizar el editor de escenarios, consulte [El editor de escenarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
+
+1. Haga clic en el icono de tres puntos del área Controles y, a continuación, seleccione **Herramienta de desarrollo**.
+
+O
+
+1. Vaya al editor de escenarios correspondiente al escenario que desea depurar.
+1. Haga clic con el botón derecho en un área vacía de la página (no en un módulo).
+1. Seleccione **abrir Devtool**.
+
+La herramienta de desarrollo se abre en un panel debajo del lienzo.
+
+<!-- BECKY CHECK ME: new-experience access steps from your 10/27/26 notes (three-dot menu in Controls, or right-click). Confirm the menu label ('DevTool') and the 'panel below the canvas' description, and add a screenshot. I assumed the Helper tools icon steps below apply to the classic experience only; confirm. -->
+
+### Acceda a la herramienta de desarrollo en la experiencia clásica
+
 1. Haga clic en el icono **Helper tools** ![Helper tools](assets/debugger-icon.png) cerca de la parte inferior de la pantalla.
 
 O
@@ -80,15 +120,20 @@ O
 
 ## Uso de Workfront Fusion Devtool
 
-La herramienta Devtool de Workfront Fusion se divide en tres secciones principales. Puede encontrarlas en el panel izquierdo de la ventana de Devtool.
+Workfront Fusion Devtool se divide en 3 secciones principales, además de un vínculo de ayuda. Puede encontrarlas en el panel izquierdo de la ventana de Devtool.
 
 * [Live Stream](#live-stream)
 * [Depurador de escenario](#scenario-debugger)
 * [Herramientas](#tools)
+* **Ayuda de DevTool**: haga clic en el icono de signo de interrogación para abrir el artículo sobre DevTool.
+
+<!-- BECKY CHECK ME: the DevTool left panel now has a fourth item, 'DevTool help' (question mark icon), per your 10/27/26 screenshots. Confirm the label, that it opens this article or another one, and whether to apply this to the classic experience too. Retake the left-panel screenshot. -->
 
 ### Live Stream
 
 Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en Ejecutar una vez en su escenario.
+
+<!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
 1. Haga clic en el icono **[!UICONTROL Transmisión en vivo]** ![Icono de transmisión en vivo](assets/live-stream-icon.png) para abrir la sección Transmisión en vivo.
 1. Realice una de las siguientes acciones:
@@ -149,18 +194,42 @@ Live Stream muestra lo que está sucediendo en segundo plano cuando hace clic en
 El depurador de escenario resulta útil para escenarios más complejos. Muestra el historial de ejecuciones de escenarios y le permite buscar módulos por su nombre o ID.
 
 1. Haga clic en el icono **[!UICONTROL Depurador de escenarios]** ![Icono de depurador](assets/scenario-debugger-icon.png) para abrir el Depurador de escenarios.
-1. (Opcional) Introduzca el término de búsqueda (nombre o ID de módulo) en el campo de búsqueda.
+
+   El depurador de escenarios enumera los módulos en su escenario. Cada módulo muestra su nombre, la aplicación y la acción, así como un distintivo numerado con el ID del módulo.
+
+1. (Opcional) Introduzca el término de búsqueda (nombre o ID de módulo) en el campo **Buscar módulos por nombre o ID**.
 1. Haga clic en el nombre del módulo.
-1. Haga clic en la operación para ver los detalles de la solicitud.
+
+   Los ciclos de la ejecución más reciente del módulo se enumeran junto a la lista de módulos. Si el módulo no tiene datos de ejecución, Scenario Debugger mostrará **No se encontraron resultados**.
+
+1. Expanda un ciclo y, a continuación, haga clic en una operación.
+
+   Cada operación muestra si se realizó correctamente y cuánto tiempo tardó, por ejemplo **Operación 1** con una duración de 0 ms.
+
+1. Revise los detalles de la solicitud. Utilice las pestañas para ver:
+
+   * **Encabezados de solicitud**: La dirección URL del extremo de API, el método HTTP, cuándo se llamó a la solicitud y los encabezados de solicitud.
+   * **Cuerpo de solicitud**
+   * **Encabezados de respuesta**
+   * **Cuerpo de respuesta**
+
+1. (Opcional) Para copiar la solicitud, haga clic en **Copiar RAW** o en **Copiar cURL**.
+
+<!-- BECKY CHECK ME: Scenario Debugger steps expanded from your 10/27/26 new-experience DevTool screenshots. Confirm: (1) the 'Search modules by Name or ID' label; (2) that the module list sub-labels, badge (module ID), cycle/operation layout, and 'No Result found' state are described correctly; (3) the tab names, since Response Body was partly hidden behind the Copy buttons in the screenshot; (4) whether Copy RAW and Copy cURL copy the request only or the request and response; (5) whether the classic experience's Scenario Debugger looks the same, or this needs a new/classic split. The screenshot also shows a collapsed 'Live trail' tab with an event count on the right edge of the editor; see the Live Trail article. Retake the Scenario Debugger screenshots. -->
 
 ### Herramientas
 
 Workfront Fusion DevTool incluye herramientas que facilitan la configuración de su escenario.
 
 1. Haga clic en el icono **[!UICONTROL Herramientas]** ![Icono de herramientas de consola](assets/console-tools-icon.png) para abrir las herramientas.
+1. (Opcional) Para buscar una herramienta, escriba su nombre en el campo **Herramienta de búsqueda por nombre**.
 1. Seleccione la herramienta que desee utilizar.
 1. Configure los campos como se indica a continuación.
 1. Haga clic en **[!UICONTROL Ejecutar]**.
+
+Hasta que seleccione una herramienta, el lado derecho del panel le pedirá que seleccione una. Un vínculo en la parte inferior de la pestaña Herramientas le lleva al artículo sobre DevTool.
+
+<!-- BECKY CHECK ME: added from your 10/27/26 screenshots: the 'Search tool by name' field, the select-a-tool prompt, and the link to the DevTool article. Confirm the field label and link destination; retake the Tools screenshot. -->
 
 Herramientas y sus campos:
 

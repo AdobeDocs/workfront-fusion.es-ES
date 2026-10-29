@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 43%
@@ -67,7 +67,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Para generar un error de forma condicional, puede configurar un módulo para que falle a propósito durante su funcionamiento. Una posibilidad es emplear el módulo [!UICONTROL JSON] > [!UICONTROL Analizar JSON], configurado para generar opcionalmente un error (`BundleValidationError` en este caso):
 
-![Error JSON](assets/json-parse-json.png)
+![Error JSON](assets/new-json-parse-json.png)
 
 A continuación, puede adjuntar una de las directivas de gestión de errores a la ruta de gestión de errores:
 
@@ -78,4 +78,4 @@ A continuación, puede adjuntar una de las directivas de gestión de errores a l
 
 El ejemplo siguiente muestra el uso de la directiva [!DNL Rollback]:
 
-![Directiva de reversión](assets/rollback-directive.png)
+![Directiva de reversión](assets/new-rollback-directive.png)

@@ -10,15 +10,15 @@ exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
 TQID: https://experienceleague.adobe.com/F0kYjSMVgit8t-gPAR4U7O-1v8Qxy7UxSRK6uYxKItg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 607
-ht-degree: 79%
-
+source-wordcount: '1116'
+ht-degree: 62%
 ---
-
 # Usar una función para actualizar un proyecto en un escenario básico
 
 La actualización de un elemento de trabajo de Workfront es un caso de uso común para Workfront Fusion. En este ejemplo, utilizará una función para cambiar el nombre de un proyecto para que esté en mayúsculas.
@@ -26,6 +26,10 @@ La actualización de un elemento de trabajo de Workfront es un caso de uso comú
 Fusion incluye muchos tipos de funciones que le permiten transformar y realizar lógica condicional en sus datos. Para obtener más información acerca del uso de funciones, vea [Descripción general de funciones](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
 En este ejemplo se modifica el escenario que se creó en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Requisitos de acceso
 
@@ -60,16 +64,20 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Es necesaria la creación del escenario descrito en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir con este procedimiento.
 
-## Utilizar una función para actualizar un proyecto
+## Usar una función para actualizar un proyecto en la nueva experiencia (recomendado)
 
-### Añada el módulo Actualizar registro a su escenario
+* [Agregue el módulo Actualizar un registro a su escenario](#add-the-update-a-record-module-to-your-scenario)
+* [Asignación de la función para la actualización del nombre](#map-the-function-for-the-name-update)
+* [Prueba y activación](#test-and-activate)
+
+### Agregue el módulo Actualizar un registro a su escenario
 
 1. Abra el escenario en el editor de escenarios.
-1. Pase el ratón sobre el círculo parcial a la derecha del del segundo módulo y luego haga clic en **[!UICONTROL Agregar otro módulo]**.
-1. Seleccione Adobe Workfront de la lista de aplicaciones y, a continuación, elija el módulo **[!UICONTROL Actualizar registro]**.
+1. Pase el ratón sobre el borde derecho del segundo módulo y luego haga clic en **[!UICONTROL Agregar otro módulo]** cuando aparezca.
+1. Seleccione Adobe Workfront de la lista de aplicaciones y, a continuación, elija el módulo **[!UICONTROL Actualizar un registro]**.
 1. En el campo ID, seleccione el bloque de ID que se encuentra en el módulo Convertir objeto. Este es el ID del proyecto que ese módulo generó.
 
-   ![ID de Convertir objeto](assets/id-convert-object.png)
+   ![ID asignado en el módulo Actualizar un registro](assets/new-mapped-update-record.png)
 
 1. En el campo Tipo de registro, seleccione Proyecto, ya que el objeto que se va a actualizar es un proyecto.
 1. En el área Seleccionar campos para asignar, seleccione Nombre.
@@ -78,6 +86,72 @@ Es necesaria la creación del escenario descrito en [Crear un escenario básico]
 1. Continúe con [Asignar la función para la actualización de nombre](#map-the-function-for-the-name-update).
 
 ### Asignación de la función para la actualización del nombre
+
+Cuando este escenario convierte una solicitud en un proyecto, el nombre del proyecto es el mismo que la solicitud. La función toma ese nombre y pone en mayúsculas todas las letras que contiene.
+
+1. Haga clic en el campo **Nombre**.
+
+   Se abrirá el panel de asignación.
+1. En el panel de asignación, haga clic en el icono **Funciones binarias y de texto**. ![Icono de funciones de texto](assets/new-text-binary-function.png)
+1. Seleccione la función **superior**.
+
+   La función aparece en el campo Nombre, incluido el formato de la entrada que espera.
+
+   La entrada para este ejemplo es el nombre del problema desde el que se convirtió el proyecto.
+
+1. Mueva el cursor entre los paréntesis, ya que aquí es donde irá la entrada.
+1. En el panel de asignación, haga clic en el icono **Salida de módulo**. ![Icono de salida del módulo](assets/new-module-output-icon.png)
+1. Seleccione el bloque de nombres que generó el primer módulo.
+
+   El bloque de nombres aparece en la función.
+
+   ![Bloque de nombres en la función](assets/new-mapped-name-block.png)
+
+1. Haga clic en **Aceptar** para guardar la configuración del módulo.
+
+### Prueba y activación
+
+1. Pruebe el escenario haciendo clic en el icono **[!UICONTROL Ejecutar una vez]**.
+
+   Ejecutar una vez solo es un icono en la nueva experiencia. Pase el ratón sobre el icono para ver la información sobre herramientas **[!UICONTROL Ejecutar una vez]**.
+
+   ![botón de escenario de ejecución](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Examine el resultado para asegurarse de que el escenario se ejecutó según lo esperado.
+1. Cuando esté seguro de que el escenario funciona según lo esperado, haga clic en el botón **Programando** para **Activado**.
+
+   Esto activará el escenario. Los escenarios activos se ejecutan según la programación establecida en el módulo del activador.
+
+   ![Alternancia de programación](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Haga clic en el icono **Guardar** ![Guardar icono](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) en el área de Controles para guardar su progreso en el escenario.
+
+   >[!IMPORTANT]
+   >
+   >Se recomienda guardar con frecuencia mientras se perfeccionan y prueban escenarios. Es posible que tenga que crear un nuevo problema en su cuenta de Workfront para almacenar en déclencheur el escenario.
+
+## Utilice una función para actualizar un proyecto en la experiencia clásica
+
+* [Agregar el módulo Actualizar un registro a su escenario (clásico)](#add-the-update-a-record-module-to-your-scenario-classic)
+* [Asignación de la función para la actualización de nombres (Classic)](#map-the-function-for-the-name-update-classic)
+* [Probar y activar (clásico)](#test-and-activate-classic)
+
+### Agregar el módulo Actualizar un registro a su escenario (clásico)
+
+1. Abra el escenario en el editor de escenarios.
+1. Pase el ratón sobre el círculo parcial a la derecha del del segundo módulo y luego haga clic en **[!UICONTROL Agregar otro módulo]**.
+1. Seleccione Adobe Workfront de la lista de aplicaciones y, a continuación, elija el módulo **[!UICONTROL Actualizar un registro]**.
+1. En el campo ID, seleccione el bloque de ID que se encuentra en el módulo Convertir objeto. Este es el ID del proyecto que ese módulo generó.
+
+   ![ID de Convertir objeto](assets/id-convert-object.png)
+
+1. En el campo Tipo de registro, seleccione Proyecto, ya que el objeto que se va a actualizar es un proyecto.
+1. En el área Seleccionar campos para asignar, seleccione Nombre.
+
+   Se abrirá un campo Nombre.
+1. Continúe con [Asignar la función para la actualización de nombres (clásica)](#map-the-function-for-the-name-update-classic).
+
+### Asignación de la función para la actualización de nombres (Classic)
 
 Cuando este escenario convierte una solicitud en un proyecto, el nombre del proyecto es el mismo que la solicitud. La función toma ese nombre y pone en mayúsculas todas las letras que contiene.
 
@@ -101,7 +175,7 @@ Cuando este escenario convierte una solicitud en un proyecto, el nombre del proy
 
 1. Haga clic en **Aceptar** para guardar la configuración del módulo.
 
-### Prueba y activación
+### Probar y activar (clásico)
 
 1. Pruebe el escenario haciendo clic en **Ejecutar una vez** en la esquina inferior izquierda de la pantalla.
 1. Examine el resultado para asegurarse de que el escenario se ejecutó según lo esperado.

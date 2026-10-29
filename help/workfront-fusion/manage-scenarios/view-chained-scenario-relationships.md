@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 18%
 ---
 # Ver y administrar relaciones de escenarios encadenados
@@ -64,21 +64,17 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Puede ver un mapa del escenario actual y de sus escenarios principales o secundarios. El mapa muestra un diagrama del flujo de datos a través de los escenarios encadenados.
 
-![Relaciones de escenario encadenado](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 Para ver el mapa de relaciones de un escenario encadenado:
 
 1. Haga clic en la ficha **[!UICONTROL Escenario]** en el panel izquierdo y, a continuación, haga clic en el escenario.
 
    O
 
-   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en la ficha **Relaciones**.
 
-   ![Ficha Relaciones](assets/relations-tab.png)
+   ![Ficha Relaciones](assets/new-relationships-tab.png)
 
 1. Para obtener detalles generales sobre cada escenario encadenado, consulte las etiquetas.
 

@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f11394266811578664228f44a6202bc6621a75a0
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 67%
+source-wordcount: '966'
+ht-degree: 62%
 ---
 # Copiar módulos o escenarios
 
@@ -69,18 +69,19 @@ Tenga en cuenta lo siguiente al pegar módulos en un escenario diferente:
 
 ### Copiar módulos
 
-Copiar un grupo de módulos es similar a copiar un solo módulo.
+Puede copiar un solo módulo o un grupo de módulos.
+
+
+>[!NOTE]
+>
+>Para seleccionar más de un módulo, mantenga presionada la tecla [!UICONTROL Mayús] y haga clic en los módulos que desea copiar. Al copiar un grupo de módulos también se copian las líneas de conexión, los filtros o la lógica de enrutamiento entre ellos.
 
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea copiar un módulo.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
-1. Haga clic con el botón derecho en el módulo que desea copiar.
-
-   >[!NOTE]
-   >
-   >Para seleccionar más de un módulo, mantenga presionada la tecla [!UICONTROL Mayús] y haga clic en los módulos que desea copiar. Al copiar un grupo de módulos también se copian las líneas de conexión, los filtros o la lógica de enrutamiento entre ellos.
-
-1. Seleccione **[!UICONTROL Copiar módulo]**.
+1. Si está copiando varios módulos, mantenga pulsada la tecla Mayús y haga clic en los módulos que desee copiar.
+1. Haga clic con el botón derecho en el módulo o en uno de los módulos que desee copiar.
+1. Seleccione **[!UICONTROL Copiar módulo]** o **[!UICONTROL Copiar módulos]**.
 1. Mueva el cursor al área del escenario donde desea la copia del escenario.
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Pegar]**.
 1. Conecte los módulos pegados al escenario arrastrándolos a la ubicación adecuada en el escenario.
@@ -101,7 +102,7 @@ Al clonar un escenario, se crea una copia del mismo que luego puede editar.
 
       O
 
-      Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+      Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/new-exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic con el botón derecho en **[!UICONTROL Opciones]** en la parte superior derecha de la página.
 1. Seleccione **[!UICONTROL Clonar]**.

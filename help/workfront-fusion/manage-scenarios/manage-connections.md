@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 35%
+source-wordcount: '446'
+ht-degree: 31%
 ---
 # Administrar conexiones
 
@@ -71,6 +71,10 @@ Puede administrar todas las conexiones desde el área Conexiones.
 1. (Opcional) Para volver a autorizar una conexión, haga clic en **Volver a autorizar** en la fila correspondiente a esa conexión.
 1. (Opcional) Para comprobar que la conexión con el servicio estaba funcionando, haga clic en **Verificar** en la fila correspondiente a esa conexión.
 1. (Opcional) Para eliminar una conexión, haga clic en **Eliminar** en la fila correspondiente a esa conexión y, a continuación, haga clic en **Realmente?**.
+
+>[!NOTE]
+>
+>Para utilizar una conexión diferente en los módulos de un escenario, puede copiar una conexión a uno o todos los módulos compatibles de la misma aplicación en el editor de escenarios. Para obtener más información, vea [Buscar y reemplazar variables, orígenes y conexiones en un escenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 
 ## Renovación de una conexión
 

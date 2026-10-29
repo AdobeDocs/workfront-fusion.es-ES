@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '370'
 ht-degree: 0%
 ---
 # Use Ejecutar una vez para probar un escenario
@@ -23,6 +23,10 @@ También puede ejecutar un escenario una vez para configurar estructuras de dato
 >[!TIP]
 >
 >Se recomienda realizar pruebas con frecuencia a medida que crea y perfecciona escenarios.
+
+>[!NOTE]
+>
+>En la nueva experiencia, Ejecutar una vez siempre mantiene los detalles de solicitud y respuesta. Para las ejecuciones regulares del escenario, puede recopilarlas activando los registros de depuración temporales en la configuración del escenario. Para obtener más información, consulte [Configurar opciones de escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
 
 ## Usar la funcionalidad Ejecutar una vez
 

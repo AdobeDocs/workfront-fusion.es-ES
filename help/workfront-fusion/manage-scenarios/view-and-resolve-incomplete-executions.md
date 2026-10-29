@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '580'
 ht-degree: 67%
 ---
 # Ver y resolver ejecuciones incompletas
@@ -26,9 +26,11 @@ La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecuciones de escenari
 >
 >Para obtener más información acerca de la configuración de escenarios, vea [Configurar escenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Vista previa destacada para el artículo completo {#highlighted-preview-article-level}
+Vista previa resaltada para el artículo completo {#highlighted-preview-article-level}
 
-<span class="preview">La información de esta página hace referencia a una funcionalidad que aún no está disponible de forma general. Solo está disponible en el entorno de vista previa de espacio aislado.</span>## Ver ejecuciones incompletas
+<span class="preview">La información de esta página hace referencia a una funcionalidad que aún no está disponible de forma general. Solo está disponible en el entorno de vista previa de espacio aislado.</span>
+
+## Ver ejecuciones incompletas
 
 Si un módulo encuentra un error durante su operación, se añade una nueva ejecución incompleta a la carpeta Ejecuciones incompletas. Cada ejecución incompleta contiene el modelo del escenario y todos los paquetes que se pueden asignar al módulo fallido. Para abrir la lista de ejecuciones incompletas, haga clic en la pestaña [!UICONTROL Ejecuciones incompletas] de la página de detalles del escenario.
 
@@ -61,7 +63,7 @@ Cuando se almacena una nueva ejecución incompleta, puede resolverla de la sigui
 1. Abra el registro del módulo donde se muestran todas las operaciones del módulo.
 1. Busque la operación fallida y haga clic en **[!UICONTROL Resolver]**:
 
-   ![Botón Resolver](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ Si desea ver el registro de todas las operaciones del módulo antes de intentar 
 1. Abra el registro del módulo donde se muestran todas las operaciones del módulo.
 1. Busque la operación fallida y haga clic en **[!UICONTROL Resolver]**:
 
-   ![Botón Resolver](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## Opciones relacionadas con ejecuciones incompletas
 

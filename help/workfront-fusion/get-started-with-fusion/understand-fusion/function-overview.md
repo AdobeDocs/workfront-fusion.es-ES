@@ -13,7 +13,7 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 59%
@@ -37,14 +37,14 @@ El panel de asignación incluye las siguientes pestañas. Cada pestaña incluye 
 
 | Tipo de funciones | Para obtener más información, consulte lo siguiente: |
 | --- | --- |
-| **Asignar desde otros módulos**<br>![&#x200B; Asignar desde otros módulos](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **Funciones generales**<br>![&#x200B; Funciones generales](assets/toolbar-icon-general-function.png) | [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Funciones matemáticas**<br>![&#x200B; Funciones matemáticas](assets/toolbar-icon-math-functions.png) | [Funciones matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **Funciones de texto y binarias**<br>![&#x200B; Funciones de cadena](assets/toolbar-icon-text-binary-functions.png) | [Funciones de cadena](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **Asignar desde otros módulos**<br>![ Asignar desde otros módulos](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **Funciones generales**<br>![ Funciones generales](assets/toolbar-icon-general-function.png) | [Funciones generales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Funciones matemáticas**<br>![ Funciones matemáticas](assets/toolbar-icon-math-functions.png) | [Funciones matemáticas](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **Funciones de texto y binarias**<br>![ Funciones de cadena](assets/toolbar-icon-text-binary-functions.png) | [Funciones de cadena](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **Fecha y hora** <br> ![Funciones de fecha y hora](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Función de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens para el formato de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens para el análisis de fecha y hora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funciones para trabajar con matrices**<br> ![Funciones de matriz](assets/toolbar-icon-functions-for-arrays.png) | [Funciones de matriz](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![Barra de herramientas de funciones](assets/functions-toolbar-350x189.png)
+![Barra de herramientas de funciones](assets/new-functions-toolbar.png)
 
 ## Funciones personalizadas
 
@@ -52,4 +52,4 @@ Puede crear funciones personalizadas en el área Funciones de Fusion. A continua
 
 Dado que las funciones personalizadas funcionan a través de Adobe App Builder, su organización debe tener una licencia de Adobe App Builder para utilizarlas.
 
-Para obtener información e instrucciones sobre las funciones personalizadas, consulte Asignar datos mediante funciones personalizadas.
+Para obtener información e instrucciones sobre las funciones personalizadas, vea [Asignar datos con funciones personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).

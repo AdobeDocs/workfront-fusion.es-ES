@@ -11,16 +11,20 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 91%
 ---
 # Información general sobre los escenarios
 
 La función de Adobe Workfront Fusion es automatizar sus procesos para que los usuarios no tengan que dedicar tanto tiempo a tareas rutinarias. Funciona vinculando acciones dentro de las aplicaciones y servicios y entre ellos para crear un escenario que transfiera y transforme los datos automáticamente. El escenario que crea ve los datos de una aplicación o servicio y los procesa para proporcionar el resultado deseado.
 
 Un escenario se compone de una serie de módulos que indican cómo se deben transformar los datos dentro de una aplicación o transferirse entre aplicaciones y servicios web.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Información general sobre los elementos del escenario
 
@@ -37,37 +41,37 @@ Un escenario se compone de diferentes elementos. Entender la terminología de es
 
 Un **escenario** es una serie de pasos automatizados creados por el usuario para mover y manipular datos. El término “escenario” hace referencia a todo el grupo de pasos conectados.
 
-![Escenario](assets/entire-scenario-scenario.png)
+![Escenario](assets/new-entire-scenario-scenario.png)
 
 ### Activador
 
 Un escenario comienza con un **activador**. El activador supervisa los datos nuevos y actualizados e inicia el escenario cuando se aplican determinadas condiciones configuradas en el módulo. Los activadores se pueden configurar para que inicie un escenario según una programación (sondeo) o siempre que se produzcan cambios en los datos (instantáneo).
 
-![Activador](assets/scenario-trigger.png)
+![Activador](assets/new-scenario-trigger.png)
 
 ### Módulo
 
 El activador va seguido de una serie de **módulos**. Un módulo representa un solo paso en un escenario que realiza una acción específica. Los módulos se configuran y se encadenan conjuntamente para crear escenarios.
 
-![Módulo](assets/scenario-module.png)
+![Módulo](assets/new-scenario-module.png)
 
 ### Ruta
 
 Un escenario se puede dividir en **rutas**. Una ruta es una sección del escenario que puede utilizarse o no para un paquete determinado de datos. Las rutas se configuran mediante un módulo de enrutador y filtros.
 
-![Ruta](assets/scenario-route.png)
+![Ruta](assets/new-scenario-route.png)
 
 ### Segmento de escenario
 
 Un segmento de escenario es una sección de un escenario que consta de una serie de módulos contiguos que se conectan todos a la misma aplicación. Los segmentos de escenario suelen representar un flujo de trabajo corto en la aplicación.
 
-![Segmento de escenario](assets/scenario-segment.png)
+![Segmento de escenario](assets/new-scenario-segment.png)
 
 ### Conector
 
 Un conector es el conjunto de módulos de una aplicación determinada. Workfront Fusion ofrece conectores a muchas aplicaciones de trabajo comunes, como Workfront, Salesforce y Jira, así como conectores genéricos que se pueden utilizar para cualquier servicio web.
 
-![Conectores](assets/scenario-connectors.png)
+![Conectores](assets/new-scenario-connectors.png)
 
 ## Ejemplos
 
@@ -79,7 +83,7 @@ Workfront Fusion le permite automatizar flujos de trabajo simples o complejos en
 
 En este ejemplo, el escenario se activa cuando un campo especificado cambia en una tarea o problema en Workfront. Cuando se activa, el escenario obtiene información del proyecto relacionado y crea una actualización adaptada para una persona asignada a una función específica en el proyecto.
 
-![Ejemplo de plantilla](assets/fusion-template-example.png)
+![Ejemplo de plantilla](assets/new-fusion-automation-example.png)
 
 +++
 
@@ -95,7 +99,7 @@ Muchas aplicaciones tienen conectores de Workfront Fusion dedicados. Si no hay n
 
 En este ejemplo, el escenario se activa cuando se añade un usuario a una hoja de cálculo de [!DNL Excel]. El escenario comprueba si el usuario está en Workfront. Si no es así, el escenario creará el usuario en Workfront y volverá a añadir su ID de usuario de Workfront a la hoja de cálculo.
 
-![Ejemplo de integración](assets/fusion-integration-example.png)
+![Ejemplo de integración](assets/new-scenario-example-unmarked.png)
 
 Para obtener una lista de conectores dedicados, consulte [Aplicaciones de Fusion y referencias de sus módulos: índice de artículos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
