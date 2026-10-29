@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
-ht-degree: 93%
+source-wordcount: '7804'
+ht-degree: 92%
 ---
 # Módulos de Adobe Workfront
 
@@ -313,6 +313,13 @@ Para obtener más información, consulte la sección [Ejemplos de cargas útiles
 
 Consulte una lista de tipos de objetos de Workfront para los que puede usar este módulo en [Tipos de objetos de Workfront disponibles en cada módulo de Workfront](#workfront-object-types-available-for-each-workfront-module).
 
+>[!NOTE]
+>
+>La detección de duplicados se aplica a las notificaciones que incluyen un encabezado `x-event-id` e identifican su `User-Agent` como `Workfront Event Subscription`.
+>
+>Cuando Fusion recibe una notificación elegible, registra el ID de evento de ese webhook para **una hora**. Si otra notificación con el mismo ID de evento llega al mismo gancho web durante este periodo, Fusion la reconoce sin reenviarla para el procesamiento de escenarios.
+>La detección de duplicados es específica para cada webhook. El mismo evento se puede procesar de forma independiente mediante diferentes webhooks. La recepción de un duplicado no reinicia el período de una hora.
+
 #### [!UICONTROL Campo de observación]
 
 Este módulo de activador ejecuta un escenario cuando se actualiza un campo que se haya especificado. El módulo devuelve el valor antiguo y el nuevo del campo especificado. Puede asignar esta información en módulos subsiguientes en el escenario.
@@ -403,7 +410,7 @@ Consulte una lista de los tipos de objetos de Workfront para los que puede usar 
 
 * [Convertir objeto](#convert-object)
 * [Crear un registro](#create-a-record)
-* [Llamada de API personalizada](#custom-api-call)
+* [Llamada API personalizada](#custom-api-call)
 * [Eliminar registro](#delete-record)
 * [Descargar documento](#download-document)
 * [Obtener una URL de archivo con firma previa](#get-a-presigned-file-url)
@@ -532,7 +539,7 @@ Consulte una lista de tipos de objetos de Workfront para los que puede usar este
 >
 >   Para resolver los usuarios que se añadieron en un lote grande, puede añadir el lote de usuarios directamente a Adobe Admin Console.
 >
->   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
+>   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
 
 <!--
 
@@ -622,19 +629,19 @@ Al configurar este módulo, se muestran los campos siguientes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte los <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP en Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada API. Para obtener más información, consulte los <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP en Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar. Determina el tipo de contenido de la petición.</p> <p>Por ejemplo:<code> {"Content-type":"application/json"}</code></p> <p>Nota: Si obtiene errores y le resulta difícil determinar su origen, considere modificar los encabezados basándose en la documentación de Workfront. Si su llamada de API personalizada devuelve un error de petición HTTP 422, intente utilizar un encabezado <code>"Content-Type":"text/plain"</code>.</p> </td> 
+   <td> <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar. Determina el tipo de contenido de la petición.</p> <p>Por ejemplo:<code> {"Content-type":"application/json"}</code></p> <p>Nota: Si obtiene errores y le resulta difícil determinar su origen, considere modificar los encabezados basándose en la documentación de Workfront. Si su llamada API personalizada devuelve un error de petición HTTP 422, intente utilizar un encabezado <code>"Content-Type":"text/plain"</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Añada la consulta para la llamada de API en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"name":"something-urgent"}</code></p> <p>Sugerencia: Le recomendamos que envíe información a través del cuerpo de JSON en lugar de como parámetros de consulta.</p> </td> 
+   <td> <p>Añada la consulta para la llamada API en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"name":"something-urgent"}</code></p> <p>Sugerencia: Le recomendamos que envíe información a través del cuerpo de JSON en lugar de como parámetros de consulta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -1055,7 +1062,7 @@ Workfront acaba de lanzar una nueva versión de su servicio de suscripción a ev
 
 Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 
-Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2371,7 +2378,7 @@ Los filtros en las suscripciones de evento le permiten asegurarse de que los esc
 >
 >   Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 >
->   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+>   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 El módulo de Workfront [!UICONTROL Ver eventos] activa escenarios basados en un webhook que crea una suscripción a eventos en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 
