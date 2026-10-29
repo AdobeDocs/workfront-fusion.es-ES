@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 64%
 ---
 # Actualización de un módulo a una nueva versión
@@ -74,7 +74,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 ## Actualización de un módulo que no sea de Workfront a una nueva versión
 
 1. Haga clic en el icono **Actualizar módulo** ![Actualizar icono](assets/upgrade-icon.png) del módulo en el que desee actualizar a una nueva versión.
-   ![Icono de actualización](assets/update-indicator.png)
+   <!--![Update icon](assets/update-indicator.png)-->
 1. Haga clic en **Elegir nuevo**.
 1. Seleccione el módulo que desea reemplazar al módulo anterior.
 1. Configure el módulo con los mismos ajustes que el módulo existente.

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 19%
+source-wordcount: '942'
+ht-degree: 11%
 ---
 # Añadir un filtro a un escenario
 
@@ -26,6 +26,10 @@ Puede añadir un filtro entre dos módulos y comprobar si los paquetes recibidos
 
 * Si es así, los paquetes pasan al siguiente módulo del escenario.
 * Si no es así, el procesamiento de los paquetes finaliza.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Requisitos de acceso
 
@@ -60,7 +64,37 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Debe agregar ambos módulos a un escenario para poder agregar un filtro entre ellos.
 
-## Añada un filtro entre dos módulos:
+## Añadir un filtro entre dos módulos
+
+* [Añadir un filtro entre dos módulos en la nueva experiencia (recomendado)](#add-a-filter-between-two-modules-in-the-new-experience-recommended)
+* [Añada un filtro entre dos módulos en la experiencia clásica](#add-a-filter-between-two-modules-in-the-classic-experience)
+
+### Añadir un filtro entre dos módulos en la nueva experiencia (recomendado)
+
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desea agregar un filtro.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic con el botón izquierdo en la ruta entre los módulos donde desee añadir un filtro.
+
+   La ventana **[!UICONTROL Configurar un filtro]** se abre directamente. (Al hacer clic con el botón secundario en la ruta, se abre un menú diferente.)
+
+1. En el cuadro que se muestra, escriba una **[!UICONTROL Etiqueta]** para el filtro.
+1. Defina el filtro **[!UICONTROL Condición]**.
+
+   Introduzca el campo por el que desea filtrar en el primer campo, el operador y (si es necesario) el valor con el que desea comparar el campo.
+
+   >[!TIP]
+   >
+   >Puede introducir valores en los campos de filtro desde el panel de asignación
+   >Para obtener más información sobre la asignación, vea [Asignar información de un módulo a otro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+   Por ejemplo, si desea que el filtro pase archivos en Adobe Workfront que terminen con XML, debe introducir **[!UICONTROL Nombre de archivo]** en el primer cuadro y .**[!UICONTROL xml]** en el segundo cuadro. En el menú desplegable que hay entre ellos, debe seleccionar **[!UICONTROL Finaliza con (sin distinción de mayúsculas y minúsculas)]**. Este filtro se aplicaría a los paquetes entrantes del primer módulo (Workfront). Solo los paquetes que contengan archivos XML pasarán al siguiente módulo.
+
+   ![Configurar un filtro](assets/new-filter-setup-xml-example.png)
+
+1. Haga clic en **[!DNL OK]**.
+
+### Añada un filtro entre dos módulos en la experiencia clásica
 
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar un filtro.
@@ -86,6 +120,22 @@ Debe agregar ambos módulos a un escenario para poder agregar un filtro entre el
 
 Puede copiar un filtro existente y pegarlo en cualquier otra parte del escenario.
 
+* [Copiar un filtro en la nueva experiencia (recomendado)](#copy-a-filter-in-the-new-experience-recommended)
+* [Copia de un filtro en la experiencia clásica](#copy-a-filter-in-the-classic-experience)
+
+### Copiar un filtro en la nueva experiencia (recomendado)
+
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desea agregar un filtro.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic con el botón derecho en la ruta entre los módulos donde se encuentra el filtro.
+1. Seleccione **Copiar filtro**.
+1. Haga clic con el botón derecho en la ruta entre los módulos en los que desee pegar el filtro.
+1. Seleccione **Pegar filtro**.
+1. (Opcional) Para ajustar el filtro, haga clic en el icono o etiqueta del filtro e introduzca los valores tal como se describe en [Agregue un filtro entre dos módulos en la nueva experiencia](#add-a-filter-between-two-modules-in-the-new-experience-recommended) de este artículo.
+
+### Copia de un filtro en la experiencia clásica
+
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar un filtro.
 1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
@@ -93,7 +143,7 @@ Puede copiar un filtro existente y pegarlo en cualquier otra parte del escenario
 1. Seleccione **Copiar filtro**.
 1. Haga clic con el botón derecho en los puntos de conexión entre los módulos en los que desea pegar el filtro.
 1. Seleccionar el filtro **Pegar**
-1. (Opcional) Para ajustar el filtro, haga clic en el icono o etiqueta del filtro e introduzca los valores como se describe en [Agregue un filtro entre dos módulos](#add-a-filter-between-two-modules) en este artículo.
+1. (Opcional) Para ajustar el filtro, haga clic en el icono o etiqueta del filtro e introduzca los valores como se describe en [Agregue un filtro entre dos módulos en la experiencia clásica](#add-a-filter-between-two-modules-in-the-classic-experience) en este artículo.
 
 
 

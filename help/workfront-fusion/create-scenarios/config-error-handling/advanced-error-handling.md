@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 21%
+source-wordcount: '950'
+ht-degree: 19%
 ---
 # Añadir filtrado y anidamiento a las rutas de gestión de errores
 
 Puede añadir técnicas avanzadas de gestión de errores a la ruta de gestión de errores incluyendo el filtrado y el anidamiento.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Requisitos de acceso
 
@@ -74,7 +78,13 @@ Para obtener información sobre cómo Fusion evalúa y procesa varios tipos de d
 
 ### Ejemplo: Control de errores con filtros
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>Este ejemplo utiliza el editor de escenarios clásico.
 
 Este escenario de ejemplo muestra cómo funcionan estos filtros para la administración de errores.
 
@@ -122,7 +132,13 @@ A continuación, la directiva Resume proporciona la ruta Folder como salida para
 
 Las rutas de controladores de errores se pueden crear y configurar en todos los módulos, excepto en los enrutadores. Por lo tanto, puede crear una ruta de controladores de errores para un módulo que ya forme parte de una ruta de controladores de errores existente.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>Este ejemplo utiliza el editor de escenarios clásico.
 
 Ejemplo:
 

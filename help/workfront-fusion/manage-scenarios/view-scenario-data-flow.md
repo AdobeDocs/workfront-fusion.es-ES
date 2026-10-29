@@ -11,22 +11,38 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '392'
+ht-degree: 27%
 ---
 # Ver el flujo de datos en un escenario en ejecución
 
 Puede ver un escenario en ejecución para ver cómo fluyen los datos a través de él.
 
-Mientras se ejecuta un escenario, el módulo activo se marca con un anillo de crecimiento alrededor del módulo. El anillo solo muestra que el módulo se está ejecutando, no su progreso. Los módulos que se ejecutan rápidamente pueden mostrar solo una pequeña parte del anillo.
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
-![Anillo alrededor del módulo](assets/ring-around-module.png)
+Mientras se ejecuta un escenario, el módulo activo se marca con un anillo giratorio en el icono del módulo en la nueva experiencia o con un anillo de crecimiento alrededor del módulo en la experiencia clásica. El anillo solo muestra que el módulo se está ejecutando, no su progreso. Los módulos que se ejecutan rápidamente pueden mostrar solo una pequeña parte del anillo.
+
+Nueva experiencia
+
+![Anillo giratorio en el icono del módulo en la nueva experiencia](assets/new-spinning-icon.png)
+
+Experiencia clásica
+
+![Módulo circular en la experiencia clásica](assets/ring-around-module.png)
 
 Una vez ejecutado el módulo, aparecerá un indicador de salida.
 
-![Indicador de salida](assets/data-flow-output.png)
+Nueva experiencia
+
+![Indicador de salida en la nueva experiencia](assets/new-output-indicator.png)
+
+Experiencia clásica
+
+![Indicador de salida en la experiencia clásica](assets/data-flow-output.png)
 
 Si el módulo procesa más de un paquete, el anillo aparece para cada paquete procesado y el indicador de salida cuenta para cada paquete que genera.
 
@@ -65,6 +81,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea ver el flujo de datos.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
 1. Si el escenario no se está ejecutando, actívelo o haga clic en **Ejecutar una vez** para iniciarlo.
 1. Seleccione la ejecución que desea ver en la sección Actualmente en ejecución del panel Historial de ejecuciones.
 

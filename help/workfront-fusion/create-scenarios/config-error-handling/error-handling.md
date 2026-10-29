@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 21%
+source-wordcount: '1677'
+ht-degree: 16%
 ---
 # Añadir la gestión de errores
 
@@ -39,6 +39,10 @@ Para obtener más información acerca de las directivas de control de errores, c
 >
 >Workfront Fusion admite la gestión de errores en el nivel de ruta, lo que permite definir la lógica de gestión de errores una vez por ruta, en lugar de adjuntar controladores de error a cada módulo individual.
 >Debido a que la gestión de errores en el nivel de ruta es una forma más escalable, coherente y arquitectónicamente limpia de administrar errores, especialmente en automatizaciones avanzadas de varias ramas, recomendamos utilizar la gestión de errores en el nivel de ruta como práctica recomendada.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Requisitos de acceso
 
@@ -88,9 +92,9 @@ Los errores se gestionan mediante la siguiente jerarquía:
 
 ### Ejemplo
 
-Consideremos el siguiente escenario de ejemplo:
+Considere el siguiente escenario de ejemplo, que se muestra aquí en la vista compacta para facilitar la lectura:
 
-![Ejemplo de escenario que muestra rutas y controladores de errores](assets/error-handling-route-example-with-numbers.png)
+![Ejemplo de escenario que muestra rutas y controladores de errores](assets/new-error-handler-examples-with-numbers.png)
 
 1. Este módulo tiene un controlador de errores. Cualquier error en este módulo se gestiona mediante la directiva Commit.
 1. Este módulo no tiene un controlador de errores. Si este módulo encuentra un error, el controlador del enrutador que creó la ruta del módulo lo controla. Cualquier error en este módulo se gestiona mediante la directiva Rollback.
@@ -113,7 +117,41 @@ Puede agregar un controlador de error a un módulo o a un enrutador.
 
 ### Añadir un controlador de error a un módulo
 
-Para agregar un controlador de error a un módulo:
+* [Añadir un controlador de error a un módulo en la nueva experiencia (recomendado)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [Añadir un controlador de error a un módulo en la experiencia clásica](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### Añadir un controlador de error a un módulo en la nueva experiencia (recomendado)
+
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desea agregar una ruta de control de errores.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic con el botón derecho en el módulo después del cual desea agregar una ruta de controlador de error y seleccione **[!UICONTROL Agregar controlador de error]**:
+
+   ![Agregar controlador de error en el menú](assets/new-add-error-handler-in-menu.png)
+
+   Se agrega una ruta de controlador de error al módulo. Si el módulo es el último módulo de una ruta, el controlador de errores le sigue directamente. Si el módulo tiene más módulos después, se agrega una ruta de controlador de error independiente.
+
+   El módulo de gestión de errores muestra una lista de directivas, así como las aplicaciones que se utilizan en su escenario.
+
+   ![Directivas de gestión de errores](assets/new-error-handling-directives.png)
+
+1. Seleccione una de las directivas.
+
+   O
+
+   Añada uno o más módulos a la ruta del controlador de errores.
+
+   Si agrega más módulos a la ruta, la directiva Ignore se aplica de forma predeterminada. Si hay un error, se procesan los módulos posteriores de esa ruta.
+
+   Para obtener más información sobre directivas, consulte [Directivas de administración de errores](#error-handling-directives) en este artículo.
+
+1. (Opcional) Añada un filtro a la ruta de gestión de errores. Para obtener instrucciones, vea [Agregar filtrado y anidamiento a rutas de control de errores](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Una ruta de controladores de error está marcada con una línea de puntos con una etiqueta roja **[!UICONTROL Controlador de errores]**.
+
+#### Añadir un controlador de error a un módulo en la experiencia clásica
 
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar una ruta de control de errores.
@@ -145,6 +183,40 @@ Para agregar un controlador de error a un módulo:
 >Tenga en cuenta que una ruta del controlador de errores está compuesta por círculos transparentes, mientras que una ruta normal está compuesta por círculos sólidos.
 
 ### Añadir un controlador de error a un enrutador
+
+* [Añadir un controlador de error a un enrutador en la nueva experiencia (recomendado)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [Añadir un controlador de error a un enrutador en la experiencia clásica](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### Añadir un controlador de error a un enrutador en la nueva experiencia (recomendado)
+
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desea agregar una ruta de control de errores.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic con el botón derecho en el enrutador donde desee agregar una ruta de controladores de error y seleccione **[!UICONTROL Agregar controlador de error]**.
+
+   Se agrega una ruta de controlador de error al enrutador.
+
+   El módulo de gestión de errores muestra una lista de directivas, así como las aplicaciones que se utilizan en su escenario.
+
+   ![Directivas de gestión de errores](assets/new-error-handling-directives.png)
+
+1. Seleccione una de las directivas.
+
+   O
+
+   Añada uno o más módulos a la ruta del controlador de errores.
+
+   Si agrega más módulos a la ruta, la directiva Ignore se aplica de forma predeterminada. Si hay un error, se procesan los módulos posteriores de esa ruta.
+
+   Para obtener más información sobre directivas, consulte [Directivas de administración de errores](#error-handling-directives) en este artículo.
+
+1. (Opcional) Añada un filtro a la ruta de gestión de errores. Para obtener instrucciones, vea [Agregar filtrado y anidamiento a rutas de control de errores](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Una ruta de controladores de error está marcada con una línea de puntos con una etiqueta roja **[!UICONTROL Controlador de errores]**.
+
+#### Añadir un controlador de error a un enrutador en la experiencia clásica
 
 1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
 1. Seleccione el escenario en el que desea agregar una ruta de control de errores.

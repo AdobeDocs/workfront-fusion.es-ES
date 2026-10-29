@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 28%
 ---
 # Información general de los detalles del escenario
@@ -59,11 +59,11 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
    O
 
-   Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. En la página que se muestra, puede revisar los elementos que se enumeran en la siguiente tabla:
 
-   ![Detalle del escenario](assets/scenario-detail-350x207.png)
+   ![Detalle del escenario](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
       <td role="rowheader">[!UICONTROL Options]</td> 
       <td> <p>Este menú le proporciona opciones adicionales sin tener que abrir el editor de escenarios. Se incluyen:</p> 
        <ul> 
+        <li>[!UICONTROL Desbloquear ejecución]</li> 
         <li>[!UICONTROL Programación]</li> 
         <li>[!UICONTROL Cambiar nombre]</li> 
         <li>[!UICONTROL Clone]</li> 
+        <li>[!UICONTROL Clonar como plantilla]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 

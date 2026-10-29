@@ -10,15 +10,15 @@ exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
 TQID: https://experienceleague.adobe.com/V3cpVf8NzJdGjSZvPA0Hy0Uui-zSdd986plS1Us0oNI
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 513
-ht-degree: 53%
-
+source-wordcount: '905'
+ht-degree: 39%
 ---
-
 # Añadir un webhook a un escenario básico
 
 Los webhooks, también conocidos como déclencheur instantáneos, son un tipo específico de módulo de déclencheur que puede iniciar un escenario cada vez que se realice un cambio, en lugar de hacerlo en una programación determinada.
@@ -26,6 +26,10 @@ Los webhooks, también conocidos como déclencheur instantáneos, son un tipo es
 En este ejemplo, agregará un webhook para iniciar un escenario en cuanto se haya enviado una solicitud a una cola de solicitudes específica. A continuación, el escenario convertirá esas solicitudes en un proyecto.
 
 En este ejemplo se modifica el escenario que se creó en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 ## Requisitos de acceso
 
@@ -60,10 +64,67 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 Es necesaria la creación del escenario descrito en [Crear un escenario básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir con este procedimiento.
 
-## Agregar y configurar el webhook
+## Agregar y configurar el gancho web en la nueva experiencia (recomendado)
 
+* [Añadir el módulo webhook](#add-the-webhook-module)
+* [Actualización del segundo módulo](#update-the-second-module)
+* [Prueba y activación](#test-and-activate)
 
 ### Añadir el módulo webhook
+
+1. Abra el escenario en el editor de escenarios.
+1. Haga clic con el botón derecho en el primer módulo y seleccione **[!UICONTROL Eliminar módulo]**.
+
+   El módulo se eliminará y quedará un marcador de posición en blanco.
+
+1. Haga clic en el módulo en blanco para abrir la lista de aplicaciones y servicios.
+
+   ![Selector de aplicaciones y servicios](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. Seleccione **Adobe Workfront**.
+1. Seleccione **Ver eventos**.
+1. Haga clic en **Añadir** junto al campo Webhook.
+1. en el campo Tipo de registro, seleccione **Problema**, de modo que el módulo se almacenará en déclencheur para los cambios en los problemas.
+1. En el campo Estado, seleccione **Nuevo estado**. Este es un campo obligatorio que se utiliza para el filtro, que este ejemplo no cubre.
+1. En el campo Origen de registro, seleccione **Solo nuevo registro**. Esto permite que el escenario entre en déclencheur cuando se agrega un problema, no cuando se actualiza o elimina uno.
+1. Haga clic en **Guardar** para guardar la configuración del módulo.
+
+### Actualización del segundo módulo
+
+1. Abra el escenario.
+1. Haga clic en el módulo **Convertir objeto** para abrirlo.
+1. En el campo ID del problema, elimine el bloque de ID negro. El bloque es negro porque el módulo desde el que se asignó ya no está disponible.
+1. Seleccione el bloque de ID bajo el primer módulo (Ver eventos) para asignarlo al segundo módulo.
+1. Haga clic en **Aceptar**.
+
+### Prueba y activación
+
+1. Haga clic en el icono **[!UICONTROL Ejecutar una vez]**.
+
+   Ejecutar una vez solo es un icono en la nueva experiencia. Pase el ratón sobre el icono para ver la información sobre herramientas **[!UICONTROL Ejecutar una vez]**.
+
+   ![botón de escenario de ejecución](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+   El escenario debe estar en ejecución para poder ver la nueva solicitud.
+1. Vaya al entorno de Workfront al que se conecte Fusion y añada un problema.
+
+   El escenario debería ejecutarse.
+1. Examine el resultado para asegurarse de que el escenario se ejecutó según lo esperado.
+1. Cuando esté seguro de que el escenario funciona según lo esperado, haga clic en el botón **Programando** para **Activado**.
+
+   Esto activará el escenario.
+
+   ![Alternancia de programación](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Haga clic en el icono **Guardar** ![Guardar icono](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) en el área de Controles para guardar su progreso en el escenario.
+
+## Añadir y configurar el webhook en la experiencia clásica
+
+* [Añada el módulo webhook (clásico)](#add-the-webhook-module-classic)
+* [Actualizar el segundo módulo (clásico)](#update-the-second-module-classic)
+* [Probar y activar (clásico)](#test-and-activate-classic)
+
+### Añada el módulo webhook (clásico)
 
 1. Abra el escenario en el editor de escenarios.
 1. Haga clic con el botón derecho en el primer módulo y seleccione **Eliminar módulo**.
@@ -78,7 +139,7 @@ Es necesaria la creación del escenario descrito en [Crear un escenario básico]
 1. En el campo Origen de registro, seleccione **Solo nuevo registro**. Esto permite que el escenario entre en déclencheur cuando se agrega un problema, no cuando se actualiza o elimina uno.
 1. Haga clic en **Guardar** para guardar la configuración del módulo.
 
-## Actualización del segundo módulo
+### Actualizar el segundo módulo (clásico)
 
 1. Abra el escenario.
 1. Haga clic en el módulo **Convertir objeto** para abrirlo.
@@ -86,9 +147,7 @@ Es necesaria la creación del escenario descrito en [Crear un escenario básico]
 1. Seleccione el bloque de ID bajo el primer módulo (Ver eventos) para asignarlo al segundo módulo.
 1. Haga clic en **Aceptar**.
 
-
-
-### Prueba y activación
+### Probar y activar (clásico)
 
 1. Haga clic en **[!UICONTROL Ejecutar una vez]** en la esquina inferior izquierda del editor de escenarios.
 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 63%
+source-wordcount: '987'
+ht-degree: 59%
 ---
 # Ver el historial de ejecuciones de un escenario
 
@@ -26,7 +26,13 @@ Un evento de escenario es una modificación del escenario, como editarlo, activa
 
 >[!NOTE]
 >
->El historial de un escenario muestra todas las ejecuciones de un escenario durante los últimos 30 días.
+>* El historial de un escenario muestra todas las ejecuciones de un escenario durante los últimos 30 días.
+>* En la nueva experiencia, el editor de escenarios también tiene un panel Historial de ejecución. Muestra el estado, la duración, las operaciones y el tamaño de los datos de cada ejecución. Aquí puede:
+>
+>   * Filtrar por estado
+>   * Buscar eventos
+>   * Use **Anterior** y **Siguiente** para moverse entre ejecuciones sin volver a la lista de ejecución
+>   * Seleccione un evento para centrar y resaltar el módulo coincidente en el lienzo. Cuando los detalles de la operación están disponibles, se abre el panel de solicitud y respuesta para ese evento.
 
 ## Requisitos de acceso
 
@@ -72,7 +78,7 @@ La ficha [!UICONTROL Historial] muestra más detalles de los que están disponib
 
    O
 
-   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/new-exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en **Historial** cerca del nombre del escenario.
    ![ficha de historial](assets/history-tab.png)
@@ -103,7 +109,7 @@ La ficha [!UICONTROL Historial] muestra más detalles de los que están disponib
 
    O
 
-   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
+   Si está trabajando en el escenario en el Editor de escenarios, haga clic en la flecha izquierda ![Salir de la flecha de edición](assets/new-exit-editing-arrow.png) cerca de la esquina superior izquierda de la ventana.
 
 1. Haga clic en la ficha **[!UICONTROL Historial]** en el panel derecho.
 1. (Opcional) Para obtener información detallada sobre la ejecución de un escenario seleccionado, haga clic en la ejecución en el panel derecho.

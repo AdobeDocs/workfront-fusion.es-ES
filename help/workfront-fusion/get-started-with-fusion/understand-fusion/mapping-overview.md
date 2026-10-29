@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 96%
+source-wordcount: '488'
+ht-degree: 75%
 ---
 # Información general sobre la asignación
 
@@ -23,6 +23,10 @@ La asignación es el proceso de asignar los resultados de un módulo a los campo
 La operación de un módulo produce cero, uno o más paquetes como salida. Un paquete consta de uno o más elementos.
 
 Puede asignar estos elementos a campos en módulos posteriores.
+
+>[!NOTE]
+>
+>Workfront Fusion está cambiando el editor de escenarios a una nueva experiencia. Durante esta transición, tanto las experiencias clásicas como las nuevas están disponibles y puede cambiar entre ellas en cualquier momento. Recomendamos utilizar la nueva experiencia. Para obtener más información, consulte [Experiencias nuevas y clásicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) en el artículo Editor de escenarios.
 
 El panel de asignación se muestra al hacer clic en un campo en el que puede insertar un valor generado desde un módulo anterior en un escenario. Aquí puede seleccionar el elemento que desea asignar. Una asignación puede incluir uno o más de los siguientes elementos:
 
@@ -37,15 +41,15 @@ El panel de asignación se muestra al hacer clic en un campo en el que puede ins
 
 Elemento único
 
-![Asignar un solo elemento](assets/map-single.png)
+![Asignar un solo elemento](assets/new-map-single.png)
 
 Varios elementos con texto
 
-![Asignar varios elementos](assets/map-multiple-with-text.png)
+![Asignar varios elementos](assets/new-map-multiple-with-text.png)
 
 Función con varios elementos y texto
 
-![Asignar fórmula con texto](assets/map-formula-with-text.png)
+![Asignar fórmula con texto](assets/new-map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -61,11 +65,11 @@ Para obtener instrucciones sobre la asignación, consulte los artículos en [Asi
 
 Cuando hace clic en un campo donde puede asignar datos, se abre el panel de asignación.
 
-La primera pestaña ![Asignar desde otros módulos](assets/toolbar-icon-functions-you-map-from-other-modules.png) muestra los elementos que puede asignar desde otros módulos.
+La primera pestaña muestra los elementos que puede asignar desde otros módulos.
 
 Las otras pestañas incluyen funciones, operadores y palabras clave que puede utilizar para crear fórmulas. Se ordenan en diferentes pestañas según el tipo de datos que gestionan.
 
-![Panel de asignación](assets/mapping-panel-blank.png)
+![Panel de asignación](assets/new-mapping-panel-blank.png)
 
 
 Para obtener más información sobre las pestañas de función, consulte [Información general sobre la función](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -78,13 +82,13 @@ Algunos elementos pueden contener múltiples valores de diversos tipos. Son elem
 
 Los paquetes de tipo colección muestran `(Collection)` junto a la etiqueta del paquete en la salida del módulo.
 
-![Colección](assets/collection.png)
+![Colección](assets/new-collection.png)
 
 En la mayoría de los casos, se asignan elementos de la colección en lugar de asignar el elemento que representa la colección completa.
 
 Para localizar el elemento de una colección en el panel de asignación, haga clic en la flecha situada junto a la colección.
 
-![Lista desplegable de colecciones](assets/collection-dropdown.png)
+![Lista desplegable de colecciones](assets/new-collection-dropdown.png)
 
 Para obtener más información sobre las colecciones, consulte [Tipos de datos de elementos](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -96,8 +100,8 @@ Algunos elementos pueden contener varios elementos del mismo tipo. Son elementos
 
 Los paquetes de tipo matriz muestran `(Array)` junto a la etiqueta del paquete en la salida del módulo.
 
-En el panel de asignación, las matrices se muestran con corchetes. Puede identificar un elemento de tipo matriz por los corchetes al final de la etiqueta del elemento. Para localizar un elemento de matriz específico en el panel de asignación, haga clic en la flecha situada junto a la matriz.
+En el panel de asignación, las matrices se muestran con corchetes. Puede identificar un elemento de tipo matriz mediante los corchetes que aparecen al final de la etiqueta del elemento. Para localizar un elemento de matriz específico en el panel Asignación, haga clic en la flecha situada junto a la matriz.
 
-![Matriz](assets/array.png)
+![Matriz](assets/new-array.png)
 
 Para obtener información e instrucciones sobre cómo asignar matrices y elementos de matriz, consulte [Asignar matrices y elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
