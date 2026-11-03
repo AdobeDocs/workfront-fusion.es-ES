@@ -11,14 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 16%
+source-wordcount: '953'
+ht-degree: 12%
 ---
 # Ver la ejecución de un escenario específico
 
 Puede ver los detalles de la ejecución de un escenario específico, incluido el filtrado y la búsqueda de eventos de escenario.
+
+También puede ver los detalles de ejecución de los escenarios para cada módulo y filtro.
 
 ## Requisitos de acceso
 
@@ -74,9 +76,13 @@ Puede ver una ejecución desde el historial de escenarios del escenario.
 
 1. Para ver la salida de un módulo, haga clic en la burbuja de detalles de salida cerca del módulo. El número de la burbuja representa el número de paquetes que genera la salida del módulo.
 
+   Para ver paquetes específicos en la salida del módulo, puede utilizar la barra de búsqueda del panel de salida o filtrar paquetes con un estado específico (como Correcto, Advertencia o Fallido).
+
    ![Burbuja de salida cerca de un módulo](assets/new-output-bubble.png)
 
 1. Para ver los paquetes que pasan por un filtro, haga clic en el filtro. El número cerca del filtro representa el número de paquetes que han pasado a través del filtro.
+
+   Para ver paquetes específicos gestionados por el filtro, puede utilizar la barra de búsqueda del filtro o filtrar paquetes con un estado específico (como Aprobado o Fallido).
 1. Para buscar un módulo o evento específico en el panel de ejecución, escriba el término de búsqueda en el cuadro **Buscar eventos de ejecución**. Los resultados aparecen a medida que escribe.
 1. Para limitar los resultados de búsqueda del panel de ejecución por estado, como Correcto o Advertencia, haga clic en el menú desplegable **Filtro de estado** y seleccione el estado.
 
@@ -93,6 +99,23 @@ Puede ver una ejecución desde el historial de escenarios del escenario.
 >`<module-id>` hace referencia al número que hay junto a la etiqueta del módulo cuando visualiza el escenario.
 >
 >Esto puede resultar útil al depurar escenarios o copiar la configuración del módulo.
+
+
+## Examinar el resultado de módulos y filtros
+
+Puede examinar el resultado del escenario para ver si se comportó según lo esperado.
+
+1. Para ver la salida de un módulo, haga clic en la burbuja de detalles de salida cerca del módulo. El número de la burbuja representa el número de paquetes que genera la salida del módulo.
+
+   Para ver paquetes específicos en la salida del módulo, puede utilizar la barra de búsqueda del panel de salida o filtrar paquetes con un estado específico (como Correcto, Advertencia o Fallido).
+
+   ![Burbuja de salida cerca de un módulo](assets/output-bubble.png)
+
+1. Para ver los paquetes que pasan por un filtro, haga clic en el filtro. El número cerca del filtro representa el número de paquetes que han pasado a través del filtro.
+
+   Para ver paquetes específicos gestionados por el filtro, puede utilizar la barra de búsqueda del filtro o filtrar paquetes con un estado específico (como Aprobado o Fallido).
+1. Para buscar un módulo o evento específico en el panel de ejecución, escriba el término de búsqueda en el cuadro **Buscar eventos de ejecución**. Los resultados aparecen a medida que escribe.
+1. Para limitar los resultados de búsqueda del panel de ejecución por estado, como Correcto o Advertencia, haga clic en el menú desplegable **Filtro de estado** y seleccione el estado.
 
 ## Revisar una ejecución en el nuevo editor de escenarios
 
