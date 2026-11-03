@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 849e1bd273945528faba033d8d77a97990e1cda1
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 31%
+source-wordcount: '476'
+ht-degree: 29%
 ---
 # Administrar conexiones
 
@@ -60,21 +60,24 @@ Puede administrar todas las conexiones desde el área Conexiones.
 >Para seleccionar un nuevo equipo, haga clic en la flecha desplegable situada junto al nombre del equipo, en la parte superior de la página. Seleccione un nuevo equipo de la lista.
 
 1. Para abrir el área Conexiones, haga clic en el icono Conexiones ![Conexiones](assets/connections-icon.png) en el panel de navegación izquierdo.
+1. (Opcional) Para cambiar el nombre o editar el de una conexión, haga clic en el nombre y realice el cambio.
+1. Para editar los metadatos de una conexión, haga clic en el campo de metadatos y realice el cambio.
+
+   Los metadatos son un campo de texto o de correo electrónico, basados en el conector. Puede utilizar este campo para incluir información sobre la conexión, lo que resulta útil cuando tiene varias conexiones para el mismo conector.
+1. (Opcional) Para ver qué permisos se concedieron a Workfront Fusion para una conexión, haga clic en el icono Ver ![Ver permisos de conexión](assets/view-connection-permissions.png) para esa conexión.
 1. (Opcional) Para especificar el entorno o el tipo, haga clic en los desplegables Entorno y Tipo y seleccione una opción.
 
    >[!NOTE]
    >
    >El entorno y el tipo solo son para su propia comodidad en la identificación de conexiones. No tienen ningún efecto en la funcionalidad de la conexión.
 
-1. (Opcional) Para ver qué permisos se concedieron a Workfront Fusion para una conexión, haga clic en el icono Ver ![Ver permisos de conexión](assets/view-connection-permissions.png) para esa conexión.
-1. (Opcional) Para cambiar el nombre o editar el de una conexión, haga clic en el nombre y realice el cambio.
-1. (Opcional) Para volver a autorizar una conexión, haga clic en **Volver a autorizar** en la fila correspondiente a esa conexión.
-1. (Opcional) Para comprobar que la conexión con el servicio estaba funcionando, haga clic en **Verificar** en la fila correspondiente a esa conexión.
-1. (Opcional) Para eliminar una conexión, haga clic en **Eliminar** en la fila correspondiente a esa conexión y, a continuación, haga clic en **Realmente?**.
+1. (Opcional) Para volver a autorizar una conexión, haga clic en la conexión y, a continuación, haga clic en **Volver a autorizar** en el banner de la parte inferior de la pantalla.
 
->[!NOTE]
->
->Para utilizar una conexión diferente en los módulos de un escenario, puede copiar una conexión a uno o todos los módulos compatibles de la misma aplicación en el editor de escenarios. Para obtener más información, vea [Buscar y reemplazar variables, orígenes y conexiones en un escenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+   >[!NOTE]
+   >
+   >La reautorización restablece los metadatos al valor predeterminado.
+1. (Opcional) Para comprobar que la conexión al servicio estaba funcionando, haga clic en la conexión y, a continuación, haga clic en **Verificar** en el banner de la parte inferior de la pantalla.
+1. (Opcional) Para eliminar una conexión, haga clic en la conexión y, a continuación, haga clic en **Eliminar** en el banner situado en la parte inferior de la pantalla.
 
 ## Renovación de una conexión
 
