@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 12%
+source-wordcount: '981'
+ht-degree: 11%
 ---
 # Ver la ejecución de un escenario específico
 
@@ -127,7 +127,7 @@ En la nueva experiencia, cuando se abre una ejecución desde el historial de eje
 | Control | Detalles |
 | ---------- | ---------- |
 | Ir al siguiente error o advertencia | Muestra cuántos módulos han tenido problemas en el ciclo actual. Cada clic pasa al siguiente, con errores primero y advertencias después, de izquierda a derecha. Centra el módulo y abre la primera operación fallida. El botón está oculto cuando la ejecución no tuvo errores ni advertencias. |
-| Módulos de búsqueda | Busque un módulo por su nombre y céntrelo en el lienzo. Presione Ctrl+K (Windows) o Comando+K (Mac). |
+| Buscar | Busque un módulo por nombre o ID y céntrelo en el lienzo. Presione Ctrl+K (Windows) o Comando+K (Mac). |
 | Notas | Muestre u oculte las notas del escenario. Este control sólo se muestra cuando el escenario tiene notas y éstas son de sólo lectura. |
 | Explicar flujo | Anime el orden en que se ejecutan los módulos del escenario. Vuelva a hacer clic en él o pulse Esc para detenerlo. |
 | Acercar, alejar, enfocar y minimizar | Trabaje del mismo modo que en el modo de edición. |

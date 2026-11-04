@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 14%
+source-wordcount: '2755'
+ht-degree: 12%
 ---
 # El editor de escenarios
 
@@ -72,6 +72,7 @@ La nueva experiencia incluye lo siguiente:
 * [Seguimiento en directo](/help/workfront-fusion/manage-scenarios/live-trail.md), un panel que muestra un escenario que se ejecuta mientras sucede.
 * Hay varias herramientas para desarrolladores integradas en el editor de escenarios.
 * Registros de depuración temporales, que se pueden activar en la configuración del escenario.
+* Búsqueda que encuentra nombres de módulos, valores asignados, configuraciones de módulos y condiciones de filtro, así como métodos abreviados de teclado para acciones comunes de panel.
 
 Para cambiar entre las experiencias clásica y nueva:
 
@@ -110,6 +111,7 @@ Si no ve la opción, es posible que la nueva experiencia aún no esté disponibl
 * [Preguntar al AI](#ask-ai)
 * [Navegación por lienzo](#canvas-navigation)
 * [Visualización en lienzo](#canvas-display)
+* [Métodos abreviados de teclado](#keyboard-shortcuts)
 
 #### Edición de acciones
 
@@ -148,7 +150,7 @@ Es posible que tenga que hacer clic en el icono de tres puntos del área Control
 | Configuración de escenarios <p>![Icono de configuración de escenario](assets/scenario-settings-icon-new.png)</p> | El panel de configuración de escenario contiene la configuración avanzada del escenario. Para obtener más información acerca de la configuración disponible, vea [Configurar opciones de escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). Los detalles de solicitud y respuesta no se conservan en cada ejecución. Para recopilarlos para las ejecuciones regulares del escenario, active los registros de depuración temporales. Para obtener más información, vea [Registros de depuración temporales](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs). |
 | Notas <p>![Icono de notas](assets/notes-icon-new.png)</p> | Tome notas sobre el escenario. Otros usuarios pueden ver estas notas cuando se encuentren en el escenario. Para obtener más información, vea [Agregar notas a un escenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Alineación automática <p>![Icono de alineación automática](assets/auto-align-icon-new.png)</p> | Alinee automáticamente los módulos en su escenario. |
-| Módulos de búsqueda <p>![Icono de módulos de búsqueda](assets/search-modules-icon-new.png)</p> | Seleccione un módulo de la lista para ir a ese módulo en el escenario de o introduzca un término de búsqueda para localizar un módulo y, a continuación, haga clic en los resultados de búsqueda que se llevarán a ese módulo. Puede buscar por nombre de módulo, ID, tipo o aplicación. |
+| Buscar <p>![Icono de búsqueda](assets/search-modules-icon-new.png)</p> | Abra Buscar (presione **Ctrl + K** en Windows o **⌘K** en Mac). La búsqueda encuentra módulos por nombre o ID. También encuentra cada valor asignado, cada configuración de módulo y cada condición de filtro en el escenario. Cada resultado muestra dónde se encontró la coincidencia, por ejemplo _Asignador · Identificador de aprobación_, con el texto coincidente resaltado. Los filtros se muestran en su propia sección. Para buscar todos los lugares que utilizan un valor, pegue una referencia como `{{1.name}}`. La búsqueda encuentra exactamente esa referencia, pero no `{{21.name}}` ni `{{1.names}}`. Haga clic en un resultado para abrir el módulo o filtro. El campo coincidente se resalta brevemente y se desplaza a la vista. A medida que se desplaza por los resultados del filtro con las teclas de dirección, el lienzo muestra el filtro y los dos módulos que conecta. <!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | Buscar y reemplazar <p>![Icono de buscar y reemplazar](assets/find-and-replace-icon-new.png)</p> | <p>Busque y reemplace variables, fuentes de valores asignadas o conexiones en los módulos del escenario. Utilice las pestañas para:</p><ul><li>Reemplace una variable asignada en todo el escenario o en un módulo.</li><li>Reasignar referencias de un módulo de origen a otro.</li><li>Copie una conexión a uno o todos los módulos compatibles de la misma aplicación.</li></ul><p>El panel obtiene una vista previa de los módulos que se verán afectados antes de realizar el cambio. Seleccione una fila en la vista previa para ir a ese módulo en el lienzo.</p> <p>Para obtener más información, vea [Buscar y reemplazar variables, orígenes y conexiones en un escenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
 | Fragmentos <p>![Icono de fragmentos](assets/snippets-icon-new.png)</p> | <p>Los fragmentos de código son secciones de escenario que se guardan como una unidad. Para crear uno, seleccione los módulos y guárdelos como un fragmento. En el panel Fragmentos de código, puede buscar, etiquetar, obtener una vista previa, fijar, ordenar y arrastrar y soltar fragmentos de código, así como importarlos y exportarlos. Puede compartir fragmentos de código con equipos u organizaciones, o enviar una copia directamente a otro usuario. Los fragmentos compartidos se muestran en su propia pestaña.</p> <p>Para obtener más información, consulte [Guardar y reutilizar secciones de escenarios con fragmentos](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Explicar flujo <p>![Explicar icono de flujo](assets/explain-flow-icon-new.png)</p> | Vea una animación en la que los puntos móviles muestran cómo fluyen los datos por el escenario. |
@@ -208,7 +210,25 @@ El nuevo lienzo también cambia el aspecto de los escenarios mientras trabaja.
 | Detalle de zoom | Los detalles de la tarjeta se muestran al acercar. Cuando aleja el zoom, los módulos simplifican el acceso a los iconos para que pueda seguir viendo todo el escenario. |
 | Pliegue un enrutador | En el modo de edición, puede plegar un enrutador para ocultar sus rutas. Para obtener más información, consulte [Plegar un enrutador](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Modo oscuro | El lienzo sigue la configuración de aspecto oscuro de las preferencias de Adobe, incluidas las tarjetas de módulo, los vínculos, los paneles, los controles y la información de estado. |
-| Panel derecho | La configuración del módulo, la inspección del módulo, el navegador del módulo, Buscar y reemplazar, los fragmentos de código, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) y los detalles de solicitud y respuesta se abren en el mismo panel, a la derecha del lienzo. |
+| Abrir módulo o filtro | Cuando se abre un módulo, el lienzo ya no se mueve. En su lugar, el módulo obtiene un contorno discontinuo móvil. Cuando se abre un filtro, su etiqueta de la conexión obtiene el mismo esquema. El color del contorno coincide con el color del módulo y se ajusta automáticamente para que permanezca visible en los modos claro y oscuro. |
+| Panel derecho | La configuración del módulo, la inspección del módulo, el navegador del módulo, Buscar y reemplazar, los fragmentos de código, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) y los detalles de solicitud y respuesta se abren en el mismo panel, a la derecha del lienzo. </br>Para cambiar el tamaño del panel, arrastre su borde izquierdo para hacerlo más ancho o más estrecho, o haga doble clic en el borde para volver a la anchura predeterminada. Se recuerda su anchura, incluso cuando inicia sesión desde otro explorador. En una pantalla más pequeña, el panel se ajusta automáticamente a la ventana. Cuando un panel está maximizado, no se puede cambiar su anchura. |
+
+#### Métodos abreviados de teclado
+
+Estos métodos abreviados le ayudan a trabajar en los paneles sin mover el mouse.
+
+| Acceso directo (Mac/Windows) | Qué hace |
+| ---------- | ---------- |
+| **⌘Entrar** / **Ctrl + Entrar** | Confirma el panel abierto (igual que **OK**). Funciona mientras escribe. Sin panel abierto, ejecuta el escenario una vez. |
+| **Esc** | Cierra el panel abierto sin guardar. Si el panel de asignación está abierto, solo se cerrará ese panel. |
+| **⌥←** / **⌥→** (Mac), **Alt + ←** / **Alt + →** (Windows) | Confirma el panel y abre el módulo anterior o siguiente. También disponible como los botones **‹ ›** del encabezado del panel. Funciona cuando el cursor no está en un campo de texto. |
+| **⌘Mayús + Intro** / **Ctrl + Mayús + Intro** | Confirma el panel abierto y ejecuta el escenario una vez. No se ejecuta nada si el panel contiene errores. |
+| **⌘K** / **Ctrl + K** | Abre la búsqueda. |
+| **?** | Muestra la lista de todos los métodos abreviados del diseñador de escenarios. También disponible en el menú de tres puntos, en **Métodos abreviados de teclado**. |
+
+* Los paneles anchos muestran un recordatorio de los accesos directos de confirmación y cancelación en la parte inferior.
+* Los botones **Ejecutar una vez** y **Guardar** muestran sus métodos abreviados en la información sobre herramientas.
+* Cuando se desplaza al módulo siguiente o al anterior y está oculto detrás del panel o fuera de pantalla, el lienzo se mueve lo suficiente como para mostrarlo.
 
 ## Uso del editor de escenarios en la experiencia clásica
 
