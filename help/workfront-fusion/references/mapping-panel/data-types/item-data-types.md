@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 70%
+source-wordcount: '616'
+ht-degree: 66%
 ---
 # Tipos de datos de elementos
 
@@ -47,7 +47,7 @@ Para obtener información sobre los tipos de elementos que Workfront Fusion perm
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Fecha</p> </td> 
-   <td> <p>Las fechas se especifican en formato ISO 8601, por ejemplo, <code>2015-09-18T11:58Z</code>. Puede cambiar la zona horaria en la configuración de su perfil. </p> <p>Si hace clic en un campo que requiera una fecha, aparecerá un calendario emergente en la configuración del módulo. No se requiere tiempo para algunos elementos.</p> <p>Los valores de los elementos de fecha se formatean con la zona horaria local y web seleccionada en el perfil. Puede mostrar la versión ISO 8601 del valor de un elemento de fecha pasando el puntero por encima del elemento.</p> <p>Nota: Si no se muestra el valor ISO, es probable que el elemento sea texto, no una fecha.</p> <p>La hora se especifica en el formato <code>hours:minutes:seconds</code>, por ejemplo, <code>14:03:52</code>.</p> </td> 
+   <td> <p>Las fechas se especifican en formato ISO 8601, por ejemplo, <code>2015-09-18T11:58Z</code>. Puede cambiar la zona horaria en la configuración de su perfil. </p> <p>Si hace clic en un campo que requiera una fecha, aparecerá un calendario emergente en la configuración del módulo. No se requiere tiempo para algunos elementos.</p> <p>Los valores de los elementos de fecha se formatean con la zona horaria local y web seleccionada en el perfil. Puede mostrar la versión ISO 8601 del valor de un elemento de fecha pasando el puntero por encima del elemento.</p> <p>Para obtener información sobre la visualización y la administración de la configuración de la zona horaria en su perfil de Fusion, consulte [Ver y administrar zonas horarias](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).</p> <p>Nota: Si no se muestra el valor ISO, es probable que el elemento sea texto, no una fecha.</p> <p>La hora se especifica en el formato <code>hours:minutes:seconds</code>, por ejemplo, <code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Búfer (datos binarios)</p> </td> 

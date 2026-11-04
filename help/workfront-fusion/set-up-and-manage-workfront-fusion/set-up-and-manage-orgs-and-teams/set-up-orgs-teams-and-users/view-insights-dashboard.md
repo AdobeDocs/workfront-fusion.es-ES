@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 5%
 ---
 # Ver el panel de información de una organización
@@ -208,6 +208,7 @@ Utilice el Registro de ejecución para buscar ejecuciones de escenarios que han 
    Para la mayoría de los filtros, puede elegir hacer coincidir solo los valores seleccionados, o todo excepto ellos.
 
 1. Haga clic en una ejecución para ver más detalles sobre su error.
+1. Para obtener una explicación en lenguaje sencillo de un error, pasa el ratón sobre la ejecución fallida y haz clic en **[!UICONTROL Explicar]**. Para obtener más información, consulte [Explicar un error de escenario con IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 1. Para reactivar uno o más escenarios que se desactivaron automáticamente después de errores repetidos, seleccione las ejecuciones y haga clic en **Activar**.
 
    >[!NOTE]
