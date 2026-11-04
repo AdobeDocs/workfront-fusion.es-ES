@@ -13,16 +13,17 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 47%
+source-wordcount: '139'
+ht-degree: 45%
 ---
 # Administrar escenarios: índice de artículos
 
 * [Administrar conexiones](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Activar o desactivar un escenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Depurar un escenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Explicar un error de escenario con IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
 * [Usar Live Trail para revisar la ejecución de un escenario](/help/workfront-fusion/manage-scenarios/live-trail.md)
 * [Buscar y reemplazar variables, orígenes y conexiones en un escenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [Restaurar una versión de escenario](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
