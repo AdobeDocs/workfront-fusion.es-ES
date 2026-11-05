@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
+source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
 workflow-type: tm+mt
-source-wordcount: '7804'
-ht-degree: 92%
+source-wordcount: '7761'
+ht-degree: 90%
 ---
 # Módulos de Adobe Workfront
 
@@ -84,14 +84,15 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 ## Conectar Workfront a Workfront Fusion
 
-El conector de Workfront utiliza OAuth 2.0 para conectarse a Workfront.
-
 Puede crear una conexión a su cuenta de Workfront directamente desde un módulo de Workfront Fusion.
 
-* [Conexión a Workfront mediante el ID de cliente y el secreto de cliente](#connect-to-workfront-using-client-id-and-client-secret)
+Las nuevas conexiones y las conexiones que vuelva a autorizar iniciarán sesión con su cuenta de Adobe (Adobe IMS o inicio de sesión de Experience Cloud). No utilizan una aplicación OAuth2 de Workfront.
+
+* [Conéctese a Workfront con su cuenta de Adobe](#connect-to-workfront-using-your-adobe-account)
+* [Volver a autorizar una conexión existente](#reauthorize-an-existing-connection)
 * [Conexión a Workfront mediante una conexión de servidor a servidor](#connect-to-workfront-using-a-server-to-server-connection)
 
-### Conexión a Workfront mediante el ID de cliente y el secreto de cliente
+### Conéctese a Workfront con su cuenta de Adobe
 
 1. En cualquier módulo de Adobe Workfront, haga clic en **Añadir** junto al campo Conexión.
 1. Rellene los campos siguientes:
@@ -115,32 +116,38 @@ Puede crear una conexión a su cuenta de Workfront directamente desde un módulo
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Introduzca su ID de cliente de Workfront. Esto se puede encontrar en el área Aplicaciones OAuth2 del área Configuración en Workfront. Abra la aplicación específica a la que se está conectando para ver el ID de cliente.</td>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Introduzca el nombre de su instancia, también conocido como su dominio.</p><p>Ejemplo: si su URL es <code>https://example.my.workfront.com</code>, introduzca <code>example</code>.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Introduzca el secreto de cliente de Workfront. Esto se puede encontrar en el área Aplicaciones OAuth2 del área Configuración en Workfront. Si no dispone de un secreto de cliente para la aplicación OAuth2 en Workfront, puede generar otro. Para obtener instrucciones, consulte la documentación de Workfront.</td>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Introduzca el tipo de entorno al que se conectará esta conexión.</p><p>Ejemplo: si su URL es <code>https://example.my.workfront.com</code>, introduzca <code>my</code>.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>Este puede seguir siendo el valor predeterminado, o bien puede introducir la dirección URL de su instancia de Workfront, seguida de <code>/integrations/oauth2</code>. <p>Ejemplo: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL Ámbitos] <i>(Opcional)</i></td>
+        <td>Escriba los ámbitos adicionales para esta conexión. Deje este campo vacío para utilizar los ámbitos predeterminados.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host prefix]</td>
-        <td>En la mayoría de los casos, este valor debe ser <code>origin</code>.
+        <td>En la mayoría de los casos, este valor debe ser <code>origin</code>.</td>
       </tr>
     </tbody>
     </table>
 
 1. Haga clic en **[!UICONTROL Continuar]** para guardar la conexión y volver al módulo.
 
-   Si no ha iniciado sesión en Workfront, se le dirigirá a una pantalla de inicio de sesión. Después de iniciar sesión, puede permitir la conexión.
+   Si no ha iniciado sesión en su cuenta de Adobe, se le redirigirá a la página de inicio de sesión de Adobe. Después de iniciar sesión, puede permitir la conexión.
 
 >[!NOTE]
 >
->* Las conexiones de OAuth 2.0 a la API de Workfront ya no dependen de las claves API.
->* Para crear una conexión con un entorno de zona protegida de Workfront, debe crear una aplicación OAuth2 en ese entorno y, a continuación, utilizar el ID de cliente y el secreto de cliente generados por esa aplicación en la conexión.
+>Las conexiones que creó antes del 5 de noviembre de 2026 siguen funcionando. Para cambiar una conexión existente al inicio de sesión en Adobe, vuelva a autorizarla.
+
+Para volver a autorizar una conexión, consulte [Administrar conexiones](/help/workfront-fusion/manage-scenarios/manage-connections.md).
+
 
 ### Conexión a Workfront mediante una conexión de servidor a servidor
 
@@ -539,7 +546,7 @@ Consulte una lista de tipos de objetos de Workfront para los que puede usar este
 >
 >   Para resolver los usuarios que se añadieron en un lote grande, puede añadir el lote de usuarios directamente a Adobe Admin Console.
 >
->   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
+>   Para obtener instrucciones, consulte [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) en la documentación de Adobe.
 
 <!--
 
@@ -1062,7 +1069,7 @@ Workfront acaba de lanzar una nueva versión de su servicio de suscripción a ev
 
 Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 
-Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2378,7 +2385,7 @@ Los filtros en las suscripciones de evento le permiten asegurarse de que los esc
 >
 >   Para obtener más información sobre la nueva versión de suscripción a eventos, consulte [Versiones de suscripción a eventos](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) en la documentación de Workfront
 >
->   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=es).
+>   Para obtener recursos sobre cómo preservar los escenarios de Workfront Fusion durante la actualización de la suscripción al evento, incluida una grabación del seminario web, consulte [Conservación de los escenarios de Fusion durante la actualización versión 2.0 de las suscripciones a eventos](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 El módulo de Workfront [!UICONTROL Ver eventos] activa escenarios basados en un webhook que crea una suscripción a eventos en la API de Workfront. La suscripción de eventos es un conjunto de datos que determina qué eventos se envían al webhook. Por ejemplo, si configura un módulo [!UICONTROL Ver eventos] que vigila problemas, la suscripción de eventos solo enviará eventos relacionados con los problemas.
 
