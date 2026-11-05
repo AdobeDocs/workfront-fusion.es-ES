@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # Explicar un error de escenario con IA
@@ -27,6 +27,8 @@ Puede explicar los errores en las siguientes áreas de Workfront Fusion:
 >[!NOTE]
 >
 >El botón **[!UICONTROL Explicar]** solo está disponible en el nuevo diseñador de escenarios. No está disponible en el diseñador de escenarios heredado.
+>
+>Su organización debe tener una licencia de IA para utilizar esta función.
 
 ## Requisitos de acceso
 

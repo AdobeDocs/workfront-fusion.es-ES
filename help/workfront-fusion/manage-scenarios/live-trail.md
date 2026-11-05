@@ -6,9 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 94449f8511d7480f1a4fc0ac6e8db9b067977abd
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '539'
 ht-degree: 17%
 ---
 
@@ -58,7 +58,7 @@ Para obtener más información sobre el contenido de esta tabla, consulte [Requi
 
 
 
-La pista activa se abre en el panel situado en el lado derecho del lienzo. Si cierra el panel durante una ejecución, una pequeña pestaña a la derecha de la pantalla le permite abrirlo de nuevo sin perder los eventos capturados.
+La pista activa se abre en el panel situado en el lado derecho del lienzo. Puede cambiar el tamaño del panel arrastrando su borde izquierdo. Si cierra el panel durante una ejecución, una pequeña pestaña a la derecha de la pantalla le permite abrirlo de nuevo sin perder los eventos capturados.
 
 ## Revisar eventos en Live Trail
 

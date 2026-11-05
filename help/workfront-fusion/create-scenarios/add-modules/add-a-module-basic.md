@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # Añadir un módulo a un escenario
@@ -84,7 +84,7 @@ Para obtener más información sobre los módulos de déclencheur, consulte [mó
 
 1. Configure el módulo.
 
-   La configuración del módulo se abre en el panel situado en el lado derecho del lienzo.
+   La configuración del módulo se abre en el panel situado en el lado derecho del lienzo. Puede cambiar el tamaño del panel arrastrando su borde izquierdo.
 
    Para obtener instrucciones sobre cómo configurar módulos específicos, consulte el artículo de las aplicaciones seleccionadas, que se enumeran en [Referencias de aplicaciones Fusion y sus módulos: índice de artículos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -139,7 +139,7 @@ Para obtener más información sobre los módulos de déclencheur, consulte [mó
 
 1. Configure el módulo.
 
-   La configuración del módulo se abre en el panel situado en el lado derecho del lienzo.
+   La configuración del módulo se abre en el panel situado en el lado derecho del lienzo. Puede cambiar el tamaño del panel arrastrando su borde izquierdo.
 
    Para obtener instrucciones sobre cómo configurar módulos específicos, consulte el artículo de las aplicaciones seleccionadas, que se enumeran en [Referencias de aplicaciones Fusion y sus módulos: índice de artículos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -180,7 +180,7 @@ Para obtener más información sobre los módulos de déclencheur, consulte [mó
 
 1. Configure el módulo.
 
-   La configuración del módulo se abre en el panel situado en el lado derecho del lienzo.
+   La configuración del módulo se abre en el panel situado en el lado derecho del lienzo. Puede cambiar el tamaño del panel arrastrando su borde izquierdo.
 
    Para obtener instrucciones sobre cómo configurar módulos específicos, consulte el artículo de las aplicaciones seleccionadas, que se enumeran en [Referencias de aplicaciones Fusion y sus módulos: índice de artículos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

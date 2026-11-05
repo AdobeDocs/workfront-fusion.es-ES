@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 22%
+source-wordcount: '810'
+ht-degree: 21%
 ---
 # Flujo de trabajo para crear un escenario
 
@@ -185,6 +185,10 @@ Puede utilizar los siguientes métodos abreviados del teclado al crear o editar 
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>El nuevo editor de escenarios tiene métodos abreviados de teclado adicionales, incluidos métodos abreviados para confirmar o cerrar paneles, moverse entre módulos y abrir una lista de todos los métodos abreviados. Para obtener más información, consulte [Métodos abreviados de teclado](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts) en el artículo Editor de escenarios.
 
 
 

@@ -18,7 +18,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: dc9c66c09f6df175be6c0b1440b54df80751568b
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 83%
@@ -196,7 +196,7 @@ Este módulo de acción cambia la configuración de permisos de un archivo o car
             <td>[!UICONTROL Permissions]</td>
             <td>
                <p>Establezca los permisos de archivo o carpeta que desee. Utilice los parámetros chmod. Por ejemplo: <code>777 </code> o <code>-rwxrwxrwx</code>.</p>
-               <p>Los permisos deben coincidir con el patrón <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>Los permisos deben coincidir con el patrón <code> /(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>
