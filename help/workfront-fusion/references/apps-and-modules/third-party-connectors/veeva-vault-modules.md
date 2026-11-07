@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 14%
+source-wordcount: '4353'
+ht-degree: 15%
 ---
 # Módulos de Veeva Vault
 
@@ -1153,12 +1153,13 @@ Este módulo devuelve una lista de archivos y carpetas para la ruta de acceso es
 ### Otros
 
 * [Realizar una llamada API personalizada](#make-a-custom-api-call)
+* [Realizar una llamada de API personalizada (heredada)](#make-a-custom-api-call-legacy)
 * [Realización de una consulta VQL](#make-a-vql-query)
 * [Leer registros](#read-logs)
 
 #### Realizar una llamada API personalizada
 
-Este módulo de acción realiza una llamada personalizada a la API de Veeva Vault.
+Este módulo de acción realiza una llamada personalizada a la API de Veeva Vault. Admite varios tipos de cuerpo de solicitud.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1174,7 +1175,7 @@ Este módulo de acción realiza una llamada personalizada a la API de Veeva Vaul
   </tr> 
   <tr> 
    <td role="rowheader">Método</td> 
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Encabezados</td> 
@@ -1182,11 +1183,62 @@ Este módulo de acción realiza una llamada personalizada a la API de Veeva Vaul
   </tr> 
   <tr> 
    <td role="rowheader">Cadena de consulta</td> 
-   <td> <p>Añada la consulta para la llamada de API en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>Añada la consulta para la llamada API en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo de cuerpo</td> 
+   <td> <p>Seleccione el tipo de cuerpo que desea enviar con la solicitud:</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Solicitar contenido</td> 
+   <td> <p>Si utiliza un tipo de cuerpo sin procesar o binario, introduzca o asigne el contenido del cuerpo para la llamada de API.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campos</td> 
+   <td> <p>Si usa un tipo de cuerpo de datos de formulario multiparte o con codificación de dirección URL, o un tipo de cuerpo binario, para cada campo para el que desee agregar datos, haga clic en <b>Agregar elemento</b> e introduzca la clave y el valor del campo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### Realizar una llamada de API personalizada (heredada)
+
+Este módulo de acción realiza una llamada personalizada a la API de Veeva Vault. Este módulo solamente admite el tipo de cuerpo `raw`. Para usar otros tipos de cuerpo, usa el módulo [Realizar una llamada de API personalizada](#make-a-custom-api-call).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar su cuenta de Veeva Vault a Workfront Fusion, consulte <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Conectar Veeva Vault a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Escriba una ruta relativa a <code>baseurl/api/v</code>.  Por ejemplo, <code>/objects/documents</code> No incluya <code>baseurl/api/v/</code>, ya que ya está incluido.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Método</td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de petición HTTP</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Encabezados</td> 
+   <td> <p>Añada los encabezados de la solicitud en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion añade los encabezados de autorización para usted.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Cadena de consulta</td> 
+   <td> <p>Añada la consulta para la llamada API en forma de objeto JSON estándar.</p> <p>Por ejemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Cuerpo</td> 
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
