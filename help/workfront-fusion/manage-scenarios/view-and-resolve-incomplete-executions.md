@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 67%
+source-wordcount: '554'
+ht-degree: 71%
 ---
 # Ver y resolver ejecuciones incompletas
 
@@ -25,10 +25,6 @@ La carpeta [!UICONTROL Ejecuciones incompletas] almacena ejecuciones de escenari
 >De forma predeterminada, el almacenamiento de ejecuciones incompletas está deshabilitado. Para habilitarlo, habilite la opción [!UICONTROL Permitir el almacenamiento de ejecuciones incompletas] en la configuración avanzada del escenario.
 >
 >Para obtener más información acerca de la configuración de escenarios, vea [Configurar escenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
-
-Vista previa resaltada para el artículo completo {#highlighted-preview-article-level}
-
-<span class="preview">La información de esta página hace referencia a una funcionalidad que aún no está disponible de forma general. Solo está disponible en el entorno de vista previa de espacio aislado.</span>
 
 ## Ver ejecuciones incompletas
 
