@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Módulos de Adobe Workfront
 
@@ -2403,11 +2403,11 @@ Los siguientes operadores están disponibles en el filtro Workfront > Ver evento
 * Menor o igual que
 * Contiene
 * Existe
-  * Este operador no requiere un valor y el campo de valor está ausente.
+  * Este operador no requiere un valor, por lo que el campo de valor no se incluye en el filtro.
 * No existe
-  * Este operador no requiere un valor y el campo de valor está ausente.
+  * Este operador no requiere un valor, por lo que el campo de valor no se incluye en el filtro.
 * Cambiado
-  * Este operador no requiere un valor y el campo de valor está ausente.
+  * Este operador no requiere un valor, por lo que el campo de valor no se incluye en el filtro.
   * Este operador ignora el campo Estado.
   * Cuando use `Changed`, seleccione **Solo eventos actualizados** en el campo **Origen del registro**.
 

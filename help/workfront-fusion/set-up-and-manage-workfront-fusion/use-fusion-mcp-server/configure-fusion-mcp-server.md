@@ -1,10 +1,10 @@
 ---
 title: Configuración del servidor MCP de Adobe Workfront Fusion
 description: Conecte Adobe Workfront Fusion a una plataforma independiente de IA compatible con MCP o a Coworker (independiente o en el carril derecho de Fusion).
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: d5861015b3bb0e9c176fcf4fd71db426671764dd
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 1%
+source-wordcount: '1343'
+ht-degree: 8%
 ---
 
 # Configuración del servidor MCP de Adobe Workfront Fusion
@@ -13,9 +13,78 @@ El servidor MCP de Adobe Workfront Fusion le permite trabajar con los escenarios
 
 Para obtener una lista de las herramientas disponibles en el servidor MCP de Adobe Workfront Fusion, consulte [Herramientas del servidor MCP de Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md).
 
-## Plataformas agénticas de IA compatibles
+## Requisitos de acceso
 
-El servidor MCP de Fusion funciona con cualquier plataforma agéntica de IA que admita el Protocolo de contexto de modelo (MCP) y servidores MCP remotos (HTTP transmisible) con OAuth.
++++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Paquete de Adobe Workfront</td> 
+   <td> <p>Cualquier paquete del flujo de trabajo de Adobe Workfront y cualquier paquete de integración y automatización de Adobe Workfront</p><p>Workfront Ultimate</p><p>Paquetes Workfront Prime y Select, con una compra adicional de Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licencias de Adobe Workfront</td> 
+   <td> <p>Estándar</p><p>Trabajo o superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Producto</td> 
+   <td>
+   <p>Si su organización tiene un paquete de Workfront Select o Prime que no incluye la automatización y la integración de Workfront, su organización debe adquirir Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Requisitos previos
+
+Antes de poder conectar Fusion a una plataforma agéntica de IA, debe:
+
+* Tener una licencia activa de Adobe Workfront Fusion y acceso a al menos una organización de Fusion.
+* Tener una función de usuario y funciones de equipo de Fusion que concedan acceso a los datos con los que desee trabajar.
+* Inicie sesión con un Adobe ID (Adobe Identity Management System, IMS).
+* Tener acceso a una plataforma agéntica de IA compatible con MCP o a Coworker.
+
+## Aplicaciones MCP compatibles
+
+El servidor Fusion MCP funciona con las siguientes aplicaciones.
+
+**Aplicaciones de chat**
+
+* Claude antrópico
+* OpenAI ChatGPT
+* Microsoft 365 Copilot
+
+**Herramientas para desarrolladores**
+
+* Código Claude antrópico
+* Cursor
+* Copiloto de GitHub
+* Código VS
+* Códice OpenAI
+* Inspector de MCP, mcp-remote y otras herramientas que utilizan una devolución de llamada local
+
+**Plataformas de automatización e IA**
+
+* Adobe Workfront Fusion
+* Búsqueda por IA de Google Vertex
+* Glean
+* Writer AI Studio
+* Postman
+
+### Limitaciones
+
+* Solo las aplicaciones enumeradas en esta sección pueden conectarse al servidor MCP de Fusion.
+* Las aplicaciones de escritorio y las interfaces de línea de comandos (CLI) funcionan si reciben la devolución de llamada de inicio de sesión en su propio equipo (`localhost`).
+* No puede agregar sus propias aplicaciones. Para solicitar soporte técnico para una nueva aplicación, póngase en contacto con el equipo de Fusion en [fusiondev@adobe.com](mailto:fusiondev@adobe.com).
+
+<!-- BECKY CHECK ME: Other parts of this article might conflict with these limitations. See the comments in the important note below, in the section Connect Fusion to a custom MCP solution, and in the troubleshooting table. -->
 
 >[!NOTE]
 >
@@ -30,44 +99,36 @@ Este artículo explica los pasos de conexión para:
 
 >[!IMPORTANT]
 >
->Si utiliza una plataforma compatible con MCP diferente, como Gemini, Cursor o Código VS, siga la documentación de dicha plataforma para agregar un servidor MCP personalizado. Cuando se le pida la URL del servidor MCP, introduzca:
+>Si utiliza una plataforma compatible con MCP diferente, siga la documentación de esa plataforma para agregar un servidor MCP personalizado. Cuando se le pida la URL del servidor MCP, introduzca:
 >
 >```
 >https://mcp.fusion.adobe.com/mcp
 >```
 
-## Requisitos previos
-
-Antes de poder conectar Fusion a una plataforma agéntica de IA, debe:
-
-* Tener una licencia activa de Adobe Workfront Fusion y acceso a al menos una organización de Fusion.
-* Tener una función de usuario y funciones de equipo de Fusion que concedan acceso a los datos con los que desee trabajar.
-* Inicie sesión con un Adobe ID (Adobe Identity Management System, IMS).
-* Tener acceso a una plataforma agéntica de IA compatible con MCP o a Coworker.
-
 ## Uso de Fusion con Coworker
 
 El compañero es el agente de IA de Adobe. Fusion está integrado en Coworker, por lo que no es necesario introducir una URL de MCP ni registrar una aplicación de OAuth. Puede utilizar Coworker con Fusion en dos lugares:
 
-* [Compañero de trabajo (independiente)](#use-fusion-in-coworker): Trabaje con Fusion junto con sus otras aplicaciones de Adobe.
-* [Colaborador en el carril derecho de Fusion](#use-coworker-in-the-fusion-right-rail): Abra Colaborador en un panel dentro de la interfaz de usuario de Fusion.
+* Compañero (independiente): Trabaje con Fusion junto con sus otras aplicaciones de Adobe.
+* Compañero en el carril derecho de Fusion: Abra Compañero en un panel dentro de la interfaz de usuario de Fusion.
 
 Ambos utilizan las mismas herramientas de Fusion MCP, su Adobe ID y sus permisos de Fusion. La configuración de las herramientas MCP de lectura o escritura se aplica en ambos. Las acciones destructivas, como eliminar, borrar colas o sobrescribir, siempre piden confirmación.
 
 ### Uso de Fusion en Coworker
 
-1. Abra Compañero de trabajo.
-2. Abrir **Personalización** > **Integraciones**
-3. Busque **fusion-mcp** y haga clic en **Probar**.
-4. Si tiene acceso a más de una organización de Fusion, se seleccionará automáticamente. Si es necesario, puede pedir a sus compañeros que cambien de organización más tarde.
+1. Abra Compañero de trabajo. Puede encontrarlo en https://experience.adobe.com/#/coworker.
+1. Abrir **personalizaciones** > **integraciones**
+1. Busque o busque **fusion-mcp** y haga clic en él.
+1. En la ventana que se abre, haga clic en **Probar**.
+1. Si tiene acceso a más de una organización de Fusion, se seleccionará automáticamente. Si es necesario, puede pedir a sus compañeros que cambien de organización más tarde.
 
 ### Uso de Coworker en el carril derecho de Fusion
 
 En Fusion, el compañero se abre en el carril derecho
 
 1. Inicie sesión en Workfront Fusion.
-2. Haga clic en el icono **Compañero** en el carril derecho.
-3. Formule una pregunta en el panel.
+1. Haga clic en el icono **Compañero** en el carril derecho.
+1. Formule una pregunta en el panel.
 
 ### Ejemplos de peticiones
 
@@ -85,17 +146,17 @@ Añada Fusion como conector personalizado.
 > En Claude Team/Enterprise, debe ser el propietario para agregar un conector personalizado. Para obtener más información, consulte [Introducción a los conectores personalizados con MCP remoto](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) en la documentación de Claude.
 
 1. Iniciar sesión en [Claude](https://claude.ai).
-2. En el menú de la izquierda, seleccione **Personalizar**.
-3. Seleccione **Conectores**.
-4. Seleccione **+**, luego **Agregar conector personalizado**.
-5. Introduzca un nombre (por ejemplo, &quot;Workfront Fusion&quot;) y la URL del servidor MCP:
+1. En el menú de la izquierda, seleccione **Personalizar**.
+1. Seleccione **Conectores**.
+1. Seleccione **+**, luego **Agregar conector personalizado**.
+1. Introduzca un nombre (por ejemplo, &quot;Workfront Fusion&quot;) y la URL del servidor MCP:
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-6. Haga clic en **Conectar**.
-7. Iniciar sesión. Seleccione un perfil y una organización de Fusion.
+1. Haga clic en **Conectar**.
+1. Iniciar sesión. Seleccione un perfil y una organización de Fusion.
 
 Para Claude Code, puede agregar el servidor desde la línea de comandos:
 
@@ -110,34 +171,30 @@ Añada Fusion como servidor MCP personalizado.
 ### ChatGPT Desktop o Codex
 
 1. En ChatGPT, abra **Configuración**.
-2. Haga clic en **Complementos**.
-3. Haga clic en **Agregar servidor**.
-4. Escriba un nombre para el servidor.
-5. Para el tipo, seleccione **HTTP transmisible**.
-6. Introduzca la URL del servidor MCP:
+1. Haga clic en **Complementos**.
+1. Haga clic en **Agregar servidor**.
+1. Escriba un nombre para el servidor.
+1. Para el tipo, seleccione **HTTP transmisible**.
+1. Introduzca la URL del servidor MCP:
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-7. Haga clic en **Guardar**.
-8. Haga clic en **Autenticar** para el nuevo servidor e inicie sesión.
-9. Asegúrese de que la opción junto al servidor esté activada.
+1. Haga clic en **Guardar**.
+1. Haga clic en **Autenticar** para el nuevo servidor e inicie sesión.
+1. Asegúrese de que la opción junto al servidor esté activada.
 
 ### ChatGPT en la web
 
 1. Iniciar sesión en [ChatGPT](https://chatgpt.com).
-2. Vaya a [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Es posible que sea necesario habilitar el modo de desarrollador en **Configuración**; en los planes de empresa/empresa, un administrador debe permitir conectores personalizados).
-3. Haga clic en **+**.
-4. Escriba un **Nombre**.
-5. Para **Conexión**, seleccione **URL del servidor** e introduzca la URL del servidor MCP.
-6. Deje **Authentication** establecida en **OAuth**.
-7. Lea el mensaje de riesgo y marque la casilla de verificación.
-8. Haz clic en **Crear** y luego inicia sesión con tu cuenta.
-
-## Conexión de Fusion a una solución MCP personalizada
-
-Si está creando su propia aplicación o agente, conéctese directamente al servidor MCP de Fusion.
+1. Vaya a [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Es posible que sea necesario habilitar el modo de desarrollador en **Configuración**; en los planes de empresa/empresa, un administrador debe permitir conectores personalizados).
+1. Haga clic en **+**.
+1. Escriba un **Nombre**.
+1. Para **Conexión**, seleccione **URL del servidor** e introduzca la URL del servidor MCP.
+1. Deje **Authentication** establecida en **OAuth**.
+1. Lea el mensaje de riesgo y marque la casilla de verificación.
+1. Haz clic en **Crear** y luego inicia sesión con tu cuenta.
 
 ## Cambiar a una organización de Fusion diferente
 
@@ -159,7 +216,7 @@ El agente usa `fusion_orgs_list` y `fusion_orgs_set`. El conmutador solo se apli
 | Verá un mensaje que indica que el acceso a MCP está deshabilitado. | El acceso a MCP está desactivado para su organización de Fusion. | Solicite a su administrador de Fusion que lo habilite. |
 | El agente puede leer escenarios, pero no puede crearlos, ejecutarlos, actualizarlos o eliminarlos. | Las herramientas Escribir MCP están deshabilitadas o la función de su equipo no lo permite. | Pida al administrador de Fusion que habilite las herramientas de escritura o que le otorgue la función de equipo necesaria. |
 | Se ha rechazado la autenticación de aplicación personalizada. | La URL de devolución de llamada no está en la lista autorizada. | Pida al administrador que añada la URL de devolución de llamada exacta. |
-| Fusion no aparece en Coworker o Coworker no aparece en el carril derecho de Fusion. | Función no habilitada para su organización. <!-- BECKY CHECK ME: confirm whether this is the correct admin guidance before publishing. --> | Póngase en contacto con su administrador de Fusion. |
+| Fusion no aparece en Coworker o Coworker no aparece en el carril derecho de Fusion. | Función no habilitada para su organización. | Póngase en contacto con su administrador de Fusion. |
 
 ## Preguntas frecuentes
 
