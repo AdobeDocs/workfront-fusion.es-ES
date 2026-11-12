@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Plantillas de referencia de notas de versión
 
@@ -11,7 +10,7 @@ Plantillas detalladas para cada tipo de página de nota de versión. Se basan en
 `help/quicksilver/product-announcements/product-releases/release-note-templates/` y
 el formato real utilizado en las últimas versiones trimestrales.
 
-&#x200B;---
+---
 
 ## Plantilla de página de área de producto
 
@@ -57,17 +56,15 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
-
 - Si una función se ha eliminado temporalmente, añada una línea después de la fecha:
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
-
 - Los vínculos de ayuda utilizan rutas absolutas que comienzan por `/help/quicksilver/`
 
-&#x200B;---
+---
 
 ## Plantilla de página de información general
 
@@ -144,8 +141,7 @@ Cada sección del área de producto H3 contiene una tabla de HTML. Utilice esta 
 - Celda de característica: etiqueta `<a>` con `class="MCXref xref" xrefformat="{para}"` seguida de descripción `<p>`
 - Los vínculos `href` a la página de área de producto (no es un anclaje específico)
 - Celdas de fecha: agrupadas en `<p>` etiquetas
-- Para los elementos no programados, agregue `<p>[!BADGE Off schedule]{type=Neutral}</p>` después del vínculo
-- Se acepta `<p></p>` vacío después del vínculo cuando no se necesita un distintivo
+- Para los elementos no programados, agregue `<p>[!BADGE Off schedule]{type=Neutral}</p>` como su propio párrafo directamente debajo del párrafo del vínculo, antes del párrafo de descripción. Vacíe `<p></p>` después de que el vínculo sea aceptable cuando no se necesite ningún distintivo
 - Mantener la sangría de HTML coherente con los archivos existentes
 
 ### Información general Secciones finales
@@ -157,7 +153,7 @@ Después de todas las tablas de área de producto:
 
 ### Workfront Fusion enhancements
 
-New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/es/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
+New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
 
 ### Workfront Planning enhancements
 
@@ -183,14 +179,14 @@ There are no updates for the following at this point in the release:
 
 ### Workfront Maintenance Updates
 
-For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=es).
+For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
 
 ### Training updates
 
-Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html?lang=es).
+Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
-&#x200B;---
+---
 
 ## Plantilla de página de aspecto
 
@@ -219,7 +215,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
-&#x200B;---
+---
 
 ## Formatos de llamada de fecha
 
@@ -249,7 +245,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
-&#x200B;---
+---
 
 ## Incoherencias conocidas a tener en cuenta
 

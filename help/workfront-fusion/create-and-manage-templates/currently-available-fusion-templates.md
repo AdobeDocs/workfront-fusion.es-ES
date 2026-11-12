@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
 workflow-type: tm+mt
-source-wordcount: '2436'
-ht-degree: 48%
+source-wordcount: '2732'
+ht-degree: 43%
 ---
 # Plantillas de Adobe Workfront Fusion disponibles actualmente
 
@@ -34,8 +34,6 @@ Para ver las plantillas disponibles, haga clic en el icono **Plantillas** ![Icon
 Estas plantillas automatizan los procesos y flujos de trabajo de Workfront.
 
 ### Workfront: Ajustar Automáticamente La Cronología Del Proyecto Cuando Las Tareas Se Completan Antes
-
-<!--New June 10, 2025-->
 
 Esta plantilla está diseñada para apoyar a las organizaciones que siguen un enfoque más flexible y &quot;planificado sobre la marcha&quot; en lugar de una metodología estricta basada en PMI para la Gestión de Proyectos.
 
@@ -165,13 +163,41 @@ Esta plantilla numera los proyectos secuencialmente. Se supone que ha creado un 
 
 Esta plantilla enumera los problemas secuencialmente. Se supone que ha creado un formulario y un campo personalizados con la plantilla Workfront - Secuential Numbering Series: Create Object Custom Form and Field, pero puede utilizar un formulario y un campo existentes.
 
+### Workfront: Creación de un proyecto con el flujo de trabajo de AEM
+
+[!BADGE Nuevo!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
+
+Esta plantilla crea un proyecto a partir de una plantilla de proyecto y puede crear las carpetas vinculadas de AEM configuradas para la plantilla de proyecto y vincularlas al nuevo proyecto.
+
+>[!TIP]
+>
+>* Las carpetas vinculadas de AEM solo se crean cuando la plantilla de proyecto seleccionada tiene habilitado [flujo de trabajo de AEM](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional) con al menos un árbol de carpetas. Si no es así, el proyecto se crea sin carpetas vinculadas.
+>* Los árboles de carpetas se toman de la plantilla del proyecto cuando se guarda la automatización. Si más adelante agrega o quita árboles de carpetas en la plantilla de proyecto, debe editar y volver a guardar la automatización para incluir los cambios.
+
+### Workfront: crear varios registros
+
+[!BADGE Nuevo!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+Esta plantilla crea uno o varios registros en un tipo de registro, basándose en las opciones de un campo del registro actual.
+
+>[!TIP]
+>
+>* Se crea un registro para cada opción que está presente en el registro actual y tiene una asignación de campo. Las opciones sin asignación se omiten y no se crea ningún registro para ellas.
+>* Para asignar un nombre a los registros creados, asigne un campo de origen al campo principal (nombre) del nuevo tipo de registro. Cada registro recibe el nombre *[nombre del registro actual] valor de opción*. Si no asigna el campo principal, el nombre del registro se deja vacío.
+>* Si ninguno de los registros seleccionados contiene una opción asignada en el campo elegido, no se crea ningún registro y un mensaje le indica qué campo está vacío.
+>* Las opciones de campo y las asignaciones se leen desde el tipo de registro actual al guardar la automatización. Si más adelante agrega o cambia campos u opciones, debe editar y guardar de nuevo la automatización para incluir los cambios.
+
 ## Workfront: plantillas de Workfront Proof
 
 Estas plantillas automatizan los flujos de trabajo que combinan Workfront con Workfront Proof.
 
 ### Workfront > Workfront Proof: cambie la función del usuario de prueba a Solo lectura y bloquee Prueba al cerrar el proyecto
-
-<!--New March 12, 2025-->
 
 Esta plantilla observa los proyectos que se actualizan a estados que equivalen a rechazados, completados o inactivos. A continuación, cambia los usuarios con decisiones de prueba pendiente a Solo lectura. Finalmente, bloquea las Pruebas y envía una actualización a los documentos.
 
@@ -244,7 +270,7 @@ Esta plantilla le permite ver si hay un cambio en una carpeta de SharePoint.
 
 Estas plantillas admiten la integración de Workfront y Anaplan y esperan una configuración específica tanto en Anaplan como en Workfront. Para obtener información sobre estas plantillas y sus configuraciones necesarias, consulte los artículos correspondientes a las plantillas individuales.
 
-Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
+Para obtener más información sobre la integración de Workfront y Anaplan, consulte [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) en la documentación de Workfront.
 
 >[!NOTE]
 >
@@ -252,19 +278,19 @@ Para obtener más información sobre la integración de Workfront y Anaplan, con
 
 ### Flujos de trabajo de optimización de gasto
 
-* [Enviar actualizaciones de proyecto de Adobe Workfront a un elemento de lista  [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Enviar gastos de Adobe Workfront a  [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Enviar actualizaciones de horas reales de Adobe Workfront a un elemento de lista  [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Enviar actualizaciones de proyecto de Adobe Workfront a un elemento de lista  [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Enviar gastos de Adobe Workfront a  [!DNL Anaplan] elemento de lista](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Enviar actualizaciones de horas reales de Adobe Workfront a un elemento de lista  [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Flujos de trabajo para vincular solicitudes de presupuesto
 
-* [Crear  [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Aplicar una asignación de presupuesto  [!DNL Anaplan] a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Crear  [!DNL Anaplan] elemento de lista a partir de una solicitud de presupuesto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Aplicar una asignación de presupuesto  [!DNL Anaplan] a un proyecto de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Flujos de trabajo para vincular solicitudes de campaña
 
-* [Crear  [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Aplicar una asignación de presupuesto  [!DNL Anaplan] a una solicitud o un proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Crear  [!DNL Anaplan] elemento de lista a partir de una solicitud de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Aplicar una asignación de presupuesto  [!DNL Anaplan] a una solicitud o un proyecto de campaña de Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Plantillas Jira
 
