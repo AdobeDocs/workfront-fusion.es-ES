@@ -4,13 +4,11 @@ description: El conector App Builder de Adobe le permite utilizar funciones pers
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 19%
-
+source-wordcount: '754'
+ht-degree: 18%
 ---
-
 # Módulo App Builder de Adobe
 
 Puede crear funciones personalizadas en el área Funciones de Fusion. A continuación, agregue estas funciones a sus escenarios en forma de módulo de Adobe App Builder.
@@ -45,6 +43,62 @@ Dado que las funciones personalizadas funcionan a través de Adobe App Builder, 
 Para obtener más información sobre el contenido de esta tabla, consulte [Requisitos de acceso en la documentación](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
+
+## Creación de una conexión con Adobe App Builder
+
+La conexión utiliza las credenciales de Adobe I/O Runtime de un espacio de trabajo del proyecto de App Builder. Antes de crear la conexión, obtenga estas credenciales de Adobe Developer Console.
+
+### Obtenga sus credenciales de tiempo de ejecución
+
+1. Inicie sesión en [Adobe Developer Console](https://developer.adobe.com/console) con la organización que tenga su licencia de App Builder.
+1. Abra el proyecto de App Builder que contiene sus funciones y, a continuación, seleccione el área de trabajo a la que desea conectarse (por ejemplo, **Producción**).
+1. Haga clic en **Descargar todo** en la esquina superior derecha para descargar el archivo JSON de configuración del área de trabajo.
+1. Abra el archivo y busque la sección `runtime`. Contiene:
+
+   * `namespace`: el valor que se va a escribir en el campo **Espacio de nombres**
+   * `auth`: un valor con formato `username:password`. La parte anterior a los dos puntos es **Username**, y la parte posterior a los dos puntos es **Password**.
+
+   >[!NOTE]
+   >
+   >También puede encontrar el área de nombres y los valores de autenticación ejecutando `aio runtime namespace get` o `aio app use` en la CLI de Adobe I/O.
+
+### Creación de la conexión
+
+1. En el módulo, haga clic en **Agregar** junto al campo **Conexión**.
+1. Rellene los campos siguientes:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Connection name]</td> 
+      <td>Introduzca un nombre para esta conexión.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Environment]</td> 
+      <td>Seleccione si desea conectarse a un entorno de producción o de no producción.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Type]</td> 
+      <td>Seleccione <b>Cuenta de servicio</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Username]</td> 
+      <td>Escriba el nombre de usuario del valor <code>auth</code> del área de trabajo (la parte anterior a los dos puntos).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Password]</td> 
+      <td>Escriba la contraseña del valor <code>auth</code> del área de trabajo (la parte posterior a dos puntos).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Espacio de nombres]</td> 
+      <td>Introduzca el valor <code>namespace</code> de la sección <code>runtime</code> del archivo de configuración de Workspace.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Haga clic en **Continuar** para guardar la conexión.
 
 ## Módulos de Adobe App Builder
 
