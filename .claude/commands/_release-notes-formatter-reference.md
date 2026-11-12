@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Plantillas de referencia de notas de versión
 
@@ -144,8 +143,7 @@ Cada sección del área de producto H3 contiene una tabla de HTML. Utilice esta 
 - Celda de característica: etiqueta `<a>` con `class="MCXref xref" xrefformat="{para}"` seguida de descripción `<p>`
 - Los vínculos `href` a la página de área de producto (no es un anclaje específico)
 - Celdas de fecha: agrupadas en `<p>` etiquetas
-- Para los elementos no programados, agregue `<p>[!BADGE Off schedule]{type=Neutral}</p>` después del vínculo
-- Se acepta `<p></p>` vacío después del vínculo cuando no se necesita un distintivo
+- Para los elementos no programados, agregue `<p>[!BADGE Off schedule]{type=Neutral}</p>` como su propio párrafo directamente debajo del párrafo del vínculo, antes del párrafo de descripción. Vacíe `<p></p>` después de que el vínculo sea aceptable cuando no se necesite ningún distintivo
 - Mantener la sangría de HTML coherente con los archivos existentes
 
 ### Información general Secciones finales

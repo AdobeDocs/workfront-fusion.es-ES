@@ -1,13 +1,11 @@
 ---
 name: release-notes-formatter
 description: Dé formato y valide a las notas de la versión de Workfront para mantener la coherencia, una estructura correcta y una vinculación adecuada. Se utiliza solo para archivos de notas de versiones en directorios de versiones de productos o cuando el usuario menciona notas de versiones, versiones de productos o versiones trimestrales. No lo aplique a artículos de procedimientos o documentación general.
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '1013'
 ht-degree: 2%
-
 ---
-
 
 # Formato de notas de versión
 
@@ -90,16 +88,19 @@ Reglas:
 * [Document enhancements](#document-enhancements)
 ```
 
+- Si una sección de área de producto está comentada, elimine su vínculo de esta lista por completo. No comentar el vínculo.
+
 &#x200B;5. **H3 por área de producto** con tabla de características de HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Dentro de cada tabla, **las características más recientes primero**, la fila más reciente aparece en la parte superior de la tabla (después de la fila de encabezado)
+   - Si una característica tiene un distintivo (como `[!BADGE Off schedule]{type=Neutral}`), colóquela en su propio `<p>` directamente debajo del párrafo del vínculo de característica, antes del párrafo de descripción.
 
 &#x200B;6. **Secciones finales** (H2): Notas de la versión para otras áreas, Actualizaciones del visor de revisión de escritorio, Anuncios, Versión de API, Actualizaciones de mantenimiento, Actualizaciones de formación
 
 ### Paso 3: Validación de vínculos
 
 - **Vínculo de información general en las páginas de área de productos**: Debe señalar al mismo trimestre
-   - Correcto: `26-q2-release-activity/26-q2-release-overview.md`
-   - Incorrecto: `26-q1-release-activity/26-q1-release-overview.md`
+  - Correcto: `26-q2-release-activity/26-q2-release-overview.md`
+  - Incorrecto: `26-q1-release-activity/26-q1-release-overview.md`
 - **Vínculos de anclaje en la descripción general**: Debe coincidir con los ID de H3 (en minúsculas, guiones)
 - **Vínculos de características en tablas de información general**: Debe usar `class="MCXref xref" xrefformat="{para}"`
 - **Vínculos del documento de ayuda**: Debe comenzar con `/help/quicksilver/`
@@ -124,6 +125,9 @@ Aplique estas correcciones al dar formato:
 | Espacios adicionales en las líneas de llamada | Recortar espacio final |
 | HTML en páginas de área de producto | Mantener como marcador (HTML solo sirve para tablas de información general) |
 | Falta `exl-id` | Déjelo fuera, no genere uno |
+| Insignia colocada después de la descripción en una tabla de información general | Moverlo a su propio(a) `<p>` directamente debajo del enlace de características |
+| Vínculo de mini índice a una sección comentada | Quitar el vínculo de la lista; no lo comente |
+| Tabla de mejora en la descripción general sin vínculo de mini índice | Agregue un vínculo a la lista de mejoras de Adobe Workfront en el mismo orden que las tablas |
 
 ### Paso 6: Actualizar el índice
 
@@ -133,9 +137,9 @@ Dónde se agrega:
 
 - La TDC tiene una sección por trimestre bajo un encabezado como `* 2026 Q3 Release {#release-26-q3}`. Si el encabezado del trimestre aún no existe (primera página de un nuevo trimestre), agréguelo por encima del trimestre anterior para que el trimestre más reciente aparezca en la parte superior.
 - Bajo ese encabezado de trimestre, enumere las páginas en este orden:
-   1. **Información general** primero (`Third Quarter 2026 release overview`).
-   2. **Páginas de área de producto** alfabéticamente por nombre de área (Administrador, Documentos, Operaciones de empresa, Proyectos, Informes, Solicitud).
-   3. **Otras mejoras** duran (siempre después de las áreas de producto alfabéticas).
+  1. **Información general** primero (`Third Quarter 2026 release overview`).
+  2. **Páginas de área de producto** alfabéticamente por nombre de área (Administrador, Documentos, Operaciones de empresa, Proyectos, Informes, Solicitud).
+  3. **Otras mejoras** duran (siempre después de las áreas de producto alfabéticas).
 
 Cada entrada del índice es un vínculo de markdown que utiliza el título de página y la ruta absoluta del repositorio:
 
@@ -184,6 +188,8 @@ Cuando revise un archivo de notas de la versión, compruebe:
 - [ ] Las filas de la tabla de características de la descripción general coinciden con el contenido de página del área de producto
 - [ ] No hay vínculos internos rotos
 - [ ] vínculos de anclaje en la descripción general coinciden con los ID de sección H3
+- [ ]: cada tabla de mejoras de la descripción general que no tiene comentarios tiene un vínculo coincidente en la mini TDC, por lo que no se pierden las secciones que se agregan cuando no están comentadas
+- [ ]: la mini tabla de contenido de información general no tiene vínculos a secciones comentadas y los distintivos se encuentran directamente debajo del vínculo de característica
 - [ Las características de ] se ordenan más recientes (tanto páginas de área de productos como tablas de información general)
 - [ ] Las nuevas páginas de notas de la versión se enumeran en `help/quicksilver/TOC.md` en el trimestre correcto, con la descripción general en primer lugar y las áreas de producto en orden alfabético (el otro en último lugar)
 
