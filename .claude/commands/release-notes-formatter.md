@@ -71,7 +71,7 @@ Reglas:
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Cuerpo**: Descripción de la función y después vínculo a la documentación de ayuda
+&#x200B;5. **Cuerpo**: Descripción de la función y después vínculo a la documentación de ayuda
 
 #### Páginas de información general
 
@@ -90,11 +90,11 @@ Reglas:
 
 - Si una sección de área de producto está comentada, elimine su vínculo de esta lista por completo. No comentar el vínculo.
 
-5. **H3 por área de producto** con tabla de características de HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 por área de producto** con tabla de características de HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Dentro de cada tabla, **las características más recientes primero**, la fila más reciente aparece en la parte superior de la tabla (después de la fila de encabezado)
    - Si una característica tiene un distintivo (como `[!BADGE Off schedule]{type=Neutral}`), colóquela en su propio `<p>` directamente debajo del párrafo del vínculo de característica, antes del párrafo de descripción.
 
-6. **Secciones finales** (H2): Notas de la versión para otras áreas, Actualizaciones del visor de revisión de escritorio, Anuncios, Versión de API, Actualizaciones de mantenimiento, Actualizaciones de formación
+&#x200B;6. **Secciones finales** (H2): Notas de la versión para otras áreas, Actualizaciones del visor de revisión de escritorio, Anuncios, Versión de API, Actualizaciones de mantenimiento, Actualizaciones de formación
 
 ### Paso 3: Validación de vínculos
 
