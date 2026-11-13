@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestionar una solicitud de documentación de Fusion desde #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ Si la solicitud, en su lugar, se vincula a una fuente secundaria que no es de co
 ## Paso 2: Crear una rama para la solicitud
 
 Antes de tocar cualquier archivo, cree una nueva rama de Git para esta solicitud y desprotéjala. Rama de la rama predeterminada actual (`main`), no de la rama que esté desprotegida.
+
+Si el usuario ya ha creado y asignado un nombre a la rama, utilícela en lugar de crear una nueva y registre ese nombre en el campo `Documentation Branch` de la tarea en el paso 4.
 
 Asigne un nombre a la rama `becky-{short-kebab-case-description}`, derivada del **Título de característica**; la primera palabra debe ser `becky`, que coincida con la convención de ramas existente de este repositorio (por ejemplo, `becky-webhook-update`, `becky-storage-beta-sos`). Sea breve: unas pocas palabras, no el título completo textualmente.
 
@@ -74,9 +76,12 @@ Campos de tarea:
 | `DE:Preview Date` | la fecha citada en el mensaje original de Slack (la **fecha prevista de lanzamiento** de la solicitud), de forma predeterminada |
 | `taskConstraint` + `constraintDate` | Establezca `taskConstraint` en `MFO` (debe finalizar el) con `constraintDate` = la fecha citada en el mensaje original de Slack (la **fecha de lanzamiento esperada** de la solicitud), por lo que la fecha planificada de finalización de la tarea coincide con ella también. |
 | `DE:Articles to update` | la lista de artículos que ha creado o actualizado para esta solicitud (consulte a continuación) |
+| `DE:Documentation Branch` | el nombre de la rama de git en la que se encuentran los cambios en el documento (consulte a continuación) |
 | Producto/Área | seleccione `Fusion` (un campo de enumeración en el formulario Documentación del producto; confirme el nombre de campo exacto con `insights_search_fields` si alguna vez no está claro) |
 
 `DE:Articles to update` (un campo de texto en el formulario Documentación del producto) enumera todos los archivos de artículo que creó o cambió en el paso 3, una ruta relativa al repositorio por línea (por ejemplo `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Incluya nuevos artículos (agregue `(new)` después de la ruta de acceso) y cualquier archivo de índice o índice que haya editado. Como las ediciones de documentación se producen en el paso 3, la lista se conoce en el momento en que se crea la tarea, por lo que debe configurarse en la misma llamada de creación. Si el usuario le pide que cree la tarea sin realizar ediciones de documento, deje vacío el campo y actualícelo más tarde si se realizan ediciones de documento.
+
+`DE:Documentation Branch` (un campo de texto en el formulario Documentación del producto) contiene el nombre exacto de la rama de Git en la que se encuentran las ediciones de documentación, por ejemplo `becky-explain-errors-with-ai`. Utilice la rama que el usuario nombró o la que está desprotegida en el repositorio que editó; no invente un nombre. Configúrelo en la misma llamada de creación que los demás campos. Si el usuario le pide que cree la tarea sin realizar ediciones de documento y aún no existe ninguna rama, deje el campo vacío y actualícelo más tarde.
 
 Establezca los campos de fecha de vista previa y la fecha planificada de finalización como parte de esta misma llamada de creación: no los deje para más tarde o espere a que se le pregunte. Si el usuario indica una fecha diferente más tarde o indica que la fecha aún no se conoce, actualice en consecuencia, pero de forma predeterminada rellenarla cada vez.
 
@@ -108,6 +113,7 @@ Informe claramente:
 * La rama que ha creado (confirmada localmente, no insertada y sin solicitud de extracción abierta, por el paso 2).
 * Qué archivo(s) de documentación ha cambiado y qué ha añadido.
 * Que los artículos modificados se enumeran en el campo `Articles to update` de la tarea.
+* El nombre de la rama que ingresó en el campo `Documentation Branch` de la tarea.
 * Que los cambios no están confirmados en la rama, a la espera de la revisión del usuario.
 * El nombre y la dirección URL de la tarea.
 * Los valores de campo exactos que haya establecido, incluidos los campos de fecha de vista previa.
@@ -120,4 +126,4 @@ Confirme que estos aún se resuelven en lugar de suponer que son permanentes:
 * El proyecto &quot;Tareas de documentación del producto - para problemas de desarrollo que requieren mensajería&quot; se asigna al ID `5e69583f00236b9f767c3e3944100ee4`
 * La tarea principal &quot;Becky - Tareas del canal Fusion-Documentation&quot; se asigna al ID `6a9b065100003a7554832780c2015e93` (en el mismo proyecto): se resuelve con `insights_find_id_by_name` (entidad `task`) en lugar de codificarse, en caso de que cambie alguna vez
 * El formulario personalizado de documentación del producto (`categoryID`) es `5d7275b9000514604bd969d418725843`
-* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`, `DE:Articles to update`, `DE:Documentation Branch`
