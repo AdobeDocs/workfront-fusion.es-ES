@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 44%
+source-wordcount: '1137'
+ht-degree: 28%
 ---
 # Asignación de un elemento mediante funciones integradas
 
@@ -126,6 +126,64 @@ Para anidar una función:
 1. En el panel de asignación, haga clic en la función anidada. En este ejemplo, esta es la función `trim`.
 1. Continúe configurando la función como desee.
 1. Continúe configurando el módulo o haga clic en **Aceptar**.
+
+### Generación de una expresión con IA
+
+En lugar de escribir la sintaxis de una expresión usted mismo, puede describir lo que desee en lenguaje simple, y AI genera la expresión por usted. Por ejemplo, puede pedir lo siguiente:
+
+* Una estos nombres con una coma.
+* Añada tres días a la fecha de vencimiento.
+
+AI convierte su solicitud en una expresión que utiliza las funciones integradas de Workfront Fusion, por lo que el resultado es legible y fácil de revisar antes de usarla.
+
+Para generar una expresión:
+
+1. Haga clic en la ficha **[!UICONTROL Escenarios]** en el panel izquierdo.
+1. Seleccione el escenario en el que desea asignar datos.
+1. Haga clic en cualquier lugar del escenario para introducir el Editor de escenarios.
+1. Haga clic en el módulo donde desee añadir una expresión y, a continuación, haga clic en el campo.
+
+   Se abrirá el panel de asignación.
+
+1. Haga clic en la ficha **[!UICONTROL Rellenar con IA]** (el icono de la varita mágica) en el panel de asignación.
+
+   ![Rellenar con IA](assets/fill-by-ai-tab.png)
+
+1. En el cuadro **[!UICONTROL Describir qué debe contener]** este campo, describa el resultado que desea en lenguaje sencillo.
+
+   Para agregar un campo de un módulo anterior a la solicitud, haga clic en él en la lista **[!UICONTROL Campos disponibles]**. Para iniciar una nueva línea en el mensaje, presione Mayús+Entrar.
+
+   Por ejemplo, para obtener solo el dominio de una dirección de correo electrónico, puede introducir la siguiente solicitud:
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Haga clic en **[!UICONTROL Generar]**.
+
+   La expresión que genera AI aparece en **[!UICONTROL Expresión sugerida]**.
+
+   ![Expresión sugerida](assets/fill-by-ai-suggested-expression.png)
+
+1. Revise la expresión y realice una de las siguientes acciones:
+
+   * Haga clic en **[!UICONTROL Aplicar]** para insertar la expresión en el campo.
+   * Haga clic en **[!UICONTROL Regenerar]** para que AI genere una expresión diferente.
+
+1. (Opcional) Edite la expresión en el campo si lo desea.
+
+1. Continúe configurando el módulo o haga clic en **[!UICONTROL Aceptar]**.
+
+#### Cómo genera expresiones la IA
+
+Cuando la IA genera una expresión, hace lo siguiente:
+
+* **Utiliza el contexto de su escenario.** AI tiene en cuenta los campos disponibles para asignar, sus tipos, el campo de destino y la configuración regional y de zona horaria.
+* **Valida la expresión.** Antes de que la API devuelva una expresión como correcta, comprueba si hay funciones no admitidas, argumentos que faltan, referencias a campos desconocidos y errores comunes con matrices y fechas.
+* **Corrige y simplifica la expresión.** AI corrige errores de sintaxis comunes y reemplaza las soluciones alternativas reconocidas con funciones integradas.
+* **Intenta de nuevo si la validación falla.** AI utiliza los comentarios específicos de la validación para regenerar la expresión. Si sigue sin poder crear una expresión válida, devuelve un error de borrado en lugar de un resultado no válido.
+
+>[!NOTE]
+>
+>Las expresiones generadas por IA pueden ser incompletas o inexactas. Revise cada expresión y pruebe el escenario antes de confiar en el resultado.
 
 ### Usar funciones de [!DNL Google Sheets]
 
