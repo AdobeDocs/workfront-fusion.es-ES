@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # Información general sobre la asignación
 
@@ -68,6 +68,9 @@ Cuando hace clic en un campo donde puede asignar datos, se abre el panel de asig
 La primera pestaña muestra los elementos que puede asignar desde otros módulos.
 
 Las otras pestañas incluyen funciones, operadores y palabras clave que puede utilizar para crear fórmulas. Se ordenan en diferentes pestañas según el tipo de datos que gestionan.
+
+La ficha **[!UICONTROL Rellenar con IA]** le permite describir en lenguaje sencillo lo que desea que contenga un campo, y AI genera una expresión para usted. Para obtener más información, vea [Generar una expresión con IA](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai).
+
 
 ![Panel de asignación](assets/new-mapping-panel-blank.png)
 
