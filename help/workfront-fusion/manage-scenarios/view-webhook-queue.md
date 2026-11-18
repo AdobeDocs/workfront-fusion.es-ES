@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 1c28e4007e3e9d6503618482002e506f9393ee57
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 47%
+source-wordcount: '590'
+ht-degree: 26%
 ---
 # Ver la cola del webhook
 
@@ -61,12 +61,40 @@ Si un escenario tiene actualmente una cola, se muestra un banner en ese escenari
 
 ![Banner de cola](assets/queue-banner.png)
 
-Para ver la cola de un gancho web:
+La página de cola del gancho web tiene el mismo diseño que las listas de **[!UICONTROL Escenarios]** y **[!UICONTROL Enlaces web]**.
+
+>[!NOTE]
+>
+>La búsqueda y la ordenación sólo se aplican a los eventos cargados actualmente en la tabla, no a toda la cola. Para incluir más eventos, cargue primero eventos adicionales.
+
+Para ver y administrar la cola de un gancho web:
 
 1. Haga clic en **[!UICONTROL webhooks]** en el menú de la izquierda.
 1. Busque el webhook para el que desea ver la cola.
-1. Busque el número de eventos en el botón Eventos recibidos.
+1. Busque la columna Número de eventos de cola completa.
 
    ![Cola de ganchos web](assets/webhook-queue.png)
 
-1. Haga clic en el botón para ver detalles sobre los eventos de la cola.
+1. Haga clic en el botón **Operaciones** para ver los detalles de los eventos en la cola.
+
+   Se abre la página de cola del gancho web. La página enumera los eventos de la cola en una tabla con las columnas siguientes: **[!UICONTROL ID]**, **[!UICONTROL Creado a las]**, **[!UICONTROL Tamaño]** y **[!UICONTROL Detalles]**.
+
+1. (Opcional) Para filtrar los eventos de la tabla, escriba el texto en el campo **[!UICONTROL Buscar]** situado encima de la tabla.
+1. (Opcional) Para ordenar los eventos, haga clic en el encabezado de columna **[!UICONTROL ID]**, **[!UICONTROL Creado a las]** o **[!UICONTROL Tamaño]**.
+1. (Opcional) Para cambiar el número de eventos que se muestran en cada página, seleccione un número en la lista desplegable **[!UICONTROL Mostrar]** en la parte inferior de la página.
+1. (Opcional) Para moverse entre páginas de eventos, haga clic en **[!UICONTROL Primero]**, **[!UICONTROL Anterior]**, **[!UICONTROL Siguiente]** o **[!UICONTROL Último]** en la parte inferior de la página.
+
+   Estos botones no están disponibles cuando la cola sólo tiene una página de eventos.
+
+1. (Opcional) Para ver la carga útil de un evento, haga clic en **[!UICONTROL Detalles]** en la fila del evento.
+
+   Se abre el cuadro de diálogo de detalles y muestra la carga útil del evento.
+
+1. (Opcional) Para eliminar eventos:
+
+   1. Seleccione los eventos que desea eliminar mediante uno de los procedimientos siguientes:
+
+      * Seleccione la casilla de verificación situada junto a cada evento que desee seleccionar.
+      * Seleccione la casilla de verificación **[!UICONTROL Seleccionar todo]** para seleccionar toda la cola, no solo los eventos que están cargados actualmente. A continuación, puede desactivar la casilla de verificación de cualquier evento que desee excluir de la selección.
+
+   1. En la barra cerca de la parte inferior de la pantalla, haz clic en **Eliminar**.
