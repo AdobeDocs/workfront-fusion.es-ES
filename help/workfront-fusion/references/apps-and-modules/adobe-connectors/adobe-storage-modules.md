@@ -22,10 +22,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 28%
+source-wordcount: '1542'
+ht-degree: 26%
 ---
 # Módulos de Adobe Storage
 
@@ -343,7 +343,7 @@ Este módulo de acción realiza una solicitud HTTP personalizada a la API de alm
       <td role="rowheader">
         <p>Método</p>
       </td>
-   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada de la API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
+   <td> <p>Seleccione el método de petición HTTP que necesita para configurar la llamada API. Para obtener más información, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de petición HTTP</a>.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">Encabezados</td>
@@ -361,9 +361,40 @@ Este módulo de acción realiza una solicitud HTTP personalizada a la API de alm
     </tr>
     <tr>
       <td role="rowheader">Cuerpo</td>
-   <td> <p>Añada el contenido del cuerpo para la llamada de API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
+   <td> <p>Añada el contenido del cuerpo para la llamada API en forma de objeto JSON estándar.</p> <p>Nota:  <p>Cuando utilice afirmaciones condicionales como <code>if</code> en su JSON, coloque las comillas fuera de la afirmación condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### Cargar un archivo
+
+Este módulo de acción carga un archivo en el almacenamiento de Adobe en un solo paso. Crea el archivo de destino, inicializa la carga, transfiere el contenido del archivo a través de una dirección URL prefirmada y finaliza la carga. No es necesario configurar los pasos de transferencia y finalización por separado.
+
+El módulo admite archivos grandes.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexión</td> 
+   <td>Para obtener instrucciones sobre cómo crear una conexión con el almacenamiento de Adobe, consulte <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Crear una conexión con el almacenamiento de Adobe</a> en este artículo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Proyecto</td> 
+   <td>Seleccione el proyecto que contiene la carpeta en la que desea cargar el archivo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Carpeta</td> 
+   <td>Seleccione la carpeta en la que desea cargar el archivo. Para cargar el archivo en la raíz del proyecto, seleccione <code>/</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archivo de origen</td> 
+   <td>Seleccione un archivo de un módulo anterior o asigne el nombre, el contenido y el tipo de contenido del archivo.</td> 
+  </tr> 
+ </tbody> 
 </table>
