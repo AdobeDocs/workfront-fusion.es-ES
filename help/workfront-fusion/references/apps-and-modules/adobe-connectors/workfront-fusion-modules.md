@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 22%
+source-wordcount: '1806'
+ht-degree: 20%
 ---
 # Módulos de Workfront Fusion
 
@@ -97,9 +97,53 @@ Si ve el botón Asignar encima de un campo o función, puede utilizarlo para est
 
 ![Conmutador Asignar](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Activadores](#triggers)
 * [Acciones](#actions)
 * [Exportar](#export)
 * [Varios](#misc)
+
+### Activadores
+
+* [Ver registros](#watch-records)
+
+#### Ver registros
+
+Este módulo de déclencheur inicia un escenario cuando se crean, actualizan o ambos registros de Workfront Fusion. Puede utilizar filtros para centrarse en los cambios importantes para su equipo, de modo que no tenga que comprobar Workfront Fusion manualmente.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obtener instrucciones sobre cómo conectar Workfront Fusion a Workfront Fusion, consulte <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Conectar Workfront Fusion a Workfront Fusion</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ver</td> 
+   <td>Seleccione el tipo de cambio que desea que observe el módulo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo de registro</td> 
+   <td>Seleccione el tipo de registro que desea ver: <b>Escenario</b> o <b>Ejecución</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de escenario</td> 
+   <td><p>Si está viendo ejecuciones, seleccione o asigne el escenario para el que desea ver ejecuciones.</p><p>Este campo es opcional. Si lo deja vacío, el módulo busca ejecuciones en toda la organización.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Mostrar ejecuciones de comprobación</td> 
+   <td><p>Si está viendo la ejecución, seleccione si los resultados incluyen ejecuciones de comprobación:</p><ul><li><b>Sí</b>: Incluir ejecuciones de comprobación.</li><li><b>No</b>: no incluya ejecuciones de comprobación.</li><li><b>No definido</b>: no filtrar los resultados por ejecuciones de comprobación.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrando</td> 
+   <td>En <b>Propiedad</b>, para cada filtro de propiedad que desee usar, haga clic en <b>Agregar elemento</b>, seleccione el campo y el operador y, a continuación, escriba o asigne el valor que desee filtrar. Un campo de valor solo aparece para los operadores que lo necesitan. Por ejemplo, un operador como <b>Exists</b> no requiere un valor. Los filtros de propiedad son los mismos para los tipos de registro Escenario y Ejecución.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Límite</td> 
+   <td>Introduzca o asigne el número máximo de resultados con los que trabaja Workfront Fusion durante un ciclo de ejecución. El valor predeterminado es 200.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Acciones
 
@@ -471,8 +515,3 @@ Este módulo devuelve el ID de región y organización de cada organización de 
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-
