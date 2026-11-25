@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
+source-git-commit: bf67d1764395a48715cd8a5f665318857d0bdff1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -89,8 +89,6 @@ Un usuario tiene una de las siguientes funciones en cada uno de sus equipos:
 Para obtener información sobre las acciones específicas disponibles para los usuarios en cada rol de equipo, consulte [Funciones de organización y equipo](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
 ### Funciones de equipo personalizadas
-
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
 
 Además de los roles de equipo predefinidos, cada equipo tiene una ficha **[!UICONTROL Roles]** en la que puede crear sus propios roles. Puede crear, actualizar y eliminar funciones, y elegir exactamente los permisos que incluye cada función. Ya no está limitado a un conjunto fijo de funciones.
 
