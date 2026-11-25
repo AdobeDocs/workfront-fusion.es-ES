@@ -10,10 +10,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 15%
+source-wordcount: '930'
+ht-degree: 11%
 ---
 # Asignación de datos mediante funciones personalizadas
 
@@ -72,6 +72,7 @@ Puede crear una función personalizada en el área Funciones que se puede utiliz
 Las funciones personalizadas que se pueden utilizar en varios escenarios se configuran en el área Funciones de Workfront Fusion. Una vez configurada una función, puede agregarla a un escenario mediante el conector de App Builder de Adobe.
 
 * [Inicialice el entorno de tiempo de ejecución](#initialize-your-runtime-environment)
+* [Conectar un proyecto de App Builder existente](#connect-an-existing-app-builder-project)
 * [Cree una función personalizada en el área Funciones](#create-a-custom-function-in-the-functions-area)
 
 #### Inicialice el entorno de tiempo de ejecución
@@ -90,6 +91,30 @@ Para poder crear funciones personalizadas, debe inicializar el entorno de tiempo
 1. Haga clic en **Inicializar tiempo de ejecución**.
 
    Después de un tiempo, aparece una lista Funciones, con dos funciones de ejemplo.
+
+#### Conectar un proyecto de App Builder existente
+
+Cuando Fusion crea el proyecto de App Builder, se encarga de la configuración del tiempo de ejecución. Si su equipo ya tiene un proyecto de App Builder creado antes de utilizar Fusion, debe conectarlo manualmente, creando una conexión de App Builder que utilice el área de nombres y las credenciales de tiempo de ejecución de ese proyecto. No es necesario que vuelva a crear el proyecto.
+
+>[!NOTE]
+>
+>Las credenciales que introduzca en Fusion son credenciales de tiempo de ejecución. No son los detalles de inicio de sesión de Adobe. Mantenga seguro el archivo de configuración que descargue y no comparta su valor `auth`.
+
+1. En Fusion, seleccione el equipo que necesita la conexión.
+1. Haga clic en la ficha **Conexiones** en el panel izquierdo y, a continuación, haga clic en **Crear conexión**.
+1. Seleccione **Adobe App Builder** como tipo de conexión y escriba un nombre que identifique el proyecto existente.
+1. En [Adobe Developer Console](https://developer.adobe.com/console), abra el proyecto existente y, a continuación, seleccione el área de trabajo a la que desea conectarse.
+1. En la descripción general del proyecto, haga clic en **Descargar todo** para descargar el archivo JSON de configuración del área de trabajo y abra el archivo en un editor de texto.
+1. En la sección `runtime` del archivo, busque el valor `namespace`. En Fusion, ingréselo en el campo **Espacio de nombres**.
+1. En la sección `runtime`, busque el valor `auth`. Tiene el formato `username:password`.
+
+   * En Fusion, introduzca la parte antes de los dos puntos en el campo **Nombre de usuario**.
+   * En Fusion, introduzca la parte después de dos puntos en el campo **Contraseña**.
+
+1. Haga clic en **Continuar** para guardar la conexión.
+1. Vuelva a la ficha **Funciones** en Fusion y actualice la página si es necesario.
+
+Para obtener más información sobre los campos de conexión, consulte [Módulos App Builder de Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md#create-a-connection-to-adobe-app-builder).
 
 #### Cree una función personalizada en el área Funciones
 

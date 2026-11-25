@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: dbe4560cea79834a0d967cbaf6b98772d8ee09ce
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '2153'
 ht-degree: 7%
 ---
 # Módulos de Adobe CX Enterprise Coworker
@@ -24,8 +24,6 @@ El conector proporciona dos módulos:
 * **[!UICONTROL Obtener estado de ejecución]** comprueba una solicitud que inició anteriormente.
 
 ## Requisitos de acceso
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
 
 +++ Expanda para ver los requisitos de acceso para la funcionalidad en este artículo.
 
@@ -166,6 +164,10 @@ Cada ejecución envía el mensaje una vez e inicia una nueva conversación. No e
    <td> <p>Esta opción está activada de forma predeterminada. Active esta opción si desea que el módulo espere a que finalice la tarea o si requiere atención. Desactívela para devolver el resultado inicial inmediatamente.</p><p>Para obtener más información, vea <a href="#wait-for-completion">Esperar a que se complete</a> en este artículo.</p> </td> 
   </tr> 
   <tr> 
+   <td>[!UICONTROL Confirmar todas las acciones de la herramienta] <i>(Opcional, avanzada)</i></td> 
+   <td> <p>Esta opción está desactivada de forma predeterminada. Active esta opción si desea que el Compañero de trabajo apruebe automáticamente las solicitudes de permisos de herramientas admitidas durante esta ejecución. Las herramientas pueden modificar o eliminar datos.</p><p>Para obtener más información, consulte <a href="#confirm-all-tool-actions">Confirmar todas las acciones de la herramienta</a> en este artículo.</p> </td> 
+  </tr> 
+  <tr> 
    <td>[!UICONTROL Incluir resultado sin procesar] <i>(Opcional, avanzado)</i></td> 
    <td> <p>Esta opción está desactivada de forma predeterminada. Active esta opción si desea que el módulo incluya la respuesta completa de Coworker en la salida. La respuesta puede contener información confidencial.</p> </td> 
   </tr> 
@@ -187,6 +189,19 @@ Cuando **[!UICONTROL Esperar a que finalice]** está desactivado, el módulo dev
 Esperar está sujeto al tiempo de espera del módulo de Fusion. Si el módulo agota el tiempo de espera o se detiene, es posible que el Compañero siga trabajando. En ese caso, es posible que no reciba un resultado o un ID de tarea.
 
 Para trabajar más tiempo, desactive la espera y guarde la **[!UICONTROL Id. de tarea]** inicial para que pueda comprobar la tarea más tarde. No vuelva a ejecutar automáticamente la solicitud después de un tiempo de espera. Es posible que la primera solicitud ya esté en curso y que la repetición pueda duplicar cambios.
+
+#### Confirmar todas las acciones de la herramienta
+
+Cuando **[!UICONTROL Confirmar todas las acciones de la herramienta]** está activado, el módulo aprueba automáticamente las solicitudes de permisos de herramienta admitidas durante la ejecución, hasta 20 rondas de aprobación y 100 llamadas de herramienta. Esta opción está desactivada de forma predeterminada.
+
+>[!WARNING]
+>
+>Las herramientas pueden modificar o eliminar datos. Active esta opción si da su consentimiento solo para esta ejecución. No es una concesión de permiso permanente.
+
+Se aplican las siguientes condiciones:
+
+* Esta opción requiere **[!UICONTROL Esperar a que se complete]** y un flujo de permisos en directo compatible.
+* Los límites, las solicitudes reproducidas, el inicio de sesión, las preguntas y otras aprobaciones requieren una revisión manual.
 
 
 ## Salida de módulo
@@ -238,7 +253,7 @@ Use **[!UICONTROL texto del asistente final]** para la respuesta en lugar de com
 
 Es posible que el compañero necesite más información o autorización antes de poder continuar. Cuando esto sucede, **[!UICONTROL Requiere atención]** es verdadero y **[!UICONTROL Completado]** es falso. Enrute el resultado a una persona en lugar de tratarlo como trabajo completado.
 
-Estos módulos no pueden responder a una pregunta de seguimiento ni aprobar una acción en su nombre. **[!UICONTROL Obtener estado de ejecución]** puede comprobar si el estado de la tarea ha cambiado, pero no resuelve la solicitud de entrada o autorización.
+Estos módulos no pueden responder a una pregunta de seguimiento ni aprobar una acción en su nombre, a excepción de las solicitudes de permisos de herramientas admitidas que **[!UICONTROL Confirmar todas las acciones de herramientas]** aprueba automáticamente. **[!UICONTROL Obtener estado de ejecución]** puede comprobar si el estado de la tarea ha cambiado, pero no resuelve la solicitud de entrada o autorización.
 
 ### Usar respuestas anteriores
 
@@ -318,6 +333,7 @@ No vuelva a ejecutar la solicitud original solo para comprobar su progreso.
 * Estos módulos no proporcionan una forma de restringir las herramientas individuales. Instrucciones como &quot;no cambiar nada&quot; describen su intención, pero no son un modo de solo lectura obligatorio.
 * Las herramientas y habilidades disponibles varían según la cuenta. El conector no proporciona un selector de aptitudes ni garantiza una acción en particular, como crear un recorrido o actualizar un proyecto. No suponga que las solicitudes que necesitan aprobación se completarán sin atención.
 * El conector se inicia y comprueba las solicitudes de Coworker. No supervisa los cambios del proyecto ni guarda automáticamente las respuestas en otra aplicación. Agregue los módulos de déclencheur, almacenamiento y seguimiento adecuados a su escenario según sea necesario.
+* Activar **[!UICONTROL Confirmar todas las acciones de la herramienta]** solo para los mensajes de confianza. Cuando esta opción está activada, el colaborador aprueba automáticamente las solicitudes de permisos de herramientas admitidas y las herramientas pueden modificar o eliminar datos.
 * Las respuestas generadas por IA pueden ser incompletas o inexactas. Valide los resultados importantes antes de utilizarlos para realizar cambios o tomar decisiones.
 * El conector no reintenta automáticamente una solicitud fallida. Asegúrese de que el tratamiento de errores de su escenario no repita un mensaje cuyo resultado sea incierto.
 
