@@ -1,9 +1,9 @@
 ---
 title: Herramientas del servidor MCP de Adobe Workfront Fusion
 description: Lista de referencia de las herramientas que expone el servidor de Adobe Workfront Fusion MCP a las plataformas agénticas de IA y a los colaboradores.
-source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
+source-git-commit: daed5498e4830c7eb66e295081dfd486d3ef610b
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1632'
 ht-degree: 7%
 ---
 
@@ -22,6 +22,8 @@ Cada herramienta se clasifica como:
 
 * **Lectura**: recupera información sin cambiar nada, como enumerar escenarios u obtener una ejecución.
 * **Write**: Crea, cambia, ejecuta o elimina datos de Fusion, como clonar un escenario o borrar una cola de ganchos web.
+
+Los propietarios y administradores de la organización pueden permitir o deshabilitar las herramientas de solo lectura y escritura para toda la organización. Las herramientas desactivadas no aparecen en la lista de herramientas y Fusion las rechaza si un agente las llama. Esta configuración limita solo las llamadas de herramienta realizadas a través del servidor oficial de Fusion MCP. Las acciones que los usuarios realizan en la interfaz de usuario de Fusion, a través de la API o a través de cualquier otra integración siguen controladas por los propios permisos de cada usuario en Fusion. Para obtener más información, consulte [Administrar las preferencias de MCP de su organización](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization).
 
 ## Herramientas de organización
 
@@ -204,7 +206,7 @@ Ejemplos de peticiones de datos:
 | --- | --- | --- | --- |
 | Enviar comentarios | `fusion_feedback_submit` | Escritura | Envía sus comentarios (errores, resultados incorrectos, solicitud de funciones, elogios, etc.) al equipo de Fusion. |
 
-## Compañero
+## Coworker
 
 Todas las herramientas de este artículo están disponibles en Coworker, tanto de forma independiente como en el carril derecho de Fusion, y están sujetas a la misma configuración de lectura y escritura y a sus permisos.
 
