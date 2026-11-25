@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 5168f8b0baae4201773899f418bdf0c8b5bf3ef1
+source-git-commit: 759bfd6f1cf59e597053db18c69f4aa724f60049
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # Añada una solicitud de IA a su escenario
@@ -46,7 +46,10 @@ Puede agregar una petición de datos de IA a su escenario mediante el módulo de
 
 Para obtener instrucciones, consulte los siguientes artículos para servidores específicos:
 
+* [Módulos Adobe CX Enterprise Coworker](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md).
 * [Módulos MCP de Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Módulos MCP de producción de Adobe Firefly Creative](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-creative-production-mcp-modules.md).
+* [Módulos MCP de Adobe Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-fusion-mcp-modules.md).
 * [Módulo MCP de Adobe Marketo Engage](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
 * [Módulos MCP de Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
 * [Módulo del agente MCP](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
